@@ -1,0 +1,284 @@
+{
+  "cell_id": "s4-E-0p25-pc-nonparanormal-preproc",
+  "data_fingerprint": {
+    "dtype": "<f8",
+    "scm_config_hash": "72eb043597cef1b86c1f7144fccfa757d958892822040fc4fc194b533e208ad1",
+    "sha256": "ea34a5454c0ab70b27b232830f336effff09b2b478c66381f4684b8050349247",
+    "shape": [
+      65536,
+      3,
+      10
+    ]
+  },
+  "exact_transform_metadata": {
+    "distribution": "standard_normal",
+    "lambda": 0.25,
+    "per_variable_sd": [
+      [
+        1.4632480607283973,
+        1.4608956341646977,
+        1.4632290455831019,
+        2.1698268121121216,
+        1.4613390423361607,
+        2.1639864382195637,
+        1.466595635681385,
+        1.464372102525215,
+        2.17288596973844,
+        1.472378751376171
+      ],
+      [
+        2.3735255210870867,
+        2.317332855221942,
+        2.2496618953876437,
+        2.2488840650474335,
+        2.2558654178028505,
+        2.4776446926640188,
+        2.45735813818144,
+        2.3234499036687657,
+        2.3105713619772006,
+        2.330589840940248
+      ],
+      [
+        2.351039395003381,
+        2.330716735738819,
+        2.39383319356137,
+        2.438726526019811,
+        2.2842158037590217,
+        2.3665385267465355,
+        2.331941881594612,
+        2.390776379135418,
+        2.3041388367977382,
+        2.323487647952568
+      ]
+    ],
+    "seed": 104002
+  },
+  "gcarl_submodule_commit": "0020bfce34736d61d70ab8175f061d02951a7ed4",
+  "generator_source_path": "vendor/GCaRL/subfunc/generate_dataset.py",
+  "inapplicable_metrics_reason": null,
+  "inter_group_f1": 0.8721804511278195,
+  "inter_group_precision": 0.7733333333333333,
+  "inter_group_recall": 1.0,
+  "inter_group_shd": 17,
+  "intra_group_metrics": {
+    "f1": 0.923076923076923,
+    "fn": 0,
+    "fp": 4,
+    "precision": 0.8571428571428571,
+    "recall": 1.0,
+    "shd": 4,
+    "tp": 24
+  },
+  "intra_group_status": "EXPLORATORY_ONLY",
+  "method": "PC-nonparanormal-preproc",
+  "method_implementation_version": {
+    "causal-learn": "0.1.4.8",
+    "gcastle": "1.0.4",
+    "lingam": "1.12.2",
+    "notears_commit": "4a9ab19fe502e392503da331773c5223d82d3666",
+    "torch": "2.3.1"
+  },
+  "method_seed": 204001,
+  "method_type": "pc",
+  "normalized_degradation": 0.03759398496240607,
+  "oracle_ceiling": 0.90625,
+  "pc_orientation_load_bearing": false,
+  "pc_orientation_metrics": {
+    "f1": 0.24242424242424243,
+    "fn": 42,
+    "fp": 58,
+    "precision": 0.21621621621621623,
+    "recall": 0.27586206896551724,
+    "tp": 16
+  },
+  "pc_skeleton_metrics": {
+    "f1": 0.8721804511278195,
+    "fn": 0,
+    "fp": 17,
+    "precision": 0.7733333333333333,
+    "recall": 1.0,
+    "shd": 17,
+    "tp": 58
+  },
+  "primary_inter_group_metric_type": "skeleton_f1",
+  "project_commit": "a91f08ca080d6113f7dc87e1146f8e18ded567ae",
+  "rank_aware_mcc": 0.964059672875691,
+  "resolved_config": {
+    "method_procedure": {
+      "audit_label": "ORACLE-TUNED COMPATIBILITY AUDIT",
+      "common": {
+        "standardize_per_dataset": true
+      },
+      "excluded": {
+        "CAM": {
+          "reason": "R runtime unavailable, so import and smoke fit could not be performed"
+        }
+      },
+      "materiality": {
+        "absolute_f1_drop": 0.2,
+        "normalized_degradation": 0.25
+      },
+      "methods": {
+        "DirectLiNGAM": {
+          "implementation": "lingam",
+          "random_state": "method_seed",
+          "type": "directed",
+          "weight_threshold": 0.1
+        },
+        "GOLEM": {
+          "checkpoint_iter": 1000,
+          "device_type": "auto",
+          "equal_variances": true,
+          "graph_threshold": 0.1,
+          "implementation": "gCastle",
+          "lambda_1": 0.02,
+          "lambda_2": 5.0,
+          "learning_rate": 0.001,
+          "num_iter": 5000,
+          "type": "directed"
+        },
+        "NOTEARS-MLP": {
+          "device_type": "auto",
+          "h_tol": 1e-08,
+          "hidden_layers": [
+            10,
+            1
+          ],
+          "implementation": "gCastle",
+          "lambda1": 0.01,
+          "lambda2": 0.01,
+          "max_iter": 50,
+          "rho_max": "1.0e16",
+          "type": "directed",
+          "weight_threshold": 0.1
+        },
+        "NOTEARS-linear": {
+          "h_tol": 1e-08,
+          "implementation": "pinned xunzheng/notears with exact cached covariance l2 objective",
+          "lambda1": 0.01,
+          "max_iter": 100,
+          "rho_max": "1.0e16",
+          "type": "directed",
+          "weight_threshold": 0.1
+        },
+        "PC-Pearson": {
+          "alpha": 0.01,
+          "implementation": "causal-learn",
+          "stable": true,
+          "type": "pc",
+          "uc_priority": 2,
+          "uc_rule": 0
+        },
+        "PC-nonparanormal-preproc": {
+          "alpha": 0.01,
+          "implementation": "causal-learn",
+          "preprocessing": "rank_average_then_normal_ppf_using_(rank-0.5)/n",
+          "stable": true,
+          "type": "pc",
+          "uc_priority": 2,
+          "uc_rule": 0
+        }
+      },
+      "oracle_thresholds": {
+        "directed_f1": 0.8,
+        "orientation_f1": 0.8,
+        "skeleton_f1": 0.8
+      }
+    },
+    "sim1": {
+      "ar_alpha": 3.0,
+      "ar_beta": 0.8,
+      "dag": true,
+      "dist_type": "Laplace",
+      "lam1_range": [
+        0.9,
+        1.0
+      ],
+      "lam2_range": [
+        1.0,
+        1.0
+      ],
+      "lamin1_range": [
+        0.9,
+        1.0
+      ],
+      "lamin2_range": [
+        1.0,
+        1.0
+      ],
+      "num_data": 65536,
+      "num_dim": 10,
+      "num_group": 3,
+      "num_latent": null,
+      "num_layer": 3,
+      "num_neighbor": 2,
+      "num_neighbor_in": 1,
+      "scm_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  "scm_seed": 4,
+  "standard_mcc": 0.9701243071615714,
+  "timestamp": "2026-08-27T03:35:01.333009+00:00",
+  "transform_class": "CORRUPTION_CONTROL",
+  "transform_family": "E",
+  "transform_parameters": {
+    "distribution": "standard_normal",
+    "lambda": 0.25,
+    "per_variable_sd": [
+      [
+        1.4632480607283973,
+        1.4608956341646977,
+        1.4632290455831019,
+        2.1698268121121216,
+        1.4613390423361607,
+        2.1639864382195637,
+        1.466595635681385,
+        1.464372102525215,
+        2.17288596973844,
+        1.472378751376171
+      ],
+      [
+        2.3735255210870867,
+        2.317332855221942,
+        2.2496618953876437,
+        2.2488840650474335,
+        2.2558654178028505,
+        2.4776446926640188,
+        2.45735813818144,
+        2.3234499036687657,
+        2.3105713619772006,
+        2.330589840940248
+      ],
+      [
+        2.351039395003381,
+        2.330716735738819,
+        2.39383319356137,
+        2.438726526019811,
+        2.2842158037590217,
+        2.3665385267465355,
+        2.331941881594612,
+        2.390776379135418,
+        2.3041388367977382,
+        2.323487647952568
+      ]
+    ],
+    "seed": 104002
+  },
+  "transformation_seed": 104002,
+  "transformed_fingerprint": {
+    "dtype": "<f8",
+    "scm_config_hash": "72eb043597cef1b86c1f7144fccfa757d958892822040fc4fc194b533e208ad1",
+    "sha256": "405a8a65fd7440760047cb5eb4158c07d4b60a045e3fd6a3580357f894b2127d",
+    "shape": [
+      65536,
+      3,
+      10
+    ]
+  }
+}

@@ -1,0 +1,743 @@
+SEPL/SE/Feb/25-26
+20th February 2026
+The General Manager, The Manager,
+Corporate Relations/Listing Department Listing Compliances Department
+BSE Limited National Stock Exchange of India Limited
+Floor 25, P.J. Towers, Exchange Plaza, Plot No. C/1, G Block,
+Dalal Street, Bandra – Kurla Complex, Bandra (E),
+Mumbai – 400 001 Mumbai – 400 051
+Scrip Code: 501423 Scrip Code: SHAILY
+Sub : Q3FY26 Earnings Call Transcript
+Ref : Regulation 30 of the SEBI Listing Regulations, 2015
+Dear Sir,
+We refer to our previous letter dated 13th February 2026, wherein the Company updated the audio
+link of Earnings call held on 13th February 2026 to discuss the operational & financial performance of
+the Company for the quarter and nine months ended on 31st December 2025.
+In context therein, kindly find attached herewith transcript of the referred Earnings call.
+A copy of the same is also available on the Company’s website at www.shaily.com at
+https://static.shaily.com/QymFOaYUQ9OmN8uKKd4H-sepl-q-3-f-y-26-e-arnings-conference-call-
+transcript-pdf
+Kindly take the same on record.
+Thanking You
+Yours truly,
+For Shaily Engineering Plastics Limited
+Harish Punwani
+Company Secretary & Compliance Officer
+M.No. A50950
+ENCL: A/a
+“Shaily Engineering Plastics Limited
+Q3 & 9M FY '26 Earnings Conference Call”
+February 13, 2026
+uploaded on the stock exchange on 13th February 2026 will prevail
+MANAGEMENT:
+• Mr. Amit Sanghvi – Managing Director – Shaily Engineering Plastics Limited
+• Mr. Sanjay Shah – Chief Strategy Officer –Shaily Engineering Plastics Limited
+Shaily Engineering Plastics Limited
+February 13, 2026
+Moderator: Ladies and gentlemen, good day, and welcome to the Q3 and 9 months FY '26 Earnings
+Conference Call of Shaily Engineering Plastics Limited. As a reminder, all participant lines will
+be in the listen-only mode and there will be an opportunity for you to ask questions after the
+presentation concludes. Should you need assistance during the conference call, please signal an
+operator by pressing star then zero on your touch-tone phone. Please note that this conference is
+being recorded.
+Before we begin, a brief disclaimer. This conference call may contain forward-looking
+statements about the company, which are based on the beliefs, opinions and expectations of the
+company as on date of this call. These statements are not the guarantees of future performance
+and it may involve risks and uncertainties that are difficult to predict.
+I now hand the conference over to Mr. Amit Sanghvi, Managing Director of Shaily Engineering
+Plastics Limited. Thank you, and over to you, sir.
+Amit Sanghvi: Thank you very much. Good afternoon, and a very warm welcome to all of you to our quarter 3
+earnings call. I have with me Mr. Sanjay Shah, Chief Strategy Officer; and SGA, our Investor
+Relations Advisors. I hope you've had a look at our financial results and the investor presentation
+that is uploaded on our website as well as the stock exchange.
+Let me begin by giving you highlights of our key business development over the quarter. In Q3
+FY '26, we delivered strong revenue growth along with meaningful margin expansion. Revenue
+stood at INR251 crores, up 27% year-on-year and EBITDA came in at INR66 crores, up 43%
+year-on-year with a margin of 26.5%, representing an expansion of 310 basis points year-on-
+year.
+The growth was driven by the continued momentum across our business verticals, importantly,
+the Healthcare segment's contribution to our overall revenue mix, which has now doubled to
+42% compared to last year, reflecting the increasing scale of this business.
+During the quarter, there have been 2 important updates in healthcare that strengthen our future
+outlook. First and the most important, I'm very happy to announce that we're establishing a new
+scalable facility in Abu Dhabi for manufacturing of pen and auto-injectors.
+This is a strategic move to build capacity in the fast-growing drug delivery segment and places
+us in close proximity to our international clientele. The planned investment is in the range of
+AED130 million to AED150 million, translating to about INR300 crores to INR350 crores to
+build a capacity of approximately 75 million pen injectors -- pen/auto-injectors per year.
+We expect this facility to be operational by Q4 FY '28, significantly scaling our global
+manufacturing footprint in GLP-1 and other advanced therapies. With this addition, our total pen
+injector capacity will increase substantially to 150 million units from the current 80 million units
+per year. We are also in discussions with the government in Abu Dhabi for potential financial
+support and we will provide an update as those discussions progress.
+Second, we are very pleased to announce the appointment of Mr. Joe Kam as Chief Operating
+Officer of Healthcare division in Shaily effective 1st March 2026. Joe brings over 20 years of
+Shaily Engineering Plastics Limited
+February 13, 2026
+international experience in manufacturing and operations across highly regulated process-driven
+industries.
+Prior to joining Shaily, he held senior leadership roles at SHL in Taiwan, managing their entire
+device manufacturing operations across 7 sites. Previous to SHL, he's worked at Flextronics in
+manufacturing of of high-end medical devices, including electronics.
+He holds an executive MBA from the Chinese University of Hong Kong and advanced
+qualifications in automation systems and engineering management. At Shaily, Joe will lead our
+global healthcare operations with a clear mandate to drive operational excellence, further
+strengthening quality and compliance, accelerating automation scale-up and building high-
+performance teams to support our next phase of growth.
+In the Healthcare segment, beyond the upcoming facility, we have onboarded 2 new customers
+for GLP-1s and have also additionally signed 2 new contracts with Global Pharma for the
+manufacture and supply of pen injectors.
+In the Consumer segment, we received a new product mandate from an existing home
+furnishings customer. And within Industrial segment, we commenced supplies of power tool
+components for a new client and added applications in LED lighting as well.
+With that, I will now hand over the call to Mr. Sanjay Shah to take you through the operating
+and the financial highlights of the quarter. Thank you very much. Over to you, Sanjay bhai.
+Sanjay Shah: Thanks, Amit. Good afternoon, everyone. I will start with the operating metrics for the quarter
+and the 9-month period and then move to the financial performance. During Q3 FY '26, we
+processed 5,541 tonnes of polymers as compared to 6,308 tonnes in Q3 FY '25, a decline of
+12%. For 9 months FY '26, polymer process stood at 19,209 tonnes versus 18,396 tonnes last
+year, a growth of 4.4%.
+Machine utilization was flat at about 47.1% in Q3 as compared to 47.8% for 9 months FY '26.
+With the ramp-up of new programs, we expect utilization to improve going forward. Exports
+continue to remain strong and contributed approximately 71% of total revenue in both Q3 and 9
+months FY '26.
+Let me now summarize the consolidated financial highlights for Q3 FY '26. Revenue stood at
+INR251 crores as compared to INR198 crores during Q3 FY '25, a growth of 27% year-on-year.
+EBITDA stood at INR66 crores as compared to INR46 crores during Q3 FY '25.
+EBITDA margins stood at 26.5%, an increase of 310 bps over Q3 FY '25. PAT stood at INR37
+crores as compared to INR25 crores during Q3 FY '25, a growth of 48% year-on-year. PAT
+margins stood at 14.9%, an increase of 220 basis points over Q3 FY '25.
+Coming to segmental revenue breakup for Q3 FY '26. In the Consumer segment, revenue stood
+at INR123 crores as compared to INR141 crores during Q3 FY '25, a degrowth of 13%. In the
+Healthcare segment, revenue stood at INR104 crores as compared to INR44 crores during Q3
+Shaily Engineering Plastics Limited
+February 13, 2026
+FY '25, a growth of 139%. In the Industrial segment, revenue stood at INR23 crores as compared
+to INR13 crores during Q3 FY '25, a growth of 87%.
+Now coming to 9 months FY '26 consolidated highlights. Revenue stood at INR754 crores as
+compared to INR569 crores during 9 months FY '25, a growth of 32%. EBITDA stood at INR218
+crores as compared to INR124 crores during 9 months FY '25, a growth of 76% on a Y-o-Y
+basis.
+EBITDA margins stood at 29%, an increase of 720 basis points over 9 months FY '25. PAT
+stood at INR130 crores as compared to INR65 crores during 9 months FY '25, a growth of 101%
+on Y-o-Y basis.
+PAT margins stood at 17.2%, an increase of 590 basis points over 9 months FY '25. Cash PAT
+for 9 months FY '26 was reported at INR166 crores as compared to INR96 crores during 9
+months FY '25, a growth of 73% year-on-year.
+Our ROCE and ROE stood at 38.4% and 29.1%, respectively, as on 31st December 2025. The
+growth in business has been achieved with disciplined use of capital. Our debt to equity stands
+at 0.3x and fixed asset turnover ratio at 2.0x as on 31st December 2025.
+Now coming to segmental revenue breakup for 9 months FY '26. In the Consumer segment,
+revenue stood at INR409 crores as compared to INR413 crores during 9 months FY '25, a
+degrowth of 1%.
+In the Healthcare segment, revenue stood at INR280 crores as compared to INR109 crores during
+9 months FY '25, a growth of 158%. In the Industrial segment, revenue stood at INR65 crores
+as compared to INR48 crores during 9 months FY '25, a growth of 36%. That concludes the
+update from my side. We can now open the floor for questions.
+Moderator: Thank you very much. We will now begin the question-and-answer session. We take the first
+question from the line of Shaleen Kumar from UBS India.
+Shaleen Kumar: Congratulations to the management for a fairly good set of numbers. So Amit and Sanjay bhai,
+2 questions. First, on the capacity side. So can we get an update, if I missed the initial part. So
+we are having 2 lines coming up, right, of 25 million each. So is the first line operational?
+Amit Sanghvi: The first line is going through operational qualification, should be completed next week and then
+we'll go into supply immediately after. The second line is scheduled to arrive in end of April,
+beginning of May '26. So it will get commercialized by end of July '26.
+Shaleen Kumar: So fair to assume, Amit, that our commercial production from the new line will start like we'll
+be doing commercial production in March onwards?
+Amit Sanghvi: Yes. We will have some commercial production in March, but we'll do the proper scale-up from
+April.
+Shaleen Kumar: Got it. And for that one may be August, September, right?
+Shaily Engineering Plastics Limited
+February 13, 2026
+Amit Sanghvi: No. That one- end of July, we should be in production. So yes, I guess, consider a month for
+getting the line up to speed that it's intended. We typically start at 50, 60 parts per minute on an
+80 part per minute line and then scale it up to 80.
+Shaleen Kumar: Got it. Got it. So Amit, we were setting up 2 lines with 50 million and now we have also setting
+up 75 million line, which were coming up by end of FY '28. And you have also highlighted that
+you have signed up 2 more customers, etcetera.
+So is it again fair to assume that you have pretty confident on at least these existing lines, 50
+million to be able to fully utilize in the next 12 to 24 months and that's the reason you're looking
+for 75 million line?
+Amit Sanghvi: So all the capacity expansion we're doing, I mean, let's look at the capacity expansion in India,
+are more or less fully backed by commercial contracts. The Abu Dhabi expansion, I would say,
+is somewhere around 50% to 60% secured in terms of capacity commitments, not fully, but it's
+anticipated to be 18 months out from now. So we anticipate that we will be fully backed by
+contracts even on the Abu Dhabi setup.
+Shaleen Kumar: Yes. So basically, you're saying that 50 million is fully backed. But the point is we should be
+fully utilized in 12 to 24 months, right?
+Amit Sanghvi: 24 months. Yes.
+Shaleen Kumar: Yes, right. And 75 million, you're saying that you already have a commitment for more than
+50%?
+Amit Sanghvi: Yes, around 50% to 60%, somewhere in between that. Now sometimes you will see pen
+cannibalizing auto-injectors or vice versa, but that's a risk we have to live with.
+Shaleen Kumar: Got it. And on the GLP-1 side now, how should we think about your supply, given there's a
+likelihood of launches coming in 1Q, should we expect that you will be starting supplying GLP-
+1 injectors in this quarter, fourth quarter?
+Amit Sanghvi: We've already started supplying in the last quarter itself for commercial launches, which are
+planned in Canada, Brazil, India, Middle East, Turkey. So supplies have already started. We're
+struggling right now because our high-speed line is still not up and running. It's still in
+qualification. So as soon as that happens, we'll be in a better position to supply the volume that
+is needed.
+Shaleen Kumar: Right. So basically, you're saying it will only ramp up from here. You already have a demand
+coming from customers.
+Amit Sanghvi: Yes, absolutely. I mean, we've got customers breathing down our necks for supply.
+Shaleen Kumar: Well, that's good news. Canada, like we have a lion's share, right? Can we say that? Like possible
+for you to quantify like what kind of a share you have amongst the customers you have signed
+up or the number of customers who have filed?
+Shaily Engineering Plastics Limited
+February 13, 2026
+Amit Sanghvi: Without breaching any confidentiality, I believe Canada, potentially the first 6, 7, 8 filers, I
+would say we have upwards of 65%, 75% of that share.
+Shaleen Kumar: You think 75% of the customers who have filed are with you?
+Amit Sanghvi: Yes. If I look at the first filers.
+Shaleen Kumar: So effectively, basically, there is a likelihood that anyone who gets an approval will be using a
+Shaily's line in Canada. Most likely. There's a good likelihood?
+Amit Sanghvi: Very good likelihood.
+Shaleen Kumar: Good to hear that. Now moving on to the consumer electronic bit. If we can get to know like
+what's the status on that front? Like when are we probably -- are we done with the qualification?
+When can we expect commercial deliveries to go on -- for the consumer electronic client?
+Amit Sanghvi: I think we're coming closer to the end of the qualification cycle. But I don't have anything that I
+will be able to share beyond that. So we should come to an end of qualification either end of this
+month or early March. And hopefully, from there on, we will have a little bit more visibility on
+supplies.
+Shaleen Kumar: So most likely, you're saying the supply will probably begin fourth quarter end of the 1Q. Can
+we assume that?
+Amit Sanghvi: That's also my assumption at the moment.
+Shaleen Kumar: The product is mostly qualified, right? Most of the qualification is done, if my understanding is
+correct.
+Amit Sanghvi: I mean, there's a long qualification cycle. You have to always consider that one is to qualify a
+component, then it's to qualify the component at the assembly site. Then beyond that, there is a
+testing period for verification that everything works. So it's not a very short process, especially
+for a new supplier to enter. We assume that we are at the end of that cycle at the moment.
+Hopefully, we will start supply soon.
+Shaleen Kumar: Got it. Got it. Last question from my side and then I'll go back in the queue. Last 2 questions
+actually. On the semiconductor casings, that's another excitement area you highlighted. If we
+can get some status update on that as well, right, where we are, like what kind of customers are
+we looking at? And when can we start seeing the commercial supplies happening on that front?
+Amit Sanghvi: Look, plants in India are still are not up, So the chip manufacturing companies are not fully up
+and operational. I think it's going to likely be 12 months before they come up. We should see
+some small quantities in the new FY for sure. But I think any scale-up will largely depend on
+how quickly these capacities come up and how quickly they then scale from after setup. It's a
+direct link. Can't do anything else with the product except supply the chip manufacturers.
+Shaleen Kumar: But can there be an export opportunity in that beyond the domestic supplier?
+Shaily Engineering Plastics Limited
+February 13, 2026
+Amit Sanghvi: Not at the moment. It's not friendly to international shipping. It can be quite expensive. So in
+most regions, these are manufactured close to the end customer.
+Shaleen Kumar: All right. All right. Last bit on the financials. While I can observe that your gross margin has
+been stable, but I could see there are some cost increases a little bit on the employee side and the
+other expenses. Just want to understand like what were they pertaining to?
+Amit Sanghvi: I think largely admin and selling expenses have gone up. So Sanjay bhai, if you want to take it,
+that's fine.
+Sanjay Shah: You're quite well covered. Yes, you are. No problem.
+Amit Sanghvi: Yes. But as you can imagine, quarter 3, this particular year ended up with 3 very large, obviously,
+exhibitions, which is a very significant cost for us. Plus we're doing these setups in Abu Dhabi
+and elsewhere in the world.
+So you've seen a temporarily cost increase on that. But the reason it's reflecting on the margin is
+because we've had some income, the onetime income, which has been delayed from quarter 3 to
+quarter 4.
+Shaleen Kumar: Okay. So can we get like what -- the nature of that income? Like what was it like? So you say
+that cost is already booked for that.
+Sanjay Shah: So Shaleen, what happens is that basically, from U.K. and Abu Dhabi, we basically license or
+give access to people to our platforms where the fees are recovered over 12 to 18 months or 21
+months in terms of agreed milestones with the customer. Now we would have submitted papers
+to the customer, that's someone who would validate that and then confirm it and then invoices
+would be raised.
+In this case, there have been some income, which has not been booked in the quarter 3 because
+we have not got confirmations from the customer. So we expect that we should basically be able
+to do that in quarter 4.
+Shaleen Kumar: So Sanjay bhai, you're saying that the cost has been incurred, but the income has yet to receive
+for that?
+Sanjay Shah: Yes. Actually, you're right. So what happens is, as I mentioned earlier, we raise income once the
+customer confirmations come in. Now these are long-term contracts with different agreed
+milestones at the start of the contract.
+Now basically we would expect the customer approvals to come in for that milestone in, say,
+quarter 3, some of them would have been deferred to quarter 4 or something like that. So that's
+the reason that income has not come in.
+You would see that when you look at the difference between the consolidated numbers and the
+stand-alone numbers, you would see that the revenue compared in quarter 1 and quarter 2 and
+quarter 3, revenue in quarter 3 from U.K. and Dubai operations is lower as compared to quarter
+Shaily Engineering Plastics Limited
+February 13, 2026
+1 and quarter 2 and that's the reason for that. While expenses have been there, you don't have
+corresponding revenue which is coming.
+Shaleen Kumar: Got it. So basically, as we move into 4Q, we will not have these exhibition costs and also we
+will have a revenue coming from the work we have done in our Q3.
+Sanjay Shah: Yes. And just to add to what Amit said, with exhibition costs, we also have had expenses on
+Labor Code implementation in terms of gratuity and leave encashment. So that expense was
+about INR90 lakhs to INR1 crores.
+Shaleen Kumar: And any sense on the exhibition cost, sir, if you can provide a figure like on that.
+Sanjay Shah: That was substantial because there were 3 large exhibitions which we took part in. One was
+CPHI in Europe, then POD and PDA.
+Moderator: We take the next question from the line of Vishal Manchanda from Systematix.
+Vishal Manchanda: Sir, regarding the consumer business, that continues to decline. So if you could share whether
+we can expect a rebound there sometime soon?
+Sanjay Shah: So when you look at the consumer business, the consumer business, we have seen some decline
+because of overall demand slowdown, which is happening in Europe and U.S. As and when
+economy improves there, I think we should see a rebound.
+The other thing is with the U.S. FDA or U.S. agreement happening and the EU FTA happening,
+once this gets signed and implemented, you should basically see some advantage coming to
+India as compared to its peers in terms of exports. So you would see probably a couple of
+quarters, but post that, you should see improvement happening on that part of the business.
+Vishal Manchanda: Would this stabilize at current level or there can be further downside from current numbers?
+Sanjay Shah: Vishal, very difficult to say because again, it depends on how things pan out globally in these
+economies, which would be difficult for us to predict sitting here. So if you look at quarter 1,
+quarter 2, quarter 3, while we have taken on additional new business from home furnishings
+space from our customers, on existing businesses, we are seeing a drop in volumes. So that's
+something which will again depend on how does the revival happen in Europe and U.S.
+Vishal Manchanda: Right. So is there not a annual commitment that these customers give you? Or these are more
+need-based orders that you get from your customers?
+Sanjay Shah: There would be -- in some cases, there would be commitments. In a lot of these cases, this would
+be regular orders, which would be based on the demand. So we do have a 52-week rolling
+forecast, so we have some sense of it, but then that forecast also will change with time.
+Vishal Manchanda: Right. And IKEA, kind of there are press articles saying IKEA is looking to source more from
+U.S. for the U.S. market. Any signals that you're getting on this?
+Shaily Engineering Plastics Limited
+February 13, 2026
+Sanjay Shah: We have not seen that. So see, what happens is when you look at it, with tariffs coming down
+from 15% to 18%, India will have a significant advantage against its peers for exports to the
+U.S.
+Vishal Manchanda: Okay. Got it. And sir, just one final one on the commitments that you say you have commitments
+for 50% of the capacity at Abu Dhabi. Are these commitments in form of capital advances? So
+like do they fund 50% of your capex? Is that the way these commitments work?
+Amit Sanghvi: No. I think I mentioned this in 2 of my previous calls, but with every customer, it's different. In
+some customers ,we do in a structure where an advance is given. Advance can range from
+anything from 20% to 40%. And in most cases, it will always be a take-or-pay contract. So every
+year, there's a certain minimum volume guaranteed by the customer, which they have to
+purchase.
+Vishal Manchanda: And this volume guarantees for multiple years that they provide, let's say, for the next 5 years
+since inception?
+Amit Sanghvi: Yes. I mean, look, it's to the customer's benefit to do that because if someone is taking a pen
+from us for Semaglutide and they only have a contract for 1 year, next year, I may not have
+supply for them because this market is like that. There's more demand than supply.
+Moderator: We take the next question from the line of Harshh Shah from JM Financial PMS.
+Harshh Shah: A few questions from my side. So firstly, once again on the consumer business. So I understand,
+as you mentioned that demand is kind of changing both in U.S. and Europe. But from a modeling
+perspective, would it be right assumption to kind of take a mid-single digit kind of growth
+annually in this business? Or do you probably feel that post the treaties, things could materially
+change in our favor?
+Sanjay Shah: So Harshh, it will depend. So I think it's a little too early to talk about it. The EU needs to be
+ratified. India U.S. there are a lot of discussions going on while there is some sort of a framework
+agreement agreed upon, but there's still some discussions which are going on. So it's a little too
+early to talk about it.
+Harsh Shah: Got it. Okay. No worries. On the pens' guidance in terms of volumes which you had given
+probably at the start of this financial year of almost around 30 million odd, would you retain that
+guidance for FY '26?
+Amit Sanghvi: Yes. And it will be a little lower given our qualification activities are delayed by 3 months. So
+it will be slightly lower, but generally...
+Sanjay Shah: It's the same. Broadly it's the same, right?
+Amit Sanghvi: Yes.
+Harsh Shah: Okay. Got it. And on the new capacity expansion in the UAE, right, if you could kind of walk
+us through in terms of the rationale why UAE was chosen as the location. So correct me if I'm
+wrong. So is it that your focus would be more on the regulated markets where the IP protection
+Shaily Engineering Plastics Limited
+February 13, 2026
+on the pens would be much stronger vis-a-vis markets like India, wherein there's a lot of Chinese
+competition as well coming in? And also some color on the revenue and the payback period you
+would have assumed at the current juncture for the UAE plant?
+Amit Sanghvi: We'll not talk about revenue and payback in this call. I think when we get closer to taking a call
+on finalizing this, maybe we can announce it then. On the rationale for the UAE plant, if you
+look at the business for healthcare, particularly, we import resin. We import equipment and in
+Shaily's case, we're also importing people, right? So key senior engineering talent within Shaily
+running the healthcare business are expats.
+Now maybe there is certainly a savings when you do all of these imports within the country. But
+more than anything else, the expats we hire come from regions in Asia where personal income
+tax is a lot lower. It's less than 50% of what it is in India. So we actually end up paying someone
+2x what they should be getting paid just to bring them to India. So we're not able to, at the end
+of it, justify the cost of gaining this capability given the scale that we want to grow at.
+So there's a lot of benefit of being here. I never wanted to mention this, but we lost out on a
+particular very large contract a year ago when Operation Sindoor happened just because the
+customer saw risk in their clinical program. So we have a very nice base in India. We'll continue
+to operate and grow that, but we need to have a business continuity plan in place. And there are
+large customers who will look at that very, very closely and not want to have all their eggs in
+one basket. So that's the rationale.
+Harsh Shah: Got it. And one last question before I get back in the queue. So the thing that you all mentioned
+in the PPT with respect to the 2 new contracts with global companies for pen injectors. So would
+these be completely newer customers? Or how should one read this?
+Amit Sanghvi: One is an existing customer, new project, one is a completely new customer.
+Moderator: We take the next question from the line of Ritesh Shah from Investec.
+Ritesh Shah: Quick questions. Sanjay bhai, you indicated around 30 million pens this year. Can you give
+guidance for '27, '28, if it's possible?
+Sanjay Shah: Ritesh, probably, I would say wait till the end of the year and then we can probably give an idea
+on that.
+Ritesh Shah: Okay. Second question is the consumer business has actually reported a decline on a year-on-
+year basis. Now in a way, this should be a good thing for a gross margin if we look at it on a
+sequential basis. So despite stellar growth what we have seen in healthcare, how should we
+comprehend the gross margin profile on a sequential basis?
+Sanjay Shah: So if you look at on a stand-alone basis, the gross margins have improved on a sequential basis.
+So the Q2 margins were at about 55%. The Q3 margins are at about 56%. So you have seen a
+1% increase in terms of gross margins. So it's been marginal, but yes, it has been there.
+Shaily Engineering Plastics Limited
+February 13, 2026
+Ritesh Shah: Correct. And on consol basis, basically, you did indicate about the revenue which has not been
+booked, the cost was there. If it's possible for you to quantify that number, basically, probably
+at a consol level, it will help us better appreciate the numbers?
+Sanjay Shah: So I already indicated a number on the labor code, which is about INR90 lakhs to INR1 crores.
+And then there will be costs related to exhibitions and other costs, which is there, which I think
+when you look at the numbers, you should be able to arrive at the number.
+Ritesh Shah: No, I'm referring to at the gross margin level, you indicated there was a revenue which was there
+between consol and stand-alone you were explaining, which was not booked in Q3…
+Sanjay Shah: Right.
+Ritesh Shah: And some income will be actually booked in Q4. Would it be possible for you to qualify that
+income number?
+Sanjay Shah: Again, Ritesh, I would basically refrain from giving a number here because a lot of this is
+milestone based, but you will see some of this revenue getting booked in quarter 4.
+Ritesh Shah: Sure. Okay. A few questions for Amit. Amit, you indicated the high-speed line under
+qualification. This was with respect to the first question that you answered about the next line
+by next week and the other one by July end. Can you detail like what are we referring to here?
+Amit Sanghvi: Sorry, Ritesh, I didn't understand the question. What are we referring to in terms of the line or...
+Ritesh Shah: Yes. You said high-speed line under qualification. So which qualification...
+Amit Sanghvi: Pen assembly.
+Ritesh Shah: Okay. So it's more procedural, okay. That's fine. And with respect to the UAE capacity what we
+have announced, how should we read into this capacity? Is this like on a 4 capacity cavity mould
+or a 8 cavity mould? And how does it stack up versus the facility that we have in Baroda from a
+technological standpoint?
+Amit Sanghvi: So Baroda, we currently run a combination -- again, different on different products, but it's a
+combination of 4 cavity, 8 cavity and 16 cavity, right? So 16 cavity is only there for the lines
+which are supplying for GLP-1s. And there's only 2 lines doing that, right? All the rest of our
+products would be 4 and 8 cavities. In Abu Dhabi, we're looking at only 16 cavities.
+There will be no 8 cavity production lines so it's basically all high-speed lines in Abu Dhabi. So
+each line is capable of producing somewhere around 25 million to 28 million pens or devices
+per year, largely automated. Even our India facility is fairly automated, but this would be a much
+higher level of automation than that.
+Ritesh Shah: Sure. And in the presentation, we have indicated Q4 FY '28 as the commissioning. If we had to
+read on the dispatches for FY '29, FY '30, I understand you won't probably give the number, but
+hypothetically, if we are 100% booked, what is the dispatch quantum it can happen? I'm not
+Shaily Engineering Plastics Limited
+February 13, 2026
+looking at it from a commercial standpoint. I'm just looking at it from a manufacturing
+standpoint. Can there be any start-up issues? Or is it something which is very, very smooth?
+Amit Sanghvi: That's what we are having right now. We're having start-up issues, right? That's why
+qualification, which should have happened in possibly in October last year, in Feb this year, it's
+still ongoing because the line is a very, very complicated line. And it's taking a lot more than we
+anticipated.
+Ritesh Shah: Sure. And would it be possible for us to give some more flavor on the consumer electronics
+supplies that we have already started, basically how we entered in this business because
+historically, we have looked at high margin, high ROCE SKUs. This could be high volume,
+probably low margin. What is the thought process? And what is the scope of revenue margin
+profile opportunity that we have over here?
+Amit Sanghvi: Look, it's a very big opportunity and very scalable opportunity, right? So maybe if you look at
+supply chain in China, each of these plastic guys that participate in consumer electronics
+opportunities, especially the high-end, more high-precision small parts, high complexity, each
+of them do revenues of between USD300 million to USD0.5 billion - USD600 million, right,
+annually.
+And they've all kind of grown to that level maybe within a span of 10 years, really. So what we
+see is that this particular opportunity is highly, highly scalable in terms that it's long-term
+scalable. It's a very high amount of revenue that you can generate.
+And because of the complexity, which takes out a lot of your competition, right, not everybody
+can do it, first of all, very, very difficult. You'll find a handful who will be actually be able to do
+this.
+So which means that there is also margin to be earned. The margin is not going to be healthcare
+margins, but I'd say certainly higher than our home furnishings, much, I would say, higher than
+our home furnishings business. So you've got better margin, high complexity, which means
+there's return for someone else to enter and better margin profile. I mean, I think it's a good mix.
+Ritesh Shah: Sure. And what sort of capex will we look for this particular business? I would presume like
+we'll be running out of capacity very quickly over here. So how should we look at the
+incremental capital allocation for this part of the business?
+Amit Sanghvi: We're working on the capex plan. I think we don't have a very concrete answer yet, but it will
+be available shortly.
+Moderator: We take the next question from the line of Nirali Gopani from Unique PMS.
+Nirali Gopani: Congratulations on a good set of results. Amit, my first question is on the capacity time line.
+Now when we expect to sell around 30 million pens a few years and there in the very near future
+and the capacity to come up towards the end of FY '28, do you see any capacity constraint that
+we might see in the next 2 years? And is there an option to add further capacity in India if
+needed?
+Shaily Engineering Plastics Limited
+February 13, 2026
+Amit Sanghvi: No, no. We did not intend to add the the 25 million pen line, which is being delivered in end
+April, beginning of May. We never intended that in India, but we had to do it, essentially because
+you can't execute a full project in a foreign country in 10 months.
+I mean, we can do it in India in 10 months, but outside of India, it's not possible to do it in such
+a short time. So we decided to max out the capacity in India. We don't have any more building
+space left. We don't have any more factory space left in India. So we'd have to build new
+anyways.
+And when we talk about capacity, you have to understand that most of our contracts will stipulate
+a upside of 20% to 25% depending on what a customer is potentially signing. So for example, if
+we have a capacity of 80 million pens in India, the guaranteed volume that we have is 80% of
+that, right?
+So we always have to have spare capacity available for managing launches, managing
+seasonality, managing a sudden spike in demand from an X product versus a Y product. So
+capacity essentially never gets 100% utilized and you expect that it will be around 80% utilized.
+Nirali Gopani: Perfect. Very clear. And secondly, Amit, on Axiom, I understand that the launch will be 3 years
+out and it's still far. But any directional update that you would like to share on onboarding of
+customer or signing any contract? Any time line that when can it happen?
+Amit Sanghvi: We have quite a few advanced stage discussions ongoing, 2 in particular, to be honest, regarding
+GLP-1s for novel molecules. Okay. All of you keep your fingers crossed and pray for us. It could
+be this year. So we could look at potentially signing on a partner, a customer for one of our more
+innovative products this year. Sorry, this year, this calendar year, not financial year.
+Nirali Gopani: Right. Very interesting. And Amit, not looking at the quarterly numbers, but U.K., we have a
+pipeline to grow substantially over the next 2, 3, 4 years, right? The pipeline, in your view, looks
+strong for the U.K. subsidiary to deliver numbers?
+Amit Sanghvi: Absolutely. We've got 7 new projects in the pipeline and each of them could have multiple
+customers. So we've got 7 new projects in the pipeline. In fact, we are discussing how quickly
+we can implement this. We don't have the resourcing available. So U.K. pipeline is very strong.
+I don't see any challenges for the next 3 to 4 years.
+Nirali Gopani: Okay. Okay. And one last question on the numbers…
+Moderator: Ms. Nirali, I would request you to join back the queue for more questions. We take the next
+question from the line of Kunal Bhatia from Dalal and Broacha Stock Broking Limited.
+Kunal Bhatia: Sir, I just had 2 questions. One was regarding the Abu Dhabi facility which we have, which we
+would be starting -- you've mentioned some bit about the funding on that, but if you could be
+more elaborative on how are we going to fund that?
+Shaily Engineering Plastics Limited
+February 13, 2026
+Secondly, also will this facility be used only for the GLP-1 opportunity or even for other
+therapies? And the final question is also, if you could give some sense now since that global
+capacities have also increased, how are you facing the pricing end for the pens?
+Sanjay Shah: Yes. So I'll probably answer the first part of the question in terms of funding. We basically look
+at funding it by a mix of internal accruals and debt. The implementation time, as Amit indicated
+in his opening remarks, is 18 months. So we will have enough of accruals, which we would be
+able to generate and we will be approaching our bankers as well as bankers in Abu Dhabi for
+funding the same. Amit?
+Amit Sanghvi: On the other 2, pricing, yes, there is pressure on pricing, but it's not crashing down or anything.
+Anyways, you guys don't have this information and we cannot provide it.
+But from what we had quoted when we first submitted proposals on high-volume offtake, it's
+not a whole lot different. We've seen essentially10% to 15% price erosion on those numbers.
+But that's a given. When you sit down to negotiate large volume contracts, you will see that
+happen anyways. Pricing will be under pressure for sure.
+But I think most companies now have their COGS for Semaglutide somewhere in the range of
+$5 to $7 or $6 to $8. So let's take a low point of $6, high point of $8. I'm not sure if a $0.30,
+$0.40 difference really makes that much of an impact and is it worthwhile taking the risk. So to
+be honest, yes, we anticipate some further price erosion, but it will probably stabilize after the
+first 24 months of supply.
+Kunal Bhatia: So sir, this was much lesser than what was anticipated earlier, if I'm not wrong?
+Amit Sanghvi: Yes, the erosion is lesser. You see pen capacities are limited. If you look at API, API prices
+eroded very significantly. But the most complex part of the entire combination product is the
+device.
+Sanjay Shah: And there are too many players also who are there on the device front.
+Moderator: We take the next question from the line of Pritesh from Lucky Investments.
+Pritesh: So I have 2 questions. One on the bridge of the capacity addition in India. So you are supposed
+to add 25 million, 2 lines and take it to 80 million. Did I hear correctly that one of the line is
+slated to come in quarter 1 of '27? Is that correct?
+Amit Sanghvi: Right. One line is already at Shaily, Pritesh, and it's under qualification. It arrived in Shaily in
+December. It's currently under qualification. The second line will arrive end of April, beginning
+of May and should be qualified by end of July.
+Pritesh: So the line which was supposed to be qualified in quarter 3, current quarter, is yet to be qualified.
+And then there are another line will come in quarter 2 next year. So that will take it to 80 million?
+Amit Sanghvi: Correct.
+Shaily Engineering Plastics Limited
+February 13, 2026
+Pritesh: Second question is, we are seeing some movements on the oral GLPs. So Novo did that. Novo
+launched the Wegovy one, and then there was a rip-off in the form of Him & Hers. There was a
+launch there. So you had some assessment of the oral GLP market of the Sema or of the GLP.
+Any comment there, any observation, any changes on the oral as a percentage of the total GLP?
+Amit Sanghvi: So look, as far as Him & Hers is concerned, there is ongoing litigation. My information is that
+it will be very difficult for them to come out with that product. Again, I don't want to speculate,
+but we'll see what happens.
+Basic, the fundamental is that the oral GLP-1 is not as effective and has more side effects because
+of bioavailability and the API content that goes in a product, right? So it's a daily API content
+of 14 mg versus once a week of 2.4 mg, right?
+So you can imagine you do 14 times 7 and you have your math of API comparison between oral
+and injectable. Oral will have a market share. They even currently do, but it's not going to impact
+our business.
+Pritesh: And this qualification is what you're mentioning about these lines. So what are you referring
+from the qualification? Basically, what has to happen?
+Amit Sanghvi: Oh, so much. First, you have to assemble the whole line, then you have to qualify each and every
+station. So an 80 parts per minute line conducting 25 to 30 operations on the line has a lot of
+equipment. And you have to qualify each of those equipment...
+Moderator: It seems like the line for sir has been disconnected.
+Moderator: The line to the management has been connected. Sir, you can go ahead.
+Amit Sanghvi: Okay. I don't know if Pritesh is still on. So it's a very complex piece of equipment. So you have
+to qualify each and every operation separately. And then you have to qualify the whole thing
+together, right? So we're at a stage right now where we've been running the line at 60 parts per
+minute, 70 parts per minute.
+We getting high levels of rejection, 30% rejection and that doesn't have to do with the quality of
+the product, but has to do with the settings of why the machine is rejecting it. So we're probably
+in the last stage of that process right now. We should be able to get that up and running over the
+next few weeks.
+Pritesh: Qualification is from a customer or from the USFDA?
+Amit Sanghvi: No, the line. Qualification of the line.
+Sanjay Shah: So Pritesh, this is an internal qualification, which Shaily does and certifies that the product is
+meeting our specification. So this is a qualification which we end up doing it internally.
+Pritesh: So just on the margin side and I did some assessment of the margin based on the 30 million
+devices that you're selling. When you move towards a larger scale and this line is obviously fully
+Shaily Engineering Plastics Limited
+February 13, 2026
+utilized and also when you move towards a larger scale of volume between what is today and
+then, will there be a margin differential?
+Amit Sanghvi: Sorry, Pritesh, are you talking about between India and Abu Dhabi or...
+Pritesh: No, no. Just healthcare. I'm talking about healthcare in general, the healthcare business in
+general. When you move from the current scale to the higher scale and then will there be a
+margin differential between what you're doing -- a margin difference between what you're doing
+today and what you do then, considering the scale and on the other hand, considering the pricing
+of the product?
+Amit Sanghvi: Yes. So if you look at just manufacturing margin, what will happen is we know that
+manufacturing higher volume product is at a lower price, right? But because of the scale, once
+we stabilize the operations, it's fully automated, a lot of manual intervention. So far, we've been
+doing a lot manually, right?
+So the overhead cost is high. We should essentially be at a point where we are able to maintain
+the same margins or there could be a time that we increase them. But generally speaking, these
+are the margins that we will maintain on the pharma business.
+Moderator: We take the next question from the line of Lucky Agarwal from Equirus Securities. I would
+request Mr. Lucky to join back the queue again till then. The next question is from the line of
+Aman from Astute Investment Management.
+Aman: Sir, my question is on the India launch. So how many customers of ours do you expect -- do we
+have today in India? And how many do you think we'll be able to launch in March itself? And
+are they using mostly Harmony or are some of them also using Neo?
+Amit Sanghvi: No. They're using both. We have customers that use Harmony, customers that use Neo. We have
+-- I think if I look at the guys who have been -- who received approval from CDSO, I think
+there's both Harmony and Neo. So I mean, whether it's March -- Harmony will go live in March
+for sure in India. Neo might be April, could be March, could be May, I really don't know. But
+sometime in the first 3 months of launch.
+Aman: Sure. And continuing with this, we had read about that after India launch, it's like automatic
+approval in almost 50, 200 countries, except the big ones. So do you expect that after India
+launch in March, most of our customer is also launching in whatever, 50, 100 geographies, which
+is opening up directly after that using the same COPP?
+Amit Sanghvi: I would assume wherever these guys have reach and partnerships already in place, they will
+launch. Everybody will prioritize volume for Canada. But beyond that, I think they will launch
+in all countries.
+Aman: Sure, sir. And any update on Teri launch in EU or U.S.?
+Shaily Engineering Plastics Limited
+February 13, 2026
+Amit Sanghvi: I think approval is there, but focus is on Sema right now. Teri launch will happen at some point
+once this Sema launch is completed. That is my assumption or possibly the latest information I
+have, so.
+Aman: Sure. And among the other geographies like Turkey and Brazil, do you expect it to be launched
+in quarter 2? Or do you see there can be further delays in that?
+Amit Sanghvi: I'd say there's a very high probability of quarter 1 launches, but I don't think it will get delayed
+beyond quarter 2.
+Amit Sanghvi: But you have to understand my information is probably just as accurate as yours, same similar
+sources. So I'm assuming that everybody will be able to launch, will get approvals.
+Aman: Sure, sir. That makes sense. On the semiconductor side, you talked about that the product has to
+be near the fabs (fabrication facility). And in my understanding, there are like 4 fabs in Gujarat.
+Amit Sanghvi: Yes.
+Aman: So are we in talks with at least 2 to 3 of them because some are maybe expected to commercialize
+their fabs in CY '27 itself? So are we in conversation with all? And do you think that do we
+require all 3 or 4 for this product to scale or even one is good enough for it to scale massively?
+Amit Sanghvi: Sanjay bhai, you want to take this?
+Sanjay Shah: Yes. So, basically, we would be looking at working with all the 4, is where we would talk about
+it. Most of these guys basically, as you rightly said, will look at starting commercial operations
+by next year. So that's when we would basically be looking at supplies. There will be some
+supplies which can probably be happen towards the end of the year.
+Aman: Okay. But we are in talks with all 4?
+Sanjay Shah: Yes.
+Aman: Sure. Final question is on the margin side for this quarter in Healthcare. I understand that one-
+off because of delay. But was there any mix change also and maybe more contract manufacturing
+and more insulin versus GLP-1s?
+And do you expect, say, quarter 4 with the GLP-1 scaling and maybe quarter 1 back maybe even
+more. So do you expect it to go back like quarter 2, the margins of overall business?
+Amit Sanghvi: I'd expect quarter 1 to go back for sure. Quarter 4, like I said, we're still qualifying the line.
+You're not going to have a lot coming from the high-speed line in quarter 4. So margins will
+certainly go up in quarter 4, but you will see full normalization only in quarter 1.
+Moderator: We take the next question from the line of Akhil Parekh from B&K Securities.
+Akhil Parekh: I have 2 questions. Amit, you couple of times mentioned that there is a difference between the
+supply and demand, right, the demand continues to be higher for the GLP-1 devices. Any
+Shaily Engineering Plastics Limited
+February 13, 2026
+ballpark difference between the supply and demand you would like to highlight, specifically
+from a near term, like, next 12 to 18 months, what that percentage would be?
+Amit Sanghvi: So demand is higher. When we look at capacity build and demand, we always look at sort of a
+minimum offtake plus an upside, right? Given that you look at players globally for pens, you
+really have, barring maybe some new Chinese entrants, which will supply into limited markets
+on account of IP infringement, you really have only 4 players globally. So I would assume that
+supply is limited and supply will only happen with firm commitments.
+Akhil Parekh: So is it fair to assume no big capacities will be coming at least in near term basically?
+Amit Sanghvi: We know the capacities which are already set up or in progress of being set up. But even with
+those capacities, we're not necessarily looking at a scenario where there's an overcapacity.
+Akhil Parekh: Okay. Got it. That's helpful. And second and last question, you mentioned that capacity
+expansion is backed by orders from our clients. So what are the terms like if the client don't
+oblige and they don't buy the required order, any penalties which are there as a part of the
+contract? And that's my second and last question.
+Amit Sanghvi: They're full take-or-pay contracts. Now that doesn't mean that we're not going to help our
+customers out in periods when they need it. But essentially, if you don't buy, you still have to
+pay the same value.
+Moderator: We take the next question from the line of Ankit Gupta from Bamboo Capital.
+Ankit Gupta: Sir, on the Turkey and Brazil market, when do we expect to see Shaily devices being launched
+there? Any update that we have from our clients?
+Amit Sanghvi: Not really. We assume quarter 1, quarter 2 next year, don't know. Don't quote me on that.
+Ankit Gupta: But do you think we'll have a significant market share or partners will have significant market
+share in this market? Or how many players are we planning to supply there?
+Amit Sanghvi: I think certainly, 3, 4 of our large customers have partnerships. So we would assume that they
+would be successful in those regions.
+Ankit Gupta: Sure. And Amit, with both the lines coming in operations by Q1 of next year, should we expect
+that for the expansion capacity in India, we should be looking at, at least 70% to 80% capacity
+utilization for FY '27?
+Amit Sanghvi: No, '28. It takes time to scale up. It's not easy. Technically also not easy.
+Ankit Gupta: Sure. And by that time, we'll also have the UAE expansion coming up by -- at least by the end
+of FY '28?
+Amit Sanghvi: Yes. Yes. With expansion, expansion lead times are -- just equipment lead times have now
+become 15 months. And if you have to build a facility, it goes to 18, 20 months. It's hard to
+Shaily Engineering Plastics Limited
+February 13, 2026
+predict. You could always have a scenario where you have very low utilization in the first year.
+But I think generally, the business plan is solid. We need the capacity. So that's what we're doing.
+Ankit Gupta: Just one last question on the innovator side. You did talk about keeping our finger crossed on
+getting some contracts with at least one of them in this current year. But in terms of scalability
+and the time line, if you can give an indication how big can this be for Shaily? And when can
+we expect some supplies to start for that?
+Amit Sanghvi: With innovator, from the time you engage with them on with an official agreement in place,
+minimum time line for launch will be somewhere between 2 and 3 years. And then it really
+depends on their success and how well the molecule does.
+But we're bullish. We think at a minimum 50 million pens to 100 million pens is the potential
+for innovators to come in. Now we don't know whether it happens in '30, '29, '31, I really don't
+know. But that's part of the journey.
+Ankit Gupta: Okay. Okay. Just one follow-up on this. So with this UAE expansion coming in, so let's say, for
+the innovator also, we might have to -- and hopefully, we get the contract for innovator supplies
+also, are we looking for further expansion apart from the Abu Dhabi or this expansion might
+also cater to that?
+Amit Sanghvi: If a very large volume commitment comes in where we have to do 50 million additional pens,
+then we will need to expand that also.
+Moderator: We take the next question from the line of Bhavika Jain from Niveshaay.
+Bhavika Jain: So basically, I want understanding on the consumer electronics side. I want to understand
+management view what exactly we are planning to do in the consumer electronic and from which
+region this is expected to come, the business?
+Amit Sanghvi: We are planning to participate in anything in consumer electronics where there is high
+complexity, high precision and small parts, including combination parts where you have metal
+and plastic. And the business is obviously going to come primarily from customers setting up
+their final assembly in India.
+Bhavika Jain: Just a follow-up that because of my understanding, like there are a lot of value chain shifting
+happening like because of China plus one and a lot of things are coming to India. So basically,
+understand that are we participating in that thing or we are doing something totally different?
+Like are we trying to cater this shift happening in the value chain or we are going to do something
+other than this?
+Amit Sanghvi: I would say a combination. We certainly are a part of the shift, -- wanting to participate because
+of the shift. And I think what's different is only the parts or the type of products in which we
+participate. So we likely will not do simple stuff because simple stuff
+Bhavika Jain: Will it be high margin...?
+Amit Sanghvi: Relatively speaking, yes. High is a very…
+Shaily Engineering Plastics Limited
+February 13, 2026
+Sanjay Shah: It's a loaded statement. It's a loaded statement.
+Bhavika Jain: It's aligned with your business margins.
+Amit Sanghvi: It will be higher than our current consumer business and that's where I will end that. Yes.
+Bhavika Jain: Okay. And when we are expecting this consumer electronics segment coming live?
+Amit Sanghvi: Hopefully, over the next 12 to 18 months.
+Moderator: We take the next question from the line of Shubham Aggarwal from Burman Capital.
+Shubham Aggarwal: Sir, I just want to understand the supply and the competition side globally, like who are the large
+players if you comment on that. And since you mentioned that the demand will outstrip supply
+in the next 12 to 18 months, sir, I just want to understand why then are we talking about price
+erosion in the large volume contracts and from that, I mean, but if you could help out.
+Amit Sanghvi: Sorry, Shubham, you were very choppy. I actually didn't get all of it. You asked something about
+price erosion?
+Shubham Aggarwal: Yes, sir. Just want to understand the competition and supply globally, specifically for the GLP-
+1 drugs and why are we looking at price erosion if you are kind of mentioned that the demand
+for these GLP-1 drugs will outstrip the supply part? So just want to understand both of these
+angles together.
+Amit Sanghvi: Price erosion will not happen because of a demand constraint. The reason for price erosion will
+be end market competition, right? So you need to support your customer so that they get more
+market share. If they get more market share, you get more market share. It's as simple as that.
+And if you look at the number of filers and GLP-1s in general for Semaglutide, the number is
+exceptionally high. So everybody -- the end customers are going to fight for volume for market
+dominance. And that's why you will see all of this play out in the first 24 months. After 24
+months, it likely will consolidate and stabilize.
+Shubham Aggarwal: Understood, sir. Got it. Secondly, sir, if you can comment on what's the capacity utilization that
+you currently have on the 30 million capacity currently for the healthcare space?
+Sanjay Shah: So look, we don't report individual capacity.
+Amit Sanghvi: Yes. But you can assume that we're adding 25 million plus 25 million, 50 million, which takes
+us to a total of 80 million capacity. And we're planning to supply 30 million, then we're nearly
+capped out.
+Shubham Aggarwal: Understood. Got it. Sir, lastly, I think you mentioned that the Semaglutide prices for most of
+your customers will be at USD6 to USD8. This is like the price per pen or per...
+Amit Sanghvi: No, I didn't say prices, I said COGS. I did not say price, I said cost of goods.
+Shaily Engineering Plastics Limited
+February 13, 2026
+Shubham Aggarwal: Understood. So USD6 to USD8, including all the fill/finish costs as well as the pen device and
+any other cost, right?
+Amit Sanghvi: That's the current COGS cost, yes.
+Moderator: Ladies and gentlemen, due to time constraints, we take that as the last question. I would now
+like to hand the conference over to the management for closing comments. Over to you, sir.
+Amit Sanghvi: Thank you, everyone, for joining the call. We hope that we've been able to answer your questions
+adequately. For any further information, I request you to get in touch with SGA, our Investor
+Relations Advisors. Thank you and have a great evening.
+Sanjay Shah: Thank you. Thank you, everybody.
+Moderator: Thank you. On behalf of Shaily Engineering Plastics Limited, that concludes this conference.
+Thank you for joining us, and you may now disconnect your line.

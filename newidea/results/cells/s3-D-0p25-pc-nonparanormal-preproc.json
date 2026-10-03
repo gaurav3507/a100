@@ -1,0 +1,240 @@
+{
+  "cell_id": "s3-D-0p25-pc-nonparanormal-preproc",
+  "data_fingerprint": {
+    "dtype": "<f8",
+    "scm_config_hash": "72eb043597cef1b86c1f7144fccfa757d958892822040fc4fc194b533e208ad1",
+    "sha256": "be0097970b0e8a07bd4a6725bcba76a920c1ca9717a7cdc14728aadc5c7b0bcf",
+    "shape": [
+      65536,
+      3,
+      10
+    ]
+  },
+  "exact_transform_metadata": {
+    "lambda": 0.25,
+    "pairs": [
+      {
+        "group": 0,
+        "source": 5,
+        "target": 8
+      },
+      {
+        "group": 1,
+        "source": 7,
+        "target": 1
+      },
+      {
+        "group": 2,
+        "source": 3,
+        "target": 8
+      }
+    ],
+    "seed": 103002
+  },
+  "gcarl_submodule_commit": "0020bfce34736d61d70ab8175f061d02951a7ed4",
+  "generator_source_path": "vendor/GCaRL/subfunc/generate_dataset.py",
+  "inapplicable_metrics_reason": null,
+  "inter_group_f1": 0.928,
+  "inter_group_precision": 0.8656716417910447,
+  "inter_group_recall": 1.0,
+  "inter_group_shd": 9,
+  "intra_group_metrics": {
+    "f1": 0.8679245283018867,
+    "fn": 1,
+    "fp": 6,
+    "precision": 0.7931034482758621,
+    "recall": 0.9583333333333334,
+    "shd": 7,
+    "tp": 23
+  },
+  "intra_group_status": "EXPLORATORY_ONLY",
+  "method": "PC-nonparanormal-preproc",
+  "method_implementation_version": {
+    "causal-learn": "0.1.4.8",
+    "gcastle": "1.0.4",
+    "lingam": "1.12.2",
+    "notears_commit": "4a9ab19fe502e392503da331773c5223d82d3666",
+    "torch": "2.3.1"
+  },
+  "method_seed": 203001,
+  "method_type": "pc",
+  "normalized_degradation": -0.008000000000000108,
+  "oracle_ceiling": 0.9206349206349206,
+  "pc_orientation_load_bearing": false,
+  "pc_orientation_metrics": {
+    "f1": 0.3278688524590164,
+    "fn": 38,
+    "fp": 44,
+    "precision": 0.3125,
+    "recall": 0.3448275862068966,
+    "tp": 20
+  },
+  "pc_skeleton_metrics": {
+    "f1": 0.928,
+    "fn": 0,
+    "fp": 9,
+    "precision": 0.8656716417910447,
+    "recall": 1.0,
+    "shd": 9,
+    "tp": 58
+  },
+  "primary_inter_group_metric_type": "skeleton_f1",
+  "project_commit": "a91f08ca080d6113f7dc87e1146f8e18ded567ae",
+  "rank_aware_mcc": 0.996901363255292,
+  "resolved_config": {
+    "method_procedure": {
+      "audit_label": "ORACLE-TUNED COMPATIBILITY AUDIT",
+      "common": {
+        "standardize_per_dataset": true
+      },
+      "excluded": {
+        "CAM": {
+          "reason": "R runtime unavailable, so import and smoke fit could not be performed"
+        }
+      },
+      "materiality": {
+        "absolute_f1_drop": 0.2,
+        "normalized_degradation": 0.25
+      },
+      "methods": {
+        "DirectLiNGAM": {
+          "implementation": "lingam",
+          "random_state": "method_seed",
+          "type": "directed",
+          "weight_threshold": 0.1
+        },
+        "GOLEM": {
+          "checkpoint_iter": 1000,
+          "device_type": "auto",
+          "equal_variances": true,
+          "graph_threshold": 0.1,
+          "implementation": "gCastle",
+          "lambda_1": 0.02,
+          "lambda_2": 5.0,
+          "learning_rate": 0.001,
+          "num_iter": 5000,
+          "type": "directed"
+        },
+        "NOTEARS-MLP": {
+          "device_type": "auto",
+          "h_tol": 1e-08,
+          "hidden_layers": [
+            10,
+            1
+          ],
+          "implementation": "gCastle",
+          "lambda1": 0.01,
+          "lambda2": 0.01,
+          "max_iter": 50,
+          "rho_max": "1.0e16",
+          "type": "directed",
+          "weight_threshold": 0.1
+        },
+        "NOTEARS-linear": {
+          "h_tol": 1e-08,
+          "implementation": "pinned xunzheng/notears with exact cached covariance l2 objective",
+          "lambda1": 0.01,
+          "max_iter": 100,
+          "rho_max": "1.0e16",
+          "type": "directed",
+          "weight_threshold": 0.1
+        },
+        "PC-Pearson": {
+          "alpha": 0.01,
+          "implementation": "causal-learn",
+          "stable": true,
+          "type": "pc",
+          "uc_priority": 2,
+          "uc_rule": 0
+        },
+        "PC-nonparanormal-preproc": {
+          "alpha": 0.01,
+          "implementation": "causal-learn",
+          "preprocessing": "rank_average_then_normal_ppf_using_(rank-0.5)/n",
+          "stable": true,
+          "type": "pc",
+          "uc_priority": 2,
+          "uc_rule": 0
+        }
+      },
+      "oracle_thresholds": {
+        "directed_f1": 0.8,
+        "orientation_f1": 0.8,
+        "skeleton_f1": 0.8
+      }
+    },
+    "sim1": {
+      "ar_alpha": 3.0,
+      "ar_beta": 0.8,
+      "dag": true,
+      "dist_type": "Laplace",
+      "lam1_range": [
+        0.9,
+        1.0
+      ],
+      "lam2_range": [
+        1.0,
+        1.0
+      ],
+      "lamin1_range": [
+        0.9,
+        1.0
+      ],
+      "lamin2_range": [
+        1.0,
+        1.0
+      ],
+      "num_data": 65536,
+      "num_dim": 10,
+      "num_group": 3,
+      "num_latent": null,
+      "num_layer": 3,
+      "num_neighbor": 2,
+      "num_neighbor_in": 1,
+      "scm_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  "scm_seed": 3,
+  "standard_mcc": 0.9970531527997268,
+  "timestamp": "2026-08-27T00:50:57.888333+00:00",
+  "transform_class": "BOUNDARY",
+  "transform_family": "D",
+  "transform_parameters": {
+    "lambda": 0.25,
+    "pairs": [
+      {
+        "group": 0,
+        "source": 5,
+        "target": 8
+      },
+      {
+        "group": 1,
+        "source": 7,
+        "target": 1
+      },
+      {
+        "group": 2,
+        "source": 3,
+        "target": 8
+      }
+    ],
+    "seed": 103002
+  },
+  "transformation_seed": 103002,
+  "transformed_fingerprint": {
+    "dtype": "<f8",
+    "scm_config_hash": "72eb043597cef1b86c1f7144fccfa757d958892822040fc4fc194b533e208ad1",
+    "sha256": "b61f5a5598d975cd91da303b208ae82af3d5295bf4c94be6c27a3c2e3ea543a9",
+    "shape": [
+      65536,
+      3,
+      10
+    ]
+  }
+}

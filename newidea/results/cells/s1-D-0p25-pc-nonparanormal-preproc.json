@@ -1,0 +1,240 @@
+{
+  "cell_id": "s1-D-0p25-pc-nonparanormal-preproc",
+  "data_fingerprint": {
+    "dtype": "<f8",
+    "scm_config_hash": "72eb043597cef1b86c1f7144fccfa757d958892822040fc4fc194b533e208ad1",
+    "sha256": "50d3cd99aa4bd18af9b14141fcc0473df962dcedefdda5714fe3759dbddd7629",
+    "shape": [
+      65536,
+      3,
+      10
+    ]
+  },
+  "exact_transform_metadata": {
+    "lambda": 0.25,
+    "pairs": [
+      {
+        "group": 0,
+        "source": 7,
+        "target": 4
+      },
+      {
+        "group": 1,
+        "source": 1,
+        "target": 0
+      },
+      {
+        "group": 2,
+        "source": 7,
+        "target": 2
+      }
+    ],
+    "seed": 101002
+  },
+  "gcarl_submodule_commit": "0020bfce34736d61d70ab8175f061d02951a7ed4",
+  "generator_source_path": "vendor/GCaRL/subfunc/generate_dataset.py",
+  "inapplicable_metrics_reason": null,
+  "inter_group_f1": 0.9119999999999999,
+  "inter_group_precision": 0.8507462686567164,
+  "inter_group_recall": 0.9827586206896551,
+  "inter_group_shd": 11,
+  "intra_group_metrics": {
+    "f1": 0.8846153846153847,
+    "fn": 1,
+    "fp": 5,
+    "precision": 0.8214285714285714,
+    "recall": 0.9583333333333334,
+    "shd": 6,
+    "tp": 23
+  },
+  "intra_group_status": "EXPLORATORY_ONLY",
+  "method": "PC-nonparanormal-preproc",
+  "method_implementation_version": {
+    "causal-learn": "0.1.4.8",
+    "gcastle": "1.0.4",
+    "lingam": "1.12.2",
+    "notears_commit": "4a9ab19fe502e392503da331773c5223d82d3666",
+    "torch": "2.3.1"
+  },
+  "method_seed": 201001,
+  "method_type": "pc",
+  "normalized_degradation": 0.04082758620689658,
+  "oracle_ceiling": 0.9508196721311475,
+  "pc_orientation_load_bearing": false,
+  "pc_orientation_metrics": {
+    "f1": 0.24390243902439024,
+    "fn": 42,
+    "fp": 51,
+    "precision": 0.22727272727272727,
+    "recall": 0.2631578947368421,
+    "tp": 15
+  },
+  "pc_skeleton_metrics": {
+    "f1": 0.9119999999999999,
+    "fn": 1,
+    "fp": 10,
+    "precision": 0.8507462686567164,
+    "recall": 0.9827586206896551,
+    "shd": 11,
+    "tp": 57
+  },
+  "primary_inter_group_metric_type": "skeleton_f1",
+  "project_commit": "a91f08ca080d6113f7dc87e1146f8e18ded567ae",
+  "rank_aware_mcc": 0.9960998344807975,
+  "resolved_config": {
+    "method_procedure": {
+      "audit_label": "ORACLE-TUNED COMPATIBILITY AUDIT",
+      "common": {
+        "standardize_per_dataset": true
+      },
+      "excluded": {
+        "CAM": {
+          "reason": "R runtime unavailable, so import and smoke fit could not be performed"
+        }
+      },
+      "materiality": {
+        "absolute_f1_drop": 0.2,
+        "normalized_degradation": 0.25
+      },
+      "methods": {
+        "DirectLiNGAM": {
+          "implementation": "lingam",
+          "random_state": "method_seed",
+          "type": "directed",
+          "weight_threshold": 0.1
+        },
+        "GOLEM": {
+          "checkpoint_iter": 1000,
+          "device_type": "auto",
+          "equal_variances": true,
+          "graph_threshold": 0.1,
+          "implementation": "gCastle",
+          "lambda_1": 0.02,
+          "lambda_2": 5.0,
+          "learning_rate": 0.001,
+          "num_iter": 5000,
+          "type": "directed"
+        },
+        "NOTEARS-MLP": {
+          "device_type": "auto",
+          "h_tol": 1e-08,
+          "hidden_layers": [
+            10,
+            1
+          ],
+          "implementation": "gCastle",
+          "lambda1": 0.01,
+          "lambda2": 0.01,
+          "max_iter": 50,
+          "rho_max": "1.0e16",
+          "type": "directed",
+          "weight_threshold": 0.1
+        },
+        "NOTEARS-linear": {
+          "h_tol": 1e-08,
+          "implementation": "pinned xunzheng/notears with exact cached covariance l2 objective",
+          "lambda1": 0.01,
+          "max_iter": 100,
+          "rho_max": "1.0e16",
+          "type": "directed",
+          "weight_threshold": 0.1
+        },
+        "PC-Pearson": {
+          "alpha": 0.01,
+          "implementation": "causal-learn",
+          "stable": true,
+          "type": "pc",
+          "uc_priority": 2,
+          "uc_rule": 0
+        },
+        "PC-nonparanormal-preproc": {
+          "alpha": 0.01,
+          "implementation": "causal-learn",
+          "preprocessing": "rank_average_then_normal_ppf_using_(rank-0.5)/n",
+          "stable": true,
+          "type": "pc",
+          "uc_priority": 2,
+          "uc_rule": 0
+        }
+      },
+      "oracle_thresholds": {
+        "directed_f1": 0.8,
+        "orientation_f1": 0.8,
+        "skeleton_f1": 0.8
+      }
+    },
+    "sim1": {
+      "ar_alpha": 3.0,
+      "ar_beta": 0.8,
+      "dag": true,
+      "dist_type": "Laplace",
+      "lam1_range": [
+        0.9,
+        1.0
+      ],
+      "lam2_range": [
+        1.0,
+        1.0
+      ],
+      "lamin1_range": [
+        0.9,
+        1.0
+      ],
+      "lamin2_range": [
+        1.0,
+        1.0
+      ],
+      "num_data": 65536,
+      "num_dim": 10,
+      "num_group": 3,
+      "num_latent": null,
+      "num_layer": 3,
+      "num_neighbor": 2,
+      "num_neighbor_in": 1,
+      "scm_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  "scm_seed": 1,
+  "standard_mcc": 0.9969014353313986,
+  "timestamp": "2026-08-26T21:00:39.095665+00:00",
+  "transform_class": "BOUNDARY",
+  "transform_family": "D",
+  "transform_parameters": {
+    "lambda": 0.25,
+    "pairs": [
+      {
+        "group": 0,
+        "source": 7,
+        "target": 4
+      },
+      {
+        "group": 1,
+        "source": 1,
+        "target": 0
+      },
+      {
+        "group": 2,
+        "source": 7,
+        "target": 2
+      }
+    ],
+    "seed": 101002
+  },
+  "transformation_seed": 101002,
+  "transformed_fingerprint": {
+    "dtype": "<f8",
+    "scm_config_hash": "72eb043597cef1b86c1f7144fccfa757d958892822040fc4fc194b533e208ad1",
+    "sha256": "8a0ee575b81af638faca252f2566c57de26521a2439646334eafd564bb071b2e",
+    "shape": [
+      65536,
+      3,
+      10
+    ]
+  }
+}

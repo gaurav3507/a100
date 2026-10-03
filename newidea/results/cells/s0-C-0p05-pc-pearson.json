@@ -1,0 +1,206 @@
+{
+  "cell_id": "s0-C-0p05-pc-pearson",
+  "data_fingerprint": {
+    "dtype": "<f8",
+    "scm_config_hash": "72eb043597cef1b86c1f7144fccfa757d958892822040fc4fc194b533e208ad1",
+    "sha256": "45ace598f6c7a1faf6c039e224442f1c0e8bbbe6d40d3ceb6031a1f171b5c36e",
+    "shape": [
+      65536,
+      3,
+      10
+    ]
+  },
+  "exact_transform_metadata": {
+    "formula": "z + lambda * z^3",
+    "lambda": 0.05
+  },
+  "gcarl_submodule_commit": "0020bfce34736d61d70ab8175f061d02951a7ed4",
+  "generator_source_path": "vendor/GCaRL/subfunc/generate_dataset.py",
+  "inapplicable_metrics_reason": null,
+  "inter_group_f1": 0.7088607594936709,
+  "inter_group_precision": 0.5490196078431373,
+  "inter_group_recall": 1.0,
+  "inter_group_shd": 46,
+  "intra_group_metrics": {
+    "f1": 0.761904761904762,
+    "fn": 0,
+    "fp": 15,
+    "precision": 0.6153846153846154,
+    "recall": 1.0,
+    "shd": 15,
+    "tp": 24
+  },
+  "intra_group_status": "EXPLORATORY_ONLY",
+  "method": "PC-Pearson",
+  "method_implementation_version": {
+    "causal-learn": "0.1.4.8",
+    "gcastle": "1.0.4",
+    "lingam": "1.12.2",
+    "notears_commit": "4a9ab19fe502e392503da331773c5223d82d3666",
+    "torch": "2.3.1"
+  },
+  "method_seed": 200000,
+  "method_type": "pc",
+  "normalized_degradation": 0.2151898734177215,
+  "oracle_ceiling": 0.9032258064516129,
+  "pc_orientation_load_bearing": false,
+  "pc_orientation_metrics": {
+    "f1": 0.08974358974358974,
+    "fn": 49,
+    "fp": 93,
+    "precision": 0.07,
+    "recall": 0.125,
+    "tp": 7
+  },
+  "pc_skeleton_metrics": {
+    "f1": 0.7088607594936709,
+    "fn": 0,
+    "fp": 46,
+    "precision": 0.5490196078431373,
+    "recall": 1.0,
+    "shd": 46,
+    "tp": 56
+  },
+  "primary_inter_group_metric_type": "skeleton_f1",
+  "project_commit": "a91f08ca080d6113f7dc87e1146f8e18ded567ae",
+  "rank_aware_mcc": 1.0,
+  "resolved_config": {
+    "method_procedure": {
+      "audit_label": "ORACLE-TUNED COMPATIBILITY AUDIT",
+      "common": {
+        "standardize_per_dataset": true
+      },
+      "excluded": {
+        "CAM": {
+          "reason": "R runtime unavailable, so import and smoke fit could not be performed"
+        }
+      },
+      "materiality": {
+        "absolute_f1_drop": 0.2,
+        "normalized_degradation": 0.25
+      },
+      "methods": {
+        "DirectLiNGAM": {
+          "implementation": "lingam",
+          "random_state": "method_seed",
+          "type": "directed",
+          "weight_threshold": 0.1
+        },
+        "GOLEM": {
+          "checkpoint_iter": 1000,
+          "device_type": "auto",
+          "equal_variances": true,
+          "graph_threshold": 0.1,
+          "implementation": "gCastle",
+          "lambda_1": 0.02,
+          "lambda_2": 5.0,
+          "learning_rate": 0.001,
+          "num_iter": 5000,
+          "type": "directed"
+        },
+        "NOTEARS-MLP": {
+          "device_type": "auto",
+          "h_tol": 1e-08,
+          "hidden_layers": [
+            10,
+            1
+          ],
+          "implementation": "gCastle",
+          "lambda1": 0.01,
+          "lambda2": 0.01,
+          "max_iter": 50,
+          "rho_max": "1.0e16",
+          "type": "directed",
+          "weight_threshold": 0.1
+        },
+        "NOTEARS-linear": {
+          "h_tol": 1e-08,
+          "implementation": "pinned xunzheng/notears with exact cached covariance l2 objective",
+          "lambda1": 0.01,
+          "max_iter": 100,
+          "rho_max": "1.0e16",
+          "type": "directed",
+          "weight_threshold": 0.1
+        },
+        "PC-Pearson": {
+          "alpha": 0.01,
+          "implementation": "causal-learn",
+          "stable": true,
+          "type": "pc",
+          "uc_priority": 2,
+          "uc_rule": 0
+        },
+        "PC-nonparanormal-preproc": {
+          "alpha": 0.01,
+          "implementation": "causal-learn",
+          "preprocessing": "rank_average_then_normal_ppf_using_(rank-0.5)/n",
+          "stable": true,
+          "type": "pc",
+          "uc_priority": 2,
+          "uc_rule": 0
+        }
+      },
+      "oracle_thresholds": {
+        "directed_f1": 0.8,
+        "orientation_f1": 0.8,
+        "skeleton_f1": 0.8
+      }
+    },
+    "sim1": {
+      "ar_alpha": 3.0,
+      "ar_beta": 0.8,
+      "dag": true,
+      "dist_type": "Laplace",
+      "lam1_range": [
+        0.9,
+        1.0
+      ],
+      "lam2_range": [
+        1.0,
+        1.0
+      ],
+      "lamin1_range": [
+        0.9,
+        1.0
+      ],
+      "lamin2_range": [
+        1.0,
+        1.0
+      ],
+      "num_data": 65536,
+      "num_dim": 10,
+      "num_group": 3,
+      "num_latent": null,
+      "num_layer": 3,
+      "num_neighbor": 2,
+      "num_neighbor_in": 1,
+      "scm_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  "scm_seed": 0,
+  "standard_mcc": 0.931312137554538,
+  "timestamp": "2026-08-26T18:09:16.271721+00:00",
+  "transform_class": "INSIDE_E_CRL",
+  "transform_family": "C",
+  "transform_parameters": {
+    "formula": "z + lambda * z^3",
+    "lambda": 0.05
+  },
+  "transformation_seed": 100001,
+  "transformed_fingerprint": {
+    "dtype": "<f8",
+    "scm_config_hash": "72eb043597cef1b86c1f7144fccfa757d958892822040fc4fc194b533e208ad1",
+    "sha256": "db5dd7f6690a1ddeda4543dfba96d677e42093c40eae9473be942fc8aec90d94",
+    "shape": [
+      65536,
+      3,
+      10
+    ]
+  }
+}

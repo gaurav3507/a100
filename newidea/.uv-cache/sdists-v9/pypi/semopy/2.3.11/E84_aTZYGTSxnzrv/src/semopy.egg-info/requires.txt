@@ -1,0 +1,7 @@
+scipy
+numpy
+pandas
+sympy
+scikit-learn
+statsmodels
+numdifftools

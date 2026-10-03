@@ -1,0 +1,25 @@
+{
+  "sites": [
+    "NYU",
+    "UM_1"
+  ],
+  "seed": 0,
+  "n_boot": 500,
+  "matched_subjects": 81,
+  "npz": "/workspace/ranktest-diagnostics/data/abide_harmonized.npz",
+  "X_hash": "ad1157bf2c87f3dc",
+  "verdict": "DIAGONAL-DOMINANT -> consistent with MEASUREMENT-axis shift (hypothesis supported)",
+  "d": 200,
+  "threshold": 3.0,
+  "n_matched": 9315,
+  "diag_reject": 5,
+  "offdiag_reject": 186,
+  "diag_total": 200,
+  "offdiag_total": 39800,
+  "diag_rate": 0.025,
+  "offdiag_rate": 0.004673366834170854,
+  "offdiag_share": 0.15749364944961894,
+  "offdiag_to_diag_rate_ratio": 0.18693467336683414,
+  "max_z_diag": 4.160045847599667,
+  "max_z_offdiag": 4.798697741514458
+}

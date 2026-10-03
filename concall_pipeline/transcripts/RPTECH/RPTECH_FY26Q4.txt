@@ -1,0 +1,563 @@
+May 20, 2026
+Listing Operation Department Listing Compliance Department
+To,
+BSE Limited The National Stock Exchange of India Limited (NSE)
+th
+Phiroze Jeejecbhoy Towers 05 Floor, Exchange Plaza, C-1, Block G, Bandra
+Dalal Street,5 M4u4m11b9ai- 400 001 Kurla ComRPpTleExC, BHandra (E) Mumbai - 400 051
+Scrip Code: Symbol:
+Sub.: Tr anscript of Analysts/Investors Call held on Friday, May 15, 2026
+Dear Sir/Madam,
+Pursuant to Regulation 30 of the Securities and Exchange Board of India (Listing Obligations and
+Disclosure Requirements) Regulations, 2015, please find enclosed herewith the transcript of
+Analysts/Investors Earnings concall held on Friday, May 15, 2026 at 10:00 p.m. (IST) for the
+Audited Standalone and Consolidated Financial Results for the quarter and year ended March 31,
+2026.
+The same will also be uploaded on the website of the Company at www.rptechindia.com/investor.
+You are requested to take the same on record.
+RASHI PERIPHERALS LIMITED
+Yours faithfully,
+FOR
+Arvind Bajoria
+Company Secretary and Compliance Officer
+Encl.: As above
+Rashi Peripherals Limited
+(Formerly known as Rashi Peripherals Private Limited)
+Regd. Office: Ariisto House, 5th Floor, N S Phadke Road, Andheri East, Mumbai, Maharashtra – 400069, India
+• Tel: +91-22-6177 1771 | Fax +91-22-61771999 • www.rptechindia.com | CIN: L30007MH1989PLC051039
+“Rashi Peripherals Limited
+Q4 FY26 Earnings Conference Call”
+May 15, 2026
+MANAGEMENT: MR. KAPAL PANSARI – MANAGING DIRECTOR – RASHI
+PERIPHERALS LIMITED
+MR. RAJESH GOENKA – CHIEF EXECUTIVE OFFICER &
+WHOLE TIME DIRECTOR – RASHI PERIPHERALS
+LIMITED
+MR. HIMANSHU SHAH – CHIEF FINANCIAL OFFICER –
+RASHI PERIPHERALS LIMITED
+MODERATOR: MR. KARAN KAMDAR – CHOICE EQUITY BROKING
+Rashi Peripherals Limited
+May 15, 2026
+Moderator: Ladies and gentlemen, good day and welcome to Rashi Peripherals Limited Q4 FY26 Earnings
+Conference Call hosted by Choice Equity Broking Private Limited. As a reminder, all participant
+lines will be in the listen-only mode and there will be an opportunity for you to ask questions
+after the presentation concludes. Should you need assistance during this conference call, please
+signal an operator by pressing star then zero on your touchtone phone. Please note that this
+conference is being recorded.
+I now hand the conference over to Mr. Karan Kamdar from Choice Equity Broking. Thank you,
+and over to you, sir.
+Karan Kamdar: Thank you. Good morning, everyone. On behalf of the management team of Rashi Peripherals
+Limited, I welcome you to the Q4 and Full Year FY26 Earnings Conference Call. Joining us
+today to discuss the company's performance, we have from the management team, Mr. Kapal
+Pansari, Managing Director; Mr. Rajesh Goenka, CEO & Whole time Director; and Mr.
+Himanshu Shah, Chief Financial Officer.
+Before we begin, we must remind you that the discussion on today's call may include certain
+forward-looking statements that may involve known and unknown risks, uncertainties and other
+factors and thus must be viewed in conjunction with the risks that the company faces. Future
+results, performance or achievements may differ significantly from what is expressed and
+implied by such forward-looking statements.
+I now request Mr. Kapal Pansari to take us through the company's business outlook and financial
+highlights, after which, we will open the floor for Q&A. Over to you, sir. Thank you.
+Kapal Pansari: Thank you, Choice Equity Broking, for hosting this call. On behalf of the entire Rashi
+Peripherals team, I want to thank our shareholders, analysts, partners and well-wishers who have
+made this time to be with us this morning. To give you a backdrop of the industry, FY '26 has
+been without exaggeration, the most consequential year for Indian ICT distribution industry in
+over a decade.
+Three structural forces converged at the same time and they will continue to define our sector
+for the next 3 to 4 years. First, India crossed a generational PC milestone. According to IDC,
+India's traditional PC market shipped a record 15.9 million units in calendar year of 2025,
+growing at about 10.2% year-on-year, the strongest ever year, surpassing even the pandemic
+peaks of 2021 and 2022.
+Second, the AI PC inflection is real and accelerating. AI-enabled notebooks grew 129% year-
+on-year in calendar 2025. Gartner projects AI PCs will cross 50% of all PC shipments globally
+in calendar year 2026, with India tracking that curve very closely. The Windows 10 end of
+support in October 2025 has triggered a multiyear refresh cycle. This is not a 1-quarter tailwind.
+It is a structural multiyear upgrade super cycle.
+And the third, component economics turned in distributors favor with memory DRAM, NAND,
+GPU processors all have sustained pricing firmness through FY '26, driven by AI data center
+Rashi Peripherals Limited
+May 15, 2026
+demand absorbing global capacities. For a distributor of its scale, deep OEM relationships and
+inventory discipline, this environment rewards execution.
+IDC has flagged that calendar year 2026 may see a temporary dip of 5% to 10% in PC shipments
+as the component cost works through the system. We read this not as a headwind, but as a
+normalizing year after a record run and one where disciplined distributors with strong working
+capital and balance sheets will continue to take share.
+Where does Rashi stand in this industry is that this ICT industry marks almost about INR1.5
+lakh crores-plus opportunity with roughly 70% concentrated among top players. With India's PC
+penetration sits at just about 15% to 20%, there is enough room for runway to digitize as the
+penetration deepens into Tier 2, Tier 3 and Tier 4 markets.
+With our strategic initiatives that has been built on Rashi's strong ICT distribution driven by
+high volume, anchored on reach relationship and execution, we are now positioned to look
+forward from here on. Our focus will be on three key pillars. One is expand our high-margin and
+high-growth verticals.
+The second is to evaluate margin expansions in the entire value chain. And the third is to
+continue to focus on our core engines of personal computing enterprise and our existing business.
+That will fuel the growth for these Rashi's transformation. We remain confident that with the
+Indian ICT distribution market growing structurally.
+With our balance sheet brand relationships and execution track record. Rashi is positioned to
+deliver not just continued above industry average growth, but a meaningful differential earning
+quality for over next 3 to 5 years. I now hand over the call to Rajesh Goenka for his opening
+speech.
+Rajesh Goenka: Thank you, Kapal. Good morning, everyone. Let me take you briefly through the operational
+highlights of Rashi Peripherals. During the quarter, demand conditions remained healthy across
+key categories, supported by enterprise refresh demand, improving traction on AI-ready devices
+and higher channel procurement as the price uptrend continues.
+We continue to maintain strong execution momentum and benefited from our strong distribution
+network of 55 city branch offices with 10,000-plus customers in 700-plus towns of India. We
+continue to be the leading value-added distributors for various AI solutions, including the
+recently launched NVIDIA DGX Spark, which brings affordability to SMB and corporates and
+developers, which can help these customers to develop Agentic AI solutions, inferencing and
+run local LLMs in their office premise.
+We further strengthened our market presence through strategic partnerships and brand additions
+across multiple technology segments. Our partnership with Dell Technologies enhanced our
+commercial portfolio, especially on the server and the storage space, while our association with
+Teachmint Technologies enabled us to expand into AI-powered classroom and digital learning
+solutions.
+Rashi Peripherals Limited
+May 15, 2026
+In addition, we supported the India launch of Oura health rings, strengthening our presence in
+the premium health tech and lifestyle technology segment. We also continue to evaluate selective
+opportunities in emerging technology areas, including the semiconductor ecosystem as a part of
+our long-term growth strategy.
+As part of our expansion strategy, we continue to add our infrastructure by adding 3 new
+branches, namely in Nanded, Baramati and Solapur in Maharashtra, which now totals to 55
+branch operations, by far the largest and unprecedented, further deepening our reach across the
+C and D-class cities.
+We also conducted an 8-city AI Bootcamp, engaging about 2,500 developers and 300-plus
+CXOs focused on AI infrastructure and real-world enterprise use cases, reflecting our
+commitment to accelerating AI live adoption across industries. Finally, we remain committed to
+building a strong workplace culture and are proud to have been recognized as a Great Place to
+Work for, for the fifth consecutive time. Thank you so much.
+Now I hand over to our CFO, Mr. Himanshu Shah, to take over the financial performance for
+the period under review.
+Himanshu Shah: Thank you, Rajesh, and good morning to everyone. I'll now take you through the financial
+performance of the period under review. Our consolidated performance for the fourth quarter of
+financial year 2026 revenue from operations increased by 51% year-on-year to INR4,489 crores.
+EBITDA increased by 41% year-on-year with EBITDA margins at 2.95%. Profit after tax was
+INR87 crores, registering a growth of 65% year-on-year with PAT margins of 1.93%.
+For the financial year 2026, consolidated revenue from operations grew 15% year-on-year to
+INR15,827 crores. EBITDA increased by 53% to INR459 crores with EBITDA margin
+expanding by 72 bps to 2.90%. Profit after tax rose 35% year-on-year to INR282 crores with
+PAT margins at 1.78%.
+In terms of segmental performance for the period under review, PES which constitutes around
+58% of our business and LIT contributed 42%. Our cash flows for the period as compared to the
+outflows in the earlier years, we generated a healthy operating cash flow of INR514 crores for
+the period.
+On the working capital front, we continued to maintain disciplined control across key parameters
+while supporting business growth and higher procurement activity during the year. Inventory
+days stood at 56 days, reflecting calibrated inventory management to ensure product availability
+across key categories. Debtors were at 46 days, in line with higher business volumes and
+continued expansion across channels.
+Our creditor days stood at 44 days, reflecting balanced vendor management and procurement
+planning. Consequently, working capital remained well managed at 58 days, aligned with the
+operating requirements of the business. I'm also glad to inform you that the ROCE on an
+Rashi Peripherals Limited
+May 15, 2026
+annualized basis has crossed 16%, and for the quarter, it was 19%-plus. With this, I would like
+to hand it back to the moderator open up for question-and-answer session. Thank you so much.
+Moderator: Thank you very much. We will now begin with the question and answer session. The first
+question is from the line of Miloni Mehta from Monarch Capital. Please go ahead.
+Miloni Mehta: Hi, sir congratulations on a great set of numbers. Sir, how much was the top line growth driven
+by pricing versus volume? And moving ahead, after this exceptional growth, what would be the
+normalized growth that we see for FY '27 onwards? And secondly, I just want to understand
+about the semiconductor and AI-led business. From when can it meaningfully alter the overall
+margins like over near term and how much can it benefit us?
+Rajesh Goenka: Okay. Miloni, I think you have asked three questions. I'll try to answer one by one. So first, your
+question is about the impact of the price on our top line. So as a clarification, the price increase
+predominantly has started from second half of the financial year. So first half of the year, the
+price increase impact was miniscule.
+But at the same time, second half, there was a substantial impact. So H1, whatever growth we
+had was primarily on account of larger unit sales and more customers. H2, roughly on an average
+basis, if I see, the growth has been about 46%, 47% H2-to-H2. I would account half of it or at
+least 20%, 22% growth because of the increase in the price.
+So that's the answer to your first question. Second question on the upcoming trajectory, so we
+always maintain that Rashi Peripherals has continued to deliver 20% CAGR for last 20 years.
+So even if with this year's overall performance of 15%, and if I exclude the 1 AI project that we
+did last year, then our growth is 31%, but then our average continues to be 20% CAGR.
+So we are very confident to maintain our trajectory of 20% CAGR in the coming year as well.
+And your third question was about semiconductor, I'm happy to share with all of you that our
+semiconductor business, we have had 131% growth on a year-to-year basis. It is trending well,
+although the base is small, but it is building very strong. And we are having, as I said, 131%
+growth last year. But yes, considering the overall size of INR15,800 crores, semiconductor
+meaningful impact to our top line and bottom line is a few years away. Yes. Miloni, I have
+answered all your three points.
+Miloni Mehta: Okay, sir. Okay. And any like margin impact due to the semiconductor or currently, it's not that
+significant. So like by when do we expect again a few years from now?
+Rajesh Goenka: Yes, it is a few years from now because our overall size of the company is INR15,800 crores,
+and semiconductor business is relatively newer baby. So in a few years, we'll have to wait. But
+we have a very strong wicket with 131% growth.
+Moderator: Next question is from the line of Vinay Menon from Monarch Capital.
+Vinay Menon: A couple of questions. One, you mentioned AI PC growing. I just wanted to understand that
+what would you define to be an AI PC because there are multiple differentiations in the market.
+Rashi Peripherals Limited
+May 15, 2026
+So are you talking about a PC that has a NPU? Or is it specifically is there anything which you
+look at to categorize it as an AI PC?
+Rajesh Goenka: Absolutely. So a PC or a laptop which predominantly has an NPU is identified as an AI PC. But
+at the same time, higher -- high-end processors with GPUs also are identified as AI PCs, which
+can take AI workloads. To give you some idea, currently around 25% of the PCs and notebooks
+sold in the country are AI PCs, but this is only accelerating. And next 1 to 2 years, we see
+multiple growth in this particular segment, which will also drive the average selling price of the
+notebook further up.
+Vinay Menon: Okay. That helps. And just to talk on the overall PC refresh cycle, we saw some kind of a delay
+because of these price hikes. So are you seeing that demand come in Q4? Or you think that will
+be more in H1 or H2 of '27?
+Rajesh Goenka: So this is a very good question, Vinay. When the price hike cycle started, around Q3 and early
+Q4, a lot of large corporate ISVs extended their refresh cycle from 3 years to 4 years and 4 years
+to 5 years. But then the way the price increase is happening, now the -- my observation is the
+trend is reversing, that now everyone is realizing that if I delay the purchase by 1 year, I may
+have to pay another 30% or 40% more price.
+So it is better to refresh it right now rather than waiting for one. And that is the reason, as Kapal
+mentioned, last year, we had a record of 15.9 million PCs sold. So now you're getting reversed
+of the refresh cycle and it looks like that refresh cycle will continue to be normal as in previous
+years.
+Vinay Menon: Okay. That helps, sir. And one last thing on the semiconductor thing. How much we have
+understood that in semiconductor, the number of the working capital cycle is a little stretched
+and you see 100-plus odd days there. So just want to understand that what would be our working
+capital there? And is it stretching our working capital a bit? And will it do that in maybe a few
+years once the scale is there?
+Rajesh Goenka: So while the working capital is higher, but at the same time, the gross margins are also
+substantially higher. So in terms of ROCE, if we look at it, then it is higher than our regular
+business. So it is not a cause of worry. And at the same time, at this moment, we do not require
+too much of working capital because the size in the overall scheme of things is still very small.
+Moderator: Next question is from the line of Madhur Rathi from Counter Cyclical Investments.
+Madhur Rathi: Sir, I wanted to understand what has led to your LIT segment has seen a decent growth this
+year. So if you could help us understand what was the price growth here and what was the
+volume growth here. And where do we see this segment going forward?
+Rajesh Goenka: Yes. So first of all, let me just clarify that the good thing for Rashi Peripherals particularly is
+that we have a very wide range of products and solutions. So we are not dependent on either on
+LIT or PES because LIT contributes to 42% of our total gross revenue and PES contributes to
+58%. So that means there is a very good balance. And I also am happy to share with you that in
+Rashi Peripherals Limited
+May 15, 2026
+the LIT category, we have grown on a year-to-year basis at the rate of 24%. And in the PES
+category, we have grown at 37%, which is obvious because of the higher H2 PC demand and
+because of the higher ASPs.
+Madhur Rathi: Right. And sir, LIT is a better gross margin product. So if you could help us understand, can we
+expect the further -- if this mix in business increases, can you expect a further gross margin
+improvement? And second question would be, sir, where are you on a software side of business,
+the software and hyperscaler side of business? With so much data center and new cloud
+companies coming out, so if you could help us understand on that?
+Rajesh Goenka: Yes. So LIT, we continue to grow almost 2x of the industry. LIT, one, Rashi Peripherals market
+share is very high. And second, in that category, the growth is also not as PES. But we continue
+to beat the market. And as I said, we continue to grow at 2x. Whereas PES, because of the PC
+refresh, because of the price going up, the natural growth opportunity is there.
+So we will continue to have growth momentum in both the categories, but to me, it does not
+appear that LIT will be able to take over or come closer to PES. So that's one. And the second
+question was on your hyperscalers. So if you remember, last year, that was '2024- '25, we had
+the privilege of executing India's first and the largest AI data center very successfully.
+Last year, we have not done consciously a meaningful business in that segment because we
+already had a hyper growth of 37% if I just remove that project order. But this year, we plan to
+have growth both in regular business plus in project business, and we are in the race to win some
+of the AI data center projects as we speak.
+Madhur Rathi: And sir, do we see our working inventory days coming down with Make in India initiatives of
+this hardware component that is moving to India a lot faster, similar to seen in the mobile
+ecosystem, do we see our inventory days coming down maybe over the next 2 to 3 years because
+of this shift?
+Rajesh Goenka: Yes. So theoretically, there should be some impact of inventory days correction as the Make in
+India grows. But the real fact right now is that Make in India is still very limited. And second,
+excluding the project, we've had a 31% growth on a Y-o-Y basis. So when you are having 30%
+growth in regular business, then you need to continuously buy inventory and keep inventory. So
+these two factors right now are not enabling us to reduce the inventory days. But going forward,
+yes, there is a good chance in scope of improving the inventory days.
+Moderator: Thank you. Next question is from the line of Hitesh Goel from Aurigin Capital. Please go ahead.
+Hitesh Goel: Thanks for taking my questions and congrats to the management for a very good set of numbers.
+Sir, on Dell part, can you give us numbers what is part of revenues in Dell in absolute revenue
+this quarter and last quarter, just to see the trajectory?
+Rajesh Goenka: Hitesh, I'm not at the privilege to give the specific numbers brand-wise because even as per our
+agreement, we cannot disclose. But only thing I can indicate to you that last year, we started
+midway and we have tested waters. Good thing is that we are doing their entire products and
+Rashi Peripherals Limited
+May 15, 2026
+solution groups right from their PCs to laptops to servers, storage, monitors everything. And to
+give you an indication, it should be a double-digit share in our overall top line.
+Hitesh Goel: In fourth quarter, you're saying?
+Rajesh Goenka: No, I'm talking on the entire year.
+Hitesh Goel: Okay. So because of the trajectory, I think it came in second quarter only last year, right?
+Rajesh Goenka: Correct, yes. Right now it is at low single digit. But on a Y-o-Y basis, next financial year, we
+think that it should be close to double-digit share.
+Hitesh Goel: Okay. And sir, you also alluded to margin expansion in FY '27. Can you explain? I didn't get
+this. How will you increase the margin in this hyperinflation environment? So can you just give
+us some sense there?
+Kapal Pansari: Yes. So there are two thoughts -- two points to this. The margin expansion business that we are
+trying to talk about is how do we create a better value chain and value proposition for the
+organization. Typically, when you expand into semiconductor, enterprise businesses, these
+businesses are not of just supply chain but we are solution-driven economics. So when you
+provide solutions, whether it is related to services, whether it is related to design-led sales
+strategy, they always give you a potential to earn higher margins. And that expansion will drive
+our higher margin portfolios.
+Hitesh Goel: So this is more of a strategy for 2, 3 years, not like FY '27?
+Kapal Pansari: Absolutely.
+Hitesh Goel: Okay. Got it, sir. Thank you and all the best.
+Moderator: Thank you. Next question is from the line of Tushar Khandelwal from Nexus Equity. Please go
+ahead.
+Tushar Khandelwal: Sure. Congratulations on a good set of numbers. Sir, my question is from like next year and year
+forward, what would be the split between lifestyle and enterprise segments? And if you can give
+me the volume numbers, volume and price growth, where what will be the share of volume
+growth and price growth?
+Rajesh Goenka: Yes. So as I explained already, our last year lifestyle growth, LIT growth is 24% and PES growth
+is 37%. So I think similar ratio will continue in the next year also, again, because in LIT we have
+a higher market share. That is one. As far as the price increase is concerned, LIT, there is no
+major price increases happening. It is routine price increase only. The price increase is happening
+and is expected to further increase in the PES category only. And that increase, now onwards, it
+is expected on an average should be another 20%.
+Moderator: Next question is from the line of Aejas from Unifi Mutual Fund.
+Rashi Peripherals Limited
+May 15, 2026
+Aejas: Congratulations on a very strong execution, really speaks about how the organization is set up
+and is delivering at scale and size. Two questions from my side. First is, team, could you call
+out that from whatever is available publicly, we are hearing about a lot of these incremental data
+center opportunities that is coming in the country?
+Can you just articulate how we should understand FY '27 and '28 and your ability to participate
+in deals that like you have done with the first data center deal? How do you intend to participate
+in them? Because we understand that there is a certain capital requirements for such deals and
+they are definitely accretive. But given the capital requirement of these deals and your learnings
+from the first deal, how should we really understand how RP Tech can participate in them?
+Rajesh Goenka: So Aejas, I think, again, this is a very relevant question in this prevailing time. So before I answer
+your point, I just want to take this opportunity to share with all our investor community that
+Rashi Peripherals was the first company to execute a INR2,000 crores, 512-server, 4,000 GPU
+AI data center at Yotta very successfully, which included installation as well.
+We are, again, the only distribution company in India, which has this kind of expertise of doing
+basic predesign, ordering, logistics and installation. So that's the first one that I want to give you
+confidence to you, Aejas, on this. Now there are multiple AI-related data center and non-AI data
+center projects are going on in the country, primarily because of the data sovereignty, primarily
+because there is a major push from the PMO office.
+We are there in almost all the projects and we are discussing, they are at various stages of
+discussions. But then as you rightly mentioned, the size could be very big. Right now, as I speak,
+there are funnels of almost INR20,000 crores, INR25,000 crores which are under consideration.
+I'm not very sure whether they can get finalized or no. Rashi will pick up proportionate to our
+capacity amongst these opportunities and obviously not run after everything because they are,
+one, capital intensive, and second, the margins are also lower on this front. But then we are there
+in this in the forefront.
+Aejas: Understood. So Rajesh ji, I hear you. But could you give me some incremental color on your
+thought process? Because participating in these deals is relevant because of your ability to stitch
+things together, right? So it gives you a certain visibility and the presence. And these are fast-
+moving items and they're growing quickly.
+But again, like you mentioned, it's capital consuming with slightly lower margins. So how will
+you make that trade-off between participating in a deal or continuing to use that capital in your
+regular business, per se? So how do you make these decisions? That's what I'm trying to get a
+sense of?
+Rajesh Goenka: Yes. So while we, first of all, do not compromise on our regular run rate business, where we
+continue to aspire to have 15% to 20% growth and then over and above, I think we currently
+post-IPO, we have the capacity to pick up these kind of projects subject to ROIs. So if there is
+an opportunity where we have a decent ROI, then we can pick up these projects as an add-on
+this without compromising our regular run rate growth of 20% Y-o-Y.
+Rashi Peripherals Limited
+May 15, 2026
+Aejas: Okay. And could you, team, just call out that -- I mean, broadly this year from the INR15,800
+crores of revenue, what's been the cut between the large deals including maybe the spillover of
+the data center, the enterprise segment and the core distribution business? Could you just give
+some revenue cuts or color around them? And second, just lastly, could you speak about how
+the enterprise side of the segment is doing for you?
+Rajesh Goenka: Yes. So last year, we did not do any AI large deals. They were all small deals to the tune of INR5
+crores, INR10 crores, INR15 crores only. So our 15% growth is without any large deals. And
+therefore, I said, if I remove the last to last year Yotta deal, then we have a growth of 31%. And
+to answer your question on the enterprise piece, we are having a very high growth on the
+enterprise piece, which is non-AI, particularly driven by NVIDIA solutions. One example I
+shared during my speech about the NVIDIA DGX Spark and so on and so forth. So there, of
+course, we are having a high growth and the market also is growing exponentially. And third,
+now the price is also very strong uptrend. All three are in our favour.
+Aejas: Understood team. Thanks and all the best.
+Moderator: Thank you. Next question is from the line of Sumukh from Korman Capital. Please go ahead.
+Sumukh: Hi, team, can you hear me?
+Rajesh Goenka: Yes.
+Sumukh: Sir, my question is on the partnership with the ST Finserv. So how does this impact your working
+capital days going forward? And what percentage of your revenue would be coming under this
+supply deal? And who will be bearing the credit risk on this?
+Himanshu Shah: So ST Finserv is a channel finance program which we have onboarded and it is a normal term
+finance program without any recourse to us. It is basically to enable the channel partner fraternity
+to have capacities to buy more without affecting the credit risk.
+Sumukh: Okay. So this should actually bring down your working capital, right, because my guess is this
+is borne by you currently?
+Himanshu Shah: No. The cost -- if we draw the money early, then only it is borne by us, which we normally don't
+do. And it is -- the credit cost or the funding cost is borne by channel partners. So it has no
+recourse, no cost to us, no impact to us and no cost to us.
+Sumukh: Okay. And on the semiconductor business, sir, who are your predominant customers so far on
+this line?
+Rajesh Goenka: All the large manufacturers in the automobile space, robotics space, IoT space, they are all our
+customers.
+Sumukh: Sir, any exposure to hyperscaler?
+Rashi Peripherals Limited
+May 15, 2026
+Rajesh Goenka: Hyperscaler is more not on the embedded side, semiconductor side, but that is more on the server
+storage side?
+Moderator: Next question is from the line of Nishita from Sapphire Capital Partners.
+Nishita: Sir, am I audible?
+Moderator: Yes.
+Nishita: I just had a question on your project business. So you mentioned that if we would have excluded
+the FY '25 large deals that we did in project, so our growth would have been 31%. So how much,
+if you can -- like how much revenue did we did in FY '26 from the project business, if you can
+say? And how is that going to grow going forward? How much revenue do we see from projects
+in FY '27?
+Rajesh Goenka: So just a clarification. You have misunderstood. When I said 131%, that is only in our
+semiconductor business. As far as project business is concerned, in '24-'25, we did INR2,000
+crores of project business. However, consciously in '25-'26, we did not do any substantial project
+business. But in '26-'27 plan, yes, we have plans to get into project business subject to viability
+and ROI.
+Nishita: Okay. And on margin front, do we get better margins in budget?
+Rajesh Goenka: Definitely, no. And that is why I said that subject to ROI and feasibility, we will try to win some
+project orders. That's the last word I added. That's the reason.
+Moderator: Next follow-up question is from the line of Madhur Rathi from Counter Cyclical.
+Madhur Rathi: Sir, I wanted to understand on the hyperscaler business. Sir, are there any plans to sell that server
+storage? That's what Redington does because it seems that, that is a very big business and these
+hyperscalers like generally don't take a lot of distributors, so two or three distributors at nature.
+So is there any plan to get into that business? Or how should I look at that?
+Rajesh Goenka: So as I said, Madhur, earlier that '24-'25, we did the largest order ourselves. And Rashi
+Peripherals is uniquely placed and has the expertise of doing presales, sales, execution,
+installation and post-installation support also. So therefore, we have the core strength to cater to
+these hyperscalers.
+But at the same time, yes, in the year '25-'26, we have not picked up any substantial order because
+non-project, our business was already growing at 31% on a Y-o-Y basis. And especially if you
+see Q3 and Q4, our business grew by 42% and 51%, mainly. So our focus, attention, our capital
+was more deployed there. So I want to reclarify, that we are very much capable. We have the
+experience to do this kind of business and we are looking for opportunities in the coming year.
+Madhur Rathi: Right. And sir, you also created one semiconductor subsidiary. So if you could help us plan for
+that?
+Rashi Peripherals Limited
+May 15, 2026
+Kapal Pansari: So the semiconductor subsidiary is created to give a higher focus and more optimized operations
+in this category. So therefore, we created the subsidiary to transition from within the group
+company into the subsidiary so that partnerships, alliances, team structures and even customer
+acquisitions can be accelerated.
+Moderator: Next follow-up question is from the line of Vinay Menon from Monarch Capital.
+Vinay Menon: Just a couple of things. One is this AI Bootcamp, which you have mentioned. If you can give
+some color on that, what would it add to our business that would be helpful?
+Rajesh Goenka: Yes. So basically, these AI Bootcamps, we do along with our vendor, suppliers, all the big AI
+vendor suppliers I cannot just name in this forum. We invite developers. We invite CXOs. We
+give them the use case live experiences how they can use various products and solutions that we
+have to develop agentic AI solutions, how they can do rendering, all these training programs we
+do. And this indirectly then gets into a BOQ or inquiry state, which eventually gets into order.
+But it's more of seeding and training program, which has a very long lead cycle, usually 6 months
+to a year.
+Vinay Menon: Okay. And one thing for Himanshu sir. Like what could be -- like Q4 working capital, what was
+there? And what could be the time going ahead because of all these disruption in segments? Will
+we see any impact from that?
+Himanshu Shah: So the lead time and the delivery times have not affected too much because of the so-called
+disruption of shipments because our shipments are not routed to the affected routes. Secondly,
+working capital, there's a miniscule shift because of the change in debtors days to 4 days.
+Creditors and inventory days set off each other in terms of incremental working capital.
+Vinay Menon: Okay. So we can expect this rate for FY '27 as well or any improvement expected?
+Himanshu Shah: Yes, we can expect around same range.
+Moderator: The next question is from the line of the Deepak Lalwani from Unifi Capital.
+Deepak Lalwani: Sir, I had a question on the future volume growth of the company. So today, we are benefiting
+from both price and volume. You said that people are stocking up in the fear of further price
+hikes. So I want to understand how sustainable -- what should be the sustainable volume growth
+for the company in FY '27? And the drivers for this volume growth, if you can explain how the
+secondary demand for your products are looking like, both in LIT and PES, if you can give a
+macro picture of how the demand is really shaping up on ground, that will really help?
+Kapal Pansari: Thanks, Deepak. Let me answer your query for the first part. For the secondary sales, I'll let
+Rajesh to answer. Please to see that currently, the industry is an upswing and super cycle of the
+adoption, price rise and availability. When these things are happening, there is a natural tendency
+to prepone the buying, build up inventory to sustain the price hikes so that there is an immediate
+and near-term advantage that we can take from these cycles.
+Rashi Peripherals Limited
+May 15, 2026
+With AI applications growing, the demand for refresh towards AI PCs will also accelerate as the
+acceleration for the applications continues to grow. And in this scenario, we are also trying to
+increase the working capital of inventories.so that those opportunities can be expanded. While
+from a demand perspective, we do not see any softness at this point in time.
+While the predictions, obviously, the affordability will come into picture, but we do not see any
+demand slowing down in the current economics and the scheme of things that we operate upon.
+However, to answer you that in case, you should not only just go by what we are saying. In fact,
+you should look at companies like Intel, AMD, SK Hynix, Samsung, Micron, SanDisks of the
+world, Western Digital.
+Please study these companies, and you'll realize the demand cycle is only growing and there is
+no anticipation of softening of the prices as well. This has never happened in the history of any
+economic cycle or any distribution or IT hardware industry. And therefore, we say that is a super
+cycle and the most opportune time for the industry. At any given point in time, the softness, we
+are here to stay, and we'll be the first person to come and tell you about what is the industry
+cycle looks like. When it comes to the secondary PC cycle and the demand at the Tier 2 level,
+I'll let Rajesh to answer that question.
+Rajesh Goenka: So Deepak, I just want to clarify once again that for -- which I've already said and I repeat, that
+Rashi Peripherals' dependency on one product, one brand is minuscule. So LIT business, 42%
+of our business comes from LIT. That business continues as in the past. There is no major
+variation in the demand or there is no major impact even on the pricing.
+There is a regular -- so this 42% of our business is unaffected. The remaining 58% business,
+which is PES, there, there is a major price increase impact that is coming in, and there could be
+a potential shortage in supply also which should come. But our guestimate says and IDC also
+says that on an entire year basis, unit-wise, the market size could degrow by 5% to 10%.
+So even if I assume that the market size of this 58% of the Rashi's revenue degrows by 10%, but
+the price itself will grow by about 20%, 25%. So net, we will continue to have 10% to 15%
+growth on an as-is where basis without any doing any change. But as we continue our
+momentum, with our penetration in newer geographies, newer customers and increasing our
+market share, we will be able to maintain our momentum even in this PES category.
+And coming to your point on secondary demand of consumer and commercial, we think that
+commercial demand will continue to be strong because of our overall economic situation of the
+country. But in the consumer, there could be a softness in the H2 of this financial year because
+of the affordability.
+Today, a laptop a year back was easily available at INR30,000, INR35,000. Today, you can't
+even get a laptop at INR50,000. But another 15%, 20% price rise in 6 months could make laptop
+to INR70,000, which could impact the affordability of the consumer. So in H2, there could be
+some softness on the consumer demand. But that also can be offset.
+Rashi Peripherals Limited
+May 15, 2026
+So I am very optimistic. We are already discussing with various vendors and suppliers to have
+longer EMI schemes. If the current EMI schemes are 6 months or 12 months, maybe we can
+have a 24 months and 36 months EMI interest-free schemes, which will trigger the demand. So
+while there is some softness could happen in H2, but otherwise, there is nothing much to worry
+about.
+Moderator: The next question is from the line of Dheeraj Kumar Reddy from AlphaSqr.
+Dheeraj Kumar Reddy: There are a couple of questions from my side. What is the aspiration in terms of PAT margins?
+I mean, I know already we have really expanded quite well in the last 1, 2 years. But because
+we are in a super cycle like you mentioned, in the next 2, 3 years, like how do you see the PAT
+margins expanding? And what is the aspiration of the management?
+Himanshu Shah: So distribution industry has got very finely defined margins and we continue to operate in that.
+So around the range of 1.5 to 1.75 is the range applicable to this industry. Unless the product
+mix or the customer mix changes, to a greater extent, we can expect some shift. Otherwise, this
+is the range which we generally advise.
+Rajesh Goenka: And I would just quickly like to add that if this is a super cycle, then we think that this super
+cycle will continue for another year or 2. And we are very bullish and optimistic on this.
+Dheeraj Kumar Reddy: Got it. Sir, also on the data center deals which you just mentioned, which the company will start
+to pick up, what is the typical margin structure, like if you can reiterate? And how do you see --
+what is the kind of potential probably in the next 1 to 2 years, probably in the next 2 to 3 years,
+if you want to take a medium-term view? Like what is the extent of revenues Rashi can probably
+take up?
+Rajesh Goenka: So margins, I cannot say this because, at the end of the day, it is an ROI, what are the commercial
+terms, what is the margin, what is the delivery terms, and it varies from project to project. But
+all I can share from India perspective, that as we speak currently, there are funnels doing more
+than INR20,000 crores. Funnels are there.
+Funnels does not always mean that they will get converted into orders and that does not always
+mean that everything will come to Rashi Peripherals. But that's the funnel that is building up.
+And this funnel will only be increasing in the next 2 years further as AI adoption increases more.
+Moderator: Next question is from the line of Vaibhav Gupta from Bowhead Investment Advisors.
+Vaibhav Gupta: Congrats on a great set of numbers. Sir, I just wanted to understand, with the current price hike
+environment, what is the impact on margins? Is there any negative impact? Or are they more or
+less intact?
+Himanshu Shah: See, margins are intact with the price rise. And in fact, the overall profiling has a little bit better
+only and which is evidenced of the numbers delivered and declared. As far as expectations from
+price hikes, on the margin front, as I mentioned, the distribution industry has got very finely
+Rashi Peripherals Limited
+May 15, 2026
+defined margins, and we continue to improve it with the operating leverages and volumes, which
+we again announced.
+Rajesh Goenka: So what Himanshu is trying to say is that Rashi Peripherals earns as a percentage of margin. So
+when the price hike happens, on the percentage basis, absolute value also grows. While on the
+selling side, the value does not go to that extent. Our fixed costs and our people and operating
+cost remains the same. So we have an operating leverage advantage.
+Vaibhav Gupta: Understood, sir. And when we see gross margins of Q4 '25 versus Q4 '26, how should we see
+it? Like there is a slight deterioration in margin, gross margin?
+Himanshu Shah: It's not deterioration. We have some slow-moving inventory, I would say. We have taken
+additional charge on that and brought down the value of the slow-moving inventory as a prudent
+accounting practices.
+Vaibhav Gupta: Understood, sir.
+Moderator: Thank you. Next question is from the line of Karan Kamdar from Choice Equity Broking.
+Karan Kamdar: Sir, I understand you have a very large distribution network and I believe it's one of the largest
+ones in this space. So could you help me understand how the distribution network is our
+business? And what kind of benefits and do we extend to our channel partners and branch
+managers?
+Rajesh Goenka: Can we take this question off-line? This is overall business cycle discussion, which needs 15
+minutes. So if you don't mind, can we take it offline?
+Karan Kamdar: Sure, sure. No problem.
+Rajesh Goenka: And I would also suggest you to go through our investor presentation. There is a dedicated slide
+on our distribution structure of GT, MT, LFR and online.
+Moderator: Thank you very much. As there are no further questions, I'll now hand the conference over to
+the management for closing comments.
+Kapal Pansari: Yes. Thank you, Karan. To our shareholders, thank you for your continued trust. To our 82 brand
+partners, thank you for choosing Rashi Peripherals as a distribution partner in India. To our
+10,000-plus customers and partners across 700 towns of India, you are why this business exists.
+And to our family of 1,500-plus colleagues, every number that we're reporting today is a result
+of your work. Thank you so much, and looking forward to FY '26-'27 with all of you.
+Rajesh Goenka: Thank you.
+Moderator: Thank you very much. On behalf of Choice Equity Broking Private Limited, that concludes this
+conference. Thank you for joining us, and you may now disconnect your lines. Thank you.

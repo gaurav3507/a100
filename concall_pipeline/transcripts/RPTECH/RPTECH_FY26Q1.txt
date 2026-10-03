@@ -1,0 +1,478 @@
+August 12, 2025
+To,
+Listing Operation Department Listing Compliance Department
+BSE Limited The National Stock Exchange of India Limited (NSE)
+Phiroze Jeejecbhoy Towers 05th Floor, Exchange Plaza, C-1, Block G, Bandra
+Dalal Street, Mumbai- 400001 Kurla Complex, Bandra (E) Mumbai - 400051
+Scrip Code: 544119 Symbol: RPTECH
+Sub.: Transcript of Analysts/ Investor Earnings Call held on Wednesday, August 6, 2025
+Ref.: Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations,
+2015 (“Listing Regulations”)
+Dear Sir/Madam,
+Pursuant to Regulation 30 read with clause 15 of Para A of Part A of Schedule III of the Securities
+and Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations,
+2015 as amended from time to time, enclosed herewith the transcript of the Analysts/ Investors
+Earnings Call held on Wednesday, August 6, 2025 at 09:30 a.m. (IST) for the Unaudited
+Standalone and Consolidated Financial Results for the quarter ended June 30, 2025.
+The same will also be uploaded on the website of the Company at www.rptechindia.com/investor.
+You are requested to kindly take the same on record.
+Thank you.
+FOR RASHI PERIPHERALS LIMITED
+KRISHNA KUMAR CHOUDHARY
+Chairman & Whole-Time Director
+DIN: 00215919
+Encl.: As above
+Rashi Peripherals Limited
+Regd. Office: Ariisto House, 5th Floor, N S Phadke Road, Andheri East, Mumbai, Maharashtra – 400069, India
+• Tel: +91-22-6177 1771 | Fax +91-22-61771999 • www.rptechindia.com | CIN: L30007MH1989PLC051039
+Rashi Peripherals Limited
+Q1 FY’26 Earnings Conference Call
+August 06, 2025
+Moderator: Ladies and gentlemen! Good day and welcome to the Q1 FY '26 Conference Call of Rashi
+Peripherals Limited.
+As a reminder, all participant lines will be in the listen-only-mode and there will be an
+opportunity for you to ask questions after the presentation concludes. Should you need
+assistance during the conference call, please signal an operator by pressing ‘*’ then ‘0’ on your
+touchtone phone. Please note that this call is being recorded.
+Before we begin, please note that this conference call may contain forward-looking statements
+about the company, which are based on the beliefs, opinions and expectations of the company
+as on the date of this call. The statements are not the guarantee of future performance and
+involve risks and uncertainties that are difficult to predict.
+On the call today, we have Mr. Kapal Pansari – Managing Director; Mr. Rajesh Goenka – Chief
+Executive Officer; and Mr. Himanshu Shah – Chief Financial Officer. The Management will take
+us through the operational and financial performance for the quarter gone by, following which,
+we will open the forum for Q&A.
+With this, I now hand the conference over to Mr. Kapil Pansari for opening remarks. Thank you,
+and over to you, sir.
+Kapal Pansari: Good morning, everyone. We welcome you to the earnings call for the 1st Quarter of the new
+financial year ended 30th June 2025. We have shared our results, earnings release and investor
+presentation with the exchange and all are available on our website. Hope you have had the
+chance to go through the same. To set the context, as an ITC player, PC market remains a
+dominant driver for growth. However, there is huge potential to increase PC penetration in
+India. The rising digital demand across the country makes it a highly attractive market, drawing
+significant investment and strategic focus from global tech players. Leading global PC
+manufacturers are deepening their investments to capture this high-growth market. Dell has
+introduced a wide range of AI-powered PCs in India, leveraging a multi-silicon strategy that
+integrates processors from leading chip makers backed by advanced MPUs, robust security
+features and sustainable design elements.
+In parallel, Lenovo is scaling up its local manufacturing footprint with a goal to produce all its
+PCs for the Indian market domestically within the next 3 years, including AI GPU servers,
+aligning with government incentives and solidifying India's role as a global tech manufacturing
+hub. Meanwhile, ASUS is tapping into the surging demand for AI, gaming and content creation
+PCs, projecting a 30% growth in 2025. With a strong presence in Copilot PCs and affordable AI
+models, the brand is expanding its retail footprint, aiming to strengthen its position in the
+desktop PC market.
+Rashi Peripherals is strategically positioned to leverage this market surge utilizing its extensive
+distribution network to connect global brands with India's hinterlands. Our robust Q1 FY '26
+performance builds on FY '25 strong growth with the devices segment excelling due to
+heightened demand for personal computing and peripherals.
+Our focused efforts to expand AI solutions, penetrations are delivering substantial results,
+reinforcing our leadership in this transformative domain. By diversifying our brand portfolio,
+we have captured new market segments, enhancing our offerings and strengthening our role
+as a leading ICT distributor. This initiative underscores our commitment to driving sustained
+value and capitalizing on India's dynamic PC market, ensuring we remain at the forefront of
+this rapidly evolving landscape.
+Before I hand over to Mr. Rajesh Goenka, I would just like to inform that we were honored with
+VAR INDIA Most Promising Partner in India in 2025 and DT Best National Distributor of the Year,
+which underscores our commitment for all-round growth.
+I now hand over to our CEO – Rajesh Goenka, for further update about the company.
+Rajesh Goenka: Thank you, Kapil. I extend a warm welcome to all the stakeholders on today's call as we discuss
+our business and operational highlights for the quarter.
+The overall PC market in April and May was flattish, but it gained momentum, especially with
+the onset of the festivities in August. So, July relatively was better. Microsoft is set to officially
+end support on Windows 10 in October 2025, which is pushing both individual users and
+business to upgrade their system. This impending change is seen as a major opportunity for the
+tech industry, particularly in our country. While the demand for PC and AI hardware will
+accelerate, much of it is coming from Tier-2 and Tier-3 cities, regions where poor infrastructure
+and limited warehousing capacities are creating bottlenecks. These issues also extend to after-
+sales support that is warranty services and that have not scaled in line with the demand,
+leading to delays and customer dissatisfaction.
+At Rashi Peripherals, with our deep expertise and strong presence in 52 cities of India, we are
+well positioned to gain this advantage. By leveraging advanced technologies in real-time
+inventory tracking and smart routing, we are already mitigating the logistical and local
+challenges.
+Going forward, we believe close collaboration amongst OEMs, logistics providers and
+distributors and partners will be key to building a decentralized network of fulfillment and
+service hubs, ensuring reliable access and support across India next wave of growth market,
+which is the B and C, D class cities.
+Our operational excellence in the fiscal year 2026 is clearly reflected in our improved EBITDA
+margins, a direct result of optimized processes and careful cost management. The surveillance
+business, in particular, has been a key growth driver due to rising demand for advanced security
+solutions. By actively participating in key Channel Business Forums such as CBF 2025, we have
+significantly enhanced our market visibility. To give you a brief, Channel Business Forum is the
+largest and the longest running Channel Business Forum. This is the 14th year in last 20 years
+where we cover 50 cities in just 3 months' time. This has strengthened our partner relationship
+and helped us identify new business opportunities, especially in the B, C, D class cities. Despite
+not including project business in our revenue, our core distribution model has demonstrated
+remarkable resilience and shown 11% growth diversity, achieving a strong top line growth and
+also PAT growth.
+To further provide details on our financials for this quarter, I will hand over the call to our CFO,
+Mr. Himanshu Shah.
+Himanshu Shah: Thank you, Rajesh, and a very August morning to all of you, all the investors present on the call.
+I would like to take you through the financial highlights for the 1st Quarter FY 2026. On a
+consolidated basis for quarter 1 FY 2026, revenue stood at INR 31,521 million, a 26% decline Y-
+o-Y. However, excluding the project deal, if we compare, there is an actual revenue growth and
+revenue grew by a strong 11.4%.
+EBITDA grew by 23% to INR 1,114 million and PAT came in at INR 617 million, up 12.1%
+compared to quarter 1 FY 2025. There was a significant jump in margin. EBITDA margin
+expanded by 140 basis points to 3.5% for the quarter and PAT margin rose 70 basis points to
+2%.
+Looking at the business mix on a trailing 12-months basis, our PES segment contributed 57% of
+the revenue, while LIT accounted for 43%. Region-wise, 62% of the revenue came from metro
+cities and rest was from non-metro geographies.
+With this update, now I would like to open the forum for question and answers. Thank you.
+Moderator: Thank you very much. The first question comes from the line of Anuj from Groww Mutual
+Fund. Please go ahead.
+Anuj Kotewar: Congratulations on excellent quarter. Two questions from my side. First, last quarter, you
+mentioned there was some problem regarding collections post Diwali. That is one, how is the
+scenario now? And secondly, working capital days, if I see in the PPT, it has gone to 73 versus
+that of 50-55 average we maintain. So, what is the reason for that?
+Himanshu Shah: Yes. So, as far as your first question is concerned, the collections, which concerned slowing
+down has started becoming to normalcy. However, the full effect will get reflected over a
+period of maybe this quarter. Secondly, the working capital going up is concerned, there are 2
+components attributable to this. One is, one sizable debtor's payment, which got delayed in
+this quarter, which is expected in maybe next 10 to 15 days, and that will normalize. That has
+an effect of around 8 days. And second is certain businesses where we have gone for availing
+early payment incentive from brands, there, we have paid inventory on record. So, creditors
+have come down by 4 to 5 days. So, these 2 components. So, effectively, our investment or the
+inventory days remain the same. And yes, that is the impact on working capital.
+Anuj Kotewar: Yes, sir. So, was there any sizable order in this quarter?
+Kapal Pansari: There was no sizable order in this quarter. While last year, we had a very sizable order from
+the NMDC Yotta for about approximately INR 1,500 crores approximately, whereas this
+quarter, there was no such order.
+Anuj Kotewar: And sir, EBITDA margin for the second consecutive quarter was about 3%. Should this be
+sustainable? Or how should we look at this going forward?
+Himanshu Shah: So, while the EBITDA margin flows down mainly from GP also, the operational efficiencies
+remain at same level. However, for long-term trends, we would not say that this is maintainable
+because it is a factor depending upon the customer mix and the sales mix and all that stuff. So,
+I would like to say that, yes, these are good quarters for us, 2 quarters. However, for -- on a
+long-term basis, definitely, we don't advise such high range to be maintained.
+Anuj Kotewar: Okay. Just one last question. What was the reason for increase in interest cost this quarter?
+Himanshu Shah: Again, the working capital investment, which has enhanced by 8 days. The interest is coming
+out of that.
+Moderator: Thank you. The next question comes from the line of Sankaranarayanan from ithoughtPMS.
+Please go ahead.
+Sankaranarayanan S: Congrats, on a good set of numbers. My first question is regarding the large deals. Do you have
+any large deals in your pipeline? And in this quarter, have you executed any large deals?
+Rajesh Goenka: Yes. So, Sankar, thank you for asking this question. So, last year, if you remember, we did those
+large deals on the AI data center of Yotta. However, in this Q1, April, May, June, we have not
+done any large deals, and our focus was more on run rate business. But at the same time, I
+must say that there are multiple opportunities in the country for large deals. But then the
+margins and the payment cycles are a little bit extended. So, it is a judgment whether to take
+it or no or even if to take it, how much to take it. But in April, May, June, we have not picked
+up any deals. Despite that, if you see our revenue growth has been about 11% if I just remove
+the NMDC deal on an AMG to AMG basis.
+Sankaranarayanan S: Got it, sir. Sir, my second question is that you have been speaking that the government is
+interested in buying 10,000 GPUs, and we might get that order from any of the system
+integrators. What is the progress on this, sir?
+Rajesh Goenka: Yes. So, this order is likely to get finalized within this quarter, Q2. And it will be available for all
+of us to grab. But then we as I said earlier, we need to analyze the margins and ROEs before we
+pick up the order.
+Sankaranarayanan S: Got it, sir. Sir, we have improved our EBITDA margin significantly. So, could you please throw
+some light if there is a significant increase in EBITDA margin that really happened due to the
+large deals that have happened in last year in quarter 1, so which have other expenses, other
+operating expenses setting up the large deal in the site. So, that other expenses part is not
+visible in this quarter. So, is my understanding correct, sir? That's why we have seen an increase
+in EBITDA margin?
+Rajesh Goenka: Yes. One of the reason is, of course, we are not having any large deal in this particular quarter.
+So, even if you compare our last year Q1 without the large deal, it was 2.68%. And right now,
+it is at about 3.5%. So, that is one reason. Second, we have done more consistent business and
+more rotational business and our regular business where the margins are relatively higher. And
+third very important point is in this particular quarter, if you see our 11% growth that I
+explained earlier, majority of the growth has come from our regular channel business. The
+second growth has come from organized retail business. And our online business actually has
+shown a degrowth. And this is done consciously because the returns on online business is the
+lowest. So, as a result of an appropriate mix of product and go-to-market business, we have
+been able to improve our EBITDA margin.
+Himanshu Shah: One more thing I would like to add that on your specific question of other expenses line item,
+the exchange rate at this year-end was favorable as compared to last year.
+Moderator: Thank you. The next question comes from the line of Abhishek Kumar from JM Financial. Please
+go ahead.
+Abhishek Kumar: I have 2 questions, both on demand outlook. First, on these large deal, data center or
+otherwise, our understanding was that, yes, while these large deals might be low in margin,
+but ROCE profile of these deals should be better than the usual business given low inventory
+days, etc. Now it seems like you're not as confident as you were earlier and you're talking about
+judgment. So, I just want to understand what is our stance now? What is the ROCE that you
+observed in the large deal that you did last year? And what are some of the parameters you're
+looking at to evaluate future deals?
+Rajesh Goenka: Yes. So, I think I will answer your question in 2 parts. One is our regular run rate business,
+particularly in the first Q1, the overall market was flattish or about 2% to 3% market grew,
+whereas we have grown about 11%, so which is almost more than double or triple of the
+market. But going forward, in Q2, we see this market growing to about 8% to 10%. And at Rashi
+Peripherals, our endeavor is always to grow at 2x. So, that's for the run rate business. As far as
+these large deals, particularly in the AI data center, I think your point is very right. In the
+previous deals, we had the first mover's advantage where we picked up the first deal. So, there,
+the ROCE was better. But now the competition is hotting up not only amongst the vendor
+suppliers, but amongst the distribution also. So, at this moment, it appears that the ROCEs are
+lower, but that does not determine us not to participate in it. We are evaluating each and every
+deal because there are multiple deals available in this quarter and we may pick up some of
+them.
+Abhishek Kumar: Okay. I mean you mentioned 8% to 10% in normal business, I see in your presentation.
+Rajesh Goenka: In Q2.
+Abhishek Kumar: In Q2, okay. For the full year, what your presentation mentions is that PC shipment 2025 is
+projected to grow at 6% and we are already growing at 11%. So, fair to assume that this is the
+growth rate that we should assume ‘X’ of any large project deal, etc? And second, related is
+this 6% growth projection, I mean, will you have any idea, does it include the impact of
+Microsoft pushing people to upgrade, etc, and therefore, some surge that might happen
+because of that.
+Rajesh Goenka: Yes. This is all taken care, but these are all third-party reports. Some reports indicate 6%, some
+reports indicate 8%, some reports indicate about 9%. So, the variation is 6% to 9%. That's the
+third-party report. But the real fact is Q1 market was about 3% growth only, but we grew 11%.
+In Q2, we expect the market to grow around 9% to 10%. And our endeavor, I'm repeating my
+statement, we -- our endeavor is always to have 2x of the market growth. So, in summary,
+annually, if the market grows by 6%, then obviously, we will have minimum 2x growth. If
+market grows at 9%, we will still have 2x growth. That's our strategy and aspiration.
+Moderator: Thank you. The next question comes from the line of Madhur Rathi from Counter Cyclical
+Investments. Please go ahead.
+Madhur Rathi: Sir, I wanted to understand this 3.5%, as you mentioned, like these are on the higher end and
+2.5% to 2.7%, like you mentioned previously, should be the steady-state margin. So, for the full
+year, what kind of margin can we expect? And sir, this 3.5%, you mentioned some of the
+reasons, but can -- so is the -- what could be the new normal? Has the business dynamics
+changed? Or we should still think about from 2.5% to 2.7% EBITDA margins?
+Himanshu Shah: So, just to mention to your first question, the 2.5% to 2.7% range, which we have been giving
+is an annualized range only. Second thing, as Rajesh mentioned in his speech also, it's a mix of
+customers. So, like second quarter, typically, e-commerce goes high, which is of a lower margin,
+but equivalent sort of ROCE. So, the percentages may get reflected in terms of variation in GP,
+NP and EBITDA. However, ROCE will not vary, and that's what our focus always remains.
+Madhur Rathi: Got it. And sir, one of competitor, Redington, sir, they have mentioned that there has been an
+increased pressure in the server and storage business because of these OEMs reducing margins
+as well as OEMs getting direct orders from customers. Sir, so in our business, sir, are we seeing
+some kind of impact of those terms of trade?
+Rajesh Goenka: Yes. So, I think that is predominantly in the large deals only. Run rate business, there is no
+impact. And that is why particularly in Q1, we went all out for doing run rate business, which
+actually helped us to improve our margins. Had we also gone for the large deals, then obviously,
+our margins also could have been impacted. But consciously, in Q1, we chose to prefer the run
+rate business over the large deals.
+Madhur Rathi: Got it. And sir, just a final question from my end. Sir, our cash flow (CFO), sir, because of Q4
+and Q2 being dominant, we don't get a true picture of what our CFO could be. So, if you could
+just give us what was the CFO post the December quarter end or post the Q1 end for the trailing
+12 months, sir, it would be very helpful for us to understand our business much better. Sir, if
+you could have that figure, it would be very helpful. Or if you could just send me on e-mail, that
+would also work.
+Himanshu Shah: Madhur, on transactional things, yes, we can send you separately or we can connect offline to
+get on to the detailing of the same. However, on the cash flows, I would like to mention that
+as evident in our presentation also the working capital cycle increased effectively will result in
+cash flow getting invested.
+So, to that extent, yes, cash flows if the debtors or if there is a variation in debtors or the
+strategic calls on the payment side or paid inventory, there will be impact on cash flows. But
+those are not long-run impacts basically. It gets normalized within a quarter itself because our
+credit terms vary from 30 to 45 days only.
+Moderator: Thank you. The next question comes from the line of Yash from Unifi Capital. Please go ahead.
+Yash Master: Congratulations on a good set of numbers. So, just a couple of questions. So, first on, have we
+received the full payment from Tamil Nadu government and the Yotta deal? And if not, what is
+the amount that is yet to be received? And when do you expect to receive it by?
+Rajesh Goenka: Yes, we have almost received, very small money is pending, which will come by next week.
+Yash Master: Okay. From Tamil Nadu deal or the Yotta?
+Rajesh Goenka: Yes. Yes. Tamil Nadu deal. Your question was about the Tamil Nadu deal.
+Yash Master: Yes. And on the Yotta deal also, have you received the...
+Rajesh Goenka: Yes, majority payment has come. Only a small portion is pending, which is expected any time
+in next week.
+Yash Master: Okay. Okay. And if I exclude we had a one-off deal last quarter in Q1. So, if I exclude the number,
+we had a good growth of 11%. But as you pointed out last quarter that this large deal could be
+replaced by a combination of small deals. So, are we seeing that happening? How is the
+demand environment panning out in the data center deals? And were there any data center
+deals this quarter, small or big?
+Rajesh Goenka: Yes. So, in Q1, there were only 1 or 2 large deals where we decided not to participate. But in
+Q2, Q3 and Q4, there will be a few large and some small deals also. We have a separate vertical,
+separate team working on these project businesses. We are evaluating every project orders
+that are there in the pipeline. And we will take an appropriate decision what to pick up, how
+much to pick up at the appropriate time. But I must say, I am not trying to give any pessimistic
+signal. We are very optimistic on this, but careful optimism is what is our current strategy for
+the large deals around the data center business.
+Himanshu Shah: And just to add it on, the compensation of that big deal in the form of other deals was more on
+an annualized basis. In a quarter, it cannot be replicated.
+Yash Master: Yes, I understand that. And just sorry if I am repeating this question, but on the margin front,
+this quarter, you had 3.5% margin. So, is this margin sustainable going ahead?
+Himanshu Shah: So, normally, in our kind of business model, 2.7% to 2.8% is what we normally give, barring
+some operational efficiencies or the customer mix, which has got favorable in this quarter. On
+an annualized basis, yes, 2.7%, 2.8% is sustainable in long run.
+Kapal Pansari See, right now, we are getting opportunity for the economies of scale that we have delivered
+on the expansions that we have done 2 years ago. So, definitely, there is some upside that we
+are enjoying at this point in time. What Himanshu mentioned on a long-term guidance that we
+give is the range that is mentioned to him. So, it is very difficult to answer your question
+whether it is sustainable immediately on the long term or not is something that not very easy
+to answer at this point in time.
+Himanshu Shah: Until long-term trends are established in this range.
+Yash Master: Okay. So, long term, 2.7% is the guidance that you have given out.
+Yash Master: No, no. I was saying so 2.7% is the guidance that you are giving for long term.
+Rajesh Goenka: Yes. Yes, that's what Himanshu said.
+Moderator: Thank you. The next question comes from the line of Vinay Menon from Monarch Capital.
+Please go ahead.
+Vinay Menon: Congratulations on a great set of numbers. Just a few questions on the business side. One is
+that you mentioned that the size of the surveillance business has picked up. So, if you can throw
+some number to it and any reasons why we are doing well and what could be expected in the
+future?
+Rajesh Goenka: Yes. So, the answer is very simple. Surveillance business is a new business to us. We started
+this vertical just about a year back. So, when you start a new business, 6 months, 7 months, it
+takes to kick start. So, that it took its own time to kick start. Now we are, I would still say at
+50% of what we can do, but that has started. And second is surveillance market continues to
+do good from a consumption perspective also because every consumer and corporate both are
+installing the surveillance cameras and camera systems and DVRs, NVRs and so on and so forth.
+So, one, of course, demand is up. And second, for us, it's new. So, therefore, percentage growth
+has no relevance because our base was very, very small on last Q1.
+Vinay Menon: Okay. And any numbers, sir, you can throw to on a quarterly basis, what kind of range also what
+we could be doing from this business that would be helpful.
+Rajesh Goenka: I think I am not at the liberty to give the detail of a specific brand, but offline, you can connect
+either with me or Himanshu Shah, and we can give you some input. But I can only say that it
+will be on a yearly basis, it will be a 3-digit figure in crores, much more than the 3-digit figure.
+Vinay Menon: Okay. Great. And sir, when we say AI solutions, like what all comes under that when we are
+mentioning that we see traction in AI solutions. So, any particular segment which you're trying
+to mention there? I just want to have some clarity.
+Rajesh Goenka: Yes. So, in AI solutions, there are 2 solutions that we refer to. One is the consumer AI solutions
+and second is commercial AI solutions. In consumer AI solutions means simple laptops, which
+are AI-enabled, desktops, which are AI-enabled. Rashi Peripherals has the privilege of having -
+- being able to distribute maximum brands and units of AI-enabled laptops and desktops. So,
+that's one we wanted to mention. On the other side, on the commercial side, again, there are
+commercial laptops, workstations, servers and then data centers. Again, there, we have a
+decent role to play, especially in the commercial laptop and workstation space.
+As far as server space is concerned, that we have already discussed, it is more deal business. It
+depends on pick and choose whoever wants to pick and choose. And it is more driven by the
+pricing structure and the credit days and the inventory than more on the technicalities,
+especially from the distribution angle.
+Vinay Menon: Okay. And sir, we have added 4 brands. If you can mention the name, that would be helpful in
+this quarter.
+Rajesh Goenka: Yes. So, these 4 brands are strategic brands, which may not bring big revenue top line or
+bottom line currently, but it is very strategic. So, to name a few, name -- the first brand we
+have started with MSI gaming laptops. It is a Taiwanese company and the world's leading
+gaming company. So, only in North India, excluding Delhi, we have started MSI gaming laptops.
+Second, to strengthen our networking business because in our current networking business,
+we are doing mainly active components. We needed some passive components like cables, all
+that. So, we have tied up with a brand called Norden. It is a British brand with some local
+manufacturing in India to support and fill the basket for networking products. Third is Riello. It
+is an Italian brand in power. They basically manufacture UPS inverters. Again, they have a
+factory in India, in North India. So, with this, we will be able to supply more of the power
+equipments, which are made in India. And third and fourth, last but not the least, there is an
+accessory brand called ALOGIC. It is an Australian brand. Again, they have some manufacturing
+in India. So, this will complement our leadership position in accessories and peripherals
+category in the country. So, all these 4 brands are very strategic. It is complementing to our
+existing business, and we see a good potential in near future for these businesses.
+Vinay Menon: Yes. Last question is that we are expecting the refresh cycle to come in H2 for PCs. And any
+signs that we can see demand.
+Rajesh Goenka: I think I got this question, so I can answer, this Windows refresh cycle, I think that is your
+question in H2.
+Vinay Menon: Yes.
+Rajesh Goenka: So, see, if you see Q1, the market grew by only about 3%, and we are expecting the market to
+grow in Q2 by about, say, 10%. So, the average is just about 6% in H1, right? Whereas on the
+annualized basis, we are still expecting the market to grow by 8% to 10%. That means the H2
+market will be about 12% to 14% is what is the expectation. And one of the key driver is going
+to be this holding of the Windows support. So, yes, it will make an impact. But to be very
+honest, in our country, while our adoption and discussions are on an accelerated path, but
+when it comes to spending and upgrading, then our speed is relatively lower. So, yes, adoption
+will come, but it may be gradual starting from H2 and then subsequently in the next few years.
+Moderator: Thank you. The next question comes from the line of Bhavin Chheda from Enam Holdings.
+Please go ahead.
+Bhavin Chheda: Congrats on very good numbers on the overall operation front. Sir, just if I missed the opening
+part, ex NVIDIA numbers of INR 1,500 crores, you had a strong double-digit growth of 13%,
+14% in this quarter. So, what kind of growth we are looking at the entire fiscal?
+Rajesh Goenka: Yes. So, I think Bhavin bhai, you heard it rightly. If we just exclude that NMDC deal, then our
+Q1-to-Q1 growth has been 11.4%, and it is spread across multiple brands, products and across
+all the regions. And even in from the go-to-market strategy, our channel business has grown
+the fastest. Organized retail also has grown faster and online business, there is a degrowth. A
+mix of all this has resulted in improved EBITDA and EBITDA and PAT margins.
+Going forward, for the entire year, as I said, and we've been maintaining our stance that our
+aspiration is to have 2x the growth of the market. So, this year, we are expecting the market to
+grow. Some reports have given 6%, some reports have given 8%, some reports even have given
+9%. So, our aspiration continues to have double-digit growth and 2x the market growth.
+Bhavin Chheda: Okay. So, last year, I think there was INR 1,450 crores to INR 1,500 crores due to this NMDC
+deal. So, any such deals are in the pipeline or -- and you are not assuming any growth rate on
+that front when you say double digit?
+Rajesh Goenka: Yes. So, I explained this. There are multiple deals in the pipeline in Q2, Q3 and Q4. There are a
+few large deals. There are some midsized deals also. We are evaluating each and every deal
+with our dedicated team and we will take an appropriate business call to pick up the deal if
+there is a reasonable ROI. At this moment, it is a little bit very competitive.
+Bhavin Chheda: Okay. And can I have a gross debt and net debt numbers as on June 30?
+Himanshu Shah: As on...
+Bhavin Chheda: June 30, end of the quarter.
+Himanshu Shah: June 30, it's INR 1,190 crores.
+Bhavin Chheda: Gross debt, okay. Net debt would be.
+Himanshu Shah: It's almost same.
+Bhavin Chheda: Almost same. Okay.
+Moderator: Thank you. The next question comes from the line of Miloni Mehta from Monarch Capital.
+Please go ahead.
+Miloni Mehta: Sir, most of my questions are already answered. I just have one question. What kind of growth
+do we expect from quick commerce moving ahead?
+Rajesh Goenka: Yes. So, I think good question, very close to my heart because this is a new business. At the
+same time, it is also a very challenging business. As I've explained in previous calls, Rashi
+Peripherals has the first mover's advantage on quick commerce, especially because we also
+have the largest infrastructure amongst distribution companies in India. Currently, our
+aspiration, we are doing close to 10 brands in quick commerce. And you will be surprised to
+hear that in quick commerce, which is 15 minutes or 20 minutes delivery, there are customers
+who are buying products like laptops and printers also. Printers is a very bulky product. And to
+answer your question specifically, this year, we will have more than -- we will double -- more
+than double our business only on the quick commerce space.
+Moderator: Thank you. The next follow-up question comes from the line of Sankaranarayanan from
+ithought PMS. Please go ahead.
+Sankaranarayanan S: Sir, just a follow-up question. So, how is our embedded vertical segment doing, sir?
+Rajesh Goenka: Yes, it is doing extremely well. We have more than 30%, 35% growth on a Q1-to-Q1 basis. In
+fact, I think 38%, especially because the demand of the automobile, again, has grown. Previous
+Q4, the market was slow. And then we have some good wins, project wins also in this. So, it's
+doing extremely well.
+Sankaranarayanan S: Sir, in terms of numbers, can you provide?
+Rajesh Goenka: We can do that offline, specific numbers. Himanshu Shah can give you the answer.
+Moderator: Thank you. The next question comes from the line of Sana, an individual investor. Please go
+ahead.
+Sana: Sir, can you elaborate on the strategic rationale for the disinvestment? Was this a performance-
+driven decision or a part of broader portfolio alignment strategy? Additionally, how does this
+affect our future digital or cloud initiatives, if any?
+Kapal Pansari: Yes. So, our endeavor to enter into cloud was very clear, and we started with a small investment
+in a smaller firm so that we can learn how this business has done and how the cloud business
+is operating. Unfortunately, our expectations from this business was that we will learn cloud
+and software business and accelerate the growth. Unfortunately, since we could not turn it
+into profitable over a period of 4 to 5 years of investment, we decided to exit and redraw the
+strategy on the cloud business. While it is a growing and exponentially adoption of cloud
+strategy -- cloud business in the business, corporates and in the general market environment
+is increasing. I think it is something that we are continuing to explore how do we expand. And
+that is one of the reasons why software distribution business, we have started in a different
+light altogether. However, it is too small to talk about it at this stage.
+Sana: Okay. And sir, one more question I have. Can you please elaborate on the 51% sale of stake in
+ZNet Technologies, please.
+Himanshu Shah: So, that is exactly the disinvestment in the subsidiary. We held 51% shares only. So, entire stake
+we have sold out.
+Moderator: Thank you. The next question comes from the line of Atreya Pal, an individual investor. Please
+go ahead.
+Atreya Pal: There is a line item in the annual report, which is a disputed tax claim of around INR 400 crores,
+which sits as a contingent liability on our balance sheet. So, can you please explain how that
+came into being? And what is the risk to our balance sheet over the long term?
+Himanshu Shah: So, a. first of all, I would like to say that we are fully compliant on all the laws and these
+contingent liabilities, which are disclosed in the balance sheet or contingent liability list are
+normal show notices, which are received from GST department inquiring about the details and
+reconciliations in the returns being filed and all. And those are replied to the fullest satisfaction
+of the authorities. And we don't see any concern in future or any risk coming on the balance
+sheet.
+Atreya Pal: My next question is on inventory obsolescence risk. Since we always carry so much inventory
+on our books, if any of them reduces in price or is not sellable in the market, what is the
+recourse that distributor like us have.
+Kapal Pansari: So, we have minimum risk on inventory obsolescence. Typically, there are 3 types of risk that
+we factor in for an inventory. First is the technology risk. Second is a competitive risk. And the
+third one is a refresh cycle of technological risk. What do I mean by all these 3 things is that in
+case of a technology risk is the technology of the brand did not sell in the market at the
+perceived value or the adoption of technology failed. In situations like this, brands typically give
+us sell-through support and we pass on those, reprice it in the market and we sell them.
+The second risk that I talked about is the competitive risk where the brand is positioned at a
+certain price point and the competition of the brand drops the price or is more aggressive. In
+those situations, the brand reprices it to make it competitive enough in the market and those
+get sold out.
+The third risk is on the new technology that comes, which, therefore, what happens, any new
+technology comes, the old technology, there is a price drop and the price drop is announced
+well in advance to us so that the range of these SKUs and different technologies, different price
+points continue to operate in the market. And this doesn't usually happen only with us, but it
+happens to our down tier channel markets also.
+This is part of the usual industry practice. So, therefore, we have very minimum risk on
+inventory. However, for the purpose of accounting practice, we do certain provisioning for
+inventories above 1 year and 2 years, and that is very normal.
+Himanshu Shah: So, actual write-backs, we never experience in the future, any significant. However, as a
+prudent accounting practice, what Kapal mentioned that we make the provisions.
+Moderator: Ladies and gentlemen, we'll take this as the last question for today. I would now like to hand
+the conference over to Mr. Kapal Pansari for closing comments.
+Kapal Pansari: Thank you, everyone, for the wonderful questions. I would like to summarize just by saying that
+the environment was quite challenging in quarter 1 as we began. However, our team delivered
+the strong quarter by continuing to focus on our long-term strategy. Our key principles of value-
+added distribution mindset, maximizing profitability, increasing the value for our shareholders
+while rewarding our people and team's effort with a strategic outlook and agility on our
+operations drove these quarter numbers.
+We thank you for your confidence in continuing to participate with Rashi Peripherals and in its
+journey of growth. We look forward to seeing you again in the next quarter while we end the
+festive quarter of September 2025. Thank you very much once again.
+Rajesh Goenka: Thank you so much.
+Moderator: Thank you. On behalf of Rashi Peripherals Limited, that concludes this conference. Thank you
+all for joining us, and you may now disconnect your lines.

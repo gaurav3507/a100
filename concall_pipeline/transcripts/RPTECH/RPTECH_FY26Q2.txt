@@ -1,0 +1,640 @@
+November 14, 2025
+To,
+Listing Operation Department Listing Compliance Department
+BSE Limited The National Stock Exchange of India Limited
+P.J. Towers, Dalal Street, Exchange Plaza, C-1, G Block, Bandra-Kurla Complex,
+Mumbai – 400001 Bandra (E) Mumbai – 400051
+Scrip Code: 544119 Symbol: RPTECH
+Sub.: Transcript of Earnings Conference Call held on Monday, November 10, 2025
+Dear Sir/Ma’am,
+Pursuant to Regulation 30 of the Securities and Exchange Board of India (Listing Obligations and
+Disclosure Requirements) Regulations, 2015 as amended from time to time, we submit herewith
+the transcript of the Earnings Conference Call held on Monday, November 10, 2025 at 10:00 a.m.
+(IST) for the Unaudited Standalone and Consolidated Financial Results for the quarter and half
+year ended September 30, 2025.
+The same will also be made available on the website of the Company at
+www.rptechindia.com/investor.
+You are requested to kindly take the same on record.
+FOR RASHI PERIPHERALS LIMITED
+KRISHNA KUMAR CHOUDHARY
+Chairman & Whole-Time Director
+DIN: 00215919
+Encl.: As above
+Rashi Peripherals Limited
+Regd. Office: Ariisto House, 5th Floor, Corner of Telli Galli, Andheri (East), Mumbai, Maharashtra – 400069, India
+• Tel: +91-22-6177 1771 | Fax +91-22-61771999 • www.rptechindia.com • investors@rptechindia.com | CIN: L30007MH1989PLC051039
+Rashi Peripherals Limited
+Q2 and H1 FY’26 Earnings Conference Call
+November 10, 2025
+Moderator: Ladies and gentlemen, good day and welcome to the Q2 and H1 FY’26
+Conference Call of Rashi Peripherals Limited.
+As a reminder, all participant lines will be in the listen-only mode, and there
+will be an opportunity for you to ask questions after the presentation
+concludes. Should you need assistance during the conference call, please
+signal an operator by pressing “*” then “0” on your touchtone phone. Please
+note that this conference is being recorded.
+Before we begin, please note that this conference call may contain forward-
+looking statements about the company which are based on the beliefs,
+opinions, and expectations of the company as on date of this call. These
+statements are not the guarantee of future performance and involve risks and
+uncertainties that are difficult to predict.
+On the call today, we have Mr. Kapal Pansari — Managing Director, Mr. Rajesh
+Goenka — Chief Executive Officer, and Mr. Himanshu Shah — Chief Financial
+Officer.
+The Management will take us through the “Operational and Financial”
+performance for the quarter gone by, following which we will open the forum
+for Q&A.
+I now hand the conference over to Kapal Pansari. Thank you and over to you,
+sir.
+Kapal Pansari: Good morning, everyone. We welcome you to the second quarter earnings
+call. Hope you have had the chance to go through our results, press release,
+and investor presentation which are available on the exchange and our
+website.
+As we navigate the digital frontier, the global PC market is roaring back to life,
+with Q2 2025 shipments surging 8% to 10% year over year propelled by
+inexorable Windows 10 sunset and easing tariff headwinds. In India, this
+renaissance is even more electric. Quarter 2 shipments climbed 6% to 3.6
+million units, with notebooks fueled by enterprise Al adoption and Windows
+11 refreshes, leading an 8% charge. Government initiatives such as Digital
+India and Make in India are accelerating domestic hardware manufacturing
+and digital adoption across education, governance, healthcare, and
+enterprise sectors. The Indian IT hardware market continues to grow at 10%
+to 12% annually, driven by rising laptop penetration, smart city projects, and
+expanding data center infrastructure. For our ICT distribution networks, this
+signals an era of premium hardware demand and genuine solutions. We are
+poised to capture this momentum, delivering scalable solutions that
+empower India's creators and gamers. The future is not just computing, it is
+computing smarter. As a leading value-added distribution, PC components,
+and embedded devices, Rashi Peripherals is playing a pivotal role in this
+transformation, bridging global innovation with India's rapidly evolving digital
+ecosystem. By empowering OEMs, channel partners, and enterprises with
+integrated, energy-efficient, and Al-ready solutions, we remain committed to
+strengthening the backbone of India's connected future. In order to
+strengthen our nationwide coverage and serve customers' demand
+seamlessly, we have expanded our distribution network with commencement
+of two new branches in Maharashtra. We are also delighted to announce our
+ESOP program for our employees, fostering a culture of ownership and
+rewarding our talented team for driving our shared success. This initiative
+strengthens our bond and propels future growth.
+Before inviting Mr. Rajesh Goenka to speak, | am pleased to share that Rashi
+Peripherals has been recognized by two prestigious awards, NCN's Best
+National Level Value-Added Distributor of 2025, and Digital Terminal's Most
+Trusted National Distributor of ICT Solutions in India.
+With that, | now hand over to our CEO — Mr. Rajesh Goenka, to share further
+updates about the company.
+Rajesh Goenka: Thank you, Kapal Pansari ji. | extend a warm welcome to all stakeholders on
+today's call as we discuss our business and operational highlights for the
+quarter and the half year.
+Let me begin by sharing some of the key highlights of Q2 FY’26:
+We continue to strengthen our position in the market with new brand
+alliances, welcoming Dell Commercial Technologies business and an Indian
+startup named Teachmint Technologies to our portfolio. Our PC business
+maintained strong momentum, growing at 2x the market rate, reflecting our
+consistent execution and customer focus and expansion. We also had a very
+active industry presence participating in the prestigious Electronica
+Embedded Exhibition in Bangalore, which provided a great platform to
+showcase our embedded products and solutions and engage with potential
+OEMs and customers.
+Another proud achievement was the successful completion of India's longest-
+running Channel Roadshow, covering 50 cities, engaging 4,000-plus small
+partners, featuring 300-plus product demonstrations from leading brands.
+We further expanded our server and storage portfolio, reinforcing our
+commitment to offering comprehensive ICT solutions to our partners across
+the length and breadth of the country. Our evolution is marked by an
+aggressive expansion beyond conventional hardware into the future-ready
+categories like Al-enabled services, embedded and semiconductor solutions,
+and comprehensive enterprise and cloud solutions. We are leveraging our
+robust tech-driven infrastructure, primarily driven on SAP HANA and SAP CRM
+systems, to optimize our supply chain, ensuring we move with the market
+velocity. We have consciously invested in strengthening our presence,
+particulian rtilery-3 and tier-4 cities. Our diversified portfolios split across PES
+and LIT segments make us resilient and position us to capitalize on India's
+digital transformation journey. Furthermore, our increasing penetration into
+Al solutions is delivering meaningful results, reinforcing our leadership in this
+transformative domain. Lastly, we are accelerating the growth of our
+embedded-slash-semiconductor vertical. We remain focused on leveraging
+our extensive distribution network, which now caters to more than 10,000-
+plus customers in 700-plus towns and cities of India, to ensure sustained value
+creation for our stakeholders.
+To provide further details on our financials for this quarter, | hand over the
+call to our CFO, Mr. Himanshu Shah.
+Himanshu Shah: Thank you, Rajesh, and a very warm welcome and good morning to all of you,
+all the investors present on the call. | am delighted to take you through the
+consolidated financial highlights, especially the cashflow-positive financial
+highlights for quarter 2 and H1 FY’26.
+During quarter 2 FY’26, revenues stood at 41,554 million, up by 12.1% Y-O-Y,
+and other than project deals it was up by 20% Y-O-Y. EBITDA came in at 1,081
+million, an increase of 3.5% Y-O-Y, with an EBITDA margin of 2.6%. PAT for the
+quarter was 592.2 million, translating into a PAT margin of 1.4%. Adjusted
+PAT, excluding the extra ordinary items, stood at 664 million, with an increase
+of 7.4% Y-O-Y.
+Talking about H1 FY’26, for the first half of FY’26, revenue was at 73,076.5
+million, 8.3% decline on Y-O-Y. However, with the large project deals which
+we executed last year, excluding those, we are 16% up on our run rate
+business. EBITDA grew by 12.6% Y-O-Y, up to 2,195.5 million, with an EBITDA
+margin of 3%. PAT stood at 1,209.2 million, down 3.2% Y-O-Y, with a PAT
+margin of 1.7%. However, adjusted PAT, excluding extraordinary items, was
+at 1,281 million, with an increase of 9.7% Y-O-Y. ROE is at 13.33%, ROC is at
+15.06% on annualized basis for the H1 FY’26. Working capital days were at 61
+days for H1 FY’26. Trade receivables, trade payables, and inventory stood at
+46, 44, and 59 days respectively. During the corresponding period last year
+EBITDA and PAT were inclusive of certain one-off items. Excluding these
+items, the normalized growth in the current period reflects a strong
+improvement in underlying business performance, supported by steady
+demand and operating efficiency. This provides a more accurate view of our
+year-on-year profitability trajectory. And of course, we have been able to
+manage our working capital components well, resulting in a positive cash
+flow.
+Looking at the business mix on a trailing 12-month basis, our PES segment
+contributed 57% of the revenue, while LIT accounted for 43%. Region-wise,
+61% of the revenue came from metro cities and rest from non-metro
+geographies. The ESOP rollout during the quarter has led to a modest non-
+cash expense, slightly diluting EPS in the quarter by under 1%. This balanced
+approach prioritizes talent retention while maintaining our robust financial
+trajectory.
+With this update, | would now like to open the forum for questions and
+answers. Thank you.
+Moderator: Thank you very much. We will now begin with the question and answer
+session. The first question is in the line of Nigel Mascarenhfarsom Leo Capital.
+Please go ahead.
+Nigel Mascarenhas: Good morning, sir. Thanks for the opportunity. A couple of questions from my
+end. Firstly, can you please elaborate on the extent of the ESOP cost booked
+in this quarter versus last year and versus the previous quarter? And what is
+the likely future run rate?
+Himanshu Shah: So, the ESOP expense last year was nil because this has been rolled out. The
+grant has been given in this quarter. And the accounting treatment of the
+provisioning of ESOP cost has been done as per Ind-AS wherein this quarter
+has involved a provisioning of 72.17 million.
+Nigel Mascarenhas: Got it. And what is the likely future run rate as well?
+Himanshu Shah: So, for up to three years, like for the next four quarters, it will be almost in
+the same range.
+Nigel Mascarenhas Okay. About 72 million for the next four quarters. Got it. And lastly, what is
+your growth outlook and margins for the company going ahead?
+Rajesh Goenka: Yes. So, as far as the growth is concerned, if you see, exclude the last year,
+the big project deal. Otherwise, we are growing at a healthy rate of 16%. And
+particularly, when you compare Q2 to Q2, then our growth is around 20%. So,
+while we cannot exactly predict, but we have been always maintaining since
+last few years that our CAGR has been 20% for last 20 years. And our
+aspiration is always to meet or be near there.
+Nigel Mascarenhas: Got it. And margin wise?
+Himanshu Shah: So, margin wise, as | mentioned in my highlights also, that H1 results gives a
+picture of our margin trajectory, which we have been able to deliver in the
+long run also.
+Nigel Mascarenhas: Got it. Thank you, sir. Thank you for answering my question.
+Moderator: Thank you very much. The next question is in the line of Madhur Rathi from
+Counter Cyclical Investments. Please go ahead.
+Madhur Rathi: Sir, thank you for the opportunity. Sir, | wanted to understand regarding our
+revenue growth, sir. One of our competitors, Sir, Redington, they consider the
+large deal as a part of their business. But, sir, when we consider a large deal
+on a consolidated basis, our revenue has grown by like 12%, 13% for this
+quarter versus our largest peer has grown 16%. So, what is the reason why
+we are not taking any large deals? Is it based on margin? And, sir, if you could
+just help us understand on that.
+Rajesh Goenka: So, last year, large deal that we got in quarter 1 and part of it in quarter 2, if
+you recollect, it was close to almost Rs. 1800 crores. So, that we always take
+it separately because these large deals, there are multiple macro factors of
+getting those businesses or no. So, therefore, for sake of discussion, we
+always keep it aside and then discuss so. However, going and second is what
+we also want to do. These large deals execution should be complete. Our
+payment cycle, all our obligations also should be complete before we get into
+another large project. So, | am happy to share with you that all these orders
+have been very successfully executed and all our obligations are completed.
+So, now onwards, obviously, we are open for large projects once again and
+we have some very strong funnel for Q3 and Q4 and hopefully, we will win
+some large projects once again.
+Madhur Rathi: Got it. Sir, on a net margin front, we have been constantly delivering more
+than our guided of 1.3% to 1.5%. So, can we expect our net margins to be of
+1.5% whether or not we get large deals and our revenue to grow at double
+digit, excluding the large deals as well?
+Himanshu Shah: So, on the margin front, as you rightly mentioned, we have been constantly
+delivering more and the company continuously strives for optimizing its
+operational efficiencies and with the dynamics of the customer mix, product
+mix and the margins flowing from GP to Working Capital discipline, it is a mix
+of all those factors. So, that is why 1.5% is a safer PAT margin which can be
+considered for long run.
+Madhur Rathi: Got it. And final question, sir, if you could just help us understand on the
+software division, how is that scaling up and what kind of margin profiles are
+we currently operating at and where do we see it scaling over the next two to
+three years?
+Rajesh Goenka: So, at this moment, it is very small like a small startup. We are still at the
+design board. So, It is too premature to speak in detail about it.
+Madhur Rathi: Sir, okay. Thank you so much and all the best.
+Rajesh Goenka: Thank you.
+Moderator: Thank you very much. The next question is from the line of Kunal Mehta from
+Sunidhi Securities. Please go ahead.
+Kunal Mehta: Hi, sir. Very good morning. So, you just mentioned that you are also now ready
+to take up large projects and | think the last project that we took from Yotta
+was at a lower margin. So, going ahead, will we be compromising on margins
+for larger projects or we will be maintaining our gross margin of 5% and
+EBITDA margin of about 2.5% to 3%?
+Rajesh Goenka: Yes, the answer is very simple. We obviously had good learnings of the past
+deal and we had some challenges as well. So, with those learnings, we will
+have to tread a little bit carefully. So, | would say that we would take probably
+a middle path and focus is going to be primarily on ROCE.
+Kunal Mehta: Okay. And, sir, taking larger projects, does it maybe deviate the usual business
+that we have because last year, | think, because of the larger project, has it
+been that a lot of bandwidth has been gone towards that or it does not affect
+the usual?
+Rajesh Goenka: Not really. It is the exposure. It is the ROCE. From bandwidth perspective, |
+think we have enough bandwidth to manage the run rate, BAU business and
+the project business both simultaneously.
+Kunal Mehta: Okay. And, sir, | think this quarter, the e-commerce channel percentage is
+about 17%. Is it higher than usual? Is this something that we are a channel
+that you are focusing to grow more on?
+Rajesh Goenka: Yes. So, as | have been always explaining that there is always a fight between
+the September quarter and March quarter. September quarter is a consumer
+quarter. September quarter is an e-commerce quarter and March is a
+commercial quarter. It is an enterprise quarter. So, therefore, this quarter e-
+commerce is high. But as we progress in Q3 and Q4, our GT business, regular
+business will come up again. You know, Diwali time, all the big festivals, BBD,
+all these festivals are there. So, therefore, it is an every year scenario
+depending on when the Diwaliis there and when these festivals are there. So,
+it is repetitive in nature on account of festivals.
+Himanshu Shah: Itis in line with the seasonality applicable to the business.
+Kunal Mehta: Okay. And, sir, what is the average lease term on our warehouses and
+branches? Is it five years?
+Himanshu Shah: So, these are long-term leases only. Most of them are long-term leases from
+three to five years, of course. And when we do capacity expansion, definitely,
+we then look for, you know, renewing for some other property.
+Kunal Mehta: Because | think we just renewed the lease in this quarter or this half year.
+Himanshu Shah: Yes. So, these are long-term leases.
+Kunal Mehta: Okay. So, can we assume it is like a five year lease?
+Himanshu Shah: Yes.
+Kunal Mehta: Okay. Thank you, sir.
+Moderator: Thank you very much. The next question is in the line of Vinay from Monarch
+Capital. Please go ahead.
+Vinay: Hi, sir. Congratulations on a good set of results. Two questions from my side,
+sir. One on this ESOP cost. You mentioned 72 million you booked for this
+quarter. And this is a three-year program. Any target with mind in terms of
+how these ESOPs will be given? And, you know, like, what could be the yearly
+run rate on this?
+Himanshu Shah: The yearly run rate will be around 200 million for two years. And very small
+piece getting spill to third year.
+Vinay: Okay. Any revenue target, any target on which this will be given? Or is it just
+on the tenure getting over?
+Himanshu Shah: So, it is more of tenure for the employees who have spent, you know, more
+than five years in the organization. And that is clearly spelled out in our ESOP
+policy, which is also available in the public forums.
+Vinay: Okay. Great. That helps. And there was a sharp jump in inventory this quarter.
+Any reason for that?
+Himanshu Shah: Inventory days are in the range of like 59 days only, which is not a jump, which
+is normal, you know, days applicable to the industry and this seasonality
+applicable to the business.
+Vinay: Okay. And our cash flow turned positive, this is a great thing for us. Is this
+sustainable, sir? And anything which we have done for this to kind of turn
+around so quickly forus?
+Himanshu Shah: So, we feel that, you know, if you manage your working capital components
+well and be sensitized about the movements in that and keep a close track of
+it, I think we will be able to maintain it. To what extent is the range depends
+upon, you know, as certain external factors are also affecting the working
+capital components. It all depends on that.
+Vinay: Okay. And one last thing is this new partnership with Dell, what kind of
+revenue potential can we expect from it and when can we start seeing
+revenue from that?
+Rajesh Goenka: Yes, thank you for asking this question. So, Dell commercial business is already
+kick-started and in July, August, September quarter also, we booked a very
+small token revenue. This Q3, we are expecting substantial revenue in this
+and going forward also. Just to give you a ballpark figure, Dell commercial
+business, they do to the best of my estimate about $3 billion in India. So,
+theoretically, that plus growth is the opportunity for Rashi Peripherals.
+Vinay: Okay. That helps, sir. | will just get back in the queue.
+Moderator: Thank you very much. The next question is from the line of Aejas Lakhani from
+Unifi AMC. Please go ahead.
+Aejas Lakhani: Hello. Yes. Am | audible?
+Moderator: Yes, sir. Yes.
+Aejas Lakhani: Hi, team. So, sir, a couple of questions. One, the first one is that the
+competitive intensity is materially increasing both from listed as well as
+unlisted peers. So, your thoughts on how it is shaping up?
+Rajesh Goenka: Yes. So, with the globalization, more information, the competition definitely
+with the peers are definitely increasing. But then, because of our inherent
+strength of widest product portfolio and the physical presence in 52 cities of
+India, which we have further expanded to Nanded and Baramati. So, now we
+have 54 locations. So, plus our prudent working right from the management
+level, all three is helping us to maintain our consistent growth to H1 to H1. It
+was excluding the big deal It was 16%. And Q2 to Q2, it is 20%.
+Aejas Lakhani: Noted, sir. But, sir, can you, | mean, if you look at companies like Cinex or
+even, Savex, etcetera, the competitive intensity with which they are
+participating is on the higher side. Are you seeing that not in your pockets of
+investments or in your pockets of products? Or is it happening more on the
+enterprise side? If you could textualize that answer a little bit.
+Rajesh Goenka: | think it is happening everywhere. But again, as | said, because of our larger
+basket of products, larger locations, we are able to mitigate and maintain our
+growth trajectory.
+Aejas Lakhani: Understood. Okay. So, the second question is that, can you just quantify how
+large is our enterprise segment now become and how is that scale-up taking
+place?
+Rajesh Goenka: So, our enterprise business was about Rs. 1000 crores last year. And, of
+course, we are having the highest growth in that segment. But again, | just
+qualify excluding that one big deal.
+Aejas Lakhani: Understood. And what is the run rate of that business now that you are
+seeing?
+Rajesh Goenka: In the excess of 30% to 50% growth on a Y-O-Y basis.
+Aejas Lakhani: Understood. And sir, what kind of deals are you participating in the enterprise
+business? Are these more larger deals that because of our network, we are
+not able to participate in? Could you just call out some more color on the
+same?
+Rajesh Goenka: So, our focus regular as a DNA-wise, our focus is more on SMB kind of deals,
+especially companies which have employees of 100 to 1000 to 1500
+employees. However, selectively, we go for larger project deals also. Like last
+year, we executed three similar projects. This year, so far, we have not
+executed any. But we have a very strong pipeline in Q3 and Q4. And | am sure
+we will win and execute some large projects in these two quarters.
+Aejas Lakhani: Understood. And so, since we have been a first mover in the data centers
+business, can you just call out how is that segment? Are there any tailwinds
+that you are seeing that you can incrementally participate in?
+Rajesh Goenka: Yes. So, data center, | think a ot of work is going on. But there are some capital
+constraints in this industry, which is now getting eased. So, we will see next
+two quarters and subsequent years, a lot of data centers coming up. And
+Rashi, and thank you for highlighting that being the pioneer in this, because
+of that large deal, we are very strongly well placed with our experience plus
+our distribution rights or brand alignment that we have with the global
+vendors.
+Aejas Lakhani: Understood. So, sir, is it fairto say that while the tailwinds of data center deals
+are incrementally there, because of capital constraints, the conversation just
+said a second ago, you are being far more selective and careful in your
+evaluation of what you are interested to participate in. Is that understanding
+correct?
+Rajesh Goenka: Absolutely. And our CFO is also a little bit adamant on ROCEs.
+Aejas Lakhani: Understood. Okay. So, the next question is that, you know, you have had a
+certain set of product cohorts like the embedded and the large display format,
+etcetera, which you alluded to in the past, have a slightly better gross margin
+mix. So, could you just speak about what is the portfolio as a percentage of
+sales, which has a slightly better gross margin mix? Hoisw th at growing versus
+the company growth rate and can that help hold or improve the gross margin
+over this and the next year?
+Rajesh Goenka: Yes. So, our embedded slash semiconductor business is doing extremely good.
+And as | mentioned earlier, we participated in the largest exhibition of India,
+which was Electronica. We were the leading exhibitors there. We could
+display a lot of our solutions and we can see good business also emerging
+from it. So, run rate, | think the growth is good. However, at this moment, in
+the overall revenue, the percentage is still small and it will take two to three
+years to really make a very significant difference in the overall scheme of
+things.
+Aejas Lakhani: Understood. And sir, could you just share what exactly and how are you
+participating in the software market?
+Rajesh Goenka: As | said, this is at the drawing board only at this moment. So, it is too early to
+mention anything about it.
+Aejas Lakhani: Understood. But it will be more, again, distribution of the software products,
+right? Is that a fair understanding?
+Rajesh Goenka: Right now, we are on the drawing board.
+Aejas Lakhani: Understood. All right, sir. Thanks so much and all the best.
+Rajesh Goenka: Thank you.
+Moderator: Thank you very much. The next question is in the line of Bhavin Chheda from
+Enam Holdings. Please go ahead.
+Bhavin Chheda: Yes, congratulations to the management team for the strong growth. Just
+two, three questions. Sir, one on the Dell commercial business. You said you
+booked some revenues in quarter two and expect a strong momentum with
+Dell commercial business having $3 billion in India. So, can you just guide us
+how many suppliers would be there who would be doing this Dell commercial
+business and what kind of market share we would be targeting over the next
+few years in this? And prior to quarter two, we did not have any kind of Dell
+commercial business. It is the first time that we are booking revenues in this
+segment.
+Rajesh Goenka: Yes. So, first, | will start answering in reverse . So, yes, Dell commercial
+business, we started with zero previous quarter and we booked some very
+small revenue. However, going from this quarter, we have built a separate
+team and our funnel is also very strong. So, we expect a substantial execution,
+not only just order booking, within this Q3 and of course, accelerated growth
+in Q4.
+Bhavin Chheda: And depending on, there would be how many distributors who would be
+doing this business?
+Rajesh Goenka: Four.
+Bhavin Chheda: There are four distributors in India who are distributing?
+Rajesh Goenka: Yes.
+Bhavin Chheda: Okay. Second, we see a debt reduction. | think congrats to Himanshu and the
+team to reduce the debt and bring working capital back under control. So, if |
+see, | think previous quarter, we had some Rs. 280 crores Yotta receivable for
+the last year, one big large deal. So, the entire amount has been received and
+still some receivable spending on that side.
+Himanshu Shah: So, happy to inform you that the entire amount has been received against
+that. Yes, it got delayed, but at the quarter itself, we had collected all the
+amount
+Bhavin Chheda: So, this quarter closing balance sheet now reflects a normal working capital
+related to our business?
+Himanshu Shah: So, these collections of large debtors has helped maintaining our working
+capital cycle also and the cash flow, resultant is the positive cash flow.
+Bhavin Chheda: And as we are obviously seeing a strong growth across most of the
+distribution companies, partly because of windows 10 transition. So, what
+kind of trends you saw in the festive season and how long this process will
+continue and will it be a one-off effect and the growth will taper down after
+the transition has happened on the corporate side and all that? What is your
+outlook on windows 10 transition?
+Kapal Pansari: Yes. So, first of all, what | have in my initial speech while opening, | mentioned
+that overall globally, as well as in India, there has been a robust uptake in the
+PC shipments fueled by Al-based laptops and the windows refresh. With more
+and more Al work process flows, applications that are coming in, these
+laptops are becoming far more smarter and productive. So, the trend, one of
+the trends that we saw during these festive period was the premiumization
+of laptops. Instead of the entry level, there was a significant demand and
+interest from the customers for mid and higher end segments. Gaming
+segments continue to be strong and growing, followed by the windows
+refresh cycle. | think these were the key trends of PC drive that has happened
+in the country. Whether these are one-off or whether these will continue, |
+think this is just a start of the transformation for PC industry. More and more
+adoption will continue to happen because when the transformation happens
+or the technology upgrade happens, it is not possible for any organization,
+SMB or enterprise to refresh their entire infrastructure to these new devices.
+They have to use the PCs that were bought last year and the year before for
+another one or two years. When the refresh happens, it will happen to these
+more efficient and premium products going forward. The third information |
+would like to also highlight, while it is a public information about key
+components like memory, storage, computing chipsets, etcetera has started
+to face certain shortages in the market due to this high demand in the Al
+space, makers of the Al space. The data is increasing, the computing capacity
+need is increasing for devices. This is not going to be short term. It is going to
+last for a couple of quarters at least with the way we look at the trends in the
+market. Therefore, even the expectations on some increase in pricing will also
+happen.
+Bhavin Chheda: And Kapal is also the rupee depreciation partly helping out in overall increase
+in prices since lot of our components or the equipments are imported and
+then sold in India. So probably the rupee depreciation has helped in slightly
+higher turnover.
+Kapal Pansari: Yes, So rupee depreciation in the long term cannot be directly attributed to
+the growth. But if you looat kth e theoreticalltyhe economics, obviously when
+rupee was 85 to 88, 89, the prices will eventually catch up and there will be
+some appreciation. But there is no direct correlation in the amount of growth
+attributed due to rupee depreciation.
+Bhavin Chheda: Okay. And last one, can we figure out what was the volume growth if at all, if
+you are mentioning in the number terms on a unit basis in quarter toon a Y-
+0-Y basis, on units, on volume basis?
+Rajesh Goenka: Yes, so very good point actually. So our first internal benchmark is unit
+growth. Then we look at the average selling price growth and then we
+eventually come with the revenue growth and then the profitability. That is
+the sequence. So | am happy to share with you that the market in terms of
+unit wise has grown by about 8%. Our unit growth has been about 16%,
+16.5%, Q2 to Q2 and our revenue growth has been about 20%. So that is the
+map overall. Thank you.
+Bhavin Chheda: Thanks a lot Rajesh. Thank you and best of luck.
+Rajesh Goenka: Thank you.
+Moderator: Thank you very much. The next question is from the line of Kunal Mehta from
+Sunidhi Securities. Please go ahead.
+Kunal Mehta: Yes sir, hi. Just two follow-up questions. One is on the debtors factoring. |
+think now that CFO Sir has got our rating up to AA- which is very
+commendable. Can we see that we start with debtors factoring which can
+help us improve our working capital days?
+Himanshu Shah: Yes, you are right with the credit rating up. The products available are more
+and we are very cautious about the nitty-gritties of the factoring. And we
+started testing those things and reaching at a number which is most optimum
+to our kind of financials. Definitely we will see over a period of time.
+Kunal Mehta: Okay. And Sir, on the forward-looking revenue guidance, apart from large
+projects, can we say that our core business can grow at 15% Y-O-Y?
+Comfortably?
+Himanshu Shah: Yes.
+Kunal Mehta: Okay. Thank you, Sir.
+Himanshu Shah: Thank you.
+Moderator: Thank you very much. The next question is in the line of Vikrant Sahu from RK
+Advisory. Please go ahead.
+Vikrant Sahu: Hello.
+Himanshu Shah: Yes, Hi, good morning.
+Vikrant Sahu: Yes, very good morning. Thanks for the opportunity. Just | have a question like
+you have provided details about the inventory write-off and doubtful debt.
+Can you explain to me how these are important and where we stand in the
+industry?
+Himanshu Shah: So, as far as inventory write-off is concerned, it is actually not write-off, but
+provision for ageing inventory which we do as a prudent accounting practice.
+However, the company has not faced any sizeable write-off in the past or
+material write-off in the past, you may say. As far as provision for doubtful
+debts is concerned, yes. what | can mention is ours is lowest in the industry
+and in the range of 0.01% to 0.02% and long run also like 10, 15 years horizon
+| am talking about. And we continue to keep those things because credit risk
+is the major risk which we have a mitigation product in our kitty in the form
+of credit insurance where we enjoy best of the terms from insurance
+companies also because of our performance on the doubtful debts.
+Vikrant Sahu: Okay. One more question | have about the new branches in Baramati and
+Nanded aligned with your overall expansion strategy in tier 2 and tier 3
+markets. How do we align that the new branches?
+Rajesh Goenka: So, in our quest to reach to newer customers and newer towns and cities, we
+explore the viability of opening a branch operation. So, we identified five
+locations where there is a substantial business opportunity and to start with
+we have started in Nanded and Baramati and just to update all our investors,
+all our branch, our profit centers. So, we actively review the P&L of each
+branch individually. And as you know, Maharashtra as a state and particularly
+places like Baramati and Nanded as a town, they are expanding rapidly in IT
+consumption in the home segment and the business segment both is pretty
+high and that is the reason we have set up these two new locations in
+Maharashtra.
+Vikrant Sahu: Okay. And one more question | have, are there any plans to strengthen digital
+sales platform or adopt Al driven inventory management systems in future?
+Rajesh Goenka: So, Rashi peripherals was one of the first companiest o implement SAP almost
+20 years back and then we have upgraded our system to SAP HANA. So, our
+entire ecosystem runs on SAP HANA. All our sales team, 400 plus sales people,
+they are on SAP CRM. So, they are all hands-on. Along with this, we have
+Power BI. So, | think we have the entire ecosystem which is digitized and we
+continuously keep on upgrading our technologies because we realize that one
+multi-location, second number of products, more than 4,000 products in our
+portfolio, it is a complex web. So, all the possible tools we use and we are
+improvising regularly by a core team of IT specialists.
+Vikrant Sahu: Okay. Thanks. Yes.
+Moderator: Thank you very much. The next question is from the line of Madhur Rathi from
+Counter Cyclical Investments. Please go ahead.
+Madhur Rathi: Sir, thank you for the opportunity once again. Sir, | read somewhere that there
+are around three crore PCs in India that are still on Windows 10. So,
+conservatively, how much can we expectt o be converted to Windows 11 over
+the next two to three years? And sir, what is the average selling price for this
+Al-led PC versus our current realization for PC, if you can help us understand?
+Rajesh Goenka: Yes. So, see, Windows Refresh is going to be a continuous process. And in
+India we typically try to refresh when we get stuck. So, it is not going to be
+overnight. But what keeps me more excited is the overall digitization, the
+demand of notebooks, desktops, and all related accessories. And obviously,
+the overall economy of India is also doing well. So, all these three factors
+together is increasing the demand. And to further help to increase the
+revenue, the premiumization of the IT products and solutions, as Kapal
+mentioned, is helping us to drive little bit higher revenues. To answer your
+question, a normal PC today in India costs about, a notebook costs about Rs.
+40,000, whereas Al PC, on an average, it costs about 75,000 to 80,000
+onwards. But then, people who can afford and who have the budgets, they
+buy these Al PCs only, core ultra PCs only because today the Al consumption
+or usage may be only 20%. Buti n next one year, the way, the speed with which
+it is, the implementation and apps are being developed, the utilization next
+one year is going to be very high. And typically, when someone buys a laptop,
+in the commerecial space, they use for at least three years. In personal space,
+people use for more than four to five years. So, it is a wiser thing to buy a Al
+compatible PC than a regular PC.
+Madhur Rathi: Got it. Sir, is it fairt o assume that out of, so from what | read is like around six
+crore PCs are currently in India. So, is it fairt o assume that the 50% that have
+been converted to Windows 11 have been the corporate customer and going
+forward the three crore whatever needs to be refreshed that will be a much
+slower cycle than what has happened or how should we look at it?
+Rajesh Goenka: Absolutely, only thing is this, three crore and two crore, | cannot quantify
+because that is very subjective. But yes, the Refresh has primarily started from
+the corporate sector because obviously, the support is not there. So, there
+are there are multiple issues of using those notebooks and desktops.
+Madhur Rathi: Got it. Sir, this is the final question from my end. Sir, when we see the data
+centers, most of this business is either enterprise driven or project deals. And
+sir, we being exclusive NVIDIA distributor, how does this help when NVIDIA is
+bidding for these contracts, our competitors are bidding for these contracts,
+and we are focusing only on deals that are margin accretive. So, how should
+we look at it when the opportunity is there but because our OEM is also
+competing in that and our competitors are also competing. So, how should
+we look at it from Rashi's perspective regarding how can we capture this
+opportunity and growth other than the NVIDIA, the gaming and your personal
+requirements?
+Rajesh Goenka: Yes. So, in the data segment right now, there is a lot of demand, tendering
+going on and we have a strong funnel and we are playing strong on that field.
+As | said earlier, we will look at the ROCE with our past good and some bad
+learnings also, which we want to correct. So, we are at a strong position and
+| can tell you very confidently that you will see good results in Q3 and Q4,
+both.
+Madhur Rathi: Got it. Sir, just a final question. Sir, the NVIDIA, as we are one of the sole
+distributors for NVIDIA, sir, is it, so if | consider Rs. 100 to be the revenue of
+NVIDIA in India, sir, how much would be enterprise or corporate driven and
+how much would be the consumer or retail driven? And in retail, are we the
+only player present in this segment?
+Rajesh Goenka: So, first | just want to clarify, we are not the sole or exclusive distribution
+partner for NVIDIA. We are the oldest distribution partner for NVIDIA, one.
+Second, NVIDIA products and solutions are sold under the NVIDIA brand
+through the distribution, one. But the larger business is through the OEMs like
+ASUS, Dell, HP, Lenovo, Supermicro, all these companies. These companies
+buy GPUs from NVIDIA directly. They assemble, make the complete servers
+and solutions and then they provide to distributors like us. So, it is very
+difficult to really determine what will be the consumer versus commercial
+ratio of NVIDIA.
+Madhur Rathi: Got it. Sir, thank you so much in all the best.
+Rajesh Goenka: Thank you.
+Moderator: Thank you very much. The next question is in the line of Amit Agicha from HG
+Hawa. Please go ahead.
+Amit Agicha: Yes, good morning and thank you for the opportunity. | hope | am audible
+clearly.
+Rajesh Goenka: Yes, Amit.
+Amit Agicha: Yeah. So, the current debt equity ratio which is shown here is 0.49x. Like, what
+is the targeted comfort range and what are the company's plans to reduce
+the debt to improve the cash conversion?
+Himanshu Shah: So, as the cash positive scenario continues, it will definitely reduce the debt
+burden on the balance sheet. As far as target debt is concerned, if the
+business warrants any additional capital or the fund infusion, | would say,
+capital inflow, definitely we have borrowing capacity in our kitty to utilize the
+debt and grab the opportunity provided the ROCs and ROEs justify those
+infusions.
+Amit Agicha: What is the current cost or blended cost of interest?
+Himanshu Shah: Currently, it is in the range of 7.6% to 7.8%. So, very comfortable.
+Amit Agicha: And then the last question is like what are the top risk factors which you
+assume now like for the coming two quarters or for the coming year?
+Rajesh Goenka: I think no major risk factors per se because our economy is doing good. With
+the tariffs, our impact to India is minimal as such, if you really ask me. Dollar
+fluctuation, now we are getting used to dollar going up only. So, that also is
+settled. The only point | could highlight is globally there is a shortage of all the
+components, particularly CPU, memory, SSD, hard drive, all these
+components are in shortage primarily because of very high demand of data
+centers and capacity enhancements have not done. So, that could potentially
+impact the revenue but the feedback that we have from our vendor suppliers
+is that they will be able to maintain it. But since you ask this question, it could
+be a potential risk but unlikely.
+Amit Agicha: Thank you, sir. All the best for the future.
+Rajesh Goenka: Thank you.
+Moderator: Thank you very much, ladies and gentlemen. That was the last question. |
+would now like to hand the conference over to management for closing
+comments.
+Kapal Pansari: Hi, thank you everyone for this wonderful round of questions and updates
+about Rashi Peripherals. As a part of closing remarks, | only want to mention
+that the future of Rashi Peripherals continues to be robust and foundation-
+led. We participated on the enterprise in a big way. We had some learnings
+and now we are ready for phase two of our participation in this journey. Our
+traditional and perennial run rate business continues to be extremely strong
+foundationally, growing at double digit plus growth. We only request all the
+participants and our investor community to continue to look for our
+performances and information that will prove to be a testimonial for our
+growth and ability to participate in this market. Thank you so very much and
+have a great day.
+Moderator: Thank you very much. On behalf of Rashi Peripherals Limited, that concludes
+this conference. Thank you for joining us and you may now disconnect your
+lines. Thank you.

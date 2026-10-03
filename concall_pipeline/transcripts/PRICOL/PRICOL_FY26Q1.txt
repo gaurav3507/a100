@@ -1,0 +1,450 @@
+PL/SEC/TGT/2025-2026/052 Monday, 4th August 2025
+Listing Department Corporate Relationship Department
+National Stock Exchange of India Limited BSE Limited
+“Exchange Plaza’, C-1, Block G 1st Floor, New Trading Ring
+Bandra-Kurla Complex, Rotunda Building, P J Towers,
+Bandra (E), Mumbai - 400051 Dalal Street, Fort, Mumbai 400 001
+Scrip Code: PRICOLLTD Scrip Code: 540293
+Dear Sir,
+Sub: Con-call Transcript
+Pursuant to Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements)
+Regulations, 2015, we herewith submit the Transcript for the Con-call held on Friday,
+1st August 2025 at 04:00 PM (IST) pertaining to Company’s unaudited financial results for
+the quarter ended 30th June 2025.
+This is for your information and records.
+Thanking you
+Yours faithfully,
+For Pricol Limited
+T.G.Thamizhanban
+Company Secretary
+ICSI M.No: F7897
+Encl. As above
+PRICOL Limited
+Q1 FY’26 Earnings Conference Call
+August 01, 2025
+Moderator: Ladies and gentlemen, good day and welcome to the Q1 FY’26 conference call of PRICOL
+Limited.
+As a reminder, all participants’ lines will be in the listen-only mode and there will be an
+opportunity for you to ask questions after the presentation concludes. Should you need
+assistance during the conference call, please signal an operator by pressing “*” followed by “0”
+on your touchtone phone. Please note that this conference is being recorded.
+At this time, I would like to hand over the conference to Ms. Purvangi Jain from Valorem
+Advisors. Thank you and over to you ma'am.
+Purvangi Jain: Good evening everyone and a warm welcome to you all. My name is Purvangi Jain from
+Valorem Advisors. We represent the Investor Relations of PRICOL Limited.
+On behalf of the Company, I would like to thank you all for participating in the Company's
+earnings call for the 1st Quarter of the financial year 2026. Before we begin, let me mention a
+short cautionary statement. Some of the statements made in today's conference call may be
+forward-looking in nature. Such forward-looking statements are subject to risk and
+uncertainties which could cause actual results to differ from those anticipated. Such
+statements are based on management's belief as well as assumptions made by and information
+currently available to the management. Audiences are cautioned not to place any undue
+reliance on these forward-looking statements in making any investment decisions. The purpose
+of today's earnings call is purely to educate and bring awareness about the Company's
+fundamental business and financial quarter under review.
+Now let me introduce you to the Management participating with us in today's Earnings Call and
+hand it over to them for their opening remarks. We have with us Mr. P. M. Ganesh – Chief
+Executive Officer and Executive Director, Mr. Siddharth Manoharan – Director - Strategy, and
+Mr. Priyadarsi Bastia – Chief Financial Officer.
+Without any delay, I request Mr. P. M. Ganesh to start with his Opening Remarks. Thank you
+and over to you, sir.
+P. M. Ganesh: Hello, good evening to all of you and very nice to connect with you once again. I am sure that
+you have had a chance to go through the upload of whatever we have done in the Stock
+Exchange and welcome to the Q1 of FY’26 Financial Performance.
+Straight away I will go to the Financial Performance:
+Starting with the revenue from operations stood at INR 877.66 crores with an EBITDA of INR
+101.8 with an EBITDA margin of 11.61%. The PAT stood at INR 49.89 crores with a PAT margin
+of 5.68%. EPS has gone up to INR 4.09. Our consolidated long-term borrowing as of Q1 is at Rs.
+109.7 crores.
+Coming to the growth percentages:
+Revenue from operation has grown at a healthy 45.57%. The EBITDA stood at 26.30% in terms
+of its growth. Cash profit was at 23.87% and profit was at 9.51%. Thank you again once again
+and over to you ma'am for the Q&A.
+Moderator: Thank you very much. We will now begin the question-and-answer session. The first question
+is from the line of Vijay Pandey from Nuvama. Please go ahead.
+Vijay Pandey: Hi sir. Thank you for taking my question. I wanted to check if you can give a break-up of what
+was the sales and what was the EBITDA margin for the PRICOL Precision Company. That is my
+first question. And secondly, if you can give us an update about the employee expenses, In the
+fourth quarter, it went up as a percentage of sales. I just wanted to check, and I think the
+Company stated that it will come down to nominal levels within two to three quarters. Do you
+still see that to be the case or is there going to be a difference by probably a quarter or
+something like that? These will be the two questions from my side.
+Siddharth Manoharan: Good evening, Mr. Pandey. Thank you for your question. On the first part, let me answer. We
+have clocked a turnover of close to INR 205 crores for the 1st Quarter in PRICOL Precision
+Products Private Limited. With an EBITDA of close to 7%.
+Vijay Pandey: Okay.
+P.M Ganesh: The employee cost percentage was at around 12% and as we have been telling in the previous
+earning call, we are making some forward-looking recruitments primarily for many of our new
+projects which are going to be launched in the next couple of years.
+Vijay Pandey: Sir, just one more, just wanted to check what is your view on the ABS regulation that is going
+to come up? The disc brake which we are making, that should see an incremental growth from
+next year because of the ABS or how should we look into it?
+P.M. Ganesh: Absolutely. I think this is going to be a high potential area for growth and disc brake we have
+launched since Q2 of this year, just starting this month. We have already supplied to a few of
+the startup EVs and the disc brake system has come out very well. As you rightly said, the ABS
+regulation is becoming mandatory from January 2026 even starting with the 100cc two-
+wheelers, it means that the disc brake would be mandatory for all the vehicles in which ABS is
+going to be used. This gives us a lot of opportunities in terms of growth which we are seeing in
+the next couple of years. Also, one of our strategic two-wheeler customers, our mainframe
+customer, we are going to start the productionization from Q4 of this financial year.
+Vijay Pandey: Okay.
+Moderator: Thank you so much. The next question is from the line of Rahul Deshmukh from LKP Securities.
+Please go ahead.
+Rahul Deshmukh: Thanks for the opportunity and congratulations on a good set of numbers. I have a couple of
+questions. My first question is that I just wanted to get some kind of sense on coming quarters
+as a couple of EV launches are scheduled within the next two, three quarters although there is
+slowdown in entry PV but SUV export and tractors are performing really well. So, considering
+the tax cut, monsoon and pay commission which is expected to improve the demand in PV as
+well as in two-wheelers, how do you see revenue mix evolving and what kind of growth are we
+expecting in short to medium term?
+P.M Ganesh: Thank you for the question. Q1 has been muted quarter in terms of the OEM vehicle sales as
+you would have seen. The two-wheeler has just grown by 1%. That is primarily because you
+would have heard in the media about the shortage of rare earth magnet primarily due to the
+restriction of rare earth magnet from China. It had headwinds during Q1 and we expect the
+headwinds to continue in Q2 also. There have been uncertainties in the market in terms of the
+model mix change with the various OEMs. PRICOL has put a good amount of resilience in terms
+of meeting those changing conditions and despite the market being muted during Q1, PRICOL
+has shown a double-digit growth as you can see. Q2, also we expect headwinds at from the
+OEM in terms of model mix changes and primarily they are countering the rare earth magnet
+shortage through multiple ways of de-risking. We expect that yes there are going to be certain
+uncertainties in Q2 before there are permanent solutions found for the rare earth magnet. I
+am sure that Q3 onwards you will find a much more stable revival of the two-wheeler
+production and thereupon till Q4. So, that is where we see but primarily PRICOL as you could
+have seen in the presentation has also launched a number of new products which have
+supported us to beat market growth and that is where we are today and we expect a steady
+growth to happen though these headwinds are something which is not in our complete control.
+Rahul Deshmukh: Thank you sir and my second question is how do you see margins evolving for the coming
+quarters as Sundaram acquisition is done and content per vehicle is I think also expected to
+increase over coming quarters supported by new product categories as just you mentioned and
+increasing content per vehicle. So, how do you see margins over next two three quarters?
+P.M Ganesh: So, actually that would be a little difficult for us to predict at this point of time but you would
+have seen the Q1 margins, we hope that we should be in a position to be around that margin
+but again as I told you there are unpredictable conditions because of the rare earth magnet we
+have to wait and see but we are putting up a good what you call plan B so that we are able to
+be around the EBITDA margins whatever we have done during Q1.
+Rahul Deshmukh: And sir any margin outlook for the Sundaram specifically P3L?
+Siddharth Manoharan: Mr. Deshmukh, good evening. To further qualify specifically on the PRICOL Precision Products
+Private Limited, again earlier I just answered to Mr. Pandey's question that what we have
+clocked in terms of EBITDA for Q1. As you are all aware we have been successfully integrating
+the organization. There was a lot of one time calls that were involved which also helped to
+make EBITDA at the levels what it stood for Q1 but we have put together a comprehensive
+profitability improvement plan which is all starting to see results as we speak and we are quite
+confident from Q2 onwards the initiative that we have put in place will yield better results and
+take us to good heights and we are also seeing a good amount of leverage after integration by
+looking at the customer concentration of PRICOL Limited and thereby leveraging larger
+business buying for PRICOL Precision Products as well.
+Rahul Deshmukh: Okay and sir have you added any new clients for the Sundaram?
+Siddharth Manoharan: We are in the process of leveraging PRICOL’s larger ecosystem of client pools and our strategic
+customers which will yield results in the upcoming quarters.
+Rahul Deshmukh: Okay, thank you.
+Moderator: Thank you. The next question is from the line of Khush Nahar from Electrum PMS. Please go
+ahead.
+Khush Nahar: Yes, hi sir. Thank you for the opportunity. So, a couple of questions from my side. One, because
+of this ABS regulation, could you quantify in terms of the total addressable market that would
+open up for PRICOL? Because I think our previous target was around INR 300 crores is what we
+could do from the capacities that we have. So, because of the regulation, one, do we want to
+increase this capacity and two, what can be the larger picture in this segment?
+Secondly, because of this magnet issue which will persist in Q2 also, are we still confident
+because of the product launches? Because I think previously, we have guided for around 11 to
+13% growth in the PRICOL business. These two questions.
+P.M Ganesh: Khush, thank you for your question. First, I will answer the first one. Disc brake actually has
+been in the incubation stage and it has just got launched into the market. And as I told that end
+of this financial year in Q4, we are going to start the mass production for one of our major
+strategic two-wheeler customer. Having said that, with the ABS regulation, the market is going
+to be very supportive in terms of the disc brake growth. To quantify that, how it is going to
+ramp up would be a little early for us. Maybe during Q4, maybe we will be in a much better
+position to tell you how the ramp-up is going to happen. This is the update on disc brake.
+Second question was on the, yes, on the rare earth magnet. Yes, the headwinds and the
+uncertainties are going to continue in Q2 as well. As we explained, it is something that we have
+to wait and watch because, yes, something that uncertainty is beyond our control. But as we
+explained, PRICOL is putting up very, very good alternate plans to see how we can mitigate this
+risk.
+Khush Nahar: Right, sir. So, we are confident on the 11% to 13% and we will be able to achieve them.
+P.M Ganesh: I would not be in a position to attribute any number to this. But what we can tell is we are
+working constantly on a number of alternate plans to mitigate this.
+Khush Nahar: Sir, I have just one follow-up on the ABS. So, how do we see the competitive landscape in that
+segment?
+P.M Ganesh: There are a number of mature players in the market. But it is going to open up a lot of
+opportunity for new players like PRICOL because the mandatory regulation is going to be there.
+It is going to open up a lot of avenues in terms of growth for even new players like PRICOL. I
+think the growth is going to be good in the next two years.
+Khush Nahar: Right, sir. Thank you.
+P.M Ganesh: Thank you, KHush.
+Moderator: Thank you. The next question is from the line of Shubham Batra from Ambit AMC. Please go
+ahead.
+Shubham Batra: Hi, sir. Thanks for taking my question. Congratulations on a good set of numbers. Could you
+throw some light on the technology license agreement that we have done with the Italy-based
+player? What kind of market size are we looking at? And what are the timelines of when we
+can see revenue coming on from this player?
+Siddharth Manoharan: Good evening, Mr. Batra. We have signed the technology license agreement with an Italian
+firm called Domino for control systems primarily on two-wheeler handlebars components such
+as switches, throttles, levers, etc. This is an exclusive arrangement for the Indian and Southeast
+Asian markets and this is also being done primarily on behalf of the customer confidence that
+they had in PRICOL and we are quite confident to start seeing some revenues twelve to sixteen
+months from here on.
+Shubham Batra: Is this a case of import substitution or are there currently players also doing this in the market?
+Siddharth Manoharan: There are a couple of competitors, but we also see a space for us to enter into and some of the
+customers have spoken to us and asked us to get into the space. That is how we found this
+partnership and we are quite confident to create a niche for PRICOL in this marketplace.
+Shubham Batra: Sure. Got it. One last follow-up. What kind of content for a vehicle would we be looking at when
+we are supplying the whole handlebar along with the BIS?
+Siddharth Manoharan: It will be too early for us to comment on or give any numbers at this point in time, Mr. Batra.
+So, maybe we will park it for now and we will give you better guidance in a couple of quarters.
+Shubham Batra: Sure. Thank you.
+Moderator: The next question is from the line of Rahul Deshmukh from LKP Securities Limited. Please go
+ahead.
+Rahul Deshmukh: Yes, sir. Just a bookkeeping question. So, could you please help me with segment-wise
+breakup? Like how much contribution was there from two-wheelers, PV or CV, etc.?
+P.M Ganesh: About 65% of our revenue comes from the two-wheeler segment. I am giving you a rough
+estimate. It could be varying here and there, but as a thumb rule, about 65% comes from the
+two-wheeler segment, about 10% comes from the personal passenger vehicle segment, about
+15% comes from the commercial vehicle segment and about 10% comes from the off-road
+vehicle and tractors. This is the broad breakup of the 100%.
+Rahul Deshmukh: Okay. Thank you.
+Moderator: Thank you. The next question is from the line of Saurabh Kachhawa from Reliance General
+Insurance. Please go ahead.
+Saurabh Kachhawa: Yes. Thank you for taking my question, sir. Sir, I wanted to get a sense about the new product
+launches that we are having for the likes of smart cockpit or battery management system. So,
+I just wanted to know what could be the market size for these products and what would be the
+margins in this upcoming new product look like?
+P.M Ganesh: Saurabh, thank you for this question, but it's a little early for us to predict in terms of the
+margins and the market size. As we explained during the previous earning call, e-cockpit and
+BMS are currently developed and it is testing at various customer places. It is going to take
+another couple of quarters before we could come in terms of what is going to be the growth
+plan and strategy for both e-cockpit and BMS. Please bear with us for another couple of
+quarters before we could come and explain to you more about the growth. But as we speak,
+the development has been completed and it is under testing at various customer places.
+Saurabh Kachhawa: Okay, sir. Thank you.
+Moderator: Thank you. The next question is from the line of Sewant, an individual investor. Please go
+ahead.
+Sewant: What is the revenue from passenger vehicles in driver information systems?
+P.M Ganesh: As I told you, about 10% of our revenue came from the personal passenger vehicle. And most
+of it are from the driver information system.
+Sewant: Okay. So, how do you expect this to scale up in a couple of years, for especially passenger
+vehicles in EIS segment?
+P.M Ganesh: It is difficult for us to pick a number on this, but we are actively working with the OEMs in terms
+of the new product and one of the things like the previous caller mentioned on the e-cockpit
+as well, we are working with a few key OEMs. The growth in terms of numbers would be
+difficult for us at this point of time. But we are seeing a good growth in the personal passenger
+vehicle in the future years to come.
+Sewant: Okay, thanks. That is it from me.
+Moderator: Thank you. The next question is from the line of Vipul Kumar from Sumangal Investments.
+Please go ahead.
+Vipul Kumar: Hi, sir. So, my question is, when the margins from this acquired entity, this PRICOL Precision
+Products will converge to the margin of PRICOL Limited? Over what time frame?
+P.M Ganesh: See, it is going to be quite difficult for us to talk when this convergence will happen because
+PRICOL Precision Product has got a lot of growth potential, number one and second thing is we
+are going into more of engineered plastic, Precision Plastics we have got. We have started
+developing a roadmap in terms of EBITDA improvement. Maybe we will see that the growth in
+terms of both top-line and EBITDA will continue to improve. But if you ask us when it is going
+to have a meeting point, we are not very sure whether we are absolutely clear on the timeline
+of this.
+Vipul Kumar: So, after two to three years, where do you see the margin of Precision Product entity?
+P.M Ganesh: It is difficult for us to anticipate what is going to be the margin because we have just
+commenced our operations a quarter back and there are a number of programs actually which
+have been encouraged by the customers in terms of its top-line. So, we have to just wait and
+see. We are putting a lot of efforts in terms of both its top-line and then the cost-saving
+measures.
+Vipul Kumar: And lastly, sir, this ABS regulation, so the business which will be flowing due to that, that will
+be mainly through this entity or PRICOL has also products for that regulation?
+P.M Ganesh: So, disc brake is a part of PRICOL, not of PRICOL Precision. So, that is what we were explaining
+that we are going to see a good growth in the next couple of years primarily because of start
+of regulation from January 2026.
+Vipul Kumar: Okay, sir. Thank you and all the best.
+Moderator: Thank you. The next question is from the line of Mitul from DAM Capital. Please go ahead.
+Mitul: Sir, thank you for the opportunity. Sir, I have two questions considering the current geopolitical
+issues and various global challenges. First one is, as ongoing US tariff-related challenge in terms
+of the major slowdown in the global auto market and also to some extent impacting the Indian
+OEMs also, are we facing any impact of that directly or maybe indirectly in terms of the
+discussion with the OEMs in our next one or two quarters of our dispatches?
+P.M Ganesh: Mitul, as of now, we have not seen any uncertainty because of that because I think the US
+tariffs have not been firmed up, as you know that there are several different information in the
+last two to three months and it is keeping on extending. So, at this point of time, we do not see
+any uncertainties in terms of our product getting affected because of tariffs to the US market.
+Mitul: And any impact on any of the future export strategy, we are doing any change based on that
+or nothing to do with that?
+P.M Ganesh: We are not foreseeing at this point of time, but we have to wait and see how this tariff thing is
+going to turn out. But as of now, there is no effect because of that.
+Mitul: Second question on this procurement of raw material or few components from China. As we
+have seen the issue for rare earth, anything similar we are finding, not a complete restriction,
+but any challenges in terms of the supply from China for any of the parts, whether electronics
+or TFT, and are we going or looking out for similar alternate sources also as a strategy of
+mitigating that risk of depending on one source?
+P.M Ganesh: Sure. See, we have mitigated most of the products which we were buying from China way back
+in 2020. You remember during the COVID crisis, many of the tier one companies including
+PRICOL put a lot of plans to mitigate this risk and we have been quite successful on that. But
+there are certain products like displays where China is the largest source of manufacture in the
+entire world. Not only to the automotive, they supply to the consumers electronics also. But
+this is something that PRICOL already has started good initiative in terms of backward
+integration and localization to a good extent. Our target is that in the next four quarters, we
+should be in a position to start some kind of backward integration or localization of the displays.
+Though not fully, we will have a good initiative in terms of backward integration. But if you ask
+me whether you can 100% de-risk China, maybe the answer is no at this point of time.
+Mitul: Understood, sir. Thanks and all the best.
+P.M Ganesh: Thank you.
+Moderator: Thank you. The next question is from the line of Vijay Pandey from Nuvama. Please go ahead.
+Vijay Pandey: Just thanks for the follow-up. I just wanted to check, should we expect the PRICOL Precision to
+reach around 8 or more than 8% margin this year in FY’26 and if not, probably next year? You
+can just help us build out how we should look into it. Secondly, there are many players entering
+into the plastic model business. There are a lot of acquisitions happening. The other
+competitors also do. How should we see that we will be able to turn around this business in
+terms of the volume growth? It is mainly with TVS Group as of now. So, how we are going to
+convert like Bajaj Auto or Hero or any other OEM for that matter. You can give us guidance on
+both of these. That will be very helpful.
+Siddharth Manoharan: Thank you, Mr. Pandey. In terms of opportunities and synergies, as I mentioned earlier, as you
+rightly know, I would also like to highlight that it is not any turnaround. The Company itself is
+quite healthy in terms of the growth potential, what it was seen over the past couple of years
+but after PRICOL’s takeover, there are a lot more synergies opening up for us, considering our
+larger pool of customer portfolio. The Company was traditionally dependent on the TVS and
+had certain restrictions also to reach out to other customers, being part of the TVS umbrella.
+But with PRICOL taking over, we see a lot of opportunities with our strategic customers and a
+lot of them have already started reaching out to us, started floating RFQs. So, we see a good
+growth potential in the upcoming years for that particular division, with our current set of
+customers itself. And secondly, we are also working on to add more value-added products to
+the portfolio, moving up the value chain, thereby the margins are also steadily improving. And
+we have also put in place a lot of performance improvement plans, efficiency improvement
+plans, which is yielding results in terms of increasing our bottom line and we are quite confident
+this year we will be launching comfortably a healthy single-digit EBITDA and at a consolidated
+level to maintain the EBITDA rate for the organization overall.
+Vijay Pandey: Okay. Thank you.
+Moderator: Thank you. The next question is from the line of Khush Nahar from RMS. Please go ahead.
+Khush Nahar: Hi, sir. Thank you for the opportunity again. My first question was, could you tell us in terms of
+CAPEX, what is the amount that you are planning to spend over the next three years on a
+consolidated Company level? And what is the capacity utilization in PRICOL Precision Products?
+P.M Ganesh: Hi, Khush. In the next three years, we will be spending somewhere around Rs. 500 crores of
+CAPEX on a consolidated level. And capacity utilization is something like the Company can scale
+up for another 20-22% further revenue with existing capacities.
+Khush Nahar: Thank you.
+P.M Ganesh: Thank you.
+Moderator: Thank you. The next question is from the line of Smit Shah from Monarch Networth Capital
+Limited. Please go ahead.
+Smit Shah: Sir, congratulations on a good set of numbers. I want to know about the segments apart from
+two-wheelers. Is it safe to assume that they are largely growing with the industry and the bulk
+of the outperformance coming from the premiumization in the two-wheelers?
+P.M Ganesh: You are asking about the industry or PRICOL?
+Smit Shah: PRICOL.
+P.M Ganesh: PRICOL has been growing in all segments of market. As I mentioned, though in Q1, there was a
+muted growth across the segments. In fact, the whole industry has grown in totality about less
+than 2%. We have outperformed the market in all segments of the market, not only in two-
+wheeler, but in commercial vehicles, in passenger car, in construction equipment, and tractors
+as well. So, that is the reason we are able to show double-digit growth and if you see our
+presentation, which has been uploaded, you can see a number of new product launches, which
+has happened across the segments of the market.
+Smit Shah: Okay. So, my next question is on PRICOL Precision. What was the revenue number and EBITDA
+margin number for like last year, 1st Quarter?
+P.M Ganesh: Last year, Q1, they were around INR170 crores of top-line and weekly 5% EBITDA.
+Smit Shah: Sorry, sir. I missed out on the EBITDA margin.
+P.M Ganesh: 5%, around 5% EBITDA last year
+Smit Shah: 5%. Okay. Thank you, sir.
+Moderator: Thank you. The next question is from the line of Arvind R. from Sundaram Alternates. Please
+go ahead.
+Arvind R: Yes. Thank you so much for the opportunity. Congratulations on the good set of numbers, sir.
+So, on DIS systems, I want to understand one thing, either sequentially or by year-on-year, how
+much of the revenue growth is contributed by volumes and how much should be by ASPs. I
+mean, yes that is the first thing I would like to understand. And with respect to gross margins
+sequentially, it has come down a bit. Is it primarily because of the PPB business, I mean,
+Precision Product business, or even in DIS systems business, we had some, like, margin
+compression, which was going on there?
+P.M Ganesh: It would be very difficult for us to quantify in terms of the DIS margins, whatever we are doing.
+The combined margins is what you are already seeing on the performance. See, the margins
+actually is little fluctuating, but it will become all right, primarily because of fluctuation in the
+dollar to rupee conversion If you see that even two days back, there has been a steep
+depreciation of the INR against the dollar and since we are import dependent, there will be
+some fluctuation in terms of the margins, but it gets regularized because 100% of our external
+factors like the raw metal forex are indexed back to back with the customer.
+Arvind R: Sure. Also, the question on what would be the impact of volumes on the revenue growth?
+P.M Ganesh: No, PRICOL has been in the last few years having more value growth when compared to the
+volume growth. And this is expected to continue because of the premiumization happening in
+the driver information system space and we expect this to continue for a few more years,
+because a lot of conversion which are happening from the mechanical meters into more of
+electronics and there upon into the high-end electronics.
+Moderator: Thank you. The next question is from the line of Zubin Puruseth from Karma Capital. Please go
+ahead.
+Zubin Puruseth: Hi, sir. Am I audible?
+P.M Ganesh: Yes, please, Zubin. Please.
+Zubin Puruseth: Yes, hi. Sir, I just want to get a sense with respect to the other segment that we have, that is
+the actuation control and product management. So, if you can just help us with how we see
+this segment growing apart from the aspect where you have already spoken about the brakes
+and it would just be a request if you all could also give revenue break-up for both the segments
+going forward, if that would be possible.
+P.M Ganesh: In terms of revenue potential in the past and going future, we expect a good growth in the
+actuation control and rate management system. We call that the ACFMS. And the good portion
+of it is the export content of this segment is quite encouraging. We supply both to the Europe
+and the US market, primarily into many of the marquee customers like Caterpillar, Harley-
+Davidson, Polaris, Generac, and Kohler. We have got a number of customers with whom we
+export our ACFMS products to the US and Europe. So, we expect a good growth potential in
+this area. Another key segment where we have been constantly growing in this area is our fuel
+pump. Primarily, we started in a small manner in 2020 for the two-wheeler. Today, we supply
+to many of the two-wheelers in the country and also export fuel pumps to various countries.
+So, going forward, we see the momentum to continue. Breakup, it varies a lot actually between
+the driver information system and the ACFMS primarily because of the customer and model
+mix change. So, it will be very difficult for me to give a percentage on that.
+Zubin Puruseth: Right, sir. Sir, like for example, in the past, you have said that 13% to 15% growth from PRICOL
+is what is expected from the parent Company. So, just wanted to sense as to how much we are
+seeing growth with respect to the ACFMS side apart from the DIS. So, that is where actually I
+was coming from.
+P.M Ganesh: Actually, ACFMS has been growing steadily. You can see that whatever quarter-on-quarter
+performance we have been showing, there has been equal growth between the driver
+information system and ACFMS. And whatever growth we see in the future also, I think it is
+going to be a very balancing act. It is not that one segment is going to grow and another division
+is not going to grow, it is equally growing at both sides.
+Moderator: Thank you so much. The next question is from the line of Saurabh Kacchawa from Reliance
+General Insurance. Please go ahead.
+Saurabh Kacchawa: Sir, as I can see in your PPT and the results, your revenue has grown by 45%. I just wanted to
+understand the growth percentage in terms of the segment. How much has the growth come
+from two wheelers, four wheelers, CVs, etc.?
+P.M Ganesh: Actually, as a percentage of our sales mix, I just explained about the sales mix. But in terms of
+the total growth, actually, as I said, we have outperformed the market. The market has grown
+only by less than 2% on a consolidated basis. That is, two wheeler, commercial vehicle, personal
+passenger vehicle, all put together, the market has grown less than 2%. Whereas, PRICOL has
+grown more than 10%. So, many of the products are also common across the segments. So, it
+will be very difficult for us to separate out segments and say which of the segments of our
+product has been contributing. But overall, as a blended growth, you would have seen that we
+have grown by a healthy double digit.
+Saurabh Kachhawa: What would be the Geography mix for this quarter. What was the percentage of exports and
+domestic sales?
+P.M Ganesh: Okay. Our export is about 7-8% and the remaining comes from the domestic market.
+Saurabh Kachhawa: And sir, do we see the export number increasing going forward?
+P.M Ganesh: Yes, we do see. As I explained that there are good opportunities that currently we are working
+with multiple customers, both in the US and Europe market.
+Saurabh Kachhawa: Okay. Thank you, sir.
+Moderator: Thank you. The next question is from the line of Arvind R. from Sundaram Alternates. Please
+go ahead.
+Arvind R: Yes, this is one follow-up question. So, on the DIS system, there is a volume growth of vehicles
+better than the industry. And do we think it will continue to be the case for subsequent quarters
+or years?
+P.M Ganesh: Yes, we have been in a good growth momentum in terms of both volume and value in the driver
+information system and the ACFMS vertical. We expect that this growth momentum should
+continue.
+Arvind R: Okay, better than the industry should continue in the medium term also, in terms of volume.
+P.M Ganesh: In the past quarters, we have been outperforming the market on a steady state. We are hopeful
+that we will continue the same trend.
+Arvind R: Sure sir.
+Moderator: Thank you. The next question is from the line of Manish, an individual investor. Please go
+ahead.
+Manish: Yes, thank you for the opportunity. My first question is regarding the CAPEX. So, you have
+mentioned that we will be doing INR 500 crores across three years. So, I wanted to know the
+bifurcation here. So, how much for the PRICOL Precision handlebar foray and for the
+standalone business?
+Management: Yes, Manish. Out of the INR 500 crores of CAPEX, like INR 250 to Rs. 300 crores will be for
+PRICOL Precision and balance will be for PRICOL Limited.
+Manish: Okay. My second question would be regarding the top three customers and their
+corresponding revenue share, if you could share this.
+P.M Ganesh: See, the top three customers are primarily the order of manufacturing. You see that two-
+wheeler is the largest market in India, where close to two-thirds of the volume of Indian
+automotive is produced from the two-wheeler. So, is our customers also in the order of the
+two-wheeler primarily, the top three comes from the two-wheeler, followed by the personal
+passenger vehicle and the commercial vehicle. So, we exactly follow the pattern of vehicle
+manufactured in India. That is why we are not segment dependent. We are across all segments
+of the market.
+Manish: Yes, I just wanted to know the names of the customers, if that is not an issue.
+P.M Ganesh: That would be difficult because of the confidentiality that we have with each of the customers.
+It will be difficult for us to give the breakup.
+Manish: Okay, no problem. Thank you.
+P.M Ganesh: Thank you so much.
+Moderator: Thank you. As there are no further questions, I would now like to hand the conference over to
+the management for closing comments.
+P.M Ganesh: Thank you so much again, once again for the participation. Good evening to all of you. So, see
+you soon during the Q2 earnings call of FY’26. Thank you so much.
+Moderator: On behalf of PRICOL Limited and Valorem Advisors, that conclude this conference. Thank you
+for joining us and you may now disconnect your lines.

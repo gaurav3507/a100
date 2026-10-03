@@ -1,0 +1,622 @@
+Secretarial Department
+SEC/LODR/47/2026-27 May 05, 2026
+The Manager The Manager
+The National Stock Exchange of India Limited Department of Corporate Services
+Exchange Plaza, Bandra-Kurla Complex, BSE Limited, Phiroze Jeejeebhoy Towers,
+Bandra (E), Mumbai – 400 051. Floor 25, Dalal Street, Mumbai – 400 001
+Re: Scrip Symbol: FEDERALBNK/ Scrip Code: 500469
+Dear Sir,
+Sub: - Transcript of the Earnings Call for the Audited Financial Results for the quarter and year
+ended March 31, 2026
+We wish to inform you that the transcript of the earnings call hosted by The Federal Bank Limited (“the
+Bank”) for the Audited Financial Results of the Bank for the quarter and year ended March 31, 2026, has
+been made available on the Bank’s website at the following link, within the timeline prescribed under the
+SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015:
+https://www.federal.bank.in/documents/10180/0/Analyst+Call+Transcript_Q4FY26.pdf/4dd0c37f-9e58-
+4a41-236b-fd42a70e3c08?t=1777984836779
+We are also enclosing the transcript of the earnings call with this intimation.
+This is for your information and appropriate dissemination.
+Thanking you
+Yours faithfully,
+For The Federal Bank Limited
+Samir P Rajdev
+Company Secretary
+Federal Bank | 6th Floor, Federal Towers, Bank Junction, Aluva | Kerala | 683101
+Phone: 0484- 2622263| E-mail: secretarial@federalbank.co.in | Website: www.federal.bank.in
+CIN: L65191KL1931PLC000368
+The Federal Bank Limited
+Q4 FY’26 Earnings Conference Call
+April 29, 2026
+MANAGEMENT: MR. KVS MANIAN – MD & CEO
+MR. HARSH DUGAR – EXECUTIVE DIRECTOR
+MR. VENKATRAMAN VENKATESWARAN –
+EXECUTIVE DIRECTOR & CFO
+MR. LAKSHMANAN V – GROUP PRESIDENT &
+HEAD, TREASURY
+MR. VIRAT DIWANJI – GROUP PRESIDENT &
+NATIONAL HEAD, CONSUMER BANKING
+MR. MANIKANDAN M – HEAD, FINANCIAL
+REPORTING
+MR. SOUVIK ROY – HEAD, INVESTOR RELATIONS
+Federal Bank Limited
+April 29, 2026
+Moderator: Ladies and gentlemen, good day, and welcome to the Q4 FY'26 Conference Call, hosted by
+Federal Bank. As a reminder, all participant lines will be in the listen-only mode, and there will
+be an opportunity for you to ask questions after the presentation concludes. Should you need
+assistance during this conference, please signal an operator by pressing star then zero on your
+touchtone phone. Please note that this conference is being recorded.
+I now hand the conference over to Mr. Souvik Roy, Head, Investor Relations, the Federal Bank
+Limited. Thank you, and over to you, sir.
+Souvik Roy: Thank you so much. Good evening, and a very warm welcome to everyone on the call. Thank
+you for taking time to join us today and for your continued engagement with the bank. We
+definitely value these interactions and look forward to sharing our annual performance as well
+and along with, of course, our outlook for the year.
+We'll share with the opening remarks from our MD and our ED will walk you through the key
+highlights of the year and with the strategic priorities going forward. This will be, of course,
+followed by a detailed Q&A like we always do.
+With that, over to you, sir.
+KVS Manian: Thank you, Souvik. Good afternoon, everyone. Before Venkat takes you through the detailed
+financial performance for the quarter, I would like to share a few reflections as we close out the
+last year. This marks my first full financial year as MD and CEO of the bank. Over the past 18
+months period, our efforts have been directed towards sharpening execution, strengthening our
+core, and aligning the organization firmly with our long-term strategic priorities that we had
+shared in the analyst meet last year.
+Our Q4 performance reflects a strong operational quarter with outcomes that are consistent with
+the direction we have articulated throughout the year. The progress we are seeing is not
+incidental. It is a result of deliberate actions taken across both sides of the balance sheet. We
+have had a record quarter on several metrics, details of which Venkat will cover later.
+On the liabilities front, we have undertaken a calibrated restructuring of our deposit profile. Our
+focus has been on improving the quality and granularity of deposits with a clear pivot towards
+retail liabilities. We hit a milestone of over INR 1 lakh crore in CASA. Our sharp focus on
+CASA and specifically CA is clearly showing results. As a result of this approach, we have
+consciously reduced our reliance on high-value deposits, which has contributed to a more stable
+and cost-efficient funding base.
+At the same time, we continue to build on our traditional strength. Our NRI franchise remains a
+key differentiator, and we have further strengthened our leadership position in this segment. NRI
+deposits have now crossed INR1 lakh crore, alongside a continued increase in market share,
+reinforcing the strength and resilience of this franchise.
+On the asset side, we remain committed to a calibrated shift in our portfolio mix. This is
+inherently a medium-term journey, and we are encouraged by the traction seen across most of
+our identified focus segments. Growth has been broad-based and aligned with our objective of
+Federal Bank Limited
+April 29, 2026
+improving risk-adjusted returns in a market where we have seen intense and sometimes irrational
+rate competition.
+Our fee income trajectory during the year has been extremely encouraging, reflecting improved
+cross-sell, better product penetration and a more diversified revenue profile. Profitability metrics
+have also shown resilience. Our ROA has now reverted back to the pre-rate cut levels, supported
+by improved margins and disciplined cost management.
+During the quarter, we also launched our wealth management business. This is an important step
+in building a stronger mass affluent franchise as well as deepening customer engagement,
+enhancing our fee pool and building a more comprehensive financial services proposition for
+our clients.
+In parallel, we have taken a more scientific and data-driven approach to our physical network
+strategy. Our branch expansion and restructuring initiatives are now guided by detailed studies
+undertaken by us along with reputed experts in the domain. This is helping us build a more
+efficient, well-distributed and future-ready branch network. In line with our recent brand refresh,
+our branches have begun transitioning to a renewed and refreshed outlook.
+The project on reimagining our branch operating model is also making very good progress. As
+we look ahead, our focus remains unchanged, consistent execution, disciplined growth and
+continued strengthening of the franchise.
+With that, I will hand it over to Venkat to take you through the numbers in more detail.
+Venkatraman V: Thank you, Manian, and good evening to all of you. Before I give my comments, let me start by
+congratulating my colleague, Manikandan, for becoming the CFO of the bank, and I welcome
+him to this key position in the bank and wishing you all the very best Mani.
+Manikandan M: Thank you sir.
+Venkatraman V: Thank you all for joining us today. I trust you have had a chance to review our investor
+presentation and disclosures. I will focus on the key financial and balance sheet developments
+from the final quarter, but before that, a few comments on the macro environment.
+The Q4 macro landscape remained largely resilient with growth momentum strong and inflation
+within the RBI's 2% to 6% tolerance band. Headline CPI averaged approximately 3.1% for the
+quarter. The core inflation narrative remains constructive and core CPI averaged around 2.1%
+for the quarter, reflecting continued supply side efficiency and absence of broad demand side
+pressure. Food inflation was contained early in the quarter, but picked up towards March,
+reaching 3.87% and this is a trend which we have to monitor going into Q1 FY'27.
+On the policy side, RBI held the repo rates at 5.25%, following 125 basis points of easing
+through calendar 2025. The principal macro risk to flag is obviously the West Asia conflict,
+which escalated late in the quarter, 28 February onwards and introduced volatility into global
+energy markets. The full inflationary pass-through is expected to reflect -- from Q1 -- later part
+of Q1 FY '27. That said, India's macro fundamentals remain on strong footing.
+Federal Bank Limited
+April 29, 2026
+The operating environment while carrying new uncertainties into FY '27 remains fundamentally
+sound. Our focus on high-quality credit and balance sheet discipline has kept us well buffered
+against external uncertainty. The deliberate shift in our portfolio towards secured and granular
+assets over the past few years has positioned us well.
+Now coming to the performance for the final quarter. It was a quarter of robust execution. Let
+me call out that the numbers I'm going to spell out are on the underlying performance metrics,
+which will be detailing our core earnings trajectory, excluding impact of one-off gains. You
+would have seen in the deck, we have called out some one-off gains and the impact of that.
+We delivered INR1,145 crores in net profit, representing nearly 10% sequential growth. Now
+this is the highest ever quarterly net profit for the bank. The performance was driven by healthy
+NII, fee income and disciplined cost management and tight monitoring of our asset quality. As
+we have emphasized before, these outcomes are the result of deliberate shift in our balance sheet
+towards a more granular and durable profile.
+The total business as at 31, March stood at INR5,78,959 crores, growing at 4.63% Q-o-Q and
+nearly 12% Y-o-Y. Our liability franchise remains the bedrock of our stability. CASA balances
+crossed the INR 1 lakh crore mark to close at INR1,03,390 crores, growing 8.26% sequentially
+and nearly 21% Y-o-Y. Our NRE deposit, which is our moat, reached a significant milestone
+crossing the INR 1 lakh crore mark to close at INR1,02,620 crores. This represents a robust
+13.2% Y-o-Y increase, underscoring the deepening trust and strong engagement.
+Our CASA ratio improved to 32.94%, an increase of 87 bps Q-o-Q and 271 basis points Y-o-Y.
+This is amongst one of the best in the industry. The steady improvement in our funding mix is
+materially enhancing our durability with the cost of deposits declining 5 basis points Q-o-Q to
+5.43%. On advances, our gross advances closed at INR2,68,369 crores, up 3.65% sequentially
+and nearly 13% Y-o-Y. Growth continues to be led by the segments. We have consciously
+prioritized for superior risk-adjusted returns.
+Commercial banking grew nearly 6% Q-o-Q and 26% Y-o-Y, maintaining its position as a
+primary growth engine. Agriculture and microfinance both saw healthy traction, growing 5%
+and 7.28% Q-o-Q, respectively. Our CV/CE business saw a sharp uptick of 8.5% sequentially.
+Our gold loan portfolio delivered a robust performance once again, growing 26% Y-o-Y and 9%
+Q-o-Q. This momentum in gold loan growth has been maintained despite the fact that we were
+downsizing the book of a specific subsegment to ensure full alignment with the latest regulatory
+framework.
+Our LAP portfolio expanded by 8% Q-o-Q, reflecting strong underlying demand and our focused
+approach. We expect this growth trajectory to further accelerate in the coming quarters as we
+continue to deepen our penetration in this high conviction segment. In the business banking, we
+saw a growth of 6% Y-o-Y. This was a conscious decision to prioritize portfolio health and yield
+protection. While our commitment to the MSME sector remains steadfast, our focus is on
+calibrated growth.
+Federal Bank Limited
+April 29, 2026
+Our corporate and institutional banking book remained essentially flat Q-o-Q, reflecting a
+deliberate shift towards credit selectivity. Amid global geopolitical noise and evolving trade
+dynamics, we have prioritized portfolio quality and pricing discipline over headline volume.
+With exposures within high-rated counterparties, we are preserving capital and reinforcing the
+long-term resilience of our wholesale balance sheet.
+Now coming to margins and core income. NIM for the quarter was INR2,716.66 crores, growing
+2.4% Q-o-Q and 14.2% Y-o-Y. NIM expanded to 3.20%, up 2 basis sequentially. This was
+supported by a further reduction in funding costs within the overall cost of funds declining 4
+basis points to 5.46%. The other major callout is on the fee income, which is again a record best
+ever, stood at INR990.92 crores, a strong growth of 10.5% Q-o-Q and 24% Y-o-Y. Total other
+income reached INR1,145 crores.
+Fee growth remains well distributed and continues to strengthen the quality of earnings. Our
+cost-to-income ratio improved to 52.86%, down 106 basis points sequentially, which reflects the
+operating leverage within the franchise. During the quarter, we expanded our physical presence
+by adding 39 new branches, staying consistent with our calibrated and like Manian mentioned,
+data-driven approach to network expansion.
+Our asset quality metrics continue to remain strong with GNPA and NNPA both at decade best.
+GNPA declined to 1.62% and NNPA down to 0.37%, down 5 basis points Q-o-Q, marking
+another all-time low for the bank. Our provision coverage ratio, excluding technical write-offs,
+increased to 76.55%, up 141 bps sequentially. Credit cost for the quarter was maintained at 47
+bps, reflecting our high standards of underwriting and portfolio quality.
+As Manian mentioned earlier, both ROA and NIMs have reached pre-rate cut levels. ROA
+increased to 1.24%, up 9 basis points sequentially. If you recollect Q1, it was 1% ROA, and we
+have ended the year at 1.24%. ROE improved to 12.47%, an expansion of 79 basis points Q-o-
+Q.
+To conclude, Q4 reinforces the fact that we are building a more stable, margin-led and resilient
+franchise. Our priorities remain unchanged, strengthening the liability franchise, growing in
+chosen segments and maintaining a tight grip on credit quality and cost, while global
+uncertainties, including the situation in West Asia require us to remain watchful, the granular
+and secured nature of our balance sheet ensures we are well positioned across cycles. We move
+into the new fiscal year with a focus on risk-adjusted profitability and consistency of outcomes.
+Thank you, and we'll now open up for questions.
+Moderator: Thank you very much. We will now begin the question-and-answer session…
+Souvik Roy: Operator, before we start, just a small request from our end to all participants, if you can keep
+your questions to a maximum of two, and refrain from repeating points that have already been
+covered. That will help us ensure that we can take questions from everyone on the call. Thank
+you.
+Moderator: Our first question comes from the line of Rikin Shah from IIFL Capital.
+Federal Bank Limited
+April 29, 2026
+Rikin Shah: First of all, compliments on continued traction in your CASA and fee execution for the last few
+quarters. I had a few questions, but maybe I'll come back later with more questions. I'll restrict
+myself to two first. Given the balance sheet realignment that you were doing this year, both your
+loan and deposit growth has been below system in FY'26. Now once this realignment, which
+seems to be largely done, could you comment on the growth outlook going ahead? That's the
+first question.
+Second one is on staff expenses, which declined about 9% sequentially. I'm presuming that is
+due to lower retiral provisions in this quarter. If you could quantify the same so that we can
+understand the normalized trends. Lastly, just a clarification one. The onetime provisions of
+INR456 crores are included in PCR. Why not in contingent provisions? Why are they included
+in the provision coverage? Those are my 3 questions.
+KVS Manian: Answering your first one, Rikin, if you look at our deposit growth, I think it is important to go
+below the surface. If you look at the surface, the deposit growth seems lower than the system. If
+you just go one level down and look at our CASA growth, it is significantly more than the system
+in terms of growth rate. Even our retail term deposit growth is higher than the system.
+Actually, we have grown our wholesale deposits negatively during the year. That is a measure
+of strength rather than weakness is the way we read the situation because as you know, the
+wholesale deposit rates were fairly elevated especially during the last quarter and in the last 2
+quarters actually.
+The fact that we could fund our balance sheet with low-cost liabilities and retail term deposit is
+a measure of strength and not weakness. We think we have also resorted to very low borrowings
+during the year. Therefore, we have a lot of gun powder and free to fund growth going forward.
+We feel fairly confident on the liabilities.
+Even on the asset side, again, I would request you to go one level deeper than just looking at the
+broad headline number because if you take all the media leading areas that we have chosen and
+we have stated that we want to grow have all grown extremely handsomely, whether it is gold
+at 9% or LAP at 8% or all of them, actually, each of them has grown extremely handsomely.
+We feel fairly confident and remain focused on growing these segments because it is important
+for us to be focused on profitable growth, and there is enough opportunity in building growth on
+that basis. We think we get increased traction from going from here, not lesser traction. That's
+about the growth question.
+Rikin Shah: Futuristic comments for FY'27, if you can. I mean, fair points, the points that you clarified are
+well taken. If you could offer any guidance on FY'27, that would be helpful on growth.
+KVS Manian: Rikin, all I would tell you is that we have clearly seen acceleration in all the areas we have
+chosen, and we'll continue to build this acceleration and it will get better. If you recall, last
+quarter, Y-o-Y looked 8%. Today, it is looking 13%, right? Obviously, there is traction building
+up, and we are confident of building traction further from here. Let me leave the guidance at
+that.
+Federal Bank Limited
+April 29, 2026
+The second question you asked was about the staff cost. We don't want to quantify that because
+there are provisions that happen through the year and things like that. Those are not easily
+quantifiable as to what exact impact that has had. All I would say is that this is normal course of
+business. It happens during cycles. There are gains and negatives. We treat them as BAU. That
+is on the second.
+Venkatraman V: Yes. On the provisions, Rikin, the conditions remain the same for withdrawal, both floating NPA
+versus floating standard. But let me make it very clear, we don't have any particular portfolio
+where we want to provide this for or there's no concern. First thing I want to make it very clear
+is there is nothing which we have specific to offset this again.
+Having said that, the fact that it's a onetime gain, we wanted to be conservative and create a
+buffer. This, we believe we can -- as per the draft guidance, we can use it during the ECL
+transition, which is around the corner.
+Moderator: Our next question comes from the line of Akshay Jain from Autonomous.
+Akshay Jain: My question is again on growth. How does the war change your outlook on growth? You had
+indicated that the war led to increase remittances during the early days, but now since things
+have settled, how is the remittance trend versus historical rates? Will it warrant a relook at
+growth assumptions on both deposit and loan side?
+That's my first question on growth. Number on margins now are behind us. How should we look
+at margins into FY'27? Is there any further deposit repricing left? Or is it more or less done?
+Those are my two questions.
+KVS Manian: Answering your second one first, Akshay, there is still scope for deposit repricing. As we have
+earlier also guided that our deposit pricing goes into next -- I mean, the first quarter of this year
+as well as maybe early part of the next -- second quarter as well. There is some -- still some
+deposit repricing potential that is possible from here where we stand. Of course, but our NIM
+expansion, as you can see from our numbers, is not only a deposit repricing story, right?
+It is a mixed story on the liability side on CASA. It is on repricing of deposits. It is on reprice
+mix on term deposits, retail versus wholesale. It is a mix story on the asset side, medium yield
+assets versus low-yield assets. It is a composite complex story. It is not one trick pony. There
+are multiple levers we still have to work on expansion of NIM from here.
+If you really look at our NIMs of last year versus this year, full-year, if you just take the last full
+year NIM versus this full-year NIM, you will notice that we have just lost about 2 basis points
+in our NIM over the entire year basis. That's probably one of the lowest in the sector, right?
+There are very few banks which have been able to defend their NIM as well as that. Our NIM
+story is about multiple levers being pulled, and we are confident that we'll continue to remain
+agile and build that NIM expansion from here. That is on the NIM part.
+Your second part was on the remittance and that story. Again, let me just clarify, while our
+remittance story was good and the NR deposit story was good and we crossed INR 1 lakh crore
+deposits of our NR book term and CA put together has crossed INR 1 lakh crore. The fact
+Federal Bank Limited
+April 29, 2026
+remains that our resident SA and resident CA and resident term deposits have grown even faster
+than our NR growth. It's not that our balance sheet is driven -- the growth is being driven by NR
+remittances and NR deposits. Again, it is a multiple lever story. Just clarifying that.
+Remittances as of now, remain elevated. I don't know how this plays out. It is anybody's guess,
+but my sense is that unless you see significant job losses and returning Indians from UAE for
+good into India, I don't think this story is likely to change immediately. Of course, whether that
+happens or not, I can't predict. If that doesn't happen, I think Middle East will be in a rebuild
+mode and that will probably need more people to go there and therefore, robustness of that
+remittance may continue. I would say early to say anything negative about it. As of now, we are
+seeing positive.
+Akshay Jain: Just a follow-up on margins. We are seeing that even larger banks are facing it difficult to pass
+on the December 25 basis point rate cut. How is Federal placed on this front? Number two, is
+there any day count impact on NIMs this quarter?
+KVS Manian: Yes. Day count impact is there, but I mean, we just take it in our stride. That's it. It is there, of
+course, Day count impact is there. Just answering your last one first. Before that, going back, of
+course, we have to compete in the market, and we have to pass on the rates as it is required.
+Obviously, like I mentioned, we have defended our NIM does not mean the defense came only
+through assets or liabilities, right? Obviously, our asset yields would have dropped and our costs
+would have dropped and we would have maintained the NIM.
+As I said, as long as in the segments that we want to build growth, we continue to find the risk
+return okay. We are happy to compete and grow. Only when we find that the risk return trade-
+offs and the ROEs are not good enough is when we are hesitant. Just now, we are not seeing that
+in our chosen areas of growth. Of course, I'll be happy to get some more yield on assets. That is
+another thing we are working on. We are also increasing the discipline on pricing through pricing
+tools, RAROC-based tools and things like that. All that is, of course, part of the execution
+process, which we are -- which we remain focused.
+Just to repeat that, both on NIM as well as on ROA, we are back to our pre-rate cut cycle levels,
+and those were at the peak of the cycle and what we are now are at the bottom of the cycle. I
+would like to believe that there is a qualitative difference between the same NIM and ROA
+between then and now.
+Moderator: Our next question comes from the line of Piran Engineer from CLSA.
+Piran Engineer: Congrats on the good set of numbers. Just firstly, sir, as we think about calibrating or we have
+been calibrating business banking growth, you said because of yields and asset quality, won't
+that impact our current account growth?
+KVS Manian: No. Piran, no, that is not impacting our current account growth. At some level, they are
+connected, but it is not that they are 100% connected. If both work, yes, I agree that both will
+feed into each other and will be better. Having said that, we can grow our current account
+irrespective of what we do on BuB.
+Federal Bank Limited
+April 29, 2026
+Piran Engineer: Our target CASA ratio of 36% stays, right?
+KVS Manian: Why not? Piran, as you know, we are close to 33% now, right, 32.9%. We are almost 300 basis
+points up since we started this journey, right? If we can do that in 12, 15, 18 months, we have
+done that. There's no reason for us not to believe 36% is getable at some point, yes.
+Piran Engineer: Secondly, just on fee income growth. Now last year, we've done much better than our peers.
+Now one part of it was just rationalizing fees across various products. It will be like a onetime
+reset, right? Now from this base, how should we think about the drivers of fee income growth
+or the drivers of a fee-to-asset ratio upward going forward?
+KVS Manian: In the past also, I have said that there are fee, apart from general banking fees, which we have
+reset some of it and we have worked on increasing them. There are 3 key drivers of fee. One,
+credit card fees; second, wealth management fees; and third, trade and forex fees. We are seeing
+some traction in trade and forex, but we can do more.
+We believe we can do more. In cards, we are growing fairly at a good clip, and I think we will
+continue to build that, and that journey is just about begun. Wealth is journey has just not even
+begun. I mean I would say we are just a few months into that business. I think there are enough
+levers again there for us to continue driving fees.
+Piran Engineer: Just the last question for Venkat. Sir, now that you've moved on from the CFO role, what
+functions will you be overseeing?
+KVS Manian: He oversee the CFO role. CFO will report into him. It's more a separation than giving up the
+role. We have separated the role of CFO from Venkat. So Mani will be the CFO, but he will
+report to Venkat since he has now been elevated to the ED level, he has other functions.
+Venkatraman V: And Piran not to worry, most of these are rolling up to me only. Enough to do.
+KVS Manian: Broadly, as you know, many of the support functions, many of them apart from CFO, IT, Ops,
+vigilance, there are many of them which roll up into Venkat.
+Piran Engineer: Okay sir, that is it from my end. Thank you and wish you all the best. And thank you once again
+for not this continuing that Saturday's practice. Thank you for that.
+Venkatraman V: We have taken your feedback seriously, so far.
+Moderator: Our next question comes from the line of Kunal Shah from Citigroup.
+Kunal Shah: Firstly, after this onetime provisioning that we had done, does it change our credit cost outlook?
+Maybe would we require a slightly lower provisioning given that we have already scaled it up
+or maybe transitioning into ECL, we would still continue to maintain like, say, 45, 50 basis
+points of credit cost guidance?
+KVS Manian: Yes. Our credit cost guidance is not influenced by this action. This action is primarily as a
+transition into ECL. Primarily, that is the purpose of this -- step we've taken. Just to clear, our
+Federal Bank Limited
+April 29, 2026
+credit cost guidance has been 50 to 60 basis points in the past. Of course, we have done better
+than that in this year. Broadly, we have -- if you take the year, we are about 56 basis points.
+Kunal Shah: Maybe last few couple of quarters, it's been between 45 to 50, but we still continue with 50 to
+60 basis points of guidance.
+KVS Manian: Guidance there. Especially, we don't want to meddle with the guidance just now. In view of the
+uncertainties in the environment just now, we don't want to review our guidance for now. Having
+said that, if the situation clears and there is better clarity on this Middle East and other
+geopolitical issues, we will review and let you know. Right now, we don't want to change our
+guidance on that.
+Kunal Shah: In terms of the exposure linked to Middle East, maybe on the liability side, we know the
+proportion which is there on the NR deposits. Looking at our presence out there in South, would
+there be on the retail side, maybe what percentage of maybe the portfolio could be exposed to
+Middle East and could there be any risk out there?
+KVS Manian: You are talking about the asset side portfolio?
+Kunal Shah: On the asset side, yes, maybe particularly for maybe the families which are based out of Middle
+East and we would have given them the loans over here.
+KVS Manian: All I can tell you is that it is not a large exposure. NR segment per se is a more liability-centric
+segment than asset-centric segment. It's not a large exposure. Like I mentioned a while back,
+unless we see job losses and people returning back to India kind of a situation, we don't see --
+we don't expect trouble. Just having told you that we have gone through this situation post-
+COVID as well, right, when a lot of disruption on this front we saw. Even then the credit costs
+were reasonably controlled and stable. As of now, we have no reason to believe that it will be
+dramatically higher. It will have high impact.
+Kunal Shah: Just one last clarification. Is the entire IT favorable orders have been considered in this quarter
+because the filings which have been done and the benefit which is flowing in, there is some
+deviation out there. Will there be more that will come through in the first quarter or largely it is
+accounted for?
+KVS Manian: No. What we have reported is about close to about INR1,500 crores -- approximately INR1,500
+crores of refund. Refund has 3 parts to that. One impact of that is interest on that refund that we
+have got, which is the INR456 crores number that you see in our -- as a one-off. The second is
+tax provision reversals, which is INR115 crores roughly number you see there. That is the
+second. Third is the balance sheet -- rest of it is a balance sheet item, which is excess tax paid
+refunded back. All the INR1,500 crores that we have reported earlier have been accounted for
+in this.
+Kunal Shah: INR900 crores, INR950 crores is directly into the balance sheet?
+KVS Manian: Yes, that's right. roughly. Yes, broadly. I said, INR450 crores, INR115 crores and the balance,
+other assets on the balance sheet, yes.
+Federal Bank Limited
+April 29, 2026
+Moderator: Our next question comes from the line of M.B. Mahesh from Kotak Securities.
+M.B. Mahesh: A couple of questions from my side. First, again, continuing on what Kunal asked also. On the
+ECL side, just if you could just kind of give us some color on -- does the 50 to 60 basis points
+of credit cost that you're guiding continues in that regime as well? Or is there a reassessment to
+that number?
+KVS Manian: No, that we have to reassess, Mahesh. As things stand today, our past guidance was that. All I
+said was we are not changing the guidance just now. ECL, change in the West Asia situation
+and all that are events which we have not built into that.
+M.B. Mahesh: Just if you were to ignore the Middle Eastern crisis today, if you could just kind of give us how
+are you thinking about how the ECL change the provisions for you?
+KVS Manian: Mahesh, yes, it's still too early. We are assessing that. Let's come back to you with the proper
+studied response on that rather than a quick response. As you know, this came only 2 days back.
+We are still evaluating what the full implications will be. We'll come back to you.
+M.B. Mahesh: Second question is that in terms of the given conditions at which we are today, would you delay
+the kind of riskiness of the profile that you are trying to build today? Will there be some delay
+to it? Or you would say that there is nothing required at this stage we can continue with the
+current plans that you're having?
+Let's assume that if you're building your LAP book, if you want to build your personal loan book
+or your credit card book or your MFI book a little bit faster. Do these things change today? Or
+you think that it's not required right now?
+KVS Manian: No. I think we -- nothing has changed in our plan. I think as of now, we have no reason to rethink
+our plan. Nothing has happened, which makes us rethink or reevaluate our plan. We will
+continue to build that. We'll continue to focus. If you have seen, we have begun in a small way
+to build the MFI last quarter. So I think our plans do not change. Cards, we are building, as you
+have seen, that is unsecured. Nothing changes in our mind, just now.
+M.B. Mahesh: Just one clarification. In your internal policy, till what can you take your gold loan portfolio to?
+Venkatraman V: See, currently, Mahesh, the gold loan portfolio is around a little less than 14%, and we haven't
+set the kind of any outer limit, but its will within our risk appetite, and we will take a call. Let's
+say, if it's goes closer to 20%, we'll reevaluate at that time and decide whether it's appropriate or
+not, but nothing like a sealing at this stage.
+Moderator: Our next question comes from the line of Jai Mundhra from ICICI Securities.
+Jai Mundhra: First question on gold loan practices. Gold loan, of course, the prices vary quite a lot, and even
+in third quarter, they would have varied from more than INR15,000 per gram or maybe
+INR16,000, INR16,500 per gram to now INR15,000 below. Do you calculate the gold prices on
+a daily basis or you do some 1 month, 2-month average or there is a cap at the upper level? How
+does this work?
+Federal Bank Limited
+April 29, 2026
+KVS Manian: I'll ask Harsh to answer that.
+Harsh Dugar: What we do is the two things which we do. One is we take the last 30 working days average
+gold price and the previous day's gold price, the lower of the 2 is taken. That's a normal course.
+In times of extra volatility, we reduce the LTVs also. I mean -- yes, we reduce the LTV also.
+There are two things either.
+KVS Manian: We take the lower of the two last day as well as average last 30 days as well as last day. We take
+the lower of the two and apply.
+Harsh Dugar: Apart from that, depending on volatility, like in March 4, when we saw increased volatility in
+gold prices, we have also increased the margin over there so that we protect the portfolio. At this
+point of time, our gold loan portfolio LTV is below 54%.
+Jai Mundhra: Second question is on cost to income, like we had a guidance that we gave in the Strategy Day.
+Does that hold? Or I mean, any thoughts on that cost to income guidance?
+KVS Manian: If you see our numbers even this quarter and if you adjust for the onetime, we are in the 53-ish
+range, right? We had always guided that we will remain in this range bound in this 53%, 55%,
+56% kind of range bound, we will remain depending on the quarter. It has some seasonality
+impact as well. Right now, we have, again, no reason to change our guidance on that. We will
+stick with our guidance. We have done slightly better than the guidance in the year, but I would
+say we would right now keep the guidance as it is.
+Moderator: Our next question comes from the line of Param Subramanian from Investec.
+Param Subramanian: Congrats on the quarter. My question is on the -- in Slide 17, you're showing your overall retail
+banking, your retail advances, and that is -- the overall retail book is flat Y-o-Y. Now I picked
+up at the beginning, you mentioned that there is some deposit repricing left, the repo rate cut
+pressures look like they are behind. Would it be fair to assume that you will now start pushing
+the pedal on this, which you have not been doing over the last year or so?
+KVS Manian: Primarily, Param, if you look at one of the retail thing that affects our growth, overall retail
+growth is the home loan business. Our LAP is growing, our gold is growing, our agri is growing,
+CV/CE is growing, MFI is growing. There are majority of -- but the weightage of the home loan
+book is large, which is the largest book. Therefore, that overall drags our growth number down
+on retail.
+On home loan, I'm quite clear that we'll remain agile. If we think our -- if the pricing gets in the
+range where that risk return trade-off is acceptable to us, we will -- as a product, we don't have
+anything against it. Just now, the current market price is what -- Param, on a lighter note, 15
+years home loans are getting priced at 7.15% and deposits are going at higher rates than that last
+quarter, right? We don't see any sense in pushing the pedal on that. As and when it makes more
+sense to us, yes, we will look at it.
+Federal Bank Limited
+April 29, 2026
+Even our credit card, all the retail segments other than home loan as a product, auto probably to
+some extent, again, auto rate pressures have been high, but more driven by home loan. Home
+loan is something that drags it down.
+Param Subramanian: Again, now on the mix, right? Where are we right now in our journey, I mean, you've made great
+progress on, say, shifting the mix towards medium yield, as you've called out. Where are we as
+any medium-term target? Because I was just taking the analyst meet presentation that you made
+in February last year. The classifications, I think, are slightly different. Any numbers you'd call
+out in terms of the mix shift with low, medium, high that you're calling out in Slide 19.
+KVS Manian: Yes, 19. No. Param, that journey is still -- as I said in my early this thing also, it is a medium-
+term journey, right, because it's a book. Incrementally, we can change the volumes quickly, but
+the book takes time to do. If you look at our journey in the last, say, 1 year, March '25 to March
+'26, our low-yield book has dropped from 52.2% to 49.8% kind of numbers, right? It's about 2%,
+2.5% movement. Our mid-yielding segment has moved by, again, similar number, about 2.5%,
+right?
+The more interesting part, if you ask me going forward in the quarters to come is also the high-
+yielding book, right? If we try to -- our cards has been consistently growing. MFI, we have begun
+to grow again. PL, we have begun to grow again. I think there is potential to grow some of that.
+I think this journey is still -- we are in the journey. I don't think we have reached where we want
+to reach.
+Param Subramanian: One last question, if I may. See, on the corporate book, I mean, what we can see in terms of data,
+it seems to suggest that the corporate spreads are improving. Is that something that's a growth
+avenue for next year? Because I'm just trying to understand because low yielding is still 50% of
+your book, what you're calling out in that pile. Housing, you're saying we are still going to be
+cautious. Is corporate something that you are more positive on growth going into next year?
+KVS Manian: Corporate, two things I would tell you. One is, of course, within corporate, we are also putting
+more focus on the mid-market rather than very large corporates, which gives us a yield uptick.
+That's last year, almost 75%-plus of our NTB acquisitions have been more in the mid-market
+companies rather than the large companies. That is one effort that is going on that will show up
+in terms of yield.
+The second more important thing about corporate is unlike retail in the corporate, it is probably
+easier to target revenue wallet and get a better share of that. Therefore, things like I mentioned
+trade forex and current account, if you see our self-funding ratio has gone up in corporate.
+Liability business, our CMS platform has continued to do well. I think there is opportunity in
+the corporate to look at a customer level revenue and do better more easily than it is in the retail
+side, right?
+In the retail side, cross-selling is a more difficult proposition. I would say in corporate, yes, we
+don't want to grow corporate at 18%, 20% kind of rates, but early double digits, we are happy to
+keep growing that. There, our focus will be to increase cross-sell and increase profitability rather
+Federal Bank Limited
+April 29, 2026
+than just the book. Corporate is less of a book business, right? It is booked and new business,
+yes.
+Param Subramanian: Congrats on the quarter and especially phenomenal progress on CASA.
+Moderator: Our next question comes from the line of Nitin Aggarwal from Motilal Oswal.
+Nitin Aggarwal: Congrats on a strong quarter. I have one question like is on the branch expansion. We have
+opened like lower branches this year versus what we opened last couple of years. How critical
+is branch expansion for us to sustain this liability and the CASA mix growth as that has been
+one of the key focus area. How do you think about that?
+KVS Manian: Nitin, if you recall in our earlier calls, we have discussed that we -- in the first half of the year,
+we deliberately went slow because we wanted to bring more science into evaluation of our
+existing network and how we plan our future network, which is an exercise we did. We also
+wanted to work on rebranding and redesigning our branches going forward. We have decided
+that we will keep the number low in the first half. As we get comfort with that exercise, we will
+start building the branch network back.
+Of course, we finished that exercise and we have -- as you know, we did a brand deal, relaunch.
+We have a new branch layout also in place now the design in place. We have also completed the
+exercise about studying our network. We have also come to conclusions on what we need to --
+what restructuring of existing network we need to do in terms of, relocation, restructuring a
+branch, relocating a branch and things like that.
+Now we have more comfort, and that's why you see in the last quarter alone, we have added over
+30 branches, 39 branches in the last quarter. We think we will continue to be focused. As of
+now, we plan to launch about 100 branches in the next year. Yes, branches are important in the
+liability strategy.
+Remember, the part of the restructure exercise and relocation exercise will also improve
+productivity of the existing network. Our CASA growth is not, again, just a number of just an
+outcome of new branches that we will put. It is also about how to get more out of existing
+network. That is an important consideration for us.
+Moderator: Our next question is from the line of Rohit Ahuja from Lotuslion Ventures.
+Rohit Ahuja: You have demonstrated strong operating leverage with cost to income falling sharply and ROA
+improving to around 1.36%. How do you see this going forward? What could be the drivers that
+could possibly take it above 1.5%? Do you see any execution risk that could prevent that from
+happening?
+KVS Manian: Rohit, first, let me just put a note of caution on that. If you notice our deck, we have with one-
+offs and without one-offs stated. In fact, in entire commentary that Venkat used, he used the
+without one-off ratios, right? With one-off, it looks like 1.36%, but without one-off, it is 1.24%.
+Just for the purpose of clarity, I thought I'll mention that. Having said that, yes, journey is to
+where you are saying, and that is something that we will continue to work on.
+Federal Bank Limited
+April 29, 2026
+That, as I said, again, all the 3 -- at a broad level, as I always say, that there are very 3 simple
+things to do. They are not as simple as -- of course, that was in a lighter vein. Liability costs and
+therefore, mix and right mix of liability, right mix on the asset side, second and fee growth is
+third. The fourth potential can be the cost aspect.
+As I have always guided in our next 12 to 18 months journey, I think we don't want to guide on
+cost too much, but on the other 3, we want to continue maintaining that momentum of
+improvement. As you can see, we touched 1% ROA three quarters back. We are up to 1.24%
+just now. Let's see what we can maintain. Of course, this was an exceptional cycle rate change
+cycle. Yes, our objective is to continue the trajectory of expanding both NIM fees to assets as
+well as ROA, ROE, therefore, results.
+Moderator: Our next question is from the line of Anand Dama from Emkay Global.
+Anand Dama: Can you help me like what is the LCR for quarter?
+KVS Manian: 119.
+Anand Dama: You plan to maintain it around these levels or you want to take it up?
+KVS Manian: Yes, we are comfortable with 115 to 120 range.
+Anand Dama: Secondly, I think you talked about the -- there are no job losses as yet, and so you do not see any
+immediate retail stress. But on the MSME and the business banking side, do you see some stress
+customers coming and talking about that they've been stress at this point of time and to come up
+for restructuring? What's the ground situation at this point of time? Can you just elaborate that?
+KVS Manian: Anand, based on our current portfolio behavior, we have no reason to report any stress. If you
+have seen our slippages, they have remained 0.74%, which is low -- I mean, it's in a very
+acceptable range that it has been all the time. Even looking at our current SMA-1, SMA-2, we
+have no reason to believe that there is any stress building up in our portfolio just now. This is
+always an evolving situation, and I don't know how deep this problem gets. All I would say is I
+don't have anything to report as on today.
+Anand Dama: So, the provision that we have made in this current quarter floating provision, that is more
+towards ECL than…
+KVS Manian: Yes, absolutely. floating provision has nothing whatsoever to do with asset quality. Our asset
+quality remains absolutely robust. No deterioration in it. This is primarily as a transition to ECL.
+Anand Dama: What would be the overall ECL impact if you have assessed?
+KVS Manian: We will come back to you on this. We have not yet fully assessed the impact. There are -- of
+course, this is just 2 days old, final. We will work on that and come back with our numbers.
+Anand Dama: Based on the older guidelines in October 2025, what will be the impact?
+Federal Bank Limited
+April 29, 2026
+KVS Manian: referring to new guideline guideline, there is a lot of change, Anand, because the flows -- I mean,
+there is a lot of change. From old guideline to the draft, there was a lot of change. I think what
+has not changed is draft to this outcome, not much has changed, but we will assess the full impact
+and come back.
+All I can tell you is that our asset quality is reasonable and robust. Whatever impact will have,
+of course, it will be an industry-wide impact. Therefore, we do hope that given our robust asset
+quality, our impact should be reasonable.
+Moderator: Our next question comes from the line of Jayant Kharote from Axis Capital.
+Jayant Kharote: Congrats on a great set of numbers. The first question is on the LCR disclosures. I see it's fallen
+below 120%. This is now almost like a 20%-point Y-o-Y decline, and it's been steadily moving
+down. What is your internal Board level threshold and what is your comfort level to operate at?
+The context of this question is as we are accelerating on growth, the ask from our CASA growth
+will probably move beyond 20% next year if this LCR lever is not to the same quantum?
+KVS Manian: Kharote, this LCR with respect to CASA and all that, I don't know. That is a complex question,
+so I will not get into that. All I would say is we are currently operating at about 120% roughly.
+We are comfortable operating at 115% to 120%. In fact, we have consciously brought it down
+from earlier levels of 135%, 140% that we used to maintain earlier. That is also a NIM destroyer,
+right? Higher LCR than required is also a NIM destroyer. It's a conscious call, and we are quite
+comfortable with 115%, 120%. As you know, regulatory requirement is 100%. We are quite
+comfortable.
+Jayant Kharote: 115-120 is your comfort zone. Second question is with regards to your credit card book growth,
+it is moving quite differently from the industry, 23% Y-o-Y. What would be the growth in
+interest earning assets? Fair to assume the transactor growth will be much higher 30% - 35%?
+KVS Manian: I'll ask Virat to take that question.
+Virat Diwanji: Yes. In terms of your assumption is correct, the growth of transactor is pretty robust because
+bulk of the credit cards -- organic credit cards that we issue are given to our existing customers.
+From that point of view, the transactor percentage is growing. Having said that, the overall
+interest-earning book has also seen some growth and more on the transactor side rather than the
+revolver side.
+Souvik Roy: Thanks. Jayant and operator, with this, we'll close the call, and thank you all for joining us today.
+I would like to again extend our thanks to Mani sir on his appointment as the CFO of the bank,
+and we wish him to continue our business with you all of us. On that note, we take the call to
+close. If you have further queries, feel free to reach out to us. We'll be available for further chat.
+Thank you so much, and have a lovely day ahead.
+Management: Thank you.
+Moderator: Thank you. On behalf of Federal Bank, that concludes this conference. Thank you all for joining
+us. You may now disconnect your lines.

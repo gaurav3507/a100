@@ -1,0 +1,660 @@
+February 09, 2026
+Listing Operation Department Listing Compliance Department
+To,
+BSE Limited The National Stock Exchange of India Limited
+P.J. Towers, Dalal Street, Exchange Plaza, C-1, G Block, Bandra-Kurla Complex,
+Mumbai – 40504040111 9 Bandra (RE)P MTEuCmHbai – 400051
+Scrip Code: Symbol:
+Sub.: Transcript of Earnings Conference Call held on Wednesday, February 04, 2026
+Dear Sir/Ma’am,
+Pursuant to Regulation 30 of the Securities and Exchange Board of India (Listing Obligations and
+Disclosure Requirements) Regulations, 2015 as amended from time to time, we submit herewith
+the transcript of Earnings Conference Call held on Wednesday, February 04, 2026 at 11:00 a.m.
+(IST) for the Unaudited Standalone and Consolidated Financial Results for the quarter and nine
+months ended December 31, 2025.
+The same will also be made available on the website of the Company at
+www.rptechindia.com/investor.
+RASHI PERIPHERALS LIMITED
+Yours sincerely
+FOR
+Arvind Bajoria
+Company Secretary and Compliance Officer
+Encl.: As above
+Rashi Peripherals Limited
+Regd. Office: Ariisto House, 5th Floor, Corner of Telli Galli, Andheri (East), Mumbai, Maharashtra – 400069, India
+• Tel: +91-22-6177 1771 | Fax +91-22-61771999 • www.rptechindia.com • investors@rptechindia.com | CIN: L30007MH1989PLC051039
+“Rashi Peripherals Limited
+Q3 & 9 Months FY26 Earnings Conference Call”
+February 04, 2026
+MANAGEMENT: MR. KAPAL PANSARI – MANAGING DIRECTOR – RASHI
+PERIPHERALS LIMITED
+MR. RAJESH GOENKA – CHIEF EXECUTIVE OFFICER –
+RASHI PERIPHERALS LIMITED
+MR. HIMANSHU SHAH – CHIEF FINANCIAL OFFICER –
+RASHI PERIPHERALS LIMITED
+MODERATOR: MR. VINAY MENON – MONARCH NETWORTH CAPITAL
+LIMITED
+Rashi Peripherals Limited
+February 04, 2026
+Moderator: Ladies and gentlemen, good day, and welcome to Rashi Peripherals Limited Q3 and 9 Months
+FY '26 Earnings Conference Call hosted by Monarch Networth Capital Limited. As a reminder,
+all participant lines will be in the listen-only mode and there will be an opportunity for you to
+ask questions after the presentation concludes. Should you need assistance during the conference
+call, please signal an operator by pressing star then zero on your touchtone phone. Please note
+that this conference is being recorded.
+I now hand the conference over to Mr. Vinay Menon from Monarch Networth Capital Limited.
+Thank you, and over to you, sir.
+Vinay Menon: Hi, good morning, everyone and it's a pleasure to host the management of Rashi Peripherals for
+their Q3 concall. I'd like to introduce the management, we have Mr. Kapal Pansari, the Managing
+Director of Rashi Peripherals. We have Mr. Rajesh Goenka, the CEO and Mr. Himanshu Shah,
+the CFO. Now I hand over the call to Mr. Kapal Pansari for his opening remarks. Over to you,
+sir.
+Kapal Pansari: Thank you, Vinay, and good morning to everyone. Thank you for joining us in this conference
+call to discuss our third quarter and 9 months ended of fiscal year 2026 earnings. Hope you have
+had a chance to go through our results, press release and investor presentation, which are
+available on the exchange and our website.
+Looking at the global market trends, global demand for personal computing has regained
+momentum, signalling the start of sustained recovery across both enterprise and consumer
+segments. During the quarter, shipments grew on account of large-scale enterprise refresh
+cycles, Windows 10 end of support transition and accelerated adoption of AI-ready devices.
+We believe this represents the beginning of multiyear technology upgrade cycle rather than a
+temporary rebound. India is mirroring this and in many ways, is outperforming this global trend.
+The domestic PC market delivered one of its strongest quarter ever in this quarter with shipments
+growing upwards of 10% year-over-year.
+The recent union budget has further strengthened this foundation with strong policy push
+towards electronics manufacturing, semiconductor self-reliance, AI infrastructure and digital
+capacity creation with an outlay of around INR40,000 crores, which is nearly double than that
+of the initial outlay of INR22,999 crores.
+Higher capital expenditure, targeted incentives for components and semiconductors, support for
+data center and cloud ecosystems are creating a favorable environment for long-term technology
+investments and domestic value additions. We believe these measures will structurally increase
+demand for advanced computing infrastructure across the country.
+Against this backdrop, our role is evolving well beyond the traditional ITC distribution. At RP
+Tech, we see ourselves as a technology adoption enabler, bridging global innovations with
+India's rapidly expanding digital economy. We are increasing our focus towards demand
+Rashi Peripherals Limited
+February 04, 2026
+creation, taking integrated AI-ready and energy-efficient solutions to underpenetrated
+geographies by enabling localized access and execution.
+This allows us to expand the technology footprint beyond metros and participate in India's next
+wave of digital adoption. Our increasing penetration into AI solutions, embedded systems and
+semiconductor linked categories not only strengthens our participation in higher-value
+opportunities, but also deepen customer engagement.
+Today, our pan-India network of distribution serves over 10,000-plus distribution partners across
+700-plus locations nationwide, providing unmatched reach, faster fulfilment and localized
+service capabilities across the length and breadth of the country. In summary, as computing
+becomes smarter and more AI-centric, we are confident that our solution-led approach,
+nationwide reach. And strong partner ecosystem positions us very attractively to capitalize on
+the accelerated technology adoption across India. Our focus remains on sustainable growth,
+deeper value addition and consistent long-term returns for our stakeholders. With this, I now
+hand over to Mr. Rajesh Goenka, our CEO of the company. Thank you.
+Rajesh Goenka: Thank you, Kapal. Good morning, everyone. Let me briefly take you through the key operational
+highlights for the quarter and 9 months ended of the financial year 2026. During the quarter
+under review, demand conditions remained strong. This was probably one of the best performing
+third quarter as usually, this quarter is followed by a high Q2 seasonal and there is a major dip.
+But this quarter, we witnessed sustained sales momentum, particularly as channel partners
+stocked inventory ahead of expected price increases and driven by expected component
+shortages. While the industry is witnessing an uptrend in the IT product prices due to global
+supply constraints, and dollar appreciation.
+We were able to convert these challenges into opportunities and deliver a 43% Y-o-Y revenue
+growth, which was driven by both price and volume growth, resulting in improved margin, one
+of the best third quarter's net profit growth of 132% on a Y-o-Y basis. We also continued to
+expand our product portfolio and market reach during the quarter by introducing new products,
+new SKUs and further strengthening our distribution partner network.
+In addition, we also launched a new branch in Solapur, which is now our 55th branch in India,
+an unprecedented network of branches, service center and warehouses spread across 55 towns
+of India, enhancing our regional presence and improving coverage in core markets. Overall, our
+strong performance during the quarter reflects the robustness of our distribution platform and
+operating model.
+We remain focused on addressing the large and structural opportunity of enabling an adoption
+and deployment of technology across India by ensuring availability, reach, solutions, training
+and reliable execution at scale. We will continue to strengthen this platform through disciplined
+planning and execution to drive consistent and sustainable growth across all our business
+verticals. Thank you so much, everyone. And now I request our CFO, Mr. Himanshu Shah, to
+brief you on the financial performance for the period under review. Thank you.
+Rashi Peripherals Limited
+February 04, 2026
+Himanshu Shah: Thank you, Rajesh, and good morning, everyone. I will now take you through the financial
+performance for the period under review. Starting with our stand-alone performance for the third
+quarter of financial year 2026, revenue from operations grew by 47% year-on-year to INR3,895
+crores. Profit after tax was INR70 crores, up by 128% year-on-year with PAT margins at 1.81%.
+For the 9 months ended financial year 2026, stand-alone revenue from operations increased 6%
+year-on-year to INR10,966 crores. Profit after tax for the period grew 21% year-on-year to
+INR185 crores with PAT margins at 1.69%. Moving to our consolidated performance for the
+third quarter of financial year 2026.
+Revenue from operations increased by 43% to INR4,030 crores and PAT for the same period
+was INR75 crores, registering a growth of 132% year-on-year with PAT margins at 1.85%. For
+the 9 months ended financial year, consolidated revenue from operations grew 5% year-on-year
+to INR11,338 crores.
+Profit after tax rose to 25% year-on-year to INR196 crores with PAT margins at a healthy
+percentage of 1.72%. Further, following the notifications of the new Labour Code by the
+Government of India on 21st November 2025, the company has prudently recognized an
+incremental impact of over INR4 crores, primarily on account of increased gratuity obligations
+related to past service costs, higher leave liabilities arising from the revised definition of wages
+and enhanced employee benefits.
+In terms of segmental performance for the period under review, Personal Computing and
+Enterprise Solutions division contributed 58% of revenues at INR6,572 crores, while LIT,
+Lifestyle and IT Essentials contributed INR4,767 crores hence amounting to 42%. On cash
+flows, after periods of outflow in the earlier years, we generated a positive operating cash flow
+of INR34 crores for year-to-date.
+On the working capital front, we continue to maintain tight discipline across key parameters.
+Inventory days increased marginally to 56 days, primarily to support strong demand and ensure
+product availability. While remaining well within a well-controlled range, debtor days improved
+to 47 days from 61 days a year ago.
+Reflecting stronger collection and tighter credit monitoring, while creditors days stood at 43
+days in line with our balanced approach to vendor management and payment discipline.
+Consequently, working capital days were at 60 days, remaining stable and well aligned with our
+operating model.
+On the people front, we incurred INR14 crores of ESOP cost year-to-date provisioning,
+reinforcing our commitment to attracting, retaining and incentivizing key talent, while aligning
+employee interest with long-term value creation. With this, I would like to hand it back to the
+moderator and open up for question-and-answer session. Thank you so much.
+Moderator: Thank you very much. We will now begin the question and answer session. Our first question is
+from the line of Aejas Lakhani from Unifi AMC. Please go ahead.
+Rashi Peripherals Limited
+February 04, 2026
+Aejas Lakhani: Perfect. Team, congratulations on phenomenal execution for the quarter. A couple of questions.
+Sir, could you first call out what is the percentage of our business that comes from components
+given that we've seen shortages there? And what is the average price hikes that you're going to
+see in these components?
+Rajesh Goenka: Yes. So we categorize our businesses into LIT and PES. Last year, October, November,
+December, Q3, our LIT share was 49% and our PES, which is predominantly branded desktops,
+notebooks and workstations, they were at 51%. However, in the current Q3 of 2025, the PES
+business has gone up and now it is at 56%. So there is a 5 percentage basis point increase in the
+PES business in terms of ratio.
+And to answer your second point, components, different products are having different price
+points. There are some products, where there is no price increase at all, especially in products
+like motherboard. There are some products, where the price increase is between 20% to 30%.
+And there are some products like the RAM, where the price increase is 2x or even 3x. So it is
+very varied.
+Aejas Lakhani: Understood. And sir, given that the AI infrastructure build-out is one of the primary reasons for
+chip shortages because the orders are going to hyperscalers and supply is very inflexible. What
+would that -- what are the implications that would have on our business in the coming year?
+Rajesh Goenka: Yes. so far, you are right, 100% that majority of the supplies are going to the hyperscalers and
+data centers. As a result, regular consumer and commercial supplies are expected to get
+constrained. But so far, I can tell you that we are not seeing too much of constraint. The only
+challenge is the prices are going up on a periodic basis. So that is the challenge.
+But if -- so far, we have been able to plan inventory in advance. So far, we have been very
+effectively been able to promote and sell our products at a higher price across the length and
+breadth of the country to almost 700 towns of India. So as a result of this, we have been able to
+have this 43% growth on a Y-o-Y basis.
+Aejas Lakhani: Understood. Rajesh, could you also I mean, you've spoken about it in the opening comments.
+Kapal said that you're seeing a good refresh cycle. But my question is that can component
+shortages really impact the PC refresh cycle? Can it delay the cycle? Because an increase in
+pricing could have an impact on volumes as well and the entire shortages could become
+exasperated?
+Rajesh Goenka: Yes. So as I said, at this moment, what we are seeing not really the shortages, but it's the prices
+that are going up. All the products, including notebook prices have gone up by almost 20% to
+30%, and there would be further price increase. So because of the budget constraints, there are
+a lot of corporates, who are expanding their refresh cycle from maybe 2 years to 3 years and
+from 3 years to 4 years. That is true.
+But at the same time, the other corporates who wanted to buy notebook maybe in April or mid
+of next year, they are also now preponing to buy the products right now to avoid that 10% or
+Rashi Peripherals Limited
+February 04, 2026
+20% further price hike because partial hikes have already happened. So both scenario is
+happening. Net to net, we see that numbers would remain consistent. But because of higher
+average selling price, the revenue should be on a positive trend.
+Aejas Lakhani: Understood. So sir, basically, if I understand correctly that the laptops market is seeing a massive
+shortage. There is one leg of price hike that is already embedded in prices today. Another one is
+coming and companies, which in any ways had a buying pattern, which is getting preponed to
+earlier purchases and you are benefiting from that entire cyclical uptick?
+Rajesh Goenka: Correct. Absolutely. But this is not easy because one is you need to have the appropriate
+inventory planning, which takes months of planning and execution. And second, as the price rise
+happens, even if the corporate wants to buy, they have limited budget. So you should have that
+kind of execution skill at the ground level to be able to deliver. Fortunately, for Rashi
+Peripherals, with our now 36 years of experience, we have -- I'm not saying expert, but we have
+mastered that art of planning and execution both.
+Aejas Lakhani: Completely agree. And kudos to you and the team for stellar execution in this. Sir, just one
+follow-up is that, see, since prices are increasing at such rapid rates, you do not foresee some
+amount of volume impact because of which the net resultant sales could be flattish in FY '27?
+Rajesh Goenka: So demand from -- as I said earlier, demand unit-wise, in my view, would be flattish. It may not
+degrow because India digitization, PC penetration is still very, very low. And the higher selling
+price will help us to get the revenue. So overall, I am positive. But yes, we need to be alert. We
+need to plan better. We need to execute better to get this continued success.
+Aejas Lakhani: Understood. And sir, given that ASPs are going up, your margins -- the margin band per se that
+you earn on distribution products will remain the same, but your per unit profitability is what is
+increasing and rising. Is that understanding correct?
+Rajesh Goenka: Absolutely. Absolutely. In distribution, as we always say that margins are normally fixed. So
+we don't have a loss. We don't have a super margin. But then with the economies of scale plus
+our efficiency, we are able to get some better margin, which is evident from our Q3 results.
+Moderator: Our next question comes from the line of Madhur Rathi from Counter Cyclical Investments.
+Madhur Rathi: I wanted to understand -- sir, can we expect to maintain this momentum in Q4 or a lot of
+purchases that were supposed to happen in Q4 was preponed to Q3, and that's why we might see
+a flattish or a muted Q4?
+Rajesh Goenka: Yes. So I think we already discussed this. As I said, we are looking for continued unit-wise
+consistency. And with a little bit further price hike, the revenue will -- should continue to grow
+positively.
+Madhur Rathi: Right. Sir, I also wanted to understand, sir, our working capital cycle and regarding our cash
+flow from operations. Sir, if I compare to our competitor, Redington, they do working capital
+turns of close to 10x in a year versus based on our 9-month revenue, we are doing maybe 6x. I
+Rashi Peripherals Limited
+February 04, 2026
+understand that there is a difference between our product to theirs. But so, how do we plan to
+bridge this gap and turn our cash flow from operations positive because I think working capital
+is the only driver for that?
+Kapal Pansari: See, for our working capital, if you look at Rashi Peripherals business, this is a business, where
+we have a working capital cycle of anywhere between 50 to 60 days. Comparing with any other
+peers because of the sales mix, we do not really plan based on competition or peers or the
+industry. What does IT business supply chain and sales redundancies require based on that, we
+plan our working capital cycle.
+In current times, in fact, working capital cycles with rising prices, expected shortages, we plan
+to increase the -- and supply chain allocations in such a way that sales redundancies are managed
+much better than anyone else in the industry. For sure, IT will not be able to compare with the
+economies and the cycles of working capital of smartphones. So there is no point in comparing
+between two different set of industries operating at two different working capital cycles.
+Madhur Rathi: Sir, I was trying to understand at what level of working capital cycle reduction can we expect to
+turn positive -- our cash flow from operations positive?
+Himanshu Shah: See, defining a level wherein inventories are always held at a forward-looking scenario and the
+debtors and creditors as far as financial discipline warranted for this industry, net of each other
+in terms of days in our ecosystem, if we are able to manage our inventories well, which we have
+been demonstrating for the last two quarters, definitely, the positive cash flows can be achieved.
+Madhur Rathi: And sir, just a final question from my end. Sir, if I look at our PAT margins?
+Moderator: Sorry to interrupt you, sir, if you have a follow-up question, please rejoin the queue. Thank you.
+Madhur Rathi: Sure.
+Moderator: Our next question comes from the line of Jyoti Singh from Arihant Capital Markets Limited.
+Jyoti Singh: Congratulations on the Good execution. Sir, I wanted to understand a question on the margin
+side. So given Q3 margin of 2.9%, so should we expect '26 to exert margin closer to Q3 level?
+Or we are expecting to normalize in Q4?And also wanted to understand this ROC remain in the
+low teens despite margin expansion. So what are aspiration on the ROC side, sir?
+Rajesh Goenka: Yes. So currently, business market size trend, average selling price, all 3 are in the similar mode.
+So our expectation is that it will be the similar trend only. We are not seeing any major variation.
+Jyoti Singh: Okay. And on the ROC side, sir?
+Himanshu Shah: See, ROC, again, is for our -- managing our working capital components, like where sometimes
+we have to increase the borrowings for availing early payment incentives from the vendors and
+all. So ROC has risen quite a bit in last three quarters. And we expect that in next 2 to 3 years'
+time, we will be able to get back to the pre IPO level.
+Rashi Peripherals Limited
+February 04, 2026
+Moderator: Thank you. Our next question comes from the line of Varun Gandhi from Fident Asset
+Management.
+Varun Gandhi: Congrats on also getting the credit upgrade this quarter. So from a corporate finance construct,
+what do you think is the next step after achieving this credit upgrade?
+Himanshu Shah: Sorry, I didn't get your question. Can you please elaborate?
+Varun Gandhi: Yes. So we achieved a credit rating upgrade this quarter, right? So from a corporate finance point
+of view, what's the next step? Are we going to increase our borrowings? Are we going to
+discount our receivables like Redington does? What's the next step? Just trying to understand
+the management's thoughts over here?
+Himanshu Shah: So as I mentioned, managing working capital components efficiently is the key ingredient for
+our business and profitability profiling. So a credit rating upgrade, which happened in the current
+year and the borrowing power enhancement you're talking about, which we got it done last
+quarter?
+Varun Gandhi: Yes, your credit rating upgrade. So now you can have a lower cost of borrowing, right?
+Himanshu Shah: Yes. So yes.
+Kapal Pansari: So let me add to what Himanshu mentioned is that with rating increase, we -- our primary
+objective was to reduce our cost of borrowing. While distribution business is a working capital
+driven, so definitely, there is -- the more you flow back or deploy working capital, the capacity
+for revenue growth increases tremendously.
+In the current times, our objective is to reduce our borrowing cost, maintain the same working
+capital cycle for the increased revenue portfolio, and that is a challenge that we have taken
+internally for the organization from a working capital standpoint. So the next steps for credit
+rating, honestly, there is no answer for next steps. It is always to increase a notch higher from
+AA minus.
+Himanshu Shah: So we are already in AA club.
+Kapal Pansari: AA club. Yes. So AA club, obviously, we want to go to the next step, but it is primarily to reduce
+our borrowing cost at this point in time.
+Varun Gandhi: So would we also be factoring our trade receivables in order to increasing our asset turns and
+decreasing our capital?
+Himanshu Shah: So definitely, if it adds value to the ROCs and ROEs, definitely we are open to consider those.
+Varun Gandhi: Any sort of target debt to equity that the management has?
+Himanshu Shah: Target depends upon the level of components at any given date we are at and then accordingly .
+Rashi Peripherals Limited
+February 04, 2026
+Varun Gandhi: Any comfort band, sir, any number, comfort band or any?
+Himanshu Shah: At this point, not -- we will not be able to give any -- assign any number to it.
+Moderator: Thank you. Our next question comes from the line of Hitesh Goel from Aurigin Capital. Please
+go ahead.
+Hitesh Goel: First of all, a great set of results. Congrats. First, sir, can you tell us about the Dell business, how
+much was the Dell revenue in this quarter?
+Rajesh Goenka: Dell was pretty small, insignificant, but we've had a good start and we are hoping that the next
+quarter and the next year will be really big. Previous quarter was just a start.
+Hitesh Goel: So it's not meaningful in this quarter in that sense. Is it going to be a decent number from fourth
+quarter or from FY '27?
+Rajesh Goenka: Absolutely. In fact, in Q4 also, it will be decent. And next year, it will be substantial.
+Hitesh Goel: And my second question is on the inventory gains. Did you see any inventory gains because of
+these price hikes, which is happening?
+Rajesh Goenka: Inventory gains.
+Hitesh Goel: Yes, because of inventory, like old inventory was lying in your system and then price hike
+happened. So that benefit came through in this quarter?
+Rajesh Goenka: Normally, in distribution, as we've been always maintaining that the margins are more or less
+fixed. So we cannot have too much of extra margin. But yes, to some extent, we could increase
+the overall cycle efficiency and also economies of scale advantage, which has helped us to
+improve our overall margins.
+Hitesh Goel: And sir, my final question is on this laptop and desktop issue, right? Because what we are hearing
+from the market is that the new laptops and desktop is a big shortage in supply because of the
+RAM prices, right? So you are giving a flat volume growth guidance for next year. Is it because
+you're confident about your supplies already tied up for next 6 months or so because the
+environment is quite volatile.So I just want to understand your thoughts?
+Rajesh Goenka: Yes. So the news is all around the corner that supplies will get toned down. And this has been
+the case since last 5, 6 months already. But we've seen the supplies somehow have been able to
+manage. So my bigger worry is the price increases and hence, the unaffordability, especially on
+the B2C consumer side, more than the supply.
+Moderator: Our next question comes from the line of Miloni Mehta from Monarch Networth Capital.
+Miloni Mehta: Congratulations on great execution. Sir, can you please walk us through the 9-month cash flow
+performance and also share the expectations of how the cash flows will be by end of the year?
+Rashi Peripherals Limited
+February 04, 2026
+Himanshu Shah: See, as I mentioned, the 9 months cash flow was INR34 crores positive at this point of time. And
+here, what we expect is if we are able to manage our working capital components in the fashion
+we have done, assigning a number to it will be too early, but ranges can be expected in the same
+genres.
+Miloni Mehta: And second question is, sir, in regards to the UAE subsidiary, so what is the rationale behind it
+and how do we -- hello?
+Himanshu Shah: Yes.
+Miloni Mehta: So what is the rationale behind it and like what are the medium-term plans there?
+Rajesh Goenka: Yes. So as you all know that we already have a Singapore subsidiary from where we are doing
+business not only to India, but also our - SAARC countries. So as a part of -- one is the need for
+execution because in SAARC countries, material pickup is normally preferred from either Hong
+Kong or Dubai. So at this moment, it is more for execution purpose. Once we set up the
+operations and start expanding, then we'll look at the business angle.
+Miloni Mehta: And secondly, sir, in terms of like prices increasing these components, what could be the impact
+once the prices of these RAMs and SSD start softening? Like what kind of impact can it have
+on our margins and demand overall?
+Rajesh Goenka: So margin, as I said, not much of an impact to us. But in terms of demand, what we have come
+to know right now that there is no softening of these prices in the pipeline. But then last 30 years
+of cycle has always seen that when there something goes up, it goes down as well. So fingers
+crossed. We hope that prices become stable because stable prices always gives better business
+and better predictability. So we are hoping for the best that price remains stable rather than going
+up or down.
+Moderator: Our next question comes from the line of Amit Agitcha from HG Hawa & Co.
+Amit Agitcha: Congratulations for a good set of numbers, sir. Sir, my question was related to debt. Like what
+is the targeted net debt to equity range over the cycle? And what is the current blended cost of
+borrowing?
+Himanshu Shah: 0.5 is the debt equity, which currently is there. And we expect looking at the business growth
+and all, we expect to maintain around that only.
+Amit Agitcha: And the current blended cost of borrowing?
+Himanshu Shah: So cost of borrowing is in the range of 7.5% to 8%.
+Amit Agitcha: And the last question from my side is about competition. Like where does the competition
+intensity is the most like pricing, credit or service?
+Rajesh Goenka: Can you repeat your question about competition?
+Rashi Peripherals Limited
+February 04, 2026
+Amit Agitcha: Where does the competition intensity is most like pricing or service or credit?
+Rajesh Goenka: I think we focus more on ourselves. And as I have started saying that one is a very strong business
+planning, which is done months in advance. And second, because of our geographical reach in
+55 towns of India and 700 towns, where we have our customers, our execution, we continue to
+strengthen those capabilities by way of CRM and even to some extent, AI. And that's our belief
+will bring us continued success.
+Moderator: Our next question comes from the line of Gaurav Bhanshali from Augmont Enterprises.
+Gaurav Bhanshali: So my question was Micron has stopped the crucial consumer brands. So we being the
+distributors in India, how much will this affect us? And will we take a hit in this?
+Rajesh Goenka: Yes. So very valid. That's the only little bit concern point that we have since they have declared
+crucial business as end of life, but they will continue to do Micron business. So yes, we will
+have a hit in the next financial year because until April, they continue to do supply. Even today,
+we get -- we are getting constrained supplies with increased prices.
+So next financial year, crucial definitely will be a dent, but we will continue to do Micron
+business, which is more enterprise class. So we are hoping that this should be able to cover the
+business loss. If not, we have other backup plan 1, 2, 3 also to cover it. But excellent question,
+you hit the nail at the right point.
+Gaurav Bhanshali: And the next question is, sir, with the RAM and SSD prices like basically rocketing 2x, 3x in
+the last quarter. My question is, has that helped us a lot or that is like edged marginally only?
+Rajesh Goenka: So it has obviously helped us to improve not only our top line, but bottom line also to some
+extent.
+Moderator: Our next question comes from the line of Deepak Poddar from Sapphire Capital.
+Deepak Poddar: Yes. So I joined the call a bit late. So pardon me if it's already been answered. So just wanted to
+check one thing now, this 43% growth that we have seen in this quarter. So how much was
+driven by volume? And what was the price increase growth out of this 43%?
+Rajesh Goenka: Yes. So more than -- I would say 50% is volume growth and 50% is because of the ASP, which
+is also supported by the dollar appreciation. So price increase has two parameters. One is the
+product price increase and second is also the dollar appreciation.
+Deepak Poddar: And when you say, I mean, in your press release that because of this price hike, a lot of demand
+was there and people wanted to stock up. So this kind of growth is not repeatable as we go into
+coming quarters or next year? I mean, how should one look at that going forward?
+Rajesh Goenka: Yes. So I explained this. So right now, of course, because of the price hike already done and
+anticipated price hike, our customers are also stocking up the material. But as the message is
+now spreading to corporates and consumers that there is going to be a further price hike, the
+Rashi Peripherals Limited
+February 04, 2026
+demand also has started pulling up. So now the entire chain has already started. So as a result,
+we are seeing continuity in business at least for next few quarters.
+Deepak Poddar: So next few quarters, you do expect a buoyancy in demand because of further price hike expected
+basically?
+Rajesh Goenka: Exactly. We are not seeing any softness in pricing. There is no indication so far of any softness
+in the pricing.
+Deepak Poddar: And when you say flat volume growth for next year, right, FY '26, so what exactly we are
+meaning? I mean, is there any range we are talking about in terms of volume growth?
+Rajesh Goenka: No, in terms of unit -- and that's our assumption. We are obviously not statistical company. But
+considering the price hike and unaffordability that could creep in and considering the fact that
+there could be some supply constraints, we think that unit-wise, it could be flattish for at least
+next 2 quarters. But with the increased price, the revenue will continue to grow.
+Deepak Poddar: Correct. And what is the average price hike? I mean, is it in the range of 20%, 30%? How should
+one look at that?
+Rajesh Goenka: Currently, about 20% price hike has already happened. And next 2 months, similar trend will
+continue on the hike on the overall product cycle, I mean, from laptop and desktop perspective.
+Whereas on other components the price hike is already 50%, 100% or even 2x already.
+Deepak Poddar: So ideally, even if your FY '27 -- next year, your volume growth is not there, your revenue
+growth will see -- still be quite good given the realization benefit that you might be getting?
+Rajesh Goenka: We are pretty optimistic.
+Deepak Poddar: And just one last small thing…
+Moderator: Sorry to interrupt you sir, but if you have a follow-up question, please.
+Deepak Poddar: Just a small thing, just a small thing. It will take a minute. Sir, when you talk about distribution
+margin, it is on a percentage basis or it's a fixed spread?
+Rajesh Goenka: Normally, it is percentage basis. Sometimes we have an exception depending on the size of the
+product and the indirect cost involved in it.
+Moderator: Our next question comes from the line of Madhur Rathi from Counter Cyclical Investments.
+Madhur Rathi: Sir, I wanted to understand when -- how do we see our working capital cycle decreasing or cash
+flow from operations increasing to a positive trend? Because sir, if I see our last 10 years, only
+two of those years, we have been able to showcase a positive cash flow from operations. So I
+was trying to understand on that front?
+Rashi Peripherals Limited
+February 04, 2026
+Himanshu Shah: See, cash flow -- working capital cycle optimizing, as explained earlier also that working capital
+components, we are managing based on the forward-looking business scenarios. And we are
+trying to optimize those components by keeping the debtors and creditors almost in the range of
+netting out each other. And inventory definitely is a matter of planning forward-looking.
+Now with that, if the working capital cycle, there are scenarios, where the ups and downs come,
+but the deviation range is a standard range. It does not go beyond a certain point or below a
+certain point. On either side, this is a standard deviation range. What we feel we are operating
+at optimum levels of working capital cycle applicable to our kind of product, our kind of business
+model, our kind of customer mix. and the penetrated infrastructure, which we carry for the
+distribution.
+Defining any range of reduction and all will be to short-term scenario, which may come or go
+depending upon business scenarios. However, we are open with our analytics that whenever it
+is required, we control the inventory and when it is required, we hold the inventory for scenarios
+and current quarter results, you have seen that the optimum utilization has yielded the results.
+Madhur Rathi: And sir, on our PAT margin, sir, we have been constantly delivering our PAT margins upwards
+of our 1.5% range. Sir, so, is this because of the SKU-driven nature of the product that we hold
+versus some of our competitors that we are able to -- because sir, from our earlier expectations,
+we have been doing much better. So is it because of that?
+And sir, has something changed post-COVID? Because sir, pre-FY '20, our PAT margins were
+either 1% or less than that. So I'm trying to understand, has something changed that are we able
+to get better terms with our OEM suppliers or principals because of that we can do higher PAT
+margins?
+Rajesh Goenka: Yes. So our product portfolio is enormous. We have multiple product categories right from CPU
+memory to a branded PC to AI data center solutions. And second, we have the widest reach by
+way of 55 branch offices, wherein we are able to sell to a larger breadth of the customers. So a
+mix of product and reach helps us to get a little bit better margins at times.
+Madhur Rathi: Sir, and on the software front and enterprise business, sir, how do we see that those 2 segments
+scaling up maybe over FY '27 and FY '28?
+Rajesh Goenka: Yes. So enterprise business, we have built a very strong ecosystem. We have taken multiple
+initiatives in the last 3 months as well. So we are buoyant and very optimistic for doing extremely
+good in the enterprise vertical, especially.
+Moderator: Our next question comes from the line of Bhavin Chheda from Enam Holdings.
+Bhavin Chheda: Congratulations on excellent set of numbers across both the segments. I missed out on the
+volume and the price growth. I think what you mentioned was half of over 20% volume growth
+and over 20% price growth in the top line growth of 43%?
+Rajesh Goenka: Absolutely, Bhavin, bhai.
+Rashi Peripherals Limited
+February 04, 2026
+Bhavin Chheda: And now basically, what you're guiding is saying that coming quarters, we will mostly see price
+benefits and we won't see volume growth on a Y-o-Y basis. Is that the indication? Or it would
+be different across product segments like PCs, components and all that?
+Rajesh Goenka: Yes. So components, there will be, for sure, dip. But again, there, the price increase will offset.
+In branded side, we expect the unit to be flattish and price increase will be there. So there will
+be a benefit there. So that's what is our anticipation and expectation based on our knowledge.
+Bhavin Chheda: Can desktops will see a volume growth?
+Rajesh Goenka: No, desktop, in fact, is in a shortage. So desktop will show a degrowth, but notebooks supply, at
+least in this current quarter, Q4 is there with increased price, that will be an advantageous
+assumption.
+Kapal Pansari: So just to add to what Rajesh Goenka mentioned, if you compare these replies that Rajesh just
+mentioned, the volume growth will not happen from Q3 to Q4. Quarter-over-quarter, the
+supplies remains flat. However, if you compare from year-over-year, there is already an increase
+in terms of supplies.
+So volume growth from year-to-year will continue to be seen for the next two quarters. While
+quarter-over-quarter, there may not be any growth in terms of volume. In terms of price rise, that
+is a quarter-over-quarter scenario. That continues to rise. And therefore, we say that affordability
+is the reason why volume growth may not be sustainable in the current times if the prices
+continue to grow. So that's why our internal planning and guidance is to maintain the volumes,
+while prices will give the additional revenue growth. But from a year-over-year perspective, the
+impact is going to be much larger.
+Bhavin Chheda: Yes, that's very interesting and a detailed one. Does this quarter and 9 months had any large
+project wins? Because I think last year, we had booked almost like INR1,900 crores to INR2,000
+crores of that revenue. So that is not there in the current fiscal, right?
+Rajesh Goenka: Yes, Bhavin, ji, so that -- I think that's a very pertinent point. I'm happy to share that on a 9
+months to 9-month basis, our revenue growth is 5%, but all this growth, even bigger 5% growth
+is without any project order. So last year, we had almost INR2,000 crores of project order vis-
+a-vis this year, it is nil.
+Primarily, it was by design because the previous order execution was done, but payment
+collection was delayed. So we just wanted the entire payment along with interest and everything
+to get collected. That is all done now. So right now, this growth is without the INR2,000 crores
+of last year project business.
+Bhavin Chheda: Great. And last one for Himanshu. If you can share the gross debt and net debt numbers?
+Himanshu Shah: Yes. We will share you offline.
+Moderator: Our next question comes from the line of Amit Khetan from Laburnum Capital.
+Rashi Peripherals Limited
+February 04, 2026
+Amit Khetan: Can you talk about how you see the pipeline for large deals? And how is the competitive intensity
+in that space?
+Rajesh Goenka: The pipeline is decent, but the execution because from the supply side and because of the price
+increasing, the execution is far slower. So for example, you pick up a project today and if it is
+scheduled to be executed after 3 months, generally, what is happening is, one is the supply gets
+extended beyond 3 months.
+And second, there are price hikes also. So from supplier side also nowadays, we are not getting
+price confirmation valid for 6 months or 9 months because of the price volatility. So as a result
+of this, the situation is a little bit dynamic. But from a demand perspective, there are many
+projects in the pipeline.
+Amit Khetan: Do we expect some conversions to happen in FY '27?
+Rajesh Goenka: Yes, for sure.
+Amit Khetan: And secondly, if I look at your base business, excluding the large deals, we've grown by about
+24% for the first 9 months, right? Should we expect this run rate to continue for Q4 because your
+guidance was sort of 15% plus on the base business, but we seem to have done much better?
+Rajesh Goenka: Yes. So we hope to continue the similar trend. And our guidance was always 15% to 20%, but
+because of the price increase shortage and hence, because of a little bit extra stocking, this
+business has done a little bit more than what we had anticipated, and it should continue in the
+coming quarter as well.
+Moderator: Our next question comes from the line of Deepak from Unifi Capital.
+Deepak: Sir, first question, if you can call out how much inventory gain did we book in this quarter? I
+just want to know the total quantum. And also the price hike benefit that we saw in PES and LIT
+segment separately?
+Rajesh Goenka: Can we take these numbers offline, Deepak, because these are specific numbers, we'll have to
+work it out and communicate to you.
+Deepak: Sure. Okay. Got it. Sir, the second question was around the tertiary demand. See, you have seen
+demand growth at your end, but I just wanted to understand, is it also translating for the channel
+as well? Is the end consumer also being able to afford these prices and hence this is not just
+stocking up of inventory at the channel level and the end customer not being able to buy?
+Rajesh Goenka: Very, very appropriate point. So Q3, you are right, it was more inventory piling up at the channel
+level. But however, now the price increase implementation has already happened. And now
+virtually every consumer -- potential consumer and corporate knows of this impending price
+hike. So if they were to buy in March to -- before the year-end, they are now preparing --
+preponing the purchases. So we have seen -- January onwards, we have seen good tertiary sales
+across all product segments.
+Rashi Peripherals Limited
+February 04, 2026
+Deepak: Sir, given this affordability challenge that our channel partners also would be facing, do you
+expect your debtor days to go up? And also because of your procurement challenges, your
+inventory cycle to go up? Just wanted some color on that. And how is competition behaving on
+both credit to the channel and stocking up of inventory?
+Rajesh Goenka: Yes. So this is a balance that we have to drive, and that's where our core competency is on play.
+So far, we have been very successful for inventory planning and even execution. All our eyes
+are on. There is a potential risk of having excess inventory or there is a potential challenge of
+lengthened debtors. But all our eyes are on it. Our ecosystem, we are monitoring on a daily basis.
+We are confident of being continued momentum.
+Deepak: Sure. Any sense of the competition here? How is competition tackling this debtor -- the working
+capital part? And do you see that you could benefit out of this?
+Rajesh Goenka: I will not be able to comment about the competition, but I can only highlight that apple-to-apple
+comparison with competition cannot happen because we are a pure ICT value-added distributor.
+We promote and sell only IT products, not smartphones and software and other businesses.
+Deepak: Sure. Understood. Sir, last question you mentioned.
+Moderator: Sorry to interrupt you, sir, but if you have a follow-up question, please rejoin the queue. Thank
+you. Our next question comes from the line of Dhruvish Pujara from Premji Invest.
+Dhruvish Pujara: Sir, I have one question. I want to know how does the power dynamics work in -- between the
+OEM and the distributor in a rising price environment, right? So there is clearly money on the
+table on a per unit basis. So what stops the OEM from taking that share by like reducing the
+gross margin by 100 bps or something like that? So that's the question?
+Kapal Pansari: See, this industry does not have power dynamics between OEM and distribution. In fact,
+distribution partners are an extended arms of all OEMs. We work hand-in-hand in terms of
+market mapping, product alignment and technology transitions over a period of time. The terms
+of trade is not quarterly or monthly negotiable.
+They are long-term contracts and sustained over years of our operations. So it does not mean
+that we -- opportunistically, there are negotiations in terms of price or margins or in terms of any
+other credit costs. What only discussion happens in case of very large opportunities, where
+economies of scale is very high and competitive scenario between two OEMs is extremely high.
+We participate jointly to evaluate deal-based and ROE-based operations. And that is very rare.
+Till date, in FY '26, we do not have any such transactions that we've executed. Obviously, Rajesh
+mentioned about large deals. That will have its implication at some point in time. But on a regular
+distribution day-to-day basis, that does not occur at all.
+Dhruvish Pujara: So what are the typical renegotiation intervals?
+Rashi Peripherals Limited
+February 04, 2026
+Kapal Pansari: Normally, renegotiation does not happen. But if you are asking me to pinpoint a number, then I
+would say yearly.
+Moderator: Our next question comes from the line of Sankaranarayanan from ithough PMS.
+Sankaranarayanan: Yes, sir. So I've joined this call lately. Pardon me if this question has already been answered by
+any of our participants. So my question is more on the demand side. So in your talks with the
+OEM, so what kind of incentives or discounts or volume discounts provided by your OEM?
+Because since if this price increase will be continuous in the upcoming quarters, let's say, from
+an OEM perspective, will they be able to take some of the cost in order to retain the volume
+demand? Or how should we think about it, sir?
+Rajesh Goenka: Currently, in this price increase and limited supply scenario, the question of discounts do not
+appear at all. What will only appear what we work with the OEM partners is to give consumer
+offers like 0 interest EMI so that it becomes more affordable to the consumers. Beyond that, in
+the current scenario, there is no discussion. The entire discussion is the price will go up by
+another 7%, 8% next month and again, 5% next month. So that's the only discussion right now
+we are having because of the global shortage and uptrend.
+Sankaranarayanan: And if you were to compare the current scenario with what was happening during COVID
+period, so how do you compare in terms of -- because during that time as well, there was a supply
+issue and there was a good demand as well. So we were able to fully absorb by the end consumer
+and all the distribution players are able to gain good return metrics and margin during that time.
+So if you have to compare between those two scenarios, how do you view the current situation?
+Rajesh Goenka: I think both situations were extremely different. In COVID situation, the demand was very, very
+high. I mean it was almost 2x. And sitting at home, everyone wanted to buy whatever was
+available. So it was a mad scramble to get the products. Right now, in this current scenario, there
+is no scramble to get the products, but we are anticipating shortage and price rise.
+So therefore, in Q3, there was no surge in demand. But now Q4, we are seeing that consumers
+and corporates have started identifying that, yes, if I buy after 2 months, I may have to pay
+another 10% or 15%. So they have started procuring. So there is no surge in demand as such. So
+it's both extreme situation. The resultant is, of course, similar.
+Sankaranarayanan: And maybe in the upcoming fiscal year as well, we will able to achieve this kind of growth
+because of price increase and not due to volume-led demand?
+Rajesh Goenka: Absolutely. I mentioned the same earlier.
+Moderator: Our next question comes from the line of Aasim from DAM Capital.
+Aasim: Sir, I just wanted some more understanding on the volume growth comment that you made some
+time back. So I understand Q-o-Q volume may be flat for a couple of quarters. But I thought I
+heard Y-o-Y, there will still be growth, at least in the quarters ahead. So does that mean supply
+is better now versus the same quarters last year or is it just the preponing bit that you actually
+Rashi Peripherals Limited
+February 04, 2026
+wanted to highlight, hence, volume growth might be better on a Y-o-Y basis, for say, Q4 and
+maybe Q1?
+Rajesh Goenka: Yes. Y-o-Y, for example, Q4 to Q4, the quantity unit-wise will continue to grow because that
+planning has already been done and these plannings are done almost 6 months in advance. So
+for at least next 1 to 2 quarters, unit will continue to grow. Subsequently, units will start getting
+flattish. And that's where the higher selling price will start playing a bigger role.
+Aasim: But still, it would be the end consumer demand or rather end demand getting preponed into the
+earlier quarters because of price rise. That would have been the reason why you have planned
+for volumes so that there will be a Y-o-Y growth for at least two quarters and then
+Rajesh Goenka: Yes. That is one in any case, but in any case because of our GDP growth, because of our
+economy, because of our digital implementation, because of our low PC penetration, in any case,
+8% to 10% Y-o-Y growth was anticipated. So basis that, we have already planned those
+numbers.
+Aasim: No, I mean, these 8% to 10% would be like a long-term CAGR basis. But in the current
+environment, maybe we'll have to -- I mean, maybe this quarter was a super normal quarter in
+volumes, then things might come off a bit, then maybe a couple of quarters, you must see
+negative volumes, whatever you can cover from price rises will be the only factor. So I just -- I
+mean, I was just trying to understand the Y-o-Y bit. But I take your point. That's it from my side.
+Sorry, were you making a point?
+Rajesh Goenka: No. Thank you I said.
+Aasim: Okay, sure.
+Moderator: Thank you. Our next question comes from the line of SB Bhaiya an Individual Investor. Please
+go ahead.
+SB Bhaiya: Thank you for the opportunity, sir. All my questions have been answered. So there are no further
+questions to be asked. Thank you very much.
+Management: Thank you so much.
+Moderator: Ladies and gentlemen, as there are no further questions, I would now like to hand the conference
+over to the management for closing comments.
+Kapal Pansari: I would like to thank you all for joining the call today and I hope we were able to address all
+your queries. If you have any further questions, you can reach out to our IR partners at Valorem
+Advisors. Thank you for participating in the call again. We look forward to presenting you next
+quarter, our Q4 results very eagerly. Thank you so much.
+Moderator: Thank you. On behalf of Monarch Networth Capital Limited, that concludes this conference.
+Thank you for joining us and you may now disconnect your lines.
