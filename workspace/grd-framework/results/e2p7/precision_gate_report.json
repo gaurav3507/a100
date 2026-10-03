@@ -1,0 +1,223 @@
+{
+  "milestone": "M2.7",
+  "code_commit": "640409d57d57cdf98e0c5f442be5282fa6e1be47-dirty",
+  "backbone_isolation": "backbone._unmixing_row takes the top-eigenvalue eigenvector of the per-node precision difference inv(cov(Y_env)) - inv(cov(Y_obs)); the new gate counts detectability of that same top eigenvalue per node vs a control-vs-control null.",
+  "config": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "d_latent": 5,
+    "D": 200,
+    "n_per_env": 4000,
+    "d_proj": 5,
+    "edge_prob": 0.4,
+    "alpha": 0.05,
+    "B": 500,
+    "iv_scale": 0.1,
+    "regime": "REDUCING",
+    "recovery_mcc_threshold": 0.9,
+    "new_gate": "src/gate/precision_readout.py count_recoverable (per-node precision)",
+    "old_gate": "src/gate/rank_readout.py estimate_rank_lfc on the pooled all-node covariance difference (M2.6)"
+  },
+  "data_fingerprint": {
+    "0": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "34017a19900dfd6f"
+    },
+    "1": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "9240c68b5c1f6119"
+    },
+    "2": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "8fd02cba41eb60ea"
+    },
+    "3": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "56c42cb0f5a17ba2"
+    },
+    "4": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "81a73161560f9495"
+    },
+    "5": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "fc4904cdcf3496c5"
+    },
+    "6": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "303fdaf07c97213f"
+    },
+    "7": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "e37e886ff51c950f"
+    },
+    "8": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "7ae47300914c7298"
+    },
+    "9": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "40d23f79a4d24e08"
+    }
+  },
+  "per_seed": [
+    {
+      "seed": 0,
+      "true_dim": 5,
+      "new_precision_gate_count": 5,
+      "new_gate_pass": true,
+      "new_gate_min_ratio": 9.91,
+      "old_pooled_cov_count": 5,
+      "old_gate_pass": true,
+      "recover_mcc": 0.9993,
+      "recover_pass": true
+    },
+    {
+      "seed": 1,
+      "true_dim": 5,
+      "new_precision_gate_count": 5,
+      "new_gate_pass": true,
+      "new_gate_min_ratio": 21.72,
+      "old_pooled_cov_count": 5,
+      "old_gate_pass": true,
+      "recover_mcc": 0.9988,
+      "recover_pass": true
+    },
+    {
+      "seed": 2,
+      "true_dim": 5,
+      "new_precision_gate_count": 5,
+      "new_gate_pass": true,
+      "new_gate_min_ratio": 17.42,
+      "old_pooled_cov_count": 5,
+      "old_gate_pass": true,
+      "recover_mcc": 0.9992,
+      "recover_pass": true
+    },
+    {
+      "seed": 3,
+      "true_dim": 5,
+      "new_precision_gate_count": 5,
+      "new_gate_pass": true,
+      "new_gate_min_ratio": 19.63,
+      "old_pooled_cov_count": 5,
+      "old_gate_pass": true,
+      "recover_mcc": 0.9995,
+      "recover_pass": true
+    },
+    {
+      "seed": 4,
+      "true_dim": 5,
+      "new_precision_gate_count": 5,
+      "new_gate_pass": true,
+      "new_gate_min_ratio": 26.89,
+      "old_pooled_cov_count": 5,
+      "old_gate_pass": true,
+      "recover_mcc": 0.9994,
+      "recover_pass": true
+    },
+    {
+      "seed": 5,
+      "true_dim": 5,
+      "new_precision_gate_count": 5,
+      "new_gate_pass": true,
+      "new_gate_min_ratio": 30.34,
+      "old_pooled_cov_count": 5,
+      "old_gate_pass": true,
+      "recover_mcc": 0.9992,
+      "recover_pass": true
+    },
+    {
+      "seed": 6,
+      "true_dim": 5,
+      "new_precision_gate_count": 5,
+      "new_gate_pass": true,
+      "new_gate_min_ratio": 31.59,
+      "old_pooled_cov_count": 5,
+      "old_gate_pass": true,
+      "recover_mcc": 0.9993,
+      "recover_pass": true
+    },
+    {
+      "seed": 7,
+      "true_dim": 5,
+      "new_precision_gate_count": 5,
+      "new_gate_pass": true,
+      "new_gate_min_ratio": 18.9,
+      "old_pooled_cov_count": 4,
+      "old_gate_pass": false,
+      "recover_mcc": 0.9996,
+      "recover_pass": true
+    },
+    {
+      "seed": 8,
+      "true_dim": 5,
+      "new_precision_gate_count": 5,
+      "new_gate_pass": true,
+      "new_gate_min_ratio": 21.81,
+      "old_pooled_cov_count": 5,
+      "old_gate_pass": true,
+      "recover_mcc": 0.999,
+      "recover_pass": true
+    },
+    {
+      "seed": 9,
+      "true_dim": 5,
+      "new_precision_gate_count": 5,
+      "new_gate_pass": true,
+      "new_gate_min_ratio": 17.12,
+      "old_pooled_cov_count": 5,
+      "old_gate_pass": true,
+      "recover_mcc": 0.9988,
+      "recover_pass": true
+    }
+  ],
+  "verdict": "PASS",
+  "status": "PASS",
+  "old_gate_fail_seeds": [
+    7
+  ],
+  "new_gate_fail_seeds": [],
+  "seed7_fixed": true,
+  "conclusion": "Path A works: the per-node precision gate count == true dimension on all seeds and now agrees with the backbone. The old pooled-covariance gate failed on seeds [7]; the new gate fixes them (seed 7 specifically: fixed). Gate and backbone now read the same per-node precision signal."
+}

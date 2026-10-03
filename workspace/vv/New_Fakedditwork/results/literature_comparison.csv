@@ -1,0 +1,5 @@
+model,source,task,data_scale,accuracy,macro_f1,directly_comparable
+TGCA-XNet (this work),This notebook,Fakeddit 6-way (fine-grained),"448,352 samples (full verified real data)",0.8870127216062944,0.8876688405617014,True
+"MRDCA (RoBERTa + DenseNet, co-attention)","Qian, Xu & Zhou (2025), Annals of Operations Research 348:257-278, DOI:10.1007/s10479-022-05154-9",Fakeddit 6-way (fine-grained),Fakeddit fine-grained dataset (full),0.8814,0.8751,True
+4-modality fusion (text+comments+image+meta),"Kirchknopf et al. (2021), arXiv:2112.04831","Fakeddit 2-way (binary) - EASIER TASK, not comparable",Fakeddit (full),0.955,,False
+CLIP + LoRA transfer learning,"Setiawan et al. (2025), PLoS ONE 20(6):e0324394, DOI:10.1371/journal.pone.0324394","Fakeddit 2-way (binary) - EASIER TASK + SMALL SUBSET, not comparable","~11,500-sample subset",0.83,,False

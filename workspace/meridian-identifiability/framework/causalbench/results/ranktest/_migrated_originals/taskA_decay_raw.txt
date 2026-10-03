@@ -1,0 +1,24 @@
+TASK A  s* decay vs d_latent. n_e=2000 B=500 10x40=400 draws/point
+ d_lat   d       scaling  s=0.005   s=0.01   s=0.02   s=0.05    s=0.1  s* grid  s* interp
+     5   5           raw    0.022    0.022    0.022    0.022    0.025    0.100     0.1000
+     5   5  standardised    0.020    0.020    0.020    0.022    0.022    0.100     0.1000
+    10  10           raw    0.050    0.050    0.050    0.050    0.062    0.100     0.1000
+    10  10  standardised    0.045    0.045    0.045    0.043    0.072    0.100     0.1000
+    20  10           raw    0.037    0.037    0.037    0.147    0.230    0.020     0.0302
+    20  10  standardised    0.022    0.022    0.022    0.045    0.215    0.050     0.0588
+    40  10           raw    0.035    0.035    0.040    0.113    0.158    0.020     0.0345
+    40  10  standardised    0.040    0.040    0.043    0.080    0.175    0.020     0.0460
+    80  10           raw    0.145    0.155    0.247    0.345    0.420    0.000     0.0000
+    80  10  standardised    0.110    0.107    0.107    0.318    0.378    0.000     0.0000
+
+=== DECAY FIT on the interpolated s* ===
+  raw: d=[np.int64(5), np.int64(10), np.int64(20), np.int64(40), np.int64(80)]  s*=[np.float64(0.1), np.float64(0.1), np.float64(0.0302), np.float64(0.0345), np.float64(0.0)]
+    log-log fit on the 4 nonzero points: s* ~ 0.304 * d^(-0.63)
+    log-RMSE vs 1/d  : 0.622
+    log-RMSE vs 1/d^2: 1.869
+    s* <= 0.005 (grid floor) at d_latent = [80]
+  standardised: d=[np.int64(5), np.int64(10), np.int64(20), np.int64(40), np.int64(80)]  s*=[np.float64(0.1), np.float64(0.1), np.float64(0.0588), np.float64(0.046), np.float64(0.0)]
+    log-log fit on the 4 nonzero points: s* ~ 0.215 * d^(-0.41)
+    log-RMSE vs 1/d  : 0.853
+    log-RMSE vs 1/d^2: 2.144
+    s* <= 0.005 (grid floor) at d_latent = [80]

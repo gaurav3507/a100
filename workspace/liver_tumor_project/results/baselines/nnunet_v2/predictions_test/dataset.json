@@ -1,0 +1,18 @@
+{
+    "channel_names": {
+        "0": "CT"
+    },
+    "labels": {
+        "background": 0,
+        "liver": 1,
+        "tumor": 2
+    },
+    "numTraining": 111,
+    "file_ending": ".nii.gz",
+    "name": "LiTS",
+    "description": "Liver Tumor Segmentation - Preprocessed with aggressive background removal (V2 pipeline)",
+    "reference": "https://competitions.codalab.org/competitions/17094",
+    "licence": "CC-BY-SA 4.0",
+    "release": "1.0",
+    "tensorImageSize": "3D"
+}

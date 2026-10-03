@@ -1,0 +1,50 @@
+[
+  {
+    "n_e": 500,
+    "scaling": "raw",
+    "reject": 0.1,
+    "n_draws": 200
+  },
+  {
+    "n_e": 500,
+    "scaling": "standardised",
+    "reject": 0.06,
+    "n_draws": 200
+  },
+  {
+    "n_e": 2000,
+    "scaling": "raw",
+    "reject": 0.06,
+    "n_draws": 200
+  },
+  {
+    "n_e": 2000,
+    "scaling": "standardised",
+    "reject": 0.065,
+    "n_draws": 200
+  },
+  {
+    "n_e": 8000,
+    "scaling": "raw",
+    "reject": 0.09,
+    "n_draws": 200
+  },
+  {
+    "n_e": 8000,
+    "scaling": "standardised",
+    "reject": 0.08,
+    "n_draws": 200
+  },
+  {
+    "n_e": 20000,
+    "scaling": "raw",
+    "reject": 0.06,
+    "n_draws": 200
+  },
+  {
+    "n_e": 20000,
+    "scaling": "standardised",
+    "reject": 0.06,
+    "n_draws": 200
+  }
+]

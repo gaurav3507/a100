@@ -1,0 +1,23 @@
+{
+  "milestone": "E3.0",
+  "code_commit": "b0b58aa43efb067078ccc992cf0f95b2e93500a8-dirty",
+  "config": {
+    "d_latent": 5,
+    "D": 200,
+    "d_proj": 5,
+    "alpha": 0.05,
+    "B": 500,
+    "n_obs": 4000,
+    "n_small": 40,
+    "k_fake": 300,
+    "seed": 0,
+    "matched_max": 0.15,
+    "fullsize_min": 0.8
+  },
+  "matched_null_threshold": 0.0549,
+  "fullsize_null_threshold": 0.00406,
+  "false_positive_rate_matched": 0.0667,
+  "false_positive_rate_fullsize": 0.9567,
+  "interpretation": "size-matched null keeps false positives near alpha; the full-size null (the bug) flags nearly all pure-control small environments",
+  "status": "PASS"
+}

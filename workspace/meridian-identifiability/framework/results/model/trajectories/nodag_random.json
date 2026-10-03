@@ -1,0 +1,61 @@
+{
+  "arm": "nodag_random",
+  "n_points": 11,
+  "points": [
+    {
+      "epoch": 0,
+      "r2_median": 0.013,
+      "r2_mean": 0.0137
+    },
+    {
+      "epoch": 10,
+      "r2_median": 0.012,
+      "r2_mean": -0.1436
+    },
+    {
+      "epoch": 20,
+      "r2_median": -0.02,
+      "r2_mean": -0.0604
+    },
+    {
+      "epoch": 30,
+      "r2_median": -0.0911,
+      "r2_mean": -0.1777
+    },
+    {
+      "epoch": 40,
+      "r2_median": -0.0657,
+      "r2_mean": -0.1454
+    },
+    {
+      "epoch": 50,
+      "r2_median": -0.0997,
+      "r2_mean": -0.1933
+    },
+    {
+      "epoch": 60,
+      "r2_median": -0.0544,
+      "r2_mean": -0.1509
+    },
+    {
+      "epoch": 70,
+      "r2_median": -0.0494,
+      "r2_mean": -0.1168
+    },
+    {
+      "epoch": 80,
+      "r2_median": -0.0909,
+      "r2_mean": -0.1809
+    },
+    {
+      "epoch": 90,
+      "r2_median": -0.0402,
+      "r2_mean": -0.0825
+    },
+    {
+      "epoch": 99,
+      "r2_median": -0.0804,
+      "r2_mean": -0.1371
+    }
+  ]
+}

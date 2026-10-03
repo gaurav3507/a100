@@ -1,0 +1,2185 @@
+{
+  "step0_synthetic_gate": {
+    "shape": {
+      "n": 2000,
+      "p": 1158,
+      "latent": 10,
+      "noise_sd": 0.01
+    },
+    "cases": [
+      {
+        "case": "1_linear_gaussian",
+        "expected": 10.0,
+        "gated": true,
+        "description": "10 latents, random linear map into 1158 columns",
+        "estimators": {
+          "twonn": 9.547042217988853,
+          "mle": {
+            "5": {
+              "avg": 12.727111109654428,
+              "inv_avg": 9.564542528247573,
+              "n_points_used": 2000
+            },
+            "10": {
+              "avg": 10.475776487665396,
+              "inv_avg": 9.34519162945621,
+              "n_points_used": 2000
+            },
+            "20": {
+              "avg": 9.649740009916934,
+              "inv_avg": 9.145041118858357,
+              "n_points_used": 2000
+            },
+            "50": {
+              "avg": 8.896793869611171,
+              "inv_avg": 8.690803989108373,
+              "n_points_used": 2000
+            }
+          },
+          "correlation_dimension": {
+            "dimension": 5.5012976455493225,
+            "r2": 0.9983971770977794,
+            "window": [
+              105.45485552708783,
+              128.9374190941612
+            ],
+            "n_radii": 20,
+            "window_spec": "percentiles 10.0-30.0 of the pairwise distance distribution, fixed for every dataset"
+          },
+          "point_estimates": {
+            "twonn": 9.547042217988853,
+            "mle_k5_avg": 12.727111109654428,
+            "mle_k5_inv_avg": 9.564542528247573,
+            "mle_k10_avg": 10.475776487665396,
+            "mle_k10_inv_avg": 9.34519162945621,
+            "mle_k20_avg": 9.649740009916934,
+            "mle_k20_inv_avg": 9.145041118858357,
+            "mle_k50_avg": 8.896793869611171,
+            "mle_k50_inv_avg": 8.690803989108373,
+            "correlation_dimension": 5.5012976455493225
+          },
+          "estimator_spread_max_over_min": 2.313474370897011,
+          "estimators_disagree": true
+        }
+      },
+      {
+        "case": "2_nonlinear_poly2",
+        "expected": 10.0,
+        "gated": true,
+        "description": "the same 10 latents through a degree-2 polynomial feature map (65 features) then a random linear embedding into 1158 columns; the covariance rank is 65 and the manifold dimension is 10",
+        "estimators": {
+          "twonn": 11.38284395479133,
+          "mle": {
+            "5": {
+              "avg": 16.11234890525374,
+              "inv_avg": 11.74995461933008,
+              "n_points_used": 2000
+            },
+            "10": {
+              "avg": 13.700122934972729,
+              "inv_avg": 12.0093531631685,
+              "n_points_used": 2000
+            },
+            "20": {
+              "avg": 13.084686628181222,
+              "inv_avg": 12.25947976120281,
+              "n_points_used": 2000
+            },
+            "50": {
+              "avg": 13.253217156275799,
+              "inv_avg": 12.695594738026749,
+              "n_points_used": 2000
+            }
+          },
+          "correlation_dimension": {
+            "dimension": 4.44551220195352,
+            "r2": 0.9978176030915417,
+            "window": [
+              239.70291956822408,
+              306.038243981236
+            ],
+            "n_radii": 20,
+            "window_spec": "percentiles 10.0-30.0 of the pairwise distance distribution, fixed for every dataset"
+          },
+          "point_estimates": {
+            "twonn": 11.38284395479133,
+            "mle_k5_avg": 16.11234890525374,
+            "mle_k5_inv_avg": 11.74995461933008,
+            "mle_k10_avg": 13.700122934972729,
+            "mle_k10_inv_avg": 12.0093531631685,
+            "mle_k20_avg": 13.084686628181222,
+            "mle_k20_inv_avg": 12.25947976120281,
+            "mle_k50_avg": 13.253217156275799,
+            "mle_k50_inv_avg": 12.695594738026749,
+            "correlation_dimension": 4.44551220195352
+          },
+          "estimator_spread_max_over_min": 3.6244077562476127,
+          "estimators_disagree": true
+        }
+      },
+      {
+        "case": "3_isotropic_noise",
+        "expected": 1158.0,
+        "gated": true,
+        "description": "full-rank isotropic noise in 1158 columns, no latent structure; no neighbourhood estimator can reach 1158 at n=2000, so what is asserted is separation from cases 1 and 2 and what is recorded is this estimator's empirical ceiling",
+        "estimators": {
+          "twonn": 196.32223363017292,
+          "mle": {
+            "5": {
+              "avg": 236.69074659659114,
+              "inv_avg": 180.24121722509085,
+              "n_points_used": 2000
+            },
+            "10": {
+              "avg": 189.28679508141178,
+              "inv_avg": 170.5882680348339,
+              "n_points_used": 2000
+            },
+            "20": {
+              "avg": 167.11534300688407,
+              "inv_avg": 159.39338097727853,
+              "n_points_used": 2000
+            },
+            "50": {
+              "avg": 145.15821248084768,
+              "inv_avg": 142.68443260018077,
+              "n_points_used": 2000
+            }
+          },
+          "correlation_dimension": {
+            "dimension": 68.77393394686605,
+            "r2": 0.997067558805701,
+            "window": [
+              46.81096110293227,
+              47.5639782033342
+            ],
+            "n_radii": 20,
+            "window_spec": "percentiles 10.0-30.0 of the pairwise distance distribution, fixed for every dataset"
+          },
+          "point_estimates": {
+            "twonn": 196.32223363017292,
+            "mle_k5_avg": 236.69074659659114,
+            "mle_k5_inv_avg": 180.24121722509085,
+            "mle_k10_avg": 189.28679508141178,
+            "mle_k10_inv_avg": 170.5882680348339,
+            "mle_k20_avg": 167.11534300688407,
+            "mle_k20_inv_avg": 159.39338097727853,
+            "mle_k50_avg": 145.15821248084768,
+            "mle_k50_inv_avg": 142.68443260018077,
+            "correlation_dimension": 68.77393394686605
+          },
+          "estimator_spread_max_over_min": 3.4415763794965644,
+          "estimators_disagree": true
+        }
+      },
+      {
+        "case": "4_linear_gaussian_d200",
+        "expected": 200.0,
+        "gated": false,
+        "description": "200 latents, random linear map into 1158 columns, the same construction as case 1. CALIBRATION ONLY: 200 sits inside the range the real participation ratios occupy, and n=2000 points cannot fill a 200-dimensional manifold, so recovery is not expected and is not asserted. The ratio to truth is what this case exists to record.",
+        "estimators": {
+          "twonn": 70.92147496257232,
+          "mle": {
+            "5": {
+              "avg": 85.65193882676454,
+              "inv_avg": 66.42986807329956,
+              "n_points_used": 2000
+            },
+            "10": {
+              "avg": 68.91594448461564,
+              "inv_avg": 62.0081401974035,
+              "n_points_used": 2000
+            },
+            "20": {
+              "avg": 61.01583443249796,
+              "inv_avg": 58.188039932614814,
+              "n_points_used": 2000
+            },
+            "50": {
+              "avg": 53.58436242914648,
+              "inv_avg": 52.612171082635705,
+              "n_points_used": 2000
+            }
+          },
+          "correlation_dimension": {
+            "dimension": 26.003285263231838,
+            "r2": 0.997222101413408,
+            "window": [
+              630.3949545651224,
+              657.4872494666715
+            ],
+            "n_radii": 20,
+            "window_spec": "percentiles 10.0-30.0 of the pairwise distance distribution, fixed for every dataset"
+          },
+          "point_estimates": {
+            "twonn": 70.92147496257232,
+            "mle_k5_avg": 85.65193882676454,
+            "mle_k5_inv_avg": 66.42986807329956,
+            "mle_k10_avg": 68.91594448461564,
+            "mle_k10_inv_avg": 62.0081401974035,
+            "mle_k20_avg": 61.01583443249796,
+            "mle_k20_inv_avg": 58.188039932614814,
+            "mle_k50_avg": 53.58436242914648,
+            "mle_k50_inv_avg": 52.612171082635705,
+            "correlation_dimension": 26.003285263231838
+          },
+          "estimator_spread_max_over_min": 3.2938891359190983,
+          "estimators_disagree": true
+        }
+      },
+      {
+        "case": "5_linear_gaussian_d450",
+        "expected": 450.0,
+        "gated": false,
+        "description": "450 latents, random linear map into 1158 columns, the same construction as case 1. CALIBRATION ONLY: 450 sits inside the range the real participation ratios occupy, and n=2000 points cannot fill a 450-dimensional manifold, so recovery is not expected and is not asserted. The ratio to truth is what this case exists to record.",
+        "estimators": {
+          "twonn": 95.90056680655718,
+          "mle": {
+            "5": {
+              "avg": 122.58825196046568,
+              "inv_avg": 93.11328268255497,
+              "n_points_used": 2000
+            },
+            "10": {
+              "avg": 98.57700174347973,
+              "inv_avg": 88.38170791045616,
+              "n_points_used": 2000
+            },
+            "20": {
+              "avg": 87.2547939212436,
+              "inv_avg": 83.31425058288082,
+              "n_points_used": 2000
+            },
+            "50": {
+              "avg": 76.71518936857456,
+              "inv_avg": 75.41632202292814,
+              "n_points_used": 2000
+            }
+          },
+          "correlation_dimension": {
+            "dimension": 37.17103707351611,
+            "r2": 0.9970206481550582,
+            "window": [
+              971.3753294886728,
+              1000.6797659796886
+            ],
+            "n_radii": 20,
+            "window_spec": "percentiles 10.0-30.0 of the pairwise distance distribution, fixed for every dataset"
+          },
+          "point_estimates": {
+            "twonn": 95.90056680655718,
+            "mle_k5_avg": 122.58825196046568,
+            "mle_k5_inv_avg": 93.11328268255497,
+            "mle_k10_avg": 98.57700174347973,
+            "mle_k10_inv_avg": 88.38170791045616,
+            "mle_k20_avg": 87.2547939212436,
+            "mle_k20_inv_avg": 83.31425058288082,
+            "mle_k50_avg": 76.71518936857456,
+            "mle_k50_inv_avg": 75.41632202292814,
+            "correlation_dimension": 37.17103707351611
+          },
+          "estimator_spread_max_over_min": 3.2979508136405546,
+          "estimators_disagree": true
+        }
+      }
+    ],
+    "calibration": {
+      "twonn": {
+        "value": {
+          "1_linear_gaussian": 9.547042217988853,
+          "2_nonlinear_poly2": 11.38284395479133,
+          "3_isotropic_noise": 196.32223363017292,
+          "4_linear_gaussian_d200": 70.92147496257232,
+          "5_linear_gaussian_d450": 95.90056680655718
+        },
+        "ratio_to_truth": {
+          "1_linear_gaussian": 0.9547042217988853,
+          "2_nonlinear_poly2": 1.138284395479133,
+          "3_isotropic_noise": 0.1695356076253652,
+          "4_linear_gaussian_d200": 0.3546073748128616,
+          "5_linear_gaussian_d450": 0.21311237068123817
+        },
+        "bias_vs_known_case1": 0.9547042217988853
+      },
+      "mle_k5_avg": {
+        "value": {
+          "1_linear_gaussian": 12.727111109654428,
+          "2_nonlinear_poly2": 16.11234890525374,
+          "3_isotropic_noise": 236.69074659659114,
+          "4_linear_gaussian_d200": 85.65193882676454,
+          "5_linear_gaussian_d450": 122.58825196046568
+        },
+        "ratio_to_truth": {
+          "1_linear_gaussian": 1.2727111109654428,
+          "2_nonlinear_poly2": 1.611234890525374,
+          "3_isotropic_noise": 0.20439615422848975,
+          "4_linear_gaussian_d200": 0.4282596941338227,
+          "5_linear_gaussian_d450": 0.27241833768992374
+        },
+        "bias_vs_known_case1": 1.2727111109654428
+      },
+      "mle_k5_inv_avg": {
+        "value": {
+          "1_linear_gaussian": 9.564542528247573,
+          "2_nonlinear_poly2": 11.74995461933008,
+          "3_isotropic_noise": 180.24121722509085,
+          "4_linear_gaussian_d200": 66.42986807329956,
+          "5_linear_gaussian_d450": 93.11328268255497
+        },
+        "ratio_to_truth": {
+          "1_linear_gaussian": 0.9564542528247573,
+          "2_nonlinear_poly2": 1.1749954619330079,
+          "3_isotropic_noise": 0.155648719538075,
+          "4_linear_gaussian_d200": 0.3321493403664978,
+          "5_linear_gaussian_d450": 0.20691840596123326
+        },
+        "bias_vs_known_case1": 0.9564542528247573
+      },
+      "mle_k10_avg": {
+        "value": {
+          "1_linear_gaussian": 10.475776487665396,
+          "2_nonlinear_poly2": 13.700122934972729,
+          "3_isotropic_noise": 189.28679508141178,
+          "4_linear_gaussian_d200": 68.91594448461564,
+          "5_linear_gaussian_d450": 98.57700174347973
+        },
+        "ratio_to_truth": {
+          "1_linear_gaussian": 1.0475776487665396,
+          "2_nonlinear_poly2": 1.370012293497273,
+          "3_isotropic_noise": 0.1634600993794575,
+          "4_linear_gaussian_d200": 0.34457972242307816,
+          "5_linear_gaussian_d450": 0.2190600038743994
+        },
+        "bias_vs_known_case1": 1.0475776487665396
+      },
+      "mle_k10_inv_avg": {
+        "value": {
+          "1_linear_gaussian": 9.34519162945621,
+          "2_nonlinear_poly2": 12.0093531631685,
+          "3_isotropic_noise": 170.5882680348339,
+          "4_linear_gaussian_d200": 62.0081401974035,
+          "5_linear_gaussian_d450": 88.38170791045616
+        },
+        "ratio_to_truth": {
+          "1_linear_gaussian": 0.934519162945621,
+          "2_nonlinear_poly2": 1.20093531631685,
+          "3_isotropic_noise": 0.14731283940831943,
+          "4_linear_gaussian_d200": 0.31004070098701747,
+          "5_linear_gaussian_d450": 0.19640379535656924
+        },
+        "bias_vs_known_case1": 0.934519162945621
+      },
+      "mle_k20_avg": {
+        "value": {
+          "1_linear_gaussian": 9.649740009916934,
+          "2_nonlinear_poly2": 13.084686628181222,
+          "3_isotropic_noise": 167.11534300688407,
+          "4_linear_gaussian_d200": 61.01583443249796,
+          "5_linear_gaussian_d450": 87.2547939212436
+        },
+        "ratio_to_truth": {
+          "1_linear_gaussian": 0.9649740009916934,
+          "2_nonlinear_poly2": 1.3084686628181221,
+          "3_isotropic_noise": 0.14431376770888088,
+          "4_linear_gaussian_d200": 0.3050791721624898,
+          "5_linear_gaussian_d450": 0.193899542047208
+        },
+        "bias_vs_known_case1": 0.9649740009916934
+      },
+      "mle_k20_inv_avg": {
+        "value": {
+          "1_linear_gaussian": 9.145041118858357,
+          "2_nonlinear_poly2": 12.25947976120281,
+          "3_isotropic_noise": 159.39338097727853,
+          "4_linear_gaussian_d200": 58.188039932614814,
+          "5_linear_gaussian_d450": 83.31425058288082
+        },
+        "ratio_to_truth": {
+          "1_linear_gaussian": 0.9145041118858357,
+          "2_nonlinear_poly2": 1.225947976120281,
+          "3_isotropic_noise": 0.13764540671613,
+          "4_linear_gaussian_d200": 0.29094019966307405,
+          "5_linear_gaussian_d450": 0.18514277907306848
+        },
+        "bias_vs_known_case1": 0.9145041118858357
+      },
+      "mle_k50_avg": {
+        "value": {
+          "1_linear_gaussian": 8.896793869611171,
+          "2_nonlinear_poly2": 13.253217156275799,
+          "3_isotropic_noise": 145.15821248084768,
+          "4_linear_gaussian_d200": 53.58436242914648,
+          "5_linear_gaussian_d450": 76.71518936857456
+        },
+        "ratio_to_truth": {
+          "1_linear_gaussian": 0.8896793869611171,
+          "2_nonlinear_poly2": 1.3253217156275798,
+          "3_isotropic_noise": 0.1253525150957234,
+          "4_linear_gaussian_d200": 0.2679218121457324,
+          "5_linear_gaussian_d450": 0.17047819859683236
+        },
+        "bias_vs_known_case1": 0.8896793869611171
+      },
+      "mle_k50_inv_avg": {
+        "value": {
+          "1_linear_gaussian": 8.690803989108373,
+          "2_nonlinear_poly2": 12.695594738026749,
+          "3_isotropic_noise": 142.68443260018077,
+          "4_linear_gaussian_d200": 52.612171082635705,
+          "5_linear_gaussian_d450": 75.41632202292814
+        },
+        "ratio_to_truth": {
+          "1_linear_gaussian": 0.8690803989108373,
+          "2_nonlinear_poly2": 1.269559473802675,
+          "3_isotropic_noise": 0.12321626303987977,
+          "4_linear_gaussian_d200": 0.26306085541317853,
+          "5_linear_gaussian_d450": 0.1675918267176181
+        },
+        "bias_vs_known_case1": 0.8690803989108373
+      },
+      "correlation_dimension": {
+        "value": {
+          "1_linear_gaussian": 5.5012976455493225,
+          "2_nonlinear_poly2": 4.44551220195352,
+          "3_isotropic_noise": 68.77393394686605,
+          "4_linear_gaussian_d200": 26.003285263231838,
+          "5_linear_gaussian_d450": 37.17103707351611
+        },
+        "ratio_to_truth": {
+          "1_linear_gaussian": 0.5501297645549322,
+          "2_nonlinear_poly2": 0.444551220195352,
+          "3_isotropic_noise": 0.05939027111128329,
+          "4_linear_gaussian_d200": 0.1300164263161592,
+          "5_linear_gaussian_d450": 0.08260230460781358
+        },
+        "bias_vs_known_case1": 0.5501297645549322
+      }
+    },
+    "headline_estimator": "twonn",
+    "band": {
+      "relative_lo": 0.5,
+      "relative_hi": 2.5
+    },
+    "polynomial_covariance_rank": 65,
+    "empirical_ceiling": 196.32223363017292,
+    "calibration_latents": [
+      200,
+      450
+    ],
+    "calibration_note": "Cases 4 and 5 put known linear dimensions [200, 450] inside the range the real participation ratios occupy. They are NOT gated on recovery: 2000 points cannot fill a manifold of those dimensions, so under-recovery is expected and its size is the measurement. Read a real-data estimate near case 3's empirical ceiling as possibly censored rather than measured.",
+    "failures": [],
+    "passed": true
+  },
+  "calibration_inversion": {
+    "anchor_cases": [
+      "4_linear_gaussian_d200",
+      "5_linear_gaussian_d450"
+    ],
+    "anchor_truths": [
+      200.0,
+      450.0
+    ],
+    "excluded_case": "1_linear_gaussian",
+    "exclusion_reason": "d = 10 is excluded from the fit. There the estimator is nearly unbiased and the estimate-to-truth relation is not the one that holds in the censoring regime the anchors sample. The inversion does NOT extend to it and must not be applied there.",
+    "form": "d_true = A * estimate ** B, exact through the two anchors",
+    "calibration_p": 1158,
+    "calibration_n": 2000,
+    "per_estimator": {
+      "twonn": {
+        "A": 0.002123330453153906,
+        "B": 2.6875254917521163,
+        "anchor_estimates": [
+          70.92147496257232,
+          95.90056680655718
+        ],
+        "anchor_truths": [
+          200.0,
+          450.0
+        ],
+        "valid_estimate_range": [
+          70.92147496257232,
+          95.90056680655718
+        ]
+      },
+      "mle_k5_avg": {
+        "A": 0.008504342277062968,
+        "B": 2.261760817138821,
+        "anchor_estimates": [
+          85.65193882676454,
+          122.58825196046568
+        ],
+        "anchor_truths": [
+          200.0,
+          450.0
+        ],
+        "valid_estimate_range": [
+          85.65193882676454,
+          122.58825196046568
+        ]
+      },
+      "mle_k5_inv_avg": {
+        "A": 0.008405052377721305,
+        "B": 2.4015460339123464,
+        "anchor_estimates": [
+          66.42986807329956,
+          93.11328268255497
+        ],
+        "anchor_truths": [
+          200.0,
+          450.0
+        ],
+        "valid_estimate_range": [
+          66.42986807329956,
+          93.11328268255497
+        ]
+      },
+      "mle_k10_avg": {
+        "A": 0.013688311127607255,
+        "B": 2.2654819504309627,
+        "anchor_estimates": [
+          68.91594448461564,
+          98.57700174347973
+        ],
+        "anchor_truths": [
+          200.0,
+          450.0
+        ],
+        "valid_estimate_range": [
+          68.91594448461564,
+          98.57700174347973
+        ]
+      },
+      "mle_k10_inv_avg": {
+        "A": 0.015833654568035337,
+        "B": 2.288181980543182,
+        "anchor_estimates": [
+          62.0081401974035,
+          88.38170791045616
+        ],
+        "anchor_truths": [
+          200.0,
+          450.0
+        ],
+        "valid_estimate_range": [
+          62.0081401974035,
+          88.38170791045616
+        ]
+      },
+      "mle_k20_avg": {
+        "A": 0.017918435407047847,
+        "B": 2.2670737286076514,
+        "anchor_estimates": [
+          61.01583443249796,
+          87.2547939212436
+        ],
+        "anchor_truths": [
+          200.0,
+          450.0
+        ],
+        "valid_estimate_range": [
+          61.01583443249796,
+          87.2547939212436
+        ]
+      },
+      "mle_k20_inv_avg": {
+        "A": 0.020599248854987984,
+        "B": 2.2592375404501777,
+        "anchor_estimates": [
+          58.188039932614814,
+          83.31425058288082
+        ],
+        "anchor_truths": [
+          200.0,
+          450.0
+        ],
+        "valid_estimate_range": [
+          58.188039932614814,
+          83.31425058288082
+        ]
+      },
+      "mle_k50_avg": {
+        "A": 0.024754990051901307,
+        "B": 2.2598503252377333,
+        "anchor_estimates": [
+          53.58436242914648,
+          76.71518936857456
+        ],
+        "anchor_truths": [
+          200.0,
+          450.0
+        ],
+        "valid_estimate_range": [
+          53.58436242914648,
+          76.71518936857456
+        ]
+      },
+      "mle_k50_inv_avg": {
+        "A": 0.026604781881263254,
+        "B": 2.2521069773462323,
+        "anchor_estimates": [
+          52.612171082635705,
+          75.41632202292814
+        ],
+        "anchor_truths": [
+          200.0,
+          450.0
+        ],
+        "valid_estimate_range": [
+          52.612171082635705,
+          75.41632202292814
+        ]
+      },
+      "correlation_dimension": {
+        "A": 0.12289561580157599,
+        "B": 2.269561524946644,
+        "anchor_estimates": [
+          26.003285263231838,
+          37.17103707351611
+        ],
+        "anchor_truths": [
+          200.0,
+          450.0
+        ],
+        "valid_estimate_range": [
+          26.003285263231838,
+          37.17103707351611
+        ]
+      }
+    }
+  },
+  "resolution_report": [
+    {
+      "dataset": "k562",
+      "input": "dataset_k562.npz",
+      "branch": "data-root-relative",
+      "root_label": "$PRECOND_DATA",
+      "path": "/workspace/meridian-identifiability/framework/causalbench/notebooks/data/dataset_k562.npz",
+      "n_candidates": 5
+    },
+    {
+      "dataset": "rpe1",
+      "input": "dataset_rpe1.npz",
+      "branch": "data-root-relative",
+      "root_label": "$PRECOND_DATA",
+      "path": "/workspace/meridian-identifiability/framework/causalbench/notebooks/data/dataset_rpe1.npz",
+      "n_candidates": 5
+    },
+    {
+      "dataset": "norman",
+      "branch": "external-relative",
+      "root_label": "$PRECOND_EXTERNAL",
+      "path": "/workspace/external/discrepancy_vae/datasets/Norman2019_raw.h5ad",
+      "n_candidates": 7
+    },
+    {
+      "dataset": "frangieh_coculture",
+      "input": "frangieh/RNA_metadata.csv",
+      "branch": "external-relative",
+      "root_label": "$PRECOND_EXTERNAL",
+      "path": "/workspace/external/frangieh/RNA_metadata.csv",
+      "n_candidates": 5
+    },
+    {
+      "dataset": "frangieh_coculture",
+      "input": "frangieh/RNA_expression.csv.gz",
+      "branch": "external-relative",
+      "root_label": "$PRECOND_EXTERNAL",
+      "path": "/workspace/external/frangieh/RNA_expression.csv.gz",
+      "n_candidates": 5
+    },
+    {
+      "dataset": "frangieh_control",
+      "input": "frangieh/RNA_metadata.csv",
+      "branch": "external-relative",
+      "root_label": "$PRECOND_EXTERNAL",
+      "path": "/workspace/external/frangieh/RNA_metadata.csv",
+      "n_candidates": 5
+    },
+    {
+      "dataset": "frangieh_control",
+      "input": "frangieh/RNA_expression.csv.gz",
+      "branch": "external-relative",
+      "root_label": "$PRECOND_EXTERNAL",
+      "path": "/workspace/external/frangieh/RNA_expression.csv.gz",
+      "n_candidates": 5
+    },
+    {
+      "dataset": "frangieh_ifng",
+      "input": "frangieh/RNA_metadata.csv",
+      "branch": "external-relative",
+      "root_label": "$PRECOND_EXTERNAL",
+      "path": "/workspace/external/frangieh/RNA_metadata.csv",
+      "n_candidates": 5
+    },
+    {
+      "dataset": "frangieh_ifng",
+      "input": "frangieh/RNA_expression.csv.gz",
+      "branch": "external-relative",
+      "root_label": "$PRECOND_EXTERNAL",
+      "path": "/workspace/external/frangieh/RNA_expression.csv.gz",
+      "n_candidates": 5
+    }
+  ],
+  "config": {
+    "n_grid": [
+      1000,
+      2000
+    ],
+    "arms": [
+      "raw",
+      "standardise"
+    ],
+    "mle_k": [
+      5,
+      10,
+      20,
+      50
+    ],
+    "twonn_discard": 0.1,
+    "corrdim_percentiles": [
+      10.0,
+      30.0
+    ],
+    "corrdim_n_radii": 20,
+    "bootstrap_n": 20,
+    "bootstrap_fraction": 0.8,
+    "disagree_factor": 2.0,
+    "seed": 0,
+    "rank_int_excluded": "deliberate: not an admissible preprocessing arm for these data"
+  },
+  "contains_no_test": true,
+  "disclaimer": "DESCRIPTIVE ONLY. No rank test was run and no assumption verdict is expressed or implied.",
+  "audit_script_sha256": "5e5114d36207fdfdd5406dafd0aa90511fa97654c45988b4b692d9ce2b3178aa",
+  "dataset": "frangieh_coculture",
+  "provenance": {
+    "resolved_input_paths": [
+      "/workspace/external/frangieh/RNA_metadata.csv",
+      "/workspace/external/frangieh/RNA_expression.csv.gz"
+    ],
+    "input_path": "/workspace/external/frangieh/RNA_metadata.csv",
+    "n_cells": null,
+    "n_genes": 23712,
+    "n_control_cells": 5707,
+    "control_value_array": {
+      "label": "control matrix",
+      "shape": [
+        5707,
+        23712
+      ],
+      "dtype": "float32",
+      "max": 11.769511222839355,
+      "mean": 0.7222789525985718,
+      "n_nonzero_hashed": 50000,
+      "nonzero_available": 19742679,
+      "sha256_first_nonzero": "57f2a7f3f7a7071044a0b5c716a23757e35749496efd4ef3b19d5f73c45a36df",
+      "hash_spec": "sha256 of the first 50000 non-zero entries, row-major, cast to float64"
+    }
+  },
+  "records": [
+    {
+      "dataset": "frangieh_coculture",
+      "n_requested": 1000,
+      "n_used": 1000,
+      "arm": "raw",
+      "status": "ok",
+      "estimators": {
+        "twonn": 162.51238818117827,
+        "mle": {
+          "5": {
+            "avg": 194.35723023415443,
+            "inv_avg": 146.84196737628395,
+            "n_points_used": 1000
+          },
+          "10": {
+            "avg": 161.10136183546356,
+            "inv_avg": 139.02818026718313,
+            "n_points_used": 1000
+          },
+          "20": {
+            "avg": 143.15848876038328,
+            "inv_avg": 129.0340681159366,
+            "n_points_used": 1000
+          },
+          "50": {
+            "avg": 119.33593036340402,
+            "inv_avg": 108.86713670446392,
+            "n_points_used": 1000
+          }
+        },
+        "correlation_dimension": {
+          "dimension": 35.46708179940706,
+          "r2": 0.9992797962684287,
+          "window": [
+            243.99357384069742,
+            251.6783791636642
+          ],
+          "n_radii": 20,
+          "window_spec": "percentiles 10.0-30.0 of the pairwise distance distribution, fixed for every dataset"
+        },
+        "point_estimates": {
+          "twonn": 162.51238818117827,
+          "mle_k5_avg": 194.35723023415443,
+          "mle_k5_inv_avg": 146.84196737628395,
+          "mle_k10_avg": 161.10136183546356,
+          "mle_k10_inv_avg": 139.02818026718313,
+          "mle_k20_avg": 143.15848876038328,
+          "mle_k20_inv_avg": 129.0340681159366,
+          "mle_k50_avg": 119.33593036340402,
+          "mle_k50_inv_avg": 108.86713670446392,
+          "correlation_dimension": 35.46708179940706
+        },
+        "estimator_spread_max_over_min": 5.479932951162723,
+        "estimators_disagree": true
+      },
+      "bootstrap": {
+        "n_resamples": 20,
+        "subsample_size": 800,
+        "subsample_fraction": 0.8,
+        "per_estimator": {
+          "twonn": {
+            "n": 20,
+            "median": 155.29447717221632,
+            "p05": 148.29320428710386,
+            "p95": 206.94051713921758,
+            "min": 147.65833764108513,
+            "max": 209.2230771917341
+          },
+          "mle_k5_avg": {
+            "n": 20,
+            "median": 187.2090252099891,
+            "p05": 179.8151522649972,
+            "p95": 239.3619137680843,
+            "min": 178.9401400915449,
+            "max": 240.87426521889785
+          },
+          "mle_k5_inv_avg": {
+            "n": 20,
+            "median": 142.16313318114692,
+            "p05": 137.5675508448405,
+            "p95": 161.6927859764668,
+            "min": 133.6328808064262,
+            "max": 169.50571371656994
+          },
+          "mle_k10_avg": {
+            "n": 20,
+            "median": 154.55952051123074,
+            "p05": 149.59440369055304,
+            "p95": 181.02464161549412,
+            "min": 149.46491464900538,
+            "max": 187.84538670779952
+          },
+          "mle_k10_inv_avg": {
+            "n": 20,
+            "median": 135.24072956625403,
+            "p05": 130.807890515668,
+            "p95": 147.55386144725688,
+            "min": 130.36377128300393,
+            "max": 156.34076294159746
+          },
+          "mle_k20_avg": {
+            "n": 20,
+            "median": 137.76534821082174,
+            "p05": 133.30544868911386,
+            "p95": 151.65399359208752,
+            "min": 132.9500675260564,
+            "max": 154.8262128136129
+          },
+          "mle_k20_inv_avg": {
+            "n": 20,
+            "median": 124.76993128741483,
+            "p05": 120.89655472833267,
+            "p95": 132.90149175040239,
+            "min": 120.13710159468282,
+            "max": 137.28983369806522
+          },
+          "mle_k50_avg": {
+            "n": 20,
+            "median": 112.92777620008142,
+            "p05": 109.54443747562267,
+            "p95": 118.40899081870103,
+            "min": 108.41324700907968,
+            "max": 118.8298065337003
+          },
+          "mle_k50_inv_avg": {
+            "n": 20,
+            "median": 102.52781572313563,
+            "p05": 99.27170643279963,
+            "p95": 106.989932533332,
+            "min": 99.18055598162285,
+            "max": 107.26475380480454
+          },
+          "correlation_dimension": {
+            "n": 20,
+            "median": 35.3904945712234,
+            "p05": 34.383543420879015,
+            "p95": 36.39265543802759,
+            "min": 34.247250976470696,
+            "max": 36.67967132385812
+          }
+        }
+      },
+      "participation_ratio": null,
+      "participation_ratio_source": null,
+      "participation_ratio_note": "no committed raw PR at this n",
+      "intrinsic_over_participation": {
+        "twonn": null,
+        "mle_k5_avg": null,
+        "mle_k5_inv_avg": null,
+        "mle_k10_avg": null,
+        "mle_k10_inv_avg": null,
+        "mle_k20_avg": null,
+        "mle_k20_inv_avg": null,
+        "mle_k50_avg": null,
+        "mle_k50_inv_avg": null,
+        "correlation_dimension": null
+      },
+      "implied_true_dimension": {
+        "twonn": {
+          "implied_true_dimension": 1857.0831207863125,
+          "raw_estimate": 162.51238818117827,
+          "A": 0.002123330453153906,
+          "B": 2.6875254917521163,
+          "anchor_estimate_range": [
+            70.92147496257232,
+            95.90056680655718
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [70.92, 95.90]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k5_avg": {
+          "implied_true_dimension": 1276.1688021594887,
+          "raw_estimate": 194.35723023415443,
+          "A": 0.008504342277062968,
+          "B": 2.261760817138821,
+          "anchor_estimate_range": [
+            85.65193882676454,
+            122.58825196046568
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [85.65, 122.59]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k5_inv_avg": {
+          "implied_true_dimension": 1343.7884837961221,
+          "raw_estimate": 146.84196737628395,
+          "A": 0.008405052377721305,
+          "B": 2.4015460339123464,
+          "anchor_estimate_range": [
+            66.42986807329956,
+            93.11328268255497
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [66.43, 93.11]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k10_avg": {
+          "implied_true_dimension": 1369.2832471961963,
+          "raw_estimate": 161.10136183546356,
+          "A": 0.013688311127607255,
+          "B": 2.2654819504309627,
+          "anchor_estimate_range": [
+            68.91594448461564,
+            98.57700174347973
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [68.92, 98.58]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k10_inv_avg": {
+          "implied_true_dimension": 1268.792091973946,
+          "raw_estimate": 139.02818026718313,
+          "A": 0.015833654568035337,
+          "B": 2.288181980543182,
+          "anchor_estimate_range": [
+            62.0081401974035,
+            88.38170791045616
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [62.01, 88.38]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k20_avg": {
+          "implied_true_dimension": 1382.5995406138968,
+          "raw_estimate": 143.15848876038328,
+          "A": 0.017918435407047847,
+          "B": 2.2670737286076514,
+          "anchor_estimate_range": [
+            61.01583443249796,
+            87.2547939212436
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [61.02, 87.25]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k20_inv_avg": {
+          "implied_true_dimension": 1209.0213726415232,
+          "raw_estimate": 129.0340681159366,
+          "A": 0.020599248854987984,
+          "B": 2.2592375404501777,
+          "anchor_estimate_range": [
+            58.188039932614814,
+            83.31425058288082
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [58.19, 83.31]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k50_avg": {
+          "implied_true_dimension": 1221.3914641498832,
+          "raw_estimate": 119.33593036340402,
+          "A": 0.024754990051901307,
+          "B": 2.2598503252377333,
+          "anchor_estimate_range": [
+            53.58436242914648,
+            76.71518936857456
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [53.58, 76.72]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k50_inv_avg": {
+          "implied_true_dimension": 1028.6537173111406,
+          "raw_estimate": 108.86713670446392,
+          "A": 0.026604781881263254,
+          "B": 2.2521069773462323,
+          "anchor_estimate_range": [
+            52.612171082635705,
+            75.41632202292814
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [52.61, 75.42]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "correlation_dimension": {
+          "implied_true_dimension": 404.53920502949956,
+          "raw_estimate": 35.46708179940706,
+          "A": 0.12289561580157599,
+          "B": 2.269561524946644,
+          "anchor_estimate_range": [
+            26.003285263231838,
+            37.17103707351611
+          ],
+          "outside_anchor_range": false,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        }
+      },
+      "implied_over_participation": {
+        "twonn": null,
+        "mle_k5_avg": null,
+        "mle_k5_inv_avg": null,
+        "mle_k10_avg": null,
+        "mle_k10_inv_avg": null,
+        "mle_k20_avg": null,
+        "mle_k20_inv_avg": null,
+        "mle_k50_avg": null,
+        "mle_k50_inv_avg": null,
+        "correlation_dimension": null
+      },
+      "headline": {
+        "twonn": 162.51238818117827,
+        "twonn_over_pr": null,
+        "estimator_spread": 5.479932951162723,
+        "estimators_disagree": true,
+        "twonn_implied": 1857.0831207863125,
+        "twonn_implied_is_extrapolation": true
+      }
+    },
+    {
+      "dataset": "frangieh_coculture",
+      "n_requested": 1000,
+      "n_used": 1000,
+      "arm": "standardise",
+      "status": "ok",
+      "estimators": {
+        "twonn": 156.66160366573556,
+        "mle": {
+          "5": {
+            "avg": 141.84234045908184,
+            "inv_avg": 120.39812664695957,
+            "n_points_used": 1000
+          },
+          "10": {
+            "avg": 125.25571504799318,
+            "inv_avg": 116.1799714054712,
+            "n_points_used": 1000
+          },
+          "20": {
+            "avg": 108.40158219447751,
+            "inv_avg": 103.31205150954648,
+            "n_points_used": 1000
+          },
+          "50": {
+            "avg": 86.51182101890485,
+            "inv_avg": 83.59962891081923,
+            "n_points_used": 1000
+          }
+        },
+        "correlation_dimension": {
+          "dimension": 21.881662965713993,
+          "r2": 0.9955732613827727,
+          "window": [
+            169.22951411190604,
+            177.92141807712977
+          ],
+          "n_radii": 20,
+          "window_spec": "percentiles 10.0-30.0 of the pairwise distance distribution, fixed for every dataset"
+        },
+        "point_estimates": {
+          "twonn": 156.66160366573556,
+          "mle_k5_avg": 141.84234045908184,
+          "mle_k5_inv_avg": 120.39812664695957,
+          "mle_k10_avg": 125.25571504799318,
+          "mle_k10_inv_avg": 116.1799714054712,
+          "mle_k20_avg": 108.40158219447751,
+          "mle_k20_inv_avg": 103.31205150954648,
+          "mle_k50_avg": 86.51182101890485,
+          "mle_k50_inv_avg": 83.59962891081923,
+          "correlation_dimension": 21.881662965713993
+        },
+        "estimator_spread_max_over_min": 7.1594925811263055,
+        "estimators_disagree": true
+      },
+      "bootstrap": {
+        "n_resamples": 20,
+        "subsample_size": 800,
+        "subsample_fraction": 0.8,
+        "per_estimator": {
+          "twonn": {
+            "n": 20,
+            "median": 154.60328039650997,
+            "p05": 108.56842794716785,
+            "p95": 171.13548806032384,
+            "min": 100.07125693687773,
+            "max": 180.378039348085
+          },
+          "mle_k5_avg": {
+            "n": 20,
+            "median": 138.2092352151495,
+            "p05": 129.43542536730126,
+            "p95": 182.30369179169753,
+            "min": 129.09071447544085,
+            "max": 183.77476245868934
+          },
+          "mle_k5_inv_avg": {
+            "n": 20,
+            "median": 117.55864789877862,
+            "p05": 111.13086719729627,
+            "p95": 151.37110741278494,
+            "min": 109.4113292100693,
+            "max": 151.7932040942684
+          },
+          "mle_k10_avg": {
+            "n": 20,
+            "median": 122.16382889343895,
+            "p05": 110.2274961261828,
+            "p95": 137.97783586978275,
+            "min": 104.82051779233606,
+            "max": 138.78325011504256
+          },
+          "mle_k10_inv_avg": {
+            "n": 20,
+            "median": 112.97060604280108,
+            "p05": 102.34364494299814,
+            "p95": 126.31546872260056,
+            "min": 96.43162401818263,
+            "max": 127.82066408980543
+          },
+          "mle_k20_avg": {
+            "n": 20,
+            "median": 102.54847005646162,
+            "p05": 97.13220555584964,
+            "p95": 109.84417360604492,
+            "min": 95.02087607033928,
+            "max": 109.8849331694514
+          },
+          "mle_k20_inv_avg": {
+            "n": 20,
+            "median": 97.6268563886695,
+            "p05": 92.26042792713118,
+            "p95": 103.37222506508482,
+            "min": 91.06790355997386,
+            "max": 104.45548014293858
+          },
+          "mle_k50_avg": {
+            "n": 20,
+            "median": 81.78350525291512,
+            "p05": 77.29207572871351,
+            "p95": 87.15951493244059,
+            "min": 74.05422755279342,
+            "max": 88.54730914304659
+          },
+          "mle_k50_inv_avg": {
+            "n": 20,
+            "median": 78.88746545374082,
+            "p05": 73.89663210816461,
+            "p95": 84.10864432012005,
+            "min": 71.11536701919539,
+            "max": 85.46729084587017
+          },
+          "correlation_dimension": {
+            "n": 20,
+            "median": 21.78983075615873,
+            "p05": 21.29114091258662,
+            "p95": 22.25894664312879,
+            "min": 21.16954358128082,
+            "max": 22.349195454393122
+          }
+        }
+      },
+      "participation_ratio": null,
+      "participation_ratio_source": null,
+      "participation_ratio_note": "no committed standardise PR at this n",
+      "intrinsic_over_participation": {
+        "twonn": null,
+        "mle_k5_avg": null,
+        "mle_k5_inv_avg": null,
+        "mle_k10_avg": null,
+        "mle_k10_inv_avg": null,
+        "mle_k20_avg": null,
+        "mle_k20_inv_avg": null,
+        "mle_k50_avg": null,
+        "mle_k50_inv_avg": null,
+        "correlation_dimension": null
+      },
+      "implied_true_dimension": {
+        "twonn": {
+          "implied_true_dimension": 1682.8113911515313,
+          "raw_estimate": 156.66160366573556,
+          "A": 0.002123330453153906,
+          "B": 2.6875254917521163,
+          "anchor_estimate_range": [
+            70.92147496257232,
+            95.90056680655718
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [70.92, 95.90]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k5_avg": {
+          "implied_true_dimension": 625.9086827106929,
+          "raw_estimate": 141.84234045908184,
+          "A": 0.008504342277062968,
+          "B": 2.261760817138821,
+          "anchor_estimate_range": [
+            85.65193882676454,
+            122.58825196046568
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [85.65, 122.59]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k5_inv_avg": {
+          "implied_true_dimension": 834.150632890257,
+          "raw_estimate": 120.39812664695957,
+          "A": 0.008405052377721305,
+          "B": 2.4015460339123464,
+          "anchor_estimate_range": [
+            66.42986807329956,
+            93.11328268255497
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [66.43, 93.11]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k10_avg": {
+          "implied_true_dimension": 774.2342053818863,
+          "raw_estimate": 125.25571504799318,
+          "A": 0.013688311127607255,
+          "B": 2.2654819504309627,
+          "anchor_estimate_range": [
+            68.91594448461564,
+            98.57700174347973
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [68.92, 98.58]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k10_inv_avg": {
+          "implied_true_dimension": 841.351192474138,
+          "raw_estimate": 116.1799714054712,
+          "A": 0.015833654568035337,
+          "B": 2.288181980543182,
+          "anchor_estimate_range": [
+            62.0081401974035,
+            88.38170791045616
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [62.01, 88.38]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k20_avg": {
+          "implied_true_dimension": 735.9967198194807,
+          "raw_estimate": 108.40158219447751,
+          "A": 0.017918435407047847,
+          "B": 2.2670737286076514,
+          "anchor_estimate_range": [
+            61.01583443249796,
+            87.2547939212436
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [61.02, 87.25]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k20_inv_avg": {
+          "implied_true_dimension": 731.639093594837,
+          "raw_estimate": 103.31205150954648,
+          "A": 0.020599248854987984,
+          "B": 2.2592375404501777,
+          "anchor_estimate_range": [
+            58.188039932614814,
+            83.31425058288082
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [58.19, 83.31]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k50_avg": {
+          "implied_true_dimension": 590.4231130272861,
+          "raw_estimate": 86.51182101890485,
+          "A": 0.024754990051901307,
+          "B": 2.2598503252377333,
+          "anchor_estimate_range": [
+            53.58436242914648,
+            76.71518936857456
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [53.58, 76.72]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k50_inv_avg": {
+          "implied_true_dimension": 567.5047886288995,
+          "raw_estimate": 83.59962891081923,
+          "A": 0.026604781881263254,
+          "B": 2.2521069773462323,
+          "anchor_estimate_range": [
+            52.612171082635705,
+            75.41632202292814
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [52.61, 75.42]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "correlation_dimension": {
+          "implied_true_dimension": 135.18581849850122,
+          "raw_estimate": 21.881662965713993,
+          "A": 0.12289561580157599,
+          "B": 2.269561524946644,
+          "anchor_estimate_range": [
+            26.003285263231838,
+            37.17103707351611
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [26.00, 37.17]",
+            "estimate is BELOW the anchored range, heading towards the d=10 regime where the estimator is nearly unbiased and this power law does not hold. The implied value there is not meaningful.",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        }
+      },
+      "implied_over_participation": {
+        "twonn": null,
+        "mle_k5_avg": null,
+        "mle_k5_inv_avg": null,
+        "mle_k10_avg": null,
+        "mle_k10_inv_avg": null,
+        "mle_k20_avg": null,
+        "mle_k20_inv_avg": null,
+        "mle_k50_avg": null,
+        "mle_k50_inv_avg": null,
+        "correlation_dimension": null
+      },
+      "headline": {
+        "twonn": 156.66160366573556,
+        "twonn_over_pr": null,
+        "estimator_spread": 7.1594925811263055,
+        "estimators_disagree": true,
+        "twonn_implied": 1682.8113911515313,
+        "twonn_implied_is_extrapolation": true
+      }
+    },
+    {
+      "dataset": "frangieh_coculture",
+      "n_requested": 2000,
+      "n_used": 2000,
+      "arm": "raw",
+      "status": "ok",
+      "estimators": {
+        "twonn": 183.82158212424406,
+        "mle": {
+          "5": {
+            "avg": 210.00638726455168,
+            "inv_avg": 159.61355232876667,
+            "n_points_used": 2000
+          },
+          "10": {
+            "avg": 165.91915434956374,
+            "inv_avg": 143.9036865365706,
+            "n_points_used": 2000
+          },
+          "20": {
+            "avg": 147.06841237546894,
+            "inv_avg": 132.08750299637302,
+            "n_points_used": 2000
+          },
+          "50": {
+            "avg": 130.89378804618968,
+            "inv_avg": 118.4633244951958,
+            "n_points_used": 2000
+          }
+        },
+        "correlation_dimension": {
+          "dimension": 37.784034653834475,
+          "r2": 0.9988489669371632,
+          "window": [
+            244.82007085335988,
+            252.0264982410462
+          ],
+          "n_radii": 20,
+          "window_spec": "percentiles 10.0-30.0 of the pairwise distance distribution, fixed for every dataset"
+        },
+        "point_estimates": {
+          "twonn": 183.82158212424406,
+          "mle_k5_avg": 210.00638726455168,
+          "mle_k5_inv_avg": 159.61355232876667,
+          "mle_k10_avg": 165.91915434956374,
+          "mle_k10_inv_avg": 143.9036865365706,
+          "mle_k20_avg": 147.06841237546894,
+          "mle_k20_inv_avg": 132.08750299637302,
+          "mle_k50_avg": 130.89378804618968,
+          "mle_k50_inv_avg": 118.4633244951958,
+          "correlation_dimension": 37.784034653834475
+        },
+        "estimator_spread_max_over_min": 5.558072058438561,
+        "estimators_disagree": true
+      },
+      "bootstrap": {
+        "n_resamples": 20,
+        "subsample_size": 1600,
+        "subsample_fraction": 0.8,
+        "per_estimator": {
+          "twonn": {
+            "n": 20,
+            "median": 175.7700711070603,
+            "p05": 158.97191555595163,
+            "p95": 193.15679400117887,
+            "min": 157.92665615002642,
+            "max": 198.15656687000086
+          },
+          "mle_k5_avg": {
+            "n": 20,
+            "median": 202.78120267737415,
+            "p05": 190.98718056151702,
+            "p95": 227.1256958525088,
+            "min": 184.9009383893117,
+            "max": 227.48965396814964
+          },
+          "mle_k5_inv_avg": {
+            "n": 20,
+            "median": 153.9466059028956,
+            "p05": 144.22542220806875,
+            "p95": 167.1265721347294,
+            "min": 140.2729366536503,
+            "max": 171.01501845909948
+          },
+          "mle_k10_avg": {
+            "n": 20,
+            "median": 160.11033415418436,
+            "p05": 155.34829557153,
+            "p95": 179.96558802870064,
+            "min": 154.48023079998973,
+            "max": 180.6810877203166
+          },
+          "mle_k10_inv_avg": {
+            "n": 20,
+            "median": 139.94863006827637,
+            "p05": 135.45609756146652,
+            "p95": 148.88617730595024,
+            "min": 134.47660269853375,
+            "max": 151.36307736124823
+          },
+          "mle_k20_avg": {
+            "n": 20,
+            "median": 144.4537059682545,
+            "p05": 140.57838957748743,
+            "p95": 156.17137133308262,
+            "min": 140.26613648817383,
+            "max": 158.1546114377408
+          },
+          "mle_k20_inv_avg": {
+            "n": 20,
+            "median": 130.69073963446215,
+            "p05": 126.90746017928817,
+            "p95": 135.45495915950644,
+            "min": 125.63659542963325,
+            "max": 137.2517691830145
+          },
+          "mle_k50_avg": {
+            "n": 20,
+            "median": 127.16122271870114,
+            "p05": 123.92832145076642,
+            "p95": 131.7434294156669,
+            "min": 123.66780872563778,
+            "max": 132.79224320902796
+          },
+          "mle_k50_inv_avg": {
+            "n": 20,
+            "median": 114.84036942282677,
+            "p05": 111.90359457052195,
+            "p95": 117.10800738286834,
+            "min": 111.6828376348528,
+            "max": 117.53079718724968
+          },
+          "correlation_dimension": {
+            "n": 20,
+            "median": 37.76328439313949,
+            "p05": 37.007481789006526,
+            "p95": 38.643763190384036,
+            "min": 36.70460673870648,
+            "max": 38.648161471507755
+          }
+        }
+      },
+      "participation_ratio": null,
+      "participation_ratio_source": null,
+      "participation_ratio_note": "no committed raw PR at this n",
+      "intrinsic_over_participation": {
+        "twonn": null,
+        "mle_k5_avg": null,
+        "mle_k5_inv_avg": null,
+        "mle_k10_avg": null,
+        "mle_k10_inv_avg": null,
+        "mle_k20_avg": null,
+        "mle_k20_inv_avg": null,
+        "mle_k50_avg": null,
+        "mle_k50_inv_avg": null,
+        "correlation_dimension": null
+      },
+      "implied_true_dimension": {
+        "twonn": {
+          "implied_true_dimension": 2586.073743338782,
+          "raw_estimate": 183.82158212424406,
+          "A": 0.002123330453153906,
+          "B": 2.6875254917521163,
+          "anchor_estimate_range": [
+            70.92147496257232,
+            95.90056680655718
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [70.92, 95.90]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k5_avg": {
+          "implied_true_dimension": 1520.4607605473302,
+          "raw_estimate": 210.00638726455168,
+          "A": 0.008504342277062968,
+          "B": 2.261760817138821,
+          "anchor_estimate_range": [
+            85.65193882676454,
+            122.58825196046568
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [85.65, 122.59]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k5_inv_avg": {
+          "implied_true_dimension": 1641.7759012811796,
+          "raw_estimate": 159.61355232876667,
+          "A": 0.008405052377721305,
+          "B": 2.4015460339123464,
+          "anchor_estimate_range": [
+            66.42986807329956,
+            93.11328268255497
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [66.43, 93.11]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k10_avg": {
+          "implied_true_dimension": 1463.8122537986717,
+          "raw_estimate": 165.91915434956374,
+          "A": 0.013688311127607255,
+          "B": 2.2654819504309627,
+          "anchor_estimate_range": [
+            68.91594448461564,
+            98.57700174347973
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [68.92, 98.58]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k10_inv_avg": {
+          "implied_true_dimension": 1372.911193117294,
+          "raw_estimate": 143.9036865365706,
+          "A": 0.015833654568035337,
+          "B": 2.288181980543182,
+          "anchor_estimate_range": [
+            62.0081401974035,
+            88.38170791045616
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [62.01, 88.38]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k20_avg": {
+          "implied_true_dimension": 1469.692178495824,
+          "raw_estimate": 147.06841237546894,
+          "A": 0.017918435407047847,
+          "B": 2.2670737286076514,
+          "anchor_estimate_range": [
+            61.01583443249796,
+            87.2547939212436
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [61.02, 87.25]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k20_inv_avg": {
+          "implied_true_dimension": 1274.6232129152258,
+          "raw_estimate": 132.08750299637302,
+          "A": 0.020599248854987984,
+          "B": 2.2592375404501777,
+          "anchor_estimate_range": [
+            58.188039932614814,
+            83.31425058288082
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [58.19, 83.31]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k50_avg": {
+          "implied_true_dimension": 1505.1609028900104,
+          "raw_estimate": 130.89378804618968,
+          "A": 0.024754990051901307,
+          "B": 2.2598503252377333,
+          "anchor_estimate_range": [
+            53.58436242914648,
+            76.71518936857456
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [53.58, 76.72]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k50_inv_avg": {
+          "implied_true_dimension": 1244.2066228161773,
+          "raw_estimate": 118.4633244951958,
+          "A": 0.026604781881263254,
+          "B": 2.2521069773462323,
+          "anchor_estimate_range": [
+            52.612171082635705,
+            75.41632202292814
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [52.61, 75.42]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "correlation_dimension": {
+          "implied_true_dimension": 467.01915189085247,
+          "raw_estimate": 37.784034653834475,
+          "A": 0.12289561580157599,
+          "B": 2.269561524946644,
+          "anchor_estimate_range": [
+            26.003285263231838,
+            37.17103707351611
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [26.00, 37.17]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        }
+      },
+      "implied_over_participation": {
+        "twonn": null,
+        "mle_k5_avg": null,
+        "mle_k5_inv_avg": null,
+        "mle_k10_avg": null,
+        "mle_k10_inv_avg": null,
+        "mle_k20_avg": null,
+        "mle_k20_inv_avg": null,
+        "mle_k50_avg": null,
+        "mle_k50_inv_avg": null,
+        "correlation_dimension": null
+      },
+      "headline": {
+        "twonn": 183.82158212424406,
+        "twonn_over_pr": null,
+        "estimator_spread": 5.558072058438561,
+        "estimators_disagree": true,
+        "twonn_implied": 2586.073743338782,
+        "twonn_implied_is_extrapolation": true
+      }
+    },
+    {
+      "dataset": "frangieh_coculture",
+      "n_requested": 2000,
+      "n_used": 2000,
+      "arm": "standardise",
+      "status": "ok",
+      "estimators": {
+        "twonn": 191.49457644397177,
+        "mle": {
+          "5": {
+            "avg": 192.6141147063484,
+            "inv_avg": 160.2542755228054,
+            "n_points_used": 2000
+          },
+          "10": {
+            "avg": 161.5144217057451,
+            "inv_avg": 145.99516989588818,
+            "n_points_used": 2000
+          },
+          "20": {
+            "avg": 137.99310361737724,
+            "inv_avg": 125.00738166034199,
+            "n_points_used": 2000
+          },
+          "50": {
+            "avg": 106.71893192887623,
+            "inv_avg": 98.88085172530482,
+            "n_points_used": 2000
+          }
+        },
+        "correlation_dimension": {
+          "dimension": 19.49037104344689,
+          "r2": 0.9954447810917142,
+          "window": [
+            172.94974445805596,
+            183.00324862033514
+          ],
+          "n_radii": 20,
+          "window_spec": "percentiles 10.0-30.0 of the pairwise distance distribution, fixed for every dataset"
+        },
+        "point_estimates": {
+          "twonn": 191.49457644397177,
+          "mle_k5_avg": 192.6141147063484,
+          "mle_k5_inv_avg": 160.2542755228054,
+          "mle_k10_avg": 161.5144217057451,
+          "mle_k10_inv_avg": 145.99516989588818,
+          "mle_k20_avg": 137.99310361737724,
+          "mle_k20_inv_avg": 125.00738166034199,
+          "mle_k50_avg": 106.71893192887623,
+          "mle_k50_inv_avg": 98.88085172530482,
+          "correlation_dimension": 19.49037104344689
+        },
+        "estimator_spread_max_over_min": 9.882526827066728,
+        "estimators_disagree": true
+      },
+      "bootstrap": {
+        "n_resamples": 20,
+        "subsample_size": 1600,
+        "subsample_fraction": 0.8,
+        "per_estimator": {
+          "twonn": {
+            "n": 20,
+            "median": 187.22463933216622,
+            "p05": 164.54073823496722,
+            "p95": 228.96034833773203,
+            "min": 154.71373378874864,
+            "max": 242.685067776901
+          },
+          "mle_k5_avg": {
+            "n": 20,
+            "median": 208.28122875846424,
+            "p05": 174.4249555722991,
+            "p95": 246.2192177463301,
+            "min": 173.83167355674968,
+            "max": 264.91381925592543
+          },
+          "mle_k5_inv_avg": {
+            "n": 20,
+            "median": 169.13171948557004,
+            "p05": 146.59197481123567,
+            "p95": 194.7965185607565,
+            "min": 143.42363964743782,
+            "max": 213.44067447943965
+          },
+          "mle_k10_avg": {
+            "n": 20,
+            "median": 166.99649211428755,
+            "p05": 149.09001988332875,
+            "p95": 182.48996799944325,
+            "min": 146.99253173105643,
+            "max": 198.82881593487102
+          },
+          "mle_k10_inv_avg": {
+            "n": 20,
+            "median": 145.9776548110472,
+            "p05": 134.70263149083198,
+            "p95": 164.0991561840005,
+            "min": 131.97352474325675,
+            "max": 174.84778343891483
+          },
+          "mle_k20_avg": {
+            "n": 20,
+            "median": 135.26594618602041,
+            "p05": 124.11459790248665,
+            "p95": 147.26162798416482,
+            "min": 123.21204426079916,
+            "max": 151.3332648242259
+          },
+          "mle_k20_inv_avg": {
+            "n": 20,
+            "median": 118.78819421015172,
+            "p05": 112.05482435098753,
+            "p95": 132.0513820665725,
+            "min": 111.3638220515814,
+            "max": 135.27499998082888
+          },
+          "mle_k50_avg": {
+            "n": 20,
+            "median": 101.43715209882531,
+            "p05": 96.64284496837276,
+            "p95": 108.3305081270961,
+            "min": 96.11471814245658,
+            "max": 108.9209150417965
+          },
+          "mle_k50_inv_avg": {
+            "n": 20,
+            "median": 94.35990358639108,
+            "p05": 90.67593992039514,
+            "p95": 100.16981876074466,
+            "min": 89.36580062385048,
+            "max": 102.33825367533647
+          },
+          "correlation_dimension": {
+            "n": 20,
+            "median": 19.250759882923738,
+            "p05": 19.102983957314915,
+            "p95": 19.57340850378026,
+            "min": 19.08084393310164,
+            "max": 19.889842887449486
+          }
+        }
+      },
+      "participation_ratio": 1116.868153109075,
+      "participation_ratio_source": "2026-08-11T10-04-17Z__frangieh_coculture.json",
+      "participation_ratio_note": null,
+      "intrinsic_over_participation": {
+        "twonn": 0.17145674349375967,
+        "mle_k5_avg": 0.17245913420501788,
+        "mle_k5_inv_avg": 0.14348540163554535,
+        "mle_k10_avg": 0.1446136871716955,
+        "mle_k10_inv_avg": 0.13071835694255854,
+        "mle_k20_avg": 0.12355362021312881,
+        "mle_k20_inv_avg": 0.11192671338362854,
+        "mle_k50_avg": 0.09555195179645695,
+        "mle_k50_inv_avg": 0.08853404177569739,
+        "correlation_dimension": 0.01745091485435473
+      },
+      "implied_true_dimension": {
+        "twonn": {
+          "implied_true_dimension": 2886.4982602534315,
+          "raw_estimate": 191.49457644397177,
+          "A": 0.002123330453153906,
+          "B": 2.6875254917521163,
+          "anchor_estimate_range": [
+            70.92147496257232,
+            95.90056680655718
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [70.92, 95.90]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k5_avg": {
+          "implied_true_dimension": 1250.4282453951437,
+          "raw_estimate": 192.6141147063484,
+          "A": 0.008504342277062968,
+          "B": 2.261760817138821,
+          "anchor_estimate_range": [
+            85.65193882676454,
+            122.58825196046568
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [85.65, 122.59]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k5_inv_avg": {
+          "implied_true_dimension": 1657.6476985510792,
+          "raw_estimate": 160.2542755228054,
+          "A": 0.008405052377721305,
+          "B": 2.4015460339123464,
+          "anchor_estimate_range": [
+            66.42986807329956,
+            93.11328268255497
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [66.43, 93.11]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k10_avg": {
+          "implied_true_dimension": 1377.2498259235977,
+          "raw_estimate": 161.5144217057451,
+          "A": 0.013688311127607255,
+          "B": 2.2654819504309627,
+          "anchor_estimate_range": [
+            68.91594448461564,
+            98.57700174347973
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [68.92, 98.58]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k10_inv_avg": {
+          "implied_true_dimension": 1418.997053423562,
+          "raw_estimate": 145.99516989588818,
+          "A": 0.015833654568035337,
+          "B": 2.288181980543182,
+          "anchor_estimate_range": [
+            62.0081401974035,
+            88.38170791045616
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [62.01, 88.38]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k20_avg": {
+          "implied_true_dimension": 1272.0803391219213,
+          "raw_estimate": 137.99310361737724,
+          "A": 0.017918435407047847,
+          "B": 2.2670737286076514,
+          "anchor_estimate_range": [
+            61.01583443249796,
+            87.2547939212436
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [61.02, 87.25]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k20_inv_avg": {
+          "implied_true_dimension": 1125.45243320009,
+          "raw_estimate": 125.00738166034199,
+          "A": 0.020599248854987984,
+          "B": 2.2592375404501777,
+          "anchor_estimate_range": [
+            58.188039932614814,
+            83.31425058288082
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [58.19, 83.31]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k50_avg": {
+          "implied_true_dimension": 948.8223407091899,
+          "raw_estimate": 106.71893192887623,
+          "A": 0.024754990051901307,
+          "B": 2.2598503252377333,
+          "anchor_estimate_range": [
+            53.58436242914648,
+            76.71518936857456
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [53.58, 76.72]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "mle_k50_inv_avg": {
+          "implied_true_dimension": 828.2583174975003,
+          "raw_estimate": 98.88085172530482,
+          "A": 0.026604781881263254,
+          "B": 2.2521069773462323,
+          "anchor_estimate_range": [
+            52.612171082635705,
+            75.41632202292814
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [52.61, 75.42]",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        },
+        "correlation_dimension": {
+          "implied_true_dimension": 103.95909232074344,
+          "raw_estimate": 19.49037104344689,
+          "A": 0.12289561580157599,
+          "B": 2.269561524946644,
+          "anchor_estimate_range": [
+            26.003285263231838,
+            37.17103707351611
+          ],
+          "outside_anchor_range": true,
+          "extrapolation": true,
+          "extrapolation_reasons": [
+            "estimate outside the anchored range [26.00, 37.17]",
+            "estimate is BELOW the anchored range, heading towards the d=10 regime where the estimator is nearly unbiased and this power law does not hold. The implied value there is not meaningful.",
+            "this condition has p=23712, the calibration was fitted at p=1158"
+          ],
+          "note": "Fitted on the d=200 and d=450 anchors only; the fit does not extend to d=10, where the estimator is nearly unbiased."
+        }
+      },
+      "implied_over_participation": {
+        "twonn": 2.5844574869631294,
+        "mle_k5_avg": 1.1195844754945081,
+        "mle_k5_inv_avg": 1.4841928243155762,
+        "mle_k10_avg": 1.2331355514880489,
+        "mle_k10_inv_avg": 1.2705143838808883,
+        "mle_k20_avg": 1.1389709121714817,
+        "mle_k20_inv_avg": 1.0076860281736197,
+        "mle_k50_avg": 0.8495383614152767,
+        "mle_k50_inv_avg": 0.7415900571538738,
+        "correlation_dimension": 0.09308089950577242
+      },
+      "headline": {
+        "twonn": 191.49457644397177,
+        "twonn_over_pr": 0.17145674349375967,
+        "estimator_spread": 9.882526827066728,
+        "estimators_disagree": true,
+        "twonn_implied": 2886.4982602534315,
+        "twonn_implied_is_extrapolation": true
+      }
+    }
+  ],
+  "n_configurations": 4,
+  "n_configurations_expected": 4,
+  "complete": true,
+  "n_configurations_with_estimator_disagreement": 4
+}

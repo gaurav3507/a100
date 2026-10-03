@@ -1,0 +1,269 @@
+{
+  "header": {
+    "source_line": 1,
+    "text": "TASK A  s* decay vs d_latent. n_e=2000 B=500 10x40=400 draws/point"
+  },
+  "table": [
+    {
+      "source_line": 3,
+      "d_latent": 5,
+      "d": 5,
+      "scaling": "raw",
+      "reject_by_s": {
+        "0.005": 0.022,
+        "0.01": 0.022,
+        "0.02": 0.022,
+        "0.05": 0.022,
+        "0.1": 0.025
+      },
+      "s_star_grid": 0.1,
+      "s_star_interp": 0.1
+    },
+    {
+      "source_line": 4,
+      "d_latent": 5,
+      "d": 5,
+      "scaling": "standardised",
+      "reject_by_s": {
+        "0.005": 0.02,
+        "0.01": 0.02,
+        "0.02": 0.02,
+        "0.05": 0.022,
+        "0.1": 0.022
+      },
+      "s_star_grid": 0.1,
+      "s_star_interp": 0.1
+    },
+    {
+      "source_line": 5,
+      "d_latent": 10,
+      "d": 10,
+      "scaling": "raw",
+      "reject_by_s": {
+        "0.005": 0.05,
+        "0.01": 0.05,
+        "0.02": 0.05,
+        "0.05": 0.05,
+        "0.1": 0.062
+      },
+      "s_star_grid": 0.1,
+      "s_star_interp": 0.1
+    },
+    {
+      "source_line": 6,
+      "d_latent": 10,
+      "d": 10,
+      "scaling": "standardised",
+      "reject_by_s": {
+        "0.005": 0.045,
+        "0.01": 0.045,
+        "0.02": 0.045,
+        "0.05": 0.043,
+        "0.1": 0.072
+      },
+      "s_star_grid": 0.1,
+      "s_star_interp": 0.1
+    },
+    {
+      "source_line": 7,
+      "d_latent": 20,
+      "d": 10,
+      "scaling": "raw",
+      "reject_by_s": {
+        "0.005": 0.037,
+        "0.01": 0.037,
+        "0.02": 0.037,
+        "0.05": 0.147,
+        "0.1": 0.23
+      },
+      "s_star_grid": 0.02,
+      "s_star_interp": 0.0302
+    },
+    {
+      "source_line": 8,
+      "d_latent": 20,
+      "d": 10,
+      "scaling": "standardised",
+      "reject_by_s": {
+        "0.005": 0.022,
+        "0.01": 0.022,
+        "0.02": 0.022,
+        "0.05": 0.045,
+        "0.1": 0.215
+      },
+      "s_star_grid": 0.05,
+      "s_star_interp": 0.0588
+    },
+    {
+      "source_line": 9,
+      "d_latent": 40,
+      "d": 10,
+      "scaling": "raw",
+      "reject_by_s": {
+        "0.005": 0.035,
+        "0.01": 0.035,
+        "0.02": 0.04,
+        "0.05": 0.113,
+        "0.1": 0.158
+      },
+      "s_star_grid": 0.02,
+      "s_star_interp": 0.0345
+    },
+    {
+      "source_line": 10,
+      "d_latent": 40,
+      "d": 10,
+      "scaling": "standardised",
+      "reject_by_s": {
+        "0.005": 0.04,
+        "0.01": 0.04,
+        "0.02": 0.043,
+        "0.05": 0.08,
+        "0.1": 0.175
+      },
+      "s_star_grid": 0.02,
+      "s_star_interp": 0.046
+    },
+    {
+      "source_line": 11,
+      "d_latent": 80,
+      "d": 10,
+      "scaling": "raw",
+      "reject_by_s": {
+        "0.005": 0.145,
+        "0.01": 0.155,
+        "0.02": 0.247,
+        "0.05": 0.345,
+        "0.1": 0.42
+      },
+      "s_star_grid": 0.0,
+      "s_star_interp": 0.0
+    },
+    {
+      "source_line": 12,
+      "d_latent": 80,
+      "d": 10,
+      "scaling": "standardised",
+      "reject_by_s": {
+        "0.005": 0.11,
+        "0.01": 0.107,
+        "0.02": 0.107,
+        "0.05": 0.318,
+        "0.1": 0.378
+      },
+      "s_star_grid": 0.0,
+      "s_star_interp": 0.0
+    }
+  ],
+  "decay_fit": [
+    {
+      "scaling": "raw",
+      "source_line": 15,
+      "d_latent": [
+        5,
+        10,
+        20,
+        40,
+        80
+      ],
+      "s_star_interp": [
+        0.1,
+        0.1,
+        0.0302,
+        0.0345,
+        0.0
+      ],
+      "fit_n_points": 4,
+      "fit_coefficient": 0.304,
+      "fit_exponent": -0.63,
+      "fit_source_line": 16,
+      "log_rmse_vs_inv_d": 0.622,
+      "log_rmse_vs_inv_d_line": 17,
+      "log_rmse_vs_inv_d2": 1.869,
+      "log_rmse_vs_inv_d2_line": 18,
+      "grid_floor": 0.005,
+      "at_grid_floor_d_latent": [
+        80
+      ],
+      "grid_floor_line": 19
+    },
+    {
+      "scaling": "standardised",
+      "source_line": 20,
+      "d_latent": [
+        5,
+        10,
+        20,
+        40,
+        80
+      ],
+      "s_star_interp": [
+        0.1,
+        0.1,
+        0.0588,
+        0.046,
+        0.0
+      ],
+      "fit_n_points": 4,
+      "fit_coefficient": 0.215,
+      "fit_exponent": -0.41,
+      "fit_source_line": 21,
+      "log_rmse_vs_inv_d": 0.853,
+      "log_rmse_vs_inv_d_line": 22,
+      "log_rmse_vs_inv_d2": 2.144,
+      "log_rmse_vs_inv_d2_line": 23,
+      "grid_floor": 0.005,
+      "at_grid_floor_d_latent": [
+        80
+      ],
+      "grid_floor_line": 24
+    }
+  ],
+  "meta": {
+    "statistic": "lfc",
+    "gate": "envelope",
+    "git_commit": "bd2eecc",
+    "timestamp": "2026-08-10T12:30:44",
+    "config": {
+      "alpha": 0.05,
+      "B": 500,
+      "n_e": 2000,
+      "d": 10,
+      "d_latent": [
+        5,
+        10,
+        20,
+        40,
+        80
+      ],
+      "D": 200,
+      "n_env": null,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "draws_per_point": 400
+    },
+    "versions": {
+      "python": "3.11.15",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.3",
+      "sklearn": "1.9.0"
+    },
+    "superseded_by": null,
+    "migrated_from": null,
+    "status": "CURRENT",
+    "note": "structured parse of __decay_raw_log.json::raw_text; the original text file is unchanged and remains the authority",
+    "derived_from": "results/gates/lfc/envelope/2026-08-10T12-30-44__decay_raw_log.json",
+    "derivation": "regex parse of raw_text, no re-run, no recomputation; every row and field carries the 1-based source_line it came from"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "dataset": "k562",
+  "cap": 2000,
+  "arms": [
+    "raw",
+    "standardise",
+    "log1p_std",
+    "rank_int"
+  ],
+  "loader_probe": {
+    "n_sampled": 200000,
+    "min": 0.0,
+    "max": 5.271982669830322,
+    "mean": 0.8239710731066018,
+    "frac_integer": 0.39673,
+    "frac_integer_nonzero": 0.0,
+    "n_nonzero_sampled": 120654,
+    "frac_zero": 0.39673,
+    "has_negative": false
+  },
+  "input_kind": "already_transformed",
+  "input_kind_reason": "only 0.0000 of NON-ZERO entries are integral (max=5.272, frac_zero=0.397): already normalised upstream, most likely log1p. A further log1p would be a DOUBLE log",
+  "arms_result": {
+    "raw": {
+      "n_control_used": 2000,
+      "n_control_available": 10691,
+      "n_genes": 1158,
+      "rank_bound": 1158,
+      "participation_ratio": 455.5069103507008,
+      "effective_rank_exp_spectral_entropy": 722.770366864829,
+      "n_components_for_variance": {
+        "80pct": 492,
+        "90pct": 663,
+        "95pct": 800
+      },
+      "top_eigenvalue_share": 0.020734981043207142,
+      "n_nonzero_eigenvalues": 1158,
+      "matches_fit_pca_basis": true,
+      "fit_pca_mu_identical": true,
+      "spectra_key": "k562__raw__2000",
+      "lam_len": 1158,
+      "lam_sum": 229.04683495584663,
+      "lam_sumsq": 115.17377982893674,
+      "numerical_rank": 1158,
+      "status": "ok",
+      "spectra_sidecar": "2026-08-11T09-36-58Z__k562__sweep_spectra.npz"
+    },
+    "standardise": {
+      "n_control_used": 2000,
+      "n_control_available": 10691,
+      "n_genes": 1158,
+      "rank_bound": 1158,
+      "participation_ratio": 482.53695372739895,
+      "effective_rank_exp_spectral_entropy": 770.0726329826549,
+      "n_components_for_variance": {
+        "80pct": 531,
+        "90pct": 707,
+        "95pct": 844
+      },
+      "top_eigenvalue_share": 0.021093234618849554,
+      "n_nonzero_eigenvalues": 1158,
+      "matches_fit_pca_basis": true,
+      "fit_pca_mu_identical": true,
+      "spectra_key": "k562__standardise__2000",
+      "lam_len": 1158,
+      "lam_sum": 1148.9343441428887,
+      "lam_sumsq": 2735.6456680762103,
+      "numerical_rank": 1158,
+      "status": "ok",
+      "spectra_sidecar": "2026-08-11T09-36-58Z__k562__sweep_spectra.npz"
+    },
+    "log1p_std": {
+      "status": "null",
+      "reason": "input is already log-like, so log1p_std would be a double log; emitted as null rather than reported as a preprocessing choice"
+    },
+    "rank_int": {
+      "n_control_used": 2000,
+      "n_control_available": 10691,
+      "n_genes": 1158,
+      "rank_bound": 1158,
+      "participation_ratio": 63.980572676668636,
+      "effective_rank_exp_spectral_entropy": 484.5961689832239,
+      "n_components_for_variance": {
+        "80pct": 469,
+        "90pct": 652,
+        "95pct": 798
+      },
+      "top_eigenvalue_share": 0.11796219291677222,
+      "n_nonzero_eigenvalues": 1158,
+      "matches_fit_pca_basis": true,
+      "fit_pca_mu_identical": true,
+      "spectra_key": "k562__rank_int__2000",
+      "lam_len": 1158,
+      "lam_sum": 1133.9512377049407,
+      "lam_sumsq": 20097.43513848646,
+      "numerical_rank": 1158,
+      "status": "ok",
+      "spectra_sidecar": "2026-08-11T09-36-58Z__k562__sweep_spectra.npz"
+    }
+  },
+  "pr_spread": 7.541929269153955,
+  "expected_raw_participation_ratio": 455.5069103507008,
+  "expected_from_artefact": "2026-08-11T06-12-06Z__k562.json",
+  "contains_no_test": true,
+  "disclaimer": "DESCRIPTIVE ONLY. No rank test was run and no assumption verdict is expressed or implied.",
+  "spectra_sidecar": "2026-08-11T09-36-58Z__k562__sweep_spectra.npz",
+  "peak_rss_mb": 4146.8,
+  "meta": {
+    "statistic": "descriptive",
+    "gate": "preprocessing_sweep",
+    "git_commit": "9f2b1d5",
+    "timestamp": "2026-08-11T09:36:58Z",
+    "config": {
+      "alpha": null,
+      "B": null,
+      "n_e": 2000,
+      "d": null,
+      "d_latent": null,
+      "D": null,
+      "n_env": null,
+      "seeds": [
+        0
+      ],
+      "draws_per_point": null,
+      "extra": {
+        "dataset": "k562",
+        "arms": [
+          "raw",
+          "standardise",
+          "log1p_std",
+          "rank_int"
+        ],
+        "cap": 2000,
+        "hvg": null,
+        "platform_tag": "Linux-x86_64-py3.10.12",
+        "timezone": "UTC",
+        "timestamp_suffix": "Z"
+      }
+    },
+    "versions": {
+      "python": "3.10.12",
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "pandas": "2.3.3",
+      "sklearn": "1.7.2",
+      "scanpy": "1.11.5",
+      "anndata": "0.11.4",
+      "platform": {
+        "system": "Linux",
+        "release": "5.15.0-1065-nvidia",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "python_implementation": "CPython",
+        "numpy_blas": "scipy-openblas"
+      }
+    },
+    "superseded_by": null,
+    "migrated_from": null,
+    "status": "CURRENT",
+    "note": "preprocessing sweep for k562 at matched n=2000"
+  }
+}

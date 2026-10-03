@@ -1,0 +1,25 @@
+# data — never commit
+*.npz
+*.h5ad
+*.npy
+*.pt
+*.pkl
+*.tar
+*.gz
+data/
+datasets/
+
+# logs and caches
+logs/
+*.log
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# private / failed-project history — keep OUT of git
+notes/
+.claude/
+
+# ---- consolidated from outer causalbench tree 2026-07-26 ----
+causalbench/data.csv
+causalbench/notebooks/

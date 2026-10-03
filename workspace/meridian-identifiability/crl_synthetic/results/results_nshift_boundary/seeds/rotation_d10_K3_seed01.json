@@ -1,0 +1,31 @@
+{
+  "phase": "rotation",
+  "d": 10,
+  "K": 3,
+  "K_over_d": 0.3,
+  "seed": 1,
+  "true_val": 17.291702270507812,
+  "random_val": 29.659381866455078,
+  "best_val": 17.291702270507812,
+  "beat": 0.0,
+  "frac_gap": 0.0,
+  "falsified": false,
+  "degenerate": false,
+  "block_energy_on_true": 1.0,
+  "block_energy_on_true_min": 1.0,
+  "signed_permutation": true,
+  "min_alpha": 0.6584093140662876,
+  "alphas": [
+    0.9133736347827534,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.8281253166114578,
+    0.6839019157207193,
+    0.6584093140662876
+  ],
+  "seconds": 2.9456849098205566
+}

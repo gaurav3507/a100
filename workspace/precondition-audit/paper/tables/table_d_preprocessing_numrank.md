@@ -1,0 +1,42 @@
+# table_d_preprocessing_numrank
+
+```
+generated  : 2026-08-12T08:27:45Z
+generator  : 92_preprocessing_table.py @ 2d48ea7
+source dir : results/preprocessing
+artefacts  : 6 CURRENT, 0 skipped
+  source   : 2026-08-11T09-36-58Z__k562.json   meta.git_commit=9f2b1d5
+  source   : 2026-08-11T09-37-10Z__rpe1.json   meta.git_commit=9f2b1d5
+  source   : 2026-08-11T09-39-00Z__norman.json   meta.git_commit=9f2b1d5
+  source   : 2026-08-11T10-04-17Z__frangieh_coculture.json   meta.git_commit=9f2b1d5
+  source   : 2026-08-11T10-23-05Z__frangieh_control.json   meta.git_commit=9f2b1d5
+  source   : 2026-08-11T10-46-03Z__frangieh_ifng.json   meta.git_commit=9f2b1d5
+```
+
+| dataset | n_genes | n_control_used | rank_bound | raw | standardise | rank_int | spread_max_over_min |
+|---|---|---|---|---|---|---|---|
+| frangieh_coculture | 23712 | 2000 | 1999 | 1999 | 1999 | 1999 | 1 |
+| frangieh_control | 23712 | 2000 | 1999 | 1999 | 1999 | 1999 | 1 |
+| frangieh_ifng | 23712 | 2000 | 1999 | 1999 | 1999 | 1999 | 1 |
+| k562 | 1158 | 2000 | 1158 | 1158 | 1158 | 1158 | 1 |
+| norman | 5000 | 2000 | 1999 | 1999 | 1999 | 1999 | 1 |
+| rpe1 | 651 | 2000 | 651 | 651 | 651 | 651 | 1 |
+
+> (a) The 'raw' arm is the control matrix exactly as the loader returns it, which is NOT raw counts. Every one of these matrices is already normalised by an undocumented upstream pipeline (runtime probe: input_kind = already_transformed; see docs/DATA_SOURCES.md). 'raw' records that this sweep applied no further transform, not that the input is untransformed.
+
+> (b) 'log1p_std' is NOT a preprocessing option for these data and is not a column. Because the input is already log-like, it would be a double log. The sweep refused the arm and recorded no value for it. It appears only in the diagnostic block below, which reports the refusal and its reason.
+
+> (c) Rank deficiency at the swept cap n_control_used = 2000: frangieh_coculture (p/n = 11.856), frangieh_control (p/n = 11.856), frangieh_ifng (p/n = 11.856), norman (p/n = 2.5). Where p > n the numerical rank is bounded by rank_bound = n_control_used - 1 and is a property of the sample size, not of the data or of the preprocessing. Those entries are not comparable across datasets.
+
+> (d) Every entry in this table equals its own rank_bound. At tol 1e-10 the numerical rank saturates the bound under all three arms for all datasets, so the invariance shown here is arithmetic, not evidence that dimension is preprocessing-robust. Table C carries that evidence; this table records that the rank statistic does not discriminate at this cap.
+
+### DIAGNOSTIC ARM - NOT A PREPROCESSING OPTION, NOT PART OF THE TABLE ABOVE
+
+| dataset | arm | status | value_reported | input_kind | reason |
+|---|---|---|---|---|---|
+| frangieh_coculture | log1p_std | null | none - arm refused | already_transformed | input is already log-like, so log1p_std would be a double log; emitted as null rather than reported as a preprocessing choice |
+| frangieh_control | log1p_std | null | none - arm refused | already_transformed | input is already log-like, so log1p_std would be a double log; emitted as null rather than reported as a preprocessing choice |
+| frangieh_ifng | log1p_std | null | none - arm refused | already_transformed | input is already log-like, so log1p_std would be a double log; emitted as null rather than reported as a preprocessing choice |
+| k562 | log1p_std | null | none - arm refused | already_transformed | input is already log-like, so log1p_std would be a double log; emitted as null rather than reported as a preprocessing choice |
+| norman | log1p_std | null | none - arm refused | already_transformed | input is already log-like, so log1p_std would be a double log; emitted as null rather than reported as a preprocessing choice |
+| rpe1 | log1p_std | null | none - arm refused | already_transformed | input is already log-like, so log1p_std would be a double log; emitted as null rather than reported as a preprocessing choice |

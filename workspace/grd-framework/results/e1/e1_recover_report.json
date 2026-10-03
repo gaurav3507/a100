@@ -1,0 +1,176 @@
+{
+  "milestone": "M2",
+  "code_commit": "7dda9bd417d23e28e248dda1e04f484bc3ec67e2-dirty",
+  "config": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "d_latent": 5,
+    "D": 200,
+    "n_per_env": 4000,
+    "d_proj": 5,
+    "edge_prob": 0.4,
+    "iv_scale": 0.1,
+    "recovery_mcc_threshold": 0.9,
+    "mixing": "linear",
+    "intervention": "atomic perfect (hard) interventions, one per latent, reduced target-noise variance",
+    "targets": "known",
+    "estimator": "R2 covariance backbone: precision-difference top eigenvector",
+    "blind_baseline": "E0-C rotation-blind linear autoencoder (PCA), recomputed on the observational env"
+  },
+  "data_fingerprint": {
+    "0": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "3578015648636144"
+    },
+    "1": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "57997b53ba656502"
+    },
+    "2": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "d37d81137f02d178"
+    },
+    "3": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "9cc0fc6f4b329730"
+    },
+    "4": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "e22f34f2e59d34fb"
+    },
+    "5": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "9f626035b769c7a1"
+    },
+    "6": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "fec77ce1765e8d55"
+    },
+    "7": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "bec8aef5a213fd26"
+    },
+    "8": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "4ebb0e0e30053631"
+    },
+    "9": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "8a07069544907dad"
+    }
+  },
+  "per_seed": [
+    {
+      "seed": 0,
+      "recover_mcc": 0.9993,
+      "blind_mcc": 0.4205,
+      "recovers": true,
+      "beats_blind": true
+    },
+    {
+      "seed": 1,
+      "recover_mcc": 0.9988,
+      "blind_mcc": 0.5501,
+      "recovers": true,
+      "beats_blind": true
+    },
+    {
+      "seed": 2,
+      "recover_mcc": 0.9992,
+      "blind_mcc": 0.5405,
+      "recovers": true,
+      "beats_blind": true
+    },
+    {
+      "seed": 3,
+      "recover_mcc": 0.9995,
+      "blind_mcc": 0.5319,
+      "recovers": true,
+      "beats_blind": true
+    },
+    {
+      "seed": 4,
+      "recover_mcc": 0.9994,
+      "blind_mcc": 0.7038,
+      "recovers": true,
+      "beats_blind": true
+    },
+    {
+      "seed": 5,
+      "recover_mcc": 0.9992,
+      "blind_mcc": 0.6171,
+      "recovers": true,
+      "beats_blind": true
+    },
+    {
+      "seed": 6,
+      "recover_mcc": 0.9993,
+      "blind_mcc": 0.7009,
+      "recovers": true,
+      "beats_blind": true
+    },
+    {
+      "seed": 7,
+      "recover_mcc": 0.9996,
+      "blind_mcc": 0.7547,
+      "recovers": true,
+      "beats_blind": true
+    },
+    {
+      "seed": 8,
+      "recover_mcc": 0.999,
+      "blind_mcc": 0.524,
+      "recovers": true,
+      "beats_blind": true
+    },
+    {
+      "seed": 9,
+      "recover_mcc": 0.9988,
+      "blind_mcc": 0.5687,
+      "recovers": true,
+      "beats_blind": true
+    }
+  ],
+  "verdict": "PASS",
+  "status": "PASS"
+}

@@ -1,0 +1,162 @@
+{
+  "dataset": "norman",
+  "cap": 2000,
+  "arms": [
+    "raw",
+    "standardise",
+    "log1p_std",
+    "rank_int"
+  ],
+  "loader_probe": {
+    "n_sampled": 200000,
+    "min": 0.0,
+    "max": 6.384596824645996,
+    "mean": 0.11460210817843676,
+    "frac_integer": 0.911175,
+    "frac_integer_nonzero": 0.0,
+    "n_nonzero_sampled": 17765,
+    "frac_zero": 0.911175,
+    "has_negative": false
+  },
+  "input_kind": "already_transformed",
+  "input_kind_reason": "only 0.0000 of NON-ZERO entries are integral (max=6.385, frac_zero=0.911): already normalised upstream, most likely log1p. A further log1p would be a DOUBLE log",
+  "arms_result": {
+    "raw": {
+      "n_control_used": 2000,
+      "n_control_available": 8907,
+      "n_genes": 5000,
+      "rank_bound": 1999,
+      "participation_ratio": 224.0635699268002,
+      "effective_rank_exp_spectral_entropy": 538.6230428286054,
+      "n_components_for_variance": {
+        "80pct": 389,
+        "90pct": 551,
+        "95pct": 700
+      },
+      "top_eigenvalue_share": 0.034840068355011584,
+      "n_nonzero_eigenvalues": 2000,
+      "matches_fit_pca_basis": true,
+      "fit_pca_mu_identical": true,
+      "spectra_key": "norman__raw__2000",
+      "lam_len": 2000,
+      "lam_sum": 163.14738454920243,
+      "lam_sumsq": 118.79248864034845,
+      "numerical_rank": 1999,
+      "status": "ok",
+      "spectra_sidecar": "2026-08-11T09-39-00Z__norman__sweep_spectra.npz"
+    },
+    "standardise": {
+      "n_control_used": 2000,
+      "n_control_available": 8907,
+      "n_genes": 5000,
+      "rank_bound": 1999,
+      "participation_ratio": 560.912828708279,
+      "effective_rank_exp_spectral_entropy": 1005.6421289130934,
+      "n_components_for_variance": {
+        "80pct": 700,
+        "90pct": 988,
+        "95pct": 1229
+      },
+      "top_eigenvalue_share": 0.01563293078015947,
+      "n_nonzero_eigenvalues": 2000,
+      "matches_fit_pca_basis": true,
+      "fit_pca_mu_identical": true,
+      "spectra_key": "norman__standardise__2000",
+      "lam_len": 2000,
+      "lam_sum": 3711.7257652633157,
+      "lam_sumsq": 24561.58506526988,
+      "numerical_rank": 1999,
+      "status": "ok",
+      "spectra_sidecar": "2026-08-11T09-39-00Z__norman__sweep_spectra.npz"
+    },
+    "log1p_std": {
+      "status": "null",
+      "reason": "input is already log-like, so log1p_std would be a double log; emitted as null rather than reported as a preprocessing choice"
+    },
+    "rank_int": {
+      "n_control_used": 2000,
+      "n_control_available": 8907,
+      "n_genes": 5000,
+      "rank_bound": 1999,
+      "participation_ratio": 1.444910856848523,
+      "effective_rank_exp_spectral_entropy": 4.716484218613832,
+      "n_components_for_variance": {
+        "80pct": 1,
+        "90pct": 130,
+        "95pct": 355
+      },
+      "top_eigenvalue_share": 0.8318624277151206,
+      "n_nonzero_eigenvalues": 2000,
+      "matches_fit_pca_basis": true,
+      "fit_pca_mu_identical": true,
+      "spectra_key": "norman__rank_int__2000",
+      "lam_len": 2000,
+      "lam_sum": 4839.689628143616,
+      "lam_sumsq": 16210408.819162464,
+      "numerical_rank": 1999,
+      "status": "ok",
+      "spectra_sidecar": "2026-08-11T09-39-00Z__norman__sweep_spectra.npz"
+    }
+  },
+  "pr_spread": 388.198916251262,
+  "expected_raw_participation_ratio": 224.0635699268002,
+  "expected_from_artefact": "2026-08-11T06-20-34Z__norman.json",
+  "contains_no_test": true,
+  "disclaimer": "DESCRIPTIVE ONLY. No rank test was run and no assumption verdict is expressed or implied.",
+  "spectra_sidecar": "2026-08-11T09-39-00Z__norman__sweep_spectra.npz",
+  "peak_rss_mb": 8064.7,
+  "meta": {
+    "statistic": "descriptive",
+    "gate": "preprocessing_sweep",
+    "git_commit": "9f2b1d5",
+    "timestamp": "2026-08-11T09:39:00Z",
+    "config": {
+      "alpha": null,
+      "B": null,
+      "n_e": 2000,
+      "d": null,
+      "d_latent": null,
+      "D": null,
+      "n_env": null,
+      "seeds": [
+        0
+      ],
+      "draws_per_point": null,
+      "extra": {
+        "dataset": "norman",
+        "arms": [
+          "raw",
+          "standardise",
+          "log1p_std",
+          "rank_int"
+        ],
+        "cap": 2000,
+        "hvg": null,
+        "platform_tag": "Linux-x86_64-py3.10.12",
+        "timezone": "UTC",
+        "timestamp_suffix": "Z"
+      }
+    },
+    "versions": {
+      "python": "3.10.12",
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "pandas": "2.3.3",
+      "sklearn": "1.7.2",
+      "scanpy": "1.11.5",
+      "anndata": "0.11.4",
+      "platform": {
+        "system": "Linux",
+        "release": "5.15.0-1065-nvidia",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "python_implementation": "CPython",
+        "numpy_blas": "scipy-openblas"
+      }
+    },
+    "superseded_by": null,
+    "migrated_from": null,
+    "status": "CURRENT",
+    "note": "preprocessing sweep for norman at matched n=2000"
+  }
+}

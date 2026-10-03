@@ -1,0 +1,166 @@
+{
+  "dataset": "rpe1",
+  "blocks": [
+    {
+      "label": "rpe1",
+      "n_cells": 247914,
+      "n_features": 651,
+      "n_control_cells": 11485,
+      "n_environments_total": 652,
+      "environment_attrition": {
+        "50": 652,
+        "125": 451,
+        "500": 23,
+        "2000": 2,
+        "8000": 1
+      },
+      "cells_per_environment": {
+        "n_environments": 652,
+        "min": 101,
+        "q25": 119.0,
+        "median": 146.5,
+        "q75": 190.0,
+        "max": 108089,
+        "total_cells": 236429,
+        "n_above_hard_floor_125": 451,
+        "n_above_soft_floor_8000": 1,
+        "frac_above_hard_floor_125": 0.691717791411043,
+        "frac_above_soft_floor_8000": 0.0015337423312883436
+      },
+      "latent_dimension_from_controls": {
+        "2000": {
+          "n_control_used": 2000,
+          "n_control_available": 11485,
+          "n_genes": 651,
+          "rank_bound": 651,
+          "participation_ratio": 234.46088802423623,
+          "effective_rank_exp_spectral_entropy": 436.3767532684502,
+          "n_components_for_variance": {
+            "80pct": 314,
+            "90pct": 418,
+            "95pct": 496
+          },
+          "top_eigenvalue_share": 0.041076101778953565,
+          "n_nonzero_eigenvalues": 651,
+          "matches_fit_pca_basis": true,
+          "fit_pca_mu_identical": true,
+          "spectra_key": "rpe1__2000",
+          "lam_len": 651,
+          "lam_sum": 123.72006664872015,
+          "lam_sumsq": 65.28447034620763,
+          "spectra_sidecar": "2026-08-11T06-12-20Z__rpe1__spectra.npz"
+        },
+        "8000": {
+          "n_control_used": 8000,
+          "n_control_available": 11485,
+          "n_genes": 651,
+          "rank_bound": 651,
+          "participation_ratio": 261.6048168460903,
+          "effective_rank_exp_spectral_entropy": 490.3692314003218,
+          "n_components_for_variance": {
+            "80pct": 368,
+            "90pct": 469,
+            "95pct": 538
+          },
+          "top_eigenvalue_share": 0.040308325889422784,
+          "n_nonzero_eigenvalues": 651,
+          "matches_fit_pca_basis": true,
+          "fit_pca_mu_identical": true,
+          "spectra_key": "rpe1__8000",
+          "lam_len": 651,
+          "lam_sum": 123.43656127827524,
+          "lam_sumsq": 58.242752728706535,
+          "spectra_sidecar": "2026-08-11T06-12-20Z__rpe1__spectra.npz"
+        }
+      },
+      "data_fingerprint_controls": {
+        "shape": [
+          11485,
+          651
+        ],
+        "dtype": "float64",
+        "sum": 4592249.870256528,
+        "sumsq": 7680118.513589122,
+        "nan_count": 0
+      }
+    }
+  ],
+  "platform_tag": "Linux-x86_64-py3.10.12",
+  "nmin_set": [
+    50,
+    125,
+    500,
+    2000,
+    8000
+  ],
+  "power_floors": {
+    "hard": 125,
+    "soft": 8000,
+    "source": "measured under LFC on the simulator; lfc/power_hard and lfc/power_soft"
+  },
+  "contains_no_test": true,
+  "disclaimer": "DESCRIPTIVE ONLY. No rank test was run and no assumption verdict is expressed or implied. Phase B is not authorised.",
+  "spectra_sidecar": "2026-08-11T06-12-20Z__rpe1__spectra.npz",
+  "peak_rss_mb": 1881.1,
+  "meta": {
+    "statistic": "descriptive",
+    "gate": "descriptives",
+    "git_commit": "8181090",
+    "timestamp": "2026-08-11T06:12:20Z",
+    "config": {
+      "alpha": null,
+      "B": null,
+      "n_e": null,
+      "d": null,
+      "d_latent": null,
+      "D": null,
+      "n_env": null,
+      "seeds": [
+        0
+      ],
+      "draws_per_point": null,
+      "extra": {
+        "dataset": "rpe1",
+        "arm": null,
+        "hvg": null,
+        "nmin_set": [
+          50,
+          125,
+          500,
+          2000,
+          8000
+        ],
+        "spec_caps": [
+          2000,
+          8000
+        ],
+        "platform_tag": "Linux-x86_64-py3.10.12",
+        "timezone": "UTC",
+        "timestamp_suffix": "Z",
+        "peak_rss_mb": 1881.1,
+        "overlap_check": false
+      }
+    },
+    "versions": {
+      "python": "3.10.12",
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "pandas": "2.3.3",
+      "sklearn": "1.7.2",
+      "scanpy": "1.11.5",
+      "anndata": "0.11.4",
+      "platform": {
+        "system": "Linux",
+        "release": "5.15.0-1065-nvidia",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "python_implementation": "CPython",
+        "numpy_blas": "scipy-openblas"
+      }
+    },
+    "superseded_by": null,
+    "migrated_from": null,
+    "status": "CURRENT",
+    "note": "descriptive profile of rpe1; no test, no verdict"
+  }
+}

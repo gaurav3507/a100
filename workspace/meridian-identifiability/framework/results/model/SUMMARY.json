@@ -1,0 +1,82 @@
+{
+  "dataset": "k562",
+  "split_file": "k562_zeroshot_split.json",
+  "n_train": 308,
+  "n_heldout": 77,
+  "d_latent": 15,
+  "baselines": {
+    "zero": {
+      "r2_median": 0.0,
+      "r2_mean": 0.0,
+      "cos_median": 0.0,
+      "frac_beats_gmean": 0.36363636363636365
+    },
+    "global_mean": {
+      "r2_median": 0.12902286583297684,
+      "r2_mean": -0.04360618578319341,
+      "cos_median": 0.3777093107368002,
+      "frac_beats_gmean": 0.0
+    },
+    "corr_prop": {
+      "r2_median": -0.18752402582055216,
+      "r2_mean": -0.28580222935470173,
+      "cos_median": 0.13457430570772097,
+      "frac_beats_gmean": 0.24675324675324675
+    },
+    "nn_corr": {
+      "r2_median": -0.24278568997495253,
+      "r2_mean": -1.3799998480864606,
+      "cos_median": 0.22765124994501498,
+      "frac_beats_gmean": 0.2727272727272727
+    },
+    "ridge_basis": {
+      "r2_median": 0.22558014602202647,
+      "r2_mean": 0.033191204082618844,
+      "cos_median": 0.5010799951288413,
+      "frac_beats_gmean": 0.7012987012987013
+    },
+    "CEILING": {
+      "r2_median": 0.5274920724871424,
+      "r2_mean": 0.3168453803721219,
+      "cos_median": 0.7690887650072865,
+      "frac_beats_gmean": 0.8311688311688312
+    }
+  },
+  "models": {
+    "full_shift": {
+      "source": "zeroshot_shift.json",
+      "best_median_r2": 0.009694068092076957,
+      "final_median_r2": 0.012570545400028665,
+      "final_mean_r2": -0.0518394092777882,
+      "frac_beats_gmean": 0.0,
+      "frac_beats_ridge": 0.0
+    },
+    "full_random": {
+      "source": "zeroshot_random.json",
+      "best_median_r2": -0.005696563328918991,
+      "final_median_r2": -0.005466684895471641,
+      "final_mean_r2": -0.006320124530840101,
+      "frac_beats_gmean": 0.0,
+      "frac_beats_ridge": 0.0
+    },
+    "nodag_shift": {
+      "source": "zeroshot_nodag_shift.json",
+      "best_median_r2": -0.04224525495841136,
+      "final_median_r2": -0.04793495530415348,
+      "final_mean_r2": -0.10737029539395729,
+      "frac_beats_gmean": 0.0,
+      "frac_beats_ridge": 0.0
+    },
+    "nodag_random": {
+      "source": "zeroshot_nodag_random.json",
+      "best_median_r2": 0.013044818906979505,
+      "final_median_r2": 0.013023438700739853,
+      "final_mean_r2": 0.013743959567562424,
+      "frac_beats_gmean": 0.0,
+      "frac_beats_ridge": 0.0
+    }
+  },
+  "headroom": 0.3984692066541655,
+  "ridge_capture_fraction": 0.24232055721397924,
+  "verdict": "benchmarked negative: CRL model beats neither ridge (0.226) nor mean (0.129) on any held-out perturbation; causal layer contributes nothing (no-DAG identical); signal exists (ceiling 0.528)."
+}

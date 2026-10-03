@@ -1,0 +1,923 @@
+{
+  "experiment": "e1_capped_pipeline",
+  "mode": "full",
+  "result_eligible": true,
+  "status": "PASS",
+  "e1_call_sequence": [
+    "PR.count_recoverable",
+    "BK._unmixing_row for certified interventions only",
+    "DISC.discover on the certified representation",
+    "EDGE_UNDECIDED_UNRECOVERED outside the certified representation"
+  ],
+  "construction": "Fixed chain 0->1->2->3->4; supplied ancestral-closed interventions on nodes 0,1,2; random noise variances, mixing, and samples by seed.",
+  "config": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "d_latent": 5,
+    "D_observed": 200,
+    "d_projected": 5,
+    "n_per_environment": 4000,
+    "supplied_nodes": [
+      0,
+      1,
+      2
+    ],
+    "uncovered_nodes": [
+      3,
+      4
+    ],
+    "alpha": 0.05,
+    "B": 500,
+    "iv_scale": 0.1,
+    "observation_noise_fraction": 0.1,
+    "recovery_mcc_threshold": 0.9
+  },
+  "pass_conditions": {
+    "gate_n_recoverable": 3,
+    "gate_strictly_below_d": true,
+    "recover_mcc_strictly_above": 0.9,
+    "shd_decided": 0,
+    "uncovered_pairs_all_undecided": 14,
+    "committed_uncovered": 0
+  },
+  "summary": {
+    "n_seeds": 10,
+    "n_passed": 10,
+    "gate_n_recoverable_values": [
+      3
+    ],
+    "recover_mcc_mean": 0.9990030293817721,
+    "recover_mcc_min": 0.9983701386938613,
+    "total_shd_decided": 0,
+    "total_correctly_abstained_uncovered": 140,
+    "total_committed_uncovered": 0
+  },
+  "per_seed": [
+    {
+      "seed": 0,
+      "gate_n_recoverable": 3,
+      "gate_detect": [
+        true,
+        true,
+        true
+      ],
+      "gate_signals": [
+        0.05328817832424917,
+        0.04905729980746904,
+        0.05061870134376219
+      ],
+      "gate_thresholds": [
+        0.0017123299657472541,
+        0.001523739267068133,
+        0.0016492307258035516
+      ],
+      "certified_nodes": [
+        0,
+        1,
+        2
+      ],
+      "uncovered_nodes": [
+        3,
+        4
+      ],
+      "gate_ok": true,
+      "recover_mcc": 0.9983701386938613,
+      "recover_ok": true,
+      "recovered_shape": [
+        4000,
+        3
+      ],
+      "discover_order": [
+        0,
+        1,
+        2
+      ],
+      "shd_decided": 0,
+      "discovery_ok": true,
+      "n_decided_present": 2,
+      "n_decided_absent": 3,
+      "n_undecided_within_recovered": 1,
+      "n_uncovered_pairs": 14,
+      "n_correctly_abstained_uncovered": 14,
+      "n_committed_uncovered": 0,
+      "abstention_ok": true,
+      "true_edges": [
+        "0->1",
+        "1->2",
+        "2->3",
+        "3->4"
+      ],
+      "status_codes": {
+        "0->1": "EDGE_DECIDED_PRESENT",
+        "0->2": "EDGE_UNDECIDED_WEAK",
+        "0->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "0->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "1->0": "EDGE_DECIDED_ABSENT",
+        "1->2": "EDGE_DECIDED_PRESENT",
+        "1->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "1->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "2->0": "EDGE_DECIDED_ABSENT",
+        "2->1": "EDGE_DECIDED_ABSENT",
+        "2->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "2->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->0": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->1": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->2": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->0": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->1": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->2": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->3": "EDGE_UNDECIDED_UNRECOVERED"
+      },
+      "seed_pass": true,
+      "data_fingerprint": {
+        "shape": [
+          4000,
+          200
+        ],
+        "slice_sha256_16": "244fc8719f7c18ea"
+      }
+    },
+    {
+      "seed": 1,
+      "gate_n_recoverable": 3,
+      "gate_detect": [
+        true,
+        true,
+        true
+      ],
+      "gate_signals": [
+        0.04198615235349631,
+        0.06303669371070031,
+        0.04118532633514549
+      ],
+      "gate_thresholds": [
+        0.0014464721318026752,
+        0.0014451793275233676,
+        0.0013827939779628296
+      ],
+      "certified_nodes": [
+        0,
+        1,
+        2
+      ],
+      "uncovered_nodes": [
+        3,
+        4
+      ],
+      "gate_ok": true,
+      "recover_mcc": 0.9990533951597597,
+      "recover_ok": true,
+      "recovered_shape": [
+        4000,
+        3
+      ],
+      "discover_order": [
+        0,
+        1,
+        2
+      ],
+      "shd_decided": 0,
+      "discovery_ok": true,
+      "n_decided_present": 1,
+      "n_decided_absent": 1,
+      "n_undecided_within_recovered": 4,
+      "n_uncovered_pairs": 14,
+      "n_correctly_abstained_uncovered": 14,
+      "n_committed_uncovered": 0,
+      "abstention_ok": true,
+      "true_edges": [
+        "0->1",
+        "1->2",
+        "2->3",
+        "3->4"
+      ],
+      "status_codes": {
+        "0->1": "EDGE_UNDECIDED_ORDER",
+        "0->2": "EDGE_UNDECIDED_WEAK",
+        "0->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "0->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "1->0": "EDGE_UNDECIDED_WEAK",
+        "1->2": "EDGE_DECIDED_PRESENT",
+        "1->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "1->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "2->0": "EDGE_UNDECIDED_WEAK",
+        "2->1": "EDGE_DECIDED_ABSENT",
+        "2->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "2->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->0": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->1": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->2": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->0": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->1": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->2": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->3": "EDGE_UNDECIDED_UNRECOVERED"
+      },
+      "seed_pass": true,
+      "data_fingerprint": {
+        "shape": [
+          4000,
+          200
+        ],
+        "slice_sha256_16": "da5675056a1570fc"
+      }
+    },
+    {
+      "seed": 2,
+      "gate_n_recoverable": 3,
+      "gate_detect": [
+        true,
+        true,
+        true
+      ],
+      "gate_signals": [
+        0.046927621945297066,
+        0.04005089814451546,
+        0.041167391601061976
+      ],
+      "gate_thresholds": [
+        0.0012463646020510015,
+        0.0012342474820238253,
+        0.001263417845905798
+      ],
+      "certified_nodes": [
+        0,
+        1,
+        2
+      ],
+      "uncovered_nodes": [
+        3,
+        4
+      ],
+      "gate_ok": true,
+      "recover_mcc": 0.9989003388606447,
+      "recover_ok": true,
+      "recovered_shape": [
+        4000,
+        3
+      ],
+      "discover_order": [
+        0,
+        1,
+        2
+      ],
+      "shd_decided": 0,
+      "discovery_ok": true,
+      "n_decided_present": 2,
+      "n_decided_absent": 2,
+      "n_undecided_within_recovered": 2,
+      "n_uncovered_pairs": 14,
+      "n_correctly_abstained_uncovered": 14,
+      "n_committed_uncovered": 0,
+      "abstention_ok": true,
+      "true_edges": [
+        "0->1",
+        "1->2",
+        "2->3",
+        "3->4"
+      ],
+      "status_codes": {
+        "0->1": "EDGE_DECIDED_PRESENT",
+        "0->2": "EDGE_UNDECIDED_WEAK",
+        "0->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "0->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "1->0": "EDGE_DECIDED_ABSENT",
+        "1->2": "EDGE_DECIDED_PRESENT",
+        "1->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "1->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "2->0": "EDGE_UNDECIDED_WEAK",
+        "2->1": "EDGE_DECIDED_ABSENT",
+        "2->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "2->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->0": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->1": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->2": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->0": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->1": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->2": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->3": "EDGE_UNDECIDED_UNRECOVERED"
+      },
+      "seed_pass": true,
+      "data_fingerprint": {
+        "shape": [
+          4000,
+          200
+        ],
+        "slice_sha256_16": "5ca8e34163262813"
+      }
+    },
+    {
+      "seed": 3,
+      "gate_n_recoverable": 3,
+      "gate_detect": [
+        true,
+        true,
+        true
+      ],
+      "gate_signals": [
+        0.04998556786938598,
+        0.04582197133824713,
+        0.0411667038466839
+      ],
+      "gate_thresholds": [
+        0.0014898270860621572,
+        0.001487638723602932,
+        0.001447629865026891
+      ],
+      "certified_nodes": [
+        0,
+        1,
+        2
+      ],
+      "uncovered_nodes": [
+        3,
+        4
+      ],
+      "gate_ok": true,
+      "recover_mcc": 0.9987892425446242,
+      "recover_ok": true,
+      "recovered_shape": [
+        4000,
+        3
+      ],
+      "discover_order": [
+        0,
+        1,
+        2
+      ],
+      "shd_decided": 0,
+      "discovery_ok": true,
+      "n_decided_present": 1,
+      "n_decided_absent": 3,
+      "n_undecided_within_recovered": 2,
+      "n_uncovered_pairs": 14,
+      "n_correctly_abstained_uncovered": 14,
+      "n_committed_uncovered": 0,
+      "abstention_ok": true,
+      "true_edges": [
+        "0->1",
+        "1->2",
+        "2->3",
+        "3->4"
+      ],
+      "status_codes": {
+        "0->1": "EDGE_UNDECIDED_ORDER",
+        "0->2": "EDGE_DECIDED_ABSENT",
+        "0->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "0->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "1->0": "EDGE_UNDECIDED_WEAK",
+        "1->2": "EDGE_DECIDED_PRESENT",
+        "1->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "1->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "2->0": "EDGE_DECIDED_ABSENT",
+        "2->1": "EDGE_DECIDED_ABSENT",
+        "2->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "2->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->0": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->1": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->2": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->0": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->1": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->2": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->3": "EDGE_UNDECIDED_UNRECOVERED"
+      },
+      "seed_pass": true,
+      "data_fingerprint": {
+        "shape": [
+          4000,
+          200
+        ],
+        "slice_sha256_16": "ae61a7108c153896"
+      }
+    },
+    {
+      "seed": 4,
+      "gate_n_recoverable": 3,
+      "gate_detect": [
+        true,
+        true,
+        true
+      ],
+      "gate_signals": [
+        0.04042258341732479,
+        0.04561816256444996,
+        0.05386012640876277
+      ],
+      "gate_thresholds": [
+        0.001107496200097659,
+        0.0011792838178156034,
+        0.0011109184633562581
+      ],
+      "certified_nodes": [
+        0,
+        1,
+        2
+      ],
+      "uncovered_nodes": [
+        3,
+        4
+      ],
+      "gate_ok": true,
+      "recover_mcc": 0.9993410199640346,
+      "recover_ok": true,
+      "recovered_shape": [
+        4000,
+        3
+      ],
+      "discover_order": [
+        0,
+        1,
+        2
+      ],
+      "shd_decided": 0,
+      "discovery_ok": true,
+      "n_decided_present": 2,
+      "n_decided_absent": 2,
+      "n_undecided_within_recovered": 2,
+      "n_uncovered_pairs": 14,
+      "n_correctly_abstained_uncovered": 14,
+      "n_committed_uncovered": 0,
+      "abstention_ok": true,
+      "true_edges": [
+        "0->1",
+        "1->2",
+        "2->3",
+        "3->4"
+      ],
+      "status_codes": {
+        "0->1": "EDGE_DECIDED_PRESENT",
+        "0->2": "EDGE_UNDECIDED_WEAK",
+        "0->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "0->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "1->0": "EDGE_DECIDED_ABSENT",
+        "1->2": "EDGE_DECIDED_PRESENT",
+        "1->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "1->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "2->0": "EDGE_UNDECIDED_WEAK",
+        "2->1": "EDGE_DECIDED_ABSENT",
+        "2->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "2->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->0": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->1": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->2": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->0": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->1": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->2": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->3": "EDGE_UNDECIDED_UNRECOVERED"
+      },
+      "seed_pass": true,
+      "data_fingerprint": {
+        "shape": [
+          4000,
+          200
+        ],
+        "slice_sha256_16": "7d5eed518d0ce9be"
+      }
+    },
+    {
+      "seed": 5,
+      "gate_n_recoverable": 3,
+      "gate_detect": [
+        true,
+        true,
+        true
+      ],
+      "gate_signals": [
+        0.04781198947216198,
+        0.04035982064154266,
+        0.05434745719196073
+      ],
+      "gate_thresholds": [
+        0.0012684931507891933,
+        0.00130043304251343,
+        0.001303397320933352
+      ],
+      "certified_nodes": [
+        0,
+        1,
+        2
+      ],
+      "uncovered_nodes": [
+        3,
+        4
+      ],
+      "gate_ok": true,
+      "recover_mcc": 0.9992020644831222,
+      "recover_ok": true,
+      "recovered_shape": [
+        4000,
+        3
+      ],
+      "discover_order": [
+        0,
+        1,
+        2
+      ],
+      "shd_decided": 0,
+      "discovery_ok": true,
+      "n_decided_present": 2,
+      "n_decided_absent": 2,
+      "n_undecided_within_recovered": 2,
+      "n_uncovered_pairs": 14,
+      "n_correctly_abstained_uncovered": 14,
+      "n_committed_uncovered": 0,
+      "abstention_ok": true,
+      "true_edges": [
+        "0->1",
+        "1->2",
+        "2->3",
+        "3->4"
+      ],
+      "status_codes": {
+        "0->1": "EDGE_DECIDED_PRESENT",
+        "0->2": "EDGE_UNDECIDED_WEAK",
+        "0->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "0->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "1->0": "EDGE_DECIDED_ABSENT",
+        "1->2": "EDGE_DECIDED_PRESENT",
+        "1->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "1->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "2->0": "EDGE_UNDECIDED_WEAK",
+        "2->1": "EDGE_DECIDED_ABSENT",
+        "2->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "2->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->0": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->1": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->2": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->0": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->1": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->2": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->3": "EDGE_UNDECIDED_UNRECOVERED"
+      },
+      "seed_pass": true,
+      "data_fingerprint": {
+        "shape": [
+          4000,
+          200
+        ],
+        "slice_sha256_16": "0412f217c758d069"
+      }
+    },
+    {
+      "seed": 6,
+      "gate_n_recoverable": 3,
+      "gate_detect": [
+        true,
+        true,
+        true
+      ],
+      "gate_signals": [
+        0.04584955228389624,
+        0.047882922482942174,
+        0.042218479312471524
+      ],
+      "gate_thresholds": [
+        0.0012194149300401521,
+        0.0013109318808435444,
+        0.001214246479500396
+      ],
+      "certified_nodes": [
+        0,
+        1,
+        2
+      ],
+      "uncovered_nodes": [
+        3,
+        4
+      ],
+      "gate_ok": true,
+      "recover_mcc": 0.9986278068420136,
+      "recover_ok": true,
+      "recovered_shape": [
+        4000,
+        3
+      ],
+      "discover_order": [
+        0,
+        1,
+        2
+      ],
+      "shd_decided": 0,
+      "discovery_ok": true,
+      "n_decided_present": 2,
+      "n_decided_absent": 2,
+      "n_undecided_within_recovered": 2,
+      "n_uncovered_pairs": 14,
+      "n_correctly_abstained_uncovered": 14,
+      "n_committed_uncovered": 0,
+      "abstention_ok": true,
+      "true_edges": [
+        "0->1",
+        "1->2",
+        "2->3",
+        "3->4"
+      ],
+      "status_codes": {
+        "0->1": "EDGE_DECIDED_PRESENT",
+        "0->2": "EDGE_UNDECIDED_WEAK",
+        "0->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "0->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "1->0": "EDGE_DECIDED_ABSENT",
+        "1->2": "EDGE_DECIDED_PRESENT",
+        "1->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "1->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "2->0": "EDGE_UNDECIDED_WEAK",
+        "2->1": "EDGE_DECIDED_ABSENT",
+        "2->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "2->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->0": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->1": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->2": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->0": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->1": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->2": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->3": "EDGE_UNDECIDED_UNRECOVERED"
+      },
+      "seed_pass": true,
+      "data_fingerprint": {
+        "shape": [
+          4000,
+          200
+        ],
+        "slice_sha256_16": "4c43e144c5ee72d6"
+      }
+    },
+    {
+      "seed": 7,
+      "gate_n_recoverable": 3,
+      "gate_detect": [
+        true,
+        true,
+        true
+      ],
+      "gate_signals": [
+        0.05026878036590368,
+        0.05225946676275711,
+        0.05802397027202701
+      ],
+      "gate_thresholds": [
+        0.0011893429387208128,
+        0.0012259438458284717,
+        0.0011563561095808735
+      ],
+      "certified_nodes": [
+        0,
+        1,
+        2
+      ],
+      "uncovered_nodes": [
+        3,
+        4
+      ],
+      "gate_ok": true,
+      "recover_mcc": 0.9995182739930478,
+      "recover_ok": true,
+      "recovered_shape": [
+        4000,
+        3
+      ],
+      "discover_order": [
+        0,
+        1,
+        2
+      ],
+      "shd_decided": 0,
+      "discovery_ok": true,
+      "n_decided_present": 2,
+      "n_decided_absent": 2,
+      "n_undecided_within_recovered": 2,
+      "n_uncovered_pairs": 14,
+      "n_correctly_abstained_uncovered": 14,
+      "n_committed_uncovered": 0,
+      "abstention_ok": true,
+      "true_edges": [
+        "0->1",
+        "1->2",
+        "2->3",
+        "3->4"
+      ],
+      "status_codes": {
+        "0->1": "EDGE_DECIDED_PRESENT",
+        "0->2": "EDGE_UNDECIDED_WEAK",
+        "0->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "0->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "1->0": "EDGE_DECIDED_ABSENT",
+        "1->2": "EDGE_DECIDED_PRESENT",
+        "1->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "1->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "2->0": "EDGE_UNDECIDED_WEAK",
+        "2->1": "EDGE_DECIDED_ABSENT",
+        "2->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "2->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->0": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->1": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->2": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->0": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->1": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->2": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->3": "EDGE_UNDECIDED_UNRECOVERED"
+      },
+      "seed_pass": true,
+      "data_fingerprint": {
+        "shape": [
+          4000,
+          200
+        ],
+        "slice_sha256_16": "ca2fed014369ee01"
+      }
+    },
+    {
+      "seed": 8,
+      "gate_n_recoverable": 3,
+      "gate_detect": [
+        true,
+        true,
+        true
+      ],
+      "gate_signals": [
+        0.0427958167442852,
+        0.05172024797069194,
+        0.04317407920721214
+      ],
+      "gate_thresholds": [
+        0.0009604324474019343,
+        0.0010532969769384746,
+        0.001042830562533999
+      ],
+      "certified_nodes": [
+        0,
+        1,
+        2
+      ],
+      "uncovered_nodes": [
+        3,
+        4
+      ],
+      "gate_ok": true,
+      "recover_mcc": 0.9991440023074531,
+      "recover_ok": true,
+      "recovered_shape": [
+        4000,
+        3
+      ],
+      "discover_order": [
+        0,
+        1,
+        2
+      ],
+      "shd_decided": 0,
+      "discovery_ok": true,
+      "n_decided_present": 1,
+      "n_decided_absent": 1,
+      "n_undecided_within_recovered": 4,
+      "n_uncovered_pairs": 14,
+      "n_correctly_abstained_uncovered": 14,
+      "n_committed_uncovered": 0,
+      "abstention_ok": true,
+      "true_edges": [
+        "0->1",
+        "1->2",
+        "2->3",
+        "3->4"
+      ],
+      "status_codes": {
+        "0->1": "EDGE_UNDECIDED_ORDER",
+        "0->2": "EDGE_UNDECIDED_WEAK",
+        "0->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "0->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "1->0": "EDGE_UNDECIDED_WEAK",
+        "1->2": "EDGE_DECIDED_PRESENT",
+        "1->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "1->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "2->0": "EDGE_UNDECIDED_WEAK",
+        "2->1": "EDGE_DECIDED_ABSENT",
+        "2->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "2->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->0": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->1": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->2": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->0": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->1": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->2": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->3": "EDGE_UNDECIDED_UNRECOVERED"
+      },
+      "seed_pass": true,
+      "data_fingerprint": {
+        "shape": [
+          4000,
+          200
+        ],
+        "slice_sha256_16": "848214210650f66c"
+      }
+    },
+    {
+      "seed": 9,
+      "gate_n_recoverable": 3,
+      "gate_detect": [
+        true,
+        true,
+        true
+      ],
+      "gate_signals": [
+        0.043873275752780216,
+        0.04301664587243416,
+        0.05351227379810488
+      ],
+      "gate_thresholds": [
+        0.001010926985939528,
+        0.0009485565227826784,
+        0.0009461174174218295
+      ],
+      "certified_nodes": [
+        0,
+        1,
+        2
+      ],
+      "uncovered_nodes": [
+        3,
+        4
+      ],
+      "gate_ok": true,
+      "recover_mcc": 0.9990840109691593,
+      "recover_ok": true,
+      "recovered_shape": [
+        4000,
+        3
+      ],
+      "discover_order": [
+        0,
+        1,
+        2
+      ],
+      "shd_decided": 0,
+      "discovery_ok": true,
+      "n_decided_present": 2,
+      "n_decided_absent": 2,
+      "n_undecided_within_recovered": 2,
+      "n_uncovered_pairs": 14,
+      "n_correctly_abstained_uncovered": 14,
+      "n_committed_uncovered": 0,
+      "abstention_ok": true,
+      "true_edges": [
+        "0->1",
+        "1->2",
+        "2->3",
+        "3->4"
+      ],
+      "status_codes": {
+        "0->1": "EDGE_DECIDED_PRESENT",
+        "0->2": "EDGE_UNDECIDED_WEAK",
+        "0->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "0->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "1->0": "EDGE_DECIDED_ABSENT",
+        "1->2": "EDGE_DECIDED_PRESENT",
+        "1->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "1->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "2->0": "EDGE_UNDECIDED_WEAK",
+        "2->1": "EDGE_DECIDED_ABSENT",
+        "2->3": "EDGE_UNDECIDED_UNRECOVERED",
+        "2->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->0": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->1": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->2": "EDGE_UNDECIDED_UNRECOVERED",
+        "3->4": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->0": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->1": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->2": "EDGE_UNDECIDED_UNRECOVERED",
+        "4->3": "EDGE_UNDECIDED_UNRECOVERED"
+      },
+      "seed_pass": true,
+      "data_fingerprint": {
+        "shape": [
+          4000,
+          200
+        ],
+        "slice_sha256_16": "13c9e848cca8e221"
+      }
+    }
+  ],
+  "provenance": {
+    "git_head": "413a8c3d4146b9690af0a8110e22de304692af48",
+    "script_sha256": "668458ab8c17d6934c6aaa400891c16226a492c4338f8f2ad8de89720a1d3826",
+    "numpy_version": "2.0.2"
+  },
+  "wall_seconds": 4.3
+}

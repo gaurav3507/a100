@@ -1,0 +1,22 @@
+# third-party + local data (never tracked)
+external/
+data/
+# python noise
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+.venv/
+.venv-recover/
+# large / binary artefacts anywhere, including under results/
+*.ckpt
+*.pt
+*.pth
+*.npz
+*.npy
+*.h5
+*.h5ad
+*.png
+*.pdf
+!paper/figures/*.pdf
+*.log

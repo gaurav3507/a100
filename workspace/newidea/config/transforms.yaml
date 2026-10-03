@@ -1,0 +1,24 @@
+permutation:
+  family: A1
+  class: INSIDE_E_CRL
+  levels: [seeded]
+scaling:
+  family: B
+  class: INSIDE_E_CRL
+  levels: [0.25, 0.5, 2.0, 4.0]
+  rule: seeded balanced assignment of severity and reciprocal severity
+cubic:
+  family: C
+  class: INSIDE_E_CRL
+  levels: [0.0, 0.05, 0.1, 0.25, 0.5, 1.0, 2.0]
+entanglement:
+  family: D
+  class: BOUNDARY
+  levels: [0.05, 0.1, 0.25, 0.5, 1.0]
+noise:
+  family: E
+  class: CORRUPTION_CONTROL
+  levels: [0.05, 0.1, 0.25, 0.5, 1.0]
+  distribution: standard_normal
+transformation_seed_rule: 100000 + 1000 * scm_seed + level_index
+

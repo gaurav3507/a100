@@ -1,0 +1,19 @@
+# third-party + local data (never tracked)
+external/
+data/
+# python noise
+__pycache__/
+*.pyc
+.DS_Store
+# large / binary artefacts anywhere (incl. under results/)
+*.ckpt
+*.pt
+*.pth
+*.npz
+*.npy
+*.png
+*.pdf
+*.log
+# keep results/ tree tracked but only small JSON + gitkeep
+# (results/ itself is NOT ignored, so these negations are unnecessary,
+#  but binaries above are still ignored even inside results/)

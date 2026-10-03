@@ -1,0 +1,157 @@
+{
+  "dataset": "norman",
+  "source_h5ad": "/workspace/external/discrepancy_vae/datasets/Norman2019_raw.h5ad",
+  "n_cells_kept": 66738,
+  "n_genes": 5000,
+  "n_control_cells": 8907,
+  "n_single_perturbation_cells": 57831,
+  "n_single_perturbation_genes": 105,
+  "n_targets_in_var_names": 0,
+  "target_column_drop_is_noop": true,
+  "step0_gate": [
+    {
+      "step0": true,
+      "nmin": 200,
+      "d": 5,
+      "n_envs": 44,
+      "n_fit": 100,
+      "coef_ratio_vs_ctrl": 0.6793740532079731,
+      "coef_ratio_pairs": 1.0126629309016315,
+      "shift_frac_vs_ctrl": 0.019318181818181818,
+      "shift_frac_pairs": 0.06233333333333333,
+      "shift_frac_within": 0.05,
+      "mean_ratio_vs_ctrl": 0.699191688096698,
+      "mean_ratio_pairs": 0.995918889502482
+    },
+    {
+      "step0": true,
+      "nmin": 200,
+      "d": 10,
+      "n_envs": 44,
+      "n_fit": 100,
+      "coef_ratio_vs_ctrl": 0.7471554178090359,
+      "coef_ratio_pairs": 1.0206380257527146,
+      "shift_frac_vs_ctrl": 0.023232323232323233,
+      "shift_frac_pairs": 0.053148148148148146,
+      "shift_frac_within": 0.05,
+      "mean_ratio_vs_ctrl": 0.7216995131517371,
+      "mean_ratio_pairs": 1.0070856615811838
+    },
+    {
+      "step0": true,
+      "nmin": 100,
+      "d": 5,
+      "n_envs": 89,
+      "n_fit": 50,
+      "coef_ratio_vs_ctrl": 0.7221078110877559,
+      "coef_ratio_pairs": 1.1003629281420728,
+      "shift_frac_vs_ctrl": 0.019662921348314606,
+      "shift_frac_pairs": 0.07116666666666667,
+      "shift_frac_within": 0.05,
+      "mean_ratio_vs_ctrl": 0.6495167957436173,
+      "mean_ratio_pairs": 1.0195804168769285
+    },
+    {
+      "step0": true,
+      "nmin": 100,
+      "d": 10,
+      "n_envs": 89,
+      "n_fit": 50,
+      "coef_ratio_vs_ctrl": 0.7176560396074441,
+      "coef_ratio_pairs": 1.0469539564808175,
+      "shift_frac_vs_ctrl": 0.0215980024968789,
+      "shift_frac_pairs": 0.056296296296296296,
+      "shift_frac_within": 0.050062421972534334,
+      "mean_ratio_vs_ctrl": 0.6775419765464165,
+      "mean_ratio_pairs": 1.0291358427428332
+    }
+  ],
+  "screen": [
+    {
+      "step0": false,
+      "nmin": 200,
+      "d": 5,
+      "n_envs": 101,
+      "n_fit": 100,
+      "coef_ratio_vs_ctrl": 1.3464548694877556,
+      "coef_ratio_pairs": 1.2872490625666266,
+      "shift_frac_vs_ctrl": 0.13366336633663367,
+      "shift_frac_pairs": 0.11283333333333333,
+      "shift_frac_within": 0.05,
+      "mean_ratio_vs_ctrl": 3.05941278767818,
+      "mean_ratio_pairs": 3.5330021463276995
+    },
+    {
+      "step0": false,
+      "nmin": 200,
+      "d": 10,
+      "n_envs": 101,
+      "n_fit": 100,
+      "coef_ratio_vs_ctrl": 1.195416408259068,
+      "coef_ratio_pairs": 1.1646874474757458,
+      "shift_frac_vs_ctrl": 0.088998899889989,
+      "shift_frac_pairs": 0.07748148148148148,
+      "shift_frac_within": 0.05005500550055005,
+      "mean_ratio_vs_ctrl": 3.1895884263497645,
+      "mean_ratio_pairs": 3.7147385914720377
+    },
+    {
+      "step0": false,
+      "nmin": 100,
+      "d": 5,
+      "n_envs": 105,
+      "n_fit": 50,
+      "coef_ratio_vs_ctrl": 1.1729245291338575,
+      "coef_ratio_pairs": 1.1125723059027604,
+      "shift_frac_vs_ctrl": 0.07952380952380952,
+      "shift_frac_pairs": 0.07,
+      "shift_frac_within": 0.05,
+      "mean_ratio_vs_ctrl": 2.347762505946782,
+      "mean_ratio_pairs": 2.6138057917241047
+    },
+    {
+      "step0": false,
+      "nmin": 100,
+      "d": 10,
+      "n_envs": 105,
+      "n_fit": 50,
+      "coef_ratio_vs_ctrl": 1.063286640100779,
+      "coef_ratio_pairs": 1.0697322958631652,
+      "shift_frac_vs_ctrl": 0.06338624338624338,
+      "shift_frac_pairs": 0.06288888888888888,
+      "shift_frac_within": 0.05005291005291005,
+      "mean_ratio_vs_ctrl": 2.368641074590268,
+      "mean_ratio_pairs": 2.6814789511946997
+    }
+  ],
+  "summary": {
+    "step0_mean_ratios": [
+      0.699191688096698,
+      0.7216995131517371,
+      0.6495167957436173,
+      0.6775419765464165
+    ],
+    "step0_pass": true,
+    "primary_nmin": 200,
+    "primary_d": 10,
+    "primary_mean_ratio_vs_ctrl": 3.1895884263497645,
+    "primary_mean_ratio_pairs": 3.7147385914720377,
+    "primary_coef_ratio_vs_ctrl": 1.195416408259068,
+    "step0_gate_metric": "mean_ratio_pairs",
+    "step0_pairs": [
+      0.995918889502482,
+      1.0070856615811838,
+      1.0195804168769285,
+      1.0291358427428332
+    ],
+    "step0_vs_ctrl_note": "mean_ratio_vs_ctrl in step-0 is degenerate: ref_pool is empty so ref overlaps ~50% with Za; expected ~0.5. Not the correct gate; retained for the record only."
+  },
+  "reference": {
+    "causalbench_k562_mean_ratio_range": [
+      2.0,
+      5.6
+    ],
+    "hcp_mean_ratio": 1.0,
+    "norman_workable_threshold": 2.0
+  }
+}

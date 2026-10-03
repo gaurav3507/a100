@@ -1,0 +1,17 @@
+num_group: 3
+num_dim: 10
+num_data: 65536
+num_layer: 3
+num_neighbor: 2
+num_neighbor_in: 1
+num_latent: null
+dag: true
+dist_type: Laplace
+ar_alpha: 3.0
+ar_beta: 0.8
+lam1_range: [0.9, 1.0]
+lam2_range: [1.0, 1.0]
+lamin1_range: [0.9, 1.0]
+lamin2_range: [1.0, 1.0]
+scm_seeds: [0, 1, 2, 3, 4]
+

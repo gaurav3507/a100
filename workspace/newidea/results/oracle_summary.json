@@ -1,0 +1,132 @@
+{
+  "aggregation_rule": "eligibility uses mean F1 across all five preregistered SCM seeds",
+  "methods": {
+    "DirectLiNGAM": {
+      "eligible": false,
+      "individual_primary_f1": [
+        0.06349206349206349,
+        0.07692307692307693,
+        0.02962962962962963,
+        0.030075187969924814,
+        0.06060606060606061
+      ],
+      "mean_orientation_f1": null,
+      "mean_primary_f1": 0.05214520372415109,
+      "method_type": "directed",
+      "orientation_eligible": false,
+      "orientation_individual_f1": null,
+      "primary_metric": "directed_f1",
+      "std_primary_f1": 0.019017449872307034,
+      "threshold": 0.8
+    },
+    "GOLEM": {
+      "eligible": false,
+      "individual_primary_f1": [
+        0.12698412698412698,
+        0.37333333333333335,
+        0.12698412698412698,
+        0.4390243902439025,
+        0.24324324324324326
+      ],
+      "mean_orientation_f1": null,
+      "mean_primary_f1": 0.2619138441577466,
+      "method_type": "directed",
+      "orientation_eligible": false,
+      "orientation_individual_f1": null,
+      "primary_metric": "directed_f1",
+      "std_primary_f1": 0.12691973573459697,
+      "threshold": 0.8
+    },
+    "NOTEARS-MLP": {
+      "eligible": false,
+      "individual_primary_f1": [
+        0.5196850393700787,
+        0.672,
+        0.5223880597014926,
+        0.672,
+        0.5426356589147286
+      ],
+      "mean_orientation_f1": null,
+      "mean_primary_f1": 0.58574175159726,
+      "method_type": "directed",
+      "orientation_eligible": false,
+      "orientation_individual_f1": null,
+      "primary_metric": "directed_f1",
+      "std_primary_f1": 0.07087493995547518,
+      "threshold": 0.8
+    },
+    "NOTEARS-linear": {
+      "eligible": false,
+      "individual_primary_f1": [
+        0.5128205128205129,
+        0.5210084033613445,
+        0.48333333333333334,
+        0.5084745762711865,
+        0.5593220338983051
+      ],
+      "mean_orientation_f1": null,
+      "mean_primary_f1": 0.5169917719369364,
+      "method_type": "directed",
+      "orientation_eligible": false,
+      "orientation_individual_f1": null,
+      "primary_metric": "directed_f1",
+      "std_primary_f1": 0.02462038553546705,
+      "threshold": 0.8
+    },
+    "PC-Pearson": {
+      "eligible": true,
+      "individual_primary_f1": [
+        0.9032258064516129,
+        0.9133858267716535,
+        0.9032258064516129,
+        0.9206349206349206,
+        0.90625
+      ],
+      "mean_orientation_f1": 0.24737019005590466,
+      "mean_primary_f1": 0.9093444720619599,
+      "method_type": "pc",
+      "orientation_eligible": false,
+      "orientation_individual_f1": [
+        0.26016260162601623,
+        0.26771653543307083,
+        0.17741935483870966,
+        0.3252032520325204,
+        0.20634920634920637
+      ],
+      "primary_metric": "skeleton_f1",
+      "std_primary_f1": 0.006756606721024531,
+      "threshold": 0.8
+    },
+    "PC-nonparanormal-preproc": {
+      "eligible": true,
+      "individual_primary_f1": [
+        0.896,
+        0.9508196721311475,
+        0.9333333333333333,
+        0.9206349206349206,
+        0.90625
+      ],
+      "mean_orientation_f1": 0.29703110042520986,
+      "mean_primary_f1": 0.9214075852198803,
+      "method_type": "pc",
+      "orientation_eligible": false,
+      "orientation_individual_f1": [
+        0.19999999999999998,
+        0.33333333333333337,
+        0.2956521739130435,
+        0.33870967741935487,
+        0.31746031746031744
+      ],
+      "primary_metric": "skeleton_f1",
+      "std_primary_f1": 0.01940715904765933,
+      "threshold": 0.8
+    }
+  },
+  "scm_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}

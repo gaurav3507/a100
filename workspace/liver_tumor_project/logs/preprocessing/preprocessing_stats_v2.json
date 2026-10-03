@@ -1,0 +1,4859 @@
+{
+  "total": 131,
+  "processed": 131,
+  "failed": 0,
+  "skipped_exists": 0,
+  "start_time": 1786481318.62944,
+  "volumes": [
+    {
+      "name": "volume-79",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        147
+      ],
+      "orig_spacing": [
+        "0.797",
+        "0.797",
+        "3.0"
+      ],
+      "resampled_shape": [
+        408,
+        408,
+        293
+      ],
+      "bbox_shape": [
+        218,
+        228,
+        157
+      ],
+      "final_shape": [
+        218,
+        228,
+        127
+      ],
+      "reduction_pct": 83.61909827407526,
+      "bg_pct": 86.64322711713184,
+      "liver_pct": 13.169585996342441,
+      "tumor_pct": 0.18718688652571253,
+      "tumor_voxels": 11816,
+      "liver_voxels": 831318,
+      "time_sec": 9.936270952224731
+    },
+    {
+      "name": "volume-24",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        276
+      ],
+      "orig_spacing": [
+        "0.67",
+        "0.67",
+        "1.5"
+      ],
+      "resampled_shape": [
+        343,
+        343,
+        276
+      ],
+      "bbox_shape": [
+        211,
+        232,
+        155
+      ],
+      "final_shape": [
+        211,
+        232,
+        128
+      ],
+      "reduction_pct": 91.33973052536231,
+      "bg_pct": 85.36139355899657,
+      "liver_pct": 14.628520029825134,
+      "tumor_pct": 0.010086411178297108,
+      "tumor_voxels": 632,
+      "liver_voxels": 916602,
+      "time_sec": 19.143725156784058
+    },
+    {
+      "name": "volume-37",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        122
+      ],
+      "orig_spacing": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "resampled_shape": [
+        512,
+        512,
+        82
+      ],
+      "bbox_shape": [
+        306,
+        270,
+        82
+      ],
+      "final_shape": [
+        306,
+        270,
+        72
+      ],
+      "reduction_pct": 81.3997862768955,
+      "bg_pct": 79.0176578175852,
+      "liver_pct": 20.817531402135614,
+      "tumor_pct": 0.16481078027918986,
+      "tumor_voxels": 9804,
+      "liver_voxels": 1238360,
+      "time_sec": 5.0423924922943115
+    },
+    {
+      "name": "volume-40",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        122
+      ],
+      "orig_spacing": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "resampled_shape": [
+        512,
+        512,
+        82
+      ],
+      "bbox_shape": [
+        352,
+        321,
+        82
+      ],
+      "final_shape": [
+        352,
+        321,
+        70
+      ],
+      "reduction_pct": 75.2687548027664,
+      "bg_pct": 82.5889569931626,
+      "liver_pct": 16.365279969251933,
+      "tumor_pct": 1.0457630375854674,
+      "tumor_voxels": 82714,
+      "liver_voxels": 1294402,
+      "time_sec": 5.328256845474243
+    },
+    {
+      "name": "volume-81",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        343
+      ],
+      "orig_spacing": [
+        "0.703",
+        "0.703",
+        "1.25"
+      ],
+      "resampled_shape": [
+        360,
+        360,
+        286
+      ],
+      "bbox_shape": [
+        261,
+        197,
+        128
+      ],
+      "final_shape": [
+        261,
+        197,
+        103
+      ],
+      "reduction_pct": 94.11007294501925,
+      "bg_pct": 81.754967143767,
+      "liver_pct": 18.20615409772485,
+      "tumor_pct": 0.03887875850815085,
+      "tumor_voxels": 2059,
+      "liver_voxels": 964189,
+      "time_sec": 14.261976718902588
+    },
+    {
+      "name": "volume-4",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        841
+      ],
+      "orig_spacing": [
+        "0.902",
+        "0.902",
+        "0.8"
+      ],
+      "resampled_shape": [
+        462,
+        462,
+        449
+      ],
+      "bbox_shape": [
+        317,
+        248,
+        174
+      ],
+      "final_shape": [
+        317,
+        248,
+        144
+      ],
+      "reduction_pct": 94.86503464997027,
+      "bg_pct": 81.45821143278722,
+      "liver_pct": 12.72069298870459,
+      "tumor_pct": 5.821095578508192,
+      "tumor_voxels": 658989,
+      "liver_voxels": 1440072,
+      "time_sec": 62.060283184051514
+    },
+    {
+      "name": "volume-15",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        565
+      ],
+      "orig_spacing": [
+        "0.654",
+        "0.654",
+        "1.0"
+      ],
+      "resampled_shape": [
+        335,
+        335,
+        377
+      ],
+      "bbox_shape": [
+        215,
+        236,
+        129
+      ],
+      "final_shape": [
+        215,
+        236,
+        99
+      ],
+      "reduction_pct": 96.60845731211974,
+      "bg_pct": 81.60855699286917,
+      "liver_pct": 18.386924029415162,
+      "tumor_pct": 0.004518977715666718,
+      "tumor_voxels": 227,
+      "liver_voxels": 923623,
+      "time_sec": 35.373380184173584
+    },
+    {
+      "name": "volume-46",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        124
+      ],
+      "orig_spacing": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "resampled_shape": [
+        512,
+        512,
+        83
+      ],
+      "bbox_shape": [
+        305,
+        252,
+        66
+      ],
+      "final_shape": [
+        305,
+        252,
+        37
+      ],
+      "reduction_pct": 91.25136098554057,
+      "bg_pct": 86.3066931099718,
+      "liver_pct": 12.699151141774093,
+      "tumor_pct": 0.9941557482541089,
+      "tumor_voxels": 28272,
+      "liver_voxels": 361141,
+      "time_sec": 4.473345518112183
+    },
+    {
+      "name": "volume-17",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        826
+      ],
+      "orig_spacing": [
+        "0.744",
+        "0.744",
+        "0.8"
+      ],
+      "resampled_shape": [
+        381,
+        381,
+        441
+      ],
+      "bbox_shape": [
+        218,
+        222,
+        146
+      ],
+      "final_shape": [
+        218,
+        222,
+        116
+      ],
+      "reduction_pct": 97.40732853406855,
+      "bg_pct": 80.94297833106755,
+      "liver_pct": 18.857393457994533,
+      "tumor_pct": 0.19962821093792305,
+      "tumor_voxels": 11207,
+      "liver_voxels": 1058642,
+      "time_sec": 53.23948097229004
+    },
+    {
+      "name": "volume-71",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        94
+      ],
+      "orig_spacing": [
+        "0.557",
+        "0.557",
+        "5.0"
+      ],
+      "resampled_shape": [
+        285,
+        285,
+        311
+      ],
+      "bbox_shape": [
+        221,
+        212,
+        149
+      ],
+      "final_shape": [
+        221,
+        212,
+        130
+      ],
+      "reduction_pct": 75.2825473217254,
+      "bg_pct": 81.75370561309262,
+      "liver_pct": 15.83272038300639,
+      "tumor_pct": 2.413574003900991,
+      "tumor_voxels": 147005,
+      "liver_voxels": 964333,
+      "time_sec": 6.278512716293335
+    },
+    {
+      "name": "volume-36",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        111
+      ],
+      "orig_spacing": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "resampled_shape": [
+        512,
+        512,
+        74
+      ],
+      "bbox_shape": [
+        282,
+        264,
+        74
+      ],
+      "final_shape": [
+        282,
+        264,
+        70
+      ],
+      "reduction_pct": 82.09030563766892,
+      "bg_pct": 83.80261582389242,
+      "liver_pct": 15.686941604494796,
+      "tumor_pct": 0.5104425716127844,
+      "tumor_voxels": 26601,
+      "liver_voxels": 817503,
+      "time_sec": 5.359465599060059
+    },
+    {
+      "name": "volume-102",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        677
+      ],
+      "orig_spacing": [
+        "0.717",
+        "0.717",
+        "0.7"
+      ],
+      "resampled_shape": [
+        367,
+        367,
+        316
+      ],
+      "bbox_shape": [
+        284,
+        261,
+        185
+      ],
+      "final_shape": [
+        284,
+        261,
+        156
+      ],
+      "reduction_pct": 93.48439339168667,
+      "bg_pct": 89.41027785733954,
+      "liver_pct": 10.491878473908585,
+      "tumor_pct": 0.09784366875187663,
+      "tumor_voxels": 11314,
+      "liver_voxels": 1213212,
+      "time_sec": 27.180316925048828
+    },
+    {
+      "name": "volume-87",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        896
+      ],
+      "orig_spacing": [
+        "0.854",
+        "0.854",
+        "0.8"
+      ],
+      "resampled_shape": [
+        437,
+        437,
+        478
+      ],
+      "bbox_shape": [
+        296,
+        277,
+        155
+      ],
+      "final_shape": [
+        296,
+        277,
+        125
+      ],
+      "reduction_pct": 95.63651425497872,
+      "bg_pct": 85.16320616645527,
+      "liver_pct": 14.836793833544736,
+      "tumor_pct": 0.0,
+      "tumor_voxels": 0,
+      "liver_voxels": 1520623,
+      "time_sec": 38.28194332122803
+    },
+    {
+      "name": "volume-56",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        239
+      ],
+      "orig_spacing": [
+        "0.803",
+        "0.803",
+        "2.0"
+      ],
+      "resampled_shape": [
+        411,
+        411,
+        318
+      ],
+      "bbox_shape": [
+        282,
+        235,
+        158
+      ],
+      "final_shape": [
+        282,
+        235,
+        131
+      ],
+      "reduction_pct": 86.14359899544816,
+      "bg_pct": 82.81447513468497,
+      "liver_pct": 14.53369687042483,
+      "tumor_pct": 2.6518279948902075,
+      "tumor_voxels": 230215,
+      "liver_voxels": 1261724,
+      "time_sec": 12.04226279258728
+    },
+    {
+      "name": "volume-96",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        722
+      ],
+      "orig_spacing": [
+        "0.746",
+        "0.746",
+        "0.7"
+      ],
+      "resampled_shape": [
+        382,
+        382,
+        337
+      ],
+      "bbox_shape": [
+        265,
+        231,
+        180
+      ],
+      "final_shape": [
+        265,
+        231,
+        150
+      ],
+      "reduction_pct": 95.14854515688572,
+      "bg_pct": 83.73383429987203,
+      "liver_pct": 16.151847314111464,
+      "tumor_pct": 0.11431838601649923,
+      "tumor_voxels": 10497,
+      "liver_voxels": 1483103,
+      "time_sec": 22.306031227111816
+    },
+    {
+      "name": "volume-45",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        74
+      ],
+      "orig_spacing": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "resampled_shape": [
+        512,
+        512,
+        50
+      ],
+      "bbox_shape": [
+        346,
+        299,
+        50
+      ],
+      "final_shape": [
+        346,
+        299,
+        47
+      ],
+      "reduction_pct": 74.93466557683172,
+      "bg_pct": 83.34934757723548,
+      "liver_pct": 16.59014655089794,
+      "tumor_pct": 0.06050587186657941,
+      "tumor_voxels": 2942,
+      "liver_voxels": 806669,
+      "time_sec": 3.032984495162964
+    },
+    {
+      "name": "volume-110",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        816
+      ],
+      "orig_spacing": [
+        "0.72",
+        "0.72",
+        "0.8"
+      ],
+      "resampled_shape": [
+        369,
+        369,
+        436
+      ],
+      "bbox_shape": [
+        245,
+        204,
+        141
+      ],
+      "final_shape": [
+        245,
+        204,
+        111
+      ],
+      "reduction_pct": 97.4064826965332,
+      "bg_pct": 83.9431989011821,
+      "liver_pct": 15.4392567837946,
+      "tumor_pct": 0.6175443150233066,
+      "tumor_voxels": 34260,
+      "liver_voxels": 856536,
+      "time_sec": 17.68740200996399
+    },
+    {
+      "name": "volume-108",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        856
+      ],
+      "orig_spacing": [
+        "0.729",
+        "0.729",
+        "0.8"
+      ],
+      "resampled_shape": [
+        374,
+        374,
+        457
+      ],
+      "bbox_shape": [
+        262,
+        263,
+        149
+      ],
+      "final_shape": [
+        262,
+        263,
+        119
+      ],
+      "reduction_pct": 96.34581681723905,
+      "bg_pct": 83.20624101961337,
+      "liver_pct": 11.741815119220997,
+      "tumor_pct": 5.051943861165631,
+      "tumor_voxels": 414250,
+      "liver_voxels": 962807,
+      "time_sec": 18.967034816741943
+    },
+    {
+      "name": "volume-61",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        193
+      ],
+      "orig_spacing": [
+        "0.758",
+        "0.758",
+        "2.5"
+      ],
+      "resampled_shape": [
+        388,
+        388,
+        321
+      ],
+      "bbox_shape": [
+        294,
+        227,
+        133
+      ],
+      "final_shape": [
+        294,
+        227,
+        112
+      ],
+      "reduction_pct": 85.22613999757125,
+      "bg_pct": 85.50107188879328,
+      "liver_pct": 14.46140130060835,
+      "tumor_pct": 0.037526810598374025,
+      "tumor_voxels": 2805,
+      "liver_voxels": 1080940,
+      "time_sec": 10.243708610534668
+    },
+    {
+      "name": "volume-50",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        240
+      ],
+      "orig_spacing": [
+        "0.906",
+        "0.906",
+        "2.5"
+      ],
+      "resampled_shape": [
+        464,
+        464,
+        399
+      ],
+      "bbox_shape": [
+        269,
+        208,
+        83
+      ],
+      "final_shape": [
+        269,
+        208,
+        53
+      ],
+      "reduction_pct": 95.28653462727864,
+      "bg_pct": 84.01507221823557,
+      "liver_pct": 15.917012425744979,
+      "tumor_pct": 0.06791535601944523,
+      "tumor_voxels": 2014,
+      "liver_voxels": 472012,
+      "time_sec": 14.771653890609741
+    },
+    {
+      "name": "volume-101",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        683
+      ],
+      "orig_spacing": [
+        "0.705",
+        "0.705",
+        "0.7"
+      ],
+      "resampled_shape": [
+        361,
+        361,
+        319
+      ],
+      "bbox_shape": [
+        271,
+        236,
+        158
+      ],
+      "final_shape": [
+        271,
+        236,
+        131
+      ],
+      "reduction_pct": 95.3205806793615,
+      "bg_pct": 81.00820984274017,
+      "liver_pct": 17.943240080608852,
+      "tumor_pct": 1.04855007665098,
+      "tumor_voxels": 87850,
+      "liver_voxels": 1503327,
+      "time_sec": 13.784484386444092
+    },
+    {
+      "name": "volume-68",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        266
+      ],
+      "orig_spacing": [
+        "0.666",
+        "0.666",
+        "2.5"
+      ],
+      "resampled_shape": [
+        341,
+        341,
+        443
+      ],
+      "bbox_shape": [
+        254,
+        207,
+        147
+      ],
+      "final_shape": [
+        254,
+        207,
+        117
+      ],
+      "reduction_pct": 91.17797335287682,
+      "bg_pct": 84.71475671635434,
+      "liver_pct": 15.225437957379073,
+      "tumor_pct": 0.05980532626658382,
+      "tumor_voxels": 3679,
+      "liver_voxels": 936612,
+      "time_sec": 12.143753051757812
+    },
+    {
+      "name": "volume-3",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        534
+      ],
+      "orig_spacing": [
+        "0.693",
+        "0.693",
+        "1.0"
+      ],
+      "resampled_shape": [
+        355,
+        355,
+        356
+      ],
+      "bbox_shape": [
+        225,
+        240,
+        153
+      ],
+      "final_shape": [
+        225,
+        240,
+        123
+      ],
+      "reduction_pct": 95.25520238983496,
+      "bg_pct": 84.348931044866,
+      "liver_pct": 15.637729599518217,
+      "tumor_pct": 0.01333935561577838,
+      "tumor_voxels": 886,
+      "liver_voxels": 1038658,
+      "time_sec": 35.05426836013794
+    },
+    {
+      "name": "volume-11",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        466
+      ],
+      "orig_spacing": [
+        "0.672",
+        "0.672",
+        "1.0"
+      ],
+      "resampled_shape": [
+        344,
+        344,
+        311
+      ],
+      "bbox_shape": [
+        224,
+        231,
+        150
+      ],
+      "final_shape": [
+        224,
+        231,
+        122
+      ],
+      "reduction_pct": 94.83233930726931,
+      "bg_pct": 84.46537240082323,
+      "liver_pct": 15.484522795705466,
+      "tumor_pct": 0.05010480347131401,
+      "tumor_voxels": 3163,
+      "liver_voxels": 977502,
+      "time_sec": 30.29472041130066
+    },
+    {
+      "name": "volume-26",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        668
+      ],
+      "orig_spacing": [
+        "0.863",
+        "0.863",
+        "0.7"
+      ],
+      "resampled_shape": [
+        442,
+        442,
+        312
+      ],
+      "bbox_shape": [
+        252,
+        201,
+        130
+      ],
+      "final_shape": [
+        252,
+        201,
+        100
+      ],
+      "reduction_pct": 97.10745440271799,
+      "bg_pct": 83.96063334123036,
+      "liver_pct": 15.681039248203428,
+      "tumor_pct": 0.35832741056621653,
+      "tumor_voxels": 18150,
+      "liver_voxels": 794276,
+      "time_sec": 44.68268346786499
+    },
+    {
+      "name": "volume-28",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        129
+      ],
+      "orig_spacing": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "resampled_shape": [
+        512,
+        512,
+        86
+      ],
+      "bbox_shape": [
+        382,
+        312,
+        86
+      ],
+      "final_shape": [
+        382,
+        312,
+        73
+      ],
+      "reduction_pct": 74.27169444949128,
+      "bg_pct": 78.09045573828978,
+      "liver_pct": 20.28032631023379,
+      "tumor_pct": 1.6292179514764324,
+      "tumor_voxels": 141749,
+      "liver_voxels": 1764476,
+      "time_sec": 5.604557514190674
+    },
+    {
+      "name": "volume-67",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        165
+      ],
+      "orig_spacing": [
+        "0.711",
+        "0.711",
+        "2.5"
+      ],
+      "resampled_shape": [
+        364,
+        364,
+        274
+      ],
+      "bbox_shape": [
+        242,
+        186,
+        158
+      ],
+      "final_shape": [
+        242,
+        186,
+        142
+      ],
+      "reduction_pct": 85.2227783203125,
+      "bg_pct": 85.47171458503085,
+      "liver_pct": 14.521573589765733,
+      "tumor_pct": 0.006711825203419933,
+      "tumor_voxels": 429,
+      "liver_voxels": 928176,
+      "time_sec": 8.510226964950562
+    },
+    {
+      "name": "volume-60",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        244
+      ],
+      "orig_spacing": [
+        "0.799",
+        "0.799",
+        "2.0"
+      ],
+      "resampled_shape": [
+        409,
+        409,
+        325
+      ],
+      "bbox_shape": [
+        316,
+        259,
+        136
+      ],
+      "final_shape": [
+        316,
+        259,
+        115
+      ],
+      "reduction_pct": 85.28518051397604,
+      "bg_pct": 82.99400981294212,
+      "liver_pct": 16.902824673875855,
+      "tumor_pct": 0.10316551318202391,
+      "tumor_voxels": 9710,
+      "liver_voxels": 1590904,
+      "time_sec": 12.22344446182251
+    },
+    {
+      "name": "volume-9",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        549
+      ],
+      "orig_spacing": [
+        "0.82",
+        "0.82",
+        "1.0"
+      ],
+      "resampled_shape": [
+        420,
+        420,
+        366
+      ],
+      "bbox_shape": [
+        273,
+        223,
+        155
+      ],
+      "final_shape": [
+        273,
+        223,
+        125
+      ],
+      "reduction_pct": 94.71231887900764,
+      "bg_pct": 86.42412654609964,
+      "liver_pct": 13.443124887071075,
+      "tumor_pct": 0.13274856682928432,
+      "tumor_voxels": 10102,
+      "liver_voxels": 1023005,
+      "time_sec": 47.384536266326904
+    },
+    {
+      "name": "volume-73",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        121
+      ],
+      "orig_spacing": [
+        "0.951",
+        "0.951",
+        "4.0"
+      ],
+      "resampled_shape": [
+        487,
+        487,
+        321
+      ],
+      "bbox_shape": [
+        238,
+        259,
+        173
+      ],
+      "final_shape": [
+        238,
+        259,
+        143
+      ],
+      "reduction_pct": 72.21006913618608,
+      "bg_pct": 84.6134787311258,
+      "liver_pct": 15.370037638945202,
+      "tumor_pct": 0.016483629929008082,
+      "tumor_voxels": 1453,
+      "liver_voxels": 1354839,
+      "time_sec": 13.568206548690796
+    },
+    {
+      "name": "volume-0",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        75
+      ],
+      "orig_spacing": [
+        "0.703",
+        "0.703",
+        "5.0"
+      ],
+      "resampled_shape": [
+        360,
+        360,
+        248
+      ],
+      "bbox_shape": [
+        257,
+        200,
+        119
+      ],
+      "final_shape": [
+        257,
+        200,
+        104
+      ],
+      "reduction_pct": 72.81087239583333,
+      "bg_pct": 82.9395951810835,
+      "liver_pct": 16.981891649206823,
+      "tumor_pct": 0.07851316970966776,
+      "tumor_voxels": 4197,
+      "liver_voxels": 907784,
+      "time_sec": 8.558024883270264
+    },
+    {
+      "name": "volume-97",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        671
+      ],
+      "orig_spacing": [
+        "0.723",
+        "0.723",
+        "0.7"
+      ],
+      "resampled_shape": [
+        370,
+        370,
+        314
+      ],
+      "bbox_shape": [
+        275,
+        249,
+        144
+      ],
+      "final_shape": [
+        275,
+        249,
+        118
+      ],
+      "reduction_pct": 95.40641659595927,
+      "bg_pct": 83.96055717476996,
+      "liver_pct": 13.862290456123414,
+      "tumor_pct": 2.177152369106627,
+      "tumor_voxels": 175915,
+      "liver_voxels": 1120080,
+      "time_sec": 22.860344409942627
+    },
+    {
+      "name": "volume-39",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        260
+      ],
+      "orig_spacing": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "resampled_shape": [
+        512,
+        512,
+        174
+      ],
+      "bbox_shape": [
+        339,
+        252,
+        174
+      ],
+      "final_shape": [
+        339,
+        252,
+        170
+      ],
+      "reduction_pct": 78.6923335148738,
+      "bg_pct": 84.67415973272298,
+      "liver_pct": 13.723376272829682,
+      "tumor_pct": 1.6024639944473364,
+      "tumor_voxels": 232722,
+      "liver_voxels": 1993013,
+      "time_sec": 10.735268354415894
+    },
+    {
+      "name": "volume-104",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        781
+      ],
+      "orig_spacing": [
+        "0.781",
+        "0.781",
+        "0.8"
+      ],
+      "resampled_shape": [
+        400,
+        400,
+        417
+      ],
+      "bbox_shape": [
+        267,
+        191,
+        143
+      ],
+      "final_shape": [
+        267,
+        191,
+        113
+      ],
+      "reduction_pct": 97.18529997958721,
+      "bg_pct": 81.7662708252316,
+      "liver_pct": 16.670423611591936,
+      "tumor_pct": 1.563305563176456,
+      "tumor_voxels": 90088,
+      "liver_voxels": 960660,
+      "time_sec": 17.926827430725098
+    },
+    {
+      "name": "volume-93",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        696
+      ],
+      "orig_spacing": [
+        "0.662",
+        "0.662",
+        "0.8"
+      ],
+      "resampled_shape": [
+        339,
+        339,
+        372
+      ],
+      "bbox_shape": [
+        264,
+        203,
+        164
+      ],
+      "final_shape": [
+        264,
+        203,
+        134
+      ],
+      "reduction_pct": 96.06399536132812,
+      "bg_pct": 84.90145555251063,
+      "liver_pct": 13.958978060882332,
+      "tumor_pct": 1.1395663866070453,
+      "tumor_voxels": 81836,
+      "liver_voxels": 1002440,
+      "time_sec": 24.429786682128906
+    },
+    {
+      "name": "volume-92",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        836
+      ],
+      "orig_spacing": [
+        "0.671",
+        "0.671",
+        "0.8"
+      ],
+      "resampled_shape": [
+        344,
+        344,
+        446
+      ],
+      "bbox_shape": [
+        246,
+        221,
+        135
+      ],
+      "final_shape": [
+        246,
+        221,
+        105
+      ],
+      "reduction_pct": 97.3952234076541,
+      "bg_pct": 85.80909286791639,
+      "liver_pct": 14.181202186941068,
+      "tumor_pct": 0.009704945142534813,
+      "tumor_voxels": 554,
+      "liver_voxels": 809524,
+      "time_sec": 29.501790523529053
+    },
+    {
+      "name": "volume-25",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        601
+      ],
+      "orig_spacing": [
+        "0.768",
+        "0.768",
+        "0.7"
+      ],
+      "resampled_shape": [
+        393,
+        393,
+        281
+      ],
+      "bbox_shape": [
+        263,
+        178,
+        142
+      ],
+      "final_shape": [
+        263,
+        178,
+        119
+      ],
+      "reduction_pct": 96.46403206366668,
+      "bg_pct": 85.07183622797605,
+      "liver_pct": 14.92563274722458,
+      "tumor_pct": 0.002531024799375896,
+      "tumor_voxels": 141,
+      "liver_voxels": 831487,
+      "time_sec": 38.2162446975708
+    },
+    {
+      "name": "volume-80",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        217
+      ],
+      "orig_spacing": [
+        "0.684",
+        "0.684",
+        "2.0"
+      ],
+      "resampled_shape": [
+        350,
+        350,
+        289
+      ],
+      "bbox_shape": [
+        235,
+        188,
+        140
+      ],
+      "final_shape": [
+        235,
+        188,
+        112
+      ],
+      "reduction_pct": 91.30150579637096,
+      "bg_pct": 81.27316012416736,
+      "liver_pct": 17.621176356463817,
+      "tumor_pct": 1.1056635193688158,
+      "tumor_voxels": 54710,
+      "liver_voxels": 871924,
+      "time_sec": 8.366144895553589
+    },
+    {
+      "name": "volume-44",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        119
+      ],
+      "orig_spacing": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "resampled_shape": [
+        512,
+        512,
+        80
+      ],
+      "bbox_shape": [
+        313,
+        320,
+        80
+      ],
+      "final_shape": [
+        313,
+        320,
+        80
+      ],
+      "reduction_pct": 74.31394432773108,
+      "bg_pct": 82.52197733626198,
+      "liver_pct": 15.937138079073483,
+      "tumor_pct": 1.5408845846645367,
+      "tumor_voxels": 123468,
+      "liver_voxels": 1277011,
+      "time_sec": 5.005146026611328
+    },
+    {
+      "name": "volume-59",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        216
+      ],
+      "orig_spacing": [
+        "0.684",
+        "0.684",
+        "2.0"
+      ],
+      "resampled_shape": [
+        350,
+        350,
+        288
+      ],
+      "bbox_shape": [
+        237,
+        214,
+        132
+      ],
+      "final_shape": [
+        237,
+        214,
+        113
+      ],
+      "reduction_pct": 89.87845314873589,
+      "bg_pct": 83.6757437533305,
+      "liver_pct": 16.317189582375843,
+      "tumor_pct": 0.007066664293663348,
+      "tumor_voxels": 405,
+      "liver_voxels": 935160,
+      "time_sec": 9.105351448059082
+    },
+    {
+      "name": "volume-70",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        333
+      ],
+      "orig_spacing": [
+        "0.598",
+        "0.598",
+        "1.25"
+      ],
+      "resampled_shape": [
+        306,
+        306,
+        278
+      ],
+      "bbox_shape": [
+        268,
+        178,
+        124
+      ],
+      "final_shape": [
+        268,
+        178,
+        102
+      ],
+      "reduction_pct": 94.42595060881193,
+      "bg_pct": 85.52815894092,
+      "liver_pct": 13.733957443450297,
+      "tumor_pct": 0.7378836156297166,
+      "tumor_voxels": 35904,
+      "liver_voxels": 668268,
+      "time_sec": 8.522867679595947
+    },
+    {
+      "name": "volume-29",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        172
+      ],
+      "orig_spacing": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "resampled_shape": [
+        512,
+        512,
+        115
+      ],
+      "bbox_shape": [
+        283,
+        254,
+        106
+      ],
+      "final_shape": [
+        283,
+        254,
+        86
+      ],
+      "reduction_pct": 86.28959655761719,
+      "bg_pct": 82.19365329354375,
+      "liver_pct": 17.65540488513798,
+      "tumor_pct": 0.1509418213182716,
+      "tumor_voxels": 9331,
+      "liver_voxels": 1091431,
+      "time_sec": 7.438097238540649
+    },
+    {
+      "name": "volume-57",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        366
+      ],
+      "orig_spacing": [
+        "0.703",
+        "0.703",
+        "1.25"
+      ],
+      "resampled_shape": [
+        360,
+        360,
+        305
+      ],
+      "bbox_shape": [
+        249,
+        216,
+        155
+      ],
+      "final_shape": [
+        249,
+        216,
+        134
+      ],
+      "reduction_pct": 92.48832327420594,
+      "bg_pct": 82.80325558730222,
+      "liver_pct": 17.1599055148177,
+      "tumor_pct": 0.03683889788007753,
+      "tumor_voxels": 2655,
+      "liver_voxels": 1236724,
+      "time_sec": 11.55359435081482
+    },
+    {
+      "name": "volume-14",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        588
+      ],
+      "orig_spacing": [
+        "0.686",
+        "0.686",
+        "1.0"
+      ],
+      "resampled_shape": [
+        351,
+        351,
+        392
+      ],
+      "bbox_shape": [
+        223,
+        233,
+        133
+      ],
+      "final_shape": [
+        223,
+        233,
+        103
+      ],
+      "reduction_pct": 96.52799165167775,
+      "bg_pct": 82.17874175250576,
+      "liver_pct": 17.805749380065723,
+      "tumor_pct": 0.015508867428519537,
+      "tumor_voxels": 830,
+      "liver_voxels": 952924,
+      "time_sec": 38.18263292312622
+    },
+    {
+      "name": "volume-100",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        685
+      ],
+      "orig_spacing": [
+        "0.699",
+        "0.699",
+        "0.7"
+      ],
+      "resampled_shape": [
+        358,
+        358,
+        320
+      ],
+      "bbox_shape": [
+        232,
+        240,
+        159
+      ],
+      "final_shape": [
+        232,
+        240,
+        139
+      ],
+      "reduction_pct": 95.68993784215328,
+      "bg_pct": 80.61940533779872,
+      "liver_pct": 14.76153559910692,
+      "tumor_pct": 4.619059063094352,
+      "tumor_voxels": 357493,
+      "liver_voxels": 1142472,
+      "time_sec": 13.376287698745728
+    },
+    {
+      "name": "volume-30",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        200
+      ],
+      "orig_spacing": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "resampled_shape": [
+        512,
+        512,
+        134
+      ],
+      "bbox_shape": [
+        317,
+        299,
+        114
+      ],
+      "final_shape": [
+        317,
+        299,
+        92
+      ],
+      "reduction_pct": 83.36785125732422,
+      "bg_pct": 81.82009799042115,
+      "liver_pct": 18.06721898854546,
+      "tumor_pct": 0.1126830210333994,
+      "tumor_voxels": 9826,
+      "liver_voxels": 1575468,
+      "time_sec": 7.964090585708618
+    },
+    {
+      "name": "volume-69",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        245
+      ],
+      "orig_spacing": [
+        "0.754",
+        "0.754",
+        "2.0"
+      ],
+      "resampled_shape": [
+        386,
+        386,
+        326
+      ],
+      "bbox_shape": [
+        231,
+        243,
+        168
+      ],
+      "final_shape": [
+        231,
+        243,
+        138
+      ],
+      "reduction_pct": 87.93877737862724,
+      "bg_pct": 84.09953895729527,
+      "liver_pct": 15.869155992612782,
+      "tumor_pct": 0.03130505009195294,
+      "tumor_voxels": 2425,
+      "liver_voxels": 1229281,
+      "time_sec": 10.839670658111572
+    },
+    {
+      "name": "volume-66",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        86
+      ],
+      "orig_spacing": [
+        "0.713",
+        "0.713",
+        "5.0"
+      ],
+      "resampled_shape": [
+        365,
+        365,
+        284
+      ],
+      "bbox_shape": [
+        237,
+        236,
+        145
+      ],
+      "final_shape": [
+        237,
+        236,
+        130
+      ],
+      "reduction_pct": 67.7473556163699,
+      "bg_pct": 84.30063428668878,
+      "liver_pct": 15.645797919451642,
+      "tumor_pct": 0.05356779385957674,
+      "tumor_voxels": 3895,
+      "liver_voxels": 1137631,
+      "time_sec": 7.361779451370239
+    },
+    {
+      "name": "volume-76",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        168
+      ],
+      "orig_spacing": [
+        "0.742",
+        "0.742",
+        "2.5"
+      ],
+      "resampled_shape": [
+        380,
+        380,
+        279
+      ],
+      "bbox_shape": [
+        264,
+        228,
+        161
+      ],
+      "final_shape": [
+        264,
+        228,
+        135
+      ],
+      "reduction_pct": 81.54885428292411,
+      "bg_pct": 83.77613857877016,
+      "liver_pct": 14.05208271801839,
+      "tumor_pct": 2.171778703211452,
+      "tumor_voxels": 176477,
+      "liver_voxels": 1141861,
+      "time_sec": 8.951446771621704
+    },
+    {
+      "name": "volume-33",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        135
+      ],
+      "orig_spacing": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "resampled_shape": [
+        512,
+        512,
+        90
+      ],
+      "bbox_shape": [
+        296,
+        311,
+        85
+      ],
+      "final_shape": [
+        296,
+        311,
+        70
+      ],
+      "reduction_pct": 81.79140444155092,
+      "bg_pct": 81.06275372754473,
+      "liver_pct": 14.434909185713044,
+      "tumor_pct": 4.502337086742232,
+      "tumor_voxels": 290127,
+      "liver_voxels": 930174,
+      "time_sec": 5.421868801116943
+    },
+    {
+      "name": "volume-109",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        756
+      ],
+      "orig_spacing": [
+        "0.763",
+        "0.763",
+        "0.8"
+      ],
+      "resampled_shape": [
+        391,
+        391,
+        404
+      ],
+      "bbox_shape": [
+        256,
+        207,
+        143
+      ],
+      "final_shape": [
+        256,
+        207,
+        113
+      ],
+      "reduction_pct": 96.97846912202381,
+      "bg_pct": 83.44802755333248,
+      "liver_pct": 16.175308478688386,
+      "tumor_pct": 0.37666396797913726,
+      "tumor_voxels": 22555,
+      "liver_voxels": 968593,
+      "time_sec": 16.843374490737915
+    },
+    {
+      "name": "volume-58",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        212
+      ],
+      "orig_spacing": [
+        "0.684",
+        "0.684",
+        "2.0"
+      ],
+      "resampled_shape": [
+        350,
+        350,
+        282
+      ],
+      "bbox_shape": [
+        283,
+        194,
+        150
+      ],
+      "final_shape": [
+        283,
+        194,
+        120
+      ],
+      "reduction_pct": 88.1452164559994,
+      "bg_pct": 87.38966704309497,
+      "liver_pct": 12.596626716695202,
+      "tumor_pct": 0.013706240209828422,
+      "tumor_voxels": 903,
+      "liver_voxels": 829896,
+      "time_sec": 8.676848411560059
+    },
+    {
+      "name": "volume-20",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        574
+      ],
+      "orig_spacing": [
+        "0.803",
+        "0.803",
+        "0.8"
+      ],
+      "resampled_shape": [
+        411,
+        411,
+        307
+      ],
+      "bbox_shape": [
+        257,
+        233,
+        138
+      ],
+      "final_shape": [
+        257,
+        233,
+        113
+      ],
+      "reduction_pct": 95.50307469916261,
+      "bg_pct": 81.44903320789773,
+      "liver_pct": 18.542010976637588,
+      "tumor_pct": 0.00895581546468342,
+      "tumor_voxels": 606,
+      "liver_voxels": 1254655,
+      "time_sec": 38.05170226097107
+    },
+    {
+      "name": "volume-105",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        986
+      ],
+      "orig_spacing": [
+        "0.844",
+        "0.844",
+        "0.7"
+      ],
+      "resampled_shape": [
+        432,
+        432,
+        461
+      ],
+      "bbox_shape": [
+        259,
+        250,
+        151
+      ],
+      "final_shape": [
+        259,
+        250,
+        121
+      ],
+      "reduction_pct": 96.96884387405117,
+      "bg_pct": 85.06651775742685,
+      "liver_pct": 14.933482242573152,
+      "tumor_pct": 0.0,
+      "tumor_voxels": 0,
+      "liver_voxels": 1170001,
+      "time_sec": 24.125529766082764
+    },
+    {
+      "name": "volume-48",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        244
+      ],
+      "orig_spacing": [
+        "0.977",
+        "0.977",
+        "2.5"
+      ],
+      "resampled_shape": [
+        500,
+        500,
+        406
+      ],
+      "bbox_shape": [
+        249,
+        266,
+        86
+      ],
+      "final_shape": [
+        249,
+        266,
+        56
+      ],
+      "reduction_pct": 94.20118488249231,
+      "bg_pct": 84.0785807030485,
+      "liver_pct": 15.281022047373167,
+      "tumor_pct": 0.6403972495783348,
+      "tumor_voxels": 23753,
+      "liver_voxels": 566789,
+      "time_sec": 15.660022258758545
+    },
+    {
+      "name": "volume-106",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        771
+      ],
+      "orig_spacing": [
+        "0.729",
+        "0.729",
+        "0.8"
+      ],
+      "resampled_shape": [
+        374,
+        374,
+        412
+      ],
+      "bbox_shape": [
+        226,
+        199,
+        130
+      ],
+      "final_shape": [
+        226,
+        199,
+        100
+      ],
+      "reduction_pct": 97.77480940565215,
+      "bg_pct": 85.42482323120025,
+      "liver_pct": 14.575176768799752,
+      "tumor_pct": 0.0,
+      "tumor_voxels": 0,
+      "liver_voxels": 655504,
+      "time_sec": 16.317233562469482
+    },
+    {
+      "name": "volume-107",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        771
+      ],
+      "orig_spacing": [
+        "0.782",
+        "0.782",
+        "0.8"
+      ],
+      "resampled_shape": [
+        401,
+        401,
+        412
+      ],
+      "bbox_shape": [
+        266,
+        218,
+        172
+      ],
+      "final_shape": [
+        266,
+        218,
+        142
+      ],
+      "reduction_pct": 95.92589540394982,
+      "bg_pct": 87.52672966820721,
+      "liver_pct": 12.449346003592778,
+      "tumor_pct": 0.023924328200006412,
+      "tumor_voxels": 1970,
+      "liver_voxels": 1025116,
+      "time_sec": 18.14280605316162
+    },
+    {
+      "name": "volume-38",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        132
+      ],
+      "orig_spacing": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "resampled_shape": [
+        512,
+        512,
+        88
+      ],
+      "bbox_shape": [
+        315,
+        274,
+        86
+      ],
+      "final_shape": [
+        315,
+        274,
+        71
+      ],
+      "reduction_pct": 82.29052803733133,
+      "bg_pct": 81.58704049112191,
+      "liver_pct": 18.412959508878085,
+      "tumor_pct": 0.0,
+      "tumor_voxels": 0,
+      "liver_voxels": 1128348,
+      "time_sec": 5.274281024932861
+    },
+    {
+      "name": "volume-16",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        689
+      ],
+      "orig_spacing": [
+        "0.703",
+        "0.703",
+        "0.8"
+      ],
+      "resampled_shape": [
+        360,
+        360,
+        368
+      ],
+      "bbox_shape": [
+        245,
+        216,
+        139
+      ],
+      "final_shape": [
+        245,
+        216,
+        109
+      ],
+      "reduction_pct": 96.80635095161692,
+      "bg_pct": 83.8195961361099,
+      "liver_pct": 14.474488062299333,
+      "tumor_pct": 1.7059158015907687,
+      "tumor_voxels": 98402,
+      "liver_voxels": 834929,
+      "time_sec": 43.737775802612305
+    },
+    {
+      "name": "volume-43",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        155
+      ],
+      "orig_spacing": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "resampled_shape": [
+        512,
+        512,
+        104
+      ],
+      "bbox_shape": [
+        327,
+        350,
+        98
+      ],
+      "final_shape": [
+        327,
+        350,
+        83
+      ],
+      "reduction_pct": 76.62119711599043,
+      "bg_pct": 80.9350534510256,
+      "liver_pct": 19.012606125682282,
+      "tumor_pct": 0.052340423292119985,
+      "tumor_voxels": 4972,
+      "liver_voxels": 1806074,
+      "time_sec": 6.320079565048218
+    },
+    {
+      "name": "volume-5",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        537
+      ],
+      "orig_spacing": [
+        "0.969",
+        "0.969",
+        "0.8"
+      ],
+      "resampled_shape": [
+        496,
+        496,
+        287
+      ],
+      "bbox_shape": [
+        238,
+        249,
+        133
+      ],
+      "final_shape": [
+        238,
+        249,
+        103
+      ],
+      "reduction_pct": 95.66389968275358,
+      "bg_pct": 84.31511802287882,
+      "liver_pct": 15.67999992136286,
+      "tumor_pct": 0.004882055758319236,
+      "tumor_voxels": 298,
+      "liver_voxels": 957105,
+      "time_sec": 40.05681300163269
+    },
+    {
+      "name": "volume-88",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        811
+      ],
+      "orig_spacing": [
+        "0.756",
+        "0.756",
+        "0.8"
+      ],
+      "resampled_shape": [
+        387,
+        387,
+        433
+      ],
+      "bbox_shape": [
+        262,
+        233,
+        133
+      ],
+      "final_shape": [
+        262,
+        233,
+        103
+      ],
+      "reduction_pct": 97.04243933963423,
+      "bg_pct": 83.49974187855791,
+      "liver_pct": 15.267557267812368,
+      "tumor_pct": 1.2327008536297155,
+      "tumor_voxels": 77509,
+      "liver_voxels": 959984,
+      "time_sec": 30.59596848487854
+    },
+    {
+      "name": "volume-18",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        845
+      ],
+      "orig_spacing": [
+        "0.922",
+        "0.922",
+        "0.8"
+      ],
+      "resampled_shape": [
+        472,
+        472,
+        451
+      ],
+      "bbox_shape": [
+        215,
+        217,
+        141
+      ],
+      "final_shape": [
+        215,
+        217,
+        111
+      ],
+      "reduction_pct": 97.66210747893746,
+      "bg_pct": 82.99874196348316,
+      "liver_pct": 16.91390028974425,
+      "tumor_pct": 0.08735774677260048,
+      "tumor_voxels": 4524,
+      "liver_voxels": 875921,
+      "time_sec": 59.40676975250244
+    },
+    {
+      "name": "volume-54",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        96
+      ],
+      "orig_spacing": [
+        "0.828",
+        "0.828",
+        "5.0"
+      ],
+      "resampled_shape": [
+        424,
+        424,
+        318
+      ],
+      "bbox_shape": [
+        253,
+        242,
+        136
+      ],
+      "final_shape": [
+        253,
+        242,
+        107
+      ],
+      "reduction_pct": 73.96794160207112,
+      "bg_pct": 81.63085684384895,
+      "liver_pct": 18.351879096016567,
+      "tumor_pct": 0.01726406013449176,
+      "tumor_voxels": 1131,
+      "liver_voxels": 1202265,
+      "time_sec": 10.509108781814575
+    },
+    {
+      "name": "volume-85",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        630
+      ],
+      "orig_spacing": [
+        "0.645",
+        "0.645",
+        "0.7"
+      ],
+      "resampled_shape": [
+        330,
+        330,
+        295
+      ],
+      "bbox_shape": [
+        243,
+        230,
+        158
+      ],
+      "final_shape": [
+        243,
+        230,
+        138
+      ],
+      "reduction_pct": 95.32982962472099,
+      "bg_pct": 82.178775078376,
+      "liver_pct": 17.781070996081848,
+      "tumor_pct": 0.040153925542149305,
+      "tumor_voxels": 3097,
+      "liver_voxels": 1371422,
+      "time_sec": 19.791089057922363
+    },
+    {
+      "name": "volume-32",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        139
+      ],
+      "orig_spacing": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "resampled_shape": [
+        512,
+        512,
+        93
+      ],
+      "bbox_shape": [
+        308,
+        307,
+        93
+      ],
+      "final_shape": [
+        308,
+        307,
+        85
+      ],
+      "reduction_pct": 77.94265198193008,
+      "bg_pct": 82.35710926360476,
+      "liver_pct": 17.642890736395238,
+      "tumor_pct": 0.0,
+      "tumor_voxels": 0,
+      "liver_voxels": 1418005,
+      "time_sec": 5.775405406951904
+    },
+    {
+      "name": "volume-27",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        861
+      ],
+      "orig_spacing": [
+        "0.738",
+        "0.738",
+        "0.7"
+      ],
+      "resampled_shape": [
+        378,
+        378,
+        402
+      ],
+      "bbox_shape": [
+        239,
+        184,
+        147
+      ],
+      "final_shape": [
+        239,
+        184,
+        117
+      ],
+      "reduction_pct": 97.7204007138774,
+      "bg_pct": 83.3293684667161,
+      "liver_pct": 15.746273414092224,
+      "tumor_pct": 0.9243581191916648,
+      "tumor_voxels": 47560,
+      "liver_voxels": 810176,
+      "time_sec": 54.01894235610962
+    },
+    {
+      "name": "volume-31",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        91
+      ],
+      "orig_spacing": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "resampled_shape": [
+        512,
+        512,
+        61
+      ],
+      "bbox_shape": [
+        284,
+        288,
+        61
+      ],
+      "final_shape": [
+        284,
+        288,
+        53
+      ],
+      "reduction_pct": 81.82788890796704,
+      "bg_pct": 82.56622412673103,
+      "liver_pct": 17.32777759323235,
+      "tumor_pct": 0.10599828003661381,
+      "tumor_voxels": 4595,
+      "liver_voxels": 751155,
+      "time_sec": 3.529252052307129
+    },
+    {
+      "name": "volume-103",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        683
+      ],
+      "orig_spacing": [
+        "0.855",
+        "0.855",
+        "0.7"
+      ],
+      "resampled_shape": [
+        438,
+        438,
+        319
+      ],
+      "bbox_shape": [
+        252,
+        234,
+        140
+      ],
+      "final_shape": [
+        252,
+        234,
+        110
+      ],
+      "reduction_pct": 96.37716580973188,
+      "bg_pct": 87.07835374502041,
+      "liver_pct": 12.520334603667937,
+      "tumor_pct": 0.4013116513116513,
+      "tumor_voxels": 26031,
+      "liver_voxels": 812129,
+      "time_sec": 16.02703619003296
+    },
+    {
+      "name": "volume-23",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        391
+      ],
+      "orig_spacing": [
+        "0.66",
+        "0.66",
+        "1.2"
+      ],
+      "resampled_shape": [
+        338,
+        338,
+        313
+      ],
+      "bbox_shape": [
+        206,
+        209,
+        123
+      ],
+      "final_shape": [
+        206,
+        209,
+        103
+      ],
+      "reduction_pct": 95.673526461472,
+      "bg_pct": 81.15083293457167,
+      "liver_pct": 18.51490631994772,
+      "tumor_pct": 0.3342607454806134,
+      "tumor_voxels": 14823,
+      "liver_voxels": 821055,
+      "time_sec": 26.567399501800537
+    },
+    {
+      "name": "volume-62",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        188
+      ],
+      "orig_spacing": [
+        "0.645",
+        "0.645",
+        "2.0"
+      ],
+      "resampled_shape": [
+        330,
+        330,
+        250
+      ],
+      "bbox_shape": [
+        220,
+        177,
+        151
+      ],
+      "final_shape": [
+        220,
+        177,
+        128
+      ],
+      "reduction_pct": 89.88634474734043,
+      "bg_pct": 84.14122688751927,
+      "liver_pct": 15.823161434257832,
+      "tumor_pct": 0.035611678222907034,
+      "tumor_voxels": 1775,
+      "liver_voxels": 788677,
+      "time_sec": 7.113562107086182
+    },
+    {
+      "name": "volume-77",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        94
+      ],
+      "orig_spacing": [
+        "0.781",
+        "0.781",
+        "5.0"
+      ],
+      "resampled_shape": [
+        400,
+        400,
+        311
+      ],
+      "bbox_shape": [
+        246,
+        257,
+        142
+      ],
+      "final_shape": [
+        246,
+        257,
+        127
+      ],
+      "reduction_pct": 67.41601659896526,
+      "bg_pct": 84.23960113555607,
+      "liver_pct": 15.649777549278296,
+      "tumor_pct": 0.11062131516563181,
+      "tumor_voxels": 8882,
+      "liver_voxels": 1256551,
+      "time_sec": 9.238203763961792
+    },
+    {
+      "name": "volume-63",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        104
+      ],
+      "orig_spacing": [
+        "0.74",
+        "0.74",
+        "5.0"
+      ],
+      "resampled_shape": [
+        379,
+        379,
+        344
+      ],
+      "bbox_shape": [
+        235,
+        214,
+        163
+      ],
+      "final_shape": [
+        235,
+        214,
+        133
+      ],
+      "reduction_pct": 75.46647145197942,
+      "bg_pct": 82.6225785182782,
+      "liver_pct": 17.358658128718098,
+      "tumor_pct": 0.018763353003706323,
+      "tumor_voxels": 1255,
+      "liver_voxels": 1161046,
+      "time_sec": 9.353246688842773
+    },
+    {
+      "name": "volume-41",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        113
+      ],
+      "orig_spacing": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "resampled_shape": [
+        512,
+        512,
+        76
+      ],
+      "bbox_shape": [
+        365,
+        243,
+        76
+      ],
+      "final_shape": [
+        365,
+        243,
+        76
+      ],
+      "reduction_pct": 77.24408175038026,
+      "bg_pct": 83.79099278722767,
+      "liver_pct": 16.209007212772335,
+      "tumor_pct": 0.0,
+      "tumor_voxels": 0,
+      "liver_voxels": 1092620,
+      "time_sec": 4.5782787799835205
+    },
+    {
+      "name": "volume-64",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        230
+      ],
+      "orig_spacing": [
+        "0.777",
+        "0.777",
+        "2.0"
+      ],
+      "resampled_shape": [
+        398,
+        398,
+        306
+      ],
+      "bbox_shape": [
+        254,
+        227,
+        174
+      ],
+      "final_shape": [
+        254,
+        227,
+        148
+      ],
+      "reduction_pct": 85.8468362559443,
+      "bg_pct": 82.88409381319299,
+      "liver_pct": 15.428709173289283,
+      "tumor_pct": 1.6871970135177323,
+      "tumor_voxels": 143975,
+      "liver_voxels": 1316591,
+      "time_sec": 10.999146938323975
+    },
+    {
+      "name": "volume-99",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        629
+      ],
+      "orig_spacing": [
+        "0.781",
+        "0.781",
+        "0.7"
+      ],
+      "resampled_shape": [
+        400,
+        400,
+        294
+      ],
+      "bbox_shape": [
+        245,
+        229,
+        137
+      ],
+      "final_shape": [
+        245,
+        229,
+        116
+      ],
+      "reduction_pct": 96.05298307628055,
+      "bg_pct": 83.83025669234716,
+      "liver_pct": 16.117409168154538,
+      "tumor_pct": 0.052334139498292916,
+      "tumor_voxels": 3406,
+      "liver_voxels": 1048950,
+      "time_sec": 22.70752716064453
+    },
+    {
+      "name": "volume-94",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        917
+      ],
+      "orig_spacing": [
+        "0.838",
+        "0.838",
+        "0.7"
+      ],
+      "resampled_shape": [
+        429,
+        429,
+        428
+      ],
+      "bbox_shape": [
+        225,
+        255,
+        156
+      ],
+      "final_shape": [
+        225,
+        255,
+        126
+      ],
+      "reduction_pct": 96.99264992284411,
+      "bg_pct": 86.3072656222983,
+      "liver_pct": 13.408514022893108,
+      "tumor_pct": 0.2842203548085901,
+      "tumor_voxels": 20547,
+      "liver_voxels": 969335,
+      "time_sec": 36.26646614074707
+    },
+    {
+      "name": "volume-53",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        105
+      ],
+      "orig_spacing": [
+        "0.85",
+        "0.85",
+        "4.0"
+      ],
+      "resampled_shape": [
+        435,
+        435,
+        278
+      ],
+      "bbox_shape": [
+        200,
+        220,
+        152
+      ],
+      "final_shape": [
+        200,
+        220,
+        127
+      ],
+      "reduction_pct": 79.69854445684523,
+      "bg_pct": 80.773031496063,
+      "liver_pct": 19.14949892627058,
+      "tumor_pct": 0.07746957766642806,
+      "tumor_voxels": 4329,
+      "liver_voxels": 1070074,
+      "time_sec": 10.252896308898926
+    },
+    {
+      "name": "volume-95",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        841
+      ],
+      "orig_spacing": [
+        "0.738",
+        "0.738",
+        "0.8"
+      ],
+      "resampled_shape": [
+        378,
+        378,
+        449
+      ],
+      "bbox_shape": [
+        292,
+        189,
+        180
+      ],
+      "final_shape": [
+        292,
+        189,
+        150
+      ],
+      "reduction_pct": 96.24508598046411,
+      "bg_pct": 85.71797009011621,
+      "liver_pct": 14.273151168128337,
+      "tumor_pct": 0.008878741755454084,
+      "tumor_voxels": 735,
+      "liver_voxels": 1181560,
+      "time_sec": 33.60689949989319
+    },
+    {
+      "name": "volume-55",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        192
+      ],
+      "orig_spacing": [
+        "0.666",
+        "0.666",
+        "2.5"
+      ],
+      "resampled_shape": [
+        341,
+        341,
+        319
+      ],
+      "bbox_shape": [
+        305,
+        190,
+        183
+      ],
+      "final_shape": [
+        305,
+        190,
+        164
+      ],
+      "reduction_pct": 81.11764589945474,
+      "bg_pct": 86.74208211452262,
+      "liver_pct": 13.236968370546519,
+      "tumor_pct": 0.02094951493086976,
+      "tumor_voxels": 1991,
+      "liver_voxels": 1258015,
+      "time_sec": 9.35671615600586
+    },
+    {
+      "name": "volume-22",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        247
+      ],
+      "orig_spacing": [
+        "0.977",
+        "0.977",
+        "3.27"
+      ],
+      "resampled_shape": [
+        500,
+        500,
+        537
+      ],
+      "bbox_shape": [
+        201,
+        202,
+        140
+      ],
+      "final_shape": [
+        201,
+        202,
+        110
+      ],
+      "reduction_pct": 93.10231691429972,
+      "bg_pct": 79.93585179413463,
+      "liver_pct": 19.62700001343418,
+      "tumor_pct": 0.4371481924311834,
+      "tumor_voxels": 19524,
+      "liver_voxels": 876585,
+      "time_sec": 33.05607581138611
+    },
+    {
+      "name": "volume-86",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        647
+      ],
+      "orig_spacing": [
+        "0.684",
+        "0.684",
+        "0.7"
+      ],
+      "resampled_shape": [
+        350,
+        350,
+        302
+      ],
+      "bbox_shape": [
+        226,
+        238,
+        162
+      ],
+      "final_shape": [
+        226,
+        238,
+        141
+      ],
+      "reduction_pct": 95.52842719477516,
+      "bg_pct": 84.57561522066932,
+      "liver_pct": 15.406914036561716,
+      "tumor_pct": 0.01747074276895846,
+      "tumor_voxels": 1325,
+      "liver_voxels": 1168477,
+      "time_sec": 24.135233402252197
+    },
+    {
+      "name": "volume-65",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        513
+      ],
+      "orig_spacing": [
+        "0.625",
+        "0.625",
+        "0.799"
+      ],
+      "resampled_shape": [
+        320,
+        320,
+        274
+      ],
+      "bbox_shape": [
+        238,
+        165,
+        144
+      ],
+      "final_shape": [
+        238,
+        165,
+        117
+      ],
+      "reduction_pct": 96.58343666478207,
+      "bg_pct": 87.35952500658384,
+      "liver_pct": 12.632400279459103,
+      "tumor_pct": 0.008074713957066899,
+      "tumor_voxels": 371,
+      "liver_voxels": 580407,
+      "time_sec": 17.86286234855652
+    },
+    {
+      "name": "volume-42",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        125
+      ],
+      "orig_spacing": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "resampled_shape": [
+        512,
+        512,
+        84
+      ],
+      "bbox_shape": [
+        292,
+        237,
+        84
+      ],
+      "final_shape": [
+        292,
+        237,
+        84
+      ],
+      "reduction_pct": 82.25971679687501,
+      "bg_pct": 84.0687883441915,
+      "liver_pct": 15.911136433071581,
+      "tumor_pct": 0.020075222736918592,
+      "tumor_voxels": 1167,
+      "liver_voxels": 924936,
+      "time_sec": 4.884670972824097
+    },
+    {
+      "name": "volume-1",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        123
+      ],
+      "orig_spacing": [
+        "0.676",
+        "0.676",
+        "5.0"
+      ],
+      "resampled_shape": [
+        346,
+        346,
+        408
+      ],
+      "bbox_shape": [
+        259,
+        208,
+        136
+      ],
+      "final_shape": [
+        259,
+        208,
+        106
+      ],
+      "reduction_pct": 82.28978102769308,
+      "bg_pct": 82.65054202554202,
+      "liver_pct": 17.16017282055018,
+      "tumor_pct": 0.1892851539077954,
+      "tumor_voxels": 10809,
+      "liver_voxels": 979920,
+      "time_sec": 13.653658628463745
+    },
+    {
+      "name": "volume-49",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        254
+      ],
+      "orig_spacing": [
+        "0.955",
+        "0.955",
+        "2.5"
+      ],
+      "resampled_shape": [
+        489,
+        489,
+        423
+      ],
+      "bbox_shape": [
+        236,
+        221,
+        89
+      ],
+      "final_shape": [
+        236,
+        221,
+        59
+      ],
+      "reduction_pct": 95.37850327379121,
+      "bg_pct": 84.14758982504897,
+      "liver_pct": 15.666267169807396,
+      "tumor_pct": 0.18614300514363039,
+      "tumor_voxels": 5728,
+      "liver_voxels": 482083,
+      "time_sec": 17.81820034980774
+    },
+    {
+      "name": "volume-89",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        766
+      ],
+      "orig_spacing": [
+        "0.637",
+        "0.637",
+        "0.8"
+      ],
+      "resampled_shape": [
+        327,
+        327,
+        409
+      ],
+      "bbox_shape": [
+        277,
+        210,
+        143
+      ],
+      "final_shape": [
+        277,
+        210,
+        113
+      ],
+      "reduction_pct": 96.72652660399753,
+      "bg_pct": 87.4177913074434,
+      "liver_pct": 12.582208692556605,
+      "tumor_pct": 0.0,
+      "tumor_voxels": 0,
+      "liver_voxels": 827055,
+      "time_sec": 42.272573947906494
+    },
+    {
+      "name": "volume-82",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        519
+      ],
+      "orig_spacing": [
+        "0.625",
+        "0.625",
+        "0.801"
+      ],
+      "resampled_shape": [
+        320,
+        320,
+        278
+      ],
+      "bbox_shape": [
+        268,
+        213,
+        125
+      ],
+      "final_shape": [
+        268,
+        213,
+        100
+      ],
+      "reduction_pct": 95.80427401327674,
+      "bg_pct": 82.2154544180506,
+      "liver_pct": 17.27223039730923,
+      "tumor_pct": 0.5123151846401793,
+      "tumor_voxels": 29245,
+      "liver_voxels": 985968,
+      "time_sec": 12.075860977172852
+    },
+    {
+      "name": "volume-74",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        107
+      ],
+      "orig_spacing": [
+        "0.826",
+        "0.826",
+        "5.0"
+      ],
+      "resampled_shape": [
+        423,
+        423,
+        354
+      ],
+      "bbox_shape": [
+        304,
+        266,
+        147
+      ],
+      "final_shape": [
+        304,
+        266,
+        117
+      ],
+      "reduction_pct": 66.2699191369743,
+      "bg_pct": 82.08821226480507,
+      "liver_pct": 17.01895173155561,
+      "tumor_pct": 0.8928360036393277,
+      "tumor_voxels": 84472,
+      "liver_voxels": 1610178,
+      "time_sec": 12.136754274368286
+    },
+    {
+      "name": "volume-35",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        124
+      ],
+      "orig_spacing": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "resampled_shape": [
+        512,
+        512,
+        83
+      ],
+      "bbox_shape": [
+        473,
+        292,
+        83
+      ],
+      "final_shape": [
+        473,
+        292,
+        83
+      ],
+      "reduction_pct": 64.73365291472403,
+      "bg_pct": 81.27065009436804,
+      "liver_pct": 18.61061786024459,
+      "tumor_pct": 0.11873204538737649,
+      "tumor_voxels": 13611,
+      "liver_voxels": 2133452,
+      "time_sec": 5.727473735809326
+    },
+    {
+      "name": "volume-78",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        198
+      ],
+      "orig_spacing": [
+        "0.785",
+        "0.785",
+        "2.5"
+      ],
+      "resampled_shape": [
+        402,
+        402,
+        329
+      ],
+      "bbox_shape": [
+        236,
+        221,
+        138
+      ],
+      "final_shape": [
+        236,
+        221,
+        108
+      ],
+      "reduction_pct": 89.1476717862216,
+      "bg_pct": 81.52360937131625,
+      "liver_pct": 18.252951260179575,
+      "tumor_pct": 0.2234393685041741,
+      "tumor_voxels": 12586,
+      "liver_voxels": 1028161,
+      "time_sec": 11.094673156738281
+    },
+    {
+      "name": "volume-75",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        89
+      ],
+      "orig_spacing": [
+        "0.758",
+        "0.758",
+        "5.0"
+      ],
+      "resampled_shape": [
+        388,
+        388,
+        294
+      ],
+      "bbox_shape": [
+        249,
+        203,
+        162
+      ],
+      "final_shape": [
+        249,
+        203,
+        133
+      ],
+      "reduction_pct": 71.18510128406996,
+      "bg_pct": 82.58027108247799,
+      "liver_pct": 17.341903634390146,
+      "tumor_pct": 0.07782528313186075,
+      "tumor_voxels": 5232,
+      "liver_voxels": 1165853,
+      "time_sec": 10.042006969451904
+    },
+    {
+      "name": "volume-91",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        751
+      ],
+      "orig_spacing": [
+        "0.858",
+        "0.858",
+        "0.8"
+      ],
+      "resampled_shape": [
+        439,
+        439,
+        401
+      ],
+      "bbox_shape": [
+        256,
+        264,
+        141
+      ],
+      "final_shape": [
+        256,
+        264,
+        111
+      ],
+      "reduction_pct": 96.18945572569906,
+      "bg_pct": 85.45137822481573,
+      "liver_pct": 14.548621775184275,
+      "tumor_pct": 0.0,
+      "tumor_voxels": 0,
+      "liver_voxels": 1091412,
+      "time_sec": 43.513466358184814
+    },
+    {
+      "name": "volume-12",
+      "subset": "train",
+      "orig_shape": [
+        512,
+        512,
+        455
+      ],
+      "orig_spacing": [
+        "0.654",
+        "0.654",
+        "1.0"
+      ],
+      "resampled_shape": [
+        335,
+        335,
+        304
+      ],
+      "bbox_shape": [
+        264,
+        217,
+        147
+      ],
+      "final_shape": [
+        264,
+        217,
+        132
+      ],
+      "reduction_pct": 93.66004356971153,
+      "bg_pct": 84.14019488982832,
+      "liver_pct": 15.857133864831813,
+      "tumor_pct": 0.002671245339867041,
+      "tumor_voxels": 202,
+      "liver_voxels": 1199119,
+      "time_sec": 28.824064016342163
+    },
+    {
+      "name": "volume-52",
+      "subset": "val",
+      "orig_shape": [
+        512,
+        512,
+        237
+      ],
+      "orig_spacing": [
+        "0.836",
+        "0.836",
+        "2.5"
+      ],
+      "resampled_shape": [
+        428,
+        428,
+        394
+      ],
+      "bbox_shape": [
+        253,
+        249,
+        77
+      ],
+      "final_shape": [
+        253,
+        249,
+        47
+      ],
+      "reduction_pct": 95.2342697336704,
+      "bg_pct": 82.88834422713138,
+      "liver_pct": 16.71508167055574,
+      "tumor_pct": 0.3965741023128761,
+      "tumor_voxels": 11742,
+      "liver_voxels": 494910,
+      "time_sec": 13.169843196868896
+    },
+    {
+      "name": "volume-2",
+      "subset": "val",
+      "orig_shape": [
+        512,
+        512,
+        517
+      ],
+      "orig_spacing": [
+        "0.775",
+        "0.775",
+        "1.0"
+      ],
+      "resampled_shape": [
+        397,
+        397,
+        345
+      ],
+      "bbox_shape": [
+        297,
+        238,
+        132
+      ],
+      "final_shape": [
+        297,
+        238,
+        102
+      ],
+      "reduction_pct": 94.68010435713099,
+      "bg_pct": 82.21599196224341,
+      "liver_pct": 17.70608817898322,
+      "tumor_pct": 0.07791985877337665,
+      "tumor_voxels": 5618,
+      "liver_voxels": 1276604,
+      "time_sec": 36.17263078689575
+    },
+    {
+      "name": "volume-98",
+      "subset": "val",
+      "orig_shape": [
+        512,
+        512,
+        645
+      ],
+      "orig_spacing": [
+        "0.734",
+        "0.734",
+        "0.7"
+      ],
+      "resampled_shape": [
+        376,
+        376,
+        302
+      ],
+      "bbox_shape": [
+        240,
+        225,
+        141
+      ],
+      "final_shape": [
+        240,
+        225,
+        123
+      ],
+      "reduction_pct": 96.07174895530524,
+      "bg_pct": 84.38438723276121,
+      "liver_pct": 13.307964468533575,
+      "tumor_pct": 2.3076482987052094,
+      "tumor_voxels": 153274,
+      "liver_voxels": 883915,
+      "time_sec": 23.51990056037903
+    },
+    {
+      "name": "volume-34",
+      "subset": "val",
+      "orig_shape": [
+        512,
+        512,
+        151
+      ],
+      "orig_spacing": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "resampled_shape": [
+        512,
+        512,
+        101
+      ],
+      "bbox_shape": [
+        381,
+        270,
+        89
+      ],
+      "final_shape": [
+        381,
+        270,
+        74
+      ],
+      "reduction_pct": 80.76892372788183,
+      "bg_pct": 87.19562081766806,
+      "liver_pct": 12.804379182331939,
+      "tumor_pct": 0.0,
+      "tumor_voxels": 0,
+      "liver_voxels": 974718,
+      "time_sec": 7.081941604614258
+    },
+    {
+      "name": "volume-7",
+      "subset": "val",
+      "orig_shape": [
+        512,
+        512,
+        541
+      ],
+      "orig_spacing": [
+        "0.748",
+        "0.748",
+        "1.0"
+      ],
+      "resampled_shape": [
+        383,
+        383,
+        361
+      ],
+      "bbox_shape": [
+        276,
+        239,
+        158
+      ],
+      "final_shape": [
+        276,
+        239,
+        128
+      ],
+      "reduction_pct": 94.04639845194085,
+      "bg_pct": 86.45923344551574,
+      "liver_pct": 13.398193522224243,
+      "tumor_pct": 0.1425730322600206,
+      "tumor_voxels": 12038,
+      "liver_voxels": 1131262,
+      "time_sec": 39.77618932723999
+    },
+    {
+      "name": "volume-51",
+      "subset": "val",
+      "orig_shape": [
+        512,
+        512,
+        227
+      ],
+      "orig_spacing": [
+        "0.902",
+        "0.902",
+        "3.0"
+      ],
+      "resampled_shape": [
+        462,
+        462,
+        453
+      ],
+      "bbox_shape": [
+        296,
+        279,
+        77
+      ],
+      "final_shape": [
+        296,
+        279,
+        47
+      ],
+      "reduction_pct": 93.47729115759223,
+      "bg_pct": 86.64855109668939,
+      "liver_pct": 11.212493838823626,
+      "tumor_pct": 2.1389550644869795,
+      "tumor_voxels": 83320,
+      "liver_voxels": 436767,
+      "time_sec": 16.616297721862793
+    },
+    {
+      "name": "volume-8",
+      "subset": "val",
+      "orig_shape": [
+        512,
+        512,
+        541
+      ],
+      "orig_spacing": [
+        "0.848",
+        "0.848",
+        "1.0"
+      ],
+      "resampled_shape": [
+        434,
+        434,
+        361
+      ],
+      "bbox_shape": [
+        253,
+        236,
+        160
+      ],
+      "final_shape": [
+        253,
+        236,
+        130
+      ],
+      "reduction_pct": 94.52683313055972,
+      "bg_pct": 83.6756703134743,
+      "liver_pct": 16.19633498410212,
+      "tumor_pct": 0.12799470242358968,
+      "tumor_voxels": 9935,
+      "liver_voxels": 1257166,
+      "time_sec": 40.485188245773315
+    },
+    {
+      "name": "volume-90",
+      "subset": "val",
+      "orig_shape": [
+        512,
+        512,
+        751
+      ],
+      "orig_spacing": [
+        "0.781",
+        "0.781",
+        "0.8"
+      ],
+      "resampled_shape": [
+        400,
+        400,
+        401
+      ],
+      "bbox_shape": [
+        232,
+        254,
+        137
+      ],
+      "final_shape": [
+        232,
+        254,
+        107
+      ],
+      "reduction_pct": 96.79723097068492,
+      "bg_pct": 81.86435656628967,
+      "liver_pct": 16.830534204896964,
+      "tumor_pct": 1.3051092288133659,
+      "tumor_voxels": 82291,
+      "liver_voxels": 1061215,
+      "time_sec": 31.222028493881226
+    },
+    {
+      "name": "volume-10",
+      "subset": "val",
+      "orig_shape": [
+        512,
+        512,
+        501
+      ],
+      "orig_spacing": [
+        "0.77",
+        "0.77",
+        "1.0"
+      ],
+      "resampled_shape": [
+        394,
+        394,
+        334
+      ],
+      "bbox_shape": [
+        280,
+        232,
+        157
+      ],
+      "final_shape": [
+        280,
+        232,
+        130
+      ],
+      "reduction_pct": 93.56998892839322,
+      "bg_pct": 86.51256394467602,
+      "liver_pct": 13.371992231906026,
+      "tumor_pct": 0.11544382341796135,
+      "tumor_voxels": 9749,
+      "liver_voxels": 1129238,
+      "time_sec": 34.66820669174194
+    },
+    {
+      "name": "volume-19",
+      "subset": "val",
+      "orig_shape": [
+        512,
+        512,
+        547
+      ],
+      "orig_spacing": [
+        "0.752",
+        "0.752",
+        "0.8"
+      ],
+      "resampled_shape": [
+        385,
+        385,
+        292
+      ],
+      "bbox_shape": [
+        244,
+        242,
+        139
+      ],
+      "final_shape": [
+        244,
+        242,
+        110
+      ],
+      "reduction_pct": 95.47028759497829,
+      "bg_pct": 81.99406338140928,
+      "liver_pct": 17.92027441465187,
+      "tumor_pct": 0.08566220393886022,
+      "tumor_voxels": 5564,
+      "liver_voxels": 1163972,
+      "time_sec": 35.786879777908325
+    },
+    {
+      "name": "volume-47",
+      "subset": "val",
+      "orig_shape": [
+        512,
+        512,
+        225
+      ],
+      "orig_spacing": [
+        "1.0",
+        "1.0",
+        "1.0"
+      ],
+      "resampled_shape": [
+        512,
+        512,
+        150
+      ],
+      "bbox_shape": [
+        315,
+        276,
+        86
+      ],
+      "final_shape": [
+        315,
+        276,
+        67
+      ],
+      "reduction_pct": 90.12420654296875,
+      "bg_pct": 84.43994657492387,
+      "liver_pct": 15.560053425076138,
+      "tumor_pct": 0.0,
+      "tumor_voxels": 0,
+      "liver_voxels": 906370,
+      "time_sec": 8.731721878051758
+    },
+    {
+      "name": "volume-84",
+      "subset": "val",
+      "orig_shape": [
+        512,
+        512,
+        733
+      ],
+      "orig_spacing": [
+        "0.758",
+        "0.758",
+        "0.7"
+      ],
+      "resampled_shape": [
+        388,
+        388,
+        343
+      ],
+      "bbox_shape": [
+        265,
+        267,
+        160
+      ],
+      "final_shape": [
+        265,
+        267,
+        130
+      ],
+      "reduction_pct": 95.2130753541871,
+      "bg_pct": 84.1668161532482,
+      "liver_pct": 14.258454145670596,
+      "tumor_pct": 1.5747297010811956,
+      "tumor_voxels": 144846,
+      "liver_voxels": 1311514,
+      "time_sec": 30.843914031982422
+    },
+    {
+      "name": "volume-83",
+      "subset": "val",
+      "orig_shape": [
+        512,
+        512,
+        871
+      ],
+      "orig_spacing": [
+        "0.742",
+        "0.742",
+        "0.7"
+      ],
+      "resampled_shape": [
+        380,
+        380,
+        407
+      ],
+      "bbox_shape": [
+        259,
+        179,
+        141
+      ],
+      "final_shape": [
+        259,
+        179,
+        111
+      ],
+      "reduction_pct": 97.74618794805832,
+      "bg_pct": 85.23051858398378,
+      "liver_pct": 14.769034473096077,
+      "tumor_pct": 0.0004469429201423766,
+      "tumor_voxels": 23,
+      "liver_voxels": 760025,
+      "time_sec": 31.462324619293213
+    },
+    {
+      "name": "volume-6",
+      "subset": "val",
+      "orig_shape": [
+        512,
+        512,
+        518
+      ],
+      "orig_spacing": [
+        "0.873",
+        "0.873",
+        "1.0"
+      ],
+      "resampled_shape": [
+        447,
+        447,
+        346
+      ],
+      "bbox_shape": [
+        277,
+        242,
+        162
+      ],
+      "final_shape": [
+        277,
+        242,
+        133
+      ],
+      "reduction_pct": 93.43435957625105,
+      "bg_pct": 85.89694467693535,
+      "liver_pct": 13.922392878397922,
+      "tumor_pct": 0.18066244466672843,
+      "tumor_voxels": 16107,
+      "liver_voxels": 1241254,
+      "time_sec": 41.03527021408081
+    },
+    {
+      "name": "volume-13",
+      "subset": "val",
+      "orig_shape": [
+        512,
+        512,
+        605
+      ],
+      "orig_spacing": [
+        "0.848",
+        "0.848",
+        "1.0"
+      ],
+      "resampled_shape": [
+        434,
+        434,
+        404
+      ],
+      "bbox_shape": [
+        240,
+        247,
+        134
+      ],
+      "final_shape": [
+        240,
+        247,
+        104
+      ],
+      "reduction_pct": 96.1127162964876,
+      "bg_pct": 85.24312584345479,
+      "liver_pct": 14.57029222464445,
+      "tumor_pct": 0.1865819319007578,
+      "tumor_voxels": 11503,
+      "liver_voxels": 898276,
+      "time_sec": 43.18299078941345
+    },
+    {
+      "name": "volume-21",
+      "subset": "val",
+      "orig_shape": [
+        512,
+        512,
+        437
+      ],
+      "orig_spacing": [
+        "0.768",
+        "0.768",
+        "1.0"
+      ],
+      "resampled_shape": [
+        393,
+        393,
+        292
+      ],
+      "bbox_shape": [
+        285,
+        230,
+        139
+      ],
+      "final_shape": [
+        285,
+        230,
+        124
+      ],
+      "reduction_pct": 92.9046630859375,
+      "bg_pct": 85.40189709898871,
+      "liver_pct": 14.424140646145519,
+      "tumor_pct": 0.17396225486577593,
+      "tumor_voxels": 14140,
+      "liver_voxels": 1172423,
+      "time_sec": 29.91934299468994
+    },
+    {
+      "name": "volume-72",
+      "subset": "val",
+      "orig_shape": [
+        512,
+        512,
+        93
+      ],
+      "orig_spacing": [
+        "0.678",
+        "0.678",
+        "2.5"
+      ],
+      "resampled_shape": [
+        347,
+        347,
+        154
+      ],
+      "bbox_shape": [
+        222,
+        231,
+        128
+      ],
+      "final_shape": [
+        222,
+        231,
+        107
+      ],
+      "reduction_pct": 77.49257241525957,
+      "bg_pct": 82.65456863587704,
+      "liver_pct": 17.033084790094136,
+      "tumor_pct": 0.312346574028817,
+      "tumor_voxels": 17139,
+      "liver_voxels": 934635,
+      "time_sec": 4.563166379928589
+    },
+    {
+      "name": "volume-111",
+      "subset": "test",
+      "orig_shape": [
+        512,
+        512,
+        761
+      ],
+      "orig_spacing": [
+        "0.782",
+        "0.782",
+        "0.8"
+      ],
+      "resampled_shape": [
+        401,
+        401,
+        406
+      ],
+      "bbox_shape": [
+        261,
+        272,
+        165
+      ],
+      "final_shape": [
+        261,
+        272,
+        135
+      ],
+      "reduction_pct": 95.19582740893972,
+      "bg_pct": 84.32181195168575,
+      "liver_pct": 15.653208707919099,
+      "tumor_pct": 0.024979340395161895,
+      "tumor_voxels": 2394,
+      "liver_voxels": 1500191,
+      "time_sec": 41.72757053375244
+    },
+    {
+      "name": "volume-112",
+      "subset": "test",
+      "orig_shape": [
+        512,
+        512,
+        751
+      ],
+      "orig_spacing": [
+        "0.64",
+        "0.64",
+        "0.8"
+      ],
+      "resampled_shape": [
+        328,
+        328,
+        401
+      ],
+      "bbox_shape": [
+        241,
+        220,
+        142
+      ],
+      "final_shape": [
+        241,
+        220,
+        112
+      ],
+      "reduction_pct": 96.98367671230027,
+      "bg_pct": 85.36675850083526,
+      "liver_pct": 14.628475777334698,
+      "tumor_pct": 0.004765721830037183,
+      "tumor_voxels": 283,
+      "liver_voxels": 868674,
+      "time_sec": 40.172325134277344
+    },
+    {
+      "name": "volume-113",
+      "subset": "test",
+      "orig_shape": [
+        512,
+        512,
+        836
+      ],
+      "orig_spacing": [
+        "0.781",
+        "0.781",
+        "0.8"
+      ],
+      "resampled_shape": [
+        400,
+        400,
+        446
+      ],
+      "bbox_shape": [
+        260,
+        248,
+        131
+      ],
+      "final_shape": [
+        260,
+        248,
+        101
+      ],
+      "reduction_pct": 97.0283325779381,
+      "bg_pct": 83.15812102302041,
+      "liver_pct": 16.418338328870107,
+      "tumor_pct": 0.42354064810947595,
+      "tumor_voxels": 27583,
+      "liver_voxels": 1069241,
+      "time_sec": 56.878204345703125
+    },
+    {
+      "name": "volume-114",
+      "subset": "test",
+      "orig_shape": [
+        512,
+        512,
+        846
+      ],
+      "orig_spacing": [
+        "0.782",
+        "0.782",
+        "0.8"
+      ],
+      "resampled_shape": [
+        401,
+        401,
+        452
+      ],
+      "bbox_shape": [
+        268,
+        238,
+        155
+      ],
+      "final_shape": [
+        268,
+        238,
+        125
+      ],
+      "reduction_pct": 96.40489582756169,
+      "bg_pct": 84.88897529160919,
+      "liver_pct": 15.111024708390818,
+      "tumor_pct": 0.0,
+      "tumor_voxels": 0,
+      "liver_voxels": 1204802,
+      "time_sec": 49.97577786445618
+    },
+    {
+      "name": "volume-115",
+      "subset": "test",
+      "orig_shape": [
+        512,
+        512,
+        846
+      ],
+      "orig_spacing": [
+        "0.756",
+        "0.756",
+        "0.8"
+      ],
+      "resampled_shape": [
+        387,
+        387,
+        452
+      ],
+      "bbox_shape": [
+        262,
+        233,
+        140
+      ],
+      "final_shape": [
+        262,
+        233,
+        110
+      ],
+      "reduction_pct": 96.9721133545499,
+      "bg_pct": 84.97718560965949,
+      "liver_pct": 15.022814390340518,
+      "tumor_pct": 0.0,
+      "tumor_voxels": 0,
+      "liver_voxels": 1008791,
+      "time_sec": 21.932533264160156
+    },
+    {
+      "name": "volume-116",
+      "subset": "test",
+      "orig_shape": [
+        512,
+        512,
+        908
+      ],
+      "orig_spacing": [
+        "0.789",
+        "0.789",
+        "0.7"
+      ],
+      "resampled_shape": [
+        404,
+        404,
+        424
+      ],
+      "bbox_shape": [
+        238,
+        270,
+        142
+      ],
+      "final_shape": [
+        238,
+        270,
+        112
+      ],
+      "reduction_pct": 96.97633986956222,
+      "bg_pct": 82.7926726246054,
+      "liver_pct": 14.74224411987017,
+      "tumor_pct": 2.465083255524432,
+      "tumor_voxels": 177415,
+      "liver_voxels": 1061017,
+      "time_sec": 55.04544758796692
+    },
+    {
+      "name": "volume-117",
+      "subset": "test",
+      "orig_shape": [
+        512,
+        512,
+        836
+      ],
+      "orig_spacing": [
+        "0.68",
+        "0.68",
+        "0.8"
+      ],
+      "resampled_shape": [
+        348,
+        348,
+        446
+      ],
+      "bbox_shape": [
+        241,
+        220,
+        178
+      ],
+      "final_shape": [
+        241,
+        220,
+        148
+      ],
+      "reduction_pct": 96.4194046823602,
+      "bg_pct": 84.15581320664309,
+      "liver_pct": 12.583675716455799,
+      "tumor_pct": 3.2605110769011185,
+      "tumor_voxels": 255851,
+      "liver_voxels": 987436,
+      "time_sec": 47.48257565498352
+    },
+    {
+      "name": "volume-118",
+      "subset": "test",
+      "orig_shape": [
+        512,
+        512,
+        427
+      ],
+      "orig_spacing": [
+        "0.744",
+        "0.744",
+        "1.5"
+      ],
+      "resampled_shape": [
+        381,
+        381,
+        427
+      ],
+      "bbox_shape": [
+        267,
+        235,
+        162
+      ],
+      "final_shape": [
+        267,
+        235,
+        132
+      ],
+      "reduction_pct": 92.60079162740595,
+      "bg_pct": 82.8902942888121,
+      "liver_pct": 14.304725476133557,
+      "tumor_pct": 2.8049802350543445,
+      "tumor_voxels": 232318,
+      "liver_voxels": 1184766,
+      "time_sec": 32.864335775375366
+    },
+    {
+      "name": "volume-119",
+      "subset": "test",
+      "orig_shape": [
+        512,
+        512,
+        461
+      ],
+      "orig_spacing": [
+        "0.844",
+        "0.844",
+        "1.5"
+      ],
+      "resampled_shape": [
+        432,
+        432,
+        461
+      ],
+      "bbox_shape": [
+        261,
+        242,
+        172
+      ],
+      "final_shape": [
+        261,
+        242,
+        142
+      ],
+      "reduction_pct": 92.57830042642523,
+      "bg_pct": 81.26473129011872,
+      "liver_pct": 18.735268709881275,
+      "tumor_pct": 0.0,
+      "tumor_voxels": 0,
+      "liver_voxels": 1680367,
+      "time_sec": 39.20316410064697
+    },
+    {
+      "name": "volume-120",
+      "subset": "test",
+      "orig_shape": [
+        512,
+        512,
+        424
+      ],
+      "orig_spacing": [
+        "0.744",
+        "0.744",
+        "1.5"
+      ],
+      "resampled_shape": [
+        381,
+        381,
+        424
+      ],
+      "bbox_shape": [
+        255,
+        204,
+        160
+      ],
+      "final_shape": [
+        255,
+        204,
+        130
+      ],
+      "reduction_pct": 93.91573779987839,
+      "bg_pct": 84.324534942182,
+      "liver_pct": 15.632774376719013,
+      "tumor_pct": 0.0426906810989856,
+      "tumor_voxels": 2887,
+      "liver_voxels": 1057182,
+      "time_sec": 28.497122526168823
+    },
+    {
+      "name": "volume-121",
+      "subset": "test",
+      "orig_shape": [
+        512,
+        512,
+        463
+      ],
+      "orig_spacing": [
+        "0.795",
+        "0.795",
+        "1.5"
+      ],
+      "resampled_shape": [
+        407,
+        407,
+        463
+      ],
+      "bbox_shape": [
+        238,
+        234,
+        153
+      ],
+      "final_shape": [
+        238,
+        234,
+        123
+      ],
+      "reduction_pct": 94.3561298543382,
+      "bg_pct": 82.39943673946543,
+      "liver_pct": 17.581147530932324,
+      "tumor_pct": 0.01941572960224323,
+      "tumor_voxels": 1330,
+      "liver_voxels": 1204329,
+      "time_sec": 36.14746069908142
+    },
+    {
+      "name": "volume-122",
+      "subset": "test",
+      "orig_shape": [
+        512,
+        512,
+        422
+      ],
+      "orig_spacing": [
+        "0.689",
+        "0.689",
+        "1.5"
+      ],
+      "resampled_shape": [
+        353,
+        353,
+        422
+      ],
+      "bbox_shape": [
+        257,
+        196,
+        158
+      ],
+      "final_shape": [
+        257,
+        196,
+        128
+      ],
+      "reduction_pct": 94.17163433056872,
+      "bg_pct": 86.31605852457714,
+      "liver_pct": 13.094033515643611,
+      "tumor_pct": 0.5899079597792425,
+      "tumor_voxels": 38035,
+      "liver_voxels": 844253,
+      "time_sec": 23.691928148269653
+    },
+    {
+      "name": "volume-123",
+      "subset": "test",
+      "orig_shape": [
+        512,
+        512,
+        432
+      ],
+      "orig_spacing": [
+        "0.748",
+        "0.748",
+        "1.5"
+      ],
+      "resampled_shape": [
+        383,
+        383,
+        432
+      ],
+      "bbox_shape": [
+        289,
+        241,
+        155
+      ],
+      "final_shape": [
+        289,
+        241,
+        125
+      ],
+      "reduction_pct": 92.31221499266448,
+      "bg_pct": 81.41804763887492,
+      "liver_pct": 17.109609613921233,
+      "tumor_pct": 1.4723427472038364,
+      "tumor_voxels": 128184,
+      "liver_voxels": 1489584,
+      "time_sec": 32.53713035583496
+    },
+    {
+      "name": "volume-124",
+      "subset": "test",
+      "orig_shape": [
+        512,
+        512,
+        407
+      ],
+      "orig_spacing": [
+        "0.699",
+        "0.699",
+        "1.5"
+      ],
+      "resampled_shape": [
+        358,
+        358,
+        407
+      ],
+      "bbox_shape": [
+        224,
+        182,
+        152
+      ],
+      "final_shape": [
+        224,
+        182,
+        122
+      ],
+      "reduction_pct": 95.3382937269656,
+      "bg_pct": 85.2904359253159,
+      "liver_pct": 14.00079538435803,
+      "tumor_pct": 0.7087686903260674,
+      "tumor_voxels": 35252,
+      "liver_voxels": 696357,
+      "time_sec": 31.399142026901245
+    },
+    {
+      "name": "volume-125",
+      "subset": "test",
+      "orig_shape": [
+        512,
+        512,
+        410
+      ],
+      "orig_spacing": [
+        "0.713",
+        "0.713",
+        "1.5"
+      ],
+      "resampled_shape": [
+        365,
+        365,
+        410
+      ],
+      "bbox_shape": [
+        249,
+        212,
+        152
+      ],
+      "final_shape": [
+        249,
+        212,
+        122
+      ],
+      "reduction_pct": 94.00800751476753,
+      "bg_pct": 83.20679873841173,
+      "liver_pct": 16.787409458433796,
+      "tumor_pct": 0.005791803154467545,
+      "tumor_voxels": 373,
+      "liver_voxels": 1081132,
+      "time_sec": 17.91960310935974
+    },
+    {
+      "name": "volume-126",
+      "subset": "test",
+      "orig_shape": [
+        512,
+        512,
+        401
+      ],
+      "orig_spacing": [
+        "0.664",
+        "0.664",
+        "1.5"
+      ],
+      "resampled_shape": [
+        340,
+        340,
+        401
+      ],
+      "bbox_shape": [
+        232,
+        210,
+        153
+      ],
+      "final_shape": [
+        232,
+        210,
+        123
+      ],
+      "reduction_pct": 94.29930118551279,
+      "bg_pct": 80.40063011467554,
+      "liver_pct": 19.561756578156913,
+      "tumor_pct": 0.037613307167554434,
+      "tumor_voxels": 2254,
+      "liver_voxels": 1172250,
+      "time_sec": 30.124637126922607
+    },
+    {
+      "name": "volume-127",
+      "subset": "test",
+      "orig_shape": [
+        512,
+        512,
+        987
+      ],
+      "orig_spacing": [
+        "0.771",
+        "0.771",
+        "0.7"
+      ],
+      "resampled_shape": [
+        395,
+        395,
+        461
+      ],
+      "bbox_shape": [
+        240,
+        238,
+        146
+      ],
+      "final_shape": [
+        240,
+        238,
+        116
+      ],
+      "reduction_pct": 97.4391206781915,
+      "bg_pct": 83.58501159084324,
+      "liver_pct": 16.414022505553945,
+      "tumor_pct": 0.0009659036028204385,
+      "tumor_voxels": 64,
+      "liver_voxels": 1087580,
+      "time_sec": 65.42015480995178
+    },
+    {
+      "name": "volume-128",
+      "subset": "test",
+      "orig_shape": [
+        512,
+        512,
+        654
+      ],
+      "orig_spacing": [
+        "0.781",
+        "0.781",
+        "0.7"
+      ],
+      "resampled_shape": [
+        400,
+        400,
+        306
+      ],
+      "bbox_shape": [
+        284,
+        244,
+        177
+      ],
+      "final_shape": [
+        284,
+        244,
+        147
+      ],
+      "reduction_pct": 94.05833953017489,
+      "bg_pct": 84.49813832251904,
+      "liver_pct": 14.587731305867996,
+      "tumor_pct": 0.9141303716129722,
+      "tumor_voxels": 93118,
+      "liver_voxels": 1485981,
+      "time_sec": 26.145791053771973
+    },
+    {
+      "name": "volume-129",
+      "subset": "test",
+      "orig_shape": [
+        512,
+        512,
+        338
+      ],
+      "orig_spacing": [
+        "0.705",
+        "0.705",
+        "0.7"
+      ],
+      "resampled_shape": [
+        361,
+        361,
+        158
+      ],
+      "bbox_shape": [
+        311,
+        261,
+        158
+      ],
+      "final_shape": [
+        311,
+        261,
+        139
+      ],
+      "reduction_pct": 87.26616921509512,
+      "bg_pct": 80.39521149462512,
+      "liver_pct": 15.675469381673949,
+      "tumor_pct": 3.929319123700928,
+      "tumor_voxels": 443336,
+      "liver_voxels": 1768627,
+      "time_sec": 9.34424614906311
+    },
+    {
+      "name": "volume-130",
+      "subset": "test",
+      "orig_shape": [
+        512,
+        512,
+        624
+      ],
+      "orig_spacing": [
+        "0.684",
+        "0.684",
+        "0.7"
+      ],
+      "resampled_shape": [
+        350,
+        350,
+        292
+      ],
+      "bbox_shape": [
+        238,
+        216,
+        153
+      ],
+      "final_shape": [
+        238,
+        216,
+        123
+      ],
+      "reduction_pct": 96.13444988544171,
+      "bg_pct": 81.84095227973755,
+      "liver_pct": 13.380758807588077,
+      "tumor_pct": 4.778288912674374,
+      "tumor_voxels": 302140,
+      "liver_voxels": 846090,
+      "time_sec": 18.963303089141846
+    }
+  ],
+  "failures": [],
+  "reduction_stats": [
+    83.61909827407526,
+    91.33973052536231,
+    81.3997862768955,
+    75.2687548027664,
+    94.11007294501925,
+    94.86503464997027,
+    96.60845731211974,
+    91.25136098554057,
+    97.40732853406855,
+    75.2825473217254,
+    82.09030563766892,
+    93.48439339168667,
+    95.63651425497872,
+    86.14359899544816,
+    95.14854515688572,
+    74.93466557683172,
+    97.4064826965332,
+    96.34581681723905,
+    85.22613999757125,
+    95.28653462727864,
+    95.3205806793615,
+    91.17797335287682,
+    95.25520238983496,
+    94.83233930726931,
+    97.10745440271799,
+    74.27169444949128,
+    85.2227783203125,
+    85.28518051397604,
+    94.71231887900764,
+    72.21006913618608,
+    72.81087239583333,
+    95.40641659595927,
+    78.6923335148738,
+    97.18529997958721,
+    96.06399536132812,
+    97.3952234076541,
+    96.46403206366668,
+    91.30150579637096,
+    74.31394432773108,
+    89.87845314873589,
+    94.42595060881193,
+    86.28959655761719,
+    92.48832327420594,
+    96.52799165167775,
+    95.68993784215328,
+    83.36785125732422,
+    87.93877737862724,
+    67.7473556163699,
+    81.54885428292411,
+    81.79140444155092,
+    96.97846912202381,
+    88.1452164559994,
+    95.50307469916261,
+    96.96884387405117,
+    94.20118488249231,
+    97.77480940565215,
+    95.92589540394982,
+    82.29052803733133,
+    96.80635095161692,
+    76.62119711599043,
+    95.66389968275358,
+    97.04243933963423,
+    97.66210747893746,
+    73.96794160207112,
+    95.32982962472099,
+    77.94265198193008,
+    97.7204007138774,
+    81.82788890796704,
+    96.37716580973188,
+    95.673526461472,
+    89.88634474734043,
+    67.41601659896526,
+    75.46647145197942,
+    77.24408175038026,
+    85.8468362559443,
+    96.05298307628055,
+    96.99264992284411,
+    79.69854445684523,
+    96.24508598046411,
+    81.11764589945474,
+    93.10231691429972,
+    95.52842719477516,
+    96.58343666478207,
+    82.25971679687501,
+    82.28978102769308,
+    95.37850327379121,
+    96.72652660399753,
+    95.80427401327674,
+    66.2699191369743,
+    64.73365291472403,
+    89.1476717862216,
+    71.18510128406996,
+    96.18945572569906,
+    93.66004356971153,
+    95.2342697336704,
+    94.68010435713099,
+    96.07174895530524,
+    80.76892372788183,
+    94.04639845194085,
+    93.47729115759223,
+    94.52683313055972,
+    96.79723097068492,
+    93.56998892839322,
+    95.47028759497829,
+    90.12420654296875,
+    95.2130753541871,
+    97.74618794805832,
+    93.43435957625105,
+    96.1127162964876,
+    92.9046630859375,
+    77.49257241525957,
+    95.19582740893972,
+    96.98367671230027,
+    97.0283325779381,
+    96.40489582756169,
+    96.9721133545499,
+    96.97633986956222,
+    96.4194046823602,
+    92.60079162740595,
+    92.57830042642523,
+    93.91573779987839,
+    94.3561298543382,
+    94.17163433056872,
+    92.31221499266448,
+    95.3382937269656,
+    94.00800751476753,
+    94.29930118551279,
+    97.4391206781915,
+    94.05833953017489,
+    87.26616921509512,
+    96.13444988544171
+  ]
+}

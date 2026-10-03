@@ -1,0 +1,3490 @@
+{
+  "experiment": "e2c_non_tautological_starvation",
+  "mode": "smoke",
+  "result_eligible": false,
+  "status": "PASS",
+  "scientific_conclusion": "Reduced-power wiring check only; no paper conclusion.",
+  "config": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "B": 100,
+    "alpha": 0.05,
+    "d_latent": 5,
+    "D_observed": 200,
+    "d_projected": 5,
+    "n_per_environment": 2000,
+    "iv_scale": 0.1,
+    "edge_prob": 0.4,
+    "starvation_levels": [
+      5,
+      4,
+      3,
+      2,
+      1
+    ],
+    "max_random_subsets": 10,
+    "mcc_threshold": 0.9
+  },
+  "estimator": "Backbone precision rows for supplied targets plus absolute-eigenvalue spectral completion of the pooled interventional-minus-control covariance in their orthogonal complement.",
+  "primary_metric": "Hungarian MCC; permutation and sign safe, axis-sensitive.",
+  "aggregate": {
+    "levels": [
+      {
+        "m": 5,
+        "canonical": {
+          "mcc_mean": 0.9991122633690303,
+          "mcc_sd": 0.00010223904008074908,
+          "subspace_r2_mean": 0.9998143485200037,
+          "subspace_r2_sd": 1.7047462963776674e-05,
+          "gate_n_recoverable_mean": 5.0
+        },
+        "random_subset_control": {
+          "subsets_per_seed": 1,
+          "mcc_mean": 0.9991122633690303,
+          "mcc_seed_sd": 0.00010223904008074908,
+          "subspace_r2_mean": 0.9998143485200037,
+          "subspace_r2_seed_sd": 1.7047462963776674e-05,
+          "gate_n_recoverable_mean": 5.0,
+          "gate_n_recoverable_seed_sd": 0.0,
+          "verdict_counts": {
+            "PROCEED": 3,
+            "PROCEED_CAPPED": 0,
+            "ABSTAIN": 0
+          }
+        }
+      },
+      {
+        "m": 4,
+        "canonical": {
+          "mcc_mean": 0.9989938882725017,
+          "mcc_sd": 0.0001241434520958163,
+          "subspace_r2_mean": 0.9998143485200037,
+          "subspace_r2_sd": 1.7047462963776674e-05,
+          "gate_n_recoverable_mean": 4.0
+        },
+        "random_subset_control": {
+          "subsets_per_seed": 5,
+          "mcc_mean": 0.9825637811127437,
+          "mcc_seed_sd": 0.012326355663266881,
+          "subspace_r2_mean": 0.9998143485200037,
+          "subspace_r2_seed_sd": 1.704746296370688e-05,
+          "gate_n_recoverable_mean": 4.0,
+          "gate_n_recoverable_seed_sd": 0.0,
+          "verdict_counts": {
+            "PROCEED": 0,
+            "PROCEED_CAPPED": 15,
+            "ABSTAIN": 0
+          }
+        }
+      },
+      {
+        "m": 3,
+        "canonical": {
+          "mcc_mean": 0.9044378157955988,
+          "mcc_sd": 0.0615629580624754,
+          "subspace_r2_mean": 0.9998143485200037,
+          "subspace_r2_sd": 1.7047462963776674e-05,
+          "gate_n_recoverable_mean": 3.0
+        },
+        "random_subset_control": {
+          "subsets_per_seed": 10,
+          "mcc_mean": 0.9412800012775534,
+          "mcc_seed_sd": 0.009387891102761989,
+          "subspace_r2_mean": 0.9998143485200037,
+          "subspace_r2_seed_sd": 1.7047462963673482e-05,
+          "gate_n_recoverable_mean": 3.0,
+          "gate_n_recoverable_seed_sd": 0.0,
+          "verdict_counts": {
+            "PROCEED": 0,
+            "PROCEED_CAPPED": 30,
+            "ABSTAIN": 0
+          }
+        }
+      },
+      {
+        "m": 2,
+        "canonical": {
+          "mcc_mean": 0.8699491475710897,
+          "mcc_sd": 0.07467656896641499,
+          "subspace_r2_mean": 0.9998143485200037,
+          "subspace_r2_sd": 1.7047462963776674e-05,
+          "gate_n_recoverable_mean": 2.0
+        },
+        "random_subset_control": {
+          "subsets_per_seed": 10,
+          "mcc_mean": 0.8581791024396126,
+          "mcc_seed_sd": 0.03672448355030949,
+          "subspace_r2_mean": 0.9998143485200037,
+          "subspace_r2_seed_sd": 1.7047462963673482e-05,
+          "gate_n_recoverable_mean": 2.0,
+          "gate_n_recoverable_seed_sd": 0.0,
+          "verdict_counts": {
+            "PROCEED": 0,
+            "PROCEED_CAPPED": 30,
+            "ABSTAIN": 0
+          }
+        }
+      },
+      {
+        "m": 1,
+        "canonical": {
+          "mcc_mean": 0.7147175136862568,
+          "mcc_sd": 0.09437757167943098,
+          "subspace_r2_mean": 0.9998143485200037,
+          "subspace_r2_sd": 1.7047462963776674e-05,
+          "gate_n_recoverable_mean": 1.0
+        },
+        "random_subset_control": {
+          "subsets_per_seed": 5,
+          "mcc_mean": 0.7397356741599536,
+          "mcc_seed_sd": 0.04584555165300583,
+          "subspace_r2_mean": 0.9998143485200037,
+          "subspace_r2_seed_sd": 1.704746296370688e-05,
+          "gate_n_recoverable_mean": 1.0,
+          "gate_n_recoverable_seed_sd": 0.0,
+          "verdict_counts": {
+            "PROCEED": 0,
+            "PROCEED_CAPPED": 15,
+            "ABSTAIN": 0
+          }
+        }
+      }
+    ],
+    "crossover_random_subset_mcc_below_0p90": 2,
+    "crossover_gate_first_restricts": 4,
+    "gate_restricts_at_or_before_mcc_crossover": true,
+    "estimator_checks": {
+      "full_rank_all": true,
+      "zero_or_rank_deficient_output_count": 0
+    },
+    "subspace_r2_invariance": {
+      "max_within_seed_range": 0.0,
+      "across_seed_and_completion_range": 3.915231655082785e-05,
+      "expected_invariant": true,
+      "explanation": "A full-rank 5x5 transform preserves the column span of the 5D projected observations, so full-dimensional linear subspace R2 cannot diagnose axis recovery."
+    }
+  },
+  "per_seed": [
+    {
+      "seed": 0,
+      "gate_all_environments": {
+        "count": 5,
+        "threshold": 0.006619810271613326,
+        "thresholds": [
+          0.005693480196110951,
+          0.004774577121988398,
+          0.006619810271613326,
+          0.005869057394373624,
+          0.006044808987713803
+        ],
+        "signals": [
+          0.05457189731038296,
+          0.04869221206975409,
+          0.05880109643978324,
+          0.03969347118680538,
+          0.040563121241116544
+        ],
+        "detect": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "ratios": [
+          9.58,
+          10.2,
+          8.88,
+          6.76,
+          6.71
+        ],
+        "alpha": 0.05,
+        "B": 100
+      },
+      "levels": [
+        {
+          "m": 5,
+          "canonical": {
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "gate_count": 5,
+            "gate_n_recoverable": 5,
+            "gate_verdict": "PROCEED",
+            "mcc": 0.9992182656052071,
+            "subspace_r2": 0.9998381158601899,
+            "estimator": {
+              "supplied_nodes": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "completed_nodes": [],
+              "recovered_row_rank": 5,
+              "full_rank": 5,
+              "completion_eigenvalues": []
+            }
+          },
+          "subset_control": [
+            {
+              "subset": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "gate_count": 5,
+              "gate_n_recoverable": 5,
+              "gate_verdict": "PROCEED",
+              "mcc": 0.9992182656052071,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "completed_nodes": [],
+                "recovered_row_rank": 5,
+                "full_rank": 5,
+                "completion_eigenvalues": []
+              }
+            }
+          ]
+        },
+        {
+          "m": 4,
+          "canonical": {
+            "subset": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "gate_count": 4,
+            "gate_n_recoverable": 4,
+            "gate_verdict": "PROCEED_CAPPED",
+            "mcc": 0.9990307833130394,
+            "subspace_r2": 0.9998381158601899,
+            "estimator": {
+              "supplied_nodes": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "completed_nodes": [
+                4
+              ],
+              "recovered_row_rank": 4,
+              "full_rank": 5,
+              "completion_eigenvalues": [
+                -721.6199887453124
+              ]
+            }
+          },
+          "subset_control": [
+            {
+              "subset": [
+                0,
+                2,
+                3,
+                4
+              ],
+              "gate_count": 4,
+              "gate_n_recoverable": 4,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9740389320682338,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  2,
+                  3,
+                  4
+                ],
+                "completed_nodes": [
+                  1
+                ],
+                "recovered_row_rank": 4,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  157.36983332851997
+                ]
+              }
+            },
+            {
+              "subset": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "gate_count": 4,
+              "gate_n_recoverable": 4,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9733605064941561,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "completed_nodes": [
+                  0
+                ],
+                "recovered_row_rank": 4,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  36.56908638944345
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "gate_count": 4,
+              "gate_n_recoverable": 4,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9954978730878687,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1,
+                  2,
+                  4
+                ],
+                "completed_nodes": [
+                  3
+                ],
+                "recovered_row_rank": 4,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  13.874587349271309
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "gate_count": 4,
+              "gate_n_recoverable": 4,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9990307833130394,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "completed_nodes": [
+                  4
+                ],
+                "recovered_row_rank": 4,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -721.6199887453124
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                1,
+                3,
+                4
+              ],
+              "gate_count": 4,
+              "gate_n_recoverable": 4,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9991672406913903,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1,
+                  3,
+                  4
+                ],
+                "completed_nodes": [
+                  2
+                ],
+                "recovered_row_rank": 4,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -2995.1149617199053
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "m": 3,
+          "canonical": {
+            "subset": [
+              0,
+              1,
+              2
+            ],
+            "gate_count": 3,
+            "gate_n_recoverable": 3,
+            "gate_verdict": "PROCEED_CAPPED",
+            "mcc": 0.8656449983094806,
+            "subspace_r2": 0.9998381158601899,
+            "estimator": {
+              "supplied_nodes": [
+                0,
+                1,
+                2
+              ],
+              "completed_nodes": [
+                3,
+                4
+              ],
+              "recovered_row_rank": 3,
+              "full_rank": 5,
+              "completion_eigenvalues": [
+                -879.9574813163431,
+                73.52963119049596
+              ]
+            }
+          },
+          "subset_control": [
+            {
+              "subset": [
+                0,
+                3,
+                4
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9447115917645226,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  3,
+                  4
+                ],
+                "completed_nodes": [
+                  1,
+                  2
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -3036.6169026538464,
+                  111.3622796452105
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                2,
+                3
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9953582878256657,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  2,
+                  3
+                ],
+                "completed_nodes": [
+                  1,
+                  4
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -517.56228395497,
+                  148.70292244275947
+                ]
+              }
+            },
+            {
+              "subset": [
+                1,
+                3,
+                4
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9490692106602244,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  1,
+                  3,
+                  4
+                ],
+                "completed_nodes": [
+                  0,
+                  2
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -3013.5565971554506,
+                  46.474529261615146
+                ]
+              }
+            },
+            {
+              "subset": [
+                2,
+                3,
+                4
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9034527095066632,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  2,
+                  3,
+                  4
+                ],
+                "completed_nodes": [
+                  0,
+                  1
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  267.05389152062503,
+                  6.48879382546891
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                2,
+                4
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.975643739628425,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  2,
+                  4
+                ],
+                "completed_nodes": [
+                  1,
+                  3
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  215.65619951512664,
+                  -68.45815899507798
+                ]
+              }
+            },
+            {
+              "subset": [
+                1,
+                2,
+                3
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9546692874100298,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  1,
+                  2,
+                  3
+                ],
+                "completed_nodes": [
+                  0,
+                  4
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -597.2526577338529,
+                  45.30328527153846
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                1,
+                4
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9431771056446767,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1,
+                  4
+                ],
+                "completed_nodes": [
+                  2,
+                  3
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -3352.420104199346,
+                  163.0985074293824
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                1,
+                3
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8404151764854937,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1,
+                  3
+                ],
+                "completed_nodes": [
+                  2,
+                  4
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -4420.310759776165,
+                  15.924746693914452
+                ]
+              }
+            },
+            {
+              "subset": [
+                1,
+                2,
+                4
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.908317825327192,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  1,
+                  2,
+                  4
+                ],
+                "completed_nodes": [
+                  0,
+                  3
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  132.4670664723107,
+                  0.9070977587157534
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                1,
+                2
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8656449983094806,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1,
+                  2
+                ],
+                "completed_nodes": [
+                  3,
+                  4
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -879.9574813163431,
+                  73.52963119049596
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "m": 2,
+          "canonical": {
+            "subset": [
+              0,
+              1
+            ],
+            "gate_count": 2,
+            "gate_n_recoverable": 2,
+            "gate_verdict": "PROCEED_CAPPED",
+            "mcc": 0.7657390197044014,
+            "subspace_r2": 0.9998381158601899,
+            "estimator": {
+              "supplied_nodes": [
+                0,
+                1
+              ],
+              "completed_nodes": [
+                2,
+                3,
+                4
+              ],
+              "recovered_row_rank": 2,
+              "full_rank": 5,
+              "completion_eigenvalues": [
+                -5134.32781284474,
+                101.04809449501673,
+                6.4741022932998975
+              ]
+            }
+          },
+          "subset_control": [
+            {
+              "subset": [
+                2,
+                4
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8088437536613183,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  2,
+                  4
+                ],
+                "completed_nodes": [
+                  0,
+                  1,
+                  3
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  460.23047365773596,
+                  -60.40379508495094,
+                  3.004097330346333
+                ]
+              }
+            },
+            {
+              "subset": [
+                1,
+                4
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8000583950679327,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  1,
+                  4
+                ],
+                "completed_nodes": [
+                  0,
+                  2,
+                  3
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -3517.9112686342987,
+                  337.9465959646206,
+                  3.5099296939545424
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                4
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.806099836048411,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  4
+                ],
+                "completed_nodes": [
+                  1,
+                  2,
+                  3
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -3584.271524455449,
+                  271.08931695078877,
+                  -8.641123329318996
+                ]
+              }
+            },
+            {
+              "subset": [
+                2,
+                3
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8624574693263465,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  2,
+                  3
+                ],
+                "completed_nodes": [
+                  0,
+                  1,
+                  4
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  425.6538440882044,
+                  -354.8522790592174,
+                  18.782361615638997
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                1
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.7657390197044014,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1
+                ],
+                "completed_nodes": [
+                  2,
+                  3,
+                  4
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -5134.32781284474,
+                  101.04809449501673,
+                  6.4741022932998975
+                ]
+              }
+            },
+            {
+              "subset": [
+                1,
+                3
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.764912685122637,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  1,
+                  3
+                ],
+                "completed_nodes": [
+                  0,
+                  2,
+                  4
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -4389.730840036342,
+                  80.21406919970603,
+                  2.4085638755440493
+                ]
+              }
+            },
+            {
+              "subset": [
+                1,
+                2
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8285145710708793,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  1,
+                  2
+                ],
+                "completed_nodes": [
+                  0,
+                  3,
+                  4
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -562.8043588802539,
+                  153.6123773894541,
+                  6.596049504707901
+                ]
+              }
+            },
+            {
+              "subset": [
+                3,
+                4
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8563272611438262,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  3,
+                  4
+                ],
+                "completed_nodes": [
+                  0,
+                  1,
+                  2
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -2952.944655493084,
+                  230.70719029430487,
+                  9.05019736665378
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                3
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.7550773281378099,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  3
+                ],
+                "completed_nodes": [
+                  1,
+                  2,
+                  4
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -4192.6147516417805,
+                  48.60890828886546,
+                  6.0281956121762175
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                2
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8376776912429168,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  2
+                ],
+                "completed_nodes": [
+                  1,
+                  3,
+                  4
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -591.3995636108182,
+                  229.15943958351292,
+                  0.23741482126549698
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "m": 1,
+          "canonical": {
+            "subset": [
+              0
+            ],
+            "gate_count": 1,
+            "gate_n_recoverable": 1,
+            "gate_verdict": "PROCEED_CAPPED",
+            "mcc": 0.5824341712147547,
+            "subspace_r2": 0.9998381158601899,
+            "estimator": {
+              "supplied_nodes": [
+                0
+              ],
+              "completed_nodes": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "recovered_row_rank": 1,
+              "full_rank": 5,
+              "completion_eigenvalues": [
+                -5251.050220576876,
+                9.86827700051329,
+                -6.272093651504945,
+                1.710147385374748
+              ]
+            }
+          },
+          "subset_control": [
+            {
+              "subset": [
+                0
+              ],
+              "gate_count": 1,
+              "gate_n_recoverable": 1,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.5824341712147547,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  0
+                ],
+                "completed_nodes": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "recovered_row_rank": 1,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -5251.050220576876,
+                  9.86827700051329,
+                  -6.272093651504945,
+                  1.710147385374748
+                ]
+              }
+            },
+            {
+              "subset": [
+                3
+              ],
+              "gate_count": 1,
+              "gate_n_recoverable": 1,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.6966029152036125,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  3
+                ],
+                "completed_nodes": [
+                  0,
+                  1,
+                  2,
+                  4
+                ],
+                "recovered_row_rank": 1,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -3578.472941770271,
+                  231.41074210629907,
+                  3.1117856431224675,
+                  -0.179097621775659
+                ]
+              }
+            },
+            {
+              "subset": [
+                4
+              ],
+              "gate_count": 1,
+              "gate_n_recoverable": 1,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.7280469580799818,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  4
+                ],
+                "completed_nodes": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "recovered_row_rank": 1,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -3842.701198277536,
+                  665.1700666707793,
+                  -14.164330828196988,
+                  1.4884045643588306
+                ]
+              }
+            },
+            {
+              "subset": [
+                1
+              ],
+              "gate_count": 1,
+              "gate_n_recoverable": 1,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.6682281944897073,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  1
+                ],
+                "completed_nodes": [
+                  0,
+                  2,
+                  3,
+                  4
+                ],
+                "recovered_row_rank": 1,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -5486.324693536758,
+                  336.0704324912481,
+                  5.771438139978752,
+                  -1.2096576679678217
+                ]
+              }
+            },
+            {
+              "subset": [
+                2
+              ],
+              "gate_count": 1,
+              "gate_n_recoverable": 1,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.7231959460472337,
+              "subspace_r2": 0.9998381158601899,
+              "estimator": {
+                "supplied_nodes": [
+                  2
+                ],
+                "completed_nodes": [
+                  0,
+                  1,
+                  3,
+                  4
+                ],
+                "recovered_row_rank": 1,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  1219.2648203305107,
+                  -282.19108867991986,
+                  5.316851357914759,
+                  -0.565249980814245
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "gate_all_environments": {
+        "count": 5,
+        "threshold": 0.0027830969524342353,
+        "thresholds": [
+          0.0027830969524342353,
+          0.0021971580007126095,
+          0.002232883877350039,
+          0.002332458651893021,
+          0.0023177861845685615
+        ],
+        "signals": [
+          0.04431472582702913,
+          0.04126848523167326,
+          0.05726982164926193,
+          0.04279755567507755,
+          0.048595173124351035
+        ],
+        "detect": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "ratios": [
+          15.92,
+          18.78,
+          25.65,
+          18.35,
+          20.97
+        ],
+        "alpha": 0.05,
+        "B": 100
+      },
+      "levels": [
+        {
+          "m": 5,
+          "canonical": {
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "gate_count": 5,
+            "gate_n_recoverable": 5,
+            "gate_verdict": "PROCEED",
+            "mcc": 0.9989741043011128,
+            "subspace_r2": 0.9998059661561821,
+            "estimator": {
+              "supplied_nodes": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "completed_nodes": [],
+              "recovered_row_rank": 5,
+              "full_rank": 5,
+              "completion_eigenvalues": []
+            }
+          },
+          "subset_control": [
+            {
+              "subset": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "gate_count": 5,
+              "gate_n_recoverable": 5,
+              "gate_verdict": "PROCEED",
+              "mcc": 0.9989741043011128,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "completed_nodes": [],
+                "recovered_row_rank": 5,
+                "full_rank": 5,
+                "completion_eigenvalues": []
+              }
+            }
+          ]
+        },
+        {
+          "m": 4,
+          "canonical": {
+            "subset": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "gate_count": 4,
+            "gate_n_recoverable": 4,
+            "gate_verdict": "PROCEED_CAPPED",
+            "mcc": 0.9988267919646991,
+            "subspace_r2": 0.9998059661561821,
+            "estimator": {
+              "supplied_nodes": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "completed_nodes": [
+                4
+              ],
+              "recovered_row_rank": 4,
+              "full_rank": 5,
+              "completion_eigenvalues": [
+                -1193.295208359098
+              ]
+            }
+          },
+          "subset_control": [
+            {
+              "subset": [
+                0,
+                2,
+                3,
+                4
+              ],
+              "gate_count": 4,
+              "gate_n_recoverable": 4,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9974432160299432,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  2,
+                  3,
+                  4
+                ],
+                "completed_nodes": [
+                  1
+                ],
+                "recovered_row_rank": 4,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  67.30035751929296
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "gate_count": 4,
+              "gate_n_recoverable": 4,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9988267919646991,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "completed_nodes": [
+                  4
+                ],
+                "recovered_row_rank": 4,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -1193.295208359098
+                ]
+              }
+            },
+            {
+              "subset": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "gate_count": 4,
+              "gate_n_recoverable": 4,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9914500222936662,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "completed_nodes": [
+                  0
+                ],
+                "recovered_row_rank": 4,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -162.91238678875402
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                1,
+                3,
+                4
+              ],
+              "gate_count": 4,
+              "gate_n_recoverable": 4,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9866268680155474,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1,
+                  3,
+                  4
+                ],
+                "completed_nodes": [
+                  2
+                ],
+                "recovered_row_rank": 4,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -93.98346238102548
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "gate_count": 4,
+              "gate_n_recoverable": 4,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9957343998702891,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1,
+                  2,
+                  4
+                ],
+                "completed_nodes": [
+                  3
+                ],
+                "recovered_row_rank": 4,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -39.9095228787657
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "m": 3,
+          "canonical": {
+            "subset": [
+              0,
+              1,
+              2
+            ],
+            "gate_count": 3,
+            "gate_n_recoverable": 3,
+            "gate_verdict": "PROCEED_CAPPED",
+            "mcc": 0.8563335971955013,
+            "subspace_r2": 0.9998059661561821,
+            "estimator": {
+              "supplied_nodes": [
+                0,
+                1,
+                2
+              ],
+              "completed_nodes": [
+                3,
+                4
+              ],
+              "recovered_row_rank": 3,
+              "full_rank": 5,
+              "completion_eigenvalues": [
+                -1013.0248304713496,
+                4.9236557924205915
+              ]
+            }
+          },
+          "subset_control": [
+            {
+              "subset": [
+                1,
+                3,
+                4
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9548746689912078,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  1,
+                  3,
+                  4
+                ],
+                "completed_nodes": [
+                  0,
+                  2
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -273.22147289863005,
+                  -0.763344250230952
+                ]
+              }
+            },
+            {
+              "subset": [
+                1,
+                2,
+                3
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9542131381732573,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  1,
+                  2,
+                  3
+                ],
+                "completed_nodes": [
+                  0,
+                  4
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -1921.4703118307013,
+                  15.194305367470475
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                2,
+                3
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.973766067199058,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  2,
+                  3
+                ],
+                "completed_nodes": [
+                  1,
+                  4
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -928.3998335556175,
+                  11.205070494519553
+                ]
+              }
+            },
+            {
+              "subset": [
+                1,
+                2,
+                4
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9463306467459534,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  1,
+                  2,
+                  4
+                ],
+                "completed_nodes": [
+                  0,
+                  3
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -240.64727080126383,
+                  69.92533716364325
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                1,
+                4
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9718306739238013,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1,
+                  4
+                ],
+                "completed_nodes": [
+                  2,
+                  3
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -99.39962053265126,
+                  70.19724469075285
+                ]
+              }
+            },
+            {
+              "subset": [
+                2,
+                3,
+                4
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9405740755806715,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  2,
+                  3,
+                  4
+                ],
+                "completed_nodes": [
+                  0,
+                  1
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -227.60952293469296,
+                  113.016784052487
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                3,
+                4
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9628247795816192,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  3,
+                  4
+                ],
+                "completed_nodes": [
+                  1,
+                  2
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  110.72873681061841,
+                  -104.50679517650882
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                1,
+                3
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9489279984524325,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1,
+                  3
+                ],
+                "completed_nodes": [
+                  2,
+                  4
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -1306.9655395871046,
+                  27.808060762818446
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                1,
+                2
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8563335971955013,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1,
+                  2
+                ],
+                "completed_nodes": [
+                  3,
+                  4
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -1013.0248304713496,
+                  4.9236557924205915
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                2,
+                4
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9784841992277095,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  2,
+                  4
+                ],
+                "completed_nodes": [
+                  1,
+                  3
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  147.0139833383504,
+                  -103.527018600639
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "m": 2,
+          "canonical": {
+            "subset": [
+              0,
+              1
+            ],
+            "gate_count": 2,
+            "gate_n_recoverable": 2,
+            "gate_verdict": "PROCEED_CAPPED",
+            "mcc": 0.93688903089666,
+            "subspace_r2": 0.9998059661561821,
+            "estimator": {
+              "supplied_nodes": [
+                0,
+                1
+              ],
+              "completed_nodes": [
+                2,
+                3,
+                4
+              ],
+              "recovered_row_rank": 2,
+              "full_rank": 5,
+              "completion_eigenvalues": [
+                -872.8962871379069,
+                33.77257487885907,
+                -4.4049937557171575
+              ]
+            }
+          },
+          "subset_control": [
+            {
+              "subset": [
+                3,
+                4
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8936351149924502,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  3,
+                  4
+                ],
+                "completed_nodes": [
+                  0,
+                  1,
+                  2
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -377.84778035211957,
+                  184.22625598014466,
+                  0.3923155040787429
+                ]
+              }
+            },
+            {
+              "subset": [
+                2,
+                3
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.771122643365512,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  2,
+                  3
+                ],
+                "completed_nodes": [
+                  0,
+                  1,
+                  4
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -1980.4482671403723,
+                  110.76273427728552,
+                  1.0166864408471
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                1
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.93688903089666,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1
+                ],
+                "completed_nodes": [
+                  2,
+                  3,
+                  4
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -872.8962871379069,
+                  33.77257487885907,
+                  -4.4049937557171575
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                3
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8258161635742104,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  3
+                ],
+                "completed_nodes": [
+                  1,
+                  2,
+                  4
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -927.1855866883013,
+                  57.39517647710623,
+                  10.121778612749514
+                ]
+              }
+            },
+            {
+              "subset": [
+                2,
+                4
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.805099332919738,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  2,
+                  4
+                ],
+                "completed_nodes": [
+                  0,
+                  1,
+                  3
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -318.26180951200615,
+                  200.59692552838882,
+                  -0.48119874559753517
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                2
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8224877670171299,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  2
+                ],
+                "completed_nodes": [
+                  1,
+                  3,
+                  4
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -503.8364839139036,
+                  108.52776155481409,
+                  2.4008053324227743
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                4
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.916705931907725,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  4
+                ],
+                "completed_nodes": [
+                  1,
+                  2,
+                  3
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  298.06991704469925,
+                  -137.9402614470013,
+                  9.431853229650455
+                ]
+              }
+            },
+            {
+              "subset": [
+                1,
+                4
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9572998806723474,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  1,
+                  4
+                ],
+                "completed_nodes": [
+                  0,
+                  2,
+                  3
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -258.2459568762088,
+                  150.00442217840543,
+                  -1.3356526588987845
+                ]
+              }
+            },
+            {
+              "subset": [
+                1,
+                2
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8881382274591667,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  1,
+                  2
+                ],
+                "completed_nodes": [
+                  0,
+                  3,
+                  4
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -1872.2876380423877,
+                  -74.80103524479152,
+                  61.04062321260368
+                ]
+              }
+            },
+            {
+              "subset": [
+                1,
+                3
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8794866968248611,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  1,
+                  3
+                ],
+                "completed_nodes": [
+                  0,
+                  2,
+                  4
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -2377.1378659108595,
+                  101.69387214038326,
+                  -0.47726710149847845
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "m": 1,
+          "canonical": {
+            "subset": [
+              0
+            ],
+            "gate_count": 1,
+            "gate_n_recoverable": 1,
+            "gate_verdict": "PROCEED_CAPPED",
+            "mcc": 0.796238620301262,
+            "subspace_r2": 0.9998059661561821,
+            "estimator": {
+              "supplied_nodes": [
+                0
+              ],
+              "completed_nodes": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "recovered_row_rank": 1,
+              "full_rank": 5,
+              "completion_eigenvalues": [
+                836.5199860033993,
+                -160.98970777320943,
+                -10.083757148579215,
+                2.2904848748844655
+              ]
+            }
+          },
+          "subset_control": [
+            {
+              "subset": [
+                4
+              ],
+              "gate_count": 1,
+              "gate_n_recoverable": 1,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8024157031573461,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  4
+                ],
+                "completed_nodes": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "recovered_row_rank": 1,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  506.6375245196072,
+                  -310.9475317090524,
+                  -6.561160819230366,
+                  -0.36168432743959467
+                ]
+              }
+            },
+            {
+              "subset": [
+                0
+              ],
+              "gate_count": 1,
+              "gate_n_recoverable": 1,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.796238620301262,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  0
+                ],
+                "completed_nodes": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "recovered_row_rank": 1,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  836.5199860033993,
+                  -160.98970777320943,
+                  -10.083757148579215,
+                  2.2904848748844655
+                ]
+              }
+            },
+            {
+              "subset": [
+                2
+              ],
+              "gate_count": 1,
+              "gate_n_recoverable": 1,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.6736016021034942,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  2
+                ],
+                "completed_nodes": [
+                  0,
+                  1,
+                  3,
+                  4
+                ],
+                "recovered_row_rank": 1,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -1699.7550319218326,
+                  46.71221430987601,
+                  3.137715070251435,
+                  -1.53239385399104
+                ]
+              }
+            },
+            {
+              "subset": [
+                3
+              ],
+              "gate_count": 1,
+              "gate_n_recoverable": 1,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.6349030776233582,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  3
+                ],
+                "completed_nodes": [
+                  0,
+                  1,
+                  2,
+                  4
+                ],
+                "recovered_row_rank": 1,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -2841.4728485645737,
+                  353.2805830684012,
+                  2.8543447716734773,
+                  -0.38848213726368136
+                ]
+              }
+            },
+            {
+              "subset": [
+                1
+              ],
+              "gate_count": 1,
+              "gate_n_recoverable": 1,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8355787918006824,
+              "subspace_r2": 0.9998059661561821,
+              "estimator": {
+                "supplied_nodes": [
+                  1
+                ],
+                "completed_nodes": [
+                  0,
+                  2,
+                  3,
+                  4
+                ],
+                "recovered_row_rank": 1,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -2347.4747965769147,
+                  163.84735494498048,
+                  -26.97694778303648,
+                  -2.951976090645893
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "gate_all_environments": {
+        "count": 5,
+        "threshold": 0.0037751047921303635,
+        "thresholds": [
+          0.003671303249962003,
+          0.003295398133086767,
+          0.0032693668119477856,
+          0.003573444438530407,
+          0.0037751047921303635
+        ],
+        "signals": [
+          0.04431474955322595,
+          0.04663764578963412,
+          0.04686034695202498,
+          0.04300443280008092,
+          0.044829066666847314
+        ],
+        "detect": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "ratios": [
+          12.07,
+          14.15,
+          14.33,
+          12.03,
+          11.87
+        ],
+        "alpha": 0.05,
+        "B": 100
+      },
+      "levels": [
+        {
+          "m": 5,
+          "canonical": {
+            "subset": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "gate_count": 5,
+            "gate_n_recoverable": 5,
+            "gate_verdict": "PROCEED",
+            "mcc": 0.9991444202007707,
+            "subspace_r2": 0.9997989635436391,
+            "estimator": {
+              "supplied_nodes": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "completed_nodes": [],
+              "recovered_row_rank": 5,
+              "full_rank": 5,
+              "completion_eigenvalues": []
+            }
+          },
+          "subset_control": [
+            {
+              "subset": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "gate_count": 5,
+              "gate_n_recoverable": 5,
+              "gate_verdict": "PROCEED",
+              "mcc": 0.9991444202007707,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "completed_nodes": [],
+                "recovered_row_rank": 5,
+                "full_rank": 5,
+                "completion_eigenvalues": []
+              }
+            }
+          ]
+        },
+        {
+          "m": 4,
+          "canonical": {
+            "subset": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "gate_count": 4,
+            "gate_n_recoverable": 4,
+            "gate_verdict": "PROCEED_CAPPED",
+            "mcc": 0.9991240895397662,
+            "subspace_r2": 0.9997989635436391,
+            "estimator": {
+              "supplied_nodes": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "completed_nodes": [
+                4
+              ],
+              "recovered_row_rank": 4,
+              "full_rank": 5,
+              "completion_eigenvalues": [
+                -1864.651313637016
+              ]
+            }
+          },
+          "subset_control": [
+            {
+              "subset": [
+                0,
+                1,
+                3,
+                4
+              ],
+              "gate_count": 4,
+              "gate_n_recoverable": 4,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8699481620312415,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1,
+                  3,
+                  4
+                ],
+                "completed_nodes": [
+                  2
+                ],
+                "recovered_row_rank": 4,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  17.446855684846927
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "gate_count": 4,
+              "gate_n_recoverable": 4,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9615029297887231,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1,
+                  2,
+                  4
+                ],
+                "completed_nodes": [
+                  3
+                ],
+                "recovered_row_rank": 4,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -6.212309788191035
+                ]
+              }
+            },
+            {
+              "subset": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "gate_count": 4,
+              "gate_n_recoverable": 4,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9975775964454165,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "completed_nodes": [
+                  0
+                ],
+                "recovered_row_rank": 4,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -13.30019635309445
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "gate_count": 4,
+              "gate_n_recoverable": 4,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9991240895397662,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "completed_nodes": [
+                  4
+                ],
+                "recovered_row_rank": 4,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -1864.651313637016
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                2,
+                3,
+                4
+              ],
+              "gate_count": 4,
+              "gate_n_recoverable": 4,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9991273050571741,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  2,
+                  3,
+                  4
+                ],
+                "completed_nodes": [
+                  1
+                ],
+                "recovered_row_rank": 4,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -128.65197135646554
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "m": 3,
+          "canonical": {
+            "subset": [
+              0,
+              1,
+              2
+            ],
+            "gate_count": 3,
+            "gate_n_recoverable": 3,
+            "gate_verdict": "PROCEED_CAPPED",
+            "mcc": 0.9913348518818145,
+            "subspace_r2": 0.9997989635436391,
+            "estimator": {
+              "supplied_nodes": [
+                0,
+                1,
+                2
+              ],
+              "completed_nodes": [
+                3,
+                4
+              ],
+              "recovered_row_rank": 3,
+              "full_rank": 5,
+              "completion_eigenvalues": [
+                -2357.6706268425905,
+                11.086341273946642
+              ]
+            }
+          },
+          "subset_control": [
+            {
+              "subset": [
+                1,
+                3,
+                4
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9040110984159823,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  1,
+                  3,
+                  4
+                ],
+                "completed_nodes": [
+                  0,
+                  2
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  108.20671626188613,
+                  -71.49656512181106
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                3,
+                4
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9799728522998903,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  3,
+                  4
+                ],
+                "completed_nodes": [
+                  1,
+                  2
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -76.95333373800322,
+                  65.10113714324575
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                1,
+                3
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9759481674769068,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1,
+                  3
+                ],
+                "completed_nodes": [
+                  2,
+                  4
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -1651.2781508637431,
+                  24.42403057727726
+                ]
+              }
+            },
+            {
+              "subset": [
+                1,
+                2,
+                3
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9737196450654582,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  1,
+                  2,
+                  3
+                ],
+                "completed_nodes": [
+                  0,
+                  4
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -1844.343122136903,
+                  -31.418736187991104
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                2,
+                3
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9405424277462886,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  2,
+                  3
+                ],
+                "completed_nodes": [
+                  1,
+                  4
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -1806.7512307111829,
+                  -23.876574408861835
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                2,
+                4
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9724226073568296,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  2,
+                  4
+                ],
+                "completed_nodes": [
+                  1,
+                  3
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -197.28040695766958,
+                  31.025149046484245
+                ]
+              }
+            },
+            {
+              "subset": [
+                1,
+                2,
+                4
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9074769740007257,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  1,
+                  2,
+                  4
+                ],
+                "completed_nodes": [
+                  0,
+                  3
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  37.01143646229705,
+                  -30.160604997785864
+                ]
+              }
+            },
+            {
+              "subset": [
+                2,
+                3,
+                4
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9934814995654744,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  2,
+                  3,
+                  4
+                ],
+                "completed_nodes": [
+                  0,
+                  1
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -154.4305181605656,
+                  -14.08647836429833
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                1,
+                2
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9913348518818145,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1,
+                  2
+                ],
+                "completed_nodes": [
+                  3,
+                  4
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -2357.6706268425905,
+                  11.086341273946642
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                1,
+                4
+              ],
+              "gate_count": 3,
+              "gate_n_recoverable": 3,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8308701368836419,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1,
+                  4
+                ],
+                "completed_nodes": [
+                  2,
+                  3
+                ],
+                "recovered_row_rank": 3,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  28.8110868448071,
+                  4.223689234474768
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "m": 2,
+          "canonical": {
+            "subset": [
+              0,
+              1
+            ],
+            "gate_count": 2,
+            "gate_n_recoverable": 2,
+            "gate_verdict": "PROCEED_CAPPED",
+            "mcc": 0.9072193921122074,
+            "subspace_r2": 0.9997989635436391,
+            "estimator": {
+              "supplied_nodes": [
+                0,
+                1
+              ],
+              "completed_nodes": [
+                2,
+                3,
+                4
+              ],
+              "recovered_row_rank": 2,
+              "full_rank": 5,
+              "completion_eigenvalues": [
+                -2281.934706039253,
+                50.110118711178764,
+                14.212387485560502
+              ]
+            }
+          },
+          "subset_control": [
+            {
+              "subset": [
+                1,
+                2
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9151342122149805,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  1,
+                  2
+                ],
+                "completed_nodes": [
+                  0,
+                  3,
+                  4
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -2528.580034881013,
+                  -22.560032594700402,
+                  2.635859512413132
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                4
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9384448911368464,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  4
+                ],
+                "completed_nodes": [
+                  1,
+                  2,
+                  3
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  128.93858169174746,
+                  -124.94474347318037,
+                  11.66082650780094
+                ]
+              }
+            },
+            {
+              "subset": [
+                1,
+                3
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9115265774291877,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  1,
+                  3
+                ],
+                "completed_nodes": [
+                  0,
+                  2,
+                  4
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -1469.8997343710712,
+                  -56.57342509263828,
+                  54.16195991780468
+                ]
+              }
+            },
+            {
+              "subset": [
+                2,
+                4
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8611054082687157,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  2,
+                  4
+                ],
+                "completed_nodes": [
+                  0,
+                  1,
+                  3
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -258.5291495545877,
+                  66.68773811495385,
+                  -5.123512314258978
+                ]
+              }
+            },
+            {
+              "subset": [
+                1,
+                4
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8824886281331921,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  1,
+                  4
+                ],
+                "completed_nodes": [
+                  0,
+                  2,
+                  3
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  181.49612245661132,
+                  -54.11064700347944,
+                  -13.377874797283313
+                ]
+              }
+            },
+            {
+              "subset": [
+                2,
+                3
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.7841449542692861,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  2,
+                  3
+                ],
+                "completed_nodes": [
+                  0,
+                  1,
+                  4
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -1713.1107354500714,
+                  -66.90667407274083,
+                  -0.09728275909888731
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                1
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9072193921122074,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  1
+                ],
+                "completed_nodes": [
+                  2,
+                  3,
+                  4
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -2281.934706039253,
+                  50.110118711178764,
+                  14.212387485560502
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                3
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9777247673846665,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  3
+                ],
+                "completed_nodes": [
+                  1,
+                  2,
+                  4
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -1295.2467210169689,
+                  3.920375149931744,
+                  -0.5212924204961371
+                ]
+              }
+            },
+            {
+              "subset": [
+                0,
+                2
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8627915447363671,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  0,
+                  2
+                ],
+                "completed_nodes": [
+                  1,
+                  3,
+                  4
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -2527.7175603105406,
+                  -41.9895094412179,
+                  40.560807081822944
+                ]
+              }
+            },
+            {
+              "subset": [
+                3,
+                4
+              ],
+              "gate_count": 2,
+              "gate_n_recoverable": 2,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.9224038973466481,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  3,
+                  4
+                ],
+                "completed_nodes": [
+                  0,
+                  1,
+                  2
+                ],
+                "recovered_row_rank": 2,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  165.01228157297976,
+                  -94.97024751260959,
+                  -50.17294822134622
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "m": 1,
+          "canonical": {
+            "subset": [
+              0
+            ],
+            "gate_count": 1,
+            "gate_n_recoverable": 1,
+            "gate_verdict": "PROCEED_CAPPED",
+            "mcc": 0.7654797495427539,
+            "subspace_r2": 0.9997989635436391,
+            "estimator": {
+              "supplied_nodes": [
+                0
+              ],
+              "completed_nodes": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "recovered_row_rank": 1,
+              "full_rank": 5,
+              "completion_eigenvalues": [
+                -2208.2328602460752,
+                103.13504653736538,
+                -22.185194637907227,
+                0.6088989504873733
+              ]
+            }
+          },
+          "subset_control": [
+            {
+              "subset": [
+                1
+              ],
+              "gate_count": 1,
+              "gate_n_recoverable": 1,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8311181125570464,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  1
+                ],
+                "completed_nodes": [
+                  0,
+                  2,
+                  3,
+                  4
+                ],
+                "recovered_row_rank": 1,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -2465.655573932213,
+                  114.41514895315811,
+                  -41.97534908104468,
+                  -1.38036158022745
+                ]
+              }
+            },
+            {
+              "subset": [
+                0
+              ],
+              "gate_count": 1,
+              "gate_n_recoverable": 1,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.7654797495427539,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  0
+                ],
+                "completed_nodes": [
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "recovered_row_rank": 1,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -2208.2328602460752,
+                  103.13504653736538,
+                  -22.185194637907227,
+                  0.6088989504873733
+                ]
+              }
+            },
+            {
+              "subset": [
+                3
+              ],
+              "gate_count": 1,
+              "gate_n_recoverable": 1,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8152040905574693,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  3
+                ],
+                "completed_nodes": [
+                  0,
+                  1,
+                  2,
+                  4
+                ],
+                "recovered_row_rank": 1,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -563.9349385402085,
+                  -4.860384878487478,
+                  4.280550149096701,
+                  0.21762893036463157
+                ]
+              }
+            },
+            {
+              "subset": [
+                4
+              ],
+              "gate_count": 1,
+              "gate_n_recoverable": 1,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.8460773008593767,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  4
+                ],
+                "completed_nodes": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "recovered_row_rank": 1,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  386.87790292720143,
+                  -169.3017434061474,
+                  -20.22967460017271,
+                  -3.514756115676329
+                ]
+              }
+            },
+            {
+              "subset": [
+                2
+              ],
+              "gate_count": 1,
+              "gate_n_recoverable": 1,
+              "gate_verdict": "PROCEED_CAPPED",
+              "mcc": 0.696909878861224,
+              "subspace_r2": 0.9997989635436391,
+              "estimator": {
+                "supplied_nodes": [
+                  2
+                ],
+                "completed_nodes": [
+                  0,
+                  1,
+                  3,
+                  4
+                ],
+                "recovered_row_rank": 1,
+                "full_rank": 5,
+                "completion_eigenvalues": [
+                  -2990.277922334443,
+                  -20.64284397921041,
+                  -4.988623101802011,
+                  0.21691508101955576
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "git_head": "c034017cbb9ede7b6e319cb936ff41afa2966515",
+    "script_sha256": "7878447a0fed2c570ef43f1b2082ec236b9d1be6eb1771047da933baa7e203d5",
+    "numpy_version": "2.0.2"
+  },
+  "wall_seconds": 0.4
+}

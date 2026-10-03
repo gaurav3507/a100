@@ -1,0 +1,634 @@
+{
+    "foreground_mean": {
+        "Dice": 0.7521284132224438,
+        "FN": 35816.086956521736,
+        "FP": 45347.69565217391,
+        "IoU": 0.6723493219495926,
+        "TN": 6829127.804347826,
+        "TP": 593839.9782608696,
+        "n_pred": 639187.6739130435,
+        "n_ref": 629656.0652173912
+    },
+    "mean": {
+        "1": {
+            "Dice": 0.9505833494788886,
+            "FN": 47078.52173913043,
+            "FP": 80075.08695652174,
+            "IoU": 0.9078028211580872,
+            "TN": 6229441.043478261,
+            "TP": 1147536.9130434783,
+            "n_pred": 1227612.0,
+            "n_ref": 1194615.4347826086
+        },
+        "2": {
+            "Dice": 0.5536734769659991,
+            "FN": 24553.652173913044,
+            "FP": 10620.304347826086,
+            "IoU": 0.43689582274109817,
+            "TN": 7428814.565217392,
+            "TP": 40143.04347826087,
+            "n_pred": 50763.34782608696,
+            "n_ref": 64696.69565217391
+        }
+    },
+    "metric_per_case": [
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9708976768902531,
+                    "FN": 34386,
+                    "FP": 53676,
+                    "IoU": 0.9434413421168746,
+                    "TN": 6821233,
+                    "TP": 1468941,
+                    "n_pred": 1522617,
+                    "n_ref": 1503327
+                },
+                "2": {
+                    "Dice": 0.8969858384859969,
+                    "FN": 11399,
+                    "FP": 6161,
+                    "IoU": 0.8132133473742434,
+                    "TN": 8284225,
+                    "TP": 76451,
+                    "n_pred": 82612,
+                    "n_ref": 87850
+                }
+            },
+            "prediction_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_results/Dataset001_LiTS/nnUNetTrainer_500epochs__nnUNetPlans__3d_fullres/fold_0/validation/volume-101.nii.gz",
+            "reference_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_preprocessed/Dataset001_LiTS/gt_segmentations/volume-101.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9760669408132748,
+                    "FN": 7989,
+                    "FP": 23765,
+                    "IoU": 0.9532526878158727,
+                    "TN": 3818131,
+                    "TP": 647515,
+                    "n_pred": 671280,
+                    "n_ref": 655504
+                },
+                "2": {
+                    "Dice": NaN,
+                    "FN": 0,
+                    "FP": 0,
+                    "IoU": NaN,
+                    "TN": 4497400,
+                    "TP": 0,
+                    "n_pred": 0,
+                    "n_ref": 0
+                }
+            },
+            "prediction_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_results/Dataset001_LiTS/nnUNetTrainer_500epochs__nnUNetPlans__3d_fullres/fold_0/validation/volume-106.nii.gz",
+            "reference_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_preprocessed/Dataset001_LiTS/gt_segmentations/volume-106.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9686033562884702,
+                    "FN": 24126,
+                    "FP": 32544,
+                    "IoU": 0.9391181968586837,
+                    "TN": 5234300,
+                    "TP": 874150,
+                    "n_pred": 906694,
+                    "n_ref": 898276
+                },
+                "2": {
+                    "Dice": 0.5815570500398951,
+                    "FN": 6401,
+                    "FP": 941,
+                    "IoU": 0.4099967855994857,
+                    "TN": 6152676,
+                    "TP": 5102,
+                    "n_pred": 6043,
+                    "n_ref": 11503
+                }
+            },
+            "prediction_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_results/Dataset001_LiTS/nnUNetTrainer_500epochs__nnUNetPlans__3d_fullres/fold_0/validation/volume-13.nii.gz",
+            "reference_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_preprocessed/Dataset001_LiTS/gt_segmentations/volume-13.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.95425078582491,
+                    "FN": 53963,
+                    "FP": 20920,
+                    "IoU": 0.9125044254301868,
+                    "TN": 4912431,
+                    "TP": 780966,
+                    "n_pred": 801886,
+                    "n_ref": 834929
+                },
+                "2": {
+                    "Dice": 0.869420731565019,
+                    "FN": 5264,
+                    "FP": 22713,
+                    "IoU": 0.7690046649878215,
+                    "TN": 5647165,
+                    "TP": 93138,
+                    "n_pred": 115851,
+                    "n_ref": 98402
+                }
+            },
+            "prediction_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_results/Dataset001_LiTS/nnUNetTrainer_500epochs__nnUNetPlans__3d_fullres/fold_0/validation/volume-16.nii.gz",
+            "reference_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_preprocessed/Dataset001_LiTS/gt_segmentations/volume-16.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.967451352176498,
+                    "FN": 50507,
+                    "FP": 30517,
+                    "IoU": 0.9369547422446178,
+                    "TN": 5481381,
+                    "TP": 1204148,
+                    "n_pred": 1234665,
+                    "n_ref": 1254655
+                },
+                "2": {
+                    "Dice": 0.40306681270536693,
+                    "FN": 54,
+                    "FP": 1581,
+                    "IoU": 0.252400548696845,
+                    "TN": 6764366,
+                    "TP": 552,
+                    "n_pred": 2133,
+                    "n_ref": 606
+                }
+            },
+            "prediction_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_results/Dataset001_LiTS/nnUNetTrainer_500epochs__nnUNetPlans__3d_fullres/fold_0/validation/volume-20.nii.gz",
+            "reference_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_preprocessed/Dataset001_LiTS/gt_segmentations/volume-20.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9654126728306048,
+                    "FN": 6102,
+                    "FP": 59138,
+                    "IoU": 0.9331379260868674,
+                    "TN": 5290116,
+                    "TP": 910500,
+                    "n_pred": 969638,
+                    "n_ref": 916602
+                },
+                "2": {
+                    "Dice": 0.7895212285456188,
+                    "FN": 195,
+                    "FP": 38,
+                    "IoU": 0.6522388059701493,
+                    "TN": 6265186,
+                    "TP": 437,
+                    "n_pred": 475,
+                    "n_ref": 632
+                }
+            },
+            "prediction_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_results/Dataset001_LiTS/nnUNetTrainer_500epochs__nnUNetPlans__3d_fullres/fold_0/validation/volume-24.nii.gz",
+            "reference_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_preprocessed/Dataset001_LiTS/gt_segmentations/volume-24.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9700038129583893,
+                    "FN": 30597,
+                    "FP": 35013,
+                    "IoU": 0.941754761000103,
+                    "TN": 5055408,
+                    "TP": 1060834,
+                    "n_pred": 1095847,
+                    "n_ref": 1091431
+                },
+                "2": {
+                    "Dice": 0.5454545454545454,
+                    "FN": 5827,
+                    "FP": 13,
+                    "IoU": 0.375,
+                    "TN": 6172508,
+                    "TP": 3504,
+                    "n_pred": 3517,
+                    "n_ref": 9331
+                }
+            },
+            "prediction_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_results/Dataset001_LiTS/nnUNetTrainer_500epochs__nnUNetPlans__3d_fullres/fold_0/validation/volume-29.nii.gz",
+            "reference_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_preprocessed/Dataset001_LiTS/gt_segmentations/volume-29.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9771444739613625,
+                    "FN": 50419,
+                    "FP": 13557,
+                    "IoU": 0.9553103533063884,
+                    "TN": 6605698,
+                    "TP": 1367586,
+                    "n_pred": 1381143,
+                    "n_ref": 1418005
+                },
+                "2": {
+                    "Dice": NaN,
+                    "FN": 0,
+                    "FP": 0,
+                    "IoU": NaN,
+                    "TN": 8037260,
+                    "TP": 0,
+                    "n_pred": 0,
+                    "n_ref": 0
+                }
+            },
+            "prediction_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_results/Dataset001_LiTS/nnUNetTrainer_500epochs__nnUNetPlans__3d_fullres/fold_0/validation/volume-32.nii.gz",
+            "reference_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_preprocessed/Dataset001_LiTS/gt_segmentations/volume-32.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8535470493379902,
+                    "FN": 30415,
+                    "FP": 293635,
+                    "IoU": 0.7445111889198038,
+                    "TN": 6344027,
+                    "TP": 944303,
+                    "n_pred": 1237938,
+                    "n_ref": 974718
+                },
+                "2": {
+                    "Dice": 0.0,
+                    "FN": 0,
+                    "FP": 94291,
+                    "IoU": 0.0,
+                    "TN": 7518089,
+                    "TP": 0,
+                    "n_pred": 94291,
+                    "n_ref": 0
+                }
+            },
+            "prediction_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_results/Dataset001_LiTS/nnUNetTrainer_500epochs__nnUNetPlans__3d_fullres/fold_0/validation/volume-34.nii.gz",
+            "reference_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_preprocessed/Dataset001_LiTS/gt_segmentations/volume-34.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9022017216763036,
+                    "FN": 164113,
+                    "FP": 262838,
+                    "IoU": 0.8218283262877197,
+                    "TN": 9067338,
+                    "TP": 1969339,
+                    "n_pred": 2232177,
+                    "n_ref": 2133452
+                },
+                "2": {
+                    "Dice": 0.012764039716806955,
+                    "FN": 13172,
+                    "FP": 54737,
+                    "IoU": 0.006423011646280798,
+                    "TN": 11395280,
+                    "TP": 439,
+                    "n_pred": 55176,
+                    "n_ref": 13611
+                }
+            },
+            "prediction_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_results/Dataset001_LiTS/nnUNetTrainer_500epochs__nnUNetPlans__3d_fullres/fold_0/validation/volume-35.nii.gz",
+            "reference_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_preprocessed/Dataset001_LiTS/gt_segmentations/volume-35.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9734285348438748,
+                    "FN": 41021,
+                    "FP": 24346,
+                    "IoU": 0.9482326052145155,
+                    "TN": 4685934,
+                    "TP": 1197339,
+                    "n_pred": 1221685,
+                    "n_ref": 1238360
+                },
+                "2": {
+                    "Dice": 0.8350577599196384,
+                    "FN": 1491,
+                    "FP": 1793,
+                    "IoU": 0.7168233163749246,
+                    "TN": 5937043,
+                    "TP": 8313,
+                    "n_pred": 10106,
+                    "n_ref": 9804
+                }
+            },
+            "prediction_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_results/Dataset001_LiTS/nnUNetTrainer_500epochs__nnUNetPlans__3d_fullres/fold_0/validation/volume-37.nii.gz",
+            "reference_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_preprocessed/Dataset001_LiTS/gt_segmentations/volume-37.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8538255507739739,
+                    "FN": 110751,
+                    "FP": 344407,
+                    "IoU": 0.7449350762883733,
+                    "TN": 9536225,
+                    "TP": 1329321,
+                    "n_pred": 1673728,
+                    "n_ref": 1440072
+                },
+                "2": {
+                    "Dice": 0.662613981762918,
+                    "FN": 320544,
+                    "FP": 24111,
+                    "IoU": 0.4954545454545455,
+                    "TN": 10637604,
+                    "TP": 338445,
+                    "n_pred": 362556,
+                    "n_ref": 658989
+                }
+            },
+            "prediction_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_results/Dataset001_LiTS/nnUNetTrainer_500epochs__nnUNetPlans__3d_fullres/fold_0/validation/volume-4.nii.gz",
+            "reference_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_preprocessed/Dataset001_LiTS/gt_segmentations/volume-4.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9299803205267438,
+                    "FN": 28643,
+                    "FP": 131574,
+                    "IoU": 0.8691245015087478,
+                    "TN": 5516626,
+                    "TP": 1063977,
+                    "n_pred": 1195551,
+                    "n_ref": 1092620
+                },
+                "2": {
+                    "Dice": 0.0,
+                    "FN": 0,
+                    "FP": 19450,
+                    "IoU": 0.0,
+                    "TN": 6721370,
+                    "TP": 0,
+                    "n_pred": 19450,
+                    "n_ref": 0
+                }
+            },
+            "prediction_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_results/Dataset001_LiTS/nnUNetTrainer_500epochs__nnUNetPlans__3d_fullres/fold_0/validation/volume-41.nii.gz",
+            "reference_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_preprocessed/Dataset001_LiTS/gt_segmentations/volume-41.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9378275314277635,
+                    "FN": 96617,
+                    "FP": 70497,
+                    "IoU": 0.8829333833971273,
+                    "TN": 6630863,
+                    "TP": 1260398,
+                    "n_pred": 1330895,
+                    "n_ref": 1357015
+                },
+                "2": {
+                    "Dice": 0.8876389228553572,
+                    "FN": 7920,
+                    "FP": 4485,
+                    "IoU": 0.7979773304670705,
+                    "TN": 7996971,
+                    "TP": 48999,
+                    "n_pred": 53484,
+                    "n_ref": 56919
+                }
+            },
+            "prediction_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_results/Dataset001_LiTS/nnUNetTrainer_500epochs__nnUNetPlans__3d_fullres/fold_0/validation/volume-48.nii.gz",
+            "reference_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_preprocessed/Dataset001_LiTS/gt_segmentations/volume-48.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9758120665216423,
+                    "FN": 33644,
+                    "FP": 17737,
+                    "IoU": 0.9527666111116729,
+                    "TN": 4500189,
+                    "TP": 1036430,
+                    "n_pred": 1054167,
+                    "n_ref": 1070074
+                },
+                "2": {
+                    "Dice": 0.49677200135915733,
+                    "FN": 2867,
+                    "FP": 95,
+                    "IoU": 0.33047016274864377,
+                    "TN": 5583576,
+                    "TP": 1462,
+                    "n_pred": 1557,
+                    "n_ref": 4329
+                }
+            },
+            "prediction_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_results/Dataset001_LiTS/nnUNetTrainer_500epochs__nnUNetPlans__3d_fullres/fold_0/validation/volume-53.nii.gz",
+            "reference_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_preprocessed/Dataset001_LiTS/gt_segmentations/volume-53.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9575228471952338,
+                    "FN": 66769,
+                    "FP": 39251,
+                    "IoU": 0.9185072733911105,
+                    "TN": 7380395,
+                    "TP": 1194955,
+                    "n_pred": 1234206,
+                    "n_ref": 1261724
+                },
+                "2": {
+                    "Dice": 0.8500163523383844,
+                    "FN": 54778,
+                    "FP": 7133,
+                    "IoU": 0.7391551645684817,
+                    "TN": 8444022,
+                    "TP": 175437,
+                    "n_pred": 182570,
+                    "n_ref": 230215
+                }
+            },
+            "prediction_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_results/Dataset001_LiTS/nnUNetTrainer_500epochs__nnUNetPlans__3d_fullres/fold_0/validation/volume-56.nii.gz",
+            "reference_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_preprocessed/Dataset001_LiTS/gt_segmentations/volume-56.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9556468842693003,
+                    "FN": 62782,
+                    "FP": 8424,
+                    "IoU": 0.9150610745300124,
+                    "TN": 5749920,
+                    "TP": 767114,
+                    "n_pred": 775538,
+                    "n_ref": 829896
+                },
+                "2": {
+                    "Dice": 0.5633001422475107,
+                    "FN": 507,
+                    "FP": 107,
+                    "IoU": 0.3920792079207921,
+                    "TN": 6587230,
+                    "TP": 396,
+                    "n_pred": 503,
+                    "n_ref": 903
+                }
+            },
+            "prediction_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_results/Dataset001_LiTS/nnUNetTrainer_500epochs__nnUNetPlans__3d_fullres/fold_0/validation/volume-58.nii.gz",
+            "reference_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_preprocessed/Dataset001_LiTS/gt_segmentations/volume-58.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9506716494459772,
+                    "FN": 19758,
+                    "FP": 90367,
+                    "IoU": 0.9059810963308509,
+                    "TN": 6303349,
+                    "TP": 1061182,
+                    "n_pred": 1151549,
+                    "n_ref": 1080940
+                },
+                "2": {
+                    "Dice": 0.7811141841169498,
+                    "FN": 828,
+                    "FP": 280,
+                    "IoU": 0.6408427876823338,
+                    "TN": 7471571,
+                    "TP": 1977,
+                    "n_pred": 2257,
+                    "n_ref": 2805
+                }
+            },
+            "prediction_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_results/Dataset001_LiTS/nnUNetTrainer_500epochs__nnUNetPlans__3d_fullres/fold_0/validation/volume-61.nii.gz",
+            "reference_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_preprocessed/Dataset001_LiTS/gt_segmentations/volume-61.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9718932420667996,
+                    "FN": 32185,
+                    "FP": 42104,
+                    "IoU": 0.9453232697551694,
+                    "TN": 7174689,
+                    "TP": 1284406,
+                    "n_pred": 1326510,
+                    "n_ref": 1316591
+                },
+                "2": {
+                    "Dice": 0.851421147941107,
+                    "FN": 35836,
+                    "FP": 1906,
+                    "IoU": 0.7412822780211268,
+                    "TN": 8387503,
+                    "TP": 108139,
+                    "n_pred": 110045,
+                    "n_ref": 143975
+                }
+            },
+            "prediction_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_results/Dataset001_LiTS/nnUNetTrainer_500epochs__nnUNetPlans__3d_fullres/fold_0/validation/volume-64.nii.gz",
+            "reference_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_preprocessed/Dataset001_LiTS/gt_segmentations/volume-64.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9508861550342177,
+                    "FN": 57233,
+                    "FP": 66658,
+                    "IoU": 0.9063708000776899,
+                    "TN": 6705985,
+                    "TP": 1199318,
+                    "n_pred": 1265976,
+                    "n_ref": 1256551
+                },
+                "2": {
+                    "Dice": 0.15384615384615385,
+                    "FN": 8095,
+                    "FP": 562,
+                    "IoU": 0.08333333333333333,
+                    "TN": 8019750,
+                    "TP": 787,
+                    "n_pred": 1349,
+                    "n_ref": 8882
+                }
+            },
+            "prediction_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_results/Dataset001_LiTS/nnUNetTrainer_500epochs__nnUNetPlans__3d_fullres/fold_0/validation/volume-77.nii.gz",
+            "reference_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_preprocessed/Dataset001_LiTS/gt_segmentations/volume-77.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9446226616003677,
+                    "FN": 47368,
+                    "FP": 100850,
+                    "IoU": 0.8950567983890838,
+                    "TN": 7785786,
+                    "TP": 1264146,
+                    "n_pred": 1364996,
+                    "n_ref": 1311514
+                },
+                "2": {
+                    "Dice": 0.5647267373152256,
+                    "FN": 86547,
+                    "FP": 3323,
+                    "IoU": 0.39346287010103326,
+                    "TN": 9049981,
+                    "TP": 58299,
+                    "n_pred": 61622,
+                    "n_ref": 144846
+                }
+            },
+            "prediction_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_results/Dataset001_LiTS/nnUNetTrainer_500epochs__nnUNetPlans__3d_fullres/fold_0/validation/volume-84.nii.gz",
+            "reference_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_preprocessed/Dataset001_LiTS/gt_segmentations/volume-84.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9782840077577537,
+                    "FN": 19839,
+                    "FP": 40166,
+                    "IoU": 0.957491137640728,
+                    "TN": 6301232,
+                    "TP": 1351583,
+                    "n_pred": 1391749,
+                    "n_ref": 1371422
+                },
+                "2": {
+                    "Dice": 0.44501718213058417,
+                    "FN": 2061,
+                    "FP": 523,
+                    "IoU": 0.2861878453038674,
+                    "TN": 7709200,
+                    "TP": 1036,
+                    "n_pred": 1559,
+                    "n_ref": 3097
+                }
+            },
+            "prediction_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_results/Dataset001_LiTS/nnUNetTrainer_500epochs__nnUNetPlans__3d_fullres/fold_0/validation/volume-85.nii.gz",
+            "reference_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_preprocessed/Dataset001_LiTS/gt_segmentations/volume-85.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9774357437927349,
+                    "FN": 13579,
+                    "FP": 39743,
+                    "IoU": 0.9558673089338035,
+                    "TN": 6375888,
+                    "TP": 1154898,
+                    "n_pred": 1194641,
+                    "n_ref": 1168477
+                },
+                "2": {
+                    "Dice": 0.43684820393974505,
+                    "FN": 948,
+                    "FP": 24,
+                    "IoU": 0.279466271312083,
+                    "TN": 7582759,
+                    "TP": 377,
+                    "n_pred": 401,
+                    "n_ref": 1325
+                }
+            },
+            "prediction_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_results/Dataset001_LiTS/nnUNetTrainer_500epochs__nnUNetPlans__3d_fullres/fold_0/validation/volume-86.nii.gz",
+            "reference_file": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_preprocessed/Dataset001_LiTS/gt_segmentations/volume-86.nii.gz"
+        }
+    ]
+}

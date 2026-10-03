@@ -1,0 +1,96 @@
+{
+  "data": [
+    {
+      "n_e": 500,
+      "scaling": "raw",
+      "reject": 0.1,
+      "n_draws": 200
+    },
+    {
+      "n_e": 500,
+      "scaling": "standardised",
+      "reject": 0.06,
+      "n_draws": 200
+    },
+    {
+      "n_e": 2000,
+      "scaling": "raw",
+      "reject": 0.06,
+      "n_draws": 200
+    },
+    {
+      "n_e": 2000,
+      "scaling": "standardised",
+      "reject": 0.065,
+      "n_draws": 200
+    },
+    {
+      "n_e": 8000,
+      "scaling": "raw",
+      "reject": 0.09,
+      "n_draws": 200
+    },
+    {
+      "n_e": 8000,
+      "scaling": "standardised",
+      "reject": 0.08,
+      "n_draws": 200
+    },
+    {
+      "n_e": 20000,
+      "scaling": "raw",
+      "reject": 0.06,
+      "n_draws": 200
+    },
+    {
+      "n_e": 20000,
+      "scaling": "standardised",
+      "reject": 0.06,
+      "n_draws": 200
+    }
+  ],
+  "meta": {
+    "statistic": "lfc",
+    "gate": "gate1",
+    "git_commit": "928fed1",
+    "timestamp": "2026-08-10T10:38:34",
+    "config": {
+      "alpha": 0.05,
+      "B": 500,
+      "n_e": [
+        500,
+        2000,
+        8000,
+        20000
+      ],
+      "d": 10,
+      "d_latent": 10,
+      "D": 200,
+      "n_env": null,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "draws_per_point": 200
+    },
+    "versions": {
+      "python": "3.11.15",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.3",
+      "sklearn": "1.9.0"
+    },
+    "superseded_by": null,
+    "migrated_from": "causalbench/results/ranktest/taskC_boundary_nscaling.json",
+    "status": "CURRENT",
+    "note": "rank-2 boundary excess vs n_e; flat across 40x, hence structural"
+  }
+}

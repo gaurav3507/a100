@@ -1,0 +1,67 @@
+{
+  "raw_text": "    n_e  soft med  hard med  acc@0.25  best acc  best thr     AUC\n    500     0.401     0.483     0.600     0.583     0.232   0.602\n   2000     0.264     0.545     0.633     0.683     0.498   0.717\n   8000     0.113     0.467     0.800     0.783     0.269   0.831\n  20000     0.107     0.499     0.767     0.783     0.254   0.834\n",
+  "meta": {
+    "statistic": "lfc",
+    "gate": "battery",
+    "git_commit": "460a064",
+    "timestamp": "2026-08-10T11:50:50",
+    "config": {
+      "alpha": null,
+      "B": null,
+      "n_e": [
+        500,
+        2000,
+        8000,
+        20000
+      ],
+      "d": 10,
+      "d_latent": 10,
+      "D": 200,
+      "n_env": null,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "draws_per_point": 1
+    },
+    "versions": {
+      "python": "3.11.15",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.3",
+      "sklearn": "1.9.0"
+    },
+    "superseded_by": null,
+    "migrated_from": "causalbench/results/ranktest/gap_ratio_separation.txt",
+    "status": "CURRENT",
+    "note": "measured separation of soft from hard-on-non-source: AUC 0.602 at n_e=500 rising to 0.834 at 20000"
+  }
+}

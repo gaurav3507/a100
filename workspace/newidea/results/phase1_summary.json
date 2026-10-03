@@ -1,0 +1,1542 @@
+[
+  {
+    "cell_ids": [
+      "s0-D-0p05-pc-pearson",
+      "s1-D-0p05-pc-pearson",
+      "s2-D-0p05-pc-pearson",
+      "s3-D-0p05-pc-pearson",
+      "s4-D-0p05-pc-pearson"
+    ],
+    "individual_f1": [
+      0.9032258064516129,
+      0.9206349206349206,
+      0.9032258064516129,
+      0.928,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      0.0,
+      -0.007936507936507955,
+      0.0,
+      -0.008000000000000108,
+      0.0
+    ],
+    "level": "0.05",
+    "mean_f1": 0.9122673067076292,
+    "mean_normalized_degradation": -0.0031873015873016123,
+    "mean_rank_aware_mcc": 0.9998187872698265,
+    "mean_standard_mcc": 0.9998653693198054,
+    "method": "PC-Pearson",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.010170939335585254,
+    "std_normalized_degradation": 0.0039036829067991318,
+    "transform_class": "BOUNDARY",
+    "transform_family": "D"
+  },
+  {
+    "cell_ids": [
+      "s0-D-0p05-pc-nonparanormal-preproc",
+      "s1-D-0p05-pc-nonparanormal-preproc",
+      "s2-D-0p05-pc-nonparanormal-preproc",
+      "s3-D-0p05-pc-nonparanormal-preproc",
+      "s4-D-0p05-pc-nonparanormal-preproc"
+    ],
+    "individual_f1": [
+      0.9032258064516129,
+      0.9508196721311475,
+      0.9256198347107438,
+      0.928,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      -0.00806451612903221,
+      0.0,
+      0.008264462809917343,
+      -0.008000000000000108,
+      0.0
+    ],
+    "level": "0.05",
+    "mean_f1": 0.9227830626587007,
+    "mean_normalized_degradation": -0.0015600106638229947,
+    "mean_rank_aware_mcc": 0.9998187872698265,
+    "mean_standard_mcc": 0.9998653693198054,
+    "method": "PC-nonparanormal-preproc",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.017188040102553797,
+    "std_normalized_degradation": 0.006085550091416913,
+    "transform_class": "BOUNDARY",
+    "transform_family": "D"
+  },
+  {
+    "cell_ids": [
+      "s0-D-0p1-pc-pearson",
+      "s1-D-0p1-pc-pearson",
+      "s2-D-0p1-pc-pearson",
+      "s3-D-0p1-pc-pearson",
+      "s4-D-0p1-pc-pearson"
+    ],
+    "individual_f1": [
+      0.9105691056910569,
+      0.9206349206349206,
+      0.9180327868852458,
+      0.9206349206349206,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      -0.00813008130081299,
+      -0.007936507936507955,
+      -0.016393442622950748,
+      0.0,
+      0.0
+    ],
+    "level": "0.1",
+    "mean_f1": 0.9152243467692287,
+    "mean_normalized_degradation": -0.0064920063720543385,
+    "mean_rank_aware_mcc": 0.9994275407080874,
+    "mean_standard_mcc": 0.9995280087941658,
+    "method": "PC-Pearson",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.005807686706903779,
+    "std_normalized_degradation": 0.00611719882858307,
+    "transform_class": "BOUNDARY",
+    "transform_family": "D"
+  },
+  {
+    "cell_ids": [
+      "s0-D-0p1-pc-nonparanormal-preproc",
+      "s1-D-0p1-pc-nonparanormal-preproc",
+      "s2-D-0p1-pc-nonparanormal-preproc",
+      "s3-D-0p1-pc-nonparanormal-preproc",
+      "s4-D-0p1-pc-nonparanormal-preproc"
+    ],
+    "individual_f1": [
+      0.9105691056910569,
+      0.9508196721311475,
+      0.9491525423728813,
+      0.90625,
+      0.9133858267716535
+    ],
+    "individual_normalized_degradation": [
+      -0.01626016260162595,
+      0.0,
+      -0.016949152542372774,
+      0.015624999999999944,
+      -0.007874015748031421
+    ],
+    "level": "0.1",
+    "mean_f1": 0.9260354293933478,
+    "mean_normalized_degradation": -0.005091666178406039,
+    "mean_rank_aware_mcc": 0.9994275407080874,
+    "mean_standard_mcc": 0.9995280087941658,
+    "method": "PC-nonparanormal-preproc",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.019694377026068455,
+    "std_normalized_degradation": 0.012067991434986701,
+    "transform_class": "BOUNDARY",
+    "transform_family": "D"
+  },
+  {
+    "cell_ids": [
+      "s0-D-0p25-pc-pearson",
+      "s1-D-0p25-pc-pearson",
+      "s2-D-0p25-pc-pearson",
+      "s3-D-0p25-pc-pearson",
+      "s4-D-0p25-pc-pearson"
+    ],
+    "individual_f1": [
+      0.9411764705882353,
+      0.9047619047619048,
+      0.9333333333333333,
+      0.9354838709677419,
+      0.8854961832061068
+    ],
+    "individual_normalized_degradation": [
+      -0.04201680672268909,
+      0.009441707717569707,
+      -0.03333333333333338,
+      -0.016129032258064516,
+      0.022900763358778713
+    ],
+    "level": "0.25",
+    "mean_f1": 0.9200503525714645,
+    "mean_normalized_degradation": -0.011827340247547714,
+    "mean_rank_aware_mcc": 0.9955772887360117,
+    "mean_standard_mcc": 0.9965185892770203,
+    "method": "PC-Pearson",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.02139472452462239,
+    "std_normalized_degradation": 0.024701537443030136,
+    "transform_class": "BOUNDARY",
+    "transform_family": "D"
+  },
+  {
+    "cell_ids": [
+      "s0-D-0p25-pc-nonparanormal-preproc",
+      "s1-D-0p25-pc-nonparanormal-preproc",
+      "s2-D-0p25-pc-nonparanormal-preproc",
+      "s3-D-0p25-pc-nonparanormal-preproc",
+      "s4-D-0p25-pc-nonparanormal-preproc"
+    ],
+    "individual_f1": [
+      0.9180327868852458,
+      0.9119999999999999,
+      0.9572649572649572,
+      0.928,
+      0.8992248062015504
+    ],
+    "individual_normalized_degradation": [
+      -0.024590163934426108,
+      0.04082758620689658,
+      -0.02564102564102555,
+      -0.008000000000000108,
+      0.007751937984496076
+    ],
+    "level": "0.25",
+    "mean_f1": 0.9229045100703507,
+    "mean_normalized_degradation": -0.0019303330768118214,
+    "mean_rank_aware_mcc": 0.9955772887360117,
+    "mean_standard_mcc": 0.9965185892770203,
+    "method": "PC-nonparanormal-preproc",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.019544691100230997,
+    "std_normalized_degradation": 0.024635307050270585,
+    "transform_class": "BOUNDARY",
+    "transform_family": "D"
+  },
+  {
+    "cell_ids": [
+      "s0-D-0p5-pc-pearson",
+      "s1-D-0p5-pc-pearson",
+      "s2-D-0p5-pc-pearson",
+      "s3-D-0p5-pc-pearson",
+      "s4-D-0p5-pc-pearson"
+    ],
+    "individual_f1": [
+      0.9180327868852458,
+      0.9508196721311475,
+      0.9243697478991596,
+      0.9133858267716535,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      -0.016393442622950748,
+      -0.04098360655737707,
+      -0.023409363745498155,
+      0.007874015748031515,
+      0.0
+    ],
+    "level": "0.5",
+    "mean_f1": 0.9225716067374412,
+    "mean_normalized_degradation": -0.014582479435558893,
+    "mean_rank_aware_mcc": 0.9891474486159252,
+    "mean_standard_mcc": 0.9899251350892554,
+    "method": "PC-Pearson",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.015313789836920244,
+    "std_normalized_degradation": 0.017292517861830652,
+    "transform_class": "BOUNDARY",
+    "transform_family": "D"
+  },
+  {
+    "cell_ids": [
+      "s0-D-0p5-pc-nonparanormal-preproc",
+      "s1-D-0p5-pc-nonparanormal-preproc",
+      "s2-D-0p5-pc-nonparanormal-preproc",
+      "s3-D-0p5-pc-nonparanormal-preproc",
+      "s4-D-0p5-pc-nonparanormal-preproc"
+    ],
+    "individual_f1": [
+      0.9105691056910569,
+      0.9586776859504132,
+      0.9565217391304348,
+      0.9206349206349206,
+      0.9133858267716535
+    ],
+    "individual_normalized_degradation": [
+      -0.01626016260162595,
+      -0.00826446280991744,
+      -0.024844720496894426,
+      0.0,
+      -0.007874015748031421
+    ],
+    "level": "0.5",
+    "mean_f1": 0.9319578556356957,
+    "mean_normalized_degradation": -0.011448672331293848,
+    "mean_rank_aware_mcc": 0.9891474486159252,
+    "mean_standard_mcc": 0.9899251350892554,
+    "method": "PC-nonparanormal-preproc",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.021203497078280738,
+    "std_normalized_degradation": 0.008445045922790592,
+    "transform_class": "BOUNDARY",
+    "transform_family": "D"
+  },
+  {
+    "cell_ids": [
+      "s0-D-1p0-pc-pearson",
+      "s1-D-1p0-pc-pearson",
+      "s2-D-1p0-pc-pearson",
+      "s3-D-1p0-pc-pearson",
+      "s4-D-1p0-pc-pearson"
+    ],
+    "individual_f1": [
+      0.8780487804878049,
+      0.864,
+      0.848,
+      0.8906250000000001,
+      0.8636363636363636
+    ],
+    "individual_normalized_degradation": [
+      0.027874564459930282,
+      0.05406896551724132,
+      0.061142857142857145,
+      0.03259698275862052,
+      0.0470219435736677
+    ],
+    "level": "1.0",
+    "mean_f1": 0.8688620288248338,
+    "mean_normalized_degradation": 0.044541062690463394,
+    "mean_rank_aware_mcc": 0.9692645941894125,
+    "mean_standard_mcc": 0.9709522418065136,
+    "method": "PC-Pearson",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.014451259240162585,
+    "std_normalized_degradation": 0.012593557797217738,
+    "transform_class": "BOUNDARY",
+    "transform_family": "D"
+  },
+  {
+    "cell_ids": [
+      "s0-D-1p0-pc-nonparanormal-preproc",
+      "s1-D-1p0-pc-nonparanormal-preproc",
+      "s2-D-1p0-pc-nonparanormal-preproc",
+      "s3-D-1p0-pc-nonparanormal-preproc",
+      "s4-D-1p0-pc-nonparanormal-preproc"
+    ],
+    "individual_f1": [
+      0.8437499999999999,
+      0.8617886178861788,
+      0.8688524590163934,
+      0.8992248062015504,
+      0.8636363636363636
+    ],
+    "individual_normalized_degradation": [
+      0.05831473214285729,
+      0.09363610877488089,
+      0.06908665105386422,
+      0.02325581395348827,
+      0.0470219435736677
+    ],
+    "level": "1.0",
+    "mean_f1": 0.8674504493480972,
+    "mean_normalized_degradation": 0.05826304989975167,
+    "mean_rank_aware_mcc": 0.9692645941894125,
+    "mean_standard_mcc": 0.9709522418065136,
+    "method": "PC-nonparanormal-preproc",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.017999390374020627,
+    "std_normalized_degradation": 0.023324988090940576,
+    "transform_class": "BOUNDARY",
+    "transform_family": "D"
+  },
+  {
+    "cell_ids": [
+      "s0-E-0p05-pc-pearson",
+      "s1-E-0p05-pc-pearson",
+      "s2-E-0p05-pc-pearson",
+      "s3-E-0p05-pc-pearson",
+      "s4-E-0p05-pc-pearson"
+    ],
+    "individual_f1": [
+      0.9032258064516129,
+      0.9133858267716535,
+      0.9032258064516129,
+      0.928,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      0.0,
+      0.0,
+      0.0,
+      -0.008000000000000108,
+      0.0
+    ],
+    "level": "0.05",
+    "mean_f1": 0.9108174879349757,
+    "mean_normalized_degradation": -0.0016000000000000215,
+    "mean_rank_aware_mcc": 0.9984331617923978,
+    "mean_standard_mcc": 0.9987519085792108,
+    "method": "PC-Pearson",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.009359105585156213,
+    "std_normalized_degradation": 0.003200000000000043,
+    "transform_class": "CORRUPTION_CONTROL",
+    "transform_family": "E"
+  },
+  {
+    "cell_ids": [
+      "s0-E-0p05-pc-nonparanormal-preproc",
+      "s1-E-0p05-pc-nonparanormal-preproc",
+      "s2-E-0p05-pc-nonparanormal-preproc",
+      "s3-E-0p05-pc-nonparanormal-preproc",
+      "s4-E-0p05-pc-nonparanormal-preproc"
+    ],
+    "individual_f1": [
+      0.896,
+      0.9508196721311475,
+      0.9333333333333333,
+      0.9206349206349206,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "level": "0.05",
+    "mean_f1": 0.9214075852198803,
+    "mean_normalized_degradation": 0.0,
+    "mean_rank_aware_mcc": 0.9984331617923978,
+    "mean_standard_mcc": 0.9987519085792108,
+    "method": "PC-nonparanormal-preproc",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.01940715904765933,
+    "std_normalized_degradation": 0.0,
+    "transform_class": "CORRUPTION_CONTROL",
+    "transform_family": "E"
+  },
+  {
+    "cell_ids": [
+      "s0-E-0p1-pc-pearson",
+      "s1-E-0p1-pc-pearson",
+      "s2-E-0p1-pc-pearson",
+      "s3-E-0p1-pc-pearson",
+      "s4-E-0p1-pc-pearson"
+    ],
+    "individual_f1": [
+      0.896,
+      0.90625,
+      0.9180327868852458,
+      0.9206349206349206,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      0.007999999999999952,
+      0.007812499999999926,
+      -0.016393442622950748,
+      0.0,
+      0.0
+    ],
+    "level": "0.1",
+    "mean_f1": 0.9094335415040333,
+    "mean_normalized_degradation": -0.00011618852459017378,
+    "mean_rank_aware_mcc": 0.9938225234203883,
+    "mean_standard_mcc": 0.9950376838801855,
+    "method": "PC-Pearson",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.008945924501319825,
+    "std_normalized_degradation": 0.008873698421917934,
+    "transform_class": "CORRUPTION_CONTROL",
+    "transform_family": "E"
+  },
+  {
+    "cell_ids": [
+      "s0-E-0p1-pc-nonparanormal-preproc",
+      "s1-E-0p1-pc-nonparanormal-preproc",
+      "s2-E-0p1-pc-nonparanormal-preproc",
+      "s3-E-0p1-pc-nonparanormal-preproc",
+      "s4-E-0p1-pc-nonparanormal-preproc"
+    ],
+    "individual_f1": [
+      0.9032258064516129,
+      0.9206349206349206,
+      0.9105691056910569,
+      0.90625,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      -0.00806451612903221,
+      0.031746031746031744,
+      0.024390243902439084,
+      0.015624999999999944,
+      0.0
+    ],
+    "level": "0.1",
+    "mean_f1": 0.9093859665555181,
+    "mean_normalized_degradation": 0.012739351903887714,
+    "mean_rank_aware_mcc": 0.9938225234203883,
+    "mean_standard_mcc": 0.9950376838801855,
+    "method": "PC-nonparanormal-preproc",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.006091878709806211,
+    "std_normalized_degradation": 0.014835202324070295,
+    "transform_class": "CORRUPTION_CONTROL",
+    "transform_family": "E"
+  },
+  {
+    "cell_ids": [
+      "s0-E-0p25-pc-pearson",
+      "s1-E-0p25-pc-pearson",
+      "s2-E-0p25-pc-pearson",
+      "s3-E-0p25-pc-pearson",
+      "s4-E-0p25-pc-pearson"
+    ],
+    "individual_f1": [
+      0.8484848484848484,
+      0.8656716417910448,
+      0.835820895522388,
+      0.8787878787878788,
+      0.8592592592592593
+    ],
+    "individual_normalized_degradation": [
+      0.06060606060606068,
+      0.05223880597014912,
+      0.0746268656716418,
+      0.04545454545454541,
+      0.05185185185185183
+    ],
+    "level": "0.25",
+    "mean_f1": 0.8576049047690839,
+    "mean_normalized_degradation": 0.05695562591084976,
+    "mean_rank_aware_mcc": 0.9640331723031483,
+    "mean_standard_mcc": 0.970153637823846,
+    "method": "PC-Pearson",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.014657735218848323,
+    "std_normalized_degradation": 0.010061512210478844,
+    "transform_class": "CORRUPTION_CONTROL",
+    "transform_family": "E"
+  },
+  {
+    "cell_ids": [
+      "s0-E-0p25-pc-nonparanormal-preproc",
+      "s1-E-0p25-pc-nonparanormal-preproc",
+      "s2-E-0p25-pc-nonparanormal-preproc",
+      "s3-E-0p25-pc-nonparanormal-preproc",
+      "s4-E-0p25-pc-nonparanormal-preproc"
+    ],
+    "individual_f1": [
+      0.8818897637795275,
+      0.8923076923076924,
+      0.8421052631578948,
+      0.8721804511278195,
+      0.8721804511278195
+    ],
+    "individual_normalized_degradation": [
+      0.015748031496063027,
+      0.06153846153846143,
+      0.09774436090225558,
+      0.05263157894736842,
+      0.03759398496240607
+    ],
+    "level": "0.25",
+    "mean_f1": 0.8721327243001508,
+    "mean_normalized_degradation": 0.0530512835693109,
+    "mean_rank_aware_mcc": 0.9640331723031483,
+    "mean_standard_mcc": 0.970153637823846,
+    "method": "PC-nonparanormal-preproc",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.01675638464500797,
+    "std_normalized_degradation": 0.027203456393633443,
+    "transform_class": "CORRUPTION_CONTROL",
+    "transform_family": "E"
+  },
+  {
+    "cell_ids": [
+      "s0-E-0p5-pc-pearson",
+      "s1-E-0p5-pc-pearson",
+      "s2-E-0p5-pc-pearson",
+      "s3-E-0p5-pc-pearson",
+      "s4-E-0p5-pc-pearson"
+    ],
+    "individual_f1": [
+      0.7671232876712328,
+      0.7682119205298014,
+      0.7368421052631579,
+      0.7532467532467533,
+      0.7785234899328859
+    ],
+    "individual_normalized_degradation": [
+      0.15068493150684933,
+      0.15894039735099327,
+      0.1842105263157895,
+      0.18181818181818174,
+      0.14093959731543626
+    ],
+    "level": "0.5",
+    "mean_f1": 0.7607895113287663,
+    "mean_normalized_degradation": 0.16331872686145002,
+    "mean_rank_aware_mcc": 0.8788789656415726,
+    "mean_standard_mcc": 0.894472867993229,
+    "method": "PC-Pearson",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.01442272051306745,
+    "std_normalized_degradation": 0.017078086027057113,
+    "transform_class": "CORRUPTION_CONTROL",
+    "transform_family": "E"
+  },
+  {
+    "cell_ids": [
+      "s0-E-0p5-pc-nonparanormal-preproc",
+      "s1-E-0p5-pc-nonparanormal-preproc",
+      "s2-E-0p5-pc-nonparanormal-preproc",
+      "s3-E-0p5-pc-nonparanormal-preproc",
+      "s4-E-0p5-pc-nonparanormal-preproc"
+    ],
+    "individual_f1": [
+      0.7777777777777778,
+      0.7682119205298014,
+      0.7417218543046357,
+      0.7581699346405228,
+      0.7733333333333333
+    ],
+    "individual_normalized_degradation": [
+      0.13194444444444445,
+      0.19205298013245026,
+      0.20529801324503322,
+      0.1764705882352941,
+      0.1466666666666667
+    ],
+    "level": "0.5",
+    "mean_f1": 0.7638429641172142,
+    "mean_normalized_degradation": 0.17048653854477774,
+    "mean_rank_aware_mcc": 0.8788789656415726,
+    "mean_standard_mcc": 0.894472867993229,
+    "method": "PC-nonparanormal-preproc",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.01284414794785193,
+    "std_normalized_degradation": 0.027443171603107972,
+    "transform_class": "CORRUPTION_CONTROL",
+    "transform_family": "E"
+  },
+  {
+    "cell_ids": [
+      "s0-E-1p0-pc-pearson",
+      "s1-E-1p0-pc-pearson",
+      "s2-E-1p0-pc-pearson",
+      "s3-E-1p0-pc-pearson",
+      "s4-E-1p0-pc-pearson"
+    ],
+    "individual_f1": [
+      0.5833333333333334,
+      0.6137566137566137,
+      0.5894736842105264,
+      0.6270270270270271,
+      0.6105263157894737
+    ],
+    "individual_normalized_degradation": [
+      0.35416666666666663,
+      0.328042328042328,
+      0.3473684210526315,
+      0.3189189189189188,
+      0.3263157894736842
+    ],
+    "level": "1.0",
+    "mean_f1": 0.6048233948233948,
+    "mean_normalized_degradation": 0.3349624248308459,
+    "mean_rank_aware_mcc": 0.6822069864705018,
+    "mean_standard_mcc": 0.7071930414412416,
+    "method": "PC-Pearson",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.01614164396729011,
+    "std_normalized_degradation": 0.0134369473560914,
+    "transform_class": "CORRUPTION_CONTROL",
+    "transform_family": "E"
+  },
+  {
+    "cell_ids": [
+      "s0-E-1p0-pc-nonparanormal-preproc",
+      "s1-E-1p0-pc-nonparanormal-preproc",
+      "s2-E-1p0-pc-nonparanormal-preproc",
+      "s3-E-1p0-pc-nonparanormal-preproc",
+      "s4-E-1p0-pc-nonparanormal-preproc"
+    ],
+    "individual_f1": [
+      0.5863874345549739,
+      0.6170212765957447,
+      0.5894736842105264,
+      0.6270270270270271,
+      0.6105263157894737
+    ],
+    "individual_normalized_degradation": [
+      0.3455497382198952,
+      0.351063829787234,
+      0.36842105263157887,
+      0.3189189189189188,
+      0.3263157894736842
+    ],
+    "level": "1.0",
+    "mean_f1": 0.6060871476355492,
+    "mean_normalized_degradation": 0.3420538658062623,
+    "mean_rank_aware_mcc": 0.6822069864705018,
+    "mean_standard_mcc": 0.7071930414412416,
+    "method": "PC-nonparanormal-preproc",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.015759605333752515,
+    "std_normalized_degradation": 0.01772874462607103,
+    "transform_class": "CORRUPTION_CONTROL",
+    "transform_family": "E"
+  },
+  {
+    "cell_ids": [
+      "s0-A1-seeded-pc-pearson",
+      "s1-A1-seeded-pc-pearson",
+      "s2-A1-seeded-pc-pearson",
+      "s3-A1-seeded-pc-pearson",
+      "s4-A1-seeded-pc-pearson"
+    ],
+    "individual_f1": [
+      0.9032258064516129,
+      0.9133858267716535,
+      0.9032258064516129,
+      0.9206349206349206,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "level": "seeded",
+    "mean_f1": 0.9093444720619599,
+    "mean_normalized_degradation": 0.0,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 1.0,
+    "method": "PC-Pearson",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.006756606721024531,
+    "std_normalized_degradation": 0.0,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "A1"
+  },
+  {
+    "cell_ids": [
+      "s0-A1-seeded-pc-nonparanormal-preproc",
+      "s1-A1-seeded-pc-nonparanormal-preproc",
+      "s2-A1-seeded-pc-nonparanormal-preproc",
+      "s3-A1-seeded-pc-nonparanormal-preproc",
+      "s4-A1-seeded-pc-nonparanormal-preproc"
+    ],
+    "individual_f1": [
+      0.896,
+      0.9508196721311475,
+      0.9333333333333333,
+      0.9206349206349206,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "level": "seeded",
+    "mean_f1": 0.9214075852198803,
+    "mean_normalized_degradation": 0.0,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 1.0,
+    "method": "PC-nonparanormal-preproc",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.01940715904765933,
+    "std_normalized_degradation": 0.0,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "A1"
+  },
+  {
+    "cell_ids": [
+      "s0-B-0p25-pc-pearson",
+      "s1-B-0p25-pc-pearson",
+      "s2-B-0p25-pc-pearson",
+      "s3-B-0p25-pc-pearson",
+      "s4-B-0p25-pc-pearson"
+    ],
+    "individual_f1": [
+      0.9032258064516129,
+      0.9133858267716535,
+      0.9032258064516129,
+      0.9206349206349206,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "level": "0.25",
+    "mean_f1": 0.9093444720619599,
+    "mean_normalized_degradation": 0.0,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 1.0,
+    "method": "PC-Pearson",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.006756606721024531,
+    "std_normalized_degradation": 0.0,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "B"
+  },
+  {
+    "cell_ids": [
+      "s0-B-0p25-pc-nonparanormal-preproc",
+      "s1-B-0p25-pc-nonparanormal-preproc",
+      "s2-B-0p25-pc-nonparanormal-preproc",
+      "s3-B-0p25-pc-nonparanormal-preproc",
+      "s4-B-0p25-pc-nonparanormal-preproc"
+    ],
+    "individual_f1": [
+      0.896,
+      0.9508196721311475,
+      0.9333333333333333,
+      0.9206349206349206,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "level": "0.25",
+    "mean_f1": 0.9214075852198803,
+    "mean_normalized_degradation": 0.0,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 1.0,
+    "method": "PC-nonparanormal-preproc",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.01940715904765933,
+    "std_normalized_degradation": 0.0,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "B"
+  },
+  {
+    "cell_ids": [
+      "s0-B-0p5-pc-pearson",
+      "s1-B-0p5-pc-pearson",
+      "s2-B-0p5-pc-pearson",
+      "s3-B-0p5-pc-pearson",
+      "s4-B-0p5-pc-pearson"
+    ],
+    "individual_f1": [
+      0.9032258064516129,
+      0.9133858267716535,
+      0.9032258064516129,
+      0.9206349206349206,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "level": "0.5",
+    "mean_f1": 0.9093444720619599,
+    "mean_normalized_degradation": 0.0,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 1.0,
+    "method": "PC-Pearson",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.006756606721024531,
+    "std_normalized_degradation": 0.0,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "B"
+  },
+  {
+    "cell_ids": [
+      "s0-B-0p5-pc-nonparanormal-preproc",
+      "s1-B-0p5-pc-nonparanormal-preproc",
+      "s2-B-0p5-pc-nonparanormal-preproc",
+      "s3-B-0p5-pc-nonparanormal-preproc",
+      "s4-B-0p5-pc-nonparanormal-preproc"
+    ],
+    "individual_f1": [
+      0.896,
+      0.9508196721311475,
+      0.9333333333333333,
+      0.9206349206349206,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "level": "0.5",
+    "mean_f1": 0.9214075852198803,
+    "mean_normalized_degradation": 0.0,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 1.0,
+    "method": "PC-nonparanormal-preproc",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.01940715904765933,
+    "std_normalized_degradation": 0.0,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "B"
+  },
+  {
+    "cell_ids": [
+      "s0-B-2p0-pc-pearson",
+      "s1-B-2p0-pc-pearson",
+      "s2-B-2p0-pc-pearson",
+      "s3-B-2p0-pc-pearson",
+      "s4-B-2p0-pc-pearson"
+    ],
+    "individual_f1": [
+      0.9032258064516129,
+      0.9133858267716535,
+      0.9032258064516129,
+      0.9206349206349206,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "level": "2.0",
+    "mean_f1": 0.9093444720619599,
+    "mean_normalized_degradation": 0.0,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 1.0,
+    "method": "PC-Pearson",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.006756606721024531,
+    "std_normalized_degradation": 0.0,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "B"
+  },
+  {
+    "cell_ids": [
+      "s0-B-2p0-pc-nonparanormal-preproc",
+      "s1-B-2p0-pc-nonparanormal-preproc",
+      "s2-B-2p0-pc-nonparanormal-preproc",
+      "s3-B-2p0-pc-nonparanormal-preproc",
+      "s4-B-2p0-pc-nonparanormal-preproc"
+    ],
+    "individual_f1": [
+      0.896,
+      0.9508196721311475,
+      0.9333333333333333,
+      0.9206349206349206,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "level": "2.0",
+    "mean_f1": 0.9214075852198803,
+    "mean_normalized_degradation": 0.0,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 1.0,
+    "method": "PC-nonparanormal-preproc",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.01940715904765933,
+    "std_normalized_degradation": 0.0,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "B"
+  },
+  {
+    "cell_ids": [
+      "s0-B-4p0-pc-pearson",
+      "s1-B-4p0-pc-pearson",
+      "s2-B-4p0-pc-pearson",
+      "s3-B-4p0-pc-pearson",
+      "s4-B-4p0-pc-pearson"
+    ],
+    "individual_f1": [
+      0.9032258064516129,
+      0.9133858267716535,
+      0.9032258064516129,
+      0.9206349206349206,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "level": "4.0",
+    "mean_f1": 0.9093444720619599,
+    "mean_normalized_degradation": 0.0,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 1.0,
+    "method": "PC-Pearson",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.006756606721024531,
+    "std_normalized_degradation": 0.0,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "B"
+  },
+  {
+    "cell_ids": [
+      "s0-B-4p0-pc-nonparanormal-preproc",
+      "s1-B-4p0-pc-nonparanormal-preproc",
+      "s2-B-4p0-pc-nonparanormal-preproc",
+      "s3-B-4p0-pc-nonparanormal-preproc",
+      "s4-B-4p0-pc-nonparanormal-preproc"
+    ],
+    "individual_f1": [
+      0.896,
+      0.9508196721311475,
+      0.9333333333333333,
+      0.9206349206349206,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "level": "4.0",
+    "mean_f1": 0.9214075852198803,
+    "mean_normalized_degradation": 0.0,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 1.0,
+    "method": "PC-nonparanormal-preproc",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.01940715904765933,
+    "std_normalized_degradation": 0.0,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "B"
+  },
+  {
+    "cell_ids": [
+      "s0-C-0p0-pc-pearson",
+      "s1-C-0p0-pc-pearson",
+      "s2-C-0p0-pc-pearson",
+      "s3-C-0p0-pc-pearson",
+      "s4-C-0p0-pc-pearson"
+    ],
+    "individual_f1": [
+      0.9032258064516129,
+      0.9133858267716535,
+      0.9032258064516129,
+      0.9206349206349206,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "level": "0.0",
+    "mean_f1": 0.9093444720619599,
+    "mean_normalized_degradation": 0.0,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 1.0,
+    "method": "PC-Pearson",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.006756606721024531,
+    "std_normalized_degradation": 0.0,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "C"
+  },
+  {
+    "cell_ids": [
+      "s0-C-0p0-pc-nonparanormal-preproc",
+      "s1-C-0p0-pc-nonparanormal-preproc",
+      "s2-C-0p0-pc-nonparanormal-preproc",
+      "s3-C-0p0-pc-nonparanormal-preproc",
+      "s4-C-0p0-pc-nonparanormal-preproc"
+    ],
+    "individual_f1": [
+      0.896,
+      0.9508196721311475,
+      0.9333333333333333,
+      0.9206349206349206,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "level": "0.0",
+    "mean_f1": 0.9214075852198803,
+    "mean_normalized_degradation": 0.0,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 1.0,
+    "method": "PC-nonparanormal-preproc",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.01940715904765933,
+    "std_normalized_degradation": 0.0,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "C"
+  },
+  {
+    "cell_ids": [
+      "s0-C-0p05-pc-pearson",
+      "s1-C-0p05-pc-pearson",
+      "s2-C-0p05-pc-pearson",
+      "s3-C-0p05-pc-pearson",
+      "s4-C-0p05-pc-pearson"
+    ],
+    "individual_f1": [
+      0.7088607594936709,
+      0.7073170731707317,
+      0.6588235294117647,
+      0.725,
+      0.703030303030303
+    ],
+    "individual_normalized_degradation": [
+      0.2151898734177215,
+      0.22560975609756095,
+      0.27058823529411763,
+      0.21249999999999997,
+      0.22424242424242427
+    ],
+    "level": "0.05",
+    "mean_f1": 0.700606333021294,
+    "mean_normalized_degradation": 0.22962605781036488,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 0.9309873992290324,
+    "method": "PC-Pearson",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.022180617153209382,
+    "std_normalized_degradation": 0.02109369313323274,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "C"
+  },
+  {
+    "cell_ids": [
+      "s0-C-0p05-pc-nonparanormal-preproc",
+      "s1-C-0p05-pc-nonparanormal-preproc",
+      "s2-C-0p05-pc-nonparanormal-preproc",
+      "s3-C-0p05-pc-nonparanormal-preproc",
+      "s4-C-0p05-pc-nonparanormal-preproc"
+    ],
+    "individual_f1": [
+      0.896,
+      0.9508196721311475,
+      0.9333333333333333,
+      0.9206349206349206,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "level": "0.05",
+    "mean_f1": 0.9214075852198803,
+    "mean_normalized_degradation": 0.0,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 0.9309873992290324,
+    "method": "PC-nonparanormal-preproc",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.01940715904765933,
+    "std_normalized_degradation": 0.0,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "C"
+  },
+  {
+    "cell_ids": [
+      "s0-C-0p1-pc-pearson",
+      "s1-C-0p1-pc-pearson",
+      "s2-C-0p1-pc-pearson",
+      "s3-C-0p1-pc-pearson",
+      "s4-C-0p1-pc-pearson"
+    ],
+    "individual_f1": [
+      0.6363636363636364,
+      0.6480446927374302,
+      0.6054054054054054,
+      0.6628571428571429,
+      0.6270270270270271
+    ],
+    "individual_normalized_degradation": [
+      0.29545454545454547,
+      0.29050279329608936,
+      0.3297297297297297,
+      0.2799999999999999,
+      0.30810810810810807
+    ],
+    "level": "0.1",
+    "mean_f1": 0.6359395808781283,
+    "mean_normalized_degradation": 0.3007590353176945,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 0.8764159331538209,
+    "method": "PC-Pearson",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.019406381357805494,
+    "std_normalized_degradation": 0.017073814254756348,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "C"
+  },
+  {
+    "cell_ids": [
+      "s0-C-0p1-pc-nonparanormal-preproc",
+      "s1-C-0p1-pc-nonparanormal-preproc",
+      "s2-C-0p1-pc-nonparanormal-preproc",
+      "s3-C-0p1-pc-nonparanormal-preproc",
+      "s4-C-0p1-pc-nonparanormal-preproc"
+    ],
+    "individual_f1": [
+      0.896,
+      0.9508196721311475,
+      0.9333333333333333,
+      0.9206349206349206,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "level": "0.1",
+    "mean_f1": 0.9214075852198803,
+    "mean_normalized_degradation": 0.0,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 0.8764159331538209,
+    "method": "PC-nonparanormal-preproc",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.01940715904765933,
+    "std_normalized_degradation": 0.0,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "C"
+  },
+  {
+    "cell_ids": [
+      "s0-C-0p25-pc-pearson",
+      "s1-C-0p25-pc-pearson",
+      "s2-C-0p25-pc-pearson",
+      "s3-C-0p25-pc-pearson",
+      "s4-C-0p25-pc-pearson"
+    ],
+    "individual_f1": [
+      0.5894736842105264,
+      0.6073298429319371,
+      0.5743589743589744,
+      0.5858585858585859,
+      0.6041666666666666
+    ],
+    "individual_normalized_degradation": [
+      0.3473684210526315,
+      0.3350785340314136,
+      0.36410256410256403,
+      0.3636363636363636,
+      0.33333333333333337
+    ],
+    "level": "0.25",
+    "mean_f1": 0.592237550805338,
+    "mean_normalized_degradation": 0.34870384323126113,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 0.8092950577864129,
+    "method": "PC-Pearson",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.01214952455828526,
+    "std_normalized_degradation": 0.013295004684692836,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "C"
+  },
+  {
+    "cell_ids": [
+      "s0-C-0p25-pc-nonparanormal-preproc",
+      "s1-C-0p25-pc-nonparanormal-preproc",
+      "s2-C-0p25-pc-nonparanormal-preproc",
+      "s3-C-0p25-pc-nonparanormal-preproc",
+      "s4-C-0p25-pc-nonparanormal-preproc"
+    ],
+    "individual_f1": [
+      0.896,
+      0.9508196721311475,
+      0.9333333333333333,
+      0.9206349206349206,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "level": "0.25",
+    "mean_f1": 0.9214075852198803,
+    "mean_normalized_degradation": 0.0,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 0.8092950577864129,
+    "method": "PC-nonparanormal-preproc",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.01940715904765933,
+    "std_normalized_degradation": 0.0,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "C"
+  },
+  {
+    "cell_ids": [
+      "s0-C-0p5-pc-pearson",
+      "s1-C-0p5-pc-pearson",
+      "s2-C-0p5-pc-pearson",
+      "s3-C-0p5-pc-pearson",
+      "s4-C-0p5-pc-pearson"
+    ],
+    "individual_f1": [
+      0.5743589743589744,
+      0.5979381443298969,
+      0.5656565656565656,
+      0.5800000000000001,
+      0.5714285714285715
+    ],
+    "individual_normalized_degradation": [
+      0.36410256410256403,
+      0.34536082474226804,
+      0.37373737373737376,
+      0.3699999999999999,
+      0.36945812807881767
+    ],
+    "level": "0.5",
+    "mean_f1": 0.5778764511548017,
+    "mean_normalized_degradation": 0.36453177813220466,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 0.7757018263088536,
+    "method": "PC-Pearson",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.011047663918790416,
+    "std_normalized_degradation": 0.0100660125491696,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "C"
+  },
+  {
+    "cell_ids": [
+      "s0-C-0p5-pc-nonparanormal-preproc",
+      "s1-C-0p5-pc-nonparanormal-preproc",
+      "s2-C-0p5-pc-nonparanormal-preproc",
+      "s3-C-0p5-pc-nonparanormal-preproc",
+      "s4-C-0p5-pc-nonparanormal-preproc"
+    ],
+    "individual_f1": [
+      0.896,
+      0.9508196721311475,
+      0.9333333333333333,
+      0.9206349206349206,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "level": "0.5",
+    "mean_f1": 0.9214075852198803,
+    "mean_normalized_degradation": 0.0,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 0.7757018263088536,
+    "method": "PC-nonparanormal-preproc",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.01940715904765933,
+    "std_normalized_degradation": 0.0,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "C"
+  },
+  {
+    "cell_ids": [
+      "s0-C-1p0-pc-pearson",
+      "s1-C-1p0-pc-pearson",
+      "s2-C-1p0-pc-pearson",
+      "s3-C-1p0-pc-pearson",
+      "s4-C-1p0-pc-pearson"
+    ],
+    "individual_f1": [
+      0.5656565656565656,
+      0.5888324873096447,
+      0.5656565656565656,
+      0.5771144278606964,
+      0.5686274509803921
+    ],
+    "individual_normalized_degradation": [
+      0.37373737373737376,
+      0.35532994923857864,
+      0.37373737373737376,
+      0.373134328358209,
+      0.37254901960784315
+    ],
+    "level": "1.0",
+    "mean_f1": 0.573177499492773,
+    "mean_normalized_degradation": 0.3696976089358756,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 0.7558775708006362,
+    "method": "PC-Pearson",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.008881552584123986,
+    "std_normalized_degradation": 0.007197369348424913,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "C"
+  },
+  {
+    "cell_ids": [
+      "s0-C-1p0-pc-nonparanormal-preproc",
+      "s1-C-1p0-pc-nonparanormal-preproc",
+      "s2-C-1p0-pc-nonparanormal-preproc",
+      "s3-C-1p0-pc-nonparanormal-preproc",
+      "s4-C-1p0-pc-nonparanormal-preproc"
+    ],
+    "individual_f1": [
+      0.896,
+      0.9508196721311475,
+      0.9333333333333333,
+      0.9206349206349206,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "level": "1.0",
+    "mean_f1": 0.9214075852198803,
+    "mean_normalized_degradation": 0.0,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 0.7558775708006362,
+    "method": "PC-nonparanormal-preproc",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.01940715904765933,
+    "std_normalized_degradation": 0.0,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "C"
+  },
+  {
+    "cell_ids": [
+      "s0-C-2p0-pc-pearson",
+      "s1-C-2p0-pc-pearson",
+      "s2-C-2p0-pc-pearson",
+      "s3-C-2p0-pc-pearson",
+      "s4-C-2p0-pc-pearson"
+    ],
+    "individual_f1": [
+      0.5656565656565656,
+      0.5888324873096447,
+      0.5685279187817258,
+      0.5800000000000001,
+      0.5686274509803921
+    ],
+    "individual_normalized_degradation": [
+      0.37373737373737376,
+      0.35532994923857864,
+      0.3705583756345178,
+      0.3699999999999999,
+      0.37254901960784315
+    ],
+    "level": "2.0",
+    "mean_f1": 0.5743288845456658,
+    "mean_normalized_degradation": 0.36843494364366264,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 0.745088616571297,
+    "method": "PC-Pearson",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.008762222401189788,
+    "std_normalized_degradation": 0.006689403996072041,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "C"
+  },
+  {
+    "cell_ids": [
+      "s0-C-2p0-pc-nonparanormal-preproc",
+      "s1-C-2p0-pc-nonparanormal-preproc",
+      "s2-C-2p0-pc-nonparanormal-preproc",
+      "s3-C-2p0-pc-nonparanormal-preproc",
+      "s4-C-2p0-pc-nonparanormal-preproc"
+    ],
+    "individual_f1": [
+      0.896,
+      0.9508196721311475,
+      0.9333333333333333,
+      0.9206349206349206,
+      0.90625
+    ],
+    "individual_normalized_degradation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "level": "2.0",
+    "mean_f1": 0.9214075852198803,
+    "mean_normalized_degradation": 0.0,
+    "mean_rank_aware_mcc": 1.0,
+    "mean_standard_mcc": 0.745088616571297,
+    "method": "PC-nonparanormal-preproc",
+    "n_seeds": 5,
+    "primary_metric_type": "skeleton_f1",
+    "std_f1": 0.01940715904765933,
+    "std_normalized_degradation": 0.0,
+    "transform_class": "INSIDE_E_CRL",
+    "transform_family": "C"
+  }
+]

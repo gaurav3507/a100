@@ -1,0 +1,42 @@
+% ---- Table II extra rows (paste under the R3 uncalibrated row) ----
+\rthree & majority class (High, training pool) & 31.69 & n/a & trivial \\
+\rthree & prior-matched random guessing & 34.56 & n/a & trivial \\
+% ---- class counts sentence ----
+% Evaluable-subject windows: Low 3871 (25.4\%), Medium 5109 (33.5\%), High 6257 (41.1\%).
+% ---- Controls table rows (tab:controls2) ----
+Sensor features only (122) & 63.57 & 64.56 & 62.74 \\
+Sensor + drift context (full model) & 75.70 & 75.22 & 74.49 \\
+Sensor + elapsed time & 75.59 & 75.25 & 74.59 \\
+Sensor + drift context permuted within session & 62.76 & 64.03 & 62.39 \\
+Elapsed time only & 39.53 & 33.90 & 29.02 \\
+Drift context only & 45.62 & 44.95 & 45.00 \\
+Within drowsy session, Medium vs.\ High, uncalibrated & 87.90 & 78.66 & 80.12 \\
+Within drowsy session, Medium vs.\ High, calibrated & 85.96 & 75.83 & 77.05 \\
+% within-session majority baseline (mean over folds): 80.01
+Enrollment from the drowsy session (wrong state) & 6.04 & 6.43 & 6.90 \\
+% ---- Table VIII replacement (single pipeline, headline configuration) ----
+A & 51.0 & 50.1 & -1.0 \\
+B & 54.2 & 87.7 & +33.5 \\
+D & 52.2 & 76.9 & +24.7 \\
+E & 61.4 & 86.0 & +24.6 \\
+G & 56.7 & 70.7 & +14.0 \\
+H & 71.3 & 77.5 & +6.2 \\
+I & 50.0 & 65.2 & +15.2 \\
+J & 60.9 & 68.2 & +7.3 \\
+K & 54.1 & 79.4 & +25.3 \\
+M & 44.1 & 82.2 & +38.1 \\
+N & 40.4 & 79.4 & +39.0 \\
+O & 40.5 & 71.1 & +30.6 \\
+P & 39.0 & 83.2 & +44.1 \\
+Q & 28.7 & 86.6 & +57.9 \\
+R & 12.0 & 57.1 & +45.1 \\
+S & 23.8 & 90.0 & +66.1 \\
+% ---- Warning-level table rows (tab:alarm) ----
+False-alarm episodes per hour on Low-labelled windows & 1.12 \\
+False-alarm episodes per alert-session hour & 0.56 \\
+Low windows under alarm (\%) & 0.52 \\
+High windows under alarm (\%) & 87.31 \\
+Median latency to first alarm after KSS $\ge 7$ (min) & 0.00 \\
+Drowsy sessions detected within 5 min of KSS $\ge 7$ (\%) & 81.25 \\
+Median latency to first alarm after KSS $\ge 8$ (min) & 0.00 \\
+Drowsy sessions detected within 5 min of KSS $\ge 8$ (\%) & 100.00 \\

@@ -1,0 +1,17 @@
+{
+  "tag": "rpe1_filt0_n100_d5",
+  "dataset": "rpe1",
+  "filter": false,
+  "nmin": 100,
+  "d": 5,
+  "step0": false,
+  "n_envs": 651,
+  "n_fit": 50,
+  "coef_ratio_vs_ctrl": 1.131158979985068,
+  "coef_ratio_pairs": 1.157761496130026,
+  "shift_frac_vs_ctrl": 0.06213517665130568,
+  "shift_frac_pairs": 0.078,
+  "shift_frac_within": 0.05,
+  "mean_ratio_vs_ctrl": 1.631698712057381,
+  "mean_ratio_pairs": 2.1225629174779614
+}

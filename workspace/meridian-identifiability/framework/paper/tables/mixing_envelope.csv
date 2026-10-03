@@ -1,0 +1,11 @@
+d_latent,d_proj,scaling,s_star_grid,s_star_interp,reject_at_s0_linear_control,s_star_valid,note
+5,5,raw,0.1,0.1,0.022,True,"RIGHT-CENSORED: envelope never crossed within the grid, s* >= 0.1"
+5,5,standardised,0.1,0.1,0.02,True,"RIGHT-CENSORED: envelope never crossed within the grid, s* >= 0.1"
+10,10,raw,0.1,0.1,0.05,True,"RIGHT-CENSORED: envelope never crossed within the grid, s* >= 0.1"
+10,10,standardised,0.1,0.1,0.045,True,"RIGHT-CENSORED: envelope never crossed within the grid, s* >= 0.1"
+20,10,raw,0.02,0.0302,0.037,True,
+20,10,standardised,0.05,0.0588,0.022,True,
+40,10,raw,0.02,0.0345,0.037,True,
+40,10,standardised,0.02,0.046,0.04,True,
+80,10,raw,0.0,0.0,0.15,False,"INVALID: the test already fails at s=0 (exactly linear mixing) at this d_latent, so s* does not measure nonlinearity tolerance here"
+80,10,standardised,0.0,0.0,0.11,False,"INVALID: the test already fails at s=0 (exactly linear mixing) at this d_latent, so s* does not measure nonlinearity tolerance here"

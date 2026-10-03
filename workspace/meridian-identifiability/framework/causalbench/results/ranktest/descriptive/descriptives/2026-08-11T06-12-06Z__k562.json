@@ -1,0 +1,166 @@
+{
+  "dataset": "k562",
+  "blocks": [
+    {
+      "label": "k562",
+      "n_cells": 310385,
+      "n_features": 1158,
+      "n_control_cells": 10691,
+      "n_environments_total": 1159,
+      "environment_attrition": {
+        "50": 1159,
+        "125": 899,
+        "500": 27,
+        "2000": 1,
+        "8000": 1
+      },
+      "cells_per_environment": {
+        "n_environments": 1159,
+        "min": 101,
+        "q25": 128.0,
+        "median": 165.0,
+        "q75": 226.5,
+        "max": 70237,
+        "total_cells": 299694,
+        "n_above_hard_floor_125": 899,
+        "n_above_soft_floor_8000": 1,
+        "frac_above_hard_floor_125": 0.7756686798964625,
+        "frac_above_soft_floor_8000": 0.0008628127696289905
+      },
+      "latent_dimension_from_controls": {
+        "2000": {
+          "n_control_used": 2000,
+          "n_control_available": 10691,
+          "n_genes": 1158,
+          "rank_bound": 1158,
+          "participation_ratio": 455.5069103507008,
+          "effective_rank_exp_spectral_entropy": 722.770366864829,
+          "n_components_for_variance": {
+            "80pct": 492,
+            "90pct": 663,
+            "95pct": 800
+          },
+          "top_eigenvalue_share": 0.020734981043207142,
+          "n_nonzero_eigenvalues": 1158,
+          "matches_fit_pca_basis": true,
+          "fit_pca_mu_identical": true,
+          "spectra_key": "k562__2000",
+          "lam_len": 1158,
+          "lam_sum": 229.04683495584663,
+          "lam_sumsq": 115.17377982893674,
+          "spectra_sidecar": "2026-08-11T06-12-06Z__k562__spectra.npz"
+        },
+        "8000": {
+          "n_control_used": 8000,
+          "n_control_available": 10691,
+          "n_genes": 1158,
+          "rank_bound": 1158,
+          "participation_ratio": 552.5243597491797,
+          "effective_rank_exp_spectral_entropy": 885.7535973690635,
+          "n_components_for_variance": {
+            "80pct": 646,
+            "90pct": 822,
+            "95pct": 942
+          },
+          "top_eigenvalue_share": 0.02054618742220783,
+          "n_nonzero_eigenvalues": 1158,
+          "matches_fit_pca_basis": true,
+          "fit_pca_mu_identical": true,
+          "spectra_key": "k562__8000",
+          "lam_len": 1158,
+          "lam_sum": 231.17353684782188,
+          "lam_sumsq": 96.72189686440444,
+          "spectra_sidecar": "2026-08-11T06-12-06Z__k562__spectra.npz"
+        }
+      },
+      "data_fingerprint_controls": {
+        "shape": [
+          10691,
+          1158
+        ],
+        "dtype": "float64",
+        "sum": 10193470.991990954,
+        "sumsq": 19650154.606940012,
+        "nan_count": 0
+      }
+    }
+  ],
+  "platform_tag": "Linux-x86_64-py3.10.12",
+  "nmin_set": [
+    50,
+    125,
+    500,
+    2000,
+    8000
+  ],
+  "power_floors": {
+    "hard": 125,
+    "soft": 8000,
+    "source": "measured under LFC on the simulator; lfc/power_hard and lfc/power_soft"
+  },
+  "contains_no_test": true,
+  "disclaimer": "DESCRIPTIVE ONLY. No rank test was run and no assumption verdict is expressed or implied. Phase B is not authorised.",
+  "spectra_sidecar": "2026-08-11T06-12-06Z__k562__spectra.npz",
+  "peak_rss_mb": 4147.4,
+  "meta": {
+    "statistic": "descriptive",
+    "gate": "descriptives",
+    "git_commit": "8181090",
+    "timestamp": "2026-08-11T06:12:06Z",
+    "config": {
+      "alpha": null,
+      "B": null,
+      "n_e": null,
+      "d": null,
+      "d_latent": null,
+      "D": null,
+      "n_env": null,
+      "seeds": [
+        0
+      ],
+      "draws_per_point": null,
+      "extra": {
+        "dataset": "k562",
+        "arm": null,
+        "hvg": null,
+        "nmin_set": [
+          50,
+          125,
+          500,
+          2000,
+          8000
+        ],
+        "spec_caps": [
+          2000,
+          8000
+        ],
+        "platform_tag": "Linux-x86_64-py3.10.12",
+        "timezone": "UTC",
+        "timestamp_suffix": "Z",
+        "peak_rss_mb": 4147.4,
+        "overlap_check": false
+      }
+    },
+    "versions": {
+      "python": "3.10.12",
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "pandas": "2.3.3",
+      "sklearn": "1.7.2",
+      "scanpy": "1.11.5",
+      "anndata": "0.11.4",
+      "platform": {
+        "system": "Linux",
+        "release": "5.15.0-1065-nvidia",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "python_implementation": "CPython",
+        "numpy_blas": "scipy-openblas"
+      }
+    },
+    "superseded_by": null,
+    "migrated_from": null,
+    "status": "CURRENT",
+    "note": "descriptive profile of k562; no test, no verdict"
+  }
+}

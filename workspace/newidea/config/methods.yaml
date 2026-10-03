@@ -1,0 +1,64 @@
+audit_label: ORACLE-TUNED COMPATIBILITY AUDIT
+oracle_thresholds:
+  directed_f1: 0.80
+  skeleton_f1: 0.80
+  orientation_f1: 0.80
+materiality:
+  absolute_f1_drop: 0.20
+  normalized_degradation: 0.25
+common:
+  standardize_per_dataset: true
+methods:
+  PC-Pearson:
+    type: pc
+    implementation: causal-learn
+    alpha: 0.01
+    stable: true
+    uc_rule: 0
+    uc_priority: 2
+  PC-nonparanormal-preproc:
+    type: pc
+    implementation: causal-learn
+    alpha: 0.01
+    stable: true
+    uc_rule: 0
+    uc_priority: 2
+    preprocessing: rank_average_then_normal_ppf_using_(rank-0.5)/n
+  DirectLiNGAM:
+    type: directed
+    implementation: lingam
+    random_state: method_seed
+    weight_threshold: 0.10
+  NOTEARS-linear:
+    type: directed
+    implementation: pinned xunzheng/notears with exact cached covariance l2 objective
+    lambda1: 0.01
+    max_iter: 100
+    h_tol: 1.0e-8
+    rho_max: 1.0e16
+    weight_threshold: 0.10
+  NOTEARS-MLP:
+    type: directed
+    implementation: gCastle
+    lambda1: 0.01
+    lambda2: 0.01
+    max_iter: 50
+    h_tol: 1.0e-8
+    rho_max: 1.0e16
+    weight_threshold: 0.10
+    hidden_layers: [10, 1]
+    device_type: auto
+  GOLEM:
+    type: directed
+    implementation: gCastle
+    lambda_1: 0.02
+    lambda_2: 5.0
+    equal_variances: true
+    learning_rate: 0.001
+    num_iter: 5000
+    checkpoint_iter: 1000
+    graph_threshold: 0.10
+    device_type: auto
+excluded:
+  CAM:
+    reason: R runtime unavailable, so import and smoke fit could not be performed

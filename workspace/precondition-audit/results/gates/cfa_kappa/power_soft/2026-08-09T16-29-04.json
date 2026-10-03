@@ -1,0 +1,67 @@
+{
+  "soft_power_curve": {
+    "n_e": [
+      500,
+      2000,
+      8000,
+      20000
+    ],
+    "reject_raw": [
+      0.5,
+      0.7,
+      1.0,
+      1.0
+    ],
+    "reject_std": [
+      0.6,
+      0.7,
+      1.0,
+      1.0
+    ],
+    "verdict": "power problem that n fixes, not a structural inability"
+  },
+  "meta": {
+    "statistic": "cfa_kappa",
+    "gate": "power_soft",
+    "git_commit": "4bd658a",
+    "timestamp": "2026-08-09T16:29:04",
+    "config": {
+      "alpha": 0.05,
+      "B": 500,
+      "n_e": [
+        500,
+        2000,
+        8000,
+        20000
+      ],
+      "d": 10,
+      "d_latent": 10,
+      "D": 200,
+      "n_env": null,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "draws_per_point": 1
+    },
+    "versions": {
+      "python": "3.11.15",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.3",
+      "sklearn": "1.9.0"
+    },
+    "superseded_by": "lfc/power_soft",
+    "migrated_from": "git:4bd658a:causalbench/results/ranktest/acceptance_and_power.json",
+    "status": "SUPERSEDED",
+    "note": "SUPERSEDED, DO NOT QUOTE. Soft k=3 power curve measured under the kappa-tuned CF-A statistic, which is less conservative than LFC and therefore OVERSTATES power: 0.500 vs the LFC 0.300 at n_e=500 and 0.600 vs 0.400 standardised. Superseded by the LFC curve. CORRECTION to the handoff description: this curve is CF-A, not CF-T, its values are 0.500/0.700/1.000/1.000 raw (not 0.475/0.438, which are the Gate 1 k=3 soft point rates under CF-T), and its floor by the standard rule is 8000, not ~2000."
+  }
+}

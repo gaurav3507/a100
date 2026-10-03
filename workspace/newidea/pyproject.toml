@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crlcd-audit"
+version = "0.1.0"
+description = "Phase 1 CRL-CD interface compatibility audit"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "causal-learn==0.1.4.8",
+  "gcastle==1.0.4",
+  "lingam==1.12.2",
+  "networkx==3.6.1",
+  "numpy==1.26.4",
+  "pandas==3.0.5",
+  "pyyaml==6.0.3",
+  "scikit-learn==1.9.0",
+  "scipy==1.17.1",
+  "torch==2.3.1",
+]
+
+[dependency-groups]
+dev = ["pytest==9.1.1"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,169 @@
+{
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "note": "each entry is [mean, sd, n_seeds]",
+  "per_dataset": {
+    "K562": {
+      "naive_fake_rate": [
+        1.0,
+        0.0,
+        3
+      ],
+      "calib_fake_rate": [
+        0.12,
+        0.0712,
+        3
+      ],
+      "naive_random_rate": [
+        1.0,
+        0.0,
+        3
+      ],
+      "calib_random_rate": [
+        0.1667,
+        0.0236,
+        3
+      ],
+      "naive_struct_rate": [
+        1.0,
+        0.0,
+        3
+      ],
+      "calib_struct_rate": [
+        0.4833,
+        0.1027,
+        3
+      ],
+      "naive_pert_rate": [
+        1.0,
+        0.0,
+        3
+      ],
+      "calib_pert_rate": [
+        0.1567,
+        0.0593,
+        3
+      ],
+      "jaccard_calib_vs_gate": [
+        0.0,
+        0.0,
+        3
+      ],
+      "ica_nonconverged_frac": [
+        0.084,
+        0.0075,
+        3
+      ],
+      "n_seeds": 3
+    },
+    "RPE1": {
+      "naive_fake_rate": [
+        1.0,
+        0.0,
+        3
+      ],
+      "calib_fake_rate": [
+        0.08,
+        0.0327,
+        3
+      ],
+      "naive_random_rate": [
+        1.0,
+        0.0,
+        3
+      ],
+      "calib_random_rate": [
+        0.05,
+        0.0408,
+        3
+      ],
+      "naive_struct_rate": [
+        1.0,
+        0.0,
+        3
+      ],
+      "calib_struct_rate": [
+        0.2833,
+        0.1434,
+        3
+      ],
+      "naive_pert_rate": [
+        1.0,
+        0.0,
+        3
+      ],
+      "calib_pert_rate": [
+        0.0388,
+        0.0171,
+        3
+      ],
+      "jaccard_calib_vs_gate": [
+        0.0316,
+        0.017,
+        3
+      ],
+      "ica_nonconverged_frac": [
+        0.2602,
+        0.0163,
+        3
+      ],
+      "n_seeds": 3
+    },
+    "Norman": {
+      "naive_fake_rate": [
+        1.0,
+        0.0,
+        3
+      ],
+      "calib_fake_rate": [
+        0.0667,
+        0.0249,
+        3
+      ],
+      "naive_random_rate": [
+        1.0,
+        0.0,
+        3
+      ],
+      "calib_random_rate": [
+        0.0667,
+        0.0236,
+        3
+      ],
+      "naive_struct_rate": [
+        1.0,
+        0.0,
+        3
+      ],
+      "calib_struct_rate": [
+        0.1167,
+        0.1312,
+        3
+      ],
+      "naive_pert_rate": [
+        1.0,
+        0.0,
+        3
+      ],
+      "calib_pert_rate": [
+        0.0396,
+        0.0081,
+        3
+      ],
+      "jaccard_calib_vs_gate": [
+        0.0,
+        0.0,
+        3
+      ],
+      "ica_nonconverged_frac": [
+        0.0798,
+        0.0025,
+        3
+      ],
+      "n_seeds": 3
+    }
+  }
+}

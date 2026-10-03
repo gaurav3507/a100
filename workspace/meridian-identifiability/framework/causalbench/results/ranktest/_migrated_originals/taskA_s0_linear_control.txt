@@ -1,0 +1,12 @@
+s=0 CONTROL (exactly linear mixing), k=1, n_e=2000, 400 draws/point
+ d_lat   d       scaling  reject @ s=0
+     5   5           raw         0.022
+     5   5  standardised         0.020
+    10  10           raw         0.050
+    10  10  standardised         0.045
+    20  10           raw         0.037
+    20  10  standardised         0.022
+    40  10           raw         0.037
+    40  10  standardised         0.040
+    80  10           raw         0.150
+    80  10  standardised         0.110

@@ -1,0 +1,196 @@
+{
+  "dataset": "frangieh",
+  "blocks": [
+    {
+      "label": "frangieh:control",
+      "arm_flag": "control",
+      "arm_condition_value": "Control",
+      "n_cells_in_arm": 30486,
+      "n_control_cells": 3770,
+      "n_environments_total": 248,
+      "n_features": 23712,
+      "environment_attrition": {
+        "50": 211,
+        "125": 109,
+        "500": 0,
+        "2000": 0,
+        "8000": 0
+      },
+      "cells_per_environment": {
+        "n_environments": 248,
+        "min": 2,
+        "q25": 91.75,
+        "median": 121.0,
+        "q75": 139.0,
+        "max": 177,
+        "total_cells": 26716,
+        "n_above_hard_floor_125": 109,
+        "n_above_soft_floor_8000": 0,
+        "frac_above_hard_floor_125": 0.43951612903225806,
+        "frac_above_soft_floor_8000": 0.0
+      },
+      "latent_dimension_from_controls": {
+        "2000": {
+          "n_control_used": 2000,
+          "n_control_available": 3770,
+          "n_genes": 23712,
+          "rank_bound": 1999,
+          "participation_ratio": 419.2287458416629,
+          "effective_rank_exp_spectral_entropy": 1471.4926566116167,
+          "n_components_for_variance": {
+            "80pct": 1198,
+            "90pct": 1519,
+            "95pct": 1725
+          },
+          "top_eigenvalue_share": 0.04051462264021255,
+          "n_nonzero_eigenvalues": 2000,
+          "matches_fit_pca_basis": true,
+          "fit_pca_mu_identical": true,
+          "spectra_key": "frangieh_control__2000",
+          "lam_len": 2000,
+          "lam_sum": 35457.99584969975,
+          "lam_sumsq": 2999005.8700606823,
+          "spectra_sidecar": "2026-08-11T07-13-08Z__frangieh_control__spectra.npz"
+        },
+        "8000": {
+          "n_control_used": 3770,
+          "n_control_available": 3770,
+          "n_genes": 23712,
+          "rank_bound": 3769,
+          "participation_ratio": 453.2652449856443,
+          "effective_rank_exp_spectral_entropy": 2420.8209811057727,
+          "n_components_for_variance": {
+            "80pct": 1959,
+            "90pct": 2581,
+            "95pct": 3028
+          },
+          "top_eigenvalue_share": 0.04104096392623646,
+          "n_nonzero_eigenvalues": 3770,
+          "matches_fit_pca_basis": true,
+          "fit_pca_mu_identical": true,
+          "spectra_key": "frangieh_control__8000",
+          "lam_len": 3770,
+          "lam_sum": 35438.28249501589,
+          "lam_sumsq": 2770721.7354296055,
+          "spectra_sidecar": "2026-08-11T07-13-08Z__frangieh_control__spectra.npz"
+        }
+      },
+      "data_fingerprint_controls": {
+        "shape": [
+          3770,
+          23712
+        ],
+        "dtype": "float32",
+        "sum": 66524975.59870362,
+        "sumsq": 344064023.092316,
+        "nan_count": 0
+      },
+      "n_targets_in_expression_columns": 239,
+      "n_targets_total": 248,
+      "target_column_drop_is_noop": false,
+      "target_column_note": "Norman had 0/105 targets present as expression columns, which made the target-column drop in project() a no-op. This records whether the same holds here; a non-zero count means the drop is LIVE for this arm.",
+      "control_basis_scope": "within this arm only; arms are never pooled",
+      "spectrum_read_note": "expression read restricted to 3770 control cells of this arm; attrition and the cells-per-environment distribution come from the metadata and used no expression data"
+    },
+    {
+      "label": "frangieh:control:loader_metadata",
+      "loader_meta": {
+        "n_rows_metadata_after_skiprows": 218331,
+        "n_moi0": 23028,
+        "n_moi1": 126966,
+        "n_moi2plus": 68337,
+        "n_cells_kept": 126966,
+        "n_control_cells": 15621,
+        "control_guide_families": [
+          "NO_SITE",
+          "ONE_NON-GENE_SITE"
+        ],
+        "n_unparseable_sgrna": 0,
+        "arm_sizes_moi1": {
+          "IFN\u03b3": 50053,
+          "Co-culture": 46427,
+          "Control": 30486
+        }
+      },
+      "note": "single arm; the pooled profile is deliberately never computed"
+    }
+  ],
+  "platform_tag": "Linux-x86_64-py3.10.12",
+  "nmin_set": [
+    50,
+    125,
+    500,
+    2000,
+    8000
+  ],
+  "power_floors": {
+    "hard": 125,
+    "soft": 8000,
+    "source": "measured under LFC on the simulator; lfc/power_hard and lfc/power_soft"
+  },
+  "contains_no_test": true,
+  "disclaimer": "DESCRIPTIVE ONLY. No rank test was run and no assumption verdict is expressed or implied. Phase B is not authorised.",
+  "spectra_sidecar": "2026-08-11T07-13-08Z__frangieh_control__spectra.npz",
+  "peak_rss_mb": 6614.9,
+  "meta": {
+    "statistic": "descriptive",
+    "gate": "descriptives",
+    "git_commit": "8181090",
+    "timestamp": "2026-08-11T07:13:08Z",
+    "config": {
+      "alpha": null,
+      "B": null,
+      "n_e": null,
+      "d": null,
+      "d_latent": null,
+      "D": null,
+      "n_env": null,
+      "seeds": [
+        0
+      ],
+      "draws_per_point": null,
+      "extra": {
+        "dataset": "frangieh",
+        "arm": "control",
+        "hvg": null,
+        "nmin_set": [
+          50,
+          125,
+          500,
+          2000,
+          8000
+        ],
+        "spec_caps": [
+          2000,
+          8000
+        ],
+        "platform_tag": "Linux-x86_64-py3.10.12",
+        "timezone": "UTC",
+        "timestamp_suffix": "Z",
+        "peak_rss_mb": 6614.9,
+        "overlap_check": false
+      }
+    },
+    "versions": {
+      "python": "3.10.12",
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "pandas": "2.3.3",
+      "sklearn": "1.7.2",
+      "scanpy": "1.11.5",
+      "anndata": "0.11.4",
+      "platform": {
+        "system": "Linux",
+        "release": "5.15.0-1065-nvidia",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "python_implementation": "CPython",
+        "numpy_blas": "scipy-openblas"
+      }
+    },
+    "superseded_by": null,
+    "migrated_from": null,
+    "status": "CURRENT",
+    "note": "descriptive profile of frangieh; no test, no verdict"
+  }
+}

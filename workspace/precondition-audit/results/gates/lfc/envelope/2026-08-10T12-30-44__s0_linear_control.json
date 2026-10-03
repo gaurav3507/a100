@@ -1,0 +1,48 @@
+{
+  "raw_text": "s=0 CONTROL (exactly linear mixing), k=1, n_e=2000, 400 draws/point\n d_lat   d       scaling  reject @ s=0\n     5   5           raw         0.022\n     5   5  standardised         0.020\n    10  10           raw         0.050\n    10  10  standardised         0.045\n    20  10           raw         0.037\n    20  10  standardised         0.022\n    40  10           raw         0.037\n    40  10  standardised         0.040\n    80  10           raw         0.150\n    80  10  standardised         0.110\n",
+  "meta": {
+    "statistic": "lfc",
+    "gate": "envelope",
+    "git_commit": "bd2eecc",
+    "timestamp": "2026-08-10T12:30:44",
+    "config": {
+      "alpha": 0.05,
+      "B": 500,
+      "n_e": 2000,
+      "d": 10,
+      "d_latent": [
+        5,
+        10,
+        20,
+        40,
+        80
+      ],
+      "D": 200,
+      "n_env": null,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "draws_per_point": 400
+    },
+    "versions": {
+      "python": "3.11.15",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.3",
+      "sklearn": "1.9.0"
+    },
+    "superseded_by": null,
+    "migrated_from": "causalbench/results/ranktest/taskA_s0_linear_control.txt",
+    "status": "CURRENT",
+    "note": "s=0 control: at d_latent=80 the test rejects at 0.150 raw under exactly LINEAR mixing, so the envelope collapse there is not a nonlinearity effect"
+  }
+}

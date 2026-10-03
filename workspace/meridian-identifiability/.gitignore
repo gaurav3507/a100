@@ -1,0 +1,18 @@
+# data — never commit
+*.h5ad
+*.npz
+*.npy
+*.pkl
+*.pt
+*.tar
+*.gz
+data/
+datasets/
+logs/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# private
+notes/
+.claude/

@@ -1,0 +1,105 @@
+% =====================================================================
+% Section II: Related Work
+% =====================================================================
+\section{Related Work}
+\label{sec:related}
+
+\subsection{Model Based Reconstruction and Hand Crafted Priors}
+
+Statistical reconstruction of photon limited data begins with the
+multiplicative EM iteration of Shepp and Vardi \cite{shepp1982}, whose
+likelihood ascent is unregularised and therefore recovers noise as it
+converges. The standard remedies add a prior: total variation and its
+constrained formulations \cite{sidky2008}, anisotropic diffusion
+\cite{perona1990} and its fuzzy variants, and plug and play splittings that
+insert a generic denoiser into an ADMM iteration
+\cite{venkatakrishnan2013}. Fractional order penalties were introduced to
+soften the staircase artefacts of first order total variation and to give a
+continuous control over the smoothness class; in CT they have been used both
+as a fractional total variation and as an adaptive fractional order penalty
+whose exponent is tuned per image \cite{zhang2016fractional}. All of these
+methods share a free strength parameter, and the present work shows that its
+optimum moves by an order of magnitude between operating points, so a value
+carried over from one setting silently degrades another.
+
+Our own starting point \cite{singh2026spl} differs from the above in where
+the prior acts: instead of penalising spatial derivatives, it applies a
+zero-phase spectral operator that combines a fractional-order envelope with
+narrowband stop bands, which makes it possible to attenuate structured
+interference without smoothing edges. That letter, however, required both the
+order and the notch positions as inputs, which is the limitation removed
+here.
+
+\subsection{Learned Reconstruction}
+
+Learned methods for low-dose CT fall into three families. Post-processing
+networks map a noisy reconstruction to a clean one and are represented by the
+residual encoder decoder of Chen \emph{et al.} \cite{chen2017redcnn} and by
+adversarially trained variants \cite{yang2018wgan}; architecture search has
+been used to reduce their cost \cite{lu2023m3nas}. Unrolled methods embed the
+forward operator in the network, which improves data consistency and reduces
+the amount of training data required; learned primal-dual \cite{adler2018lpd}
+is the canonical example, with dual domain and optimisation inspired variants
+following \cite{wu2021drone,xiang2021fista}. Generative methods learn a prior
+over images and use it during inference: diffusion posterior sampling
+\cite{chung2023dps} conditions an unconditional score model on the
+measurements, and recent CT specific work has addressed the cost and the
+generalisation of such priors \cite{gao2024corediff} and their use for
+artefact reduction in dual domains \cite{liu2024mar}. Between the trained and
+the training free extremes sits the deep image prior
+\cite{ulyanov2018dip,baguer2020dip}, which fits an untrained network to a
+single measurement and is therefore the natural neural comparator for a
+method that uses no training data at all.
+
+\subsection{Robustness, Generalisation and Benchmarking}
+
+The reliability of learned reconstruction has been studied from two
+directions. Antun \emph{et al.} \cite{antun2020} showed that small
+perturbations can produce severe artefacts and that clinically relevant
+structures can be missed, and later analyses examined how far such
+instabilities extend in practice \cite{genzel2023}. Independently, controlled
+benchmarks have questioned how much of the reported progress survives a
+common training and evaluation protocol: Eulig \emph{et al.} \cite{eulig2024}
+retrained a range of low-dose denoisers under identical conditions and found
+that newer architectures do not consistently beat the older residual encoder
+decoder. Domain shift is the practical face of the same issue, and it
+motivates the generalisation oriented design of recent diffusion models for
+CT \cite{gao2024corediff}. The present work contributes a controlled
+measurement of that effect across a full method jury: the same trained
+weights are evaluated on a second public dataset without adaptation, and the
+loss is reported per family.
+
+\subsection{Parameter Selection}
+
+Choosing the regularisation strength from the data is classical in inverse
+problems, through the discrepancy principle, the L curve or unbiased risk
+estimation, but it is comparatively rare in CT practice, where the strength
+is usually fixed by protocol or by a sweep against a reference. For Poisson
+data the natural criterion is the deviance, which has a known expectation
+under the model and therefore provides a calibrated stopping rule. We use it
+to select the fractional order, and we show that a bounded candidate set,
+which is the usual implementation choice, turns the criterion into a fixed
+choice whenever the data demand stronger regularisation than the largest
+candidate.
+
+\subsection{Structured Artefacts}
+
+Ring and stripe artefacts arise from detector gain drift, defective channels
+and scintillator inhomogeneity. Sinogram domain corrections estimate a per
+channel gain, while image domain methods work in polar coordinates or in a
+transform domain in which rings become oriented structures. Our notch rule
+belongs to the image domain family and is explicitly limited to narrowband
+directional patterns: a concentric ring spreads its energy over all
+orientations and is therefore outside the model, which we state and test
+rather than assume.
+
+\subsection{Task Based Assessment}
+
+Pixel fidelity metrics are known to be imperfect proxies for diagnostic
+value, and the model observer framework \cite{barrett2004} provides the
+alternative. The channelised Hotelling observer with Laguerre-Gauss channels
+\cite{gallas2003} is the standard instrument for signal known exactly
+detection tasks and is used here with a split half estimator so that the
+reported detectability is free of the optimistic bias of resubstitution. Its
+inclusion changes the conclusions of the study, as Section \ref{sec:results}
+reports.

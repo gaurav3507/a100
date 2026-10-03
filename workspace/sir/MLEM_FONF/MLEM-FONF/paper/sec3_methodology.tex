@@ -1,0 +1,261 @@
+% =====================================================================
+% Section III: Methodology
+% A-FONF: Adaptive Fractional-Order Notch Filtering
+% =====================================================================
+\section{Methodology}
+\label{sec:method}
+
+\subsection{Measurement Model and Notation}
+\label{sec:model}
+
+Let $f\in\mathbb{R}_{+}^{N}$ denote the discretised attenuation image on an
+$n\times n$ grid, $N=n^{2}$, and let $A\in\mathbb{R}_{+}^{M\times N}$ be the
+system matrix of the acquisition, with $M=n_{d}n_{\theta}$ for $n_{d}$
+detector bins and $n_{\theta}$ views. Photon-limited measurements are modelled
+as independent Poisson variables
+\begin{equation}
+  y_{i}\sim\mathrm{Poisson}\!\left(\bar{y}_{i}\right),\qquad
+  \bar{y}_{i}=\frac{(Af)_{i}}{\kappa},\qquad
+  \kappa=\frac{\max_{j}(Af)_{j}}{I_{0}},
+  \label{eq:poisson}
+\end{equation}
+where $I_{0}$ is the incident count level of the most attenuating ray and
+$\kappa$ converts counts to line integrals, $g=\kappa y$. Lower $I_{0}$
+therefore corresponds to a lower dose. All quantities in
+\eqref{eq:poisson} are known at reconstruction time except $f$: the
+calibration constant $\kappa$ follows from the scanner gain, and the counts
+$y$ are the raw measurements.
+
+Frequencies are expressed in radians per pixel, $\omega=(\omega_{x},
+\omega_{y})$ with $|\omega|\le\omega_{N}\sqrt{2}$ and Nyquist radius
+$\omega_{N}=\pi$. We write $\mathcal{F}$ for the two-dimensional discrete
+Fourier transform, $\odot$ for the Hadamard product and $\mathbf{1}$ for the
+all-ones vector.
+
+\subsection{Fractional-Order Notch Filter}
+\label{sec:filter}
+
+The regulariser acts in the frequency domain through a real, zero-phase
+transfer function that combines a fractional-order low-pass envelope with
+$K$ narrowband stop bands,
+\begin{equation}
+  H_{\alpha,\Omega}(\omega)=
+  \underbrace{\exp\!\left(-\frac{\alpha\,|\omega|^{2}}{4\omega_{N}^{2}}\right)}_{\text{envelope}}
+  \prod_{m=1}^{K}
+  \underbrace{\left[1-\exp\!\left(-\frac{\|\omega-\omega_{m}\|^{2}}{2\sigma_{m}^{2}}\right)\right]^{\alpha/2}}_{\text{notch }m},
+  \label{eq:filter}
+\end{equation}
+where $\alpha>0$ is the fractional order,
+$\Omega=\{(\omega_{m},\sigma_{m})\}_{m=1}^{K}$ collects the notch centres and
+widths, and each factor is applied at $\omega_{m}$ and at $-\omega_{m}$ so
+that $H_{\alpha,\Omega}(-\omega)=H_{\alpha,\Omega}(\omega)$. The associated
+spectral operator \eqref{eq:operator} is
+\begin{equation}
+  \mathcal{S}_{\alpha,\Omega}\,x=\mathcal{F}^{-1}\!\left\{H_{\alpha,\Omega}\odot\mathcal{F}\{x\}\right\}.
+  \label{eq:operator}
+\end{equation}
+Two design choices matter for what follows. First, $\alpha$ scales the
+exponent of $|\omega|^{2}/\omega_{N}^{2}$, so it is defined relative to the
+sampling grid and is invariant to image resolution when the sampling density
+scales with $n$. Second, the notch depth carries the same order $\alpha$, so
+a single parameter controls both the broadband envelope and the selectivity
+of the stop bands.
+
+\begin{proposition}[Filter properties]
+\label{prop:filter}
+For every $\alpha>0$ and every finite $\Omega$ with $\sigma_{m}>0$:
+(i) $0\le H_{\alpha,\Omega}(\omega)\le 1$;
+(ii) $H_{\alpha,\Omega}(-\omega)=H_{\alpha,\Omega}(\omega)$, hence
+$\mathcal{S}_{\alpha,\Omega}$ maps real images to real images;
+(iii) $\mathcal{S}_{\alpha,\Omega}$ is self-adjoint and nonexpansive,
+$\|\mathcal{S}_{\alpha,\Omega}x\|_{2}\le\|x\|_{2}$;
+(iv) $K=0$ recovers the pure fractional-order envelope
+$G_{\alpha}(\omega)=\exp(-\alpha|\omega|^{2}/4\omega_{N}^{2})$.
+\end{proposition}
+
+\begin{proof}
+The envelope lies in $(0,1]$ and each bracket in \eqref{eq:filter} lies in
+$[0,1)$, so their product lies in $[0,1]$, which gives (i). Statement (ii)
+follows because $|\omega|$ is even and the notch factors are applied in
+conjugate pairs. For (iii), $\mathcal{S}_{\alpha,\Omega}$ is diagonal in the
+Fourier basis with real eigenvalues $H_{\alpha,\Omega}(\omega)$, hence
+self-adjoint, and by (i) its spectral radius is at most one, which by
+Parseval gives nonexpansiveness. Setting $K=0$ removes the product, giving
+(iv).
+\end{proof}
+
+Property (iii) is the reason the method cannot amplify: whatever the data,
+the spectral half-step is a contraction, in contrast with state dependent
+diffusion coefficients whose gain is unbounded. Section \ref{sec:results}
+reports the empirical consequence.
+
+\subsection{Damped Spectral EM Iteration}
+\label{sec:iteration}
+
+Let $c=A^{\!\top}\mathbf{1}$ denote the sensitivity image. Starting from
+$f^{0}=\mathbf{1}$, each iteration applies a damped multiplicative EM
+correction followed by the spectral half-step,
+\begin{align}
+  f^{k+\frac{1}{2}}
+  &= f^{k}\odot\left[\frac{A^{\!\top}\!\left(g\oslash Af^{k}\right)}{c}\right]^{\gamma},
+  \label{eq:em}\\[2pt]
+  f^{k+1}
+  &= \max\!\left\{(1-\lambda)\,f^{k+\frac{1}{2}}
+     +\lambda\,\mathcal{S}_{\alpha,\Omega}f^{k+\frac{1}{2}},\;0\right\},
+  \label{eq:spectral}
+\end{align}
+where $\oslash$ is elementwise division, the power in \eqref{eq:em} is
+elementwise, $\gamma\in(0,1]$ damps the multiplicative correction and
+$\lambda\in[0,1]$ relaxes the spectral step. Setting $\gamma=1$ and
+$\lambda=0$ recovers standard MLEM. The exponent form in \eqref{eq:em} keeps
+the update multiplicative, so nonnegativity is preserved without projection,
+and it is the form for which the mirror-descent interpretation of EM applies;
+a convex combination of $f^{k}$ and the EM image is a different iteration and
+is not used here.
+
+Throughout we use $\gamma=0.9$ and $\lambda=0.95$, both frozen before any
+evaluation on test data.
+
+\subsection{Order Selection by the Discrepancy Principle}
+\label{sec:alpha}
+
+The fractional order is selected from the data through the Poisson deviance
+between the measured counts and the counts predicted by a candidate
+reconstruction. For a reconstruction $f$ with predicted means
+$\mu_{i}(f)=(Af)_{i}/\kappa$, the mean deviance per ray is
+\begin{equation}
+  D(f)=\frac{2}{M}\sum_{i=1}^{M}
+  \left[\,y_{i}\log\frac{y_{i}}{\mu_{i}(f)}-\bigl(y_{i}-\mu_{i}(f)\bigr)\right],
+  \label{eq:deviance}
+\end{equation}
+with the convention $y\log y=0$ at $y=0$. Under the model \eqref{eq:poisson},
+$D(f^{\star})\approx 1$ for a reconstruction that explains the data to within
+the noise, which is the Poisson analogue of Morozov's discrepancy principle.
+We therefore select the largest order whose converged fit remains
+noise consistent,
+\begin{equation}
+  \alpha^{\star}=\max\left\{\alpha\in\mathcal{L}:\;D\!\left(f_{\alpha}\right)\le\tau\right\},
+  \qquad \tau=1,
+  \label{eq:morozov}
+\end{equation}
+where $f_{\alpha}$ is the reconstruction obtained with order $\alpha$ and no
+notches, and the candidate set $\mathcal{L}$ is the geometric ladder \eqref{eq:ladder}
+\begin{equation}
+  \mathcal{L}=\left\{\alpha_{0}2^{\,k}\right\}_{k=0}^{K_{\max}},
+  \qquad \alpha_{0}=0.2,\quad K_{\max}=7 .
+  \label{eq:ladder}
+\end{equation}
+The ladder is evaluated in ascending order and the search stops at the first
+violation of $D\le\tau$, which is exact because $D(f_{\alpha})$ is monotone
+increasing in $\alpha$: stronger smoothing can only widen the gap between the
+model and the data. A bounded grid must not be used here. The order required
+at a given operating point grows as the dose falls, and a ceiling silently
+turns the selection into a fixed choice; on our data the optimum moves from
+$\alpha=1.0$ at $300$ counts per ray to $\alpha=3.2$ at $75$ counts per ray
+at the same resolution and sampling. Selection is unaffected by resolution
+itself, consistent with the normalisation in \eqref{eq:filter}.
+
+\subsection{Robust Notch Detection}
+\label{sec:notch}
+
+Narrowband directional artefacts appear in the reconstruction as isolated
+peaks of the magnitude spectrum. Detecting them on clinical anatomy is not a
+thresholding exercise: anatomical spectra are strongly anisotropic, so an
+isotropic background model produces false positives on every slice. We use a
+four stage rule.
+
+\emph{Sectoral background.} The magnitude spectrum
+$P=|\mathcal{F}\{f\}|$ is partitioned into cells indexed by radius bin and
+angular sector ($S=16$ sectors), and the background $B$ is the median of $P$
+within each cell, with a per radius median as fallback for sparsely
+populated cells. The detection statistic is the ratio $R=P\oslash B$.
+
+\emph{Robust standardisation.} Over the annulus
+$\rho_{0}<\|\omega\|<\rho_{\max}$ we compute the median $m_{0}$ and the
+median absolute deviation of $R$, and standardise
+\begin{equation}
+  z(\omega)=\frac{R(\omega)-m_{0}}{1.4826\,\mathrm{MAD}(R)} .
+  \label{eq:zscore}
+\end{equation}
+Candidates are local maxima of $R$ in a $7\times 7$ neighbourhood whose
+standardised score \eqref{eq:zscore} exceeds $\kappa_{z}=10$.
+
+\emph{Acquisition band guard.} Candidates are restricted to
+$\rho_{\max}=n_{d}/2-2$, the detector Nyquist radius of the acquisition.
+Content beyond this radius cannot have been measured, so a peak there is a
+property of the inversion rather than of the object, and notching it removes
+nothing that the data contain.
+
+\emph{Spatial coherence gate.} For each surviving candidate, a one sided
+band-pass image is formed around $\omega_{m}$ and the fraction of the field
+of view where its envelope exceeds $30\%$ of its maximum is measured. A
+global stripe or ring covers the field, whereas anatomical texture forms
+localised packets; candidates with coverage below $0.35$ are rejected.
+
+Finally, the rule is applied to two iterates of the same reconstruction and
+only peaks that persist in both, within three pixels, are retained, which
+removes noise induced flukes. The half width of $R$ at half maximum sets
+$\sigma_{m}$, capped at $0.05\pi$.
+
+\subsection{Algorithm}
+\label{sec:algorithm}
+
+Algorithm \ref{alg:afonf} states the complete method. It has no run time
+parameter beyond the frozen constants $\gamma$, $\lambda$, $\tau$ and the
+detection thresholds: the order and the notch set are both determined by the
+data at hand.
+
+\begin{algorithm}[t]
+\caption{A-FONF reconstruction}
+\label{alg:afonf}
+\begin{algorithmic}[1]
+\REQUIRE counts $y$, calibration $\kappa$, system matrix $A$, detector width
+$n_{d}$; constants $\gamma=0.9$, $\lambda=0.95$, $\tau=1$, ladder
+$\mathcal{L}$, iteration budgets $T_{\mathrm{sel}}$, $T$
+\STATE $g\leftarrow\kappa y$, \; $c\leftarrow A^{\!\top}\mathbf{1}$
+\STATE \textbf{Stage 1 (order):}
+\FOR{$\alpha\in\mathcal{L}$ in ascending order}
+  \STATE $f_{\alpha}\leftarrow$ iterate \eqref{eq:em}, \eqref{eq:spectral}
+         for $T_{\mathrm{sel}}$ steps with $\gamma=1$, $\Omega=\emptyset$
+  \STATE $D_{\alpha}\leftarrow D(f_{\alpha})$ from \eqref{eq:deviance}
+  \IF{$D_{\alpha}>\tau$} \STATE \textbf{break} \ENDIF
+\ENDFOR
+\STATE $\alpha^{\star}\leftarrow\max\{\alpha:D_{\alpha}\le\tau\}$
+\STATE \textbf{Stage 2 (notches):}
+\STATE $f'\leftarrow$ $20$ steps of \eqref{eq:em}, \eqref{eq:spectral} with
+       $\alpha^{\star}$, warm started from $f_{\alpha^{\star}}$
+\STATE $\Omega\leftarrow$ peaks detected in both $f_{\alpha^{\star}}$ and
+       $f'$ (Section \ref{sec:notch})
+\STATE \textbf{Stage 3 (reconstruction):}
+\STATE $f\leftarrow$ $T$ steps of \eqref{eq:em}, \eqref{eq:spectral} with
+       $(\alpha^{\star},\Omega)$
+\RETURN $f$, $\alpha^{\star}$, $\Omega$
+\end{algorithmic}
+\end{algorithm}
+
+The selection stage dominates the cost, since it reconstructs once per
+candidate order; the early stop in \eqref{eq:morozov} keeps this to the
+number of ladder entries actually visited, typically four to six. The cost is
+incurred once per acquisition and is reported with the run times in
+Section \ref{sec:results}.
+
+\subsection{Geometry and Implementation}
+\label{sec:implementation}
+
+All operators are used through a single interface, so the same algorithm runs
+unchanged in parallel beam and fan beam geometry. Two backends are provided.
+A sparse matrix backend assembles $A$ once with bilinear ray weights and
+supplies $A^{\!\top}$ as the exact adjoint, which is required for the
+monotonicity argument and is verified numerically by
+$\langle Ax,u\rangle=\langle x,A^{\!\top}u\rangle$ to machine precision. A
+matrix free backend wraps a GPU projector for the clinical scale geometry,
+where an explicit matrix is impractical; the unmatched forward and back
+projector pair of that backend is used only for the large scale study, and
+the two backends are shown to agree by construction of the same iteration.
+Fan beam acquisitions use a flat detector with isocentre equispaced bins, so
+that the parallel beam matrix is recovered bin for bin as the source distance
+grows.
+
+Reference implementations of all baselines, the evaluation code, the fixed
+patient splits and the automated verification suite are released with the
+paper.

@@ -1,0 +1,43 @@
+{
+  "enc": "RL",
+  "n_subjects": 93,
+  "tasks": [
+    "WM",
+    "GAMBLING",
+    "MOTOR",
+    "LANGUAGE",
+    "SOCIAL",
+    "RELATIONAL",
+    "EMOTION"
+  ],
+  "results": {
+    "10": {
+      "shift_fraction": 0.0683973374295955,
+      "null_thr": 0.3598290804291035,
+      "within_median": 0.07356078134884506,
+      "between_median": 0.08910824500739838,
+      "ratio": 1.2113553359855123
+    },
+    "20": {
+      "shift_fraction": 0.06257296466973886,
+      "null_thr": 0.3770878572691128,
+      "within_median": 0.08953253781934223,
+      "between_median": 0.10123227815033742,
+      "ratio": 1.1306758482985495
+    },
+    "30": {
+      "shift_fraction": 0.059201513341298286,
+      "null_thr": 0.3764912523683627,
+      "within_median": 0.09626294228508298,
+      "between_median": 0.10561661931953696,
+      "ratio": 1.0971679943633539
+    },
+    "50": {
+      "shift_fraction": 0.05426062467997952,
+      "null_thr": 0.38526056388759844,
+      "within_median": 0.1058851645568511,
+      "between_median": 0.11237070625142119,
+      "ratio": 1.0612507117560048
+    }
+  }
+}

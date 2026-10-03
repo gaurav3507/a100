@@ -1,0 +1,77 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Secrets / local config (none tracked yet, keep it that way) ---
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# --- Editor / OS cruft ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Experiment tracking output (tasks.md 3.1: tensorboard/wandb) ---
+wandb/
+mlruns/
+runs/
+lightning_logs/
+*.log
+logs/
+
+# --- ESP32-S3 firmware build output (PlatformIO/ESP-IDF, tasks.md Phase 5) ---
+.pio/
+firmware/**/build/
+*.elf
+*.hex
+
+# --- Datasets: external, not part of this repo (README.md documents the paths) ---
+data/raw/*
+!data/raw/*.md
+
+# --- Generated pipeline artifacts: keep only the small, deterministic fold
+# assignments (cheap to diff, and the canonical split both tracks must
+# share); everything else under data/processed/ -- the multi-MB feature
+# table parquets, checkpoints, results JSON, ONNX/TensorRT exports,
+# sweep/ablation/benchmark output -- is regenerable from the external
+# datasets via scripts/build_feature_table.py and excluded by default, so
+# new output types never need a new .gitignore line.
+data/processed/*
+!data/processed/folds.json
+!data/processed/mephy_folds.json
+
+# --- Model / export artifacts, wherever they end up ---
+*.pt
+*.pth
+*.onnx
+*.engine
+*.npz
+
+# --- Reference/report PDFs: kept locally, not pushed (published papers +
+# personal report; see NOTES.md if this needs revisiting) ---
+*.pdf

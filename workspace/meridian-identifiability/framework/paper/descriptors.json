@@ -1,0 +1,177 @@
+{
+  "k562": {
+    "n_cells_raw": 310385,
+    "n_cells_after_excluded": 240148,
+    "n_features": 1158,
+    "n_excluded_cells": 70237,
+    "n_control_cells": 10691,
+    "n_perturbed_cells": 229457,
+    "n_unique_perturbations": 1158,
+    "n_perturbations_ge_200": 385,
+    "n_perturbations_ge_100": 1158,
+    "cells_per_pert_min": 101,
+    "cells_per_pert_p10": 111.0,
+    "cells_per_pert_median": 165.0,
+    "cells_per_pert_p90": 326.0,
+    "cells_per_pert_max": 1996,
+    "value_min": 0.0,
+    "value_max": 6.64419412612915,
+    "value_mean": 0.8108946892522235,
+    "frac_exactly_zero": 0.410936072680141,
+    "all_integers": false,
+    "targets_in_var_names": 1158
+  },
+  "rpe1": {
+    "n_cells_raw": 247914,
+    "n_cells_after_excluded": 139825,
+    "n_features": 651,
+    "n_excluded_cells": 108089,
+    "n_control_cells": 11485,
+    "n_perturbed_cells": 128340,
+    "n_unique_perturbations": 651,
+    "n_perturbations_ge_200": 146,
+    "n_perturbations_ge_100": 651,
+    "cells_per_pert_min": 101,
+    "cells_per_pert_p10": 107.0,
+    "cells_per_pert_median": 146.0,
+    "cells_per_pert_p90": 277.0,
+    "cells_per_pert_max": 3580,
+    "value_min": 0.0,
+    "value_max": 6.700432777404785,
+    "value_mean": 0.5958274873693722,
+    "frac_exactly_zero": 0.5038491681502902,
+    "all_integers": false,
+    "targets_in_var_names": 651
+  },
+  "norman": {
+    "n_cells_total": 108497,
+    "n_features": 5000,
+    "n_control_cells": 8907,
+    "n_single_perturbation_cells": 57831,
+    "n_double_perturbation_cells": 41759,
+    "n_unique_single_targets": 105,
+    "n_targets_ge_200": 101,
+    "n_targets_ge_100": 105,
+    "cells_per_pert_min": 113,
+    "cells_per_pert_median": 495.0,
+    "cells_per_pert_max": 1960,
+    "targets_in_var_names": 0,
+    "obs_columns": [
+      "guide_identity",
+      "read_count",
+      "UMI_count",
+      "gemgroup",
+      "good_coverage",
+      "number_of_cells",
+      "guide_ids",
+      "guide_merged",
+      "split",
+      "batch",
+      "condition",
+      "cell_type",
+      "dose_val",
+      "control",
+      "drug_dose_name",
+      "cov_drug_dose_name"
+    ]
+  },
+  "causalbench_k562_h5ad": {
+    "n_cells": 240148,
+    "n_features": 1158,
+    "n_control_cells_empty_string": 10691,
+    "n_unique_guide_ids": 1159,
+    "obs_columns": [
+      "guide_ids"
+    ]
+  },
+  "hcp_mean_shift_LR.json": {
+    "enc": "LR",
+    "n_subjects": 92,
+    "nframes": 176,
+    "tasks": [
+      "WM",
+      "GAMBLING",
+      "MOTOR",
+      "LANGUAGE",
+      "SOCIAL",
+      "RELATIONAL",
+      "EMOTION"
+    ],
+    "result_keys": [
+      "10",
+      "20",
+      "30",
+      "50"
+    ],
+    "per_d_keys": [
+      "between_median",
+      "max_possible_dims",
+      "mean_ratio",
+      "n_dims_above_2x",
+      "n_dims_above_noise",
+      "participation_ratio",
+      "s2_over_s1",
+      "sing_ratio",
+      "within_median"
+    ]
+  },
+  "hcp_mean_shift_RL.json": {
+    "enc": "RL",
+    "n_subjects": 93,
+    "nframes": 176,
+    "tasks": [
+      "WM",
+      "GAMBLING",
+      "MOTOR",
+      "LANGUAGE",
+      "SOCIAL",
+      "RELATIONAL",
+      "EMOTION"
+    ],
+    "result_keys": [
+      "10",
+      "20",
+      "30",
+      "50"
+    ],
+    "per_d_keys": [
+      "between_median",
+      "max_possible_dims",
+      "mean_ratio",
+      "n_dims_above_2x",
+      "n_dims_above_noise",
+      "participation_ratio",
+      "s2_over_s1",
+      "sing_ratio",
+      "within_median"
+    ]
+  },
+  "hcp_mean_shift_v2.json": {
+    "n_subjects": 92,
+    "nframes": 176,
+    "tasks": [
+      "WM",
+      "GAMBLING",
+      "MOTOR",
+      "LANGUAGE",
+      "SOCIAL",
+      "RELATIONAL",
+      "EMOTION"
+    ],
+    "result_keys": [
+      "raw",
+      "subject_pooled"
+    ],
+    "per_d_keys": [
+      "10",
+      "20",
+      "30",
+      "50"
+    ]
+  },
+  "hcp_mean_shift_v2_py": {
+    "n_lines": 84,
+    "has_pairs": false,
+    "has_step0": false
+  }
+}

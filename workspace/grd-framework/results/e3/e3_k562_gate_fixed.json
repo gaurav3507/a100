@@ -1,0 +1,27 @@
+{
+  "dataset": "causalbench_k562",
+  "n_powered_perts": 385,
+  "d_proj": 10,
+  "nmin": 200,
+  "null": "SIZE-MATCHED per environment (Lesson-2 fix)",
+  "negative_control_fake_detect": "2/50",
+  "negative_control_rate": 0.04,
+  "n_detectable": 50,
+  "frac_detectable": 0.1299,
+  "ratio_median": 0.704,
+  "ratio_p90": 1.029,
+  "frac_gt_2": 0.0,
+  "aggregate_singular_values": [
+    36.079,
+    23.143,
+    13.453,
+    8.495,
+    6.158,
+    5.53,
+    4.168,
+    3.507,
+    2.547,
+    1.848
+  ],
+  "timestamp": "2026-09-14T03:48:49Z"
+}

@@ -1,0 +1,22 @@
+# generated   : 2026-08-11T08:15:00Z
+# generator   : 88_make_descriptive_tables.py @ 8181090
+# source dir  : causalbench/results/ranktest/descriptive/descriptives
+"# artefacts   : 8 CURRENT, 0 skipped"
+#   source    : 2026-08-11T06-12-06Z__k562.json   meta.git_commit=8181090
+#   source    : 2026-08-11T06-12-20Z__rpe1.json   meta.git_commit=8181090
+#   source    : 2026-08-11T06-20-34Z__norman.json   meta.git_commit=8181090
+#   source    : 2026-08-11T06-53-37Z__frangieh_coculture.json   meta.git_commit=8181090
+#   source    : 2026-08-11T07-13-08Z__frangieh_control.json   meta.git_commit=8181090
+#   source    : 2026-08-11T07-47-30Z__frangieh_ifng.json   meta.git_commit=8181090
+#   source    : 2026-08-11T07-47-38Z__hcp.json   meta.git_commit=8181090
+#   source    : 2026-08-11T07-47-45Z__abide.json   meta.git_commit=8181090
+dataset,n_environments,surv_50,surv_125,surv_500,surv_2000,surv_8000,cells_min,cells_q25,cells_median,cells_q75,cells_max,total_cells,frac_above_hard_125,frac_above_soft_8000
+abide,14,14,14,14,14,2,3480,4089,4930,6032,19604,86072,1,0.1429
+frangieh_coculture,248,218,187,0,0,0,3,127.8,179.5,216,435,40720,0.754,0
+frangieh_control,248,211,109,0,0,0,2,91.75,121,139,177,26716,0.4395,0
+frangieh_ifng,248,220,192,0,0,0,5,147,199,229.2,315,43909,0.7742,0
+hcp,7,7,7,7,7,7,32384,3.238e+04,3.238e+04,3.238e+04,32384,226688,1,1
+k562,1159,1159,899,27,1,1,101,128,165,226.5,70237,299694,0.7757,0.0009
+norman,105,105,104,51,0,0,113,331,495,690,1960,57831,0.9905,0
+rpe1,652,652,451,23,2,1,101,119,146.5,190,108089,236429,0.6917,0.0015
+"# fMRI environments are acquisition sites (ABIDE) or task conditions (HCP), not interventions; a site shifts measurement rather than mechanism, so the attrition curve is a descriptive analogue and not an interventional one. Neither has a control condition, so no control-covariance spectrum is computed and their rows are absent from Table B."

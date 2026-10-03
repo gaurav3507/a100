@@ -1,0 +1,733 @@
+{
+  "role": "second backbone",
+  "gate_readout": "frobenius",
+  "backbone": {
+    "name": "Backbone C",
+    "role": "second backbone",
+    "gate_readout": "frobenius",
+    "recovery": "jad",
+    "gate_statistic": "||Prec(Y_e) - Prec(Y_0)||_F",
+    "recovery_rule": "joint approximate diagonalization (FFDiag, Ziehe et al. 2004) of all Delta_e = Prec(Y_e) - Prec(Y_0); unmixing rows are the columns of V^-1, matched to the known targets (Hungarian)",
+    "null": "size-matched; disjoint split when n_e <= n_0/2, else two-resample"
+  },
+  "two_sided_note": "||Delta_e||_F is two-sided: it reacts to precision increases and decreases alike, so the lambda_max one-sidedness result (variance inflation invisible, Prop 1) does not carry over to Backbone C.",
+  "rows_note": "rows[].precision_crit keeps its e2b key name but holds the gate threshold of gate_readout",
+  "population_check": {
+    "population_mcc_mean": 0.9986,
+    "population_mcc_min": 0.9974,
+    "passed": true,
+    "rule": {
+      "mean_at_least": 0.99,
+      "every_seed_at_least": 0.98
+    }
+  },
+  "comparison_to_precision_e2b": {
+    "source": "results/e2b/attribution_report.json",
+    "sha256": "e4426e87f4394a1a35dc2d49d14355bbdc1d6fdec1d4f384df4d8346635f82c4",
+    "per_case": {
+      "mechanism_hard_iv": {
+        "detected_rate": {
+          "frobenius": 1.0,
+          "precision": 1.0
+        },
+        "unattributed_rate_given_detected": {
+          "frobenius": 0.4,
+          "precision": 0.4
+        },
+        "n_detected_by_both": 10,
+        "verdict_agreement_when_both_detected": 10
+      },
+      "mixed_gain_u05_15": {
+        "detected_rate": {
+          "frobenius": 0.6,
+          "precision": 0.5
+        },
+        "unattributed_rate_given_detected": {
+          "frobenius": 1.0,
+          "precision": 1.0
+        },
+        "n_detected_by_both": 5,
+        "verdict_agreement_when_both_detected": 5
+      },
+      "uniform_gain_0.7": {
+        "detected_rate": {
+          "frobenius": 1.0,
+          "precision": 1.0
+        },
+        "unattributed_rate_given_detected": {
+          "frobenius": 1.0,
+          "precision": 1.0
+        },
+        "n_detected_by_both": 10,
+        "verdict_agreement_when_both_detected": 10
+      },
+      "uniform_gain_1.0": {
+        "detected_rate": {
+          "frobenius": 0.0,
+          "precision": 0.0
+        },
+        "unattributed_rate_given_detected": {
+          "frobenius": null,
+          "precision": null
+        },
+        "n_detected_by_both": 0,
+        "verdict_agreement_when_both_detected": 0
+      },
+      "uniform_gain_1.4": {
+        "detected_rate": {
+          "frobenius": 1.0,
+          "precision": 0.0
+        },
+        "unattributed_rate_given_detected": {
+          "frobenius": 0.0,
+          "precision": null
+        },
+        "n_detected_by_both": 0,
+        "verdict_agreement_when_both_detected": 0
+      }
+    }
+  },
+  "experiment": "e4_attribution",
+  "alpha": 0.05,
+  "B": 500,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "d_latent": 5,
+  "d_obs": 200,
+  "d_proj": 5,
+  "n_base": 2000,
+  "iv_base": 0.1,
+  "edge_prob": 0.4,
+  "note": "Three-way verdict operating characteristics. Subspace null computed once per seed and shared across cases (same control, same n_env). Uniform-shrink landing MECHANISM_SUPPORTED is the documented Prop 3 blind spot, measured deliberately.",
+  "summary": {
+    "mechanism_hard_iv": {
+      "n_seeds": 10,
+      "detected_rate": 1.0,
+      "unattributed_rate_given_detected": 0.4,
+      "mechanism_supported_rate_given_detected": 0.6,
+      "angle_deg_mean": 1.86,
+      "angle_deg_sd": 0.72,
+      "expected": "detected ~1.0; UNATTRIBUTED|detected as in e2b (attribution step unchanged)",
+      "expected_precision_e2b": "detected ~1.0; UNATTRIBUTED-rate ~alpha (Prop 3(i))"
+    },
+    "mixed_gain_u05_15": {
+      "n_seeds": 10,
+      "detected_rate": 0.6,
+      "unattributed_rate_given_detected": 1.0,
+      "mechanism_supported_rate_given_detected": 0.0,
+      "angle_deg_mean": 17.91,
+      "angle_deg_sd": 0.44,
+      "expected": "detected high; UNATTRIBUTED|detected ~1.0 as in e2b",
+      "expected_precision_e2b": "detected high; of detected, UNATTRIBUTED ~1.0 (Prop 3(ii))"
+    },
+    "uniform_gain_0.7": {
+      "n_seeds": 10,
+      "detected_rate": 1.0,
+      "unattributed_rate_given_detected": 1.0,
+      "mechanism_supported_rate_given_detected": 0.0,
+      "angle_deg_mean": 2.12,
+      "angle_deg_sd": 0.97,
+      "expected": "detected ~1.0; verdict as in e2b (attribution step unchanged)",
+      "expected_precision_e2b": "detected 1.0; MECHANISM_SUPPORTED (documented Prop 3 blind spot)"
+    },
+    "uniform_gain_1.0": {
+      "n_seeds": 10,
+      "detected_rate": 0.0,
+      "unattributed_rate_given_detected": null,
+      "mechanism_supported_rate_given_detected": null,
+      "angle_deg_mean": null,
+      "angle_deg_sd": null,
+      "expected": "detected ~alpha (identity sanity)",
+      "expected_precision_e2b": "detected ~alpha (identity sanity)"
+    },
+    "uniform_gain_1.4": {
+      "n_seeds": 10,
+      "detected_rate": 1.0,
+      "unattributed_rate_given_detected": 0.0,
+      "mechanism_supported_rate_given_detected": 1.0,
+      "angle_deg_mean": 1.48,
+      "angle_deg_sd": 0.65,
+      "expected": "detected ~1.0, NOT ~0 as for lambda_max: ||Delta||_F is two-sided, so inflation is visible; the Prop 1 one-sidedness does not carry over",
+      "expected_precision_e2b": "detected ~0 (Prop 1, inflation invisible)"
+    }
+  },
+  "rows": [
+    {
+      "seed": 0,
+      "case": "mechanism_hard_iv",
+      "verdict": "MECHANISM_SUPPORTED",
+      "detected": true,
+      "subspace_angle_deg": 3.766,
+      "subspace_null_deg": 4.009,
+      "subspace_rotated": false,
+      "precision_crit": 0.007,
+      "subspace_null_deg_shared": 4.009
+    },
+    {
+      "seed": 0,
+      "case": "mixed_gain_u05_15",
+      "verdict": "NO_DETECTABLE_SHIFT",
+      "detected": false,
+      "subspace_angle_deg": null,
+      "subspace_null_deg": null,
+      "subspace_rotated": null,
+      "precision_crit": 0.007,
+      "subspace_null_deg_shared": 4.009
+    },
+    {
+      "seed": 0,
+      "case": "uniform_gain_0.7",
+      "verdict": "DETECTABLE_BUT_UNATTRIBUTED",
+      "detected": true,
+      "subspace_angle_deg": 4.686,
+      "subspace_null_deg": 4.009,
+      "subspace_rotated": true,
+      "precision_crit": 0.007,
+      "subspace_null_deg_shared": 4.009
+    },
+    {
+      "seed": 0,
+      "case": "uniform_gain_1.0",
+      "verdict": "NO_DETECTABLE_SHIFT",
+      "detected": false,
+      "subspace_angle_deg": null,
+      "subspace_null_deg": null,
+      "subspace_rotated": null,
+      "precision_crit": 0.007,
+      "subspace_null_deg_shared": 4.009
+    },
+    {
+      "seed": 0,
+      "case": "uniform_gain_1.4",
+      "verdict": "MECHANISM_SUPPORTED",
+      "detected": true,
+      "subspace_angle_deg": 3.151,
+      "subspace_null_deg": 4.009,
+      "subspace_rotated": false,
+      "precision_crit": 0.007,
+      "subspace_null_deg_shared": 4.009
+    },
+    {
+      "seed": 1,
+      "case": "mechanism_hard_iv",
+      "verdict": "DETECTABLE_BUT_UNATTRIBUTED",
+      "detected": true,
+      "subspace_angle_deg": 2.12,
+      "subspace_null_deg": 1.921,
+      "subspace_rotated": true,
+      "precision_crit": 0.00304,
+      "subspace_null_deg_shared": 1.921
+    },
+    {
+      "seed": 1,
+      "case": "mixed_gain_u05_15",
+      "verdict": "DETECTABLE_BUT_UNATTRIBUTED",
+      "detected": true,
+      "subspace_angle_deg": 17.412,
+      "subspace_null_deg": 1.921,
+      "subspace_rotated": true,
+      "precision_crit": 0.00304,
+      "subspace_null_deg_shared": 1.921
+    },
+    {
+      "seed": 1,
+      "case": "uniform_gain_0.7",
+      "verdict": "DETECTABLE_BUT_UNATTRIBUTED",
+      "detected": true,
+      "subspace_angle_deg": 2.158,
+      "subspace_null_deg": 1.921,
+      "subspace_rotated": true,
+      "precision_crit": 0.00304,
+      "subspace_null_deg_shared": 1.921
+    },
+    {
+      "seed": 1,
+      "case": "uniform_gain_1.0",
+      "verdict": "NO_DETECTABLE_SHIFT",
+      "detected": false,
+      "subspace_angle_deg": null,
+      "subspace_null_deg": null,
+      "subspace_rotated": null,
+      "precision_crit": 0.00304,
+      "subspace_null_deg_shared": 1.921
+    },
+    {
+      "seed": 1,
+      "case": "uniform_gain_1.4",
+      "verdict": "MECHANISM_SUPPORTED",
+      "detected": true,
+      "subspace_angle_deg": 1.506,
+      "subspace_null_deg": 1.921,
+      "subspace_rotated": false,
+      "precision_crit": 0.00304,
+      "subspace_null_deg_shared": 1.921
+    },
+    {
+      "seed": 2,
+      "case": "mechanism_hard_iv",
+      "verdict": "MECHANISM_SUPPORTED",
+      "detected": true,
+      "subspace_angle_deg": 2.314,
+      "subspace_null_deg": 2.395,
+      "subspace_rotated": false,
+      "precision_crit": 0.00431,
+      "subspace_null_deg_shared": 2.395
+    },
+    {
+      "seed": 2,
+      "case": "mixed_gain_u05_15",
+      "verdict": "NO_DETECTABLE_SHIFT",
+      "detected": false,
+      "subspace_angle_deg": null,
+      "subspace_null_deg": null,
+      "subspace_rotated": null,
+      "precision_crit": 0.00431,
+      "subspace_null_deg_shared": 2.395
+    },
+    {
+      "seed": 2,
+      "case": "uniform_gain_0.7",
+      "verdict": "DETECTABLE_BUT_UNATTRIBUTED",
+      "detected": true,
+      "subspace_angle_deg": 2.659,
+      "subspace_null_deg": 2.395,
+      "subspace_rotated": true,
+      "precision_crit": 0.00431,
+      "subspace_null_deg_shared": 2.395
+    },
+    {
+      "seed": 2,
+      "case": "uniform_gain_1.0",
+      "verdict": "NO_DETECTABLE_SHIFT",
+      "detected": false,
+      "subspace_angle_deg": null,
+      "subspace_null_deg": null,
+      "subspace_rotated": null,
+      "precision_crit": 0.00431,
+      "subspace_null_deg_shared": 2.395
+    },
+    {
+      "seed": 2,
+      "case": "uniform_gain_1.4",
+      "verdict": "MECHANISM_SUPPORTED",
+      "detected": true,
+      "subspace_angle_deg": 1.896,
+      "subspace_null_deg": 2.395,
+      "subspace_rotated": false,
+      "precision_crit": 0.00431,
+      "subspace_null_deg_shared": 2.395
+    },
+    {
+      "seed": 3,
+      "case": "mechanism_hard_iv",
+      "verdict": "MECHANISM_SUPPORTED",
+      "detected": true,
+      "subspace_angle_deg": 1.674,
+      "subspace_null_deg": 1.977,
+      "subspace_rotated": false,
+      "precision_crit": 0.00382,
+      "subspace_null_deg_shared": 1.977
+    },
+    {
+      "seed": 3,
+      "case": "mixed_gain_u05_15",
+      "verdict": "NO_DETECTABLE_SHIFT",
+      "detected": false,
+      "subspace_angle_deg": null,
+      "subspace_null_deg": null,
+      "subspace_rotated": null,
+      "precision_crit": 0.00382,
+      "subspace_null_deg_shared": 1.977
+    },
+    {
+      "seed": 3,
+      "case": "uniform_gain_0.7",
+      "verdict": "DETECTABLE_BUT_UNATTRIBUTED",
+      "detected": true,
+      "subspace_angle_deg": 2.327,
+      "subspace_null_deg": 1.977,
+      "subspace_rotated": true,
+      "precision_crit": 0.00382,
+      "subspace_null_deg_shared": 1.977
+    },
+    {
+      "seed": 3,
+      "case": "uniform_gain_1.0",
+      "verdict": "NO_DETECTABLE_SHIFT",
+      "detected": false,
+      "subspace_angle_deg": null,
+      "subspace_null_deg": null,
+      "subspace_rotated": null,
+      "precision_crit": 0.00382,
+      "subspace_null_deg_shared": 1.977
+    },
+    {
+      "seed": 3,
+      "case": "uniform_gain_1.4",
+      "verdict": "MECHANISM_SUPPORTED",
+      "detected": true,
+      "subspace_angle_deg": 1.681,
+      "subspace_null_deg": 1.977,
+      "subspace_rotated": false,
+      "precision_crit": 0.00382,
+      "subspace_null_deg_shared": 1.977
+    },
+    {
+      "seed": 4,
+      "case": "mechanism_hard_iv",
+      "verdict": "MECHANISM_SUPPORTED",
+      "detected": true,
+      "subspace_angle_deg": 1.357,
+      "subspace_null_deg": 1.383,
+      "subspace_rotated": false,
+      "precision_crit": 0.00286,
+      "subspace_null_deg_shared": 1.383
+    },
+    {
+      "seed": 4,
+      "case": "mixed_gain_u05_15",
+      "verdict": "DETECTABLE_BUT_UNATTRIBUTED",
+      "detected": true,
+      "subspace_angle_deg": 18.497,
+      "subspace_null_deg": 1.383,
+      "subspace_rotated": true,
+      "precision_crit": 0.00286,
+      "subspace_null_deg_shared": 1.383
+    },
+    {
+      "seed": 4,
+      "case": "uniform_gain_0.7",
+      "verdict": "DETECTABLE_BUT_UNATTRIBUTED",
+      "detected": true,
+      "subspace_angle_deg": 1.478,
+      "subspace_null_deg": 1.383,
+      "subspace_rotated": true,
+      "precision_crit": 0.00286,
+      "subspace_null_deg_shared": 1.383
+    },
+    {
+      "seed": 4,
+      "case": "uniform_gain_1.0",
+      "verdict": "NO_DETECTABLE_SHIFT",
+      "detected": false,
+      "subspace_angle_deg": null,
+      "subspace_null_deg": null,
+      "subspace_rotated": null,
+      "precision_crit": 0.00286,
+      "subspace_null_deg_shared": 1.383
+    },
+    {
+      "seed": 4,
+      "case": "uniform_gain_1.4",
+      "verdict": "MECHANISM_SUPPORTED",
+      "detected": true,
+      "subspace_angle_deg": 1.047,
+      "subspace_null_deg": 1.383,
+      "subspace_rotated": false,
+      "precision_crit": 0.00286,
+      "subspace_null_deg_shared": 1.383
+    },
+    {
+      "seed": 5,
+      "case": "mechanism_hard_iv",
+      "verdict": "DETECTABLE_BUT_UNATTRIBUTED",
+      "detected": true,
+      "subspace_angle_deg": 1.467,
+      "subspace_null_deg": 1.079,
+      "subspace_rotated": true,
+      "precision_crit": 0.00214,
+      "subspace_null_deg_shared": 1.079
+    },
+    {
+      "seed": 5,
+      "case": "mixed_gain_u05_15",
+      "verdict": "DETECTABLE_BUT_UNATTRIBUTED",
+      "detected": true,
+      "subspace_angle_deg": 18.503,
+      "subspace_null_deg": 1.079,
+      "subspace_rotated": true,
+      "precision_crit": 0.00214,
+      "subspace_null_deg_shared": 1.079
+    },
+    {
+      "seed": 5,
+      "case": "uniform_gain_0.7",
+      "verdict": "DETECTABLE_BUT_UNATTRIBUTED",
+      "detected": true,
+      "subspace_angle_deg": 1.297,
+      "subspace_null_deg": 1.079,
+      "subspace_rotated": true,
+      "precision_crit": 0.00214,
+      "subspace_null_deg_shared": 1.079
+    },
+    {
+      "seed": 5,
+      "case": "uniform_gain_1.0",
+      "verdict": "NO_DETECTABLE_SHIFT",
+      "detected": false,
+      "subspace_angle_deg": null,
+      "subspace_null_deg": null,
+      "subspace_rotated": null,
+      "precision_crit": 0.00214,
+      "subspace_null_deg_shared": 1.079
+    },
+    {
+      "seed": 5,
+      "case": "uniform_gain_1.4",
+      "verdict": "MECHANISM_SUPPORTED",
+      "detected": true,
+      "subspace_angle_deg": 0.922,
+      "subspace_null_deg": 1.079,
+      "subspace_rotated": false,
+      "precision_crit": 0.00214,
+      "subspace_null_deg_shared": 1.079
+    },
+    {
+      "seed": 6,
+      "case": "mechanism_hard_iv",
+      "verdict": "DETECTABLE_BUT_UNATTRIBUTED",
+      "detected": true,
+      "subspace_angle_deg": 1.333,
+      "subspace_null_deg": 1.047,
+      "subspace_rotated": true,
+      "precision_crit": 0.00211,
+      "subspace_null_deg_shared": 1.047
+    },
+    {
+      "seed": 6,
+      "case": "mixed_gain_u05_15",
+      "verdict": "DETECTABLE_BUT_UNATTRIBUTED",
+      "detected": true,
+      "subspace_angle_deg": 17.552,
+      "subspace_null_deg": 1.047,
+      "subspace_rotated": true,
+      "precision_crit": 0.00211,
+      "subspace_null_deg_shared": 1.047
+    },
+    {
+      "seed": 6,
+      "case": "uniform_gain_0.7",
+      "verdict": "DETECTABLE_BUT_UNATTRIBUTED",
+      "detected": true,
+      "subspace_angle_deg": 1.092,
+      "subspace_null_deg": 1.047,
+      "subspace_rotated": true,
+      "precision_crit": 0.00211,
+      "subspace_null_deg_shared": 1.047
+    },
+    {
+      "seed": 6,
+      "case": "uniform_gain_1.0",
+      "verdict": "NO_DETECTABLE_SHIFT",
+      "detected": false,
+      "subspace_angle_deg": null,
+      "subspace_null_deg": null,
+      "subspace_rotated": null,
+      "precision_crit": 0.00211,
+      "subspace_null_deg_shared": 1.047
+    },
+    {
+      "seed": 6,
+      "case": "uniform_gain_1.4",
+      "verdict": "MECHANISM_SUPPORTED",
+      "detected": true,
+      "subspace_angle_deg": 0.778,
+      "subspace_null_deg": 1.047,
+      "subspace_rotated": false,
+      "precision_crit": 0.00211,
+      "subspace_null_deg_shared": 1.047
+    },
+    {
+      "seed": 7,
+      "case": "mechanism_hard_iv",
+      "verdict": "MECHANISM_SUPPORTED",
+      "detected": true,
+      "subspace_angle_deg": 1.635,
+      "subspace_null_deg": 1.746,
+      "subspace_rotated": false,
+      "precision_crit": 0.0043,
+      "subspace_null_deg_shared": 1.746
+    },
+    {
+      "seed": 7,
+      "case": "mixed_gain_u05_15",
+      "verdict": "NO_DETECTABLE_SHIFT",
+      "detected": false,
+      "subspace_angle_deg": null,
+      "subspace_null_deg": null,
+      "subspace_rotated": null,
+      "precision_crit": 0.0043,
+      "subspace_null_deg_shared": 1.746
+    },
+    {
+      "seed": 7,
+      "case": "uniform_gain_0.7",
+      "verdict": "DETECTABLE_BUT_UNATTRIBUTED",
+      "detected": true,
+      "subspace_angle_deg": 1.923,
+      "subspace_null_deg": 1.746,
+      "subspace_rotated": true,
+      "precision_crit": 0.0043,
+      "subspace_null_deg_shared": 1.746
+    },
+    {
+      "seed": 7,
+      "case": "uniform_gain_1.0",
+      "verdict": "NO_DETECTABLE_SHIFT",
+      "detected": false,
+      "subspace_angle_deg": null,
+      "subspace_null_deg": null,
+      "subspace_rotated": null,
+      "precision_crit": 0.0043,
+      "subspace_null_deg_shared": 1.746
+    },
+    {
+      "seed": 7,
+      "case": "uniform_gain_1.4",
+      "verdict": "MECHANISM_SUPPORTED",
+      "detected": true,
+      "subspace_angle_deg": 1.344,
+      "subspace_null_deg": 1.746,
+      "subspace_rotated": false,
+      "precision_crit": 0.0043,
+      "subspace_null_deg_shared": 1.746
+    },
+    {
+      "seed": 8,
+      "case": "mechanism_hard_iv",
+      "verdict": "MECHANISM_SUPPORTED",
+      "detected": true,
+      "subspace_angle_deg": 1.111,
+      "subspace_null_deg": 1.321,
+      "subspace_rotated": false,
+      "precision_crit": 0.00313,
+      "subspace_null_deg_shared": 1.321
+    },
+    {
+      "seed": 8,
+      "case": "mixed_gain_u05_15",
+      "verdict": "DETECTABLE_BUT_UNATTRIBUTED",
+      "detected": true,
+      "subspace_angle_deg": 17.661,
+      "subspace_null_deg": 1.321,
+      "subspace_rotated": true,
+      "precision_crit": 0.00313,
+      "subspace_null_deg_shared": 1.321
+    },
+    {
+      "seed": 8,
+      "case": "uniform_gain_0.7",
+      "verdict": "DETECTABLE_BUT_UNATTRIBUTED",
+      "detected": true,
+      "subspace_angle_deg": 1.514,
+      "subspace_null_deg": 1.321,
+      "subspace_rotated": true,
+      "precision_crit": 0.00313,
+      "subspace_null_deg_shared": 1.321
+    },
+    {
+      "seed": 8,
+      "case": "uniform_gain_1.0",
+      "verdict": "NO_DETECTABLE_SHIFT",
+      "detected": false,
+      "subspace_angle_deg": null,
+      "subspace_null_deg": null,
+      "subspace_rotated": null,
+      "precision_crit": 0.00313,
+      "subspace_null_deg_shared": 1.321
+    },
+    {
+      "seed": 8,
+      "case": "uniform_gain_1.4",
+      "verdict": "MECHANISM_SUPPORTED",
+      "detected": true,
+      "subspace_angle_deg": 1.01,
+      "subspace_null_deg": 1.321,
+      "subspace_rotated": false,
+      "precision_crit": 0.00313,
+      "subspace_null_deg_shared": 1.321
+    },
+    {
+      "seed": 9,
+      "case": "mechanism_hard_iv",
+      "verdict": "DETECTABLE_BUT_UNATTRIBUTED",
+      "detected": true,
+      "subspace_angle_deg": 1.853,
+      "subspace_null_deg": 1.692,
+      "subspace_rotated": true,
+      "precision_crit": 0.00422,
+      "subspace_null_deg_shared": 1.692
+    },
+    {
+      "seed": 9,
+      "case": "mixed_gain_u05_15",
+      "verdict": "DETECTABLE_BUT_UNATTRIBUTED",
+      "detected": true,
+      "subspace_angle_deg": 17.805,
+      "subspace_null_deg": 1.692,
+      "subspace_rotated": true,
+      "precision_crit": 0.00422,
+      "subspace_null_deg_shared": 1.692
+    },
+    {
+      "seed": 9,
+      "case": "uniform_gain_0.7",
+      "verdict": "DETECTABLE_BUT_UNATTRIBUTED",
+      "detected": true,
+      "subspace_angle_deg": 2.063,
+      "subspace_null_deg": 1.692,
+      "subspace_rotated": true,
+      "precision_crit": 0.00422,
+      "subspace_null_deg_shared": 1.692
+    },
+    {
+      "seed": 9,
+      "case": "uniform_gain_1.0",
+      "verdict": "NO_DETECTABLE_SHIFT",
+      "detected": false,
+      "subspace_angle_deg": null,
+      "subspace_null_deg": null,
+      "subspace_rotated": null,
+      "precision_crit": 0.00422,
+      "subspace_null_deg_shared": 1.692
+    },
+    {
+      "seed": 9,
+      "case": "uniform_gain_1.4",
+      "verdict": "MECHANISM_SUPPORTED",
+      "detected": true,
+      "subspace_angle_deg": 1.445,
+      "subspace_null_deg": 1.692,
+      "subspace_rotated": false,
+      "precision_crit": 0.00422,
+      "subspace_null_deg_shared": 1.692
+    }
+  ],
+  "wall_seconds": 79.7,
+  "provenance": {
+    "code_commit": "c7c96f2205dc2e26ba442d48cc04640afd87ff6c-dirty",
+    "source_sha256": {
+      "src/gate/precision_readout.py": "1f8bdaf52a05d1c6e6941551e94e3a3db852350c8af3e76174174385901eb872",
+      "src/gate/rank_readout.py": "0fcda99992ab989f4a9f03e059681a508de491b4482ccb9cbddc83dc5fdbdad5",
+      "src/recover/backbone.py": "9decaed2279beca46a0633a1456201e04f6c2df2a04b991543da843373a57ec7",
+      "experiments/e3_gate_compare.py": "c48d670f1757b543f7673104aed1375c7d3f8b8a7c5791ec90b1d467c0dae32d",
+      "experiments/tier2_common.py": "cb23ea2ec40e85f0d818f2e04a3c5c72d0873267cd9b804aa022d200f1533711",
+      "experiments/e4_second_backbone.py": "e4d32f99347b469b75a731fb660eb07c50159d46f8ff1425ba85cafeb70cc267",
+      "experiments/e2b_attribution.py": "d3411a8c788ff127a52d9f23e25dc01dd7e6d2cfc9a42090ca0ab0aed23a5f5d",
+      "experiments/e2_calibration.py": "3cc2fd4513d4b1ef1e3ab921100e0988dd8da6805871f1bb0b36deae63902c4b"
+    },
+    "numpy_version": "2.0.2",
+    "python_version": "3.9.6",
+    "host": "GAURAVs-MacBook-Air-2.local"
+  }
+}

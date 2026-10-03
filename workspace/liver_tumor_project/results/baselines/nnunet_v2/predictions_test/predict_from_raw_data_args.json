@@ -1,0 +1,11 @@
+{
+    "folder_with_segs_from_prev_stage": null,
+    "list_of_lists_or_source_folder": "/workspace/liver_tumor_project/models/nnunet_v2/nnUNet_raw/Dataset001_LiTS/imagesTs",
+    "num_parts": 1,
+    "num_processes_preprocessing": 4,
+    "num_processes_segmentation_export": 4,
+    "output_folder_or_list_of_truncated_output_files": "/workspace/liver_tumor_project/results/baselines/nnunet_v2/predictions_test",
+    "overwrite": true,
+    "part_id": 0,
+    "save_probabilities": false
+}

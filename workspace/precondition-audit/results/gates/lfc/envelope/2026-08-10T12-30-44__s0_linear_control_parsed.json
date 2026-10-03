@@ -1,0 +1,130 @@
+{
+  "conditions": {
+    "source_line": 1,
+    "text": "s=0 CONTROL (exactly linear mixing), k=1, n_e=2000, 400 draws/point",
+    "k": 1,
+    "n_e": 2000,
+    "draws_per_point": 400,
+    "mixing": "exactly linear",
+    "s": 0.0
+  },
+  "table": [
+    {
+      "source_line": 3,
+      "d_latent": 5,
+      "d": 5,
+      "scaling": "raw",
+      "reject_at_s0": 0.022
+    },
+    {
+      "source_line": 4,
+      "d_latent": 5,
+      "d": 5,
+      "scaling": "standardised",
+      "reject_at_s0": 0.02
+    },
+    {
+      "source_line": 5,
+      "d_latent": 10,
+      "d": 10,
+      "scaling": "raw",
+      "reject_at_s0": 0.05
+    },
+    {
+      "source_line": 6,
+      "d_latent": 10,
+      "d": 10,
+      "scaling": "standardised",
+      "reject_at_s0": 0.045
+    },
+    {
+      "source_line": 7,
+      "d_latent": 20,
+      "d": 10,
+      "scaling": "raw",
+      "reject_at_s0": 0.037
+    },
+    {
+      "source_line": 8,
+      "d_latent": 20,
+      "d": 10,
+      "scaling": "standardised",
+      "reject_at_s0": 0.022
+    },
+    {
+      "source_line": 9,
+      "d_latent": 40,
+      "d": 10,
+      "scaling": "raw",
+      "reject_at_s0": 0.037
+    },
+    {
+      "source_line": 10,
+      "d_latent": 40,
+      "d": 10,
+      "scaling": "standardised",
+      "reject_at_s0": 0.04
+    },
+    {
+      "source_line": 11,
+      "d_latent": 80,
+      "d": 10,
+      "scaling": "raw",
+      "reject_at_s0": 0.15
+    },
+    {
+      "source_line": 12,
+      "d_latent": 80,
+      "d": 10,
+      "scaling": "standardised",
+      "reject_at_s0": 0.11
+    }
+  ],
+  "meta": {
+    "statistic": "lfc",
+    "gate": "envelope",
+    "git_commit": "bd2eecc",
+    "timestamp": "2026-08-10T12:30:44",
+    "config": {
+      "alpha": 0.05,
+      "B": 500,
+      "n_e": 2000,
+      "d": 10,
+      "d_latent": [
+        5,
+        10,
+        20,
+        40,
+        80
+      ],
+      "D": 200,
+      "n_env": null,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "draws_per_point": 400
+    },
+    "versions": {
+      "python": "3.11.15",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.3",
+      "sklearn": "1.9.0"
+    },
+    "superseded_by": null,
+    "migrated_from": null,
+    "status": "CURRENT",
+    "note": "structured parse of __s0_linear_control.json::raw_text; the original text file is unchanged and remains the authority",
+    "derived_from": "results/gates/lfc/envelope/2026-08-10T12-30-44__s0_linear_control.json",
+    "derivation": "regex parse of raw_text, no re-run, no recomputation; every row carries the 1-based source_line it came from"
+  }
+}

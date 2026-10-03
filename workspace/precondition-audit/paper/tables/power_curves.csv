@@ -1,0 +1,29 @@
+intervention,n_e,scaling,reject_rate,floor,status
+soft,500,raw,0.3,8000,CURRENT
+soft,500,standardised,0.4,8000,CURRENT
+soft,2000,raw,0.7,8000,CURRENT
+soft,2000,standardised,0.7,8000,CURRENT
+soft,8000,raw,1.0,8000,CURRENT
+soft,8000,standardised,1.0,8000,CURRENT
+soft,20000,raw,1.0,8000,CURRENT
+soft,20000,standardised,1.0,8000,CURRENT
+hard,125,raw,0.8,125,CURRENT
+hard,125,standardised,1.0,125,CURRENT
+hard,250,raw,0.9,125,CURRENT
+hard,250,standardised,0.9,125,CURRENT
+hard,500,raw,1.0,125,CURRENT
+hard,500,standardised,1.0,125,CURRENT
+hard,1000,raw,1.0,125,CURRENT
+hard,1000,standardised,1.0,125,CURRENT
+hard,2000,raw,1.0,125,CURRENT
+hard,2000,standardised,1.0,125,CURRENT
+hard,8000,raw,1.0,125,CURRENT
+hard,8000,standardised,1.0,125,CURRENT
+soft_SUPERSEDED,500,raw,0.5,,SUPERSEDED do not quote
+soft_SUPERSEDED,500,standardised,0.6,,SUPERSEDED do not quote
+soft_SUPERSEDED,2000,raw,0.7,,SUPERSEDED do not quote
+soft_SUPERSEDED,2000,standardised,0.7,,SUPERSEDED do not quote
+soft_SUPERSEDED,8000,raw,1.0,,SUPERSEDED do not quote
+soft_SUPERSEDED,8000,standardised,1.0,,SUPERSEDED do not quote
+soft_SUPERSEDED,20000,raw,1.0,,SUPERSEDED do not quote
+soft_SUPERSEDED,20000,standardised,1.0,,SUPERSEDED do not quote

@@ -1,0 +1,10 @@
+# GPU stage only. Install on the A100 IN ADDITION to requirements.txt.
+#
+# This is a large install: vLLM pulls torch, CUDA kernels, flashinfer and
+# related wheels. Budget ~15GB of disk and 10-20 minutes. That is expected,
+# not a misconfiguration.
+#
+# Deliberately NOT pinning torch here. vLLM pins the exact torch build it was
+# compiled against; adding our own constraint only risks pip resolving a
+# conflicting pair.
+vllm>=0.6.0

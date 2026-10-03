@@ -1,0 +1,64 @@
+
+TIER 2 SUMMARY (real panel: mean over gate seeds [min-max])
+
+dataset  readout                design         n_env             raw              BH  BH Jaccard vs precision
+-------------------------------------------------------------------------------------------------------------
+K562     precision              shared (E3)      385    73.0 [69-78]     0.0 [0-0]  (reference)
+         precision              split control    385    73.2 [63-79]     0.0 [0-0]  both empty
+         Backbone C frobenius   shared           385   176.4 [175-180]    61.4 [48-68]  0.000
+         covariance (neg. ctrl) shared           385    21.6 [21-22]     0.0 [0-0]  both empty
+RPE1     precision              shared (E3)      146    76.4 [74-77]    51.0 [48-54]  (reference)
+         precision              split control    146    77.6 [73-82]    53.8 [43-66]  0.830
+         Backbone C frobenius   shared           146   102.2 [101-104]    95.0 [93-97]  0.537
+         covariance (neg. ctrl) shared           146    28.8 [28-30]     8.2 [6-12]  0.100
+Norman   precision              shared (E3)      101    10.8 [10-11]     0.0 [0-0]  (reference)
+         precision              split control    101    10.8 [7-15]     0.0 [0-0]  both empty
+         Backbone C frobenius   shared           101    44.8 [43-46]    15.4 [9-19]  0.000
+         covariance (neg. ctrl) shared           101    38.8 [37-41]    20.8 [18-25]  0.000
+
+RPE1 control splits (seed 0), raw/BH of n: shared -> split
+  perturbations        77/48 -> 82/66 of 146  (BH Jaccard 0.727273)
+  random_controls      0/0 -> 0/0 of 20  (BH Jaccard None)
+  structured_controls  20/20 -> 20/20 of 20  (BH Jaccard 1.0)
+
+Positive control, 200 observational cells: BH-selected planted of 3 (null draws BH of 30), shared -> split
+  ratio    0: planted 0 -> 0 | null 0 -> 0
+  ratio  0.5: planted 0 -> 0 | null 0 -> 0
+  ratio    1: planted 0 -> 0 | null 0 -> 0
+  ratio    2: planted 0 -> 0 | null 0 -> 0
+  ratio    4: planted 1 -> 0 | null 0 -> 0
+  ratio    8: planted 3 -> 3 | null 0 -> 0
+
+Positive control, 400 observational cells: BH-selected planted of 3 (null draws BH of 30), shared -> split
+  ratio    0: planted 0 -> 0 | null 0 -> 0
+  ratio  0.5: planted 0 -> 0 | null 0 -> 0
+  ratio    1: planted 0 -> 0 | null 0 -> 0
+  ratio    2: planted 0 -> 0 | null 0 -> 0
+  ratio    4: planted 1 -> 1 | null 0 -> 0
+  ratio    8: planted 3 -> 3 | null 0 -> 0
+
+Backbone C population check: MCC mean 0.9986, min 0.9974 (rule {'mean_at_least': 0.99, 'every_seed_at_least': 0.98}): PASS
+
+Backbone C (second backbone): synthetic arms, this readout vs same-code precision
+  A_environment_starvation       TRACKS_TIGHT         vs TRACKS_TIGHT
+  B_power_starvation             TRACKS_CONSERVATIVE  vs TRACKS_CONSERVATIVE
+  C_measurement_contamination    FOOLED               vs FOOLED
+  D_weak_signal_starvation       TRACKS_TIGHT         vs TRACKS_TIGHT
+  recovery MCC: population 0.9986, sample 0.9985 (precision rule: population 0.9992)
+  starvation: gate first restricts at m=4, MCC < 0.90 from m=2, restricts at or before: True
+
+Covariance readout (negative control): synthetic arms, this readout vs same-code precision
+  A_environment_starvation       TRACKS_CONSERVATIVE  vs TRACKS_TIGHT
+  B_power_starvation             FLAT_OR_SILENT       vs TRACKS_CONSERVATIVE
+  C_measurement_contamination    TRACKS_CONSERVATIVE  vs FOOLED
+  D_weak_signal_starvation       TRACKS_CONSERVATIVE  vs TRACKS_TIGHT
+  recovery MCC: population 0.8977, sample 0.8947 (precision rule: population 0.9992)
+  headline: Negative control. The covariance recovery rule reaches MCC 0.8977 with exact population covariances (0.8947 from samples), against 0.9992 for the precision rule, so it sits below the 0.9 recovery bar before any sampling error. Its arm verdicts measure that bias, not gate calibration.
+  starvation: gate first restricts at m=5, MCC < 0.90 from m=5, restricts at or before: True
+
+Backbone C attribution cases (detected rate Frobenius / precision; UNATTRIBUTED given detected, Frobenius / precision)
+  mechanism_hard_iv      1.0 / 1.0   0.4 / 0.4
+  mixed_gain_u05_15      0.6 / 0.5   1.0 / 1.0
+  uniform_gain_0.7       1.0 / 1.0   1.0 / 1.0
+  uniform_gain_1.0       0.0 / 0.0   None / None
+  uniform_gain_1.4       1.0 / 0.0   0.0 / None

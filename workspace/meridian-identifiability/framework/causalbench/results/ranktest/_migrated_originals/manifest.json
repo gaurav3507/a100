@@ -1,0 +1,267 @@
+{
+  "lane": "ranktest",
+  "statistic": "LFC-calibrated Chen-Fang rank test, r_hat === r0 = 2, no tuning constant",
+  "decision": "2026-08-10: 1a boundary excess and 1b soft power accepted as DISCLOSED LIMITATIONS. LFC is final. No further statistic swaps. Leung-Sturma not attempted.",
+  "status": "Tasks A-D complete. Gate 2 run. Phase B lock PERMITS but Phase B NOT run.",
+  "gate0": {
+    "verdict": "PASS",
+    "pooled": {
+      "raw|d=5": 0.0034999999999999996,
+      "raw|d=10": 0.003,
+      "raw|d=20": 0.0025,
+      "standardised|d=5": 0.0035000000000000005,
+      "standardised|d=10": 0.0015,
+      "standardised|d=20": 0.001
+    },
+    "cells_above_upper": 0,
+    "seeds_above_upper": 0
+  },
+  "gate1": {
+    "verdict_1a": "PASS",
+    "verdict_1b": "REPORTED_NOT_GATED",
+    "interior": {
+      "raw|soft": 0.0,
+      "raw|shift": 0.0,
+      "raw|hard_source": 0.0,
+      "standardised|soft": 0.0,
+      "standardised|shift": 0.0,
+      "standardised|hard_source": 0.0
+    },
+    "boundary": {
+      "raw|hard_nonsource": 0.09722222222222222,
+      "standardised|hard_nonsource": 0.08333333333333333
+    },
+    "boundary_excess_multiple": {
+      "raw|hard_nonsource": 1.9444444444444444,
+      "standardised|hard_nonsource": 1.6666666666666665
+    },
+    "boundary_n_sweep": [
+      {
+        "n_e": 500,
+        "scaling": "raw",
+        "reject": 0.1,
+        "n_draws": 200
+      },
+      {
+        "n_e": 500,
+        "scaling": "standardised",
+        "reject": 0.06,
+        "n_draws": 200
+      },
+      {
+        "n_e": 2000,
+        "scaling": "raw",
+        "reject": 0.06,
+        "n_draws": 200
+      },
+      {
+        "n_e": 2000,
+        "scaling": "standardised",
+        "reject": 0.065,
+        "n_draws": 200
+      },
+      {
+        "n_e": 8000,
+        "scaling": "raw",
+        "reject": 0.09,
+        "n_draws": 200
+      },
+      {
+        "n_e": 8000,
+        "scaling": "standardised",
+        "reject": 0.08,
+        "n_draws": 200
+      },
+      {
+        "n_e": 20000,
+        "scaling": "raw",
+        "reject": 0.06,
+        "n_draws": 200
+      },
+      {
+        "n_e": 20000,
+        "scaling": "standardised",
+        "reject": 0.06,
+        "n_draws": 200
+      }
+    ],
+    "soft_power_curve": [
+      {
+        "n_e": 500,
+        "scaling": "raw",
+        "reject": 0.3,
+        "n_seeds": 10
+      },
+      {
+        "n_e": 500,
+        "scaling": "standardised",
+        "reject": 0.4,
+        "n_seeds": 10
+      },
+      {
+        "n_e": 2000,
+        "scaling": "raw",
+        "reject": 0.7,
+        "n_seeds": 10
+      },
+      {
+        "n_e": 2000,
+        "scaling": "standardised",
+        "reject": 0.7,
+        "n_seeds": 10
+      },
+      {
+        "n_e": 8000,
+        "scaling": "raw",
+        "reject": 1.0,
+        "n_seeds": 10
+      },
+      {
+        "n_e": 8000,
+        "scaling": "standardised",
+        "reject": 1.0,
+        "n_seeds": 10
+      },
+      {
+        "n_e": 20000,
+        "scaling": "raw",
+        "reject": 1.0,
+        "n_seeds": 10
+      },
+      {
+        "n_e": 20000,
+        "scaling": "standardised",
+        "reject": 1.0,
+        "n_seeds": 10
+      }
+    ],
+    "power_k3_at_gate_configs": {
+      "raw|hard": 0.9875,
+      "raw|soft": 0.35,
+      "standardised|hard": 0.9875,
+      "standardised|soft": 0.3875
+    },
+    "curve": {
+      "raw|hard": {
+        "1": 0.0875,
+        "2": 0.85,
+        "3": 0.9875,
+        "5": 1.0
+      },
+      "raw|soft": {
+        "1": 0.0,
+        "2": 0.0875,
+        "3": 0.35,
+        "5": 0.6
+      },
+      "raw|shift": {
+        "1": 0.0
+      },
+      "standardised|hard": {
+        "1": 0.075,
+        "2": 0.8625,
+        "3": 0.9875,
+        "5": 1.0
+      },
+      "standardised|soft": {
+        "1": 0.0,
+        "2": 0.0625,
+        "3": 0.3875,
+        "5": 0.6375
+      },
+      "standardised|shift": {
+        "1": 0.0
+      }
+    }
+  },
+  "gate2": {
+    "per_s": {
+      "raw": {
+        "0.0": 0.05,
+        "0.1": 0.15,
+        "0.25": 0.3,
+        "0.5": 0.6,
+        "1.0": 0.85
+      },
+      "standardised": {
+        "0.0": 0.05,
+        "0.1": 0.15,
+        "0.25": 0.25,
+        "0.5": 0.55,
+        "1.0": 0.85
+      }
+    },
+    "kill_criterion": {
+      "raw": {
+        "k1_reject_at_s025": 0.3,
+        "linear_k3_reject": 0.66875,
+        "triggered": false
+      },
+      "standardised": {
+        "k1_reject_at_s025": 0.25,
+        "linear_k3_reject": 0.6875,
+        "triggered": false
+      }
+    },
+    "kill_outcome": "NOT TRIGGERED (robust to comparator: k=1@s=0.25 is below the linear k=3 rate whether taken as hard, soft, or their mean)",
+    "largest_s_k1_noreject_90pct": {
+      "raw": 0.0,
+      "standardised": 0.0
+    },
+    "s0_reduction_exact": true,
+    "scope_limit_reading": "the honest scope limit is s=0: at s=0.1 the k=1 rejection rate is already 0.150, above the 0.10 criterion. The method tolerates essentially no mixing nonlinearity at that bar."
+  },
+  "taskD_alpha_sensitivity": [
+    {
+      "nominal_alpha": 0.01,
+      "scaling": "raw",
+      "realised": 0.015,
+      "multiple": 1.5,
+      "n_draws": 200
+    },
+    {
+      "nominal_alpha": 0.01,
+      "scaling": "standardised",
+      "realised": 0.005,
+      "multiple": 0.5,
+      "n_draws": 200
+    },
+    {
+      "nominal_alpha": 0.025,
+      "scaling": "raw",
+      "realised": 0.03,
+      "multiple": 1.2,
+      "n_draws": 200
+    },
+    {
+      "nominal_alpha": 0.025,
+      "scaling": "standardised",
+      "realised": 0.025,
+      "multiple": 1.0,
+      "n_draws": 200
+    },
+    {
+      "nominal_alpha": 0.05,
+      "scaling": "raw",
+      "realised": 0.06,
+      "multiple": 1.2,
+      "n_draws": 200
+    },
+    {
+      "nominal_alpha": 0.05,
+      "scaling": "standardised",
+      "realised": 0.065,
+      "multiple": 1.3,
+      "n_draws": 200
+    }
+  ],
+  "gate2_status": "RUN",
+  "phaseB": "written, NOT run; lock permits",
+  "environment": {
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "pandas": "3.0.3",
+    "sklearn": "1.9.0"
+  }
+}

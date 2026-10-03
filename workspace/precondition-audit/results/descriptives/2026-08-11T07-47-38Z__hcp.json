@@ -1,0 +1,184 @@
+{
+  "dataset": "hcp",
+  "blocks": [
+    {
+      "label": "hcp",
+      "modality": "fMRI",
+      "n_subjects_present": 99,
+      "n_subjects_complete": 92,
+      "n_conditions": 7,
+      "conditions": [
+        "WM",
+        "GAMBLING",
+        "MOTOR",
+        "LANGUAGE",
+        "SOCIAL",
+        "RELATIONAL",
+        "EMOTION"
+      ],
+      "encodings": [
+        "LR",
+        "RL"
+      ],
+      "frames_per_run": 176,
+      "n_regions": 200,
+      "timepoints_per_condition": {
+        "WM": 32384,
+        "GAMBLING": 32384,
+        "MOTOR": 32384,
+        "LANGUAGE": 32384,
+        "SOCIAL": 32384,
+        "RELATIONAL": 32384,
+        "EMOTION": 32384
+      },
+      "timepoints_per_subject_run": 176,
+      "total_timepoints": 226688,
+      "environment_attrition": {
+        "50": 7,
+        "125": 7,
+        "500": 7,
+        "2000": 7,
+        "8000": 7
+      },
+      "cells_per_environment": {
+        "n_environments": 7,
+        "min": 32384,
+        "q25": 32384.0,
+        "median": 32384.0,
+        "q75": 32384.0,
+        "max": 32384,
+        "total_cells": 226688,
+        "n_above_hard_floor_125": 7,
+        "n_above_soft_floor_8000": 7,
+        "frac_above_hard_floor_125": 1.0,
+        "frac_above_soft_floor_8000": 1.0
+      },
+      "latent_dimension_from_pooled_runs": {
+        "2000": {
+          "n_control_used": 2000,
+          "n_control_available": 226688,
+          "n_genes": 200,
+          "rank_bound": 200,
+          "participation_ratio": 6.877293963727814,
+          "effective_rank_exp_spectral_entropy": 15.993178339712559,
+          "n_components_for_variance": {
+            "80pct": 10,
+            "90pct": 22,
+            "95pct": 40
+          },
+          "top_eigenvalue_share": 0.3192098920663383,
+          "n_nonzero_eigenvalues": 200,
+          "matches_fit_pca_basis": true,
+          "fit_pca_mu_identical": true,
+          "spectra_key": "hcp__2000",
+          "lam_len": 200,
+          "lam_sum": 187675231.1282532,
+          "lam_sumsq": 5121490016976284.0,
+          "spectra_sidecar": "2026-08-11T07-47-38Z__hcp__spectra.npz"
+        },
+        "8000": {
+          "n_control_used": 8000,
+          "n_control_available": 226688,
+          "n_genes": 200,
+          "rank_bound": 200,
+          "participation_ratio": 7.359053623156303,
+          "effective_rank_exp_spectral_entropy": 16.878388340189954,
+          "n_components_for_variance": {
+            "80pct": 11,
+            "90pct": 23,
+            "95pct": 42
+          },
+          "top_eigenvalue_share": 0.3032140362198959,
+          "n_nonzero_eigenvalues": 200,
+          "matches_fit_pca_basis": true,
+          "fit_pca_mu_identical": true,
+          "spectra_key": "hcp__8000",
+          "lam_len": 200,
+          "lam_sum": 180351088.3080651,
+          "lam_sumsq": 4419931790081569.0,
+          "spectra_sidecar": "2026-08-11T07-47-38Z__hcp__spectra.npz"
+        }
+      },
+      "spectrum_caveat": "HCP has no control condition, so this spectrum is over ALL pooled runs, not a control pool. It is not comparable to the Perturb-seq control spectra.",
+      "scaling_caveat": "raw concatenated frames; the subject_pooled z-scoring documented in PATHS_hcp.md is NOT applied here"
+    }
+  ],
+  "platform_tag": "Linux-x86_64-py3.10.12",
+  "nmin_set": [
+    50,
+    125,
+    500,
+    2000,
+    8000
+  ],
+  "power_floors": {
+    "hard": 125,
+    "soft": 8000,
+    "source": "measured under LFC on the simulator; lfc/power_hard and lfc/power_soft"
+  },
+  "contains_no_test": true,
+  "disclaimer": "DESCRIPTIVE ONLY. No rank test was run and no assumption verdict is expressed or implied. Phase B is not authorised.",
+  "spectra_sidecar": "2026-08-11T07-47-38Z__hcp__spectra.npz",
+  "peak_rss_mb": 1007.0,
+  "meta": {
+    "statistic": "descriptive",
+    "gate": "descriptives",
+    "git_commit": "8181090",
+    "timestamp": "2026-08-11T07:47:38Z",
+    "config": {
+      "alpha": null,
+      "B": null,
+      "n_e": null,
+      "d": null,
+      "d_latent": null,
+      "D": null,
+      "n_env": null,
+      "seeds": [
+        0
+      ],
+      "draws_per_point": null,
+      "extra": {
+        "dataset": "hcp",
+        "arm": null,
+        "hvg": null,
+        "nmin_set": [
+          50,
+          125,
+          500,
+          2000,
+          8000
+        ],
+        "spec_caps": [
+          2000,
+          8000
+        ],
+        "platform_tag": "Linux-x86_64-py3.10.12",
+        "timezone": "UTC",
+        "timestamp_suffix": "Z",
+        "peak_rss_mb": 1007.0,
+        "overlap_check": false
+      }
+    },
+    "versions": {
+      "python": "3.10.12",
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "pandas": "2.3.3",
+      "sklearn": "1.7.2",
+      "scanpy": "1.11.5",
+      "anndata": "0.11.4",
+      "platform": {
+        "system": "Linux",
+        "release": "5.15.0-1065-nvidia",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "python_implementation": "CPython",
+        "numpy_blas": "scipy-openblas"
+      }
+    },
+    "superseded_by": null,
+    "migrated_from": null,
+    "status": "CURRENT",
+    "note": "descriptive profile of hcp; no test, no verdict"
+  }
+}

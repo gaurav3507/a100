@@ -1,0 +1,565 @@
+{
+  "oracle_decoder": {
+    "passed": true,
+    "snr": 3.0,
+    "n_synth_subjects": 40,
+    "n_regions": 60,
+    "d": 10,
+    "K": 7,
+    "seed": 42,
+    "linear": 1.0,
+    "chance": 0.14285714285714285,
+    "encode_split_nuisance": 1.0,
+    "expected_chance": 0.14285714285714285,
+    "linear_ok": true,
+    "chance_ok": true,
+    "encode_split_nuisance_ok": true
+  },
+  "oracle_ceiling": {
+    "passed": true,
+    "scenarios": {
+      "no_signal": {
+        "snr": 0.0,
+        "run_baseline_std": 0.0,
+        "expected_range": [
+          0.05,
+          0.3
+        ],
+        "actual": 0.1482142857142857,
+        "ok": true
+      },
+      "middle_signal": {
+        "snr": 0.1,
+        "run_baseline_std": 0.0,
+        "expected_range": [
+          0.2,
+          0.85
+        ],
+        "actual": 0.5178571428571428,
+        "ok": true
+      },
+      "strong_signal": {
+        "snr": 10.0,
+        "run_baseline_std": 0.0,
+        "expected_range": [
+          0.9,
+          1.01
+        ],
+        "actual": 1.0,
+        "ok": true
+      },
+      "leak_resistance": {
+        "snr": 0.0,
+        "run_baseline_std": 3.0,
+        "expected_range": [
+          0.05,
+          0.3
+        ],
+        "actual": 0.12321428571428572,
+        "ok": true
+      }
+    },
+    "estimator": "variant_cross_encoding_ceiling",
+    "note": "Second oracle. Tests the corrected CROSS-ENCODING SPLIT-HALF estimator (LogReg A-halves of E1 runs -> B-halves of E2 runs, same subject, same task, E1 != E2). Includes a leak-resistance scenario (SNR=0 + strong per-run baseline) that saturated the retired same-run estimator to 1.0 but must stay at chance under the corrected split."
+  },
+  "variant_a": {
+    "chance": {
+      "mean": 0.14285714285714285,
+      "std": 0.0,
+      "per_seed": [
+        0.14285714285714285,
+        0.14285714285714285,
+        0.14285714285714285,
+        0.14285714285714285,
+        0.14285714285714285
+      ]
+    },
+    "linear": {
+      "mean": 0.17983082706766915,
+      "std": 0.002163369701710386,
+      "per_seed": [
+        0.181437969924812,
+        0.1775845864661654,
+        0.18233082706766918,
+        0.1769266917293233,
+        0.1808740601503759
+      ]
+    },
+    "encode_split_nuisance": {
+      "mean": 0.1793796992481203,
+      "std": 0.007040496276750726,
+      "per_seed": [
+        0.18670112781954887,
+        0.16828007518796992,
+        0.1788533834586466,
+        0.17598684210526314,
+        0.18707706766917293
+      ],
+      "note": "Was originally called 'ceiling'. LogReg from first-halves scored on second-halves of same held-out subjects. Measures within-run temporal repeatability under a cross-subject decoder. NOT a ceiling on achievable task classification."
+    },
+    "n_test_per_fold": [
+      266,
+      266,
+      266,
+      266,
+      224
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "kfolds": 5,
+    "K_classes": 7,
+    "classifier": "LogisticRegression(multinomial, C=1.0, max_iter=2000)"
+  },
+  "linear_permutation_null": {
+    "n_perms": 200,
+    "null_mean": 0.1433094454887218,
+    "null_std": 0.011895037593803027,
+    "null_p95": 0.16203242481203006,
+    "real_linear": 0.17983082706766915,
+    "empirical_p": 0.005,
+    "real_clears_null_p95": true,
+    "note": "Task labels shuffled within subject; every subject keeps its own 14-run structure but the task assignments are random. Same 5-fold CV as variant_a linear; single split seed since the split does not modulate the null."
+  },
+  "variant_within_subject": {
+    "within_subject_mean": 0.375,
+    "within_subject_std": 0.11709711650539285,
+    "within_subject_per_subject": [
+      0.42857142857142855,
+      0.2857142857142857,
+      0.2857142857142857,
+      0.5714285714285714,
+      0.2857142857142857,
+      0.5,
+      0.3571428571428571,
+      0.2857142857142857,
+      0.2857142857142857,
+      0.2857142857142857,
+      0.3571428571428571,
+      0.3571428571428571,
+      0.2857142857142857,
+      0.2857142857142857,
+      0.2857142857142857,
+      0.21428571428571427,
+      0.3571428571428571,
+      0.5,
+      0.3571428571428571,
+      0.42857142857142855,
+      0.2857142857142857,
+      0.42857142857142855,
+      0.3571428571428571,
+      0.3571428571428571,
+      0.2857142857142857,
+      0.5,
+      0.3571428571428571,
+      0.2857142857142857,
+      0.42857142857142855,
+      0.42857142857142855,
+      0.5,
+      0.42857142857142855,
+      0.42857142857142855,
+      0.2857142857142857,
+      0.21428571428571427,
+      0.3571428571428571,
+      0.2857142857142857,
+      0.2857142857142857,
+      0.6428571428571428,
+      0.42857142857142855,
+      0.5714285714285714,
+      0.42857142857142855,
+      0.14285714285714285,
+      0.2857142857142857,
+      0.42857142857142855,
+      0.2857142857142857,
+      0.3571428571428571,
+      0.5,
+      0.3571428571428571,
+      0.21428571428571427,
+      0.7142857142857142,
+      0.21428571428571427,
+      0.3571428571428571,
+      0.3571428571428571,
+      0.42857142857142855,
+      0.5,
+      0.5,
+      0.21428571428571427,
+      0.2857142857142857,
+      0.3571428571428571,
+      0.6428571428571428,
+      0.2857142857142857,
+      0.3571428571428571,
+      0.2857142857142857,
+      0.42857142857142855,
+      0.2857142857142857,
+      0.3571428571428571,
+      0.42857142857142855,
+      0.2857142857142857,
+      0.14285714285714285,
+      0.5,
+      0.6428571428571428,
+      0.42857142857142855,
+      0.42857142857142855,
+      0.2857142857142857,
+      0.2857142857142857,
+      0.5714285714285714,
+      0.3571428571428571,
+      0.5,
+      0.2857142857142857,
+      0.21428571428571427,
+      0.5,
+      0.2857142857142857,
+      0.2857142857142857,
+      0.2857142857142857,
+      0.6428571428571428,
+      0.3571428571428571,
+      0.5714285714285714,
+      0.42857142857142855,
+      0.2857142857142857,
+      0.42857142857142855,
+      0.3571428571428571
+    ],
+    "n_subjects_scored": 92,
+    "runs_per_subject": 14,
+    "matched_cross_subject_mean": 0.15336466165413534,
+    "matched_cross_subject_std": 0.006599497978292945,
+    "unmatched_cross_subject_mean": 0.17983082706766915,
+    "unmatched_cross_subject_std": 0.002163369701710386,
+    "matched_per_seed": [
+      0.16071428571428573,
+      0.1588815789473684,
+      0.1504699248120301,
+      0.14224624060150376,
+      0.15451127819548874
+    ],
+    "unmatched_per_seed": [
+      0.181437969924812,
+      0.1775845864661654,
+      0.18233082706766918,
+      0.1769266917293233,
+      0.1808740601503759
+    ],
+    "note_matched": "Matched: cross-subject LogReg fit on 7 training points (one per task, sampled from the train pool) to hold training size equal to within-subject. Unmatched: cross-subject LogReg on the full train pool -- reported for reference only; equal to variant_a linear.",
+    "permutation_null_mean": 0.14285947204968938,
+    "permutation_null_std": 0.010272680711340403,
+    "permutation_null_p95": 0.16071428571428567,
+    "permutation_null_p": 0.0,
+    "n_perms": 1000,
+    "n_perms_valid": 1000,
+    "permutation_scheme": "SHUFFLE_WITHIN_SUBJECT_AND_ENCODING: for each (subject, encoding) stratum independently, randomly permute the 7 task labels. This preserves 'each encoding contains all 7 tasks' so every subject scores on every permutation. Corrected from the block-shuffle scheme used before 2026-07-25, which dropped ~96% of subjects per perm.",
+    "n_subjects_dropped_per_perm_mean": 0.0,
+    "n_subjects_dropped_per_perm_max": 0
+  },
+  "variant_cross_encoding_ceiling": {
+    "ceiling_B_cross_encoding_mean": 0.375,
+    "ceiling_B_cross_encoding_std_across_subjects": 0.11226128177595548,
+    "ceiling_B_cross_encoding_std_across_seeds": 0.0,
+    "n_subjects_scored": 92,
+    "n_features": 10,
+    "n_train_points_per_subject_per_direction": 7,
+    "per_seed": [
+      {
+        "seed": 0,
+        "mean": 0.375,
+        "std": 0.1122612817759555,
+        "n_scored": 92
+      },
+      {
+        "seed": 1,
+        "mean": 0.375,
+        "std": 0.1122612817759555,
+        "n_scored": 92
+      },
+      {
+        "seed": 2,
+        "mean": 0.375,
+        "std": 0.1122612817759555,
+        "n_scored": 92
+      },
+      {
+        "seed": 3,
+        "mean": 0.375,
+        "std": 0.1122612817759555,
+        "n_scored": 92
+      },
+      {
+        "seed": 4,
+        "mean": 0.375,
+        "std": 0.1122612817759555,
+        "n_scored": 92
+      }
+    ],
+    "per_subject_last_seed": [
+      0.42857142857142855,
+      0.3571428571428571,
+      0.2857142857142857,
+      0.5714285714285714,
+      0.2857142857142857,
+      0.5,
+      0.3571428571428571,
+      0.2857142857142857,
+      0.2857142857142857,
+      0.3571428571428571,
+      0.2857142857142857,
+      0.3571428571428571,
+      0.2857142857142857,
+      0.2857142857142857,
+      0.3571428571428571,
+      0.21428571428571427,
+      0.3571428571428571,
+      0.5,
+      0.3571428571428571,
+      0.5,
+      0.2857142857142857,
+      0.42857142857142855,
+      0.3571428571428571,
+      0.42857142857142855,
+      0.2857142857142857,
+      0.6428571428571428,
+      0.3571428571428571,
+      0.2857142857142857,
+      0.42857142857142855,
+      0.3571428571428571,
+      0.42857142857142855,
+      0.42857142857142855,
+      0.42857142857142855,
+      0.2857142857142857,
+      0.07142857142857142,
+      0.3571428571428571,
+      0.3571428571428571,
+      0.3571428571428571,
+      0.5714285714285714,
+      0.42857142857142855,
+      0.5714285714285714,
+      0.42857142857142855,
+      0.21428571428571427,
+      0.2857142857142857,
+      0.42857142857142855,
+      0.2857142857142857,
+      0.2857142857142857,
+      0.42857142857142855,
+      0.3571428571428571,
+      0.3571428571428571,
+      0.7142857142857142,
+      0.2857142857142857,
+      0.3571428571428571,
+      0.3571428571428571,
+      0.3571428571428571,
+      0.5714285714285714,
+      0.5,
+      0.21428571428571427,
+      0.2857142857142857,
+      0.3571428571428571,
+      0.6428571428571428,
+      0.2857142857142857,
+      0.42857142857142855,
+      0.2857142857142857,
+      0.3571428571428571,
+      0.2857142857142857,
+      0.5,
+      0.3571428571428571,
+      0.21428571428571427,
+      0.14285714285714285,
+      0.5,
+      0.5,
+      0.3571428571428571,
+      0.5,
+      0.2857142857142857,
+      0.3571428571428571,
+      0.5,
+      0.3571428571428571,
+      0.42857142857142855,
+      0.2857142857142857,
+      0.21428571428571427,
+      0.5,
+      0.2857142857142857,
+      0.21428571428571427,
+      0.2857142857142857,
+      0.5714285714285714,
+      0.3571428571428571,
+      0.5,
+      0.42857142857142855,
+      0.3571428571428571,
+      0.42857142857142855,
+      0.3571428571428571
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "classifier": "LogisticRegression(multinomial, C=1.0, max_iter=2000)",
+    "scoring_path": "RUN_DISJOINT_TRAIN_TEST: train uses encoding E1 runs (A-halves); test uses encoding E2 runs (B-halves); E1 != E2. Same subject and same task. LR and RL are separate HCP acquisitions (PATHS_hcp.md), so no run is shared.",
+    "note": "Replaces the retired same-run split-half ceiling (0.9488) which was inflated by per-run nuisance fingerprinting because task==run in HCP.",
+    "permutation_null_mean": 0.14358307453416144,
+    "permutation_null_std": 0.010062805952160652,
+    "permutation_null_p95": 0.15993788819875773,
+    "permutation_null_p": 0.0,
+    "n_perms": 1000,
+    "permutation_scheme": "SHUFFLE_WITHIN_SUBJECT_AND_ENCODING"
+  },
+  "variant_leak_diagnostic": {
+    "original_same_run": {
+      "mean": 0.9487577639751553,
+      "std": 0.06687843312844108,
+      "n_subjects_scored": 92
+    },
+    "run_demeaned_same_run": {
+      "mean": 0.02406832298136646,
+      "std": 0.04116371472612287,
+      "n_subjects_scored": 92
+    },
+    "interpretation": "A_demeaned and B_demeaned are perfect mirrors by construction, so any leaky classifier trained on A and tested on B is systematically WRONG on demeaned data. A collapse from ~0.95 (original) toward 0.0 confirms the original was run-baseline fingerprinting."
+  },
+  "variant_b_supplementary": {
+    "LABEL": "UNDERPOWERED",
+    "n_environments": 7,
+    "r2_mean": -0.8226518443420151,
+    "r2_std": 0.0,
+    "per_seed": [
+      {
+        "seed": 0,
+        "r2_per_task": [
+          -0.6684611324987175,
+          -0.4911352037193315,
+          -0.35906473443137243,
+          -0.5036079596973919,
+          -1.7585537109586649,
+          -1.1788289337722402,
+          -0.7989112353163865
+        ],
+        "r2_mean": -0.8226518443420151
+      },
+      {
+        "seed": 1,
+        "r2_per_task": [
+          -0.6684611324987175,
+          -0.4911352037193315,
+          -0.35906473443137243,
+          -0.5036079596973919,
+          -1.7585537109586649,
+          -1.1788289337722402,
+          -0.7989112353163865
+        ],
+        "r2_mean": -0.8226518443420151
+      },
+      {
+        "seed": 2,
+        "r2_per_task": [
+          -0.6684611324987175,
+          -0.4911352037193315,
+          -0.35906473443137243,
+          -0.5036079596973919,
+          -1.7585537109586649,
+          -1.1788289337722402,
+          -0.7989112353163865
+        ],
+        "r2_mean": -0.8226518443420151
+      },
+      {
+        "seed": 3,
+        "r2_per_task": [
+          -0.6684611324987175,
+          -0.4911352037193315,
+          -0.35906473443137243,
+          -0.5036079596973919,
+          -1.7585537109586649,
+          -1.1788289337722402,
+          -0.7989112353163865
+        ],
+        "r2_mean": -0.8226518443420151
+      },
+      {
+        "seed": 4,
+        "r2_per_task": [
+          -0.6684611324987175,
+          -0.4911352037193315,
+          -0.35906473443137243,
+          -0.5036079596973919,
+          -1.7585537109586649,
+          -1.1788289337722402,
+          -0.7989112353163865
+        ],
+        "r2_mean": -0.8226518443420151
+      }
+    ],
+    "note": "Leave-one-task-out with K=7 tasks: 6 training environments, 1 held out. Structural analogue of the CausalBench zero-shot task, but underpowered. Provided for parity, not for a headline.",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "v2_nuisance": {
+    "source": "/workspace/meridian-identifiability/hcp/results/mean_shift_v2.json",
+    "scaling": "subject_pooled",
+    "d": 10,
+    "encode_over_split": 14.582325165714042,
+    "task_over_split": 15.4211542128184,
+    "task_over_encode": 1.0575236827852812
+  },
+  "final_table": {
+    "chance": 0.14285714285714285,
+    "cross_subject_linear": 0.17983082706766915,
+    "ceiling_A_within_subject_transfer": 0.375,
+    "ceiling_B_cross_encoding_split_half": 0.375,
+    "headroom_linear_to_ceiling_A": 0.19516917293233085,
+    "headroom_linear_to_ceiling_B": 0.19516917293233085,
+    "headroom_ceiling_A_to_ceiling_B": 0.0,
+    "scale": "accuracy [0, 1] (7-class task decoding)",
+    "chance_reference": 0.14285714285714285,
+    "n_features": 10,
+    "n_train_points_ceiling_A_per_direction": 7,
+    "n_train_points_ceiling_B_per_direction": 7,
+    "n_train_points_note": "n_features=10. Ceiling-A and ceiling-B each train on 7 rows (one per class) per direction, then average LR-> RL and RL->LR. 7 training rows for 7 classes at n_features=10 is a thin regime -- one example per class, n_features is the same order as n_train_rows. This is stated so the numbers are not read as coming from an asymptotic estimator.",
+    "note": "Ceiling-A: within-subject LR<->RL cross-encoding transfer of the SAME decoder. Bounds what perfect subject alignment would buy the cross-subject decoder. Ceiling-B: cross-encoding SPLIT-HALF (train A-half of one encoding, test B-half of the other, same subject same task). Bounds what the measurement supports when task IS run in HCP. If ceiling-B is close to ceiling-A, ceiling-A itself IS the measurement ceiling and there is no headroom beyond subject alignment."
+  },
+  "retired": {
+    "reliability_ceiling_cross_subject_nearest_centroid": "0.1869. Retired 2026-07-25 -- cross-subject nearest-centroid does not dominate the ridge/logistic decoder it was meant to bound, and it inherited the same between-subject penalty as the linear score. Any headroom vs linear was noise between two similarly-limited estimators.",
+    "ceiling_B_same_run_split_half": "0.9488. Retired 2026-07-25 (later) -- in HCP task IS run, so fitting on A-half and scoring on B-half OF THE SAME RUN lets the classifier memorise per-run nuisance (drift, head position, baseline gain) as a perfect label for task. Local simulation with per-run baseline_std=3 saturates the same-run estimator at 1.000 even at task SNR=0. The leak diagnostic (per-run demean, same-run classifier) collapses the number toward 0 by A=-B identity, confirming leak.",
+    "ceiling_B_same_run_headroom_derived": "The +0.7689 and +0.5738 headrooms derived from the retired 0.9488 are also retired."
+  },
+  "config": {
+    "scaling": "subject_pooled",
+    "d": 10,
+    "nframes": 176,
+    "half": 88,
+    "tasks": [
+      "WM",
+      "GAMBLING",
+      "MOTOR",
+      "LANGUAGE",
+      "SOCIAL",
+      "RELATIONAL",
+      "EMOTION"
+    ],
+    "encodings": [
+      "LR",
+      "RL"
+    ],
+    "kfolds": 5,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "perm_n_cross_subject": 200,
+    "perm_n_within_subject": 1000,
+    "classifier": "LogisticRegression(multinomial, C=1.0, max_iter=2000)"
+  },
+  "n_subjects": 92,
+  "source": {
+    "ts_dir": "/workspace/meridian-identifiability/hcp/ts",
+    "file_pattern": "{subject}_{task}_{encoding}.npy",
+    "provenance": "/workspace/meridian-identifiability/hcp/scripts/mean_shift_v2.py"
+  }
+}

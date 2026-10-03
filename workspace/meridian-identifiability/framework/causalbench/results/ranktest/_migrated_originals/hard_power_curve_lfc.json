@@ -1,0 +1,78 @@
+{
+  "curve": [
+    {
+      "n_e": 125,
+      "scaling": "raw",
+      "reject": 0.8,
+      "n_seeds": 10
+    },
+    {
+      "n_e": 125,
+      "scaling": "standardised",
+      "reject": 1.0,
+      "n_seeds": 10
+    },
+    {
+      "n_e": 250,
+      "scaling": "raw",
+      "reject": 0.9,
+      "n_seeds": 10
+    },
+    {
+      "n_e": 250,
+      "scaling": "standardised",
+      "reject": 0.9,
+      "n_seeds": 10
+    },
+    {
+      "n_e": 500,
+      "scaling": "raw",
+      "reject": 1.0,
+      "n_seeds": 10
+    },
+    {
+      "n_e": 500,
+      "scaling": "standardised",
+      "reject": 1.0,
+      "n_seeds": 10
+    },
+    {
+      "n_e": 1000,
+      "scaling": "raw",
+      "reject": 1.0,
+      "n_seeds": 10
+    },
+    {
+      "n_e": 1000,
+      "scaling": "standardised",
+      "reject": 1.0,
+      "n_seeds": 10
+    },
+    {
+      "n_e": 2000,
+      "scaling": "raw",
+      "reject": 1.0,
+      "n_seeds": 10
+    },
+    {
+      "n_e": 2000,
+      "scaling": "standardised",
+      "reject": 1.0,
+      "n_seeds": 10
+    },
+    {
+      "n_e": 8000,
+      "scaling": "raw",
+      "reject": 1.0,
+      "n_seeds": 10
+    },
+    {
+      "n_e": 8000,
+      "scaling": "standardised",
+      "reject": 1.0,
+      "n_seeds": 10
+    }
+  ],
+  "floor": 125,
+  "rule": "smallest n_e with reject>=0.80 in both scalings"
+}

@@ -1,0 +1,17 @@
+{
+  "tag": "k562_filt1_n200_d10",
+  "dataset": "k562",
+  "filter": true,
+  "nmin": 200,
+  "d": 10,
+  "step0": false,
+  "n_envs": 206,
+  "n_fit": 100,
+  "coef_ratio_vs_ctrl": 1.1950986785990063,
+  "coef_ratio_pairs": 1.2169774784878997,
+  "shift_frac_vs_ctrl": 0.08096008629989213,
+  "shift_frac_pairs": 0.08296296296296296,
+  "shift_frac_within": 0.05,
+  "mean_ratio_vs_ctrl": 4.3696140539160675,
+  "mean_ratio_pairs": 5.282508156854796
+}

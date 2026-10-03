@@ -1,0 +1,1127 @@
+{
+  "arm": "frangieh_control",
+  "matched_sample": 2000,
+  "gene_counts": [
+    5000,
+    2000,
+    1158,
+    500
+  ],
+  "rules": [
+    "random",
+    "highest_variance"
+  ],
+  "n_gene_seeds": 10,
+  "question": "Does the observed control-covariance dimension survive reducing the gene count within one dataset? Reported without a verdict: a participation ratio roughly constant in p rules out a feature-count explanation, one falling in proportion to p supports it, and both are stated the same way.",
+  "provenance": {
+    "resolved_input_paths": [
+      "/workspace/external/frangieh/RNA_metadata.csv",
+      "/workspace/external/frangieh/RNA_expression.csv.gz"
+    ],
+    "input_path": "/workspace/external/frangieh/RNA_metadata.csv",
+    "n_cells": null,
+    "n_genes_full": 23712,
+    "n_control_cells_available": 3770,
+    "n_control_cells_used": 2000,
+    "control_value_array": {
+      "label": "control matrix",
+      "shape": [
+        3770,
+        23712
+      ],
+      "dtype": "float32",
+      "max": 12.343685150146484,
+      "mean": 0.7441772222518921,
+      "n_nonzero_hashed": 50000,
+      "nonzero_available": 13310301,
+      "sha256_first_nonzero": "acc197343db31fadef10ff058fc4766b00c614a469e300eb20a700ac0be04c71",
+      "hash_spec": "sha256 of the first 50000 non-zero entries, row-major, cast to float64"
+    },
+    "matched_sample_value_array": {
+      "label": "control matrix at n=2000, full gene width",
+      "shape": [
+        2000,
+        23712
+      ],
+      "dtype": "float64",
+      "max": 12.343685150146484,
+      "mean": 0.7486809934871309,
+      "n_nonzero_hashed": 50000,
+      "nonzero_available": 7116722,
+      "sha256_first_nonzero": "fde7b9b324bff2880485dcc7bd433b6a398582e3c9eed81809930af551e65b87",
+      "hash_spec": "sha256 of the first 50000 non-zero entries, row-major, cast to float64"
+    },
+    "cells_fixed_across_gene_configurations": true
+  },
+  "baseline": {
+    "participation_ratio": 419.2287458416629,
+    "effective_rank_exp_spectral_entropy": 1471.4926566116167,
+    "n_components_for_variance_95pct": 1725,
+    "top_eigenvalue_share": 0.04051462264021255,
+    "rank_bound": 1999
+  },
+  "expected_participation_ratio": 419.2287458416629,
+  "expected_source": "2026-08-11T07-13-08Z__frangieh_control.json",
+  "records": [
+    {
+      "arm": "frangieh_control",
+      "n_genes": 23712,
+      "rule": "all_genes",
+      "seed": null,
+      "n_cells": 2000,
+      "is_baseline": true,
+      "estimators": {
+        "participation_ratio": 419.2287458416629,
+        "effective_rank_exp_spectral_entropy": 1471.4926566116167,
+        "n_components_for_variance_95pct": 1725,
+        "top_eigenvalue_share": 0.04051462264021255,
+        "rank_bound": 1999
+      },
+      "expected_participation_ratio": 419.2287458416629,
+      "expected_source": "2026-08-11T07-13-08Z__frangieh_control.json",
+      "reproduces_expected": true,
+      "gene_fraction": 1.0
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 5000,
+      "rule": "random",
+      "seed": 0,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 356.04099822366993,
+        "effective_rank_exp_spectral_entropy": 1027.5286592376435,
+        "n_components_for_variance_95pct": 1238,
+        "top_eigenvalue_share": 0.04116807711346422,
+        "rank_bound": 1999
+      },
+      "gene_fraction": 0.21086369770580296,
+      "participation_ratio_over_baseline": 0.8492762048290979
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 5000,
+      "rule": "random",
+      "seed": 1,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 364.48737906131606,
+        "effective_rank_exp_spectral_entropy": 1031.3646498598744,
+        "n_components_for_variance_95pct": 1240,
+        "top_eigenvalue_share": 0.04036448414956714,
+        "rank_bound": 1999
+      },
+      "gene_fraction": 0.21086369770580296,
+      "participation_ratio_over_baseline": 0.8694236325077243
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 5000,
+      "rule": "random",
+      "seed": 2,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 358.3630239082245,
+        "effective_rank_exp_spectral_entropy": 1025.0523187928638,
+        "n_components_for_variance_95pct": 1234,
+        "top_eigenvalue_share": 0.04095109227660712,
+        "rank_bound": 1999
+      },
+      "gene_fraction": 0.21086369770580296,
+      "participation_ratio_over_baseline": 0.8548150084240012
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 5000,
+      "rule": "random",
+      "seed": 3,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 350.7599422593429,
+        "effective_rank_exp_spectral_entropy": 1021.3590831481303,
+        "n_components_for_variance_95pct": 1236,
+        "top_eigenvalue_share": 0.04139673318591784,
+        "rank_bound": 1999
+      },
+      "gene_fraction": 0.21086369770580296,
+      "participation_ratio_over_baseline": 0.8366791298033276
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 5000,
+      "rule": "random",
+      "seed": 4,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 359.58714819453763,
+        "effective_rank_exp_spectral_entropy": 1029.1878821257346,
+        "n_components_for_variance_95pct": 1246,
+        "top_eigenvalue_share": 0.04042469976699837,
+        "rank_bound": 1999
+      },
+      "gene_fraction": 0.21086369770580296,
+      "participation_ratio_over_baseline": 0.8577349520072006
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 5000,
+      "rule": "random",
+      "seed": 5,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 361.60444511639406,
+        "effective_rank_exp_spectral_entropy": 1036.9976385190416,
+        "n_components_for_variance_95pct": 1250,
+        "top_eigenvalue_share": 0.0406800725464592,
+        "rank_bound": 1999
+      },
+      "gene_fraction": 0.21086369770580296,
+      "participation_ratio_over_baseline": 0.8625468761461488
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 5000,
+      "rule": "random",
+      "seed": 6,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 353.8752625643391,
+        "effective_rank_exp_spectral_entropy": 1024.7124208466016,
+        "n_components_for_variance_95pct": 1245,
+        "top_eigenvalue_share": 0.04087395509424642,
+        "rank_bound": 1999
+      },
+      "gene_fraction": 0.21086369770580296,
+      "participation_ratio_over_baseline": 0.8441102049285357
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 5000,
+      "rule": "random",
+      "seed": 7,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 357.0340360371597,
+        "effective_rank_exp_spectral_entropy": 1019.7246932143586,
+        "n_components_for_variance_95pct": 1232,
+        "top_eigenvalue_share": 0.0406292180188406,
+        "rank_bound": 1999
+      },
+      "gene_fraction": 0.21086369770580296,
+      "participation_ratio_over_baseline": 0.8516449303121182
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 5000,
+      "rule": "random",
+      "seed": 8,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 349.1485356558151,
+        "effective_rank_exp_spectral_entropy": 1031.0459646868721,
+        "n_components_for_variance_95pct": 1250,
+        "top_eigenvalue_share": 0.041665008014521714,
+        "rank_bound": 1999
+      },
+      "gene_fraction": 0.21086369770580296,
+      "participation_ratio_over_baseline": 0.8328353890782191
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 5000,
+      "rule": "random",
+      "seed": 9,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 347.0848151918684,
+        "effective_rank_exp_spectral_entropy": 1025.220725133583,
+        "n_components_for_variance_95pct": 1244,
+        "top_eigenvalue_share": 0.041761003156995116,
+        "rank_bound": 1999
+      },
+      "gene_fraction": 0.21086369770580296,
+      "participation_ratio_over_baseline": 0.8279127293502858
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 5000,
+      "rule": "highest_variance",
+      "seed": null,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 292.63804262025496,
+        "effective_rank_exp_spectral_entropy": 1265.800505651148,
+        "n_components_for_variance_95pct": 1580,
+        "top_eigenvalue_share": 0.050244772306294205,
+        "rank_bound": 1999
+      },
+      "gene_fraction": 0.21086369770580296,
+      "participation_ratio_over_baseline": 0.6980390670318691
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 2000,
+      "rule": "random",
+      "seed": 0,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 271.54135630104804,
+        "effective_rank_exp_spectral_entropy": 596.2936113947351,
+        "n_components_for_variance_95pct": 688,
+        "top_eigenvalue_share": 0.04259490101396977,
+        "rank_bound": 1999
+      },
+      "gene_fraction": 0.08434547908232119,
+      "participation_ratio_over_baseline": 0.6477164531165179
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 2000,
+      "rule": "random",
+      "seed": 1,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 280.043908577566,
+        "effective_rank_exp_spectral_entropy": 598.4500849149206,
+        "n_components_for_variance_95pct": 684,
+        "top_eigenvalue_share": 0.041283850796736285,
+        "rank_bound": 1999
+      },
+      "gene_fraction": 0.08434547908232119,
+      "participation_ratio_over_baseline": 0.6679978683602361
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 2000,
+      "rule": "random",
+      "seed": 2,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 281.71517639167314,
+        "effective_rank_exp_spectral_entropy": 611.2120134688251,
+        "n_components_for_variance_95pct": 698,
+        "top_eigenvalue_share": 0.04185174473842399,
+        "rank_bound": 1999
+      },
+      "gene_fraction": 0.08434547908232119,
+      "participation_ratio_over_baseline": 0.6719843979832271
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 2000,
+      "rule": "random",
+      "seed": 3,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 274.97759446495917,
+        "effective_rank_exp_spectral_entropy": 605.1542509157288,
+        "n_components_for_variance_95pct": 698,
+        "top_eigenvalue_share": 0.04236710847634871,
+        "rank_bound": 1999
+      },
+      "gene_fraction": 0.08434547908232119,
+      "participation_ratio_over_baseline": 0.6559130240768712
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 2000,
+      "rule": "random",
+      "seed": 4,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 281.0414425633117,
+        "effective_rank_exp_spectral_entropy": 605.7784613661379,
+        "n_components_for_variance_95pct": 698,
+        "top_eigenvalue_share": 0.04130567202027375,
+        "rank_bound": 1999
+      },
+      "gene_fraction": 0.08434547908232119,
+      "participation_ratio_over_baseline": 0.6703773187095746
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 2000,
+      "rule": "random",
+      "seed": 5,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 276.9665795073359,
+        "effective_rank_exp_spectral_entropy": 609.3603186923822,
+        "n_components_for_variance_95pct": 708,
+        "top_eigenvalue_share": 0.041832874263803464,
+        "rank_bound": 1999
+      },
+      "gene_fraction": 0.08434547908232119,
+      "participation_ratio_over_baseline": 0.6606574149663451
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 2000,
+      "rule": "random",
+      "seed": 6,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 266.1969513545919,
+        "effective_rank_exp_spectral_entropy": 594.9475640006889,
+        "n_components_for_variance_95pct": 691,
+        "top_eigenvalue_share": 0.04300257521459644,
+        "rank_bound": 1999
+      },
+      "gene_fraction": 0.08434547908232119,
+      "participation_ratio_over_baseline": 0.6349682696976389
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 2000,
+      "rule": "random",
+      "seed": 7,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 284.8461703208701,
+        "effective_rank_exp_spectral_entropy": 604.8578168958759,
+        "n_components_for_variance_95pct": 690,
+        "top_eigenvalue_share": 0.04081758404422408,
+        "rank_bound": 1999
+      },
+      "gene_fraction": 0.08434547908232119,
+      "participation_ratio_over_baseline": 0.679452859915414
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 2000,
+      "rule": "random",
+      "seed": 8,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 276.3249390144339,
+        "effective_rank_exp_spectral_entropy": 597.9098564785584,
+        "n_components_for_variance_95pct": 684,
+        "top_eigenvalue_share": 0.04185983964022373,
+        "rank_bound": 1999
+      },
+      "gene_fraction": 0.08434547908232119,
+      "participation_ratio_over_baseline": 0.6591268889724421
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 2000,
+      "rule": "random",
+      "seed": 9,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 281.2721139055841,
+        "effective_rank_exp_spectral_entropy": 597.5086802791516,
+        "n_components_for_variance_95pct": 687,
+        "top_eigenvalue_share": 0.04095655958792681,
+        "rank_bound": 1999
+      },
+      "gene_fraction": 0.08434547908232119,
+      "participation_ratio_over_baseline": 0.6709275465853117
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 2000,
+      "rule": "highest_variance",
+      "seed": null,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 210.7939733867181,
+        "effective_rank_exp_spectral_entropy": 901.3446028169025,
+        "n_components_for_variance_95pct": 1173,
+        "top_eigenvalue_share": 0.0584937592687579,
+        "rank_bound": 1999
+      },
+      "gene_fraction": 0.08434547908232119,
+      "participation_ratio_over_baseline": 0.5028137394622557
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 1158,
+      "rule": "random",
+      "seed": 0,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 211.8496750411048,
+        "effective_rank_exp_spectral_entropy": 388.05758794216,
+        "n_components_for_variance_95pct": 429,
+        "top_eigenvalue_share": 0.04398026993795788,
+        "rank_bound": 1158
+      },
+      "gene_fraction": 0.04883603238866397,
+      "participation_ratio_over_baseline": 0.5053319390486587
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 1158,
+      "rule": "random",
+      "seed": 1,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 219.96076695546446,
+        "effective_rank_exp_spectral_entropy": 393.74801403453733,
+        "n_components_for_variance_95pct": 431,
+        "top_eigenvalue_share": 0.042453190004298105,
+        "rank_bound": 1158
+      },
+      "gene_fraction": 0.04883603238866397,
+      "participation_ratio_over_baseline": 0.5246795911236027
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 1158,
+      "rule": "random",
+      "seed": 2,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 228.6076960166838,
+        "effective_rank_exp_spectral_entropy": 407.9071011916364,
+        "n_components_for_variance_95pct": 445,
+        "top_eigenvalue_share": 0.04166022901526412,
+        "rank_bound": 1158
+      },
+      "gene_fraction": 0.04883603238866397,
+      "participation_ratio_over_baseline": 0.5453053930205107
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 1158,
+      "rule": "random",
+      "seed": 3,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 214.69512203750543,
+        "effective_rank_exp_spectral_entropy": 400.46677034754475,
+        "n_components_for_variance_95pct": 446,
+        "top_eigenvalue_share": 0.04390112595580677,
+        "rank_bound": 1158
+      },
+      "gene_fraction": 0.04883603238866397,
+      "participation_ratio_over_baseline": 0.5121192765693432
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 1158,
+      "rule": "random",
+      "seed": 4,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 223.71457211569555,
+        "effective_rank_exp_spectral_entropy": 399.74879710703266,
+        "n_components_for_variance_95pct": 439,
+        "top_eigenvalue_share": 0.04198779328052065,
+        "rank_bound": 1158
+      },
+      "gene_fraction": 0.04883603238866397,
+      "participation_ratio_over_baseline": 0.5336336649972699
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 1158,
+      "rule": "random",
+      "seed": 5,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 224.06322557108274,
+        "effective_rank_exp_spectral_entropy": 406.88909140471884,
+        "n_components_for_variance_95pct": 452,
+        "top_eigenvalue_share": 0.042006483888300875,
+        "rank_bound": 1158
+      },
+      "gene_fraction": 0.04883603238866397,
+      "participation_ratio_over_baseline": 0.534465319455237
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 1158,
+      "rule": "random",
+      "seed": 6,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 206.7286180804191,
+        "effective_rank_exp_spectral_entropy": 386.14482652514255,
+        "n_components_for_variance_95pct": 431,
+        "top_eigenvalue_share": 0.044521083165254424,
+        "rank_bound": 1158
+      },
+      "gene_fraction": 0.04883603238866397,
+      "participation_ratio_over_baseline": 0.4931165148644119
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 1158,
+      "rule": "random",
+      "seed": 7,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 229.70233757515373,
+        "effective_rank_exp_spectral_entropy": 398.3526763296277,
+        "n_components_for_variance_95pct": 433,
+        "top_eigenvalue_share": 0.03997469448635923,
+        "rank_bound": 1158
+      },
+      "gene_fraction": 0.04883603238866397,
+      "participation_ratio_over_baseline": 0.5479164772300925
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 1158,
+      "rule": "random",
+      "seed": 8,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 224.43032406797758,
+        "effective_rank_exp_spectral_entropy": 402.4024366529425,
+        "n_components_for_variance_95pct": 438,
+        "top_eigenvalue_share": 0.042306256578660134,
+        "rank_bound": 1158
+      },
+      "gene_fraction": 0.04883603238866397,
+      "participation_ratio_over_baseline": 0.535340971472271
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 1158,
+      "rule": "random",
+      "seed": 9,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 222.98356618709371,
+        "effective_rank_exp_spectral_entropy": 392.4848456245474,
+        "n_components_for_variance_95pct": 430,
+        "top_eigenvalue_share": 0.04129834734624435,
+        "rank_bound": 1158
+      },
+      "gene_fraction": 0.04883603238866397,
+      "participation_ratio_over_baseline": 0.5318899727150668
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 1158,
+      "rule": "highest_variance",
+      "seed": null,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 180.50551272974977,
+        "effective_rank_exp_spectral_entropy": 644.4320135987784,
+        "n_components_for_variance_95pct": 837,
+        "top_eigenvalue_share": 0.06052956155258349,
+        "rank_bound": 1158
+      },
+      "gene_fraction": 0.04883603238866397,
+      "participation_ratio_over_baseline": 0.43056568644251386
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 500,
+      "rule": "random",
+      "seed": 0,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 124.59787712673436,
+        "effective_rank_exp_spectral_entropy": 186.53369937946664,
+        "n_components_for_variance_95pct": 195,
+        "top_eigenvalue_share": 0.04963459742840449,
+        "rank_bound": 500
+      },
+      "gene_fraction": 0.021086369770580298,
+      "participation_ratio_over_baseline": 0.29720737989134294
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 500,
+      "rule": "random",
+      "seed": 1,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 129.40240842294898,
+        "effective_rank_exp_spectral_entropy": 188.60766301790585,
+        "n_components_for_variance_95pct": 194,
+        "top_eigenvalue_share": 0.04697809694952607,
+        "rank_bound": 500
+      },
+      "gene_fraction": 0.021086369770580298,
+      "participation_ratio_over_baseline": 0.30866778508509657
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 500,
+      "rule": "random",
+      "seed": 2,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 134.60320893151308,
+        "effective_rank_exp_spectral_entropy": 192.0747905215463,
+        "n_components_for_variance_95pct": 197,
+        "top_eigenvalue_share": 0.04495326178546324,
+        "rank_bound": 500
+      },
+      "gene_fraction": 0.021086369770580298,
+      "participation_ratio_over_baseline": 0.3210734241548191
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 500,
+      "rule": "random",
+      "seed": 3,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 123.66719706690634,
+        "effective_rank_exp_spectral_entropy": 183.7241482343249,
+        "n_components_for_variance_95pct": 192,
+        "top_eigenvalue_share": 0.04861890357066044,
+        "rank_bound": 500
+      },
+      "gene_fraction": 0.021086369770580298,
+      "participation_ratio_over_baseline": 0.2949873983918407
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 500,
+      "rule": "random",
+      "seed": 4,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 143.53363479043935,
+        "effective_rank_exp_spectral_entropy": 204.63655726318387,
+        "n_components_for_variance_95pct": 212,
+        "top_eigenvalue_share": 0.04286161873009961,
+        "rank_bound": 500
+      },
+      "gene_fraction": 0.021086369770580298,
+      "participation_ratio_over_baseline": 0.34237546020913867
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 500,
+      "rule": "random",
+      "seed": 5,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 133.00835981237344,
+        "effective_rank_exp_spectral_entropy": 194.54914441607747,
+        "n_components_for_variance_95pct": 202,
+        "top_eigenvalue_share": 0.04621888384711631,
+        "rank_bound": 500
+      },
+      "gene_fraction": 0.021086369770580298,
+      "participation_ratio_over_baseline": 0.3172691785372202
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 500,
+      "rule": "random",
+      "seed": 6,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 120.91435300073796,
+        "effective_rank_exp_spectral_entropy": 179.78292042725576,
+        "n_components_for_variance_95pct": 190,
+        "top_eigenvalue_share": 0.046517938906794606,
+        "rank_bound": 500
+      },
+      "gene_fraction": 0.021086369770580298,
+      "participation_ratio_over_baseline": 0.2884209496607508
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 500,
+      "rule": "random",
+      "seed": 7,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 132.97012783153764,
+        "effective_rank_exp_spectral_entropy": 193.0987762895796,
+        "n_components_for_variance_95pct": 199,
+        "top_eigenvalue_share": 0.045571519449367416,
+        "rank_bound": 500
+      },
+      "gene_fraction": 0.021086369770580298,
+      "participation_ratio_over_baseline": 0.31717798254645135
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 500,
+      "rule": "random",
+      "seed": 8,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 136.98218254696874,
+        "effective_rank_exp_spectral_entropy": 195.24813254267764,
+        "n_components_for_variance_95pct": 199,
+        "top_eigenvalue_share": 0.04415860472649903,
+        "rank_bound": 500
+      },
+      "gene_fraction": 0.021086369770580298,
+      "participation_ratio_over_baseline": 0.32674806750657576
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 500,
+      "rule": "random",
+      "seed": 9,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 134.9456008424667,
+        "effective_rank_exp_spectral_entropy": 192.59660573292663,
+        "n_components_for_variance_95pct": 198,
+        "top_eigenvalue_share": 0.0447426930811364,
+        "rank_bound": 500
+      },
+      "gene_fraction": 0.021086369770580298,
+      "participation_ratio_over_baseline": 0.3218901427466375
+    },
+    {
+      "arm": "frangieh_control",
+      "n_genes": 500,
+      "rule": "highest_variance",
+      "seed": null,
+      "n_cells": 2000,
+      "is_baseline": false,
+      "estimators": {
+        "participation_ratio": 116.27683043374526,
+        "effective_rank_exp_spectral_entropy": 318.9586401096621,
+        "n_components_for_variance_95pct": 415,
+        "top_eigenvalue_share": 0.06817859317129614,
+        "rank_bound": 500
+      },
+      "gene_fraction": 0.021086369770580298,
+      "participation_ratio_over_baseline": 0.27735891583556027
+    }
+  ],
+  "summary": [
+    {
+      "n_genes": 500,
+      "rule": "highest_variance",
+      "estimator": "participation_ratio",
+      "n": 1,
+      "mean": 116.27683043374526,
+      "sd": 0.0,
+      "min": 116.27683043374526,
+      "max": 116.27683043374526,
+      "median": 116.27683043374526
+    },
+    {
+      "n_genes": 500,
+      "rule": "highest_variance",
+      "estimator": "effective_rank_exp_spectral_entropy",
+      "n": 1,
+      "mean": 318.9586401096621,
+      "sd": 0.0,
+      "min": 318.9586401096621,
+      "max": 318.9586401096621,
+      "median": 318.9586401096621
+    },
+    {
+      "n_genes": 500,
+      "rule": "highest_variance",
+      "estimator": "n_components_for_variance_95pct",
+      "n": 1,
+      "mean": 415.0,
+      "sd": 0.0,
+      "min": 415.0,
+      "max": 415.0,
+      "median": 415.0
+    },
+    {
+      "n_genes": 500,
+      "rule": "random",
+      "estimator": "participation_ratio",
+      "n": 10,
+      "mean": 131.46249503726264,
+      "sd": 6.881820142730122,
+      "min": 120.91435300073796,
+      "max": 143.53363479043935,
+      "median": 132.98924382195554
+    },
+    {
+      "n_genes": 500,
+      "rule": "random",
+      "estimator": "effective_rank_exp_spectral_entropy",
+      "n": 10,
+      "mean": 191.0852437824945,
+      "sd": 6.9046464397810565,
+      "min": 179.78292042725576,
+      "max": 204.63655726318387,
+      "median": 192.33569812723647
+    },
+    {
+      "n_genes": 500,
+      "rule": "random",
+      "estimator": "n_components_for_variance_95pct",
+      "n": 10,
+      "mean": 197.8,
+      "sd": 6.142746399887703,
+      "min": 190.0,
+      "max": 212.0,
+      "median": 197.5
+    },
+    {
+      "n_genes": 1158,
+      "rule": "highest_variance",
+      "estimator": "participation_ratio",
+      "n": 1,
+      "mean": 180.50551272974977,
+      "sd": 0.0,
+      "min": 180.50551272974977,
+      "max": 180.50551272974977,
+      "median": 180.50551272974977
+    },
+    {
+      "n_genes": 1158,
+      "rule": "highest_variance",
+      "estimator": "effective_rank_exp_spectral_entropy",
+      "n": 1,
+      "mean": 644.4320135987784,
+      "sd": 0.0,
+      "min": 644.4320135987784,
+      "max": 644.4320135987784,
+      "median": 644.4320135987784
+    },
+    {
+      "n_genes": 1158,
+      "rule": "highest_variance",
+      "estimator": "n_components_for_variance_95pct",
+      "n": 1,
+      "mean": 837.0,
+      "sd": 0.0,
+      "min": 837.0,
+      "max": 837.0,
+      "median": 837.0
+    },
+    {
+      "n_genes": 1158,
+      "rule": "random",
+      "estimator": "participation_ratio",
+      "n": 10,
+      "mean": 220.67359036481807,
+      "sd": 7.402915914587707,
+      "min": 206.7286180804191,
+      "max": 229.70233757515373,
+      "median": 223.34906915139464
+    },
+    {
+      "n_genes": 1158,
+      "rule": "random",
+      "estimator": "effective_rank_exp_spectral_entropy",
+      "n": 10,
+      "mean": 397.62021471598894,
+      "sd": 7.395691807708136,
+      "min": 386.14482652514255,
+      "max": 407.9071011916364,
+      "median": 399.0507367183302
+    },
+    {
+      "n_genes": 1158,
+      "rule": "random",
+      "estimator": "n_components_for_variance_95pct",
+      "n": 10,
+      "mean": 437.4,
+      "sd": 7.9888811621041285,
+      "min": 429.0,
+      "max": 452.0,
+      "median": 435.5
+    },
+    {
+      "n_genes": 2000,
+      "rule": "highest_variance",
+      "estimator": "participation_ratio",
+      "n": 1,
+      "mean": 210.7939733867181,
+      "sd": 0.0,
+      "min": 210.7939733867181,
+      "max": 210.7939733867181,
+      "median": 210.7939733867181
+    },
+    {
+      "n_genes": 2000,
+      "rule": "highest_variance",
+      "estimator": "effective_rank_exp_spectral_entropy",
+      "n": 1,
+      "mean": 901.3446028169025,
+      "sd": 0.0,
+      "min": 901.3446028169025,
+      "max": 901.3446028169025,
+      "median": 901.3446028169025
+    },
+    {
+      "n_genes": 2000,
+      "rule": "highest_variance",
+      "estimator": "n_components_for_variance_95pct",
+      "n": 1,
+      "mean": 1173.0,
+      "sd": 0.0,
+      "min": 1173.0,
+      "max": 1173.0,
+      "median": 1173.0
+    },
+    {
+      "n_genes": 2000,
+      "rule": "random",
+      "estimator": "participation_ratio",
+      "n": 10,
+      "mean": 277.49262324013733,
+      "sd": 5.540434145281013,
+      "min": 266.1969513545919,
+      "max": 284.8461703208701,
+      "median": 278.50524404245095
+    },
+    {
+      "n_genes": 2000,
+      "rule": "random",
+      "estimator": "effective_rank_exp_spectral_entropy",
+      "n": 10,
+      "mean": 602.1472658407005,
+      "sd": 5.802438626041683,
+      "min": 594.9475640006889,
+      "max": 611.2120134688251,
+      "median": 601.6539509053982
+    },
+    {
+      "n_genes": 2000,
+      "rule": "random",
+      "estimator": "n_components_for_variance_95pct",
+      "n": 10,
+      "mean": 692.6,
+      "sd": 7.7056977476266075,
+      "min": 684.0,
+      "max": 708.0,
+      "median": 690.5
+    },
+    {
+      "n_genes": 5000,
+      "rule": "highest_variance",
+      "estimator": "participation_ratio",
+      "n": 1,
+      "mean": 292.63804262025496,
+      "sd": 0.0,
+      "min": 292.63804262025496,
+      "max": 292.63804262025496,
+      "median": 292.63804262025496
+    },
+    {
+      "n_genes": 5000,
+      "rule": "highest_variance",
+      "estimator": "effective_rank_exp_spectral_entropy",
+      "n": 1,
+      "mean": 1265.800505651148,
+      "sd": 0.0,
+      "min": 1265.800505651148,
+      "max": 1265.800505651148,
+      "median": 1265.800505651148
+    },
+    {
+      "n_genes": 5000,
+      "rule": "highest_variance",
+      "estimator": "n_components_for_variance_95pct",
+      "n": 1,
+      "mean": 1580.0,
+      "sd": 0.0,
+      "min": 1580.0,
+      "max": 1580.0,
+      "median": 1580.0
+    },
+    {
+      "n_genes": 5000,
+      "rule": "random",
+      "estimator": "participation_ratio",
+      "n": 10,
+      "mean": 355.79855862126675,
+      "sd": 5.587265737192828,
+      "min": 347.0848151918684,
+      "max": 364.48737906131606,
+      "median": 356.5375171304148
+    },
+    {
+      "n_genes": 5000,
+      "rule": "random",
+      "estimator": "effective_rank_exp_spectral_entropy",
+      "n": 10,
+      "mean": 1027.2194035564703,
+      "sd": 5.130519092826815,
+      "min": 1019.7246932143586,
+      "max": 1036.9976385190416,
+      "median": 1026.3746921856132
+    },
+    {
+      "n_genes": 5000,
+      "rule": "random",
+      "estimator": "n_components_for_variance_95pct",
+      "n": 10,
+      "mean": 1241.5,
+      "sd": 6.450667493454543,
+      "min": 1232.0,
+      "max": 1250.0,
+      "median": 1242.0
+    }
+  ],
+  "n_configurations": 45,
+  "n_configurations_expected": 45,
+  "complete": true,
+  "versions": {
+    "python": "3.10.12",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pandas": "2.3.3",
+    "sklearn": "1.7.2",
+    "scanpy": "1.11.5",
+    "anndata": "0.11.4",
+    "platform": {
+      "system": "Linux",
+      "release": "5.15.0-1065-nvidia",
+      "machine": "x86_64",
+      "processor": "x86_64",
+      "python_implementation": "CPython",
+      "numpy_blas": "scipy-openblas"
+    }
+  },
+  "platform_tag": "Linux-x86_64-py3.10.12",
+  "repo_commit": "b5acfc2",
+  "audit_script_sha256": "cd8f4941169873274917e857e1ed4e4e7d581df1824dbd2a69f83763cc51ea29",
+  "descriptives_script_sha256": "b599231234e5b39b2145bdb2aa2b677f69772220092f9fa78703d2d8e1f34f32",
+  "contains_no_test": true,
+  "disclaimer": "DESCRIPTIVE ONLY. No rank test was run and no assumption verdict is expressed or implied.",
+  "peak_rss_mb": 5631.8
+}

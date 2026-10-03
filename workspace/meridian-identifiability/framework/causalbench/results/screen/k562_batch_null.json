@@ -1,0 +1,19 @@
+{
+  "d": 10,
+  "nmin": 200,
+  "half": 100,
+  "n_pairs": 2000,
+  "seed": 0,
+  "sanity_mean_ratio_pairs": 4.106616809553814,
+  "sanity_target": 4.27,
+  "sanity_pass": true,
+  "control_batch_over_within": 3.072341536653557,
+  "n_control_batches": 43,
+  "n_control_pairs": 903,
+  "perturbation_batch_over_within": 1.5048227474446758,
+  "n_perturbations": 273,
+  "perturbation_cells_per_side": 10,
+  "perturbation_underpowered": true,
+  "hcp_encode_over_split_subject_pooled": 14.58,
+  "hcp_task_over_encode_subject_pooled": 1.058
+}

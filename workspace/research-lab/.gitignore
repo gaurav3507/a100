@@ -1,0 +1,23 @@
+# Never commit data or results (rule 2)
+results/
+data/
+
+# Array / model / tabular blobs
+*.npy
+*.npz
+*.pt
+*.pkl
+*.h5
+*.gz
+*.csv
+*.tsv
+
+# Python / notebook cruft
+__pycache__/
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/

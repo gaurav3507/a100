@@ -1,0 +1,46 @@
+%% A-FONF manuscript, IEEEtran journal format (TMI / JBHI compatible)
+\documentclass[journal]{IEEEtran}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[colorlinks=false,allbordercolors={0 0 0},pdfborderstyle={/S/U/W 1}]{hyperref}
+\usepackage{cite}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}{Theorem}
+
+\begin{document}
+
+\title{A-FONF: Adaptive Fractional-Order Notch Filtering for Robust and
+Self-Tuning Low-Dose CT Reconstruction}
+
+\author{Akhil Pratap Singh, and Co-authors% <-- fill in
+\thanks{Manuscript submitted 2026. The authors are with the Thapar Institute
+of Engineering and Technology, Patiala, India.}}
+
+\maketitle
+
+\begin{abstract}
+% written last
+\end{abstract}
+
+\begin{IEEEkeywords}
+Low-dose computed tomography, statistical image reconstruction, fractional
+order regularisation, discrepancy principle, distribution shift, task based
+assessment.
+\end{IEEEkeywords}
+
+\input{sec1_introduction}
+\input{sec2_related}
+\input{sec3_methodology}
+\input{sec4_results}
+\input{sec5_conclusion}
+
+\bibliographystyle{IEEEtran}
+\bibliography{refs}
+
+\end{document}

@@ -1,0 +1,330 @@
+{
+  "swept_axis": "k_nodes",
+  "mixing": "linear",
+  "intervention_kind": "hard",
+  "iv_scale_fixed": 2.0,
+  "k_grid": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "scaling": "standardise",
+  "config": {
+    "swept_axis": "k_nodes",
+    "mixing": "linear",
+    "intervention_kind": "hard",
+    "iv_scale_fixed": 2.0,
+    "iv_scale_fixed_note": "deliberate deviation from gate1, which draws each node magnitude from U(2,4); fixed here so k is the only varying axis",
+    "node_selection": "rng_iv.choice(d_latent, size=k, replace=False), gate1's own pattern",
+    "k_grid": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "d_latent_grid": [
+      5,
+      20,
+      80
+    ],
+    "scalings": [
+      "standardise"
+    ],
+    "n_e": 2000,
+    "draws_per_cell": 400,
+    "D": 200,
+    "alpha": 0.05,
+    "B_null": 500,
+    "crossing_level": 0.07179449471770337,
+    "crossing_level_id": "alpha + 2 Monte-Carlo SE at draws_per_cell, reused from 81.gate0's over-rejection boundary",
+    "bracket_field_semantics": "k_bracket_per_d reuses the s* bracket helper; its s_lo, s_hi and s_grid fields hold k values, not the nonlinearity scale s",
+    "null_geometry": "H0: rank<=2. k=1 hard is rank 1 or 2 (inside or on the null boundary); k>=3 exceeds it. The crossing in k is the real detection threshold."
+  },
+  "crossing_level": 0.07179449471770337,
+  "cells": [
+    {
+      "swept_axis": "k_nodes",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "intervention_kind": "hard",
+      "d_latent": 5,
+      "d_projection": 5,
+      "k_nodes": 1,
+      "iv_scale_fixed": 2.0,
+      "s": 1.0,
+      "n_draws": 400,
+      "reject_rate": 0.0225,
+      "n_reject": 9
+    },
+    {
+      "swept_axis": "k_nodes",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "intervention_kind": "hard",
+      "d_latent": 5,
+      "d_projection": 5,
+      "k_nodes": 2,
+      "iv_scale_fixed": 2.0,
+      "s": 2.0,
+      "n_draws": 400,
+      "reject_rate": 0.67,
+      "n_reject": 268
+    },
+    {
+      "swept_axis": "k_nodes",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "intervention_kind": "hard",
+      "d_latent": 5,
+      "d_projection": 5,
+      "k_nodes": 3,
+      "iv_scale_fixed": 2.0,
+      "s": 3.0,
+      "n_draws": 400,
+      "reject_rate": 0.9775,
+      "n_reject": 391
+    },
+    {
+      "swept_axis": "k_nodes",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "intervention_kind": "hard",
+      "d_latent": 5,
+      "d_projection": 5,
+      "k_nodes": 5,
+      "iv_scale_fixed": 2.0,
+      "s": 5.0,
+      "n_draws": 400,
+      "reject_rate": 1.0,
+      "n_reject": 400
+    },
+    {
+      "swept_axis": "k_nodes",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "intervention_kind": "hard",
+      "d_latent": 20,
+      "d_projection": 10,
+      "k_nodes": 1,
+      "iv_scale_fixed": 2.0,
+      "s": 1.0,
+      "n_draws": 400,
+      "reject_rate": 0.045,
+      "n_reject": 18
+    },
+    {
+      "swept_axis": "k_nodes",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "intervention_kind": "hard",
+      "d_latent": 20,
+      "d_projection": 10,
+      "k_nodes": 2,
+      "iv_scale_fixed": 2.0,
+      "s": 2.0,
+      "n_draws": 400,
+      "reject_rate": 0.86,
+      "n_reject": 344
+    },
+    {
+      "swept_axis": "k_nodes",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "intervention_kind": "hard",
+      "d_latent": 20,
+      "d_projection": 10,
+      "k_nodes": 3,
+      "iv_scale_fixed": 2.0,
+      "s": 3.0,
+      "n_draws": 400,
+      "reject_rate": 0.985,
+      "n_reject": 394
+    },
+    {
+      "swept_axis": "k_nodes",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "intervention_kind": "hard",
+      "d_latent": 20,
+      "d_projection": 10,
+      "k_nodes": 5,
+      "iv_scale_fixed": 2.0,
+      "s": 5.0,
+      "n_draws": 400,
+      "reject_rate": 1.0,
+      "n_reject": 400
+    },
+    {
+      "swept_axis": "k_nodes",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "intervention_kind": "hard",
+      "d_latent": 80,
+      "d_projection": 10,
+      "k_nodes": 1,
+      "iv_scale_fixed": 2.0,
+      "s": 1.0,
+      "n_draws": 400,
+      "reject_rate": 0.0625,
+      "n_reject": 25
+    },
+    {
+      "swept_axis": "k_nodes",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "intervention_kind": "hard",
+      "d_latent": 80,
+      "d_projection": 10,
+      "k_nodes": 2,
+      "iv_scale_fixed": 2.0,
+      "s": 2.0,
+      "n_draws": 400,
+      "reject_rate": 0.5525,
+      "n_reject": 221
+    },
+    {
+      "swept_axis": "k_nodes",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "intervention_kind": "hard",
+      "d_latent": 80,
+      "d_projection": 10,
+      "k_nodes": 3,
+      "iv_scale_fixed": 2.0,
+      "s": 3.0,
+      "n_draws": 400,
+      "reject_rate": 0.75,
+      "n_reject": 300
+    },
+    {
+      "swept_axis": "k_nodes",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "intervention_kind": "hard",
+      "d_latent": 80,
+      "d_projection": 10,
+      "k_nodes": 5,
+      "iv_scale_fixed": 2.0,
+      "s": 5.0,
+      "n_draws": 400,
+      "reject_rate": 0.805,
+      "n_reject": 322
+    }
+  ],
+  "k_bracket_per_d": {
+    "5": {
+      "kind": "bracketed",
+      "s_lo": 1.0,
+      "s_hi": 2.0,
+      "note": "rate crosses the level 0.0718 between s=1.0 (rate 0.0225) and s=2.0 (rate 0.6700); s_star in (1.0, 2.0]",
+      "rates": [
+        0.0225,
+        0.67,
+        0.9775,
+        1.0
+      ],
+      "s_grid": [
+        1.0,
+        2.0,
+        3.0,
+        5.0
+      ]
+    },
+    "20": {
+      "kind": "bracketed",
+      "s_lo": 1.0,
+      "s_hi": 2.0,
+      "note": "rate crosses the level 0.0718 between s=1.0 (rate 0.0450) and s=2.0 (rate 0.8600); s_star in (1.0, 2.0]",
+      "rates": [
+        0.045,
+        0.86,
+        0.985,
+        1.0
+      ],
+      "s_grid": [
+        1.0,
+        2.0,
+        3.0,
+        5.0
+      ]
+    },
+    "80": {
+      "kind": "bracketed",
+      "s_lo": 1.0,
+      "s_hi": 2.0,
+      "note": "rate crosses the level 0.0718 between s=1.0 (rate 0.0625) and s=2.0 (rate 0.5525); s_star in (1.0, 2.0]",
+      "rates": [
+        0.0625,
+        0.5525,
+        0.75,
+        0.805
+      ],
+      "s_grid": [
+        1.0,
+        2.0,
+        3.0,
+        5.0
+      ]
+    }
+  },
+  "coarse_trend": {
+    "representative_points": [
+      {
+        "d_latent": 5,
+        "s_star_proxy": 2.0,
+        "bound": "point_in_bracket",
+        "kind": "bracketed"
+      },
+      {
+        "d_latent": 20,
+        "s_star_proxy": 2.0,
+        "bound": "point_in_bracket",
+        "kind": "bracketed"
+      },
+      {
+        "d_latent": 80,
+        "s_star_proxy": 2.0,
+        "bound": "point_in_bracket",
+        "kind": "bracketed"
+      }
+    ],
+    "direction": "s_star decreases with d",
+    "monotone_decreasing": true,
+    "coarse_trend_slope_s_star_per_d": null,
+    "label": "coarse trend estimate, 5-point grid; representative s* proxies mix bracket points with censoring bounds, so this is a direction and rough rate only, not a fitted law; no R^2"
+  },
+  "n_cells": 12,
+  "n_cells_expected": 12,
+  "provenance": {
+    "core_path": "scripts/80_ranktest_core.py",
+    "core_md5": "3814be951bc33106e5d5f3f3825d6fcb",
+    "oracle_path": "scripts/81_ranktest_oracle.py",
+    "oracle_md5": "3ff071b4f966887052fe7fcd25f78c9e",
+    "git_commit": "4e36230",
+    "timestamp": "2026-08-29T05-20-00Z",
+    "decision_rule": "reject_rank2_cf from 80_ranktest_core.rank_diagnostic: LFC test of H0 rank<=2 at level alpha, reject when the statistic exceeds the (1-alpha) bootstrap critical value (_lfc_rank_test)",
+    "oracle_gate": "81_ranktest_oracle.gate0: level-control oracle, true rank 0 under linear mixing, PASS when no cell's pooled reject rate exceeds alpha + 2 Monte-Carlo SE",
+    "oracle_gate_config": {},
+    "versions": {
+      "python": "3.10.12",
+      "numpy": "1.26.4",
+      "scipy": "1.13.1",
+      "pandas": "2.3.3",
+      "sklearn": "1.5.0",
+      "scanpy": null,
+      "anndata": null,
+      "platform": {
+        "system": "Linux",
+        "release": "5.15.0-1065-nvidia",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "python_implementation": "CPython",
+        "numpy_blas": "openblas64"
+      }
+    },
+    "platform_tag": "Linux-x86_64-py3.10.12"
+  },
+  "contains_no_test_on_real_data": true,
+  "disclaimer": "SYNTHETIC ONLY. Intervened-node-count sweep under linear mixing, the valid regime. No real dataset was touched and no assumption verdict is expressed or implied."
+}

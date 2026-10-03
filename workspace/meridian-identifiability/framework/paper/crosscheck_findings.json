@@ -1,0 +1,110 @@
+[
+  {
+    "kind": "PROVENANCE",
+    "label": "Frangieh screen is post-hoc, not pre-registered",
+    "claimed": "prospective (PREDICTIONS_frangieh.md registered before results)",
+    "actual": "post-hoc: lockfile holds 16 unfilled TODOs and was never edited; results for 2 of 3 arms existed 2h49m before registration",
+    "claim_src": "causalbench/PREDICTIONS_frangieh.md (commit 8722c84, 2026-07-25T10:58:59Z)",
+    "actual_src": "git log --diff-filter=A -- causalbench/PREDICTIONS_frangieh.md; commit 4fab4f4 (IFNg label fix) 2026-07-25T08:09:53Z; frangieh.json mtime 2026-07-25T11:36Z",
+    "note": "Two independent grounds. (1) The lockfile contains no filled-in predictions, so its timestamp is moot. (2) The IFNg fix at 08:09Z implies a prior run that produced Co-culture and Control ratios before the 10:58Z registration. Frangieh must be reported as an observation with no prospective-validity claim. Adamson (GSE90546) is unrun and is the remaining opportunity for a genuine pre-registration."
+  },
+  {
+    "kind": "METRIC-MISMATCH",
+    "label": "README Norman mean-shift ratio",
+    "claimed": "3.19",
+    "actual": "3.7147 (pairs) / 3.1896 (vs_ctrl)",
+    "claim_src": "README.md headline-numbers table",
+    "actual_src": "causalbench/results/screen/norman.json $.screen[n=200,d=10]",
+    "note": "README quotes vs_ctrl (3.19). Under the corrected PRIMARY metric mean_ratio_pairs the value is 3.71."
+  },
+  {
+    "kind": "METRIC-MISMATCH",
+    "label": "norman_verdict.txt mean-shift ratio",
+    "claimed": "3.19",
+    "actual": "3.7147 (pairs)",
+    "claim_src": "causalbench/results/screen/norman_verdict.txt",
+    "actual_src": "causalbench/results/screen/norman.json",
+    "note": "Verdict sentence quotes the secondary metric."
+  },
+  {
+    "kind": "METRIC-MISMATCH",
+    "label": "scripts/50_figures.py FIG 2 y-values",
+    "claimed": "plots mean_ratio_vs_ctrl (6 refs)",
+    "actual": "primary metric is mean_ratio_pairs (4 refs, used only for the gate band)",
+    "claim_src": "scripts/50_figures.py fig2_mean_shift_ratio()",
+    "actual_src": "03_screen.py:63 -- ref_pool empty in step-0",
+    "note": "Bars and the calibrated null/band come from DIFFERENT metrics on one axis."
+  },
+  {
+    "kind": "VALUE-MISMATCH",
+    "label": "README baseline CEILING",
+    "claimed": "+0.528",
+    "actual": "0.527492",
+    "claim_src": "README.md",
+    "actual_src": "results/zeroshot_canonical/k562.json",
+    "note": ""
+  },
+  {
+    "kind": "UNTRACEABLE",
+    "label": "README HCP mean-shift ratio = 1.00",
+    "claimed": "1.00",
+    "actual": "HCP results not on this machine",
+    "claim_src": "README.md",
+    "actual_src": "hcp/results/mean_shift_LR.json (A100 only)",
+    "note": "Run on the A100 to resolve; local record suggests ~0.75."
+  },
+  {
+    "kind": "UNTRACEABLE",
+    "label": "README K562 mean-shift range '2.0 - 5.6'",
+    "claimed": "2.0 - 5.6",
+    "actual": "no k562 screen JSON in this repo",
+    "claim_src": "README.md headline-numbers table",
+    "actual_src": "causalbench/results/screen/k562_filt*_n*_d*.json (A100 only)",
+    "note": "Range spans unspecified configs and an unspecified metric."
+  },
+  {
+    "kind": "UNTRACEABLE",
+    "label": "README CausalBench effective dim '~15'",
+    "claimed": "~15",
+    "actual": "no k562 spectrum JSON in this repo",
+    "claim_src": "README.md headline-numbers table",
+    "actual_src": "causalbench/results/spectrum/k562_filt0_n200_d*.json (A100 only)",
+    "note": "Also ambiguous: dims_above_2x or participation_ratio?"
+  },
+  {
+    "kind": "UNTRACEABLE",
+    "label": "README HCP effective dim '3 (group only)'",
+    "claimed": "3 (group only)",
+    "actual": "HCP results not on this machine",
+    "claim_src": "README.md",
+    "actual_src": "hcp/results/mean_shift_*.json (A100 only)",
+    "note": "'group only' qualifier does not appear in any results file key."
+  },
+  {
+    "kind": "DEFINITION",
+    "label": "frac_beats_gmean means two different things",
+    "claimed": "baselines: per-gene, r2 > that gene's own global_mean r2",
+    "actual": "model: constant, r2 > 0.129",
+    "claim_src": "scripts/25_zeroshot_baselines.py (gm_by_g[g])",
+    "actual_src": "model/cb_train.py (np.mean(zs>0.129))",
+    "note": "Both are internally correct but NOT comparable. The model's 0% and the baselines' 70.1% answer different questions."
+  },
+  {
+    "kind": "DEFINITION",
+    "label": "R2 target differs between baselines and model",
+    "claimed": "baselines predict half B of the held-out cells",
+    "actual": "model predicts the full-data mean shift",
+    "claim_src": "scripts/25_zeroshot_baselines.py (A,B split; target = B)",
+    "actual_src": "model/cb_train.py zeroshot_eval (target = all cells)",
+    "note": "The model's target is LESS noisy than the baselines' target, so model R2 and baseline R2 are not on one scale. The constants 0.129 / 0.226 hard-coded in cb_train.py came from the half-B evaluation."
+  },
+  {
+    "kind": "COMPARABILITY",
+    "label": "HCP metric vs CausalBench primary metric",
+    "claimed": "HCP plotted on the same axis as K562/RPE1/Norman",
+    "actual": "HCP computes between/within (vs_ctrl form); it has no pairs metric",
+    "claim_src": "scripts/50_figures.py fig2/fig3",
+    "actual_src": "hcp/results/mean_shift_*.json key set",
+    "note": "If the paper's primary metric is mean_ratio_pairs, HCP has no corresponding value and cannot share the axis without recomputation."
+  }
+]

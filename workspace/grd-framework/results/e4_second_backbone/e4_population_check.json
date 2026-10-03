@@ -1,0 +1,187 @@
+{
+  "setting": "arm A, m=5, n=2000, iv_scale=0.1, seeds 0-9, exact population precisions",
+  "rule": {
+    "mean_at_least": 0.99,
+    "every_seed_at_least": 0.98
+  },
+  "population_mcc_mean": 0.9986,
+  "population_mcc_min": 0.9974,
+  "passed": true,
+  "jad": {
+    "algorithm": "FFDiag (Ziehe et al. 2004)",
+    "theta": 0.9,
+    "tol": 1e-10,
+    "max_iter": 2000,
+    "init": "eigenvectors of sum_e Delta_e"
+  },
+  "diagnostic": "offdiag_ratio_at_solution < offdiag_ratio_at_truth means the truth is not the exact joint-diagonal optimum (model mismatch from the removed-edge term), not an optimizer failure",
+  "per_seed": [
+    {
+      "seed": 0,
+      "population_mcc": 0.9978,
+      "offdiag_ratio_at_solution": 0.06618150150267145,
+      "offdiag_ratio_at_truth": 0.10532991966615264,
+      "n_iter": 23,
+      "converged": true,
+      "n_parents_per_node": [
+        0,
+        1,
+        3,
+        1,
+        3
+      ]
+    },
+    {
+      "seed": 1,
+      "population_mcc": 0.9986,
+      "offdiag_ratio_at_solution": 0.006463634521835056,
+      "offdiag_ratio_at_truth": 0.034808491277048416,
+      "n_iter": 10,
+      "converged": true,
+      "n_parents_per_node": [
+        1,
+        2,
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "seed": 2,
+      "population_mcc": 0.9985,
+      "offdiag_ratio_at_solution": 0.019816851334252407,
+      "offdiag_ratio_at_truth": 0.07504204136109985,
+      "n_iter": 15,
+      "converged": true,
+      "n_parents_per_node": [
+        2,
+        1,
+        0,
+        0,
+        3
+      ]
+    },
+    {
+      "seed": 3,
+      "population_mcc": 0.9986,
+      "offdiag_ratio_at_solution": 0.023854415338440224,
+      "offdiag_ratio_at_truth": 0.05901323165851631,
+      "n_iter": 11,
+      "converged": true,
+      "n_parents_per_node": [
+        2,
+        2,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "seed": 4,
+      "population_mcc": 0.9993,
+      "offdiag_ratio_at_solution": 0.0006700605683690185,
+      "offdiag_ratio_at_truth": 0.025594969439828086,
+      "n_iter": 9,
+      "converged": true,
+      "n_parents_per_node": [
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "seed": 5,
+      "population_mcc": 0.999,
+      "offdiag_ratio_at_solution": 5.300936171704542e-05,
+      "offdiag_ratio_at_truth": 0.01280144170657143,
+      "n_iter": 8,
+      "converged": true,
+      "n_parents_per_node": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "seed": 6,
+      "population_mcc": 0.9993,
+      "offdiag_ratio_at_solution": 0.00037243031983202906,
+      "offdiag_ratio_at_truth": 0.014579732796646075,
+      "n_iter": 8,
+      "converged": true,
+      "n_parents_per_node": [
+        0,
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "seed": 7,
+      "population_mcc": 0.9974,
+      "offdiag_ratio_at_solution": 0.06910874753466861,
+      "offdiag_ratio_at_truth": 0.11383733847300324,
+      "n_iter": 20,
+      "converged": true,
+      "n_parents_per_node": [
+        0,
+        0,
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "seed": 8,
+      "population_mcc": 0.9988,
+      "offdiag_ratio_at_solution": 0.02263341866940871,
+      "offdiag_ratio_at_truth": 0.04803342818090112,
+      "n_iter": 13,
+      "converged": true,
+      "n_parents_per_node": [
+        3,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "seed": 9,
+      "population_mcc": 0.9982,
+      "offdiag_ratio_at_solution": 0.011944515963427157,
+      "offdiag_ratio_at_truth": 0.08187845739220849,
+      "n_iter": 11,
+      "converged": true,
+      "n_parents_per_node": [
+        0,
+        1,
+        1,
+        0,
+        2
+      ]
+    }
+  ],
+  "experiment": "e4_backbone_c_population_check",
+  "provenance": {
+    "code_commit": "7ccce00bf456154f961410bb380f7fb626c33c11",
+    "source_sha256": {
+      "src/gate/precision_readout.py": "1f8bdaf52a05d1c6e6941551e94e3a3db852350c8af3e76174174385901eb872",
+      "src/gate/rank_readout.py": "0fcda99992ab989f4a9f03e059681a508de491b4482ccb9cbddc83dc5fdbdad5",
+      "src/recover/backbone.py": "9decaed2279beca46a0633a1456201e04f6c2df2a04b991543da843373a57ec7",
+      "experiments/e3_gate_compare.py": "c48d670f1757b543f7673104aed1375c7d3f8b8a7c5791ec90b1d467c0dae32d",
+      "experiments/tier2_common.py": "cb23ea2ec40e85f0d818f2e04a3c5c72d0873267cd9b804aa022d200f1533711",
+      "experiments/e4_second_backbone.py": "e4d32f99347b469b75a731fb660eb07c50159d46f8ff1425ba85cafeb70cc267",
+      "experiments/e2_calibration.py": "3cc2fd4513d4b1ef1e3ab921100e0988dd8da6805871f1bb0b36deae63902c4b"
+    },
+    "numpy_version": "1.24.4",
+    "python_version": "3.10.12",
+    "host": "dgxanode02"
+  },
+  "wall_seconds": 6.5
+}

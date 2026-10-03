@@ -1,0 +1,100 @@
+% =====================================================================
+% Section I: Introduction
+% =====================================================================
+\section{Introduction}
+\label{sec:intro}
+
+\IEEEPARstart{L}{owering} the radiation dose of a computed tomography (CT)
+examination lowers the number of detected photons, and the reconstruction
+problem becomes both noisier and more ill conditioned. Statistical iterative
+reconstruction addresses this by modelling the photon statistics explicitly,
+starting from maximum likelihood expectation maximisation (MLEM)
+\cite{shepp1982}, and by adding a prior that restrains the noise the
+likelihood alone cannot control. Total variation \cite{sidky2008},
+anisotropic diffusion \cite{perona1990}, plug and play priors
+\cite{venkatakrishnan2013} and fractional order penalties
+\cite{zhang2016fractional} all follow this pattern, and all share the same
+practical burden: at least one strength parameter must be set, and the
+appropriate value depends on the dose, the anatomy and the acquisition
+geometry.
+
+Learned reconstruction removes that burden by moving the prior into the
+training data. Post-processing networks \cite{chen2017redcnn,yang2018wgan},
+unrolled physics informed architectures
+\cite{adler2018lpd,wu2021drone,xiang2021fista}, architecture searched
+denoisers \cite{lu2023m3nas} and, more recently, diffusion priors used as
+generative regularisers \cite{chung2023dps,gao2024corediff,liu2024mar} now
+define the state of the art on the public low-dose benchmarks
+\cite{moen2021mayo,leuschner2021lodopab}. Their accuracy in the setting they
+were trained for is not in question. What is in question is what happens
+outside it. Deep reconstruction networks have been shown to be unstable under
+small perturbations and to miss structures that were not represented in
+training \cite{antun2020,genzel2023}, and a controlled benchmark of low-dose
+denoisers found that newer architectures do not consistently outperform older
+ones once training and evaluation are held fixed \cite{eulig2024}. For a
+modality whose acquisitions vary across scanners, protocols and patient
+populations, a method whose behaviour changes with the training distribution
+carries a risk that accuracy on one dataset does not describe.
+
+This work takes the opposite route. We keep the reconstruction free of
+training data, and we remove the tuning burden from the classical side by
+making the regulariser select itself from the measurements. The starting
+point is our earlier fractional-order notch filter \cite{singh2026spl}, in
+which a spectral operator combines a fractional-order low-pass envelope with
+narrowband stop bands placed at frequencies where structured artefacts
+concentrate. That formulation required the fractional order and the notch
+positions to be supplied. Here both are inferred from the data at hand: the
+order is chosen by a Poisson discrepancy criterion on an unbounded ladder of
+candidates, and the notches are detected by a robust spectral rule with an
+acquisition band guard, so that a single frozen algorithm runs unchanged
+across doses, anatomies and geometries.
+
+The resulting method is evaluated against a jury that spans the field:
+analytic reconstruction, four classical iterative priors, a training free
+neural prior \cite{ulyanov2018dip,baguer2020dip}, two supervised networks
+\cite{chen2017redcnn,adler2018lpd} and a diffusion posterior sampler
+\cite{chung2023dps}, on two public datasets, two geometries, four dose levels
+and ten noise realisations per configuration, with paired statistics at two
+levels of aggregation. The evaluation reports what the numbers say, including
+where the proposed method is not the best.
+
+\subsection*{Contributions}
+
+\begin{enumerate}
+\item \textbf{A reconstruction with no run time parameters.} The fractional
+order is selected by a Poisson discrepancy criterion evaluated on a geometric
+ladder that is not bounded a priori, the notch set is detected by a robust
+rule that combines a sectoral background model, a spatial coherence test and
+an acquisition band guard, and the iteration itself is a damped
+multiplicative step followed by a nonexpansive spectral step. Nothing is
+tuned per dataset, per dose or per geometry.
+
+\item \textbf{Stability that the theory predicts and the data confirm.} The
+spectral operator is self-adjoint and nonexpansive for every admissible
+order, so the regularised iteration cannot amplify. Empirically, across 200
+photon starved reconstructions per method the proposed iteration produced no
+catastrophic failure, whereas the nonlinear spatial priors produced between
+three and sixteen, and an unregularised MLEM run at a fixed budget diverged
+in fan beam geometry while the same engine with the spectral step stayed
+stable.
+
+\item \textbf{Behaviour under distribution shift.} Transferred without any
+adjustment to a second public dataset, the proposed method reproduces its own
+accuracy to within a few hundredths of a decibel, while the supervised and
+generative baselines lose between 2.7 and 7.0 dB and the ranking of the
+methods inverts. The size of the degradation orders with the amount of
+physics each architecture contains.
+
+\item \textbf{A statistically rigorous and released benchmark.} Ten methods,
+two datasets, two geometries, four dose levels, ten realisations, paired
+Wilcoxon tests at the realisation and the slice level, a task based
+assessment with a channelised Hotelling observer, and a released code base
+with an automated verification suite that checks the operators, the observer
+and the reconstruction pipeline against their reference definitions.
+\end{enumerate}
+
+The paper is organised as follows. Section \ref{sec:related} reviews related
+work. Section \ref{sec:method} develops the method. Section
+\ref{sec:results} reports the experiments and discusses them, including the
+regimes in which classical priors remain preferable. Section
+\ref{sec:conclusion} concludes.

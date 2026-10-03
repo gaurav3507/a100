@@ -1,0 +1,66 @@
+{
+  "dataset": "rpe1",
+  "budget": 5000,
+  "d_latent": 15,
+  "max_path_length": 1,
+  "results": {
+    "empty": {
+      "n_edges": 0
+    },
+    "random": {
+      "n_edges": 4993,
+      "raw": {
+        "output_graph.true_positives": 521.0,
+        "output_graph.false_positives": 4472.0,
+        "output_graph.wasserstein_distance.mean": 0.09708474250561079,
+        "false_omission_rate": -1.0,
+        "negative_mean_wasserstein": -1.0
+      },
+      "precision[output_graph.true_positives]": 0.10434608451832565
+    },
+    "corr_top": {
+      "n_edges": 5000,
+      "raw": {
+        "output_graph.true_positives": 1710.0,
+        "output_graph.false_positives": 3290.0,
+        "output_graph.wasserstein_distance.mean": 0.21203033442512698,
+        "false_omission_rate": -1.0,
+        "negative_mean_wasserstein": -1.0
+      },
+      "precision[output_graph.true_positives]": 0.342
+    },
+    "hub": {
+      "n_edges": 5000,
+      "raw": {
+        "output_graph.true_positives": 615.0,
+        "output_graph.false_positives": 4385.0,
+        "output_graph.wasserstein_distance.mean": 0.04096722640308111,
+        "false_omission_rate": -1.0,
+        "negative_mean_wasserstein": -1.0
+      },
+      "precision[output_graph.true_positives]": 0.123
+    },
+    "program_shift": {
+      "n_edges": 5000,
+      "raw": {
+        "output_graph.true_positives": 510.0,
+        "output_graph.false_positives": 4490.0,
+        "output_graph.wasserstein_distance.mean": 0.09564529783669452,
+        "false_omission_rate": -1.0,
+        "negative_mean_wasserstein": -1.0
+      },
+      "precision[output_graph.true_positives]": 0.102
+    },
+    "program_pca": {
+      "n_edges": 5000,
+      "raw": {
+        "output_graph.true_positives": 627.0,
+        "output_graph.false_positives": 4373.0,
+        "output_graph.wasserstein_distance.mean": 0.1167271850618052,
+        "false_omission_rate": -1.0,
+        "negative_mean_wasserstein": -1.0
+      },
+      "precision[output_graph.true_positives]": 0.1254
+    }
+  }
+}

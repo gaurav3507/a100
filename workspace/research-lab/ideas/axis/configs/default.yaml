@@ -1,0 +1,27 @@
+# AXIS default configuration.
+# Imported only within ideas/axis/. numpy/scipy/pyyaml only.
+
+# Random seeds to sweep over in the oracle gates.
+seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# System dimension (number of channels).
+d: 6
+
+# Length of each simulated time series.
+T: 2000
+
+# Number of environments (settings) to compare. AXIS compares two at a time.
+n_env: 2
+
+# Shift magnitudes to sweep. Larger = a stronger imposed shift.
+magnitudes: [0.3, 0.6, 1.0]
+
+# A per-coefficient |dA_ij| / SE above this counts as a rejection (a real change).
+threshold: 3.0
+
+# Bootstrap replicates used to estimate per-coefficient standard errors.
+n_boot: 500
+
+# Path to the genomics (Perturb-seq) data. Empty means "not set" — script 03 will
+# refuse to run rather than fabricate data.
+genomics_data_path: ""

@@ -1,0 +1,144 @@
+{
+  "runs": [
+    {
+      "seed": 0,
+      "d_latent": 10,
+      "D": 200,
+      "n": 2000,
+      "reject_mlp_s0": false,
+      "reject_linear": false,
+      "max_abs_lam_diff": 2.2737367544323206e-13,
+      "identical": true
+    },
+    {
+      "seed": 1,
+      "d_latent": 10,
+      "D": 200,
+      "n": 2000,
+      "reject_mlp_s0": false,
+      "reject_linear": false,
+      "max_abs_lam_diff": 3.410605131648481e-13,
+      "identical": true
+    },
+    {
+      "seed": 2,
+      "d_latent": 10,
+      "D": 200,
+      "n": 2000,
+      "reject_mlp_s0": false,
+      "reject_linear": false,
+      "max_abs_lam_diff": 2.5579538487363607e-13,
+      "identical": true
+    },
+    {
+      "seed": 3,
+      "d_latent": 10,
+      "D": 200,
+      "n": 2000,
+      "reject_mlp_s0": false,
+      "reject_linear": false,
+      "max_abs_lam_diff": 8.526512829121202e-14,
+      "identical": true
+    },
+    {
+      "seed": 4,
+      "d_latent": 10,
+      "D": 200,
+      "n": 2000,
+      "reject_mlp_s0": false,
+      "reject_linear": false,
+      "max_abs_lam_diff": 2.291500322826323e-13,
+      "identical": true
+    },
+    {
+      "seed": 5,
+      "d_latent": 10,
+      "D": 200,
+      "n": 2000,
+      "reject_mlp_s0": false,
+      "reject_linear": false,
+      "max_abs_lam_diff": 1.9326762412674725e-12,
+      "identical": true
+    },
+    {
+      "seed": 6,
+      "d_latent": 10,
+      "D": 200,
+      "n": 2000,
+      "reject_mlp_s0": false,
+      "reject_linear": false,
+      "max_abs_lam_diff": 9.094947017729282e-13,
+      "identical": true
+    },
+    {
+      "seed": 7,
+      "d_latent": 10,
+      "D": 200,
+      "n": 2000,
+      "reject_mlp_s0": false,
+      "reject_linear": false,
+      "max_abs_lam_diff": 1.1368683772161603e-12,
+      "identical": true
+    },
+    {
+      "seed": 8,
+      "d_latent": 10,
+      "D": 200,
+      "n": 2000,
+      "reject_mlp_s0": false,
+      "reject_linear": false,
+      "max_abs_lam_diff": 1.1368683772161603e-13,
+      "identical": true
+    },
+    {
+      "seed": 9,
+      "d_latent": 10,
+      "D": 200,
+      "n": 2000,
+      "reject_mlp_s0": false,
+      "reject_linear": false,
+      "max_abs_lam_diff": 1.8189894035458565e-12,
+      "identical": true
+    }
+  ],
+  "all_identical": true,
+  "meta": {
+    "statistic": "lfc",
+    "gate": "gate2",
+    "git_commit": "117a464",
+    "timestamp": "2026-08-10T11:06:06",
+    "config": {
+      "alpha": 0.05,
+      "B": 500,
+      "n_e": 2000,
+      "d": 10,
+      "d_latent": 10,
+      "D": 200,
+      "n_env": null,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "draws_per_point": 1
+    },
+    "versions": {
+      "python": "3.11.15",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.3",
+      "sklearn": "1.9.0"
+    },
+    "superseded_by": null,
+    "migrated_from": "causalbench/results/ranktest/gate2_s0_reduction.json",
+    "status": "CURRENT",
+    "note": "simulator self-check: s=0 MLP mixing reproduces linear A2@A1 exactly"
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "swept_axis": "iv_scale",
+  "mixing": "linear",
+  "iv_scale_enters_intervention": true,
+  "scaling": "standardise",
+  "config": {
+    "swept_axis": "iv_scale",
+    "mixing": "linear",
+    "iv_scale_enters_intervention": true,
+    "iv_scale_grid": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "d_latent_grid": [
+      5,
+      20,
+      80
+    ],
+    "scalings": [
+      "standardise"
+    ],
+    "n_e": 2000,
+    "draws_per_cell": 400,
+    "D": 200,
+    "alpha": 0.05,
+    "B_null": 500,
+    "crossing_level": 0.07179449471770337,
+    "crossing_level_id": "alpha + 2 Monte-Carlo SE at draws_per_cell, reused from 81.gate0's over-rejection boundary",
+    "bracket_field_semantics": "iv_scale_bracket_per_d reuses the s* bracket helper; its s_lo, s_hi and s_grid fields hold iv_scale values, not the nonlinearity scale s"
+  },
+  "crossing_level": 0.07179449471770337,
+  "cells": [
+    {
+      "swept_axis": "iv_scale",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "d_latent": 5,
+      "d_projection": 5,
+      "iv_scale": 0.5,
+      "s": 0.5,
+      "n_draws": 400,
+      "reject_rate": 0.03,
+      "n_reject": 12
+    },
+    {
+      "swept_axis": "iv_scale",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "d_latent": 5,
+      "d_projection": 5,
+      "iv_scale": 1.0,
+      "s": 1.0,
+      "n_draws": 400,
+      "reject_rate": 0.0225,
+      "n_reject": 9
+    },
+    {
+      "swept_axis": "iv_scale",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "d_latent": 5,
+      "d_projection": 5,
+      "iv_scale": 2.0,
+      "s": 2.0,
+      "n_draws": 400,
+      "reject_rate": 0.0425,
+      "n_reject": 17
+    },
+    {
+      "swept_axis": "iv_scale",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "d_latent": 5,
+      "d_projection": 5,
+      "iv_scale": 4.0,
+      "s": 4.0,
+      "n_draws": 400,
+      "reject_rate": 0.025,
+      "n_reject": 10
+    },
+    {
+      "swept_axis": "iv_scale",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "d_latent": 20,
+      "d_projection": 10,
+      "iv_scale": 0.5,
+      "s": 0.5,
+      "n_draws": 400,
+      "reject_rate": 0.0575,
+      "n_reject": 23
+    },
+    {
+      "swept_axis": "iv_scale",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "d_latent": 20,
+      "d_projection": 10,
+      "iv_scale": 1.0,
+      "s": 1.0,
+      "n_draws": 400,
+      "reject_rate": 0.065,
+      "n_reject": 26
+    },
+    {
+      "swept_axis": "iv_scale",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "d_latent": 20,
+      "d_projection": 10,
+      "iv_scale": 2.0,
+      "s": 2.0,
+      "n_draws": 400,
+      "reject_rate": 0.0525,
+      "n_reject": 21
+    },
+    {
+      "swept_axis": "iv_scale",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "d_latent": 20,
+      "d_projection": 10,
+      "iv_scale": 4.0,
+      "s": 4.0,
+      "n_draws": 400,
+      "reject_rate": 0.08,
+      "n_reject": 32
+    },
+    {
+      "swept_axis": "iv_scale",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "d_latent": 80,
+      "d_projection": 10,
+      "iv_scale": 0.5,
+      "s": 0.5,
+      "n_draws": 400,
+      "reject_rate": 0.0525,
+      "n_reject": 21
+    },
+    {
+      "swept_axis": "iv_scale",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "d_latent": 80,
+      "d_projection": 10,
+      "iv_scale": 1.0,
+      "s": 1.0,
+      "n_draws": 400,
+      "reject_rate": 0.0325,
+      "n_reject": 13
+    },
+    {
+      "swept_axis": "iv_scale",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "d_latent": 80,
+      "d_projection": 10,
+      "iv_scale": 2.0,
+      "s": 2.0,
+      "n_draws": 400,
+      "reject_rate": 0.0525,
+      "n_reject": 21
+    },
+    {
+      "swept_axis": "iv_scale",
+      "mixing": "linear",
+      "scaling": "standardise",
+      "d_latent": 80,
+      "d_projection": 10,
+      "iv_scale": 4.0,
+      "s": 4.0,
+      "n_draws": 400,
+      "reject_rate": 0.045,
+      "n_reject": 18
+    }
+  ],
+  "iv_scale_bracket_per_d": {
+    "5": {
+      "kind": "right_censored",
+      "s_lo": 4.0,
+      "s_hi": null,
+      "note": "RIGHT-CENSORED: rate never exceeds the level 0.0718 within the grid (max rate 0.0425 at s=4.0); s_star > 4.0",
+      "rates": [
+        0.03,
+        0.0225,
+        0.0425,
+        0.025
+      ],
+      "s_grid": [
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ]
+    },
+    "20": {
+      "kind": "bracketed",
+      "s_lo": 2.0,
+      "s_hi": 4.0,
+      "note": "rate crosses the level 0.0718 between s=2.0 (rate 0.0525) and s=4.0 (rate 0.0800); s_star in (2.0, 4.0]",
+      "rates": [
+        0.0575,
+        0.065,
+        0.0525,
+        0.08
+      ],
+      "s_grid": [
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ]
+    },
+    "80": {
+      "kind": "right_censored",
+      "s_lo": 4.0,
+      "s_hi": null,
+      "note": "RIGHT-CENSORED: rate never exceeds the level 0.0718 within the grid (max rate 0.0525 at s=4.0); s_star > 4.0",
+      "rates": [
+        0.0525,
+        0.0325,
+        0.0525,
+        0.045
+      ],
+      "s_grid": [
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ]
+    }
+  },
+  "coarse_trend": {
+    "representative_points": [
+      {
+        "d_latent": 5,
+        "s_star_proxy": 4.0,
+        "bound": "lower_bound",
+        "kind": "right_censored"
+      },
+      {
+        "d_latent": 20,
+        "s_star_proxy": 4.0,
+        "bound": "point_in_bracket",
+        "kind": "bracketed"
+      },
+      {
+        "d_latent": 80,
+        "s_star_proxy": 4.0,
+        "bound": "lower_bound",
+        "kind": "right_censored"
+      }
+    ],
+    "direction": "s_star decreases with d",
+    "monotone_decreasing": true,
+    "coarse_trend_slope_s_star_per_d": null,
+    "label": "coarse trend estimate, 5-point grid; representative s* proxies mix bracket points with censoring bounds, so this is a direction and rough rate only, not a fitted law; no R^2"
+  },
+  "n_cells": 12,
+  "n_cells_expected": 12,
+  "provenance": {
+    "core_path": "scripts/80_ranktest_core.py",
+    "core_md5": "3814be951bc33106e5d5f3f3825d6fcb",
+    "oracle_path": "scripts/81_ranktest_oracle.py",
+    "oracle_md5": "3ff071b4f966887052fe7fcd25f78c9e",
+    "git_commit": "4b985b7",
+    "timestamp": "2026-08-28T17-58-49Z",
+    "decision_rule": "reject_rank2_cf from 80_ranktest_core.rank_diagnostic: LFC test of H0 rank<=2 at level alpha, reject when the statistic exceeds the (1-alpha) bootstrap critical value (_lfc_rank_test)",
+    "oracle_gate": "81_ranktest_oracle.gate0: level-control oracle, true rank 0 under linear mixing, PASS when no cell's pooled reject rate exceeds alpha + 2 Monte-Carlo SE",
+    "oracle_gate_config": {},
+    "versions": {
+      "python": "3.10.12",
+      "numpy": "1.26.4",
+      "scipy": "1.13.1",
+      "pandas": "2.3.3",
+      "sklearn": "1.5.0",
+      "scanpy": null,
+      "anndata": null,
+      "platform": {
+        "system": "Linux",
+        "release": "5.15.0-1065-nvidia",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "python_implementation": "CPython",
+        "numpy_blas": "openblas64"
+      }
+    },
+    "platform_tag": "Linux-x86_64-py3.10.12"
+  },
+  "contains_no_test_on_real_data": true,
+  "disclaimer": "SYNTHETIC ONLY. Intervention-magnitude sweep under linear mixing, the valid regime. No real dataset was touched and no assumption verdict is expressed or implied."
+}

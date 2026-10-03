@@ -1,0 +1,29 @@
+# Data is never committed: none of it is redistributable. See docs/DATA_SOURCES.md.
+*.h5ad
+*.csv.gz
+*.npz
+data/
+
+# BUT the eigenvalue sidecars ARE results, not data. They are what lets a fresh
+# clone rebuild the spectrum figure without the A100, so they are kept
+# explicitly. A clone that cannot rebuild that figure is the exact failure this
+# negation prevents.
+!results/**/*_spectra.npz
+
+# Per-stage run logs written by run_all.sh and the two batch runners. Generated,
+# never quoted, and a tree that goes dirty on every rebuild hides real changes.
+logs/
+
+# noise
+.DS_Store
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# LaTeX build products
+manuscript/*.aux
+manuscript/*.log
+manuscript/*.out
+manuscript/*.bbl
+manuscript/*.blg
+manuscript/*.synctex.gz

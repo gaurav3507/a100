@@ -1,0 +1,70 @@
+{
+  "acceptance": {
+    "multipliers": [
+      1.0,
+      1.05,
+      1.2,
+      1.5,
+      2.0,
+      3.0
+    ],
+    "cf_reject": [
+      0.0,
+      0.0,
+      0.012,
+      0.04,
+      0.032,
+      0.025
+    ],
+    "old_zeroband_same_runs": [
+      0.06,
+      0.058,
+      0.115,
+      0.182,
+      0.295,
+      0.308
+    ],
+    "n_draws_per_point": 600,
+    "verdict": "FLAT-AT-ALPHA",
+    "note": "CF peaks at 0.040 then falls; it does not climb. Old rule climbs 5x and through alpha."
+  },
+  "meta": {
+    "statistic": "cfa_kappa",
+    "gate": "acceptance",
+    "git_commit": "4bd658a",
+    "timestamp": "2026-08-09T16:29:04",
+    "config": {
+      "alpha": 0.05,
+      "B": 500,
+      "n_e": 2000,
+      "d": 10,
+      "d_latent": 10,
+      "D": 200,
+      "n_env": null,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "draws_per_point": 600
+    },
+    "versions": {
+      "python": "3.11.15",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.3",
+      "sklearn": "1.9.0"
+    },
+    "superseded_by": null,
+    "migrated_from": "git:4bd658a:causalbench/results/ranktest/acceptance_and_power.json",
+    "status": "HISTORICAL-FOR-COMPARISON-TABLE",
+    "note": "magnitude sweep that accepted the CF swap: FLAT-AT-ALPHA, 0.000/0.000/0.012/0.040/0.032/0.025 vs the retired rule's 0.060/0.058/0.115/0.182/0.295/0.308"
+  }
+}

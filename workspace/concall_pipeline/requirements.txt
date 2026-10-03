@@ -1,0 +1,13 @@
+# Core pipeline: fetch + extract + Excel. Pure CPU, ~50MB.
+# This is all you need for `python run.py --skip-llm`.
+requests>=2.31.0
+pdfplumber>=0.11.0
+openpyxl>=3.1.2
+pydantic>=2.6.0
+openai>=1.30.0
+
+# OCR fallback for scanned PDFs (optional).
+# Also needs system binaries: apt-get install tesseract-ocr poppler-utils
+pytesseract>=0.3.10
+pdf2image>=1.17.0
+Pillow>=10.0.0

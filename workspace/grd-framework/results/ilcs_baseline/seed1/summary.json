@@ -1,0 +1,72 @@
+{
+  "mode": "full",
+  "seed": 1,
+  "datasets_complete": [
+    "K562",
+    "Norman",
+    "RPE1"
+  ],
+  "datasets_failed": [],
+  "imported_from": "experiments/e3_perturbseq_panel.py (pr-loader, proj recipe), experiments/e3_rpe1_confound_check.py (structured splits), experiments/e3_stability_perturbseq.py (dataset tuples)",
+  "ilcs": "reimplemented from Chen et al. 2024 (arXiv 2410.24059) Algorithm 1; original repo github.com/TianyuCodings/iLCS is unavailable (404)",
+  "per_dataset": {
+    "K562": {
+      "dataset": "K562",
+      "naive_fake_rate": 1.0,
+      "calib_fake_rate": 0.16,
+      "naive_random_rate": 1.0,
+      "calib_random_rate": 0.2,
+      "naive_struct_rate": 1.0,
+      "calib_struct_rate": 0.6,
+      "naive_pert_rate": 1.0,
+      "calib_pert_rate": 0.2208,
+      "jaccard_calib_vs_gate": 0.0,
+      "jaccard_note": "corrected-disjoint BH decisions; shared evaluated universe n=385; gate source=results/e3_decisions/K562.json",
+      "n_dims_near_gaussian": 2,
+      "ica_unit_var_warn": 0,
+      "ica_nonconverged_count": 42,
+      "ica_nonconverged_frac": 0.0882,
+      "total_ica_fits": 476,
+      "ica_deflation_count": 90
+    },
+    "RPE1": {
+      "dataset": "RPE1",
+      "naive_fake_rate": 1.0,
+      "calib_fake_rate": 0.12,
+      "naive_random_rate": 1.0,
+      "calib_random_rate": 0.1,
+      "naive_struct_rate": 1.0,
+      "calib_struct_rate": 0.45,
+      "naive_pert_rate": 1.0,
+      "calib_pert_rate": 0.0616,
+      "jaccard_calib_vs_gate": 0.0556,
+      "jaccard_note": "corrected-disjoint BH decisions; shared evaluated universe n=146; gate source=results/e3_decisions/RPE1.json",
+      "n_dims_near_gaussian": 4,
+      "ica_unit_var_warn": 0,
+      "ica_nonconverged_count": 58,
+      "ica_nonconverged_frac": 0.2447,
+      "total_ica_fits": 237,
+      "ica_deflation_count": 97
+    },
+    "Norman": {
+      "dataset": "Norman",
+      "naive_fake_rate": 1.0,
+      "calib_fake_rate": 0.1,
+      "naive_random_rate": 1.0,
+      "calib_random_rate": 0.1,
+      "naive_struct_rate": 1.0,
+      "calib_struct_rate": 0.3,
+      "naive_pert_rate": 1.0,
+      "calib_pert_rate": 0.0495,
+      "jaccard_calib_vs_gate": 0.0,
+      "jaccard_note": "corrected-disjoint BH decisions; shared evaluated universe n=101; gate source=results/e3_decisions/Norman.json",
+      "n_dims_near_gaussian": 2,
+      "ica_unit_var_warn": 0,
+      "ica_nonconverged_count": 15,
+      "ica_nonconverged_frac": 0.0781,
+      "total_ica_fits": 192,
+      "ica_deflation_count": 37
+    }
+  },
+  "errors": {}
+}

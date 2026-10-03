@@ -1,0 +1,72 @@
+[
+  {
+    "method": "PC-Pearson",
+    "implementation": "causal-learn",
+    "version": "0.1.4.8",
+    "import": "PASS",
+    "smoke_fit": "PASS",
+    "graph_returned": "PASS",
+    "included": "YES",
+    "reason": null
+  },
+  {
+    "method": "PC-nonparanormal-preproc",
+    "implementation": "causal-learn",
+    "version": "0.1.4.8",
+    "import": "PASS",
+    "smoke_fit": "PASS",
+    "graph_returned": "PASS",
+    "included": "YES",
+    "reason": null
+  },
+  {
+    "method": "DirectLiNGAM",
+    "implementation": "lingam",
+    "version": "1.12.2",
+    "import": "PASS",
+    "smoke_fit": "PASS",
+    "graph_returned": "PASS",
+    "included": "YES",
+    "reason": null
+  },
+  {
+    "method": "NOTEARS-linear",
+    "implementation": "xunzheng/notears plus exact cached covariance objective",
+    "version": "4a9ab19fe502e392503da331773c5223d82d3666",
+    "import": "PASS",
+    "smoke_fit": "PASS",
+    "graph_returned": "PASS",
+    "included": "YES",
+    "reason": null
+  },
+  {
+    "method": "NOTEARS-MLP",
+    "implementation": "gCastle",
+    "version": "1.0.4",
+    "import": "PASS",
+    "smoke_fit": "PASS",
+    "graph_returned": "PASS",
+    "included": "YES",
+    "reason": null
+  },
+  {
+    "method": "GOLEM",
+    "implementation": "gCastle",
+    "version": "1.0.4",
+    "import": "PASS",
+    "smoke_fit": "PASS",
+    "graph_returned": "PASS",
+    "included": "YES",
+    "reason": null
+  },
+  {
+    "method": "CAM",
+    "implementation": "R CAM",
+    "version": null,
+    "import": "FAIL",
+    "smoke_fit": "FAIL",
+    "graph_returned": "FAIL",
+    "included": "NO",
+    "reason": "R runtime unavailable"
+  }
+]

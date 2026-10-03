@@ -1,0 +1,24 @@
+# Mac (Apple Silicon). The environment that produced the simulator and oracle
+# gate artefacts under results/gates/, and that rebuilds every table, figure and
+# index from committed artefacts.
+#
+#   CPython 3.11.15, Darwin arm64, BLAS Accelerate
+#
+# Read off meta.versions in results/gates/lfc/power_soft/2026-08-10T11-00-08.json
+# and its siblings, not typed from memory.
+#
+#   python3.11 -m venv .venv && . .venv/bin/activate
+#   pip install -r requirements-mac.txt
+#
+# THE TWO ENVIRONMENTS DIFFER AND THE DIFFERENCE IS LOAD-BEARING. SVD-derived
+# quantities depend on the BLAS backend, so a number produced under Accelerate
+# and a number produced under OpenBLAS are not required to agree to the last
+# digit. See requirements-a100.txt and the note in README.md. Do not merge these
+# two files into one.
+
+numpy==2.4.6
+scipy==1.17.1
+matplotlib==3.11.0
+pandas==3.0.3
+
+# Not needed here: no anywhere-stage reads raw data. See requirements-a100.txt.

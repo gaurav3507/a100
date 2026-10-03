@@ -1,0 +1,138 @@
+{
+  "sweep": [
+    {
+      "d_latent": 40,
+      "scaling": "raw",
+      "reject": 0.0375,
+      "n_draws": 400,
+      "within": true
+    },
+    {
+      "d_latent": 40,
+      "scaling": "standardised",
+      "reject": 0.04,
+      "n_draws": 400,
+      "within": true
+    },
+    {
+      "d_latent": 50,
+      "scaling": "raw",
+      "reject": 0.065,
+      "n_draws": 400,
+      "within": true
+    },
+    {
+      "d_latent": 50,
+      "scaling": "standardised",
+      "reject": 0.055,
+      "n_draws": 400,
+      "within": true
+    },
+    {
+      "d_latent": 60,
+      "scaling": "raw",
+      "reject": 0.07,
+      "n_draws": 400,
+      "within": true
+    },
+    {
+      "d_latent": 60,
+      "scaling": "standardised",
+      "reject": 0.06,
+      "n_draws": 400,
+      "within": true
+    },
+    {
+      "d_latent": 70,
+      "scaling": "raw",
+      "reject": 0.0375,
+      "n_draws": 400,
+      "within": true
+    },
+    {
+      "d_latent": 70,
+      "scaling": "standardised",
+      "reject": 0.0425,
+      "n_draws": 400,
+      "within": true
+    },
+    {
+      "d_latent": 80,
+      "scaling": "raw",
+      "reject": 0.15,
+      "n_draws": 400,
+      "within": false
+    },
+    {
+      "d_latent": 80,
+      "scaling": "standardised",
+      "reject": 0.11,
+      "n_draws": 400,
+      "within": false
+    },
+    {
+      "d_latent": 100,
+      "scaling": "raw",
+      "reject": 0.0425,
+      "n_draws": 400,
+      "within": true
+    },
+    {
+      "d_latent": 100,
+      "scaling": "standardised",
+      "reject": 0.0525,
+      "n_draws": 400,
+      "within": true
+    }
+  ],
+  "per_seed_breakdown_raw_text": " d_lat seed  reject      ||M||  cond(Sig_Z)  top2 frac\n    70    0   0.050    27120.8    5.822e+10      0.994\n    70    1   0.025   103531.2    9.695e+11      1.000\n    70    2   0.075   211305.3    4.196e+12      1.000\n    70    3   0.025    72741.6    5.027e+11      1.000\n    70    4   0.025    54551.2    2.674e+11      1.000\n    70    5   0.000   185801.2    3.411e+12      1.000\n    70    6   0.100   528035.0    2.773e+13      1.000\n    70    7   0.075    22843.9    4.885e+10      0.997\n    70    8   0.000    65444.3    4.640e+11      0.999\n    70    9   0.000    98562.8    8.226e+11      1.000\n  d=70: overall 0.037; seeds driving it (>0.15): []\n\n    80    0   0.125    53170.4    3.378e+11      0.973\n    80    1   0.000    48934.1    2.227e+11      0.994\n    80    2   0.000  1469850.6    2.503e+14      1.000\n    80    3   0.550   409599.6    2.165e+13      1.000\n    80    4   0.100   217519.6    5.695e+12      1.000\n    80    5   0.550   155499.5    2.972e+12      1.000\n    80    6   0.000  1863088.5    2.849e+14      1.000\n    80    7   0.100   258905.5    6.002e+12      1.000\n    80    8   0.075 12228448.0    1.423e+16      1.000\n    80    9   0.000   103475.7    8.715e+11      0.999\n  d=80: overall 0.150; seeds driving it (>0.15): [(3, 0.55), (5, 0.55)]\n\n   100    0   0.000  3728257.3    1.872e+15      1.000\n   100    1   0.025 11070363.0    3.949e+17      1.000\n   100    2   0.075  4561203.0    2.794e+15      1.000\n   100    3   0.075 75211638.5    3.102e+18      1.000\n   100    4   0.025  6176135.1    6.504e+15      1.000\n   100    5   0.000 15726237.4    1.461e+17      1.000\n   100    6   0.075  1379950.6    3.407e+14      1.000\n   100    7   0.100 31244151.1    5.805e+17      1.000\n   100    8   0.025  5531107.2    4.384e+15      1.000\n   100    9   0.025  7753248.8    9.534e+15      1.000\n  d=100: overall 0.043; seeds driving it (>0.15): []\n\n",
+  "finding": "NO dimension boundary exists under linear mixing up to d_latent=100. Rejection is non-monotone in d: 0.037 (40), 0.065 (50), 0.070 (60), 0.037 (70), 0.150 (80), 0.043 (100) raw. d_latent=80 is an OUTLIER, not a boundary.",
+  "cause": "The d=80 rate is carried by exactly two seeds, 3 and 5, at 0.550 each; the other eight sit at 0.000-0.125. Conditioning does not explain it: d=100 seeds have ||M|| up to 7.5e7 and cond up to 3.1e18, far worse than the d=80 seeds, and reject at 0.043.",
+  "corrects": "commit bd2eecc, which reported the d=80 result as 'a second, independent failure mode: level control degrades with latent dimension under linear mixing'. That conclusion rested on a single d=80 point and is WITHDRAWN.",
+  "meta": {
+    "statistic": "lfc",
+    "gate": "envelope",
+    "git_commit": "4ddd503",
+    "timestamp": "2026-08-10T13:20:00",
+    "config": {
+      "alpha": 0.05,
+      "B": 500,
+      "n_e": 2000,
+      "d": 10,
+      "d_latent": [
+        40,
+        50,
+        60,
+        70,
+        80,
+        100
+      ],
+      "D": 200,
+      "n_env": null,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "draws_per_point": 400
+    },
+    "versions": {
+      "python": "3.11.15",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.3",
+      "sklearn": "1.9.0"
+    },
+    "superseded_by": null,
+    "migrated_from": "(new run, not migrated)",
+    "status": "CURRENT",
+    "note": "s=0 EXACTLY (linear mixing) level check vs d_latent; no boundary found"
+  }
+}

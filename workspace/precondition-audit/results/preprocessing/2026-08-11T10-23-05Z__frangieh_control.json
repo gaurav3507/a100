@@ -1,0 +1,162 @@
+{
+  "dataset": "frangieh_control",
+  "cap": 2000,
+  "arms": [
+    "raw",
+    "standardise",
+    "log1p_std",
+    "rank_int"
+  ],
+  "loader_probe": {
+    "n_sampled": 200000,
+    "min": 0.0,
+    "max": 10.680693626403809,
+    "mean": 0.7416583758354187,
+    "frac_integer": 0.851515,
+    "frac_integer_nonzero": 0.0,
+    "n_nonzero_sampled": 29697,
+    "frac_zero": 0.851515,
+    "has_negative": false
+  },
+  "input_kind": "already_transformed",
+  "input_kind_reason": "only 0.0000 of NON-ZERO entries are integral (max=10.68, frac_zero=0.852): already normalised upstream, most likely log1p. A further log1p would be a DOUBLE log",
+  "arms_result": {
+    "raw": {
+      "n_control_used": 2000,
+      "n_control_available": 3770,
+      "n_genes": 23712,
+      "rank_bound": 1999,
+      "participation_ratio": 419.2287458416629,
+      "effective_rank_exp_spectral_entropy": 1471.4926566116167,
+      "n_components_for_variance": {
+        "80pct": 1198,
+        "90pct": 1519,
+        "95pct": 1725
+      },
+      "top_eigenvalue_share": 0.04051462264021255,
+      "n_nonzero_eigenvalues": 2000,
+      "matches_fit_pca_basis": true,
+      "fit_pca_mu_identical": true,
+      "spectra_key": "frangieh_control__raw__2000",
+      "lam_len": 2000,
+      "lam_sum": 35457.99584969975,
+      "lam_sumsq": 2999005.8700606823,
+      "numerical_rank": 1999,
+      "status": "ok",
+      "spectra_sidecar": "2026-08-11T10-23-05Z__frangieh_control__sweep_spectra.npz"
+    },
+    "standardise": {
+      "n_control_used": 2000,
+      "n_control_available": 3770,
+      "n_genes": 23712,
+      "rank_bound": 1999,
+      "participation_ratio": 1092.7276495447722,
+      "effective_rank_exp_spectral_entropy": 1724.980364663544,
+      "n_components_for_variance": {
+        "80pct": 1299,
+        "90pct": 1597,
+        "95pct": 1776
+      },
+      "top_eigenvalue_share": 0.017343365496875367,
+      "n_nonzero_eigenvalues": 2000,
+      "matches_fit_pca_basis": true,
+      "fit_pca_mu_identical": true,
+      "spectra_key": "frangieh_control__standardise__2000",
+      "lam_len": 2000,
+      "lam_sum": 20934.2826741726,
+      "lam_sumsq": 401055.27783133753,
+      "numerical_rank": 1999,
+      "status": "ok",
+      "spectra_sidecar": "2026-08-11T10-23-05Z__frangieh_control__sweep_spectra.npz"
+    },
+    "log1p_std": {
+      "status": "null",
+      "reason": "input is already log-like, so log1p_std would be a double log; emitted as null rather than reported as a preprocessing choice"
+    },
+    "rank_int": {
+      "n_control_used": 2000,
+      "n_control_available": 3770,
+      "n_genes": 23712,
+      "rank_bound": 1999,
+      "participation_ratio": 2.203149607549821,
+      "effective_rank_exp_spectral_entropy": 19.7538731817006,
+      "n_components_for_variance": {
+        "80pct": 269,
+        "90pct": 737,
+        "95pct": 1135
+      },
+      "top_eigenvalue_share": 0.6736056256085613,
+      "n_nonzero_eigenvalues": 2000,
+      "matches_fit_pca_basis": true,
+      "fit_pca_mu_identical": true,
+      "spectra_key": "frangieh_control__rank_int__2000",
+      "lam_len": 2000,
+      "lam_sum": 22912.868828957904,
+      "lam_sumsq": 238295010.0955224,
+      "numerical_rank": 1999,
+      "status": "ok",
+      "spectra_sidecar": "2026-08-11T10-23-05Z__frangieh_control__sweep_spectra.npz"
+    }
+  },
+  "pr_spread": 495.9843152730888,
+  "expected_raw_participation_ratio": 419.2287458416629,
+  "expected_from_artefact": "2026-08-11T07-13-08Z__frangieh_control.json",
+  "contains_no_test": true,
+  "disclaimer": "DESCRIPTIVE ONLY. No rank test was run and no assumption verdict is expressed or implied.",
+  "spectra_sidecar": "2026-08-11T10-23-05Z__frangieh_control__sweep_spectra.npz",
+  "peak_rss_mb": 4427.2,
+  "meta": {
+    "statistic": "descriptive",
+    "gate": "preprocessing_sweep",
+    "git_commit": "9f2b1d5",
+    "timestamp": "2026-08-11T10:23:05Z",
+    "config": {
+      "alpha": null,
+      "B": null,
+      "n_e": 2000,
+      "d": null,
+      "d_latent": null,
+      "D": null,
+      "n_env": null,
+      "seeds": [
+        0
+      ],
+      "draws_per_point": null,
+      "extra": {
+        "dataset": "frangieh_control",
+        "arms": [
+          "raw",
+          "standardise",
+          "log1p_std",
+          "rank_int"
+        ],
+        "cap": 2000,
+        "hvg": null,
+        "platform_tag": "Linux-x86_64-py3.10.12",
+        "timezone": "UTC",
+        "timestamp_suffix": "Z"
+      }
+    },
+    "versions": {
+      "python": "3.10.12",
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "pandas": "2.3.3",
+      "sklearn": "1.7.2",
+      "scanpy": "1.11.5",
+      "anndata": "0.11.4",
+      "platform": {
+        "system": "Linux",
+        "release": "5.15.0-1065-nvidia",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "python_implementation": "CPython",
+        "numpy_blas": "scipy-openblas"
+      }
+    },
+    "superseded_by": null,
+    "migrated_from": null,
+    "status": "CURRENT",
+    "note": "preprocessing sweep for frangieh_control at matched n=2000"
+  }
+}

@@ -1,0 +1,9 @@
+raw/
+transcripts/
+logs/
+pipeline.db
+concall_analysis*.xlsx
+scrip_codes.csv
+__pycache__/
+*.pyc
+.venv/

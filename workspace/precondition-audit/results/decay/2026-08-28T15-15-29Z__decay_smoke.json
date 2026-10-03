@@ -1,0 +1,79 @@
+{
+  "mode": "smoke",
+  "mixing": "linear",
+  "cell": {
+    "d_latent": 80,
+    "s": 0.01,
+    "draws_per_cell": 400,
+    "mixing": "linear"
+  },
+  "cells": [
+    {
+      "mixing": "linear",
+      "d_latent": 80,
+      "d_projection": 10,
+      "s": 0.01,
+      "scaling": "raw",
+      "n_draws": 400,
+      "reject_rate": 0.065,
+      "n_reject": 26
+    },
+    {
+      "mixing": "linear",
+      "d_latent": 80,
+      "d_projection": 10,
+      "s": 0.01,
+      "scaling": "standardise",
+      "n_draws": 400,
+      "reject_rate": 0.05,
+      "n_reject": 20
+    }
+  ],
+  "d80_cell_seconds": 429.4468538761139,
+  "d80_cell_seconds_by_scaling": {
+    "raw": 429.4468538761139,
+    "standardise": 433.9192841053009
+  },
+  "step0_pass": true,
+  "step0_verdict": "PASS",
+  "step0_criterion": "ONE-SIDED: no cell's pooled reject_rank2 rate exceeds 0.119 (alpha=0.05 + 2 Monte-Carlo SE). Below-band is expected and passes: Chen-Fang predicts conservatism at the rank-0 boundary.",
+  "provenance": {
+    "core_path": "scripts/80_ranktest_core.py",
+    "core_md5": "3814be951bc33106e5d5f3f3825d6fcb",
+    "oracle_path": "scripts/81_ranktest_oracle.py",
+    "oracle_md5": "b98e749e11ee10afeb5ace7d8b1d0f8d",
+    "git_commit": "a797d93",
+    "timestamp": "2026-08-28T15-15-29Z",
+    "decision_rule": "reject_rank2_cf from 80_ranktest_core.rank_diagnostic: LFC test of H0 rank<=2 at level alpha, reject when the statistic exceeds the (1-alpha) bootstrap critical value (_lfc_rank_test)",
+    "oracle_gate": "81_ranktest_oracle.gate0: level-control oracle, true rank 0 under linear mixing, PASS when no cell's pooled reject rate exceeds alpha + 2 Monte-Carlo SE",
+    "oracle_gate_config": {
+      "n_splits": 40,
+      "d_set": [
+        5
+      ],
+      "d_latent": 10,
+      "D": 200,
+      "n_env": 300
+    },
+    "versions": {
+      "python": "3.10.12",
+      "numpy": "1.26.4",
+      "scipy": "1.13.1",
+      "pandas": "2.3.3",
+      "sklearn": "1.5.0",
+      "scanpy": null,
+      "anndata": null,
+      "platform": {
+        "system": "Linux",
+        "release": "5.15.0-1065-nvidia",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "python_implementation": "CPython",
+        "numpy_blas": "openblas64"
+      }
+    },
+    "platform_tag": "Linux-x86_64-py3.10.12"
+  },
+  "contains_no_test_on_real_data": true,
+  "disclaimer": "SYNTHETIC SMOKE. Confirms the write path and times the most expensive cell; not a full sweep."
+}

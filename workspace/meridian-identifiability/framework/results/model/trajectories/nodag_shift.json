@@ -1,0 +1,61 @@
+{
+  "arm": "nodag_shift",
+  "n_points": 11,
+  "points": [
+    {
+      "epoch": 0,
+      "r2_median": -0.1321,
+      "r2_mean": -0.3445
+    },
+    {
+      "epoch": 10,
+      "r2_median": -0.9972,
+      "r2_mean": -1.755
+    },
+    {
+      "epoch": 20,
+      "r2_median": -0.0422,
+      "r2_mean": -0.1065
+    },
+    {
+      "epoch": 30,
+      "r2_median": -0.0525,
+      "r2_mean": -0.1207
+    },
+    {
+      "epoch": 40,
+      "r2_median": -0.0664,
+      "r2_mean": -0.1297
+    },
+    {
+      "epoch": 50,
+      "r2_median": -0.119,
+      "r2_mean": -0.2131
+    },
+    {
+      "epoch": 60,
+      "r2_median": -0.1034,
+      "r2_mean": -0.1843
+    },
+    {
+      "epoch": 70,
+      "r2_median": -0.0656,
+      "r2_mean": -0.1171
+    },
+    {
+      "epoch": 80,
+      "r2_median": -0.0582,
+      "r2_mean": -0.133
+    },
+    {
+      "epoch": 90,
+      "r2_median": -0.082,
+      "r2_mean": -0.1346
+    },
+    {
+      "epoch": 99,
+      "r2_median": -0.0664,
+      "r2_mean": -0.1368
+    }
+  ]
+}

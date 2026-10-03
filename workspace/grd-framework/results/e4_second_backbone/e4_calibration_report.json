@@ -1,0 +1,3847 @@
+{
+  "role": "second backbone",
+  "population_check": {
+    "source": "e4_population_check.json",
+    "sha256": "aeb38140a80e450d731c9f57e333fe4586c57928e8be9149526eba89ae5914c3",
+    "population_mcc_mean": 0.9986,
+    "population_mcc_min": 0.9974,
+    "rule": {
+      "mean_at_least": 0.99,
+      "every_seed_at_least": 0.98
+    }
+  },
+  "milestone": "E4",
+  "code_commit": "7ccce00bf456154f961410bb380f7fb626c33c11-dirty",
+  "config": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "d_latent": 5,
+    "D": 200,
+    "d_proj": 5,
+    "alpha": 0.05,
+    "B": 500,
+    "iv_base": 0.1,
+    "n_base": 2000,
+    "recovery_mcc": 0.9,
+    "dir_corr": 0.9,
+    "arm_C_basis": "detectability-based, NOT P3 (P3 is temporal-only, R1)",
+    "readout": "frobenius",
+    "recovery": "jad",
+    "backbone": {
+      "name": "Backbone C",
+      "role": "second backbone",
+      "gate_readout": "frobenius",
+      "recovery": "jad",
+      "gate_statistic": "||Prec(Y_e) - Prec(Y_0)||_F",
+      "recovery_rule": "joint approximate diagonalization (FFDiag, Ziehe et al. 2004) of all Delta_e = Prec(Y_e) - Prec(Y_0); unmixing rows are the columns of V^-1, matched to the known targets (Hungarian)",
+      "null": "size-matched; disjoint split when n_e <= n_0/2, else two-resample"
+    }
+  },
+  "arms": {
+    "A_environment_starvation": {
+      "expectation": "gate n_recoverable=m tracks naive recovered directions; PROCEED->CAPPED at m<5",
+      "levels": [
+        {
+          "level": 5,
+          "level_name": "m_int",
+          "gate_n_recoverable_mean": 5.0,
+          "gate_n_recoverable_spread": [
+            5,
+            5
+          ],
+          "verdict_counts": {
+            "PROCEED": 10,
+            "PROCEED_CAPPED": 0,
+            "ABSTAIN": 0
+          },
+          "naive_mcc_mean": 0.9985,
+          "naive_recovered_dirs_mean": 5.0,
+          "certified_recovery_mean": 0.9985,
+          "n_seeds_certifying": 10,
+          "per_seed": [
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9978,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9978
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9987,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9987
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9982,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9982
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9985,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9985
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9992,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9992
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9988,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9988
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9993,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9993
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9978,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9978
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9987,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9987
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9982,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9982
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "level_name": "m_int",
+          "gate_n_recoverable_mean": 4.0,
+          "gate_n_recoverable_spread": [
+            4,
+            4
+          ],
+          "verdict_counts": {
+            "PROCEED": 0,
+            "PROCEED_CAPPED": 10,
+            "ABSTAIN": 0
+          },
+          "naive_mcc_mean": 0.7991,
+          "naive_recovered_dirs_mean": 4.4,
+          "certified_recovery_mean": 0.9989,
+          "n_seeds_certifying": 10,
+          "per_seed": [
+            {
+              "m_int": 4,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "naive_mcc": 0.7991,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9989
+            },
+            {
+              "m_int": 4,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "naive_mcc": 0.7989,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9986
+            },
+            {
+              "m_int": 4,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "naive_mcc": 0.7989,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9986
+            },
+            {
+              "m_int": 4,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "naive_mcc": 0.7994,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9993
+            },
+            {
+              "m_int": 4,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "naive_mcc": 0.7993,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9991
+            },
+            {
+              "m_int": 4,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "naive_mcc": 0.7994,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9993
+            },
+            {
+              "m_int": 4,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "naive_mcc": 0.7994,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9992
+            },
+            {
+              "m_int": 4,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "naive_mcc": 0.7997,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9996
+            },
+            {
+              "m_int": 4,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "naive_mcc": 0.7986,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9982
+            },
+            {
+              "m_int": 4,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "naive_mcc": 0.7987,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9983
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "level_name": "m_int",
+          "gate_n_recoverable_mean": 3.0,
+          "gate_n_recoverable_spread": [
+            3,
+            3
+          ],
+          "verdict_counts": {
+            "PROCEED": 0,
+            "PROCEED_CAPPED": 10,
+            "ABSTAIN": 0
+          },
+          "naive_mcc_mean": 0.5992,
+          "naive_recovered_dirs_mean": 3.5,
+          "certified_recovery_mean": 0.9986,
+          "n_seeds_certifying": 10,
+          "per_seed": [
+            {
+              "m_int": 3,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2
+              ],
+              "naive_mcc": 0.5994,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9991
+            },
+            {
+              "m_int": 3,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2
+              ],
+              "naive_mcc": 0.5977,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9962
+            },
+            {
+              "m_int": 3,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2
+              ],
+              "naive_mcc": 0.5991,
+              "naive_recovered_dirs": 3,
+              "certified_recovery": 0.9984
+            },
+            {
+              "m_int": 3,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2
+              ],
+              "naive_mcc": 0.5997,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9995
+            },
+            {
+              "m_int": 3,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2
+              ],
+              "naive_mcc": 0.5994,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.999
+            },
+            {
+              "m_int": 3,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2
+              ],
+              "naive_mcc": 0.5995,
+              "naive_recovered_dirs": 3,
+              "certified_recovery": 0.9992
+            },
+            {
+              "m_int": 3,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2
+              ],
+              "naive_mcc": 0.5995,
+              "naive_recovered_dirs": 3,
+              "certified_recovery": 0.9991
+            },
+            {
+              "m_int": 3,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2
+              ],
+              "naive_mcc": 0.5995,
+              "naive_recovered_dirs": 3,
+              "certified_recovery": 0.9991
+            },
+            {
+              "m_int": 3,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2
+              ],
+              "naive_mcc": 0.5987,
+              "naive_recovered_dirs": 3,
+              "certified_recovery": 0.9978
+            },
+            {
+              "m_int": 3,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2
+              ],
+              "naive_mcc": 0.599,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9983
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "level_name": "m_int",
+          "gate_n_recoverable_mean": 2.0,
+          "gate_n_recoverable_spread": [
+            2,
+            2
+          ],
+          "verdict_counts": {
+            "PROCEED": 0,
+            "PROCEED_CAPPED": 10,
+            "ABSTAIN": 0
+          },
+          "naive_mcc_mean": 0.3997,
+          "naive_recovered_dirs_mean": 2.6,
+          "certified_recovery_mean": 0.9991,
+          "n_seeds_certifying": 10,
+          "per_seed": [
+            {
+              "m_int": 2,
+              "gate_count": 2,
+              "n_recoverable": 2,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1
+              ],
+              "naive_mcc": 0.3992,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9979
+            },
+            {
+              "m_int": 2,
+              "gate_count": 2,
+              "n_recoverable": 2,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1
+              ],
+              "naive_mcc": 0.3996,
+              "naive_recovered_dirs": 3,
+              "certified_recovery": 0.9989
+            },
+            {
+              "m_int": 2,
+              "gate_count": 2,
+              "n_recoverable": 2,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1
+              ],
+              "naive_mcc": 0.3997,
+              "naive_recovered_dirs": 2,
+              "certified_recovery": 0.9994
+            },
+            {
+              "m_int": 2,
+              "gate_count": 2,
+              "n_recoverable": 2,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1
+              ],
+              "naive_mcc": 0.4,
+              "naive_recovered_dirs": 3,
+              "certified_recovery": 0.9999
+            },
+            {
+              "m_int": 2,
+              "gate_count": 2,
+              "n_recoverable": 2,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1
+              ],
+              "naive_mcc": 0.3997,
+              "naive_recovered_dirs": 3,
+              "certified_recovery": 0.9992
+            },
+            {
+              "m_int": 2,
+              "gate_count": 2,
+              "n_recoverable": 2,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1
+              ],
+              "naive_mcc": 0.3997,
+              "naive_recovered_dirs": 2,
+              "certified_recovery": 0.9991
+            },
+            {
+              "m_int": 2,
+              "gate_count": 2,
+              "n_recoverable": 2,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1
+              ],
+              "naive_mcc": 0.3996,
+              "naive_recovered_dirs": 2,
+              "certified_recovery": 0.9989
+            },
+            {
+              "m_int": 2,
+              "gate_count": 2,
+              "n_recoverable": 2,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1
+              ],
+              "naive_mcc": 0.3998,
+              "naive_recovered_dirs": 2,
+              "certified_recovery": 0.9994
+            },
+            {
+              "m_int": 2,
+              "gate_count": 2,
+              "n_recoverable": 2,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1
+              ],
+              "naive_mcc": 0.3995,
+              "naive_recovered_dirs": 2,
+              "certified_recovery": 0.9987
+            },
+            {
+              "m_int": 2,
+              "gate_count": 2,
+              "n_recoverable": 2,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1
+              ],
+              "naive_mcc": 0.3999,
+              "naive_recovered_dirs": 3,
+              "certified_recovery": 0.9996
+            }
+          ]
+        },
+        {
+          "level": 1,
+          "level_name": "m_int",
+          "gate_n_recoverable_mean": 1.0,
+          "gate_n_recoverable_spread": [
+            1,
+            1
+          ],
+          "verdict_counts": {
+            "PROCEED": 0,
+            "PROCEED_CAPPED": 10,
+            "ABSTAIN": 0
+          },
+          "naive_mcc_mean": 0.1998,
+          "naive_recovered_dirs_mean": 1.1,
+          "certified_recovery_mean": 0.9992,
+          "n_seeds_certifying": 10,
+          "per_seed": [
+            {
+              "m_int": 1,
+              "gate_count": 1,
+              "n_recoverable": 1,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0
+              ],
+              "naive_mcc": 0.1998,
+              "naive_recovered_dirs": 1,
+              "certified_recovery": 0.9991
+            },
+            {
+              "m_int": 1,
+              "gate_count": 1,
+              "n_recoverable": 1,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0
+              ],
+              "naive_mcc": 0.1996,
+              "naive_recovered_dirs": 1,
+              "certified_recovery": 0.9981
+            },
+            {
+              "m_int": 1,
+              "gate_count": 1,
+              "n_recoverable": 1,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0
+              ],
+              "naive_mcc": 0.1999,
+              "naive_recovered_dirs": 1,
+              "certified_recovery": 0.9994
+            },
+            {
+              "m_int": 1,
+              "gate_count": 1,
+              "n_recoverable": 1,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0
+              ],
+              "naive_mcc": 0.1999,
+              "naive_recovered_dirs": 2,
+              "certified_recovery": 0.9997
+            },
+            {
+              "m_int": 1,
+              "gate_count": 1,
+              "n_recoverable": 1,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0
+              ],
+              "naive_mcc": 0.1999,
+              "naive_recovered_dirs": 1,
+              "certified_recovery": 0.9993
+            },
+            {
+              "m_int": 1,
+              "gate_count": 1,
+              "n_recoverable": 1,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0
+              ],
+              "naive_mcc": 0.1999,
+              "naive_recovered_dirs": 1,
+              "certified_recovery": 0.9997
+            },
+            {
+              "m_int": 1,
+              "gate_count": 1,
+              "n_recoverable": 1,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0
+              ],
+              "naive_mcc": 0.1999,
+              "naive_recovered_dirs": 1,
+              "certified_recovery": 0.9997
+            },
+            {
+              "m_int": 1,
+              "gate_count": 1,
+              "n_recoverable": 1,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0
+              ],
+              "naive_mcc": 0.1999,
+              "naive_recovered_dirs": 1,
+              "certified_recovery": 0.9995
+            },
+            {
+              "m_int": 1,
+              "gate_count": 1,
+              "n_recoverable": 1,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0
+              ],
+              "naive_mcc": 0.1997,
+              "naive_recovered_dirs": 1,
+              "certified_recovery": 0.9983
+            },
+            {
+              "m_int": 1,
+              "gate_count": 1,
+              "n_recoverable": 1,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0
+              ],
+              "naive_mcc": 0.1999,
+              "naive_recovered_dirs": 1,
+              "certified_recovery": 0.9995
+            }
+          ]
+        }
+      ],
+      "crossover_naive_below_0p90": 4,
+      "crossover_gate_leaves_proceed": 4,
+      "gate_behavior": "TRACKS_TIGHT",
+      "calibration_gap": 0.32,
+      "certification_trustworthy": true,
+      "silent_failure": false
+    },
+    "B_power_starvation": {
+      "expectation": "gate grows conservative (count drops/abstains) before sample-robust naive fails",
+      "levels": [
+        {
+          "level": 4000,
+          "level_name": "n_e",
+          "gate_n_recoverable_mean": 5.0,
+          "gate_n_recoverable_spread": [
+            5,
+            5
+          ],
+          "verdict_counts": {
+            "PROCEED": 10,
+            "PROCEED_CAPPED": 0,
+            "ABSTAIN": 0
+          },
+          "naive_mcc_mean": 0.9986,
+          "naive_recovered_dirs_mean": 5.0,
+          "certified_recovery_mean": 0.9986,
+          "n_seeds_certifying": 10,
+          "per_seed": [
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9979,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9979
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9985,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9985
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9984,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9984
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9986,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9986
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9993,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9993
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9991,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9991
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9992,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9992
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9981,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9981
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9988,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9988
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9981,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9981
+            }
+          ]
+        },
+        {
+          "level": 400,
+          "level_name": "n_e",
+          "gate_n_recoverable_mean": 5.0,
+          "gate_n_recoverable_spread": [
+            5,
+            5
+          ],
+          "verdict_counts": {
+            "PROCEED": 10,
+            "PROCEED_CAPPED": 0,
+            "ABSTAIN": 0
+          },
+          "naive_mcc_mean": 0.998,
+          "naive_recovered_dirs_mean": 5.0,
+          "certified_recovery_mean": 0.998,
+          "n_seeds_certifying": 10,
+          "per_seed": [
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.998,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.998
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9984,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9984
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9968,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9968
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9977,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9977
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9989,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9989
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9988,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9988
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9991,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9991
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9969,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9969
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9985,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9985
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9972,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9972
+            }
+          ]
+        },
+        {
+          "level": 100,
+          "level_name": "n_e",
+          "gate_n_recoverable_mean": 5.0,
+          "gate_n_recoverable_spread": [
+            5,
+            5
+          ],
+          "verdict_counts": {
+            "PROCEED": 10,
+            "PROCEED_CAPPED": 0,
+            "ABSTAIN": 0
+          },
+          "naive_mcc_mean": 0.9965,
+          "naive_recovered_dirs_mean": 5.0,
+          "certified_recovery_mean": 0.9965,
+          "n_seeds_certifying": 10,
+          "per_seed": [
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9975,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9975
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9973,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9973
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9981,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9981
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9954,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9954
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9968,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9968
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9972,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9972
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9976,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9976
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.993,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.993
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9968,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9968
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9948,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9948
+            }
+          ]
+        },
+        {
+          "level": 40,
+          "level_name": "n_e",
+          "gate_n_recoverable_mean": 3.5,
+          "gate_n_recoverable_spread": [
+            1,
+            5
+          ],
+          "verdict_counts": {
+            "PROCEED": 3,
+            "PROCEED_CAPPED": 7,
+            "ABSTAIN": 0
+          },
+          "naive_mcc_mean": 0.9902,
+          "naive_recovered_dirs_mean": 4.9,
+          "certified_recovery_mean": 0.99,
+          "n_seeds_certifying": 10,
+          "per_seed": [
+            {
+              "m_int": 5,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2
+              ],
+              "naive_mcc": 0.9698,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9512
+            },
+            {
+              "m_int": 5,
+              "gate_count": 2,
+              "n_recoverable": 2,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                2,
+                4
+              ],
+              "naive_mcc": 0.994,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9936
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "naive_mcc": 0.9979,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9976
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9912,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9912
+            },
+            {
+              "m_int": 5,
+              "gate_count": 1,
+              "n_recoverable": 1,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0
+              ],
+              "naive_mcc": 0.9961,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9962
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9948,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9948
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9953,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9953
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9884,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9922
+            },
+            {
+              "m_int": 5,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                3
+              ],
+              "naive_mcc": 0.9913,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.993
+            },
+            {
+              "m_int": 5,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                1,
+                2,
+                4
+              ],
+              "naive_mcc": 0.9828,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9952
+            }
+          ]
+        },
+        {
+          "level": 20,
+          "level_name": "n_e",
+          "gate_n_recoverable_mean": 0.6,
+          "gate_n_recoverable_spread": [
+            0,
+            3
+          ],
+          "verdict_counts": {
+            "PROCEED": 0,
+            "PROCEED_CAPPED": 3,
+            "ABSTAIN": 7
+          },
+          "naive_mcc_mean": 0.9604,
+          "naive_recovered_dirs_mean": 4.8,
+          "certified_recovery_mean": 0.9695,
+          "n_seeds_certifying": 3,
+          "per_seed": [
+            {
+              "m_int": 5,
+              "gate_count": 0,
+              "n_recoverable": 0,
+              "verdict": "ABSTAIN",
+              "certified": [],
+              "naive_mcc": 0.9143,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": null
+            },
+            {
+              "m_int": 5,
+              "gate_count": 0,
+              "n_recoverable": 0,
+              "verdict": "ABSTAIN",
+              "certified": [],
+              "naive_mcc": 0.9825,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": null
+            },
+            {
+              "m_int": 5,
+              "gate_count": 0,
+              "n_recoverable": 0,
+              "verdict": "ABSTAIN",
+              "certified": [],
+              "naive_mcc": 0.9801,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": null
+            },
+            {
+              "m_int": 5,
+              "gate_count": 0,
+              "n_recoverable": 0,
+              "verdict": "ABSTAIN",
+              "certified": [],
+              "naive_mcc": 0.9665,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": null
+            },
+            {
+              "m_int": 5,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9897,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9973
+            },
+            {
+              "m_int": 5,
+              "gate_count": 1,
+              "n_recoverable": 1,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                2
+              ],
+              "naive_mcc": 0.9808,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9311
+            },
+            {
+              "m_int": 5,
+              "gate_count": 0,
+              "n_recoverable": 0,
+              "verdict": "ABSTAIN",
+              "certified": [],
+              "naive_mcc": 0.989,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": null
+            },
+            {
+              "m_int": 5,
+              "gate_count": 0,
+              "n_recoverable": 0,
+              "verdict": "ABSTAIN",
+              "certified": [],
+              "naive_mcc": 0.8349,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": null
+            },
+            {
+              "m_int": 5,
+              "gate_count": 2,
+              "n_recoverable": 2,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                1,
+                3
+              ],
+              "naive_mcc": 0.9768,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.98
+            },
+            {
+              "m_int": 5,
+              "gate_count": 0,
+              "n_recoverable": 0,
+              "verdict": "ABSTAIN",
+              "certified": [],
+              "naive_mcc": 0.9897,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": null
+            }
+          ]
+        }
+      ],
+      "crossover_naive_below_0p90": null,
+      "crossover_gate_leaves_proceed": 40,
+      "gate_behavior": "TRACKS_CONSERVATIVE",
+      "calibration_gap": 1.12,
+      "certification_trustworthy": true,
+      "silent_failure": false
+    },
+    "C_measurement_contamination": {
+      "expectation": "detectability gate cannot tell measurement from mechanism (no P3); partially fooled",
+      "levels": [
+        {
+          "level": 0,
+          "level_name": "n_contaminated",
+          "gate_n_recoverable_mean": 5.0,
+          "gate_n_recoverable_spread": [
+            5,
+            5
+          ],
+          "verdict_counts": {
+            "PROCEED": 10,
+            "PROCEED_CAPPED": 0,
+            "ABSTAIN": 0
+          },
+          "naive_mcc_mean": 0.9985,
+          "naive_recovered_dirs_mean": 5.0,
+          "certified_recovery_mean": 0.9985,
+          "n_seeds_certifying": 10,
+          "per_seed": [
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9978,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9978
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9987,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9987
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9982,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9982
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9985,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9985
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9992,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9992
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9988,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9988
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9993,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9993
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9978,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9978
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9987,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9987
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9982,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9982
+            }
+          ]
+        },
+        {
+          "level": 1,
+          "level_name": "n_contaminated",
+          "gate_n_recoverable_mean": 4.6,
+          "gate_n_recoverable_spread": [
+            4,
+            5
+          ],
+          "verdict_counts": {
+            "PROCEED": 6,
+            "PROCEED_CAPPED": 4,
+            "ABSTAIN": 0
+          },
+          "naive_mcc_mean": 0.9437,
+          "naive_recovered_dirs_mean": 4.5,
+          "certified_recovery_mean": 0.9731,
+          "n_seeds_certifying": 10,
+          "per_seed": [
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9967,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9967
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9624,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9624
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9603,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9603
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9879,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9884
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "naive_mcc": 0.9328,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9991
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "naive_mcc": 0.9659,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9993
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9203,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9203
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.8967,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9081
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "naive_mcc": 0.9323,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9982
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "naive_mcc": 0.8812,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9984
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "level_name": "n_contaminated",
+          "gate_n_recoverable_mean": 4.4,
+          "gate_n_recoverable_spread": [
+            4,
+            5
+          ],
+          "verdict_counts": {
+            "PROCEED": 4,
+            "PROCEED_CAPPED": 6,
+            "ABSTAIN": 0
+          },
+          "naive_mcc_mean": 0.8703,
+          "naive_recovered_dirs_mean": 3.7,
+          "certified_recovery_mean": 0.9071,
+          "n_seeds_certifying": 10,
+          "per_seed": [
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "naive_mcc": 0.9856,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9872
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.8464,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.8464
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.7994,
+              "naive_recovered_dirs": 3,
+              "certified_recovery": 0.8408
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9334,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9334
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "naive_mcc": 0.9315,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9672
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "naive_mcc": 0.8222,
+              "naive_recovered_dirs": 3,
+              "certified_recovery": 0.9279
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.8986,
+              "naive_recovered_dirs": 3,
+              "certified_recovery": 0.8986
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "naive_mcc": 0.7727,
+              "naive_recovered_dirs": 3,
+              "certified_recovery": 0.8922
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "naive_mcc": 0.8395,
+              "naive_recovered_dirs": 3,
+              "certified_recovery": 0.8793
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "naive_mcc": 0.8734,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.8979
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "level_name": "n_contaminated",
+          "gate_n_recoverable_mean": 4.3,
+          "gate_n_recoverable_spread": [
+            3,
+            5
+          ],
+          "verdict_counts": {
+            "PROCEED": 4,
+            "PROCEED_CAPPED": 6,
+            "ABSTAIN": 0
+          },
+          "naive_mcc_mean": 0.7902,
+          "naive_recovered_dirs_mean": 3.0,
+          "certified_recovery_mean": 0.8203,
+          "n_seeds_certifying": 10,
+          "per_seed": [
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "naive_mcc": 0.7983,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.8204
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.8699,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.8699
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.8472,
+              "naive_recovered_dirs": 2,
+              "certified_recovery": 0.8472
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.677,
+              "naive_recovered_dirs": 3,
+              "certified_recovery": 0.6935
+            },
+            {
+              "m_int": 5,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                3
+              ],
+              "naive_mcc": 0.7492,
+              "naive_recovered_dirs": 3,
+              "certified_recovery": 0.8287
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                3,
+                4
+              ],
+              "naive_mcc": 0.7094,
+              "naive_recovered_dirs": 2,
+              "certified_recovery": 0.7306
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.8865,
+              "naive_recovered_dirs": 3,
+              "certified_recovery": 0.8865
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                3,
+                4
+              ],
+              "naive_mcc": 0.7865,
+              "naive_recovered_dirs": 2,
+              "certified_recovery": 0.8164
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                3,
+                4
+              ],
+              "naive_mcc": 0.7841,
+              "naive_recovered_dirs": 3,
+              "certified_recovery": 0.9218
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                3,
+                4
+              ],
+              "naive_mcc": 0.7934,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.788
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "level_name": "n_contaminated",
+          "gate_n_recoverable_mean": 3.8,
+          "gate_n_recoverable_spread": [
+            2,
+            5
+          ],
+          "verdict_counts": {
+            "PROCEED": 1,
+            "PROCEED_CAPPED": 9,
+            "ABSTAIN": 0
+          },
+          "naive_mcc_mean": 0.7048,
+          "naive_recovered_dirs_mean": 0.5,
+          "certified_recovery_mean": 0.7233,
+          "n_seeds_certifying": 10,
+          "per_seed": [
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.6754,
+              "naive_recovered_dirs": 0,
+              "certified_recovery": 0.6888
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "naive_mcc": 0.8128,
+              "naive_recovered_dirs": 1,
+              "certified_recovery": 0.8621
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "naive_mcc": 0.7846,
+              "naive_recovered_dirs": 2,
+              "certified_recovery": 0.7741
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.6653,
+              "naive_recovered_dirs": 0,
+              "certified_recovery": 0.709
+            },
+            {
+              "m_int": 5,
+              "gate_count": 2,
+              "n_recoverable": 2,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                1,
+                3
+              ],
+              "naive_mcc": 0.7119,
+              "naive_recovered_dirs": 0,
+              "certified_recovery": 0.6691
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.687,
+              "naive_recovered_dirs": 0,
+              "certified_recovery": 0.6798
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "naive_mcc": 0.707,
+              "naive_recovered_dirs": 0,
+              "certified_recovery": 0.7697
+            },
+            {
+              "m_int": 5,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2
+              ],
+              "naive_mcc": 0.6281,
+              "naive_recovered_dirs": 0,
+              "certified_recovery": 0.7301
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.6053,
+              "naive_recovered_dirs": 0,
+              "certified_recovery": 0.6149
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.771,
+              "naive_recovered_dirs": 2,
+              "certified_recovery": 0.7354
+            }
+          ]
+        }
+      ],
+      "crossover_naive_below_0p90": 2,
+      "crossover_gate_leaves_proceed": 1,
+      "gate_behavior": "FOOLED",
+      "calibration_gap": 1.08,
+      "certification_trustworthy": false,
+      "silent_failure": false
+    },
+    "D_weak_signal_starvation": {
+      "expectation": "gate grows conservative as intervention weakens before signal-robust naive fails",
+      "levels": [
+        {
+          "level": 0.1,
+          "level_name": "iv_scale",
+          "gate_n_recoverable_mean": 5.0,
+          "gate_n_recoverable_spread": [
+            5,
+            5
+          ],
+          "verdict_counts": {
+            "PROCEED": 10,
+            "PROCEED_CAPPED": 0,
+            "ABSTAIN": 0
+          },
+          "naive_mcc_mean": 0.9985,
+          "naive_recovered_dirs_mean": 5.0,
+          "certified_recovery_mean": 0.9985,
+          "n_seeds_certifying": 10,
+          "per_seed": [
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9978,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9978
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9987,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9987
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9982,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9982
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9985,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9985
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9992,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9992
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9988,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9988
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9993,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9993
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9978,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9978
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9987,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9987
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9982,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9982
+            }
+          ]
+        },
+        {
+          "level": 0.4,
+          "level_name": "iv_scale",
+          "gate_n_recoverable_mean": 5.0,
+          "gate_n_recoverable_spread": [
+            5,
+            5
+          ],
+          "verdict_counts": {
+            "PROCEED": 10,
+            "PROCEED_CAPPED": 0,
+            "ABSTAIN": 0
+          },
+          "naive_mcc_mean": 0.9397,
+          "naive_recovered_dirs_mean": 4.4,
+          "certified_recovery_mean": 0.9629,
+          "n_seeds_certifying": 10,
+          "per_seed": [
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9557,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9557
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9741,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9741
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.8985,
+              "naive_recovered_dirs": 2,
+              "certified_recovery": 0.9222
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.8935,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9442
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.984,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.984
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9842,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9887
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9876,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9876
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.8474,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9597
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.8961,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9369
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9757,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9757
+            }
+          ]
+        },
+        {
+          "level": 0.7,
+          "level_name": "iv_scale",
+          "gate_n_recoverable_mean": 3.8,
+          "gate_n_recoverable_spread": [
+            2,
+            5
+          ],
+          "verdict_counts": {
+            "PROCEED": 2,
+            "PROCEED_CAPPED": 8,
+            "ABSTAIN": 0
+          },
+          "naive_mcc_mean": 0.8501,
+          "naive_recovered_dirs_mean": 3.4,
+          "certified_recovery_mean": 0.9329,
+          "n_seeds_certifying": 10,
+          "per_seed": [
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.898,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9941
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.8991,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9204
+            },
+            {
+              "m_int": 5,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                4
+              ],
+              "naive_mcc": 0.7948,
+              "naive_recovered_dirs": 1,
+              "certified_recovery": 0.9369
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                3,
+                4
+              ],
+              "naive_mcc": 0.8751,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9774
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.8481,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.827
+            },
+            {
+              "m_int": 5,
+              "gate_count": 5,
+              "n_recoverable": 5,
+              "verdict": "PROCEED",
+              "certified": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9554,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9711
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9118,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9638
+            },
+            {
+              "m_int": 5,
+              "gate_count": 2,
+              "n_recoverable": 2,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                2,
+                3
+              ],
+              "naive_mcc": 0.7711,
+              "naive_recovered_dirs": 2,
+              "certified_recovery": 0.9683
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "naive_mcc": 0.6992,
+              "naive_recovered_dirs": 2,
+              "certified_recovery": 0.7898
+            },
+            {
+              "m_int": 5,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                1,
+                2,
+                4
+              ],
+              "naive_mcc": 0.8486,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.98
+            }
+          ]
+        },
+        {
+          "level": 0.9,
+          "level_name": "iv_scale",
+          "gate_n_recoverable_mean": 3.3,
+          "gate_n_recoverable_spread": [
+            1,
+            4
+          ],
+          "verdict_counts": {
+            "PROCEED": 0,
+            "PROCEED_CAPPED": 10,
+            "ABSTAIN": 0
+          },
+          "naive_mcc_mean": 0.8006,
+          "naive_recovered_dirs_mean": 3.4,
+          "certified_recovery_mean": 0.9093,
+          "n_seeds_certifying": 10,
+          "per_seed": [
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.8854,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9696
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                3,
+                4
+              ],
+              "naive_mcc": 0.8518,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.8606
+            },
+            {
+              "m_int": 5,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                4
+              ],
+              "naive_mcc": 0.6997,
+              "naive_recovered_dirs": 1,
+              "certified_recovery": 0.9388
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                3,
+                4
+              ],
+              "naive_mcc": 0.8749,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9616
+            },
+            {
+              "m_int": 5,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                4
+              ],
+              "naive_mcc": 0.858,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.8563
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                3,
+                4
+              ],
+              "naive_mcc": 0.8019,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.8468
+            },
+            {
+              "m_int": 5,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                1,
+                3,
+                4
+              ],
+              "naive_mcc": 0.7668,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9759
+            },
+            {
+              "m_int": 5,
+              "gate_count": 1,
+              "n_recoverable": 1,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                3
+              ],
+              "naive_mcc": 0.7945,
+              "naive_recovered_dirs": 2,
+              "certified_recovery": 0.9979
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "naive_mcc": 0.7177,
+              "naive_recovered_dirs": 2,
+              "certified_recovery": 0.9148
+            },
+            {
+              "m_int": 5,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                1,
+                2,
+                4
+              ],
+              "naive_mcc": 0.7556,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.771
+            }
+          ]
+        },
+        {
+          "level": 1.0,
+          "level_name": "iv_scale",
+          "gate_n_recoverable_mean": 3.1,
+          "gate_n_recoverable_spread": [
+            1,
+            4
+          ],
+          "verdict_counts": {
+            "PROCEED": 0,
+            "PROCEED_CAPPED": 10,
+            "ABSTAIN": 0
+          },
+          "naive_mcc_mean": 0.7963,
+          "naive_recovered_dirs_mean": 3.4,
+          "certified_recovery_mean": 0.9179,
+          "n_seeds_certifying": 10,
+          "per_seed": [
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "naive_mcc": 0.8661,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.959
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                3,
+                4
+              ],
+              "naive_mcc": 0.8282,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.8507
+            },
+            {
+              "m_int": 5,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                4
+              ],
+              "naive_mcc": 0.7016,
+              "naive_recovered_dirs": 1,
+              "certified_recovery": 0.9384
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                3,
+                4
+              ],
+              "naive_mcc": 0.865,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9252
+            },
+            {
+              "m_int": 5,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                4
+              ],
+              "naive_mcc": 0.8637,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.8733
+            },
+            {
+              "m_int": 5,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                1,
+                3,
+                4
+              ],
+              "naive_mcc": 0.9091,
+              "naive_recovered_dirs": 5,
+              "certified_recovery": 0.9434
+            },
+            {
+              "m_int": 5,
+              "gate_count": 2,
+              "n_recoverable": 2,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                1,
+                3
+              ],
+              "naive_mcc": 0.7291,
+              "naive_recovered_dirs": 4,
+              "certified_recovery": 0.9799
+            },
+            {
+              "m_int": 5,
+              "gate_count": 1,
+              "n_recoverable": 1,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                3
+              ],
+              "naive_mcc": 0.7748,
+              "naive_recovered_dirs": 3,
+              "certified_recovery": 0.9994
+            },
+            {
+              "m_int": 5,
+              "gate_count": 4,
+              "n_recoverable": 4,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                0,
+                1,
+                2,
+                4
+              ],
+              "naive_mcc": 0.6648,
+              "naive_recovered_dirs": 2,
+              "certified_recovery": 0.8885
+            },
+            {
+              "m_int": 5,
+              "gate_count": 3,
+              "n_recoverable": 3,
+              "verdict": "PROCEED_CAPPED",
+              "certified": [
+                1,
+                2,
+                4
+              ],
+              "naive_mcc": 0.7601,
+              "naive_recovered_dirs": 3,
+              "certified_recovery": 0.8208
+            }
+          ]
+        }
+      ],
+      "crossover_naive_below_0p90": 0.7,
+      "crossover_gate_leaves_proceed": 0.7,
+      "gate_behavior": "TRACKS_TIGHT",
+      "calibration_gap": 0.28,
+      "certification_trustworthy": true,
+      "silent_failure": false
+    }
+  },
+  "central_claim": "Backbone C (second backbone) on the E2 arms: behaviors {'A_environment_starvation': 'TRACKS_TIGHT', 'B_power_starvation': 'TRACKS_CONSERVATIVE', 'C_measurement_contamination': 'FOOLED', 'D_weak_signal_starvation': 'TRACKS_TIGHT'}; tracking arms ['A_environment_starvation', 'B_power_starvation', 'D_weak_signal_starvation']; fooled arms ['C_measurement_contamination']; silent-failure arms []. Same-code precision behaviors {'A_environment_starvation': 'TRACKS_TIGHT', 'B_power_starvation': 'TRACKS_CONSERVATIVE', 'C_measurement_contamination': 'FOOLED', 'D_weak_signal_starvation': 'TRACKS_TIGHT'}. Arms where it differs from precision: [] (recorded, not tuned).",
+  "status": "PASS",
+  "arm_C_note": "detectability-based, NOT P3: the covariance/precision gate cannot separate measurement from mechanism without a temporal P3 (R1).",
+  "experiment": "e4_calibration",
+  "preregistered_expectation": {
+    "statement": "gate abstains or caps under power and weak-signal starvation and is fooled by measurement contamination, as the precision gate is",
+    "observed": {
+      "power_starvation_restricts_without_silent_failure": true,
+      "weak_signal_restricts_without_silent_failure": true,
+      "measurement_contamination_fools_gate": true
+    },
+    "all_held": true
+  },
+  "precision_same_code": {
+    "note": "precision readout run in this job on the same code; the comparator for every arm",
+    "contract_status": "PASS",
+    "arms": {
+      "A_environment_starvation": {
+        "gate_behavior": "TRACKS_TIGHT",
+        "silent_failure": false,
+        "certification_trustworthy": true,
+        "crossover_gate_leaves_proceed": 4,
+        "crossover_naive_below_0p90": 4
+      },
+      "B_power_starvation": {
+        "gate_behavior": "TRACKS_CONSERVATIVE",
+        "silent_failure": false,
+        "certification_trustworthy": true,
+        "crossover_gate_leaves_proceed": 40,
+        "crossover_naive_below_0p90": null
+      },
+      "C_measurement_contamination": {
+        "gate_behavior": "FOOLED",
+        "silent_failure": false,
+        "certification_trustworthy": false,
+        "crossover_gate_leaves_proceed": 1,
+        "crossover_naive_below_0p90": 2
+      },
+      "D_weak_signal_starvation": {
+        "gate_behavior": "TRACKS_TIGHT",
+        "silent_failure": false,
+        "certification_trustworthy": true,
+        "crossover_gate_leaves_proceed": 0.7,
+        "crossover_naive_below_0p90": 0.9
+      }
+    },
+    "level_means": {
+      "A_environment_starvation": [
+        {
+          "level": 5,
+          "gate_n_recoverable_mean": 5.0,
+          "naive_mcc_mean": 0.9991,
+          "certified_recovery_mean": 0.9991
+        },
+        {
+          "level": 4,
+          "gate_n_recoverable_mean": 4.0,
+          "naive_mcc_mean": 0.7993,
+          "certified_recovery_mean": 0.9991
+        },
+        {
+          "level": 3,
+          "gate_n_recoverable_mean": 3.0,
+          "naive_mcc_mean": 0.5994,
+          "certified_recovery_mean": 0.999
+        },
+        {
+          "level": 2,
+          "gate_n_recoverable_mean": 2.0,
+          "naive_mcc_mean": 0.3996,
+          "certified_recovery_mean": 0.999
+        },
+        {
+          "level": 1,
+          "gate_n_recoverable_mean": 1.0,
+          "naive_mcc_mean": 0.1998,
+          "certified_recovery_mean": 0.9992
+        }
+      ],
+      "B_power_starvation": [
+        {
+          "level": 4000,
+          "gate_n_recoverable_mean": 5.0,
+          "naive_mcc_mean": 0.9992,
+          "certified_recovery_mean": 0.9992
+        },
+        {
+          "level": 400,
+          "gate_n_recoverable_mean": 5.0,
+          "naive_mcc_mean": 0.9987,
+          "certified_recovery_mean": 0.9987
+        },
+        {
+          "level": 100,
+          "gate_n_recoverable_mean": 5.0,
+          "naive_mcc_mean": 0.9972,
+          "certified_recovery_mean": 0.9972
+        },
+        {
+          "level": 40,
+          "gate_n_recoverable_mean": 4.1,
+          "naive_mcc_mean": 0.9899,
+          "certified_recovery_mean": 0.9922
+        },
+        {
+          "level": 20,
+          "gate_n_recoverable_mean": 1.0,
+          "naive_mcc_mean": 0.9785,
+          "certified_recovery_mean": 0.9619
+        }
+      ],
+      "C_measurement_contamination": [
+        {
+          "level": 0,
+          "gate_n_recoverable_mean": 5.0,
+          "naive_mcc_mean": 0.9991,
+          "certified_recovery_mean": 0.9991
+        },
+        {
+          "level": 1,
+          "gate_n_recoverable_mean": 4.3,
+          "naive_mcc_mean": 0.9128,
+          "certified_recovery_mean": 0.9949
+        },
+        {
+          "level": 2,
+          "gate_n_recoverable_mean": 3.7,
+          "naive_mcc_mean": 0.8739,
+          "certified_recovery_mean": 0.9627
+        },
+        {
+          "level": 3,
+          "gate_n_recoverable_mean": 3.6,
+          "naive_mcc_mean": 0.7967,
+          "certified_recovery_mean": 0.8941
+        },
+        {
+          "level": 5,
+          "gate_n_recoverable_mean": 2.7,
+          "naive_mcc_mean": 0.6885,
+          "certified_recovery_mean": 0.7383
+        }
+      ],
+      "D_weak_signal_starvation": [
+        {
+          "level": 0.1,
+          "gate_n_recoverable_mean": 5.0,
+          "naive_mcc_mean": 0.9991,
+          "certified_recovery_mean": 0.9991
+        },
+        {
+          "level": 0.4,
+          "gate_n_recoverable_mean": 5.0,
+          "naive_mcc_mean": 0.9933,
+          "certified_recovery_mean": 0.9933
+        },
+        {
+          "level": 0.7,
+          "gate_n_recoverable_mean": 3.6,
+          "naive_mcc_mean": 0.9092,
+          "certified_recovery_mean": 0.9863
+        },
+        {
+          "level": 0.9,
+          "gate_n_recoverable_mean": 3.0,
+          "naive_mcc_mean": 0.8551,
+          "certified_recovery_mean": 0.9807
+        },
+        {
+          "level": 1.0,
+          "gate_n_recoverable_mean": 2.6,
+          "naive_mcc_mean": 0.8277,
+          "certified_recovery_mean": 0.9763
+        }
+      ]
+    }
+  },
+  "comparison": {
+    "A_environment_starvation": {
+      "this_readout": {
+        "gate_behavior": "TRACKS_TIGHT",
+        "silent_failure": false,
+        "certification_trustworthy": true,
+        "crossover_gate_leaves_proceed": 4,
+        "crossover_naive_below_0p90": 4
+      },
+      "precision": {
+        "gate_behavior": "TRACKS_TIGHT",
+        "silent_failure": false,
+        "certification_trustworthy": true,
+        "crossover_gate_leaves_proceed": 4,
+        "crossover_naive_below_0p90": 4
+      },
+      "same_behavior": true
+    },
+    "B_power_starvation": {
+      "this_readout": {
+        "gate_behavior": "TRACKS_CONSERVATIVE",
+        "silent_failure": false,
+        "certification_trustworthy": true,
+        "crossover_gate_leaves_proceed": 40,
+        "crossover_naive_below_0p90": null
+      },
+      "precision": {
+        "gate_behavior": "TRACKS_CONSERVATIVE",
+        "silent_failure": false,
+        "certification_trustworthy": true,
+        "crossover_gate_leaves_proceed": 40,
+        "crossover_naive_below_0p90": null
+      },
+      "same_behavior": true
+    },
+    "C_measurement_contamination": {
+      "this_readout": {
+        "gate_behavior": "FOOLED",
+        "silent_failure": false,
+        "certification_trustworthy": false,
+        "crossover_gate_leaves_proceed": 1,
+        "crossover_naive_below_0p90": 2
+      },
+      "precision": {
+        "gate_behavior": "FOOLED",
+        "silent_failure": false,
+        "certification_trustworthy": false,
+        "crossover_gate_leaves_proceed": 1,
+        "crossover_naive_below_0p90": 2
+      },
+      "same_behavior": true
+    },
+    "D_weak_signal_starvation": {
+      "this_readout": {
+        "gate_behavior": "TRACKS_TIGHT",
+        "silent_failure": false,
+        "certification_trustworthy": true,
+        "crossover_gate_leaves_proceed": 0.7,
+        "crossover_naive_below_0p90": 0.7
+      },
+      "precision": {
+        "gate_behavior": "TRACKS_TIGHT",
+        "silent_failure": false,
+        "certification_trustworthy": true,
+        "crossover_gate_leaves_proceed": 0.7,
+        "crossover_naive_below_0p90": 0.9
+      },
+      "same_behavior": true
+    }
+  },
+  "population_decomposition": {
+    "setting": "arm A, m=5, n=2000, iv_scale=0.1, seeds 0-9",
+    "jad_rule": {
+      "population": {
+        "mean": 0.9986,
+        "min": 0.9974,
+        "max": 0.9993
+      },
+      "sample": {
+        "mean": 0.9985,
+        "min": 0.9978,
+        "max": 0.9993
+      }
+    },
+    "covariance_rule": {
+      "population": {
+        "mean": 0.8977,
+        "min": 0.8014,
+        "max": 0.9498
+      },
+      "sample": {
+        "mean": 0.8947,
+        "min": 0.7856,
+        "max": 0.9513
+      }
+    },
+    "precision_rule": {
+      "population": {
+        "mean": 0.9992,
+        "min": 0.9989,
+        "max": 0.9997
+      },
+      "sample": {
+        "mean": 0.9991,
+        "min": 0.9988,
+        "max": 0.9996
+      }
+    },
+    "per_seed": [
+      {
+        "seed": 0,
+        "pop_cov": 0.941,
+        "pop_prec": 0.9993,
+        "smp_cov": 0.9412,
+        "smp_prec": 0.9992,
+        "pop_jad": 0.9978,
+        "smp_jad": 0.9978
+      },
+      {
+        "seed": 1,
+        "pop_cov": 0.8886,
+        "pop_prec": 0.9989,
+        "smp_cov": 0.8795,
+        "smp_prec": 0.999,
+        "pop_jad": 0.9986,
+        "smp_jad": 0.9987
+      },
+      {
+        "seed": 2,
+        "pop_cov": 0.8014,
+        "pop_prec": 0.9993,
+        "smp_cov": 0.7995,
+        "smp_prec": 0.9991,
+        "pop_jad": 0.9985,
+        "smp_jad": 0.9982
+      },
+      {
+        "seed": 3,
+        "pop_cov": 0.8997,
+        "pop_prec": 0.9995,
+        "smp_cov": 0.899,
+        "smp_prec": 0.9994,
+        "pop_jad": 0.9986,
+        "smp_jad": 0.9985
+      },
+      {
+        "seed": 4,
+        "pop_cov": 0.9434,
+        "pop_prec": 0.9994,
+        "smp_cov": 0.9513,
+        "smp_prec": 0.9992,
+        "pop_jad": 0.9993,
+        "smp_jad": 0.9992
+      },
+      {
+        "seed": 5,
+        "pop_cov": 0.9422,
+        "pop_prec": 0.9991,
+        "smp_cov": 0.9454,
+        "smp_prec": 0.999,
+        "pop_jad": 0.999,
+        "smp_jad": 0.9988
+      },
+      {
+        "seed": 6,
+        "pop_cov": 0.9174,
+        "pop_prec": 0.9993,
+        "smp_cov": 0.9073,
+        "smp_prec": 0.9993,
+        "pop_jad": 0.9993,
+        "smp_jad": 0.9993
+      },
+      {
+        "seed": 7,
+        "pop_cov": 0.8028,
+        "pop_prec": 0.9997,
+        "smp_cov": 0.7856,
+        "smp_prec": 0.9996,
+        "pop_jad": 0.9974,
+        "smp_jad": 0.9978
+      },
+      {
+        "seed": 8,
+        "pop_cov": 0.8908,
+        "pop_prec": 0.999,
+        "smp_cov": 0.8889,
+        "smp_prec": 0.9988,
+        "pop_jad": 0.9988,
+        "smp_jad": 0.9987
+      },
+      {
+        "seed": 9,
+        "pop_cov": 0.9498,
+        "pop_prec": 0.9989,
+        "smp_cov": 0.9495,
+        "smp_prec": 0.9988,
+        "pop_jad": 0.9982,
+        "smp_jad": 0.9982
+      }
+    ]
+  },
+  "provenance": {
+    "code_commit": "7ccce00bf456154f961410bb380f7fb626c33c11",
+    "source_sha256": {
+      "src/gate/precision_readout.py": "1f8bdaf52a05d1c6e6941551e94e3a3db852350c8af3e76174174385901eb872",
+      "src/gate/rank_readout.py": "0fcda99992ab989f4a9f03e059681a508de491b4482ccb9cbddc83dc5fdbdad5",
+      "src/recover/backbone.py": "9decaed2279beca46a0633a1456201e04f6c2df2a04b991543da843373a57ec7",
+      "experiments/e3_gate_compare.py": "c48d670f1757b543f7673104aed1375c7d3f8b8a7c5791ec90b1d467c0dae32d",
+      "experiments/tier2_common.py": "cb23ea2ec40e85f0d818f2e04a3c5c72d0873267cd9b804aa022d200f1533711",
+      "experiments/e4_second_backbone.py": "e4d32f99347b469b75a731fb660eb07c50159d46f8ff1425ba85cafeb70cc267",
+      "experiments/e2_calibration.py": "3cc2fd4513d4b1ef1e3ab921100e0988dd8da6805871f1bb0b36deae63902c4b"
+    },
+    "numpy_version": "1.24.4",
+    "python_version": "3.10.12",
+    "host": "dgxanode02"
+  },
+  "wall_seconds": 481.8
+}

@@ -1,0 +1,113 @@
+{
+  "data": [
+    {
+      "s": 0.01,
+      "scaling": "raw",
+      "reject": 0.05,
+      "n_draws": 400,
+      "within": true
+    },
+    {
+      "s": 0.01,
+      "scaling": "standardised",
+      "reject": 0.045,
+      "n_draws": 400,
+      "within": true
+    },
+    {
+      "s": 0.02,
+      "scaling": "raw",
+      "reject": 0.05,
+      "n_draws": 400,
+      "within": true
+    },
+    {
+      "s": 0.02,
+      "scaling": "standardised",
+      "reject": 0.045,
+      "n_draws": 400,
+      "within": true
+    },
+    {
+      "s": 0.05,
+      "scaling": "raw",
+      "reject": 0.05,
+      "n_draws": 400,
+      "within": true
+    },
+    {
+      "s": 0.05,
+      "scaling": "standardised",
+      "reject": 0.0425,
+      "n_draws": 400,
+      "within": true
+    },
+    {
+      "s": 0.075,
+      "scaling": "raw",
+      "reject": 0.05,
+      "n_draws": 400,
+      "within": true
+    },
+    {
+      "s": 0.075,
+      "scaling": "standardised",
+      "reject": 0.045,
+      "n_draws": 400,
+      "within": true
+    },
+    {
+      "s": 0.1,
+      "scaling": "raw",
+      "reject": 0.0625,
+      "n_draws": 400,
+      "within": true
+    },
+    {
+      "s": 0.1,
+      "scaling": "standardised",
+      "reject": 0.0725,
+      "n_draws": 400,
+      "within": true
+    }
+  ],
+  "meta": {
+    "statistic": "lfc",
+    "gate": "envelope",
+    "git_commit": "460a064",
+    "timestamp": "2026-08-10T11:42:33",
+    "config": {
+      "alpha": 0.05,
+      "B": 500,
+      "n_e": 2000,
+      "d": 10,
+      "d_latent": 10,
+      "D": 200,
+      "n_env": null,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "draws_per_point": 400
+    },
+    "versions": {
+      "python": "3.11.15",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.3",
+      "sklearn": "1.9.0"
+    },
+    "superseded_by": "lfc/envelope",
+    "migrated_from": "causalbench/results/ranktest/taskA_fine_s_envelope.json",
+    "status": "SUPERSEDED",
+    "note": "single-d_latent fine grid, subsumed by the full s*-vs-d sweep"
+  }
+}

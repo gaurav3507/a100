@@ -1,0 +1,21 @@
+id,true,pred,confidence,text_gate,image_gate,meta_gate,top_words
+c0gl7r,True,True,0.9994361,0.0050656935,0.47211742,0.52281684,video youtube from instructions gets thief car phoenix pd [CLS]
+c0xdqy,True,True,0.9996661,0.008616305,0.27504182,0.71634185,[SEP] credibility own his one has he iran ##s accuse
+bdfxf1,Misleading Content,Misleading Content,0.999841,0.009826732,0.8353483,0.15482491,rise [SEP] circa fascism italian of the [CLS]
+26kwdf,True,True,0.9994293,0.08785384,0.17821741,0.73392874,[SEP] ##ip ##fl mid friend my [CLS]
+2s0xuj,Misleading Content,Misleading Content,0.98212284,0.0039672246,0.52559495,0.47043777,[SEP] day other the got i case cool this at
+bopb6s,True,True,0.9980007,0.02681348,0.15189835,0.82128817,smiling [SEP] dog this [CLS]
+64b266,True,True,0.9992212,0.03787136,0.64031345,0.3218152,his [SEP] nsa shadow broker ##s hacker ##s release hacking
+7iqceh,Misleading Content,Misleading Content,0.99959,0.026273996,0.8287377,0.14498834,[SEP] on come [CLS]
+5rhizs,True,True,0.9991359,0.03483241,0.26509783,0.70006984,[SEP] drummer excited really [CLS]
+3gzxbc,True,True,0.9997515,0.019901587,0.6433606,0.33673775,brand dysfunction juice [SEP] hs ##a warns against orange found
+7o9rmx,Manipulated Content,True,0.97688717,0.14200532,0.8579946,6.1512104e-08,[SEP] hezbollah believers [CLS]
+c82k3s,True,Misleading Content,0.7809655,0.01597128,0.47014067,0.51388806,bird [SEP] a like looked that ##op po bird [CLS]
+981fm7,Misleading Content,Imposter Content,0.99767834,0.018535163,0.55707,0.4243948,[SEP] up is way which [CLS]
+6ww1fz,Misleading Content,True,0.5086453,0.0484118,0.65427274,0.29731545,##king [SEP] fc frogs [CLS]
+2zkblp,True,Misleading Content,0.99629384,0.030953923,0.50088555,0.4681605,[SEP] trash the in grenades throw ##t don told ##s
+b3axr6,True,Misleading Content,0.9249172,0.59074306,0.40908253,0.00017435182,[SEP] melting from snow the stopping stairs the of shadow
+8ruphg,Misleading Content,Misleading Content,0.6747736,0.014915934,0.35714647,0.62793756,[SEP] ##ling ##sett is this [CLS] un
+66z38j,Misleading Content,True,0.99661875,0.021346193,0.6484472,0.3302066,my [SEP] plant there ##s a little old lady enjoying
+dcw47z,True,Misleading Content,0.99481493,0.007919295,0.6406018,0.3514789,[SEP] anatomy their drawing animals draw to learned i how
+bt40ol,True,Misleading Content,0.9439091,0.011629149,0.3305336,0.6578373,[SEP] it ##ve ##oo ##oo mo to like i [CLS]

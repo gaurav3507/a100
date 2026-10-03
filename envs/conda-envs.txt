@@ -1,0 +1,8 @@
+
+# conda environments:
+#
+# * -> active
+# + -> frozen
+base                     /workspace/miniconda3
+C_MET                    /workspace/miniconda3/envs/C_MET
+

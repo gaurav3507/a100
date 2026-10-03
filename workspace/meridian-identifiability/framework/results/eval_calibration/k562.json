@@ -1,0 +1,66 @@
+{
+  "dataset": "k562",
+  "budget": 5000,
+  "d_latent": 15,
+  "max_path_length": 1,
+  "results": {
+    "empty": {
+      "n_edges": 0
+    },
+    "random": {
+      "n_edges": 4998,
+      "raw": {
+        "output_graph.true_positives": 568.0,
+        "output_graph.false_positives": 4430.0,
+        "output_graph.wasserstein_distance.mean": 0.09827690257469492,
+        "false_omission_rate": -1.0,
+        "negative_mean_wasserstein": -1.0
+      },
+      "precision[output_graph.true_positives]": 0.1136454581832733
+    },
+    "corr_top": {
+      "n_edges": 5000,
+      "raw": {
+        "output_graph.true_positives": 2537.0,
+        "output_graph.false_positives": 2463.0,
+        "output_graph.wasserstein_distance.mean": 0.16691737371507478,
+        "false_omission_rate": -1.0,
+        "negative_mean_wasserstein": -1.0
+      },
+      "precision[output_graph.true_positives]": 0.5074
+    },
+    "hub": {
+      "n_edges": 5000,
+      "raw": {
+        "output_graph.true_positives": 1278.0,
+        "output_graph.false_positives": 3722.0,
+        "output_graph.wasserstein_distance.mean": 0.0834046688198196,
+        "false_omission_rate": -1.0,
+        "negative_mean_wasserstein": -1.0
+      },
+      "precision[output_graph.true_positives]": 0.2556
+    },
+    "program_shift": {
+      "n_edges": 5000,
+      "raw": {
+        "output_graph.true_positives": 617.0,
+        "output_graph.false_positives": 4383.0,
+        "output_graph.wasserstein_distance.mean": 0.10257043553312178,
+        "false_omission_rate": -1.0,
+        "negative_mean_wasserstein": -1.0
+      },
+      "precision[output_graph.true_positives]": 0.1234
+    },
+    "program_pca": {
+      "n_edges": 5000,
+      "raw": {
+        "output_graph.true_positives": 727.0,
+        "output_graph.false_positives": 4273.0,
+        "output_graph.wasserstein_distance.mean": 0.1172288536184559,
+        "false_omission_rate": -1.0,
+        "negative_mean_wasserstein": -1.0
+      },
+      "precision[output_graph.true_positives]": 0.1454
+    }
+  }
+}

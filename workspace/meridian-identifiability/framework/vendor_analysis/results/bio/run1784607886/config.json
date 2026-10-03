@@ -1,0 +1,18 @@
+{
+    "batch_size": 32,
+    "mode": "train",
+    "lr": 0.001,
+    "epochs": 100,
+    "grad_clip": false,
+    "mxAlpha": 10,
+    "mxBeta": 2,
+    "mxTemp": 5,
+    "lmbda": 0.001,
+    "MMD_sigma": 1000,
+    "kernel_num": 10,
+    "matched_IO": false,
+    "latdim": 105,
+    "seed": 12,
+    "dim": 5000,
+    "cdim": 105
+}

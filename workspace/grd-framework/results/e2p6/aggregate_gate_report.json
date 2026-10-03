@@ -1,0 +1,253 @@
+{
+  "milestone": "M2.6",
+  "code_commit": "214a549a9a9aca22015aecee296799b5e29da2f3-dirty",
+  "aggregation_method": "single all-node hard intervention environment, covariance_difference vs obs, estimate_rank_lfc + spectral_rank at d_proj=d_latent",
+  "aggregation_provenance": "E0 (experiments/e0_oracle.py) intervened on all target nodes in ONE env and read that single covariance difference's rank; rank_readout.py has no pooling function. Reused exactly, with all d nodes as the aggregate intervention.",
+  "config": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "d_latent": 5,
+    "D": 200,
+    "n_per_env": 4000,
+    "d_proj": 5,
+    "d_proj_xcheck": 10,
+    "edge_prob": 0.4,
+    "alpha": 0.05,
+    "B": 500,
+    "rank_rtol": 0.05,
+    "iv_scale": 0.1,
+    "regime": "REDUCING",
+    "recovery_mcc_threshold": 0.9
+  },
+  "m25_per_env_contrast": "5/10 seeds fully correct at per-environment atomic resolution (M2.5 reducing regime)",
+  "data_fingerprint": {
+    "0": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "a78705b1410b7cc0"
+    },
+    "1": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "4b15985d2486dace"
+    },
+    "2": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "88de73e02d7cf5fe"
+    },
+    "3": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "cdd6a2a97d513560"
+    },
+    "4": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "93f621cd24415242"
+    },
+    "5": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "3ffbccc9ff314ea3"
+    },
+    "6": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "aa53bf6c80997138"
+    },
+    "7": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "164e1cf0785cf638"
+    },
+    "8": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "26bbe06c189ad53d"
+    },
+    "9": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "6bfcebe836504596"
+    }
+  },
+  "per_seed": [
+    {
+      "seed": 0,
+      "true_dim": 5,
+      "agg_k_hat": 5,
+      "agg_pass": true,
+      "agg_spectral_rank": 1,
+      "agg_sv_gap": null,
+      "agg_k_hat_xcheck_dproj10": 5,
+      "agg_sv_gap_xcheck": 57.0,
+      "underread_boundary_reject_rate": null,
+      "recover_mcc": 0.9993,
+      "recover_pass": true,
+      "gate_backbone_disagreement": false
+    },
+    {
+      "seed": 1,
+      "true_dim": 5,
+      "agg_k_hat": 5,
+      "agg_pass": true,
+      "agg_spectral_rank": 2,
+      "agg_sv_gap": null,
+      "agg_k_hat_xcheck_dproj10": 5,
+      "agg_sv_gap_xcheck": 1622.6,
+      "underread_boundary_reject_rate": null,
+      "recover_mcc": 0.9988,
+      "recover_pass": true,
+      "gate_backbone_disagreement": false
+    },
+    {
+      "seed": 2,
+      "true_dim": 5,
+      "agg_k_hat": 5,
+      "agg_pass": true,
+      "agg_spectral_rank": 2,
+      "agg_sv_gap": null,
+      "agg_k_hat_xcheck_dproj10": 5,
+      "agg_sv_gap_xcheck": 680.5,
+      "underread_boundary_reject_rate": null,
+      "recover_mcc": 0.9992,
+      "recover_pass": true,
+      "gate_backbone_disagreement": false
+    },
+    {
+      "seed": 3,
+      "true_dim": 5,
+      "agg_k_hat": 5,
+      "agg_pass": true,
+      "agg_spectral_rank": 2,
+      "agg_sv_gap": null,
+      "agg_k_hat_xcheck_dproj10": 5,
+      "agg_sv_gap_xcheck": 932.8,
+      "underread_boundary_reject_rate": null,
+      "recover_mcc": 0.9995,
+      "recover_pass": true,
+      "gate_backbone_disagreement": false
+    },
+    {
+      "seed": 4,
+      "true_dim": 5,
+      "agg_k_hat": 5,
+      "agg_pass": true,
+      "agg_spectral_rank": 3,
+      "agg_sv_gap": null,
+      "agg_k_hat_xcheck_dproj10": 5,
+      "agg_sv_gap_xcheck": 1992.7,
+      "underread_boundary_reject_rate": null,
+      "recover_mcc": 0.9994,
+      "recover_pass": true,
+      "gate_backbone_disagreement": false
+    },
+    {
+      "seed": 5,
+      "true_dim": 5,
+      "agg_k_hat": 5,
+      "agg_pass": true,
+      "agg_spectral_rank": 4,
+      "agg_sv_gap": null,
+      "agg_k_hat_xcheck_dproj10": 5,
+      "agg_sv_gap_xcheck": 3745.9,
+      "underread_boundary_reject_rate": null,
+      "recover_mcc": 0.9992,
+      "recover_pass": true,
+      "gate_backbone_disagreement": false
+    },
+    {
+      "seed": 6,
+      "true_dim": 5,
+      "agg_k_hat": 5,
+      "agg_pass": true,
+      "agg_spectral_rank": 4,
+      "agg_sv_gap": null,
+      "agg_k_hat_xcheck_dproj10": 5,
+      "agg_sv_gap_xcheck": 5478.9,
+      "underread_boundary_reject_rate": null,
+      "recover_mcc": 0.9993,
+      "recover_pass": true,
+      "gate_backbone_disagreement": false
+    },
+    {
+      "seed": 7,
+      "true_dim": 5,
+      "agg_k_hat": 4,
+      "agg_pass": false,
+      "agg_spectral_rank": 4,
+      "agg_sv_gap": null,
+      "agg_k_hat_xcheck_dproj10": 4,
+      "agg_sv_gap_xcheck": 128.1,
+      "underread_boundary_reject_rate": 0.0,
+      "recover_mcc": 0.9996,
+      "recover_pass": true,
+      "gate_backbone_disagreement": true
+    },
+    {
+      "seed": 8,
+      "true_dim": 5,
+      "agg_k_hat": 5,
+      "agg_pass": true,
+      "agg_spectral_rank": 4,
+      "agg_sv_gap": null,
+      "agg_k_hat_xcheck_dproj10": 5,
+      "agg_sv_gap_xcheck": 3565.6,
+      "underread_boundary_reject_rate": null,
+      "recover_mcc": 0.999,
+      "recover_pass": true,
+      "gate_backbone_disagreement": false
+    },
+    {
+      "seed": 9,
+      "true_dim": 5,
+      "agg_k_hat": 5,
+      "agg_pass": true,
+      "agg_spectral_rank": 2,
+      "agg_sv_gap": null,
+      "agg_k_hat_xcheck_dproj10": 5,
+      "agg_sv_gap_xcheck": 1355.6,
+      "underread_boundary_reject_rate": null,
+      "recover_mcc": 0.9988,
+      "recover_pass": true,
+      "gate_backbone_disagreement": false
+    }
+  ],
+  "gate_backbone_disagreement_seeds": [
+    7
+  ],
+  "verdict": "FAIL",
+  "status": "FAIL",
+  "m3_fork": "Path A NOT cleanly supported. The aggregate LFC gate reads n_recoverable correctly on 9/10 reducing seeds but STABLY under-reads on seeds [7] (k_hat < true dim across bootstrap seeds, reject rate ~0): a weak aggregate direction (sv orders of magnitude below the dominant ones) is masked by the dominant directions' sampling fluctuation in the pooled covariance difference. The backbone still recovers those directions (MCC >= 0.90) via per-node precision isolation, so this is a gate-backbone DISAGREEMENT: the gate (aggregate covariance rank) and the backbone (per-node precision) are coupled to different signal representations. M3 cannot certify the backbone's recoverable set from the aggregate covariance rank alone; reconcile before wiring gate into recover."
+}

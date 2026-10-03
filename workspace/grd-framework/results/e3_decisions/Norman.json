@@ -1,0 +1,923 @@
+{
+  "dataset": "Norman",
+  "source_result": "results/e3/e3_Norman_CRISPRa_singlegene.json",
+  "source_sha256": "673882c6460cf915e29dca7645265f82925532240085eab7b0f92c3f7177e4fe",
+  "primary_decision": "corrected_disjoint BH-FDR at q=0.05",
+  "alpha": 0.05,
+  "q": 0.05,
+  "B": 500,
+  "n_perturbations": 101,
+  "n_bh_detected": 0,
+  "detected_ids": [],
+  "decisions": [
+    {
+      "environment": "AHR",
+      "n_samples": 558,
+      "signal": 0.21299045331409505,
+      "pvalue": 0.7265469061876247,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "ARID1A",
+      "n_samples": 232,
+      "signal": 0.6204995280555826,
+      "pvalue": 0.2554890219560878,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "ARRDC3",
+      "n_samples": 495,
+      "signal": 0.21336408704217047,
+      "pvalue": 0.7485029940119761,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "ATL1",
+      "n_samples": 379,
+      "signal": 0.4171311542105945,
+      "pvalue": 0.22954091816367264,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "BAK1",
+      "n_samples": 1457,
+      "signal": 0.737841945511337,
+      "pvalue": 0.001996007984031936,
+      "raw_detect": true,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "BCL2L11",
+      "n_samples": 582,
+      "signal": 0.3382338531952807,
+      "pvalue": 0.18962075848303392,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "BCORL1",
+      "n_samples": 533,
+      "signal": 0.3961355500622224,
+      "pvalue": 0.15568862275449102,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "BPGM",
+      "n_samples": 464,
+      "signal": 0.27904788724553875,
+      "pvalue": 0.5688622754491018,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "C19orf26",
+      "n_samples": 872,
+      "signal": 0.20237573496422037,
+      "pvalue": 0.47305389221556887,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "C3orf72",
+      "n_samples": 264,
+      "signal": 0.3368646720639108,
+      "pvalue": 0.7305389221556886,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "CBFA2T3",
+      "n_samples": 658,
+      "signal": 0.19262837125092436,
+      "pvalue": 0.7085828343313373,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "CBL",
+      "n_samples": 663,
+      "signal": 0.2538768170926955,
+      "pvalue": 0.42115768463073855,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "CDKN1A",
+      "n_samples": 360,
+      "signal": 0.5019167676556373,
+      "pvalue": 0.12574850299401197,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "CDKN1B",
+      "n_samples": 550,
+      "signal": 0.5008344188671545,
+      "pvalue": 0.07984031936127745,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "CDKN1C",
+      "n_samples": 230,
+      "signal": 0.5015450980298201,
+      "pvalue": 0.4311377245508982,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "CEBPA",
+      "n_samples": 460,
+      "signal": 0.4442043323487557,
+      "pvalue": 0.16766467065868262,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "CEBPB",
+      "n_samples": 488,
+      "signal": 0.4229172373003705,
+      "pvalue": 0.15169660678642716,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "CEBPE",
+      "n_samples": 1233,
+      "signal": 0.2733730236275976,
+      "pvalue": 0.09381237524950099,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "CELF2",
+      "n_samples": 475,
+      "signal": 0.32920760080043165,
+      "pvalue": 0.3772455089820359,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "CITED1",
+      "n_samples": 215,
+      "signal": 0.4215538340747346,
+      "pvalue": 0.6287425149700598,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "CKS1B",
+      "n_samples": 241,
+      "signal": 0.5163084461263899,
+      "pvalue": 0.34331337325349304,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "CLDN6",
+      "n_samples": 670,
+      "signal": 0.27513819735340617,
+      "pvalue": 0.3592814371257485,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "CNN1",
+      "n_samples": 765,
+      "signal": 0.2664598916856232,
+      "pvalue": 0.2215568862275449,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "CNNM4",
+      "n_samples": 470,
+      "signal": 0.37174501794287274,
+      "pvalue": 0.23353293413173654,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "COL1A1",
+      "n_samples": 328,
+      "signal": 0.3611201865070593,
+      "pvalue": 0.5269461077844312,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "COL2A1",
+      "n_samples": 598,
+      "signal": 0.3918952609882953,
+      "pvalue": 0.11976047904191617,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "CSRNP1",
+      "n_samples": 478,
+      "signal": 0.4867276110282588,
+      "pvalue": 0.07784431137724551,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "DLX2",
+      "n_samples": 732,
+      "signal": 0.31426242172284613,
+      "pvalue": 0.16367265469061876,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "DUSP9",
+      "n_samples": 731,
+      "signal": 0.3687232766906815,
+      "pvalue": 0.07584830339321358,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "EGR1",
+      "n_samples": 322,
+      "signal": 0.5343149992165008,
+      "pvalue": 0.17964071856287425,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "ELMSAN1",
+      "n_samples": 937,
+      "signal": 0.35357574312100065,
+      "pvalue": 0.07784431137724551,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "ETS2",
+      "n_samples": 1201,
+      "signal": 0.14095057389926213,
+      "pvalue": 0.7005988023952096,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "FEV",
+      "n_samples": 704,
+      "signal": 0.1541524478905671,
+      "pvalue": 0.8622754491017964,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "FOSB",
+      "n_samples": 630,
+      "signal": 0.2167233766027512,
+      "pvalue": 0.6067864271457086,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "FOXA1",
+      "n_samples": 851,
+      "signal": 0.15378972214821307,
+      "pvalue": 0.8003992015968064,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "FOXA3",
+      "n_samples": 494,
+      "signal": 0.18333097693840592,
+      "pvalue": 0.8542914171656687,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "FOXF1",
+      "n_samples": 874,
+      "signal": 0.39780419754559415,
+      "pvalue": 0.059880239520958084,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "FOXL2",
+      "n_samples": 652,
+      "signal": 0.23330250317479082,
+      "pvalue": 0.5049900199600799,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "FOXO4",
+      "n_samples": 215,
+      "signal": 0.6897986616441297,
+      "pvalue": 0.18562874251497005,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "GLB1L2",
+      "n_samples": 463,
+      "signal": 0.7457530603149642,
+      "pvalue": 0.02594810379241517,
+      "raw_detect": true,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "HK2",
+      "n_samples": 303,
+      "signal": 0.31515702696325687,
+      "pvalue": 0.6826347305389222,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "HNF4A",
+      "n_samples": 237,
+      "signal": 0.5024888265470764,
+      "pvalue": 0.3972055888223553,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "HOXA13",
+      "n_samples": 274,
+      "signal": 0.3451873938986997,
+      "pvalue": 0.7065868263473054,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "HOXB9",
+      "n_samples": 701,
+      "signal": 0.30765677380444567,
+      "pvalue": 0.2215568862275449,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "HOXC13",
+      "n_samples": 385,
+      "signal": 0.6041670069615499,
+      "pvalue": 0.09580838323353294,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "IER5L",
+      "n_samples": 405,
+      "signal": 0.4399373008435772,
+      "pvalue": 0.18962075848303392,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "IGDCC3",
+      "n_samples": 613,
+      "signal": 0.4619748155765318,
+      "pvalue": 0.0499001996007984,
+      "raw_detect": true,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "IKZF3",
+      "n_samples": 681,
+      "signal": 0.26743839466643926,
+      "pvalue": 0.29141716566866266,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "IRF1",
+      "n_samples": 427,
+      "signal": 1.0703186398568199,
+      "pvalue": 0.003992015968063872,
+      "raw_detect": true,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "ISL2",
+      "n_samples": 582,
+      "signal": 0.3976188502189587,
+      "pvalue": 0.11177644710578842,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "JUN",
+      "n_samples": 266,
+      "signal": 0.4157402124185704,
+      "pvalue": 0.5149700598802395,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "KIAA1804",
+      "n_samples": 278,
+      "signal": 0.5142119625785477,
+      "pvalue": 0.2554890219560878,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "KIF18B",
+      "n_samples": 254,
+      "signal": 0.1657877316028513,
+      "pvalue": 0.9900199600798403,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "KIF2C",
+      "n_samples": 634,
+      "signal": 0.25939173704065244,
+      "pvalue": 0.47704590818363274,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "KLF1",
+      "n_samples": 1960,
+      "signal": 0.2880508725842101,
+      "pvalue": 0.01996007984031936,
+      "raw_detect": true,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "KMT2A",
+      "n_samples": 241,
+      "signal": 0.289198778157966,
+      "pvalue": 0.874251497005988,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "LHX1",
+      "n_samples": 375,
+      "signal": 0.3636106241690348,
+      "pvalue": 0.3812375249500998,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "LYL1",
+      "n_samples": 432,
+      "signal": 0.6100708174945421,
+      "pvalue": 0.05189620758483034,
+      "raw_detect": true,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "MAML2",
+      "n_samples": 626,
+      "signal": 0.4399933191320712,
+      "pvalue": 0.0499001996007984,
+      "raw_detect": true,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "MAP2K3",
+      "n_samples": 579,
+      "signal": 0.42883490844228966,
+      "pvalue": 0.10179640718562874,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "MAP2K6",
+      "n_samples": 878,
+      "signal": 0.13921468081455632,
+      "pvalue": 0.8203592814371258,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "MAP4K3",
+      "n_samples": 363,
+      "signal": 0.24057480318691885,
+      "pvalue": 0.8043912175648703,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "MAP4K5",
+      "n_samples": 366,
+      "signal": 0.12642652959931824,
+      "pvalue": 0.9880239520958084,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "MAP7D1",
+      "n_samples": 751,
+      "signal": 0.19255440993473913,
+      "pvalue": 0.6147704590818364,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "MAPK1",
+      "n_samples": 765,
+      "signal": 0.23937766666708668,
+      "pvalue": 0.34930139720558884,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "MEIS1",
+      "n_samples": 776,
+      "signal": 0.2355411856333232,
+      "pvalue": 0.39520958083832336,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "MIDN",
+      "n_samples": 298,
+      "signal": 0.2642406336565573,
+      "pvalue": 0.846307385229541,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "NCL",
+      "n_samples": 237,
+      "signal": 0.3744927814169811,
+      "pvalue": 0.716566866267465,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "OSR2",
+      "n_samples": 1003,
+      "signal": 0.16027188344428847,
+      "pvalue": 0.654690618762475,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "POU3F2",
+      "n_samples": 359,
+      "signal": 0.2228399321359372,
+      "pvalue": 0.8902195608782435,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "PRDM1",
+      "n_samples": 297,
+      "signal": 0.30773431649817773,
+      "pvalue": 0.7584830339321357,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "PRTG",
+      "n_samples": 685,
+      "signal": 0.36163800147783826,
+      "pvalue": 0.10778443113772455,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "PTPN1",
+      "n_samples": 419,
+      "signal": 0.4509947593678482,
+      "pvalue": 0.16766467065868262,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "PTPN12",
+      "n_samples": 445,
+      "signal": 0.2397639053971346,
+      "pvalue": 0.7425149700598802,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "PTPN13",
+      "n_samples": 270,
+      "signal": 0.5037849369363846,
+      "pvalue": 0.3033932135728543,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "PTPN9",
+      "n_samples": 445,
+      "signal": 0.2943832750713655,
+      "pvalue": 0.5029940119760479,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "RHOXF2",
+      "n_samples": 328,
+      "signal": 0.2896405436354249,
+      "pvalue": 0.7325349301397206,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "RREB1",
+      "n_samples": 331,
+      "signal": 0.21908182893437214,
+      "pvalue": 0.9041916167664671,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "RUNX1T1",
+      "n_samples": 779,
+      "signal": 0.24859952583734518,
+      "pvalue": 0.3393213572854291,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "S1PR2",
+      "n_samples": 541,
+      "signal": 0.2127821229378304,
+      "pvalue": 0.6986027944111777,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "SAMD1",
+      "n_samples": 498,
+      "signal": 0.1729556554749553,
+      "pvalue": 0.9181636726546906,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "SET",
+      "n_samples": 986,
+      "signal": 0.38515861825659986,
+      "pvalue": 0.031936127744510975,
+      "raw_detect": true,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "SGK1",
+      "n_samples": 483,
+      "signal": 0.22787641574321615,
+      "pvalue": 0.7065868263473054,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "SLC38A2",
+      "n_samples": 332,
+      "signal": 0.45112281219822215,
+      "pvalue": 0.3153692614770459,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "SLC4A1",
+      "n_samples": 1000,
+      "signal": 0.18096469624365086,
+      "pvalue": 0.562874251497006,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "SLC6A9",
+      "n_samples": 558,
+      "signal": 0.1833145197022499,
+      "pvalue": 0.8582834331337326,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "SNAI1",
+      "n_samples": 467,
+      "signal": 0.3109105505378827,
+      "pvalue": 0.405189620758483,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "SPI1",
+      "n_samples": 613,
+      "signal": 0.4855557680372575,
+      "pvalue": 0.0658682634730539,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "STIL",
+      "n_samples": 309,
+      "signal": 0.23634729249538666,
+      "pvalue": 0.9101796407185628,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "TBX2",
+      "n_samples": 690,
+      "signal": 0.24228389659973665,
+      "pvalue": 0.43313373253493015,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "TBX3",
+      "n_samples": 691,
+      "signal": 0.2780508164912328,
+      "pvalue": 0.29740518962075846,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "TGFBR2",
+      "n_samples": 646,
+      "signal": 0.3580195918944018,
+      "pvalue": 0.1157684630738523,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "TMSB4X",
+      "n_samples": 543,
+      "signal": 0.24658744715183584,
+      "pvalue": 0.6207584830339321,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "TP73",
+      "n_samples": 248,
+      "signal": 0.699325641839803,
+      "pvalue": 0.12974051896207583,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "TSC22D1",
+      "n_samples": 441,
+      "signal": 0.41071779292134614,
+      "pvalue": 0.2275449101796407,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "UBASH3A",
+      "n_samples": 819,
+      "signal": 0.15606866584009824,
+      "pvalue": 0.7624750499001997,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "UBASH3B",
+      "n_samples": 1202,
+      "signal": 0.37719127823520876,
+      "pvalue": 0.027944111776447105,
+      "raw_detect": true,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "ZBTB1",
+      "n_samples": 693,
+      "signal": 0.17761925321409724,
+      "pvalue": 0.7425149700598802,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "ZBTB25",
+      "n_samples": 740,
+      "signal": 0.6356505791142404,
+      "pvalue": 0.007984031936127744,
+      "raw_detect": true,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "ZC3HAV1",
+      "n_samples": 516,
+      "signal": 1.0596481968462457,
+      "pvalue": 0.001996007984031936,
+      "raw_detect": true,
+      "bh_detect": false,
+      "disjoint_applied": true
+    },
+    {
+      "environment": "ZNF318",
+      "n_samples": 650,
+      "signal": 0.303106783424266,
+      "pvalue": 0.23552894211576847,
+      "raw_detect": false,
+      "bh_detect": false,
+      "disjoint_applied": true
+    }
+  ]
+}

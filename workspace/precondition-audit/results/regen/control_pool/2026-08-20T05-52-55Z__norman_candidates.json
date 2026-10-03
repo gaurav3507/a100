@@ -1,0 +1,154 @@
+{
+  "norman_candidates": {
+    "cap": 2000,
+    "expected_participation_ratio": 224.0635699268002,
+    "expected_source": "2026-08-11T06-20-34Z__norman.json",
+    "candidates": [
+      {
+        "dataset": "norman",
+        "status": "ok",
+        "available_controls": 8907,
+        "n_effective": 2000,
+        "cap_requested": 2000,
+        "matched": true,
+        "shortfall": 0,
+        "n_genes": 5000,
+        "participation_ratio": 224.0635699268002,
+        "effective_rank_exp_spectral_entropy": 538.6230428286054,
+        "n_components_for_variance_95pct": 700,
+        "top_eigenvalue_share": 0.034840068355011584,
+        "rank_bound": 1999,
+        "expected_participation_ratio": 224.0635699268002,
+        "expected_source": "2026-08-11T06-20-34Z__norman.json",
+        "expected_at_cap": 2000,
+        "reproduces_expected": true,
+        "provenance": {
+          "resolved_input_paths": [
+            "/workspace/external/discrepancy_vae/datasets/Norman2019_raw.h5ad"
+          ],
+          "input_path": "/workspace/external/discrepancy_vae/datasets/Norman2019_raw.h5ad",
+          "n_cells": 66738,
+          "n_genes": 5000,
+          "n_control_cells": 8907,
+          "full_value_array": {
+            "label": "full value array",
+            "shape": [
+              66738,
+              5000
+            ],
+            "dtype": "float64",
+            "max": 8.774093627929688,
+            "mean": 0.11444912760407251,
+            "n_nonzero_hashed": 50000,
+            "nonzero_available": 28875878,
+            "sha256_first_nonzero": "755ed1b6b65ab59ceec98596bac038dcd50d18d4401d923825a586538631dab9",
+            "hash_spec": "sha256 of the first 50000 non-zero entries, row-major, cast to float64"
+          },
+          "control_value_array": {
+            "label": "control matrix",
+            "shape": [
+              8907,
+              5000
+            ],
+            "dtype": "float64",
+            "max": 8.198484420776367,
+            "mean": 0.11372087532482432,
+            "n_nonzero_hashed": 50000,
+            "nonzero_available": 3920777,
+            "sha256_first_nonzero": "02e66d0161e3ac5bc60f2e39fb5a1d64895f227af5ff8c2a062fec5dac0c204f",
+            "hash_spec": "sha256 of the first 50000 non-zero entries, row-major, cast to float64"
+          },
+          "legacy_fingerprint": {
+            "shape": [
+              8907,
+              5000
+            ],
+            "dtype": "float64",
+            "sum": 5064559.182591051,
+            "sumsq": 10049776.12938899,
+            "nan_count": 0
+          }
+        },
+        "candidate_path": "/workspace/external/discrepancy_vae/datasets/Norman2019_raw.h5ad",
+        "reproduces_published": true
+      },
+      {
+        "dataset": "norman",
+        "status": "ok",
+        "available_controls": 8907,
+        "n_effective": 2000,
+        "cap_requested": 2000,
+        "matched": true,
+        "shortfall": 0,
+        "n_genes": 5000,
+        "participation_ratio": 224.0635699268002,
+        "effective_rank_exp_spectral_entropy": 538.6230428286054,
+        "n_components_for_variance_95pct": 700,
+        "top_eigenvalue_share": 0.034840068355011584,
+        "rank_bound": 1999,
+        "expected_participation_ratio": 224.0635699268002,
+        "expected_source": "2026-08-11T06-20-34Z__norman.json",
+        "expected_at_cap": 2000,
+        "reproduces_expected": true,
+        "provenance": {
+          "resolved_input_paths": [
+            "/workspace/external/discrepancy_vae/datasets/datasets/Norman2019.h5ad"
+          ],
+          "input_path": "/workspace/external/discrepancy_vae/datasets/datasets/Norman2019.h5ad",
+          "n_cells": 66738,
+          "n_genes": 5000,
+          "n_control_cells": 8907,
+          "full_value_array": {
+            "label": "full value array",
+            "shape": [
+              66738,
+              5000
+            ],
+            "dtype": "float64",
+            "max": 8.774093627929688,
+            "mean": 0.11444912760407251,
+            "n_nonzero_hashed": 50000,
+            "nonzero_available": 28875878,
+            "sha256_first_nonzero": "755ed1b6b65ab59ceec98596bac038dcd50d18d4401d923825a586538631dab9",
+            "hash_spec": "sha256 of the first 50000 non-zero entries, row-major, cast to float64"
+          },
+          "control_value_array": {
+            "label": "control matrix",
+            "shape": [
+              8907,
+              5000
+            ],
+            "dtype": "float64",
+            "max": 8.198484420776367,
+            "mean": 0.11372087532482432,
+            "n_nonzero_hashed": 50000,
+            "nonzero_available": 3920777,
+            "sha256_first_nonzero": "02e66d0161e3ac5bc60f2e39fb5a1d64895f227af5ff8c2a062fec5dac0c204f",
+            "hash_spec": "sha256 of the first 50000 non-zero entries, row-major, cast to float64"
+          },
+          "legacy_fingerprint": {
+            "shape": [
+              8907,
+              5000
+            ],
+            "dtype": "float64",
+            "sum": 5064559.182591051,
+            "sumsq": 10049776.12938899,
+            "nan_count": 0
+          }
+        },
+        "candidate_path": "/workspace/external/discrepancy_vae/datasets/datasets/Norman2019.h5ad",
+        "reproduces_published": true
+      },
+      {
+        "path": "/workspace/external/discrepancy_vae/datasets/datasets/Norman2019_prep_new.h5ad",
+        "status": "error",
+        "reason": "KeyError: 'guide_ids'"
+      }
+    ]
+  },
+  "contains_no_test": true,
+  "disclaimer": "DESCRIPTIVE ONLY. No rank test was run and no assumption verdict is expressed or implied.",
+  "simulator_sha256": "93e8a22368a6df85eeef11777c98f1f66b6283e597e4d12e1a73698f76a4b7d6",
+  "peak_rss_mb": 8157.3
+}

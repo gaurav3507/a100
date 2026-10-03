@@ -1,0 +1,162 @@
+{
+  "dataset": "rpe1",
+  "cap": 2000,
+  "arms": [
+    "raw",
+    "standardise",
+    "log1p_std",
+    "rank_int"
+  ],
+  "loader_probe": {
+    "n_sampled": 200000,
+    "min": 0.0,
+    "max": 5.825272560119629,
+    "mean": 0.6177903254235536,
+    "frac_integer": 0.491675,
+    "frac_integer_nonzero": 0.0,
+    "n_nonzero_sampled": 101665,
+    "frac_zero": 0.491675,
+    "has_negative": false
+  },
+  "input_kind": "already_transformed",
+  "input_kind_reason": "only 0.0000 of NON-ZERO entries are integral (max=5.825, frac_zero=0.492): already normalised upstream, most likely log1p. A further log1p would be a DOUBLE log",
+  "arms_result": {
+    "raw": {
+      "n_control_used": 2000,
+      "n_control_available": 11485,
+      "n_genes": 651,
+      "rank_bound": 651,
+      "participation_ratio": 234.46088802423623,
+      "effective_rank_exp_spectral_entropy": 436.3767532684502,
+      "n_components_for_variance": {
+        "80pct": 314,
+        "90pct": 418,
+        "95pct": 496
+      },
+      "top_eigenvalue_share": 0.041076101778953565,
+      "n_nonzero_eigenvalues": 651,
+      "matches_fit_pca_basis": true,
+      "fit_pca_mu_identical": true,
+      "spectra_key": "rpe1__raw__2000",
+      "lam_len": 651,
+      "lam_sum": 123.72006664872015,
+      "lam_sumsq": 65.28447034620763,
+      "numerical_rank": 651,
+      "status": "ok",
+      "spectra_sidecar": "2026-08-11T09-37-10Z__rpe1__sweep_spectra.npz"
+    },
+    "standardise": {
+      "n_control_used": 2000,
+      "n_control_available": 11485,
+      "n_genes": 651,
+      "rank_bound": 651,
+      "participation_ratio": 326.3749028549807,
+      "effective_rank_exp_spectral_entropy": 498.7694071938402,
+      "n_components_for_variance": {
+        "80pct": 357,
+        "90pct": 461,
+        "95pct": 533
+      },
+      "top_eigenvalue_share": 0.029111974721301177,
+      "n_nonzero_eigenvalues": 651,
+      "matches_fit_pca_basis": true,
+      "fit_pca_mu_identical": true,
+      "spectra_key": "rpe1__standardise__2000",
+      "lam_len": 651,
+      "lam_sum": 652.796364190533,
+      "lam_sumsq": 1305.6858519839336,
+      "numerical_rank": 651,
+      "status": "ok",
+      "spectra_sidecar": "2026-08-11T09-37-10Z__rpe1__sweep_spectra.npz"
+    },
+    "log1p_std": {
+      "status": "null",
+      "reason": "input is already log-like, so log1p_std would be a double log; emitted as null rather than reported as a preprocessing choice"
+    },
+    "rank_int": {
+      "n_control_used": 2000,
+      "n_control_available": 11485,
+      "n_genes": 651,
+      "rank_bound": 651,
+      "participation_ratio": 30.845373375934642,
+      "effective_rank_exp_spectral_entropy": 257.99638319108993,
+      "n_components_for_variance": {
+        "80pct": 301,
+        "90pct": 415,
+        "95pct": 499
+      },
+      "top_eigenvalue_share": 0.1739208237827448,
+      "n_nonzero_eigenvalues": 651,
+      "matches_fit_pca_basis": true,
+      "fit_pca_mu_identical": true,
+      "spectra_key": "rpe1__rank_int__2000",
+      "lam_len": 651,
+      "lam_sum": 647.0133320153773,
+      "lam_sumsq": 13571.768015369536,
+      "numerical_rank": 651,
+      "status": "ok",
+      "spectra_sidecar": "2026-08-11T09-37-10Z__rpe1__sweep_spectra.npz"
+    }
+  },
+  "pr_spread": 10.581000232262264,
+  "expected_raw_participation_ratio": 234.46088802423623,
+  "expected_from_artefact": "2026-08-11T06-12-20Z__rpe1.json",
+  "contains_no_test": true,
+  "disclaimer": "DESCRIPTIVE ONLY. No rank test was run and no assumption verdict is expressed or implied.",
+  "spectra_sidecar": "2026-08-11T09-37-10Z__rpe1__sweep_spectra.npz",
+  "peak_rss_mb": 1880.2,
+  "meta": {
+    "statistic": "descriptive",
+    "gate": "preprocessing_sweep",
+    "git_commit": "9f2b1d5",
+    "timestamp": "2026-08-11T09:37:10Z",
+    "config": {
+      "alpha": null,
+      "B": null,
+      "n_e": 2000,
+      "d": null,
+      "d_latent": null,
+      "D": null,
+      "n_env": null,
+      "seeds": [
+        0
+      ],
+      "draws_per_point": null,
+      "extra": {
+        "dataset": "rpe1",
+        "arms": [
+          "raw",
+          "standardise",
+          "log1p_std",
+          "rank_int"
+        ],
+        "cap": 2000,
+        "hvg": null,
+        "platform_tag": "Linux-x86_64-py3.10.12",
+        "timezone": "UTC",
+        "timestamp_suffix": "Z"
+      }
+    },
+    "versions": {
+      "python": "3.10.12",
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "pandas": "2.3.3",
+      "sklearn": "1.7.2",
+      "scanpy": "1.11.5",
+      "anndata": "0.11.4",
+      "platform": {
+        "system": "Linux",
+        "release": "5.15.0-1065-nvidia",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "python_implementation": "CPython",
+        "numpy_blas": "scipy-openblas"
+      }
+    },
+    "superseded_by": null,
+    "migrated_from": null,
+    "status": "CURRENT",
+    "note": "preprocessing sweep for rpe1 at matched n=2000"
+  }
+}

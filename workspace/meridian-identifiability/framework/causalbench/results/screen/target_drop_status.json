@@ -1,0 +1,102 @@
+{
+  "note": "Reports whether project()'s target-column drop was LIVE or NO-OP in the runs that produced the screen numbers.",
+  "rows": [
+    {
+      "dataset": "k562",
+      "filter": false,
+      "path": "/workspace/meridian-identifiability/causalbench/data/dataset_k562.npz",
+      "n_var_names": 1158,
+      "n_unique_targets": 1158,
+      "n_targets_in_expression_columns": 1158,
+      "target_column_drop_is_noop": false,
+      "drop_status": "LIVE",
+      "example_overlapping": [
+        "ENSG00000004779",
+        "ENSG00000004897",
+        "ENSG00000005007",
+        "ENSG00000005100",
+        "ENSG00000005194",
+        "ENSG00000005448",
+        "ENSG00000006634",
+        "ENSG00000006712",
+        "ENSG00000006715",
+        "ENSG00000007168"
+      ]
+    },
+    {
+      "dataset": "k562",
+      "filter": true,
+      "path": "/workspace/meridian-identifiability/causalbench/data/dataset_k562_filtered.npz",
+      "n_var_names": 622,
+      "n_unique_targets": 622,
+      "n_targets_in_expression_columns": 622,
+      "target_column_drop_is_noop": false,
+      "drop_status": "LIVE",
+      "example_overlapping": [
+        "ENSG00000004779",
+        "ENSG00000004897",
+        "ENSG00000005007",
+        "ENSG00000005100",
+        "ENSG00000005194",
+        "ENSG00000006712",
+        "ENSG00000008018",
+        "ENSG00000008324",
+        "ENSG00000008988",
+        "ENSG00000010244"
+      ]
+    },
+    {
+      "dataset": "rpe1",
+      "filter": false,
+      "path": "/workspace/meridian-identifiability/causalbench/data/dataset_rpe1.npz",
+      "n_var_names": 651,
+      "n_unique_targets": 651,
+      "n_targets_in_expression_columns": 651,
+      "target_column_drop_is_noop": false,
+      "drop_status": "LIVE",
+      "example_overlapping": [
+        "ENSG00000001084",
+        "ENSG00000004487",
+        "ENSG00000005448",
+        "ENSG00000006695",
+        "ENSG00000006715",
+        "ENSG00000006744",
+        "ENSG00000007866",
+        "ENSG00000008324",
+        "ENSG00000010244",
+        "ENSG00000010256"
+      ]
+    },
+    {
+      "dataset": "rpe1",
+      "filter": true,
+      "path": "/workspace/meridian-identifiability/causalbench/data/dataset_rpe1_filtered.npz",
+      "n_var_names": 383,
+      "n_unique_targets": 383,
+      "n_targets_in_expression_columns": 383,
+      "target_column_drop_is_noop": false,
+      "drop_status": "LIVE",
+      "example_overlapping": [
+        "ENSG00000004487",
+        "ENSG00000006715",
+        "ENSG00000010292",
+        "ENSG00000010810",
+        "ENSG00000012174",
+        "ENSG00000013374",
+        "ENSG00000014123",
+        "ENSG00000015676",
+        "ENSG00000029364",
+        "ENSG00000035141"
+      ]
+    },
+    {
+      "dataset": "norman",
+      "source": "stored norman.json",
+      "n_var_names": 5000,
+      "n_unique_targets": 105,
+      "n_targets_in_expression_columns": 0,
+      "target_column_drop_is_noop": true,
+      "drop_status": "NO-OP"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "grd_external_data_manifest_v1",
+  "code_commit": "566bef229dcba30c33c8f9d4e205c54ad54e3650",
+  "inputs": {
+    "K562": {
+      "kind": "file",
+      "resolved_path": "/workspace/external/discrepancy_vae/datasets/causalbench_k562.h5ad",
+      "size_bytes": 1319095768,
+      "sha256": "006a1c1892f42d1edb8d3e8bcbdbb2f7d58d1611c0f22426768b20c60632ee4e"
+    },
+    "RPE1": {
+      "kind": "file",
+      "resolved_path": "/workspace/external/discrepancy_vae/datasets/causalbench_rpe1.h5ad",
+      "size_bytes": 370700866,
+      "sha256": "b14b0db0d755ad787e41b46e04695407db856d2cc55864716c4832801e495831"
+    },
+    "Norman": {
+      "kind": "file",
+      "resolved_path": "/workspace/external/discrepancy_vae/datasets/Norman2019_raw.h5ad",
+      "size_bytes": 762145505,
+      "sha256": "298871ec3fc8d34ed8bbc9fddd2f2c916f847a9d71195e0b63b7c3f89f570de7"
+    },
+    "ABIDE": {
+      "kind": "file",
+      "resolved_path": "/workspace/ranktest-diagnostics/data/abide_harmonized.npz",
+      "size_bytes": 63994483,
+      "sha256": "174c56301450015ec139e2c6b19eede5d70d29bbf503dcc73f31d774495bc795"
+    },
+    "HCP": {
+      "kind": "npy_tree",
+      "resolved_path": "/workspace/meridian-identifiability/hcp/ts",
+      "file_count": 1340,
+      "size_bytes": 298358720,
+      "manifest_sha256": "eaa7eff3a23d7b1c6c6da08c37d5410bddc755162ded0835cfa37a079bbee36a",
+      "manifest_definition": "SHA-256 over sorted lines: relative_path<TAB>size<TAB>file_sha256"
+    }
+  }
+}

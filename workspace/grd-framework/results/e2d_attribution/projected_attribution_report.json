@@ -1,0 +1,5842 @@
+{
+  "experiment": "e2d_projected_attribution_power_gate",
+  "mode": "full",
+  "decision": "NO_GO",
+  "decision_eligible": true,
+  "decision_rule": "GO only when every criterion passes in both predeclared regimes; otherwise NO_GO. Smoke runs cannot authorize real-data analysis.",
+  "scientific_scope": "Synthetic calibration of the projected subspace attributor only; no real data and no upstream detectability filter.",
+  "alpha": 0.05,
+  "B": 500,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "d_latent": 10,
+  "d_observed": 651,
+  "d_projected": 40,
+  "projection_seeds": [
+    7300,
+    7301,
+    7302,
+    7303,
+    7304
+  ],
+  "pvalue_combination": "min(1, K * min_k(p_k))",
+  "regimes": [
+    {
+      "name": "rpe1_like",
+      "n_control": 2000,
+      "n_env": 250
+    },
+    {
+      "name": "small_n",
+      "n_control": 100,
+      "n_env": 94
+    }
+  ],
+  "edge_prob": 0.4,
+  "observation_noise_fraction": 0.1,
+  "hard_intervention_variance": 0.1,
+  "criteria": {
+    "null_false_positive_rate_max": 0.1,
+    "mechanism_false_attribution_rate_max": 0.1,
+    "mixed_gain_power_min": 0.8,
+    "projection_mixed_rate_range_max": 0.25
+  },
+  "summaries": {
+    "rpe1_like": {
+      "n_seeds": 20,
+      "combined_rejection_rates": {
+        "independent_null": 0.05,
+        "mechanism_hard_iv": 0.5,
+        "mixed_gain_u05_15": 0.85,
+        "uniform_gain_0.7": 1.0
+      },
+      "projection_mixed_rejection_rates_nominal": {
+        "7300": 0.9,
+        "7301": 0.85,
+        "7302": 0.9,
+        "7303": 0.9,
+        "7304": 0.9
+      },
+      "projection_mixed_rate_range": 0.050000000000000044,
+      "criterion_checks": {
+        "null_false_positive_rate": true,
+        "mechanism_false_attribution_rate": false,
+        "mixed_gain_power": true,
+        "projection_stability": true
+      },
+      "passes_all": false
+    },
+    "small_n": {
+      "n_seeds": 20,
+      "combined_rejection_rates": {
+        "independent_null": 0.0,
+        "mechanism_hard_iv": 0.0,
+        "mixed_gain_u05_15": 0.4,
+        "uniform_gain_0.7": 0.2
+      },
+      "projection_mixed_rejection_rates_nominal": {
+        "7300": 0.4,
+        "7301": 0.25,
+        "7302": 0.3,
+        "7303": 0.3,
+        "7304": 0.35
+      },
+      "projection_mixed_rate_range": 0.15000000000000002,
+      "criterion_checks": {
+        "null_false_positive_rate": true,
+        "mechanism_false_attribution_rate": true,
+        "mixed_gain_power": false,
+        "projection_stability": true
+      },
+      "passes_all": false
+    }
+  },
+  "rows": [
+    {
+      "seed": 0,
+      "regime": "rpe1_like",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 12.993122990627118,
+          "null_q95_deg": 15.906751642959016
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 11.67966546216051,
+          "null_q95_deg": 14.107653736123803
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 12.333507070616413,
+          "null_q95_deg": 15.115424823689054
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 12.491410971826488,
+          "null_q95_deg": 15.044062348588445
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 11.321279190845768,
+          "null_q95_deg": 13.463225981497068
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            12.469325388304279,
+            12.03640674744719,
+            12.106301321984297,
+            12.37833413405193,
+            11.909213216605135
+          ],
+          "projection_pvalues": [
+            0.6706586826347305,
+            0.38323353293413176,
+            0.5708582834331337,
+            0.5229540918163673,
+            0.2934131736526946
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            12.477214981074688,
+            14.392117596134199,
+            11.559419767773228,
+            12.751662252572814,
+            10.383945276030685
+          ],
+          "projection_pvalues": [
+            0.6686626746506986,
+            0.04590818363273453,
+            0.7085828343313373,
+            0.4311377245508982,
+            0.7504990019960079
+          ],
+          "combined_pvalue": 0.22954091816367264,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            28.10909286632454,
+            27.731592302285144,
+            29.614817711403607,
+            26.367353374873833,
+            28.702741445969714
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            22.209332193275362,
+            15.962572309055034,
+            16.37802953229704,
+            15.130143725965741,
+            15.203574569568321
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.007984031936127744,
+            0.011976047904191617,
+            0.04790419161676647,
+            0.005988023952095809
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "seed": 1,
+      "regime": "rpe1_like",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 12.059434640290775,
+          "null_q95_deg": 14.559828226412892
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 12.109267812479565,
+          "null_q95_deg": 14.603499903782424
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 13.004310717322735,
+          "null_q95_deg": 15.891736918897152
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 15.72606960954553,
+          "null_q95_deg": 18.95312086146307
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 14.2869488564234,
+          "null_q95_deg": 17.128979517894017
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            11.807372299595706,
+            13.489829235635584,
+            16.89908175769594,
+            16.82984142068972,
+            15.017059312034124
+          ],
+          "projection_pvalues": [
+            0.5888223552894212,
+            0.16167664670658682,
+            0.00998003992015968,
+            0.27944111776447106,
+            0.3413173652694611
+          ],
+          "combined_pvalue": 0.0499001996007984,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            true,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            9.04300755359136,
+            12.34682110186844,
+            13.40146590285781,
+            14.268191129104535,
+            13.217157602966603
+          ],
+          "projection_pvalues": [
+            0.9840319361277445,
+            0.43313373253493015,
+            0.40718562874251496,
+            0.7245508982035929,
+            0.7125748502994012
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            28.995883087998788,
+            26.99306972907983,
+            29.32595679026063,
+            28.055905113089192,
+            31.054589168847507
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            14.51377427072925,
+            16.714221291436335,
+            19.229465500038973,
+            30.711367560597523,
+            25.93893804810697
+          ],
+          "projection_pvalues": [
+            0.05588822355289421,
+            0.003992015968063872,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            false,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "seed": 2,
+      "regime": "rpe1_like",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 13.936917471465097,
+          "null_q95_deg": 17.143809611854515
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 13.884824201264555,
+          "null_q95_deg": 17.255644887338708
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 12.689847977327934,
+          "null_q95_deg": 15.773085521063132
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 11.944318798924138,
+          "null_q95_deg": 14.523102740076746
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 12.176003301896221,
+          "null_q95_deg": 14.86627104952385
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            11.70021919440218,
+            16.603030254932182,
+            13.25185811296439,
+            11.824084414434296,
+            11.618880440486008
+          ],
+          "projection_pvalues": [
+            0.9201596806387226,
+            0.09780439121756487,
+            0.3852295409181637,
+            0.5289421157684631,
+            0.6487025948103793
+          ],
+          "combined_pvalue": 0.4890219560878244,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            13.143001601779126,
+            10.468141091883924,
+            16.052130649752794,
+            15.31995046927948,
+            12.413041086925546
+          ],
+          "projection_pvalues": [
+            0.6766467065868264,
+            0.9780439121756487,
+            0.03992015968063872,
+            0.015968063872255488,
+            0.4351297405189621
+          ],
+          "combined_pvalue": 0.07984031936127745,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            true,
+            true,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            32.19841622449921,
+            27.842674745906862,
+            28.20254156049158,
+            29.608206978097716,
+            23.676606060262838
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            16.02431100920215,
+            19.85264632148596,
+            19.529411967951603,
+            14.634641393190899,
+            18.31919925199126
+          ],
+          "projection_pvalues": [
+            0.1317365269461078,
+            0.003992015968063872,
+            0.001996007984031936,
+            0.041916167664670656,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            false,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "seed": 3,
+      "regime": "rpe1_like",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 6.557772847970509,
+          "null_q95_deg": 7.795920465579235
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 6.8369122420816595,
+          "null_q95_deg": 8.075662329716364
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 7.198255721268586,
+          "null_q95_deg": 8.645622453759328
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 5.809979785023701,
+          "null_q95_deg": 6.8061933032421775
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 6.91809517633837,
+          "null_q95_deg": 8.327177219772816
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            6.209266336172883,
+            7.46989621638015,
+            6.876383692090701,
+            5.0712229954968775,
+            7.42831326373464
+          ],
+          "projection_pvalues": [
+            0.6946107784431138,
+            0.2055888223552894,
+            0.6846307385229541,
+            0.9101796407185628,
+            0.26147704590818366
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            8.40509429470409,
+            8.189077470481585,
+            8.207432552009223,
+            9.151241685501986,
+            7.781386246881809
+          ],
+          "projection_pvalues": [
+            0.015968063872255488,
+            0.04790419161676647,
+            0.10778443113772455,
+            0.001996007984031936,
+            0.1596806387225549
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            false,
+            true,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            29.468161777154858,
+            32.15747134857884,
+            28.648777745956206,
+            25.703018034108084,
+            26.835067908535166
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            8.271052182515186,
+            8.465586319635838,
+            11.19350263106324,
+            7.919371130803149,
+            13.309577655741677
+          ],
+          "projection_pvalues": [
+            0.01996007984031936,
+            0.021956087824351298,
+            0.001996007984031936,
+            0.003992015968063872,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "seed": 4,
+      "regime": "rpe1_like",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 10.457902547588308,
+          "null_q95_deg": 12.797043686777046
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 8.500935244515004,
+          "null_q95_deg": 10.264170352216542
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 7.110246163914126,
+          "null_q95_deg": 8.398075219094936
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 6.82883359066967,
+          "null_q95_deg": 8.286630575152168
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 7.914487308948594,
+          "null_q95_deg": 9.754240140961581
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            9.653048237713602,
+            8.02774024693127,
+            6.931994697872563,
+            6.267450006687089,
+            7.940425286281742
+          ],
+          "projection_pvalues": [
+            0.7584830339321357,
+            0.6806387225548902,
+            0.5988023952095808,
+            0.8003992015968064,
+            0.48502994011976047
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            11.5794515173598,
+            8.987590038071266,
+            7.236686555207822,
+            6.7235340715285,
+            9.125263101641806
+          ],
+          "projection_pvalues": [
+            0.2275449101796407,
+            0.34331337325349304,
+            0.4291417165668663,
+            0.5489021956087824,
+            0.1437125748502994
+          ],
+          "combined_pvalue": 0.718562874251497,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            40.56619639392047,
+            25.998569358367952,
+            26.191711011874276,
+            28.06676912922274,
+            23.811222616812596
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            12.817670990861247,
+            14.701770531800728,
+            9.840626902480945,
+            9.528387090580894,
+            12.88684851988981
+          ],
+          "projection_pvalues": [
+            0.05189620758483034,
+            0.001996007984031936,
+            0.003992015968063872,
+            0.005988023952095809,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            false,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "seed": 5,
+      "regime": "rpe1_like",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 13.58987786788267,
+          "null_q95_deg": 16.502835671243115
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 16.556840290573895,
+          "null_q95_deg": 20.876522382467158
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 15.070871484673933,
+          "null_q95_deg": 18.836832931701863
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 21.5451722981189,
+          "null_q95_deg": 27.004121613496967
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 16.281069924574272,
+          "null_q95_deg": 20.36824042592763
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            13.352046698295446,
+            16.593727528750076,
+            13.565723421035441,
+            19.605119115507627,
+            13.106804271257745
+          ],
+          "projection_pvalues": [
+            0.5588822355289421,
+            0.499001996007984,
+            0.7884231536926147,
+            0.7305389221556886,
+            0.9620758483033932
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            12.668583506144097,
+            20.19049480913079,
+            17.877766451213997,
+            24.74894850043254,
+            22.97756103124998
+          ],
+          "projection_pvalues": [
+            0.7305389221556886,
+            0.08183632734530938,
+            0.09381237524950099,
+            0.17365269461077845,
+            0.007984031936127744
+          ],
+          "combined_pvalue": 0.03992015968063872,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            true
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            30.756976652464456,
+            28.230269776960416,
+            28.73355825733769,
+            30.738764869604108,
+            36.70755109782405
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.003992015968063872,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            17.15617209294207,
+            25.62601766407004,
+            25.104962151376256,
+            33.2539425296353,
+            25.004506183287337
+          ],
+          "projection_pvalues": [
+            0.027944111776447105,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "seed": 6,
+      "regime": "rpe1_like",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 34.49034114616487,
+          "null_q95_deg": 43.193329630385456
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 35.45334289268459,
+          "null_q95_deg": 48.987226917487995
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 43.3051822670787,
+          "null_q95_deg": 67.14479167935177
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 29.782312723197652,
+          "null_q95_deg": 36.98856859359217
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 27.762824051691403,
+          "null_q95_deg": 33.66906910454464
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            32.580522336220575,
+            34.560275733373345,
+            55.04569740622221,
+            31.436093177425857,
+            22.17297059628541
+          ],
+          "projection_pvalues": [
+            0.6806387225548902,
+            0.5728542914171657,
+            0.1536926147704591,
+            0.32934131736526945,
+            0.9800399201596807
+          ],
+          "combined_pvalue": 0.7684630738522955,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            51.55509377735527,
+            54.75525824859678,
+            43.057502103146696,
+            45.102909573509045,
+            34.4846639130053
+          ],
+          "projection_pvalues": [
+            0.013972055888223553,
+            0.013972055888223553,
+            0.5169660678642715,
+            0.001996007984031936,
+            0.033932135728542916
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            false,
+            true,
+            true
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            41.1458631893371,
+            38.32783485453679,
+            45.55307777967179,
+            38.436297308769085,
+            32.17620461659428
+          ],
+          "projection_pvalues": [
+            0.08782435129740519,
+            0.31137724550898205,
+            0.3972055888223553,
+            0.029940119760479042,
+            0.09780439121756487
+          ],
+          "combined_pvalue": 0.14970059880239522,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            true,
+            false
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            71.24212331414677,
+            84.10727152872525,
+            74.41705931945626,
+            72.03202446998648,
+            65.10507784025552
+          ],
+          "projection_pvalues": [
+            0.003992015968063872,
+            0.003992015968063872,
+            0.02594810379241517,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "regime": "rpe1_like",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 9.055668614390004,
+          "null_q95_deg": 10.976086251089706
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 11.869178467695573,
+          "null_q95_deg": 14.45387634336429
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 8.791522173676784,
+          "null_q95_deg": 10.697179961325503
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 10.858703677102321,
+          "null_q95_deg": 13.043784127657098
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 10.018188335223753,
+          "null_q95_deg": 12.345035132563165
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            8.035480854767812,
+            11.007065734370553,
+            9.179132805995863,
+            11.13185911691742,
+            10.636117931170135
+          ],
+          "projection_pvalues": [
+            0.812375249500998,
+            0.7524950099800399,
+            0.34930139720558884,
+            0.4111776447105788,
+            0.28542914171656686
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            12.848174178540798,
+            11.589452421074757,
+            11.648218730922919,
+            12.738291018653511,
+            14.02110933630008
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.5948103792415169,
+            0.00998003992015968,
+            0.07984031936127745,
+            0.003992015968063872
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            false,
+            true,
+            false,
+            true
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            25.68343903820498,
+            28.466371155403227,
+            28.227733141720005,
+            34.34699545136541,
+            38.44723911486655
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            15.184874763561604,
+            15.606001115176813,
+            10.7256673446063,
+            15.428420218601326,
+            17.47516098311231
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.017964071856287425,
+            0.05189620758483034,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            false,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "seed": 8,
+      "regime": "rpe1_like",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 7.635654543133261,
+          "null_q95_deg": 8.958816168497176
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 7.879856287133688,
+          "null_q95_deg": 9.285471198374319
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 6.9960890735603645,
+          "null_q95_deg": 8.193544488859589
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 9.650671806334765,
+          "null_q95_deg": 11.728976006467317
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 8.226001541446715,
+          "null_q95_deg": 10.126664110944821
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            8.275307095894258,
+            8.586133999208958,
+            4.953719549294363,
+            8.987475719056702,
+            9.674929411458756
+          ],
+          "projection_pvalues": [
+            0.2375249500998004,
+            0.19760479041916168,
+            1.0,
+            0.7265469061876247,
+            0.11776447105788423
+          ],
+          "combined_pvalue": 0.5888223552894212,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            8.558598179144578,
+            7.742895261466709,
+            9.068049576311994,
+            12.030826629098655,
+            7.60547905318793
+          ],
+          "projection_pvalues": [
+            0.1437125748502994,
+            0.5728542914171657,
+            0.007984031936127744,
+            0.03792415169660679,
+            0.7285429141716567
+          ],
+          "combined_pvalue": 0.03992015968063872,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            true,
+            true,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            24.656407580948123,
+            25.83380515265817,
+            25.38013210468432,
+            32.02892148126579,
+            27.083109026902065
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            10.8083419740174,
+            9.344346773015614,
+            9.13545048140424,
+            12.546877344511131,
+            12.951203194585611
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.043912175648702596,
+            0.005988023952095809,
+            0.015968063872255488,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "seed": 9,
+      "regime": "rpe1_like",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 11.317817200439238,
+          "null_q95_deg": 13.58249437175916
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 11.040554537561306,
+          "null_q95_deg": 13.224951532372256
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 11.146006956059693,
+          "null_q95_deg": 13.446635155748274
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 11.209099135695473,
+          "null_q95_deg": 13.611819078455001
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 13.019228434962226,
+          "null_q95_deg": 15.620378632257358
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            10.400192753860104,
+            12.562690602969242,
+            9.610202594587765,
+            10.817264868730971,
+            13.008930109617651
+          ],
+          "projection_pvalues": [
+            0.7884231536926147,
+            0.1277445109780439,
+            0.8642714570858283,
+            0.6187624750499002,
+            0.5069860279441117
+          ],
+          "combined_pvalue": 0.6387225548902196,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            13.501474003765017,
+            11.688949661659281,
+            11.629158387895748,
+            12.31758397537929,
+            11.05369901828985
+          ],
+          "projection_pvalues": [
+            0.06187624750499002,
+            0.31137724550898205,
+            0.36327345309381237,
+            0.21756487025948104,
+            0.9321357285429142
+          ],
+          "combined_pvalue": 0.30938123752495006,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            28.911342735823204,
+            24.27509423935526,
+            30.41974287359809,
+            28.134939431203826,
+            26.209441616747178
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            15.991641451226862,
+            14.276782795107554,
+            20.40235896118686,
+            16.25504005193589,
+            18.311794035694337
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.021956087824351298,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.00998003992015968
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "seed": 10,
+      "regime": "rpe1_like",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 22.45210776917094,
+          "null_q95_deg": 28.233455403444406
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 20.780424288892508,
+          "null_q95_deg": 24.740764639826278
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 19.683805079575087,
+          "null_q95_deg": 24.355705427658886
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 18.24642656099834,
+          "null_q95_deg": 22.561453605732215
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 15.846942526712423,
+          "null_q95_deg": 18.338448281358698
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            24.5009892625177,
+            17.074801653139712,
+            17.664555979854807,
+            19.260651071332024,
+            14.343514309625245
+          ],
+          "projection_pvalues": [
+            0.2714570858283433,
+            0.9760479041916168,
+            0.7924151696606786,
+            0.3333333333333333,
+            0.8383233532934131
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            24.55527898803523,
+            30.231996685988662,
+            21.29143746690707,
+            18.07193042885367,
+            16.73047290439392
+          ],
+          "projection_pvalues": [
+            0.26147704590818366,
+            0.001996007984031936,
+            0.2774451097804391,
+            0.530938123752495,
+            0.26746506986027946
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            false,
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            34.366764507588705,
+            29.55600157204771,
+            30.584440763421384,
+            35.35059366611559,
+            27.10147824908395
+          ],
+          "projection_pvalues": [
+            0.003992015968063872,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            39.50544407017747,
+            31.858235019499606,
+            24.53664035214771,
+            28.512412841247066,
+            25.652415520688503
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.001996007984031936,
+            0.041916167664670656,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "seed": 11,
+      "regime": "rpe1_like",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 14.077754798989067,
+          "null_q95_deg": 16.828187247251897
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 10.677932377702893,
+          "null_q95_deg": 13.314268515954835
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 10.228511283688476,
+          "null_q95_deg": 12.320638034043352
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 14.25731280417811,
+          "null_q95_deg": 17.730304348276537
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 9.779381515866966,
+          "null_q95_deg": 11.666848840695286
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            16.545706808571435,
+            12.207888003110407,
+            9.829228966766218,
+            13.125860035763148,
+            8.959112271481354
+          ],
+          "projection_pvalues": [
+            0.06187624750499002,
+            0.14171656686626746,
+            0.6027944111776448,
+            0.718562874251497,
+            0.8143712574850299
+          ],
+          "combined_pvalue": 0.30938123752495006,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            10.964692939443456,
+            7.6403783399746015,
+            8.824016420374665,
+            11.670808174443232,
+            8.744830493087408
+          ],
+          "projection_pvalues": [
+            0.9481037924151696,
+            0.9960079840319361,
+            0.8662674650698603,
+            0.9141716566866267,
+            0.872255489021956
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            36.612511842146176,
+            29.587565949061705,
+            25.183094797776583,
+            30.864276114935915,
+            20.83513320399442
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            19.287206806054577,
+            14.769441508900705,
+            17.03601672987066,
+            18.66866079742794,
+            15.013979440998604
+          ],
+          "projection_pvalues": [
+            0.005988023952095809,
+            0.003992015968063872,
+            0.001996007984031936,
+            0.027944111776447105,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "seed": 12,
+      "regime": "rpe1_like",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 12.976905377048347,
+          "null_q95_deg": 15.200667935593902
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 15.31344601679298,
+          "null_q95_deg": 18.81127386474094
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 12.689554953480394,
+          "null_q95_deg": 15.538490899790233
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 15.978985410214182,
+          "null_q95_deg": 19.88816121118435
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 12.349984562209714,
+          "null_q95_deg": 14.973848787914486
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            11.900559528238967,
+            15.026519486451653,
+            13.115972268956154,
+            11.475830430798895,
+            11.818974616740054
+          ],
+          "projection_pvalues": [
+            0.8183632734530938,
+            0.562874251497006,
+            0.40119760479041916,
+            0.9920159680638723,
+            0.6646706586826348
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            14.456521689846577,
+            19.15103887232559,
+            21.857049627249737,
+            29.354495575392132,
+            17.405166571305298
+          ],
+          "projection_pvalues": [
+            0.1217564870259481,
+            0.031936127744510975,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            false,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            29.262967724158727,
+            31.8547294526198,
+            25.080836601740454,
+            28.56849175541301,
+            22.167978384407796
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            20.952562845972857,
+            19.12916927989059,
+            17.89503891334143,
+            22.104420542400117,
+            19.562296346617373
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.031936127744510975,
+            0.00998003992015968,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "seed": 13,
+      "regime": "rpe1_like",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 31.78532377857326,
+          "null_q95_deg": 41.73864999704529
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 41.582250243923696,
+          "null_q95_deg": 59.837877064486314
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 33.50767361431288,
+          "null_q95_deg": 42.85203072716012
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 33.984436022855675,
+          "null_q95_deg": 44.77450841903123
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 37.717096634300624,
+          "null_q95_deg": 52.93218846374827
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            27.021596390026886,
+            39.59065690921503,
+            26.37713330429478,
+            32.482312437011956,
+            33.67168558486735
+          ],
+          "projection_pvalues": [
+            0.8662674650698603,
+            0.6606786427145709,
+            0.9740518962075848,
+            0.6287425149700598,
+            0.7524950099800399
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            41.411907718065514,
+            46.68169205440226,
+            83.54023938598161,
+            35.289351823381985,
+            40.05873320926589
+          ],
+          "projection_pvalues": [
+            0.05788423153692615,
+            0.2654690618762475,
+            0.003992015968063872,
+            0.38922155688622756,
+            0.36127744510978044
+          ],
+          "combined_pvalue": 0.01996007984031936,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            true,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            43.72286195521148,
+            44.6089086994816,
+            44.949136357017714,
+            44.64576517538198,
+            45.36760476697144
+          ],
+          "projection_pvalues": [
+            0.02594810379241517,
+            0.35129740518962077,
+            0.033932135728542916,
+            0.059880239520958084,
+            0.1596806387225549
+          ],
+          "combined_pvalue": 0.12974051896207583,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            true,
+            false,
+            true,
+            false,
+            false
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            53.82388623863563,
+            62.323227579781125,
+            47.42857438993192,
+            51.03809237316141,
+            64.30216092346417
+          ],
+          "projection_pvalues": [
+            0.003992015968063872,
+            0.043912175648702596,
+            0.023952095808383235,
+            0.01996007984031936,
+            0.013972055888223553
+          ],
+          "combined_pvalue": 0.01996007984031936,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "seed": 14,
+      "regime": "rpe1_like",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 10.077858036874948,
+          "null_q95_deg": 12.033876006976806
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 9.144950540376739,
+          "null_q95_deg": 11.09984124672091
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 9.472468999412158,
+          "null_q95_deg": 11.468262844498721
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 7.175731722595939,
+          "null_q95_deg": 8.600466474920628
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 7.315949764893135,
+          "null_q95_deg": 8.618010205008432
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            8.930409467711005,
+            9.727646776302295,
+            9.863172903523798,
+            6.769334930246601,
+            6.232153656429248
+          ],
+          "projection_pvalues": [
+            0.8483033932135728,
+            0.33532934131736525,
+            0.36127744510978044,
+            0.7125748502994012,
+            0.9540918163672655
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            13.316130981529714,
+            10.693487355189982,
+            10.268208093745285,
+            7.312687368332784,
+            9.253827924791477
+          ],
+          "projection_pvalues": [
+            0.003992015968063872,
+            0.09580838323353294,
+            0.24750499001996007,
+            0.4431137724550898,
+            0.015968063872255488
+          ],
+          "combined_pvalue": 0.01996007984031936,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            false,
+            false,
+            false,
+            true
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            32.1008292829182,
+            28.739236078943417,
+            26.144752159711633,
+            25.720698168856725,
+            28.44197531884863
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            11.529101949544504,
+            12.164260191748165,
+            12.699611940510755,
+            9.04714301424151,
+            11.679540890206592
+          ],
+          "projection_pvalues": [
+            0.11976047904191617,
+            0.011976047904191617,
+            0.003992015968063872,
+            0.02594810379241517,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            false,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "seed": 15,
+      "regime": "rpe1_like",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 5.000672435887747,
+          "null_q95_deg": 6.009854746977041
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 5.851656231045153,
+          "null_q95_deg": 7.13578424717331
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 5.322668782682825,
+          "null_q95_deg": 6.377906394551028
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 5.8807911890045235,
+          "null_q95_deg": 7.200799338495572
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 6.080877748127273,
+          "null_q95_deg": 7.219673471633947
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            4.210854787209795,
+            5.662534069886843,
+            5.165708655008936,
+            6.372377377470415,
+            7.240041913204245
+          ],
+          "projection_pvalues": [
+            0.9401197604790419,
+            0.6067864271457086,
+            0.5768463073852296,
+            0.27345309381237526,
+            0.05189620758483034
+          ],
+          "combined_pvalue": 0.25948103792415167,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            5.742403868518562,
+            5.433276238171779,
+            7.759073840061527,
+            6.3941146993047715,
+            7.1323505051161895
+          ],
+          "projection_pvalues": [
+            0.09780439121756487,
+            0.7405189620758483,
+            0.003992015968063872,
+            0.26746506986027946,
+            0.06387225548902195
+          ],
+          "combined_pvalue": 0.01996007984031936,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            true,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            26.35349966864809,
+            24.151662631348113,
+            26.48657567051981,
+            31.136664544850625,
+            23.47643735985685
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            8.003304709718476,
+            7.917608913639095,
+            6.699541095392248,
+            7.352617203261723,
+            8.925336421072513
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.007984031936127744,
+            0.031936127744510975,
+            0.03992015968063872,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "seed": 16,
+      "regime": "rpe1_like",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 14.853912443568937,
+          "null_q95_deg": 17.16297891282839
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 19.163702367875942,
+          "null_q95_deg": 24.132732099786143
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 19.632310562565127,
+          "null_q95_deg": 23.79468196015447
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 20.040493615252483,
+          "null_q95_deg": 24.605070887837883
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 23.46318446653009,
+          "null_q95_deg": 29.251324871258664
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            13.158348712972519,
+            17.743277876288236,
+            23.153999382845974,
+            22.27156187644223,
+            22.338049733153227
+          ],
+          "projection_pvalues": [
+            0.8842315369261478,
+            0.6946107784431138,
+            0.08383233532934131,
+            0.20359281437125748,
+            0.6447105788423154
+          ],
+          "combined_pvalue": 0.41916167664670656,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            16.19589990762513,
+            19.215850678069202,
+            19.504465751741748,
+            23.810565638613337,
+            25.714508784204543
+          ],
+          "projection_pvalues": [
+            0.16367265469061876,
+            0.499001996007984,
+            0.5249500998003992,
+            0.09381237524950099,
+            0.21357285429141717
+          ],
+          "combined_pvalue": 0.46906187624750495,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            26.6557609163674,
+            31.72455412355272,
+            34.507944876626546,
+            28.19362595125545,
+            37.76933055508416
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.007984031936127744,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            19.45438785732977,
+            24.391184996708457,
+            31.454577050658028,
+            26.506392232760064,
+            39.774581959237715
+          ],
+          "projection_pvalues": [
+            0.003992015968063872,
+            0.043912175648702596,
+            0.001996007984031936,
+            0.02594810379241517,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "seed": 17,
+      "regime": "rpe1_like",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 29.58847203635633,
+          "null_q95_deg": 38.48520380643228
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 29.321764285542496,
+          "null_q95_deg": 37.99044275672681
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 42.94679909552155,
+          "null_q95_deg": 67.33788214530132
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 34.74544848912518,
+          "null_q95_deg": 48.56793980998136
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 30.032987770705454,
+          "null_q95_deg": 38.09510242510845
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            39.46889408350459,
+            40.899288816867276,
+            36.98611536218718,
+            35.112371441602164,
+            36.610536652626905
+          ],
+          "projection_pvalues": [
+            0.03792415169660679,
+            0.021956087824351298,
+            0.8003992015968064,
+            0.48502994011976047,
+            0.08183632734530938
+          ],
+          "combined_pvalue": 0.10978043912175649,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            37.692510919810225,
+            32.54262772914471,
+            81.19185792490205,
+            37.93720217081931,
+            35.69265568734009
+          ],
+          "projection_pvalues": [
+            0.06187624750499002,
+            0.24750499001996007,
+            0.015968063872255488,
+            0.3093812375249501,
+            0.11976047904191617
+          ],
+          "combined_pvalue": 0.07984031936127745,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            true,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            37.40642850686536,
+            29.948407168035764,
+            52.21934259111505,
+            33.83695084436827,
+            41.01870709685303
+          ],
+          "projection_pvalues": [
+            0.0718562874251497,
+            0.437125748502994,
+            0.1596806387225549,
+            0.5489021956087824,
+            0.031936127744510975
+          ],
+          "combined_pvalue": 0.1596806387225549,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            39.61571623148511,
+            46.960748083953966,
+            73.9738753646043,
+            53.961277561346705,
+            40.59389939126654
+          ],
+          "projection_pvalues": [
+            0.03792415169660679,
+            0.005988023952095809,
+            0.029940119760479042,
+            0.02594810379241517,
+            0.031936127744510975
+          ],
+          "combined_pvalue": 0.029940119760479042,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "seed": 18,
+      "regime": "rpe1_like",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 11.525837202917558,
+          "null_q95_deg": 14.298163345016965
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 11.41651634100384,
+          "null_q95_deg": 14.057910232093857
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 11.25961011522932,
+          "null_q95_deg": 13.794625772017856
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 9.152333674230693,
+          "null_q95_deg": 11.012794011160116
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 9.890967327240746,
+          "null_q95_deg": 11.668062084065491
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            11.417381495759155,
+            10.130029026676102,
+            10.315554670302697,
+            9.724238429067746,
+            9.541515139697283
+          ],
+          "projection_pvalues": [
+            0.5189620758483033,
+            0.8483033932135728,
+            0.7405189620758483,
+            0.2714570858283433,
+            0.6227544910179641
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            11.012566118661699,
+            11.803802925726439,
+            11.582398841115705,
+            10.885890037713214,
+            9.172312961381383
+          ],
+          "projection_pvalues": [
+            0.6207584830339321,
+            0.40718562874251496,
+            0.4111776447105788,
+            0.06187624750499002,
+            0.7544910179640718
+          ],
+          "combined_pvalue": 0.30938123752495006,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            34.78095481780134,
+            25.71114521443918,
+            26.10333413953102,
+            30.8392812769233,
+            25.90491184952033
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            17.1715026701483,
+            14.358541263126854,
+            16.014508176588635,
+            13.950909792345426,
+            12.663849958276696
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.03592814371257485,
+            0.003992015968063872,
+            0.001996007984031936,
+            0.00998003992015968
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "seed": 19,
+      "regime": "rpe1_like",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 7.944920051583459,
+          "null_q95_deg": 9.643870681437388
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 9.14235445300717,
+          "null_q95_deg": 11.187816539051335
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 9.367293389587457,
+          "null_q95_deg": 11.460586758767954
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 9.316113749239511,
+          "null_q95_deg": 10.972378270923908
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": true,
+          "backend": "feature_scatter",
+          "null_median_deg": 9.833611394860956,
+          "null_q95_deg": 12.111487124371338
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            9.25446423040458,
+            8.691874368206594,
+            8.039330077051396,
+            10.723683372973264,
+            9.872981994681195
+          ],
+          "projection_pvalues": [
+            0.11177644710578842,
+            0.6626746506986028,
+            0.8902195608782435,
+            0.08183632734530938,
+            0.4930139720558882
+          ],
+          "combined_pvalue": 0.4091816367265469,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            7.762160555492978,
+            10.320472810919277,
+            9.041607200754697,
+            11.47107633920725,
+            9.222650398314306
+          ],
+          "projection_pvalues": [
+            0.5868263473053892,
+            0.2055888223552894,
+            0.6047904191616766,
+            0.021956087824351298,
+            0.7105788423153693
+          ],
+          "combined_pvalue": 0.10978043912175649,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            true,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            25.39271665182862,
+            28.706808859458125,
+            29.472033580306963,
+            32.05994143180273,
+            22.19914253775342
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            11.27030116491378,
+            12.762775223186098,
+            14.345750847657015,
+            13.073979101418796,
+            10.245182978891483
+          ],
+          "projection_pvalues": [
+            0.003992015968063872,
+            0.005988023952095809,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.3812375249500998
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            false
+          ]
+        }
+      }
+    },
+    {
+      "seed": 0,
+      "regime": "small_n",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 36.03918896984192,
+          "null_q95_deg": 52.85722902046914
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 32.843571598241176,
+          "null_q95_deg": 47.10704188114991
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 31.24302348059882,
+          "null_q95_deg": 45.4158606875056
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 28.01596516294138,
+          "null_q95_deg": 36.490467013715964
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 31.801122085685954,
+          "null_q95_deg": 45.66016765192527
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            32.91475781226985,
+            23.68112314240403,
+            24.443760093470015,
+            24.915935415031036,
+            24.28503788534363
+          ],
+          "projection_pvalues": [
+            0.6706586826347305,
+            0.9321357285429142,
+            0.872255489021956,
+            0.7764471057884231,
+            0.9041916167664671
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            38.478770538446305,
+            25.90143586619891,
+            27.223955342432987,
+            26.370839876936394,
+            24.755882649860258
+          ],
+          "projection_pvalues": [
+            0.37924151696606784,
+            0.8403193612774451,
+            0.7405189620758483,
+            0.654690618762475,
+            0.8922155688622755
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            38.123962779804835,
+            28.087913824745637,
+            35.825158467721884,
+            32.616495764995065,
+            31.798697299656013
+          ],
+          "projection_pvalues": [
+            0.3972055888223553,
+            0.7624750499001997,
+            0.28542914171656686,
+            0.18762475049900199,
+            0.500998003992016
+          ],
+          "combined_pvalue": 0.9381237524950099,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            39.97165388350143,
+            32.680719509724874,
+            32.34482992987576,
+            31.0360034997739,
+            28.306578623021874
+          ],
+          "projection_pvalues": [
+            0.3213572854291417,
+            0.5089820359281437,
+            0.437125748502994,
+            0.27944111776447106,
+            0.720558882235529
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      }
+    },
+    {
+      "seed": 1,
+      "regime": "small_n",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 31.21894551474578,
+          "null_q95_deg": 41.52772306621685
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 33.149048008470544,
+          "null_q95_deg": 47.32849281245349
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 36.50818965592164,
+          "null_q95_deg": 48.883975569457924
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 39.281082211013334,
+          "null_q95_deg": 65.24869370005118
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 43.68359716714108,
+          "null_q95_deg": 70.03697838190129
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            28.836560906064456,
+            27.047832484050275,
+            34.026558897175526,
+            51.37821814862485,
+            22.70791873908072
+          ],
+          "projection_pvalues": [
+            0.6786427145708582,
+            0.846307385229541,
+            0.6626746506986028,
+            0.18163672654690619,
+            0.998003992015968
+          ],
+          "combined_pvalue": 0.908183632734531,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            40.929480280031555,
+            39.223971271504084,
+            47.398287786489554,
+            46.854758531029645,
+            36.4109972436472
+          ],
+          "projection_pvalues": [
+            0.06986027944111776,
+            0.21157684630738524,
+            0.07385229540918163,
+            0.2874251497005988,
+            0.7884231536926147
+          ],
+          "combined_pvalue": 0.34930139720558884,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            33.13030727638041,
+            34.835971637034305,
+            37.23963939611443,
+            31.246445067236753,
+            37.56233613144441
+          ],
+          "projection_pvalues": [
+            0.37924151696606784,
+            0.40718562874251496,
+            0.45708582834331335,
+            0.8762475049900199,
+            0.7465069860279441
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            42.96653191576224,
+            39.61837849947437,
+            46.720530935037054,
+            58.79725362300905,
+            43.13768748070844
+          ],
+          "projection_pvalues": [
+            0.033932135728542916,
+            0.1996007984031936,
+            0.09580838323353294,
+            0.09181636726546906,
+            0.5209580838323353
+          ],
+          "combined_pvalue": 0.16966067864271459,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            true,
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      }
+    },
+    {
+      "seed": 2,
+      "regime": "small_n",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 31.390599892705406,
+          "null_q95_deg": 42.44838269922837
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 37.42921331290762,
+          "null_q95_deg": 61.35725049221396
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 33.56122387638357,
+          "null_q95_deg": 49.868165931705256
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 28.42664891723143,
+          "null_q95_deg": 41.32176171962852
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 27.771580910858773,
+          "null_q95_deg": 38.72483392409302
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            28.65096658519753,
+            33.212578890889304,
+            29.622470483590067,
+            28.720797755448817,
+            22.940902100015386
+          ],
+          "projection_pvalues": [
+            0.7065868263473054,
+            0.6926147704590818,
+            0.7305389221556886,
+            0.4810379241516966,
+            0.8383233532934131
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            26.411482053619242,
+            34.81880640085197,
+            33.21939448561747,
+            21.474501350699498,
+            27.461670852593976
+          ],
+          "projection_pvalues": [
+            0.8562874251497006,
+            0.6147704590818364,
+            0.5149700598802395,
+            0.936127744510978,
+            0.5189620758483033
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            40.39483418052419,
+            42.29281006242671,
+            42.518574775549524,
+            33.649608887458704,
+            30.961717398694592
+          ],
+          "projection_pvalues": [
+            0.10179640718562874,
+            0.3093812375249501,
+            0.16367265469061876,
+            0.2155688622754491,
+            0.2934131736526946
+          ],
+          "combined_pvalue": 0.5089820359281437,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            36.62673674004841,
+            40.06339859183546,
+            42.09671833605914,
+            23.404368730790257,
+            30.88604646380821
+          ],
+          "projection_pvalues": [
+            0.2375249500998004,
+            0.37924151696606784,
+            0.18163672654690619,
+            0.8542914171656687,
+            0.29740518962075846
+          ],
+          "combined_pvalue": 0.908183632734531,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      }
+    },
+    {
+      "seed": 3,
+      "regime": "small_n",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 15.612612601500565,
+          "null_q95_deg": 20.667340796924456
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 16.90378722946709,
+          "null_q95_deg": 22.655618787124556
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 17.155600668750765,
+          "null_q95_deg": 22.045034712158518
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 13.743422255877682,
+          "null_q95_deg": 17.38606200516723
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 15.486079039350534,
+          "null_q95_deg": 20.07962939803509
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            13.393883372850622,
+            16.9863616274572,
+            16.380004426023948,
+            13.7871098067672,
+            16.945569058610925
+          ],
+          "projection_pvalues": [
+            0.8183632734530938,
+            0.49101796407185627,
+            0.6327345309381237,
+            0.49700598802395207,
+            0.2634730538922156
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            16.609230758213208,
+            14.17490716202037,
+            15.995020137332913,
+            16.095470401799325,
+            14.847498346584777
+          ],
+          "projection_pvalues": [
+            0.37325349301397204,
+            0.8283433133732535,
+            0.7005988023952096,
+            0.13572854291417166,
+            0.5868263473053892
+          ],
+          "combined_pvalue": 0.6786427145708583,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            28.56406975300868,
+            33.471827554977416,
+            31.05696384896131,
+            23.680590135069,
+            36.136514201919994
+          ],
+          "projection_pvalues": [
+            0.003992015968063872,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            19.221130282453895,
+            15.55040477011412,
+            17.104209603793294,
+            16.177542208951245,
+            16.63573403328488
+          ],
+          "projection_pvalues": [
+            0.11776447105788423,
+            0.6666666666666666,
+            0.5129740518962076,
+            0.12974051896207583,
+            0.3033932135728543
+          ],
+          "combined_pvalue": 0.5888223552894212,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      }
+    },
+    {
+      "seed": 4,
+      "regime": "small_n",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 25.899415619854302,
+          "null_q95_deg": 36.21054578884979
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 20.002750757052397,
+          "null_q95_deg": 26.12098784001503
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 17.35219898974291,
+          "null_q95_deg": 22.081721580643915
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 15.471894584077644,
+          "null_q95_deg": 20.063807300666447
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 18.308655943043767,
+          "null_q95_deg": 23.951489410118675
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            18.547851224477206,
+            18.479205156845513,
+            15.084807272473316,
+            17.28000809416583,
+            18.099601859219757
+          ],
+          "projection_pvalues": [
+            0.9560878243512974,
+            0.6646706586826348,
+            0.8263473053892215,
+            0.2435129740518962,
+            0.5349301397205589
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            20.529778688878977,
+            19.055906957358864,
+            15.438727792454307,
+            13.787339333779807,
+            18.408275203126504
+          ],
+          "projection_pvalues": [
+            0.8922155688622755,
+            0.6227544910179641,
+            0.7784431137724551,
+            0.8063872255489022,
+            0.49101796407185627
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            40.522455566215115,
+            24.829328882846795,
+            31.108987903465373,
+            31.410500255255744,
+            31.50811077249211
+          ],
+          "projection_pvalues": [
+            0.01996007984031936,
+            0.09580838323353294,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.003992015968063872
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            false,
+            true,
+            true,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            31.492814352178183,
+            17.694592910594846,
+            21.007020625567954,
+            23.492780871498663,
+            26.39870839390117
+          ],
+          "projection_pvalues": [
+            0.14171656686626746,
+            0.7624750499001997,
+            0.11776447105788423,
+            0.003992015968063872,
+            0.015968063872255488
+          ],
+          "combined_pvalue": 0.01996007984031936,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "seed": 5,
+      "regime": "small_n",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 35.53246184885388,
+          "null_q95_deg": 55.56416520461253
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 51.182706391960686,
+          "null_q95_deg": 81.8885000173351
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 37.08693268559653,
+          "null_q95_deg": 51.936752492348965
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 65.70611811256556,
+          "null_q95_deg": 86.613106853761
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 43.34699123123413,
+          "null_q95_deg": 72.18989352011604
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            33.36468817453245,
+            40.785247118936105,
+            29.095970596115414,
+            46.846512448200514,
+            38.86548682541926
+          ],
+          "projection_pvalues": [
+            0.6187624750499002,
+            0.8183632734530938,
+            0.8762475049900199,
+            0.8682634730538922,
+            0.6407185628742516
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            36.91029993952208,
+            56.61630496341152,
+            25.929211522919804,
+            49.070568039926904,
+            32.92627637294097
+          ],
+          "projection_pvalues": [
+            0.43313373253493015,
+            0.36127744510978044,
+            0.9660678642714571,
+            0.8283433133732535,
+            0.8782435129740519
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            36.84425446660666,
+            39.43598509290373,
+            34.46864347407642,
+            51.247810615862946,
+            39.500589748545366
+          ],
+          "projection_pvalues": [
+            0.437125748502994,
+            0.846307385229541,
+            0.6327345309381237,
+            0.7904191616766467,
+            0.6287425149700598
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            42.84597265152357,
+            44.35625760560252,
+            48.37024634601774,
+            87.43474566633365,
+            43.72707723061848
+          ],
+          "projection_pvalues": [
+            0.24550898203592814,
+            0.7125748502994012,
+            0.0998003992015968,
+            0.04590818363273453,
+            0.48902195608782434
+          ],
+          "combined_pvalue": 0.22954091816367264,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            true,
+            false
+          ]
+        }
+      }
+    },
+    {
+      "seed": 6,
+      "regime": "small_n",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 77.27904826335087,
+          "null_q95_deg": 88.76774752976836
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 75.37905531893793,
+          "null_q95_deg": 88.66358048853975
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 80.70392566323316,
+          "null_q95_deg": 88.86130373786037
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 75.2497587310612,
+          "null_q95_deg": 88.38725106656081
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 70.68259093648565,
+          "null_q95_deg": 88.33626884634776
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            71.11995932643322,
+            80.10275020285452,
+            81.33900116359808,
+            84.79798874708582,
+            54.6563824207359
+          ],
+          "projection_pvalues": [
+            0.7005988023952096,
+            0.37924151696606784,
+            0.45708582834331335,
+            0.16367265469061876,
+            0.8922155688622755
+          ],
+          "combined_pvalue": 0.8183632734530938,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            76.67657480559573,
+            67.31640263385722,
+            82.9885718248831,
+            76.25782413306362,
+            48.30636898174167
+          ],
+          "projection_pvalues": [
+            0.5209580838323353,
+            0.7365269461077845,
+            0.37924151696606784,
+            0.4590818363273453,
+            0.9640718562874252
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            70.05935542681037,
+            71.65844674654,
+            80.46941364333932,
+            59.8363057158867,
+            57.58062146592785
+          ],
+          "projection_pvalues": [
+            0.7305389221556886,
+            0.6147704590818364,
+            0.5069860279441117,
+            0.8762475049900199,
+            0.8383233532934131
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            89.28310345397041,
+            60.60126277205609,
+            75.64805461667645,
+            69.87567093571647,
+            60.256928892681174
+          ],
+          "projection_pvalues": [
+            0.027944111776447105,
+            0.8542914171656687,
+            0.6846307385229541,
+            0.654690618762475,
+            0.7924151696606786
+          ],
+          "combined_pvalue": 0.13972055888223553,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            true,
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "regime": "small_n",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 21.19349215891664,
+          "null_q95_deg": 29.036697687536122
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 27.68022265566856,
+          "null_q95_deg": 37.62978052989625
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 21.313737156612973,
+          "null_q95_deg": 28.122319135583755
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 26.371687029087134,
+          "null_q95_deg": 36.14140129492691
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 24.483104825870143,
+          "null_q95_deg": 32.77070777748002
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            17.21352068093494,
+            23.84636055695554,
+            16.756892302369266,
+            18.885185284561395,
+            19.358805772557037
+          ],
+          "projection_pvalues": [
+            0.8702594810379242,
+            0.7385229540918163,
+            0.9520958083832335,
+            0.9800399201596807,
+            0.8982035928143712
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            23.910290753713383,
+            23.69862017964274,
+            22.24008744564103,
+            23.527991308447366,
+            21.961167857701536
+          ],
+          "projection_pvalues": [
+            0.25349301397205587,
+            0.7485029940119761,
+            0.405189620758483,
+            0.7425149700598802,
+            0.7025948103792415
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            33.11267528461512,
+            32.258619378874464,
+            32.8671169775769,
+            34.850826378210634,
+            32.16856807579721
+          ],
+          "projection_pvalues": [
+            0.00998003992015968,
+            0.2055888223552894,
+            0.007984031936127744,
+            0.07385229540918163,
+            0.06986027944111776
+          ],
+          "combined_pvalue": 0.03992015968063872,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            false,
+            true,
+            false,
+            false
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            24.09669502866151,
+            27.195109058258588,
+            24.070997332143488,
+            30.56466035745212,
+            29.231413634334974
+          ],
+          "projection_pvalues": [
+            0.23353293413173654,
+            0.5369261477045908,
+            0.23952095808383234,
+            0.21956087824351297,
+            0.16966067864271456
+          ],
+          "combined_pvalue": 0.8483033932135728,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      }
+    },
+    {
+      "seed": 8,
+      "regime": "small_n",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 18.804885461688055,
+          "null_q95_deg": 24.421902729020463
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 21.149091874164945,
+          "null_q95_deg": 28.82384035319256
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 17.80731270823415,
+          "null_q95_deg": 22.28445190803002
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 20.844814020033343,
+          "null_q95_deg": 28.50301679563008
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 20.63088008482052,
+          "null_q95_deg": 28.06756045115828
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            19.021077080462476,
+            16.234932112630595,
+            15.463951514174965,
+            21.86210231312296,
+            18.750254154566353
+          ],
+          "projection_pvalues": [
+            0.4630738522954092,
+            0.9401197604790419,
+            0.8283433133732535,
+            0.3992015968063872,
+            0.6866267465069861
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            16.536943976020908,
+            18.96760570788912,
+            14.217483368613594,
+            16.875727105515764,
+            18.285554847297366
+          ],
+          "projection_pvalues": [
+            0.8243512974051896,
+            0.7485029940119761,
+            0.908183632734531,
+            0.8782435129740519,
+            0.7504990019960079
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            25.608135154203108,
+            30.898162236493135,
+            28.713597618434985,
+            29.493100138852398,
+            31.656132362223545
+          ],
+          "projection_pvalues": [
+            0.033932135728542916,
+            0.021956087824351298,
+            0.001996007984031936,
+            0.03792415169660679,
+            0.015968063872255488
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            19.273479501306714,
+            20.041277008788875,
+            18.293111689103455,
+            17.028427383564214,
+            19.937664479034574
+          ],
+          "projection_pvalues": [
+            0.41916167664670656,
+            0.6067864271457086,
+            0.41317365269461076,
+            0.874251497005988,
+            0.5828343313373253
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      }
+    },
+    {
+      "seed": 9,
+      "regime": "small_n",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 25.25090481808466,
+          "null_q95_deg": 33.74021694299305
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 24.863780870128437,
+          "null_q95_deg": 31.947984296455516
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 24.436124097436686,
+          "null_q95_deg": 33.887621971517234
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 24.657166626503304,
+          "null_q95_deg": 32.33467423460828
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 30.2551543625517,
+          "null_q95_deg": 44.79767341896395
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            22.022742766382738,
+            29.06755643981636,
+            24.252045393138225,
+            22.577185513292182,
+            23.731834097186997
+          ],
+          "projection_pvalues": [
+            0.780439121756487,
+            0.1656686626746507,
+            0.5229540918163673,
+            0.7125748502994012,
+            0.908183632734531
+          ],
+          "combined_pvalue": 0.8283433133732534,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            25.419875916948882,
+            25.987110797031587,
+            27.40571251779037,
+            26.726856487902108,
+            27.26679238074221
+          ],
+          "projection_pvalues": [
+            0.48303393213572854,
+            0.36726546906187624,
+            0.28542914171656686,
+            0.30538922155688625,
+            0.7065868263473054
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            40.510876978540715,
+            31.42616705599383,
+            33.693098379394954,
+            32.16445170717117,
+            39.07990165355045
+          ],
+          "projection_pvalues": [
+            0.005988023952095809,
+            0.06786427145708583,
+            0.05788423153692615,
+            0.059880239520958084,
+            0.15768463073852296
+          ],
+          "combined_pvalue": 0.029940119760479042,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            24.564806036625626,
+            28.252728682018017,
+            31.121248878279314,
+            34.628672276977184,
+            33.090220236720114
+          ],
+          "projection_pvalues": [
+            0.564870259481038,
+            0.20359281437125748,
+            0.11976047904191617,
+            0.029940119760479042,
+            0.35728542914171657
+          ],
+          "combined_pvalue": 0.14970059880239522,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            true,
+            false
+          ]
+        }
+      }
+    },
+    {
+      "seed": 10,
+      "regime": "small_n",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 65.98200718342115,
+          "null_q95_deg": 87.83262722981237
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 57.1837336595633,
+          "null_q95_deg": 84.53457519320155
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 45.14747049951894,
+          "null_q95_deg": 76.37905305350347
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 51.69422615146208,
+          "null_q95_deg": 78.87221624474583
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 36.79993948589875,
+          "null_q95_deg": 51.32261514893797
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            52.8944381504106,
+            50.50608486526164,
+            46.347368481240686,
+            44.19696623255591,
+            33.49223677304761
+          ],
+          "projection_pvalues": [
+            0.7924151696606786,
+            0.6906187624750499,
+            0.4491017964071856,
+            0.7584830339321357,
+            0.7345309381237525
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            88.29513914837892,
+            56.08394252866072,
+            43.87568254559531,
+            41.74942133339996,
+            52.39099574551063
+          ],
+          "projection_pvalues": [
+            0.03592814371257485,
+            0.5329341317365269,
+            0.562874251497006,
+            0.846307385229541,
+            0.041916167664670656
+          ],
+          "combined_pvalue": 0.17964071856287425,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            true,
+            false,
+            false,
+            false,
+            true
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            63.85818311951124,
+            42.675448637986335,
+            42.392453669416795,
+            35.518265051195314,
+            41.859595756644254
+          ],
+          "projection_pvalues": [
+            0.5528942115768463,
+            0.8802395209580839,
+            0.5988023952095808,
+            0.9740518962075848,
+            0.26147704590818366
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            59.703458557842254,
+            73.86074103259507,
+            72.26190378525399,
+            56.48460998250091,
+            48.83437126171612
+          ],
+          "projection_pvalues": [
+            0.654690618762475,
+            0.18163672654690619,
+            0.0658682634730539,
+            0.3532934131736527,
+            0.0718562874251497
+          ],
+          "combined_pvalue": 0.3293413173652695,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      }
+    },
+    {
+      "seed": 11,
+      "regime": "small_n",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 31.892030972298187,
+          "null_q95_deg": 44.2068557829331
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 27.193141464121414,
+          "null_q95_deg": 36.47384105990198
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 26.722878111371106,
+          "null_q95_deg": 39.13702452060887
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 41.35031225902226,
+          "null_q95_deg": 74.83903599990518
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 25.505485708109095,
+          "null_q95_deg": 35.38508488388686
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            24.919590555846614,
+            26.41483607062783,
+            32.752697431505915,
+            38.433976744305085,
+            24.0927294473393
+          ],
+          "projection_pvalues": [
+            0.8842315369261478,
+            0.5748502994011976,
+            0.16367265469061876,
+            0.6187624750499002,
+            0.6027944111776448
+          ],
+          "combined_pvalue": 0.8183632734530938,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            27.32168516735618,
+            21.540828461975067,
+            27.28295978173073,
+            40.41295514980813,
+            22.368993398316196
+          ],
+          "projection_pvalues": [
+            0.7724550898203593,
+            0.8882235528942116,
+            0.45708582834331335,
+            0.5429141716566867,
+            0.7644710578842315
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            40.83590190247854,
+            35.728036897217194,
+            31.496502872010062,
+            52.448647304953795,
+            39.40652298821341
+          ],
+          "projection_pvalues": [
+            0.10978043912175649,
+            0.06187624750499002,
+            0.21956087824351297,
+            0.21357285429141717,
+            0.017964071856287425
+          ],
+          "combined_pvalue": 0.08982035928143713,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            34.355597748925824,
+            30.31981071437177,
+            36.348014145648456,
+            39.27649728451,
+            30.576377029644977
+          ],
+          "projection_pvalues": [
+            0.36327345309381237,
+            0.26746506986027946,
+            0.08183632734530938,
+            0.5868263473053892,
+            0.14770459081836326
+          ],
+          "combined_pvalue": 0.4091816367265469,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      }
+    },
+    {
+      "seed": 12,
+      "regime": "small_n",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 30.619664335248437,
+          "null_q95_deg": 42.14184517805363
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 42.86674448226693,
+          "null_q95_deg": 74.17362925946291
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 27.48077609293983,
+          "null_q95_deg": 36.50177217002581
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 41.421511474606355,
+          "null_q95_deg": 62.8511438319672
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 30.169298178772095,
+          "null_q95_deg": 41.339018586661076
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            25.92362016209634,
+            40.0122326666435,
+            26.9395194822167,
+            39.533242257102266,
+            26.812492005338385
+          ],
+          "projection_pvalues": [
+            0.8842315369261478,
+            0.6027944111776448,
+            0.5469061876247505,
+            0.5708582834331337,
+            0.7664670658682635
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            27.610324818666086,
+            41.3459674285489,
+            33.19331618088539,
+            49.924213090157615,
+            35.19661744037569
+          ],
+          "projection_pvalues": [
+            0.7544910179640718,
+            0.5608782435129741,
+            0.14171656686626746,
+            0.21357285429141717,
+            0.18562874251497005
+          ],
+          "combined_pvalue": 0.7085828343313373,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            31.905303768564032,
+            46.07312856889661,
+            33.967772443620284,
+            48.98803631044062,
+            40.53582025213614
+          ],
+          "projection_pvalues": [
+            0.405189620758483,
+            0.4031936127744511,
+            0.11177644710578842,
+            0.2315369261477046,
+            0.06786427145708583
+          ],
+          "combined_pvalue": 0.33932135728542917,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            37.46051964852773,
+            58.143002357414524,
+            31.77692016924311,
+            44.13464265613303,
+            40.61043040003105
+          ],
+          "projection_pvalues": [
+            0.12574850299401197,
+            0.16966067864271456,
+            0.20159680638722555,
+            0.3932135728542914,
+            0.0658682634730539
+          ],
+          "combined_pvalue": 0.3293413173652695,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      }
+    },
+    {
+      "seed": 13,
+      "regime": "small_n",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 74.27847621062156,
+          "null_q95_deg": 88.2981506006799
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 79.4410870752139,
+          "null_q95_deg": 88.92208424506578
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 79.46821472292314,
+          "null_q95_deg": 88.63209531744546
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 76.0581198094819,
+          "null_q95_deg": 88.1167348260715
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 77.58423903762643,
+          "null_q95_deg": 89.27359658397434
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            75.05821038944386,
+            88.6269463638615,
+            81.31863032990638,
+            79.37695323391803,
+            89.39259989223675
+          ],
+          "projection_pvalues": [
+            0.4810379241516966,
+            0.06387225548902195,
+            0.41916167664670656,
+            0.3772455089820359,
+            0.04790419161676647
+          ],
+          "combined_pvalue": 0.23952095808383234,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            true
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            65.39168012374579,
+            76.14528510350769,
+            80.6128806082586,
+            69.66220095613868,
+            79.27827264811718
+          ],
+          "projection_pvalues": [
+            0.7345309381237525,
+            0.6467065868263473,
+            0.4630738522954092,
+            0.6666666666666666,
+            0.4431137724550898
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            73.6945656812835,
+            87.71291324900135,
+            80.57979372593022,
+            65.41312528564247,
+            80.12915597477146
+          ],
+          "projection_pvalues": [
+            0.5089820359281437,
+            0.10578842315369262,
+            0.46506986027944114,
+            0.7684630738522954,
+            0.40718562874251496
+          ],
+          "combined_pvalue": 0.5289421157684631,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            85.20914975171243,
+            83.17684119517035,
+            63.475397598424735,
+            86.35111425525261,
+            89.0402033679466
+          ],
+          "projection_pvalues": [
+            0.1497005988023952,
+            0.3193612774451098,
+            0.8922155688622755,
+            0.10778443113772455,
+            0.06187624750499002
+          ],
+          "combined_pvalue": 0.30938123752495006,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      }
+    },
+    {
+      "seed": 14,
+      "regime": "small_n",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 23.87314822390426,
+          "null_q95_deg": 31.896378387765758
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 23.58741427175241,
+          "null_q95_deg": 32.60738964088627
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 21.276754464949562,
+          "null_q95_deg": 29.060118978673813
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 16.343440487782146,
+          "null_q95_deg": 20.308503109187832
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 16.450288862123195,
+          "null_q95_deg": 20.850804275090603
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            14.427115768792245,
+            24.19495412933733,
+            22.46739974240854,
+            12.547051279050097,
+            14.421773816322883
+          ],
+          "projection_pvalues": [
+            0.998003992015968,
+            0.45109780439121755,
+            0.3992015968063872,
+            0.9680638722554891,
+            0.8043912175648703
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            20.559943639933863,
+            21.13787077781374,
+            22.657090937393697,
+            12.938632111247212,
+            18.94019208434225
+          ],
+          "projection_pvalues": [
+            0.8303393213572854,
+            0.718562874251497,
+            0.3812375249500998,
+            0.9441117764471058,
+            0.17165668662674652
+          ],
+          "combined_pvalue": 0.8582834331337326,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            37.85682531227057,
+            33.284522178897795,
+            27.735993782966542,
+            30.655930517680556,
+            27.947779486071425
+          ],
+          "projection_pvalues": [
+            0.003992015968063872,
+            0.041916167664670656,
+            0.07984031936127745,
+            0.001996007984031936,
+            0.003992015968063872
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            false,
+            true,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            24.9784843420181,
+            25.989514308301885,
+            25.810302805254043,
+            15.591466128081413,
+            23.47307339732279
+          ],
+          "projection_pvalues": [
+            0.40718562874251496,
+            0.3313373253493014,
+            0.14570858283433133,
+            0.626746506986028,
+            0.005988023952095809
+          ],
+          "combined_pvalue": 0.029940119760479042,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "seed": 15,
+      "regime": "small_n",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 11.602636207720732,
+          "null_q95_deg": 15.055183394378142
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 12.596644776059463,
+          "null_q95_deg": 16.074303255165454
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 11.264366669003557,
+          "null_q95_deg": 15.30403747632685
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 12.948459920098061,
+          "null_q95_deg": 16.921368274874002
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 12.623421032594687,
+          "null_q95_deg": 16.367072361596474
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            12.192855191491505,
+            12.15056288096326,
+            11.240282432630092,
+            13.92505896416397,
+            16.72011092400131
+          ],
+          "projection_pvalues": [
+            0.38922155688622756,
+            0.5848303393213573,
+            0.5129740518962076,
+            0.34331337325349304,
+            0.03592814371257485
+          ],
+          "combined_pvalue": 0.17964071856287425,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            true
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            11.707240097515792,
+            11.074945973003363,
+            10.436203255231636,
+            12.399662355854984,
+            12.394168186365706
+          ],
+          "projection_pvalues": [
+            0.48303393213572854,
+            0.7904191616766467,
+            0.6926147704590818,
+            0.5848303393213573,
+            0.5469061876247505
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            26.388233137147125,
+            24.687969781579973,
+            26.010201807442893,
+            27.833380031800946,
+            29.237649131369114
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936,
+            0.001996007984031936
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            17.1230776200127,
+            18.687978992511276,
+            10.941837084610258,
+            21.74793320897453,
+            18.24713504198557
+          ],
+          "projection_pvalues": [
+            0.00998003992015968,
+            0.007984031936127744,
+            0.5828343313373253,
+            0.001996007984031936,
+            0.013972055888223553
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            false,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "seed": 16,
+      "regime": "small_n",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 36.017901559996176,
+          "null_q95_deg": 47.25475095450649
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 37.4034871056782,
+          "null_q95_deg": 52.006419008308555
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 47.60906970119774,
+          "null_q95_deg": 80.08079662368922
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 37.10248306847607,
+          "null_q95_deg": 52.43182563135721
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 55.162899095430056,
+          "null_q95_deg": 84.54812156790057
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            34.557986349802775,
+            41.60436551401724,
+            39.30848587822424,
+            37.64556016165153,
+            39.736214484501936
+          ],
+          "projection_pvalues": [
+            0.6127744510978044,
+            0.2994011976047904,
+            0.8043912175648703,
+            0.46506986027944114,
+            0.9041916167664671
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            35.11862417912388,
+            34.35809739777574,
+            37.775847055529105,
+            38.78876731361739,
+            41.92080504843671
+          ],
+          "projection_pvalues": [
+            0.5668662674650699,
+            0.6766467065868264,
+            0.8502994011976048,
+            0.405189620758483,
+            0.8662674650698603
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            36.35463519784439,
+            39.47701148328024,
+            42.56009300499121,
+            38.6920734499978,
+            48.05167962700275
+          ],
+          "projection_pvalues": [
+            0.469061876247505,
+            0.4091816367265469,
+            0.6946107784431138,
+            0.40718562874251496,
+            0.7025948103792415
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            49.718286075415875,
+            63.775276965174434,
+            89.96253749634023,
+            61.430890836793225,
+            56.67363150722459
+          ],
+          "projection_pvalues": [
+            0.029940119760479042,
+            0.00998003992015968,
+            0.001996007984031936,
+            0.015968063872255488,
+            0.4550898203592814
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            false
+          ]
+        }
+      }
+    },
+    {
+      "seed": 17,
+      "regime": "small_n",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 74.91658078112677,
+          "null_q95_deg": 88.65662331521473
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 75.69785153913509,
+          "null_q95_deg": 88.40350699420429
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 71.95103842771088,
+          "null_q95_deg": 88.28270601584755
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 69.46607593359883,
+          "null_q95_deg": 88.19704979085118
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 76.04836039450659,
+          "null_q95_deg": 88.65598511259645
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            83.0630454349139,
+            73.54387828220308,
+            82.40467485132274,
+            88.87042734990084,
+            75.86206573469667
+          ],
+          "projection_pvalues": [
+            0.22554890219560877,
+            0.5489021956087824,
+            0.22355289421157684,
+            0.033932135728542916,
+            0.5049900199600799
+          ],
+          "combined_pvalue": 0.16966067864271459,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            true,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            65.44886195399688,
+            66.22144655007808,
+            89.5719430893893,
+            78.24813602837985,
+            85.919092988382
+          ],
+          "projection_pvalues": [
+            0.7724550898203593,
+            0.7584830339321357,
+            0.017964071856287425,
+            0.3013972055888224,
+            0.13972055888223553
+          ],
+          "combined_pvalue": 0.08982035928143713,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            true,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            66.9022889180033,
+            66.08658155668407,
+            87.4527323779281,
+            73.59780739870264,
+            89.41717878311034
+          ],
+          "projection_pvalues": [
+            0.7245508982035929,
+            0.7624750499001997,
+            0.06986027944111776,
+            0.41916167664670656,
+            0.01996007984031936
+          ],
+          "combined_pvalue": 0.0998003992015968,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            true
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            88.6633420480506,
+            76.65497322611618,
+            83.15031201384386,
+            82.7612978558615,
+            89.4347050692419
+          ],
+          "projection_pvalues": [
+            0.05189620758483034,
+            0.469061876247505,
+            0.20359281437125748,
+            0.20359281437125748,
+            0.01996007984031936
+          ],
+          "combined_pvalue": 0.0998003992015968,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "seed": 18,
+      "regime": "small_n",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 32.640227031848035,
+          "null_q95_deg": 47.340812049116316
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 33.16505469020064,
+          "null_q95_deg": 46.22147869686336
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 32.16227309242956,
+          "null_q95_deg": 45.9671959047653
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 25.808992293469228,
+          "null_q95_deg": 34.51408731275092
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 23.629361834081315,
+          "null_q95_deg": 31.512641586936734
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            28.66032654515304,
+            26.06557583794633,
+            25.71695636165746,
+            21.954469658498635,
+            21.633164077516938
+          ],
+          "projection_pvalues": [
+            0.7345309381237525,
+            0.8902195608782435,
+            0.8922155688622755,
+            0.8203592814371258,
+            0.688622754491018
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            27.609009275739872,
+            23.969557164307233,
+            22.546891263495176,
+            22.591369848160262,
+            19.855843682472166
+          ],
+          "projection_pvalues": [
+            0.8043912175648703,
+            0.9600798403193613,
+            0.9600798403193613,
+            0.7764471057884231,
+            0.8542914171656687
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            41.33711377445624,
+            37.431241709495744,
+            39.10611081153973,
+            32.281432642099524,
+            30.192867521062233
+          ],
+          "projection_pvalues": [
+            0.16766467065868262,
+            0.3013972055888224,
+            0.18562874251497005,
+            0.08383233532934131,
+            0.0718562874251497
+          ],
+          "combined_pvalue": 0.3592814371257485,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            36.71976581930508,
+            38.362144235315874,
+            42.609737889797344,
+            28.334046921799636,
+            25.847746164606924
+          ],
+          "projection_pvalues": [
+            0.31137724550898205,
+            0.25149700598802394,
+            0.11377245508982035,
+            0.28542914171656686,
+            0.3093812375249501
+          ],
+          "combined_pvalue": 0.5688622754491017,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      }
+    },
+    {
+      "seed": 19,
+      "regime": "small_n",
+      "null_metadata": [
+        {
+          "projection_seed": 7300,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 18.45450206965591,
+          "null_q95_deg": 24.085460699606347
+        },
+        {
+          "projection_seed": 7301,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 21.063727733248804,
+          "null_q95_deg": 28.149298691960567
+        },
+        {
+          "projection_seed": 7302,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 22.752293113122235,
+          "null_q95_deg": 30.157434535118785
+        },
+        {
+          "projection_seed": 7303,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 21.42592039419914,
+          "null_q95_deg": 27.76452204137959
+        },
+        {
+          "projection_seed": 7304,
+          "disjoint": false,
+          "backend": "feature_scatter",
+          "null_median_deg": 20.72514620624985,
+          "null_q95_deg": 27.896559809923705
+        }
+      ],
+      "cases": {
+        "independent_null": {
+          "angles_deg": [
+            16.808497287423755,
+            19.332310184602328,
+            20.488564404173854,
+            21.612564918228944,
+            20.901270946037336
+          ],
+          "projection_pvalues": [
+            0.7325349301397206,
+            0.6786427145708582,
+            0.7285429141716567,
+            0.4810379241516966,
+            0.4870259481037924
+          ],
+          "combined_pvalue": 1.0,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mechanism_hard_iv": {
+          "angles_deg": [
+            21.893009017082473,
+            21.557956168172105,
+            20.529139954401817,
+            23.096262096242327,
+            17.99296232656017
+          ],
+          "projection_pvalues": [
+            0.1437125748502994,
+            0.4550898203592814,
+            0.7285429141716567,
+            0.34530938123752497,
+            0.7704590818363274
+          ],
+          "combined_pvalue": 0.718562874251497,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "mixed_gain_u05_15": {
+          "angles_deg": [
+            29.771193657193997,
+            36.05059430925917,
+            30.553202982771364,
+            31.941366362647912,
+            26.557945787054877
+          ],
+          "projection_pvalues": [
+            0.001996007984031936,
+            0.005988023952095809,
+            0.041916167664670656,
+            0.00998003992015968,
+            0.09381237524950099
+          ],
+          "combined_pvalue": 0.00998003992015968,
+          "combined_reject": true,
+          "projection_rejects_nominal": [
+            true,
+            true,
+            true,
+            true,
+            false
+          ]
+        },
+        "uniform_gain_0.7": {
+          "angles_deg": [
+            22.218863152657708,
+            27.085501448979844,
+            32.993239511823056,
+            30.96801555835312,
+            29.746694701047673
+          ],
+          "projection_pvalues": [
+            0.12574850299401197,
+            0.07784431137724551,
+            0.013972055888223553,
+            0.017964071856287425,
+            0.017964071856287425
+          ],
+          "combined_pvalue": 0.06986027944111776,
+          "combined_reject": false,
+          "projection_rejects_nominal": [
+            false,
+            false,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "git_head": "37178b7c5a853e686d901c7a186134a3ef3e2def",
+    "script_sha256": "16ea4bb9743d8f01732239cb20e1f9cf2037459cfa51e3e51d01ecfd32f0f842",
+    "numpy_version": "2.0.2"
+  },
+  "wall_seconds": 26.5
+}

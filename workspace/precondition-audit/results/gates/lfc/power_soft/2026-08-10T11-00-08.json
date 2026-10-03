@@ -1,0 +1,96 @@
+{
+  "data": [
+    {
+      "n_e": 500,
+      "scaling": "raw",
+      "reject": 0.3,
+      "n_seeds": 10
+    },
+    {
+      "n_e": 500,
+      "scaling": "standardised",
+      "reject": 0.4,
+      "n_seeds": 10
+    },
+    {
+      "n_e": 2000,
+      "scaling": "raw",
+      "reject": 0.7,
+      "n_seeds": 10
+    },
+    {
+      "n_e": 2000,
+      "scaling": "standardised",
+      "reject": 0.7,
+      "n_seeds": 10
+    },
+    {
+      "n_e": 8000,
+      "scaling": "raw",
+      "reject": 1.0,
+      "n_seeds": 10
+    },
+    {
+      "n_e": 8000,
+      "scaling": "standardised",
+      "reject": 1.0,
+      "n_seeds": 10
+    },
+    {
+      "n_e": 20000,
+      "scaling": "raw",
+      "reject": 1.0,
+      "n_seeds": 10
+    },
+    {
+      "n_e": 20000,
+      "scaling": "standardised",
+      "reject": 1.0,
+      "n_seeds": 10
+    }
+  ],
+  "meta": {
+    "statistic": "lfc",
+    "gate": "power_soft",
+    "git_commit": "117a464",
+    "timestamp": "2026-08-10T11:00:08",
+    "config": {
+      "alpha": 0.05,
+      "B": 500,
+      "n_e": [
+        500,
+        2000,
+        8000,
+        20000
+      ],
+      "d": 10,
+      "d_latent": 10,
+      "D": 200,
+      "n_env": null,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "draws_per_point": 1
+    },
+    "versions": {
+      "python": "3.11.15",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.3",
+      "sklearn": "1.9.0"
+    },
+    "superseded_by": null,
+    "migrated_from": "causalbench/results/ranktest/soft_power_curve_lfc.json",
+    "status": "CURRENT",
+    "note": "soft k=3 power curve under LFC; floor 8000"
+  }
+}

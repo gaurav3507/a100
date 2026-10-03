@@ -1,0 +1,166 @@
+{
+  "dataset": "norman",
+  "blocks": [
+    {
+      "label": "norman",
+      "n_cells": 66738,
+      "n_features": 5000,
+      "n_control_cells": 8907,
+      "n_environments_total": 105,
+      "environment_attrition": {
+        "50": 105,
+        "125": 104,
+        "500": 51,
+        "2000": 0,
+        "8000": 0
+      },
+      "cells_per_environment": {
+        "n_environments": 105,
+        "min": 113,
+        "q25": 331.0,
+        "median": 495.0,
+        "q75": 690.0,
+        "max": 1960,
+        "total_cells": 57831,
+        "n_above_hard_floor_125": 104,
+        "n_above_soft_floor_8000": 0,
+        "frac_above_hard_floor_125": 0.9904761904761905,
+        "frac_above_soft_floor_8000": 0.0
+      },
+      "latent_dimension_from_controls": {
+        "2000": {
+          "n_control_used": 2000,
+          "n_control_available": 8907,
+          "n_genes": 5000,
+          "rank_bound": 1999,
+          "participation_ratio": 224.0635699268002,
+          "effective_rank_exp_spectral_entropy": 538.6230428286054,
+          "n_components_for_variance": {
+            "80pct": 389,
+            "90pct": 551,
+            "95pct": 700
+          },
+          "top_eigenvalue_share": 0.034840068355011584,
+          "n_nonzero_eigenvalues": 2000,
+          "matches_fit_pca_basis": true,
+          "fit_pca_mu_identical": true,
+          "spectra_key": "norman__2000",
+          "lam_len": 2000,
+          "lam_sum": 163.14738454920243,
+          "lam_sumsq": 118.79248864034845,
+          "spectra_sidecar": "2026-08-11T06-20-34Z__norman__spectra.npz"
+        },
+        "8000": {
+          "n_control_used": 8000,
+          "n_control_available": 8907,
+          "n_genes": 5000,
+          "rank_bound": 5000,
+          "participation_ratio": 248.1107698135322,
+          "effective_rank_exp_spectral_entropy": 655.7295183193164,
+          "n_components_for_variance": {
+            "80pct": 480,
+            "90pct": 658,
+            "95pct": 826
+          },
+          "top_eigenvalue_share": 0.036076953004786215,
+          "n_nonzero_eigenvalues": 4999,
+          "matches_fit_pca_basis": true,
+          "fit_pca_mu_identical": true,
+          "spectra_key": "norman__8000",
+          "lam_len": 4999,
+          "lam_sum": 162.7389829482694,
+          "lam_sumsq": 106.74255128441692,
+          "spectra_sidecar": "2026-08-11T06-20-34Z__norman__spectra.npz"
+        }
+      },
+      "data_fingerprint_controls": {
+        "shape": [
+          8907,
+          5000
+        ],
+        "dtype": "float64",
+        "sum": 5064559.182591051,
+        "sumsq": 10049776.12938899,
+        "nan_count": 0
+      }
+    }
+  ],
+  "platform_tag": "Linux-x86_64-py3.10.12",
+  "nmin_set": [
+    50,
+    125,
+    500,
+    2000,
+    8000
+  ],
+  "power_floors": {
+    "hard": 125,
+    "soft": 8000,
+    "source": "measured under LFC on the simulator; lfc/power_hard and lfc/power_soft"
+  },
+  "contains_no_test": true,
+  "disclaimer": "DESCRIPTIVE ONLY. No rank test was run and no assumption verdict is expressed or implied. Phase B is not authorised.",
+  "spectra_sidecar": "2026-08-11T06-20-34Z__norman__spectra.npz",
+  "peak_rss_mb": 8065.2,
+  "meta": {
+    "statistic": "descriptive",
+    "gate": "descriptives",
+    "git_commit": "8181090",
+    "timestamp": "2026-08-11T06:20:34Z",
+    "config": {
+      "alpha": null,
+      "B": null,
+      "n_e": null,
+      "d": null,
+      "d_latent": null,
+      "D": null,
+      "n_env": null,
+      "seeds": [
+        0
+      ],
+      "draws_per_point": null,
+      "extra": {
+        "dataset": "norman",
+        "arm": null,
+        "hvg": null,
+        "nmin_set": [
+          50,
+          125,
+          500,
+          2000,
+          8000
+        ],
+        "spec_caps": [
+          2000,
+          8000
+        ],
+        "platform_tag": "Linux-x86_64-py3.10.12",
+        "timezone": "UTC",
+        "timestamp_suffix": "Z",
+        "peak_rss_mb": 8065.2,
+        "overlap_check": false
+      }
+    },
+    "versions": {
+      "python": "3.10.12",
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "pandas": "2.3.3",
+      "sklearn": "1.7.2",
+      "scanpy": "1.11.5",
+      "anndata": "0.11.4",
+      "platform": {
+        "system": "Linux",
+        "release": "5.15.0-1065-nvidia",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "python_implementation": "CPython",
+        "numpy_blas": "scipy-openblas"
+      }
+    },
+    "superseded_by": null,
+    "migrated_from": null,
+    "status": "CURRENT",
+    "note": "descriptive profile of norman; no test, no verdict"
+  }
+}

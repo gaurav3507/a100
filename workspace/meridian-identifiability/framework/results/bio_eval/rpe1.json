@@ -1,0 +1,139 @@
+{
+  "dataset": "rpe1",
+  "budget": 5000,
+  "d_latent": 15,
+  "results": {
+    "chipseq": {
+      "random": {
+        "n_edges": 4994,
+        "tp": 123.0,
+        "precision": 0.02462955546655987,
+        "recall": 0.023699421965317918
+      },
+      "corr_top": {
+        "n_edges": 5000,
+        "tp": 276.0,
+        "precision": 0.0552,
+        "recall": 0.05317919075144509
+      },
+      "empirical_shift": {
+        "n_edges": 5000,
+        "tp": 150.0,
+        "precision": 0.03,
+        "recall": 0.028901734104046242
+      },
+      "emp_shift_TC": {
+        "n_edges": 5000,
+        "tp": 183.0,
+        "precision": 0.0366,
+        "recall": 0.03526011560693642
+      },
+      "hub": {
+        "n_edges": 5000,
+        "tp": 415.0,
+        "precision": 0.083,
+        "recall": 0.07996146435452794
+      },
+      "program_shift": {
+        "n_edges": 5000,
+        "tp": 161.0,
+        "precision": 0.0322,
+        "recall": 0.031021194605009635
+      },
+      "program_pca": {
+        "n_edges": 5000,
+        "tp": 238.0,
+        "precision": 0.0476,
+        "recall": 0.045857418111753374
+      }
+    },
+    "string_pairs_0": {
+      "random": {
+        "n_edges": 4994,
+        "tp": 569.0,
+        "precision": 0.11393672406888265,
+        "recall": 0.02169685414680648
+      },
+      "corr_top": {
+        "n_edges": 5000,
+        "tp": 1493.0,
+        "precision": 0.2986,
+        "recall": 0.056930409914204005
+      },
+      "empirical_shift": {
+        "n_edges": 5000,
+        "tp": 962.0,
+        "precision": 0.1924,
+        "recall": 0.036682554814108675
+      },
+      "emp_shift_TC": {
+        "n_edges": 5000,
+        "tp": 830.0,
+        "precision": 0.166,
+        "recall": 0.031649189704480454
+      },
+      "hub": {
+        "n_edges": 5000,
+        "tp": 561.0,
+        "precision": 0.1122,
+        "recall": 0.021391801715919923
+      },
+      "program_shift": {
+        "n_edges": 5000,
+        "tp": 597.0,
+        "precision": 0.1194,
+        "recall": 0.022764537654909437
+      },
+      "program_pca": {
+        "n_edges": 5000,
+        "tp": 618.0,
+        "precision": 0.1236,
+        "recall": 0.023565300285986655
+      }
+    },
+    "string_pairs_1": {
+      "random": {
+        "n_edges": 4994,
+        "tp": 177.0,
+        "precision": 0.03544253103724469,
+        "recall": 0.02581303777162024
+      },
+      "corr_top": {
+        "n_edges": 5000,
+        "tp": 382.0,
+        "precision": 0.0764,
+        "recall": 0.05570949394779058
+      },
+      "empirical_shift": {
+        "n_edges": 5000,
+        "tp": 280.0,
+        "precision": 0.056,
+        "recall": 0.040834184045500946
+      },
+      "emp_shift_TC": {
+        "n_edges": 5000,
+        "tp": 247.0,
+        "precision": 0.0494,
+        "recall": 0.03602158378299548
+      },
+      "hub": {
+        "n_edges": 5000,
+        "tp": 178.0,
+        "precision": 0.0356,
+        "recall": 0.025958874143211318
+      },
+      "program_shift": {
+        "n_edges": 5000,
+        "tp": 161.0,
+        "precision": 0.0322,
+        "recall": 0.023479655826163046
+      },
+      "program_pca": {
+        "n_edges": 5000,
+        "tp": 164.0,
+        "precision": 0.0328,
+        "recall": 0.02391716494093627
+      }
+    }
+  }
+}

@@ -1,0 +1,980 @@
+%=============================================================================
+%  Benchmark Datasets for Multi-Environment Causal Representation
+%  Learning Do Not Meet Their Identifiability Preconditions
+%
+%  Target venue: IEEE Journal of Biomedical and Health Informatics (JBHI)
+%  Template: ieeecolor.cls (IEEE Transactions and Journals, June 2023)
+%
+%  Required in the same directory:
+%     ieeecolor.cls, generic.sty
+%     goyal1.png  (Fig. 1)  goyal2.png (Fig. 2)  goyal3.png (Fig. 3)
+%
+%  generic.sty must define \journalname as the target journal.
+%=============================================================================
+\documentclass[journal,twoside,web]{ieeecolor}
+\usepackage{generic}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{hyperref}
+\hypersetup{hidelinks=true}
+\usepackage{textcomp}
+
+% Procedure 1 is a reporting protocol, not an estimation method. The float is
+% renamed accordingly so that it is not read as a methodological contribution.
+\floatname{algorithm}{Procedure}
+
+\markboth{\hskip25pc IEEE JOURNAL OF BIOMEDICAL AND HEALTH INFORMATICS}
+{Goyal \MakeLowercase{\textit{et al.}}: Benchmark Datasets Do Not Meet Their Identifiability Preconditions}
+
+\begin{document}
+
+\title{Benchmark Datasets for Multi-Environment Causal Representation Learning Do Not Meet Their Identifiability Preconditions}
+
+\author{Gaurav Goyal, Shailendra Tiwari, and Manju Khurana
+\thanks{Manuscript submitted \today.}
+\thanks{The authors are with the Computer Science and Engineering Department,
+Thapar Institute of Engineering and Technology, Patiala, Punjab 147004, India
+(e-mail: ggoyal\_phd23@thapar.edu; shailendra.tiwari@thapar.edu;
+manju.khurana@thapar.edu).}
+\thanks{Analysis code and all result artefacts are publicly available; see
+Section~\ref{sec:avail}.}}
+
+\maketitle
+
+%=============================================================================
+\begin{abstract}
+Causal representation learning aims to recover latent causal variables and
+their graph from high-dimensional measurements collected across multiple
+environments. Its identifiability theorems impose explicit preconditions on
+the data: enough environments relative to the latent dimension, and enough
+samples within each environment to resolve a mechanism shift. Reported
+performance on public benchmarks has been persistently poor, and the field has
+responded by developing better estimators. We ask a prior question: do the
+benchmark datasets satisfy the preconditions at all? We audit eight datasets
+widely used to evaluate causal representation learning and related
+multi-environment methods, comprising six single-cell perturbation screens and
+two functional neuroimaging corpora, using only counting and spectral
+statistics computed before any model is fitted. Three findings emerge. First,
+the observed dimension of the unperturbed control covariance is 234 to 456 by
+participation ratio and 496 to 1725 by 95 per cent variance at a matched
+sample size of 2000 cells; a feature-count control rules out the obvious
+artefactual explanation, since one screen has four times as many measured
+genes as another yet returns half its participation ratio. Second, of the
+perturbation environments audited, only two contain at least 8000 cells and
+only 101 contain at least 500, against detection floors of 125 and 8000 cells
+measured here for hard and soft mechanism shifts. Third, the two modalities
+fail in opposite directions, one supplying breadth without depth and the other
+depth without breadth. No model is fitted at any step, so these conclusions
+cannot be attributed to estimator failure.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Benchmark evaluation, causal representation learning, effective
+dimensionality, functional magnetic resonance imaging, identifiability,
+single-cell transcriptomics, statistical power, weak identification.
+\end{IEEEkeywords}
+
+%=============================================================================
+\section{Introduction}
+\label{sec:intro}
+
+\IEEEPARstart{C}{ausal} representation learning (CRL) seeks to recover a small
+set of latent causal variables, together with the causal graph relating them,
+from high-dimensional observations gathered under several experimental
+conditions \cite{scholkopf2021}. The appeal for biomedical data is immediate.
+A single-cell CRISPR screen measures tens of thousands of genes per cell
+across thousands of genetic perturbations; a neuroimaging study measures
+hundreds of brain regions across sites, subjects, and tasks. In both cases the
+measured variables are widely believed to be surface manifestations of a much
+smaller set of underlying mechanisms, which is precisely the structure CRL
+assumes.
+
+The theoretical foundations of the field are now well developed.
+Identifiability results exist for linear mixing with hard interventions
+\cite{squires2023}, for nonparametric mixing with unknown interventions
+\cite{kugelgen2023}, for general nonlinear mixing \cite{buchholz2023}, and for
+soft interventions \cite{zhang2023}. Each of these results is conditional.
+Identifiability is guaranteed only when the data satisfy stated preconditions,
+and the most consequential of these are not assumptions about the world but
+requirements on the experimental design: how many distinct environments were
+collected, and how much data each contains. Rajendran \emph{et al.}
+\cite{rajendran2024} state the requirement in its bluntest form, showing that
+recovering $n$ concepts requires at least $n+1$ environments in the favourable
+case, and roughly $2n+1$ for variational formulations.
+
+Against this theoretical progress, the empirical record is discouraging.
+Gamella \emph{et al.} \cite{gamella2025} constructed a physical optical system
+that satisfies the core CRL assumptions by design, with the underlying causal
+factors known and controlled, and found that every representative method they
+evaluated failed to recover them. In the transcriptomic setting,
+Ahlmann-Eltze \emph{et al.} \cite{ahlmann2025} found that five foundation
+models and two other deep learning models failed to outperform deliberately
+simple linear baselines at predicting perturbation effects. Similar
+conclusions have been reached by several independent evaluation frameworks
+\cite{vollenweider2026,vinas2026}.
+
+The response of the field to this record has been to build better methods and
+better metrics. That response presupposes that the datasets used for
+evaluation are capable of supporting the task. We ask whether they are.
+Specifically, we treat the preconditions of the identifiability theorems as
+measurable quantities and evaluate them directly on the datasets that CRL
+papers use for empirical validation.
+
+This is not a new kind of question, although it appears to be new in this
+literature. Econometrics has for three decades distinguished between a model
+that is wrong and data that cannot identify a model that is right, and has
+developed pre-tests for the second case. Staiger and Stock \cite{staiger1997}
+characterised the weak-instrument regime, Stock and Yogo \cite{stock2005} gave
+usable diagnostics, and the associated rank-testing literature
+\cite{kleibergen2006,robin2000,chen2019} provides formal machinery for asking
+whether a matrix that must have a given rank for identification actually does.
+What we present here is a pre-test of the same kind, adapted to
+multi-environment CRL and applied retrospectively to a benchmark corpus.
+
+Our contributions are as follows.
+
+\begin{enumerate}
+\item We define a precondition audit: a set of measurements, computed from
+data alone before any model is fitted, that reports whether a
+multi-environment dataset can in principle support latent causal
+identification. The audit requires no ground-truth latents, no trained model,
+and no assumption about the mixing function. It is set out in full as
+Procedure~\ref{proc:audit}.
+
+\item We report the first estimates, to our knowledge, of the observed
+dimension of the control-cell covariance for the Replogle K562 and RPE1,
+Norman, and Frangieh perturbation screens. Values recurring in the literature,
+such as 50 principal components, 100 principal components, or a latent
+dimension set equal to the number of targets, are user-chosen pipeline
+hyperparameters rather than estimator outputs.
+
+\item We tabulate per-environment sample size against measured detection
+floors across eight datasets and two modalities, and show that transcriptomic
+and neuroimaging benchmarks violate the preconditions in complementary and
+opposite ways.
+
+\item We show that the participation ratio, a dimension estimator in common
+use, is not robust to rank-based transformation of zero-inflated count data,
+and characterise the artefact quantitatively. This is a methodological caution
+of independent interest to anyone estimating dimensionality from single-cell
+data.
+\end{enumerate}
+
+%=============================================================================
+\section{Preconditions for Multi-Environment Causal Representation Learning}
+\label{sec:precond}
+
+\subsection{Setting}
+We consider the standard multi-environment CRL setting. A latent vector
+$\mathbf{z}$ of dimension $d$ is generated by a structural causal model. An
+observation $\mathbf{x}$ of dimension $p$ is produced by a mixing map $g$, so
+that $\mathbf{x} = g(\mathbf{z})$. Data are collected in $K$ environments
+indexed by $e$, where each environment corresponds to an intervention on one
+or more latent coordinates, or in the observational case to no intervention.
+The goal is to recover $g$ up to a permissible ambiguity class, and to recover
+the causal graph over $\mathbf{z}$.
+
+Identifiability results in this setting differ in the mixing class they permit
+and in the intervention type they assume, but they share a common structure: a
+set of conditions under which the map from latents to observations can be
+inverted uniquely. Three of these conditions are properties of the dataset
+rather than of the estimator, and can therefore be checked before any method
+is run.
+
+\subsection{Precondition 1: environment count}
+Identification requires that the environments jointly supply enough
+independent constraints to pin down the latent coordinates. In the cleanest
+statement of this requirement, recovering $n$ latent concepts requires at
+least $n+1$ environments, and identification via variational objectives
+requires roughly $2n+1$ \cite{rajendran2024}. This precondition is pure
+counting. It does not depend on the mixing function, the intervention type,
+the noise model, or the sample size, and it can therefore be checked with
+complete confidence for any dataset. If the number of environments is $K$, no
+more than approximately $K-1$ latent directions can be resolved, whatever
+method is applied.
+
+\subsection{Precondition 2: per-environment sample size}
+An environment contributes information only if the mechanism change it induces
+is detectable above sampling noise. This is a power question, and unlike the
+environment count it depends on the effect size and on the statistic used to
+detect the change. Prospective power tooling for perturbation screens exists
+and is well developed. PerturbPlan \cite{niu2026} derives an analytical power
+formula for detecting perturbation-expression associations and provides an
+interactive design application. That machinery targets per-gene differential
+expression for experiments not yet run. The quantity relevant here is
+different: the number of samples required to detect a change in the
+second-order structure of the data, which is the object that CRL
+identifiability arguments manipulate. We measure this floor directly
+(Section~\ref{sec:floors}) and apply it retrospectively to datasets already
+collected.
+
+\subsection{Precondition 3: latent dimension within the identifiable regime}
+The published theorems do not impose an upper bound on $d$. In practice,
+however, every estimator and every test has a regime in which it behaves as
+its theory predicts, and that regime is finite. We therefore measure two
+things and keep them carefully distinct. The first is the observed dimension
+of the data, defined as the effective dimension of the control-condition
+covariance, which is a lower bound on the number of latent directions that
+could be present. The second is the dimension range in which our detection
+instrument is exact, established by simulation. We do not claim that CRL is
+unidentifiable above some dimension; we claim that the observed dimension of
+these datasets lies an order of magnitude outside the range in which our
+instrument, and by extension the finite-sample behaviour of comparable
+second-order procedures, has been verified.
+
+\subsection{Relation to weak-identification pre-testing}
+The audit is conceptually a pre-test in the sense of the weak-identification
+literature. In instrumental-variable regression, the parameter of interest is
+identified only if the first-stage coefficient matrix has full rank; when it
+is close to rank-deficient, estimators remain computable and report finite
+standard errors while being severely biased and having badly distorted
+coverage \cite{staiger1997}. The recommended practice is to test the
+identification condition before interpreting the estimate \cite{stock2005},
+with formal rank tests supplying the machinery
+\cite{kleibergen2006,robin2000,chen2019}. The situation in CRL is analogous.
+Nothing prevents a CRL method from being fitted to a dataset whose
+environments cannot identify the latent model; the method will converge,
+report a representation, and score on a benchmark. The purpose of the audit is
+to determine whether that score carries information about the method.
+
+%=============================================================================
+\section{Materials and Methods}
+\label{sec:methods}
+
+\subsection{Datasets}
+We audit eight datasets spanning two modalities. Replogle K562 and RPE1
+\cite{replogle2022} are genome-scale Perturb-seq screens using CRISPR
+interference, comprising 1159 and 652 perturbation targets respectively.
+Norman \cite{norman2019} is a CRISPR activation screen with 105 single-gene
+targets measured over 5000 highly variable genes. Frangieh
+\cite{frangieh2021} is a Perturb-CITE-seq screen in patient-derived melanoma,
+assayed under three experimental arms (co-culture, control, and
+interferon-$\gamma$), each containing 248 targets; the arms are audited
+separately because the arm effect would otherwise dominate any pooled
+statistic. The Human Connectome Project \cite{vanessen2013} contributes seven
+task conditions, and the Autism Brain Imaging Data Exchange
+\cite{dimartino2014} contributes fourteen acquisition sites.
+
+The two neuroimaging corpora are included for the environment-count and
+per-environment-sample-size analyses, where the comparison is informative, and
+are excluded from the covariance-dimension comparison, where it is not.
+Neither has a control condition analogous to unperturbed cells, so their
+spectra are computed over pooled frames and are not commensurable with the
+Perturb-seq control spectra. We further note explicitly that ABIDE sites are
+measurement shifts rather than interventions, so the attrition curve for ABIDE
+is a descriptive analogue and not an interventional one.
+
+\subsection{Environment attrition}
+For each dataset we count the number of environments, and the number surviving
+thresholds of 125, 500, and 8000 samples per environment. For transcriptomic
+screens a sample is a cell assigned to that perturbation; for neuroimaging a
+sample is a timepoint. We report the median environment size and the full
+quartile range. No filtering, pooling, or reweighting is applied.
+
+\subsection{Observed dimension of the control covariance}
+Dimension is estimated from control cells only, so that no perturbation effect
+can contribute. We compute three estimators from the eigenvalue spectrum of
+the control covariance: the participation ratio, the effective rank defined as
+the exponential of the spectral entropy, and the number of components required
+to reach 95 per cent of the variance. The three disagree systematically, by a
+factor of roughly 1.8 on K562, and we report all three throughout and treat
+their spread as the honest uncertainty rather than selecting the most
+favourable.
+
+Two properties of these estimates require emphasis. They are sample-size
+dependent, and they are lower bounds. Raising the control sample from 2000 to
+8000 cells raises the K562 participation ratio from 455.5 to 552.5 and the
+effective rank from 722.8 to 885.8. All cross-dataset comparisons are
+therefore made at a matched control sample size, which is stated in every
+table. Where the number of control cells is smaller than the number of genes,
+the effective rank and the 95 per cent variance count are bounded by the
+sample size and become noise-contaminated; in that regime, which applies to
+all Frangieh arms, only the participation ratio remains comparable across
+datasets, and we flag those rows explicitly.
+
+As an independent check on whether the observed dimension is inflated by
+measurement noise, we compare the participation ratio against the point at
+which the empirical spectrum crosses the Marchenko--Pastur edge for a
+pure-noise matrix of the same shape \cite{marchenko1967}. This comparison is
+valid only where the covariance is of full rank, which holds for K562 and RPE1
+and fails for the remaining datasets, where the aspect ratio pushes the noise
+edge far above the bulk. We therefore use it as corroboration where it is
+available and state plainly where it is not.
+
+\subsection{Detection floors}
+\label{sec:floors}
+The per-environment sample-size floor is measured rather than assumed. We
+simulate a multi-environment linear structural model with known latent
+dimension and a known intervention, and test the null hypothesis that the rank
+of the difference between two environment covariances does not exceed a fixed
+value, using the composite-null bootstrap rank test of Chen and Fang
+\cite{chen2019}. The test statistic is the sum of trailing squared singular
+values with the rank held fixed at the null value, which removes all tuning
+constants from the procedure. We use a significance level of 0.05 and 500
+bootstrap replicates throughout.
+
+Calibration was verified before the floors were read off. Under a true rank of
+zero the empirical rejection rate stayed below the upper confidence band in
+every configuration and every seed. Under interventions on source nodes, which
+place the truth in the interior of the null, the rejection rate was exactly
+zero in all six configurations tested. Under interventions on non-source
+nodes, which place the truth on the boundary of the null, the rejection rate
+was 0.097 unstandardised and 0.083 standardised, roughly 1.9 and 1.7 times
+nominal. This excess did not shrink across a fortyfold range of sample sizes
+and is therefore structural, reflecting the known degradation of regularity
+conditions at the rank boundary, rather than a finite-sample effect. We report
+it rather than gate on it.
+
+Reading power off these curves gives a floor of 125 samples per environment
+for hard interventions and 8000 for soft interventions, a ratio of roughly
+sixty-four. The distinction matters because CRISPR interference produces
+knockdown rather than deletion, and knockdown is a soft intervention by
+construction. We report both floors against every dataset rather than
+committing to one.
+
+We additionally measured the range of mixing nonlinearity within which the
+test remains exact, parameterised by a curvature scale. That range is not a
+single number: it shrinks with latent dimension, from a curvature scale above
+0.1 at latent dimension 10 to 0.02 at latent dimension 20. Combined with the
+dimension results below, this is the reason we did not apply the rank test to
+real data. Curvature can only push the test toward more rejection, so a
+non-rejection would remain a strong claim, but a rejection would be confounded
+with mixing curvature and could not be interpreted. The test is used here
+solely to establish the envelope; every number reported on real data is a
+count or an eigenvalue.
+
+\subsection{Preprocessing sensitivity}
+To determine whether the dimension estimates are properties of the data or of
+the normalisation pipeline, we recomputed all estimators under three
+transformations: the matrices as distributed, per-gene standardisation, and
+per-gene rank-inverse-normal transformation. A fourth arm applying a logarithm
+followed by standardisation was specified but refused at run time. A loader
+probe found that none of the non-zero entries in any of the six matrices was
+integral, with maxima near 5 and per-entry means below 1, indicating that all
+six matrices had already been log-transformed upstream. Applying a further
+logarithm would have constituted a double transformation, and the arm was
+emitted as null with the reason recorded rather than reported as a legitimate
+preprocessing choice.
+
+This is itself a finding worth stating. None of the loaders used by the
+benchmark pipelines we examined records what normalisation was applied, and
+the transformation history of these widely used matrices must be inferred from
+their numerical fingerprint. We treat this as a limitation of the benchmark
+ecosystem rather than of our audit, but it constrains what any dimension
+estimate on these data can claim.
+
+\subsection{Reproducibility}
+All estimators were validated against a fixed-seed synthetic case with pinned
+expected values before being applied to real data, and the gate cannot report
+success while those values are unpinned. The complete pipeline was executed
+independently on two machines with different operating systems, BLAS backends,
+and library versions; the fixed-seed synthetic outputs agreed to fifteen
+decimal places. Every result artefact records library versions, platform, BLAS
+backend, and a full-precision fingerprint of the input matrix, so that a
+difference in data can never be mistaken for version drift.
+
+%=============================================================================
+\section{Results}
+\label{sec:results}
+
+\subsection{Environment attrition}
+Table~\ref{tab:attrition} reports the number of environments surviving each
+sample-size threshold. Two features stand out. First, only two perturbation
+environments in the entire corpus, one in K562 and one in RPE1, contain at
+least 8000 cells, the floor for detecting a soft mechanism shift. Second, the
+attrition between 125 and 500 cells is severe: 899 K562 environments clear 125
+cells but only 27 clear 500, and no Frangieh environment in any of the three
+arms reaches 500. Across the six perturbation datasets, 101 environments of
+2164 distinct targets contain at least 500 cells.
+
+Fig.~\ref{fig:breadth}(b) shows the same attrition as survival curves. The six
+perturbation datasets fall as a tight bundle and reach the floor together; the
+two neuroimaging corpora are flat across the same range. The separation is not
+gradual but categorical.
+
+This is not an accident of the data but a visible design decision.
+Genome-scale screens deliberately distribute a fixed cell budget across as
+many targets as possible, buying breadth at the cost of depth. That decision
+is entirely appropriate for the purpose those screens were designed to serve.
+It is adverse for latent causal identification, which requires each
+environment to individually resolve a mechanism change.
+
+\begin{table*}[!t]
+\caption{Environment Attrition. Number of Environments Surviving Each Per-Environment Sample-Size Threshold}
+\label{tab:attrition}
+\centering
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{lccccccc}
+\hline
+Dataset & Modality & Environments & $\geq$125 & $\geq$500 & $\geq$8000 & Median \\
+\hline
+K562 & Perturb-seq (CRISPRi) & 1159 & 899 & 27 & 1 & 165 \\
+RPE1 & Perturb-seq (CRISPRi) & 652 & 451 & 23 & 1 & 146.5 \\
+Norman & Perturb-seq (CRISPRa) & 105 & 104 & 51 & 0 & 495 \\
+Frangieh (co-culture) & Perturb-CITE-seq & 248 & 187 & 0 & 0 & 179.5 \\
+Frangieh (control) & Perturb-CITE-seq & 248 & 109 & 0 & 0 & 121 \\
+Frangieh (IFN-$\gamma$) & Perturb-CITE-seq & 248 & 192 & 0 & 0 & 199 \\
+HCP & Task fMRI & 7 & 7 & 7 & 7 & 32384 \\
+ABIDE & Resting-state fMRI & 14 & 14 & 14 & 2 & 4930 \\
+\hline
+\end{tabular}
+\\[2pt]
+\parbox{\textwidth}{\footnotesize Samples are cells for perturbation screens and
+timepoints for neuroimaging. HCP and ABIDE environments are task conditions
+and acquisition sites respectively; ABIDE sites are measurement shifts, not
+interventions.}
+\end{table*}
+
+\begin{figure*}[!t]
+\centerline{\includegraphics[width=\textwidth]{goyal1.png}}
+\caption{Environment count against median samples per environment, with the
+two detection floors and the environment requirement for $d = 224$ (a), and
+the fraction of environments surviving each sample-size threshold (b). The
+shaded region in (a) is the set of datasets satisfying both preconditions
+simultaneously; no dataset in the corpus lies inside it. The vertical boundary
+is placed at 225 environments, the requirement implied by the smallest
+observed dimension in the corpus, which is the most permissive placement the
+data allow. Fractions in (b) are relative to each dataset's own environment
+count.}
+\label{fig:breadth}
+\end{figure*}
+
+\subsection{Observed dimension of the control covariance}
+Table~\ref{tab:dimension} reports the three dimension estimators at a matched
+control sample of 2000 cells. The participation ratio ranges from 224 to 456
+and the 95 per cent variance count from 496 to 1725. The largest single
+eigenvalue accounts for between 2.1 and 4.1 per cent of the total variance,
+which is the most informative number in the table: there is no dominant
+direction. Variance is distributed across hundreds of components rather than
+concentrated in a handful with noise around them. These data are
+high-dimensional rather than low-dimensional and noisy.
+
+Fig.~\ref{fig:dimension}(a) plots the three estimators against the envelope in
+which our detection instrument is verified exact, shaded near the floor of the
+axis. Every bar for every dataset sits one to two orders of magnitude above
+it. Bars marked with a dagger are those for which the number of control cells
+is below the number of genes, so effective rank and 95 per cent variance are
+bounded by $n$ rather than by the data.
+
+Raising the control sample to 8000 cells raises every estimate, K562 to 552.5,
+RPE1 to 261.6 and Norman to 248.1, confirming that the values in
+Table~\ref{tab:dimension} are lower bounds.
+
+\begin{table}[!t]
+\caption{Observed Dimension of the Control Covariance at a Matched Control Sample of $n = 2000$ Cells}
+\label{tab:dimension}
+\centering
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrr}
+\hline
+Dataset & Genes & PR & Eff.\ rank & Var95 & $\lambda_1$ \\
+\hline
+RPE1 & 651 & 234.5 & 436.4 & 496 & 0.041 \\
+K562 & 1158 & 455.5 & 722.8 & 800 & 0.021 \\
+Norman$^{\dagger}$ & 5000 & 224.1 & 538.6 & 700 & 0.035 \\
+Frangieh co-culture$^{\dagger}$ & 23712 & 415.4 & 1472 & 1721 & 0.041 \\
+Frangieh control$^{\dagger}$ & 23712 & 419.2 & 1471 & 1725 & 0.041 \\
+Frangieh IFN-$\gamma^{\dagger}$ & 23712 & 435.7 & 1484 & 1719 & 0.040 \\
+\hline
+\end{tabular}
+\\[2pt]
+\parbox{\columnwidth}{\footnotesize PR: participation ratio. Eff.\ rank:
+exponential of the spectral entropy. Var95: components required for 95 per
+cent of variance. $\lambda_1$: variance fraction of the leading eigenvalue.
+Rows marked $\dagger$ have fewer control cells than measured genes, so
+Eff.\ rank and Var95 are bounded by $n$ and are not comparable across
+datasets; only PR is.}
+\end{table}
+
+\subsection{Dimension is not an artefact of feature count}
+The immediate objection to Table~\ref{tab:dimension} is that the estimates
+simply track the number of measured genes. They do not. Norman is measured
+over 5000 genes and K562 over 1158, a factor of more than four, yet at an
+identical control sample of 8000 cells Norman returns a participation ratio of
+248.1 against K562's 552.5, less than half, and in the opposite direction to
+the objection. Across a thirty-sixfold range of feature counts the
+participation ratio spans only about a factor of two, and does so
+non-monotonically. Whatever the observed dimension is measuring, it is not the
+width of the matrix.
+
+Fig.~\ref{fig:dimension}(b) makes the comparison directly: the arrow runs from
+K562 to Norman, from fewer genes to more and from higher dimension to lower.
+
+\subsection{Spectrum shape and Marchenko--Pastur corroboration}
+The K562 and RPE1 control spectra decay smoothly over three to four orders of
+magnitude with no knee, which is inconsistent with a low-dimensional signal
+embedded in isotropic noise and consistent with the broad eigenvalue
+distributions reported for other high-dimensional biological systems
+\cite{stringer2019}. For these two datasets the covariance is of full rank and
+the Marchenko--Pastur crossing can be computed; it agrees with the
+participation ratio to within 7 to 28 per cent (K562: 522 against 456 at
+$n = 2000$, and 517 against 553 at $n = 8000$; RPE1: 284 against 234, and 336
+against 262). Two estimators resting on entirely different principles converge
+on the same order of magnitude.
+
+For the remaining datasets the number of genes far exceeds the number of
+control cells, the noise edge is pushed roughly twenty times above the bulk,
+and the crossing returns values between 2 and 3 against participation ratios
+of 415 to 436. The comparison is uninformative there and we do not use it. The
+datasets on which this corroboration is unavailable are those with the most
+severe sample-size limitation, which is the second finding of this audit
+reappearing in a different form.
+
+Fig.~\ref{fig:dimension}(c) plots the two estimates against each other for the
+four cases in which both are available. All four fall inside a band of plus or
+minus twenty-five per cent around the identity line, and the residual scatter
+has no systematic direction.
+
+\begin{figure*}[!t]
+\centerline{\includegraphics[width=\textwidth]{goyal2.png}}
+\caption{Observed dimension under three estimators at a matched control sample,
+against the verified envelope (a); participation ratio against the number of
+measured genes (b); and participation ratio against the Marchenko--Pastur
+crossing (c). Bars in (a) sit on a logarithmic axis, so only the bar tops
+encode the value; a dagger marks rows in which the number of control cells is
+below the number of genes.}
+\label{fig:dimension}
+\end{figure*}
+
+\subsection{Preprocessing sensitivity}
+Table~\ref{tab:preproc} reports the dimension estimators under the three
+usable preprocessing arms. The participation ratio is not invariant, and the
+pattern is instructive. Under standardisation it rises, substantially so where
+the number of genes exceeds the number of cells, because standardisation
+upweights low-variance genes that carry mostly noise. Under
+rank-inverse-normal transformation it collapses, to values between 1.4 and 2.2
+on the four sparsest datasets.
+
+That collapse is an artefact with an identifiable mechanism, not a competing
+estimate. The rank-inverse-normal transform is applied per gene; where a large
+fraction of entries are exactly zero, those entries tie and map to a single
+value, and the transform manufactures one dominant direction reflecting the
+detection pattern rather than expression covariance. The leading eigenvalue's
+variance share under this arm increases monotonically with the zero fraction
+across all six datasets without exception, from 0.118 at a zero fraction of
+0.397 (K562) to 0.832 at 0.911 (Norman). Because the participation ratio is
+quadratic in the eigenvalues, a single direction of that size pins it near its
+reciprocal.
+
+Critically, the 95 per cent variance count is essentially unchanged under the
+same transform on the two least sparse datasets: 800 against 798 for K562, and
+496 against 499 for RPE1. The same data, under a transform that destroys one
+estimator, returns the other estimator to within a few components. The
+conclusion of Section~\ref{sec:results} therefore holds under all three
+preprocessing arms, and the appropriate methodological caution, that the
+participation ratio should not be used alone on zero-inflated count data
+subjected to rank-based transformation, is stated rather than concealed.
+
+Fig.~\ref{fig:preproc}(a) shows the mechanism directly: the variance share of
+the leading eigendirection under the rank-inverse-normal arm rises
+monotonically with the fraction of zero entries, without exception across the
+six datasets. Fig.~\ref{fig:preproc}(b) shows the consequence for the two
+estimators side by side, with the 95 per cent variance count for K562 and RPE1
+moving by two and three components respectively while the participation ratio
+falls by an order of magnitude.
+
+\begin{table*}[!t]
+\caption{Preprocessing Sensitivity at $n = 2000$ Control Cells}
+\label{tab:preproc}
+\centering
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{lrrrrrrr}
+\hline
+Dataset & Zero fraction & Raw PR & Raw Var95 & Std.\ PR & Std.\ Var95 & Rank-int PR & Rank-int $\lambda_1$ \\
+\hline
+K562 & 0.397 & 455.5 & 800 & 482.5 & 844 & 63.98 & 0.118 \\
+RPE1 & 0.492 & 234.5 & 496 & 326.4 & 533 & 30.85 & 0.174 \\
+Frangieh control & 0.852 & 419.2 & 1725 & 1092.7 & 1776 & 2.20 & 0.674 \\
+Frangieh co-culture & 0.855 & 415.4 & 1721 & 1116.9 & 1775 & 2.14 & 0.683 \\
+Frangieh IFN-$\gamma$ & 0.877 & 435.7 & 1719 & 1174.3 & 1768 & 1.95 & 0.717 \\
+Norman & 0.911 & 224.1 & 700 & 560.9 & 1229 & 1.44 & 0.832 \\
+\hline
+\end{tabular}
+\\[2pt]
+\parbox{\textwidth}{\footnotesize Three arms: matrices as distributed (raw),
+per-gene standardisation (std.), and per-gene rank-inverse-normal (rank-int).
+A fourth log-then-standardise arm was refused at run time because all six
+matrices are already log-transformed upstream. Note the monotone relationship
+between the zero fraction and the rank-int leading-eigenvalue share.}
+\end{table*}
+
+\begin{figure*}[!t]
+\centerline{\includegraphics[width=\textwidth]{goyal3.png}}
+\caption{Variance share of the leading eigendirection under the
+rank-inverse-normal arm against the fraction of zero entries (a), and
+participation ratio and 95 per cent variance count under all three
+preprocessing arms (b). Bars in (b) sit on a logarithmic axis, so only the bar
+tops encode the value.}
+\label{fig:preproc}
+\end{figure*}
+
+\subsection{Breadth and depth are dissociated across modalities}
+Reading Tables~\ref{tab:attrition} and~\ref{tab:dimension} together produces
+the structural result of this audit. The transcriptomic screens supply many
+environments with very little data in each: K562 offers 1159 perturbations at
+a median of 165 cells apiece. The neuroimaging corpora supply the opposite:
+HCP offers seven task conditions at a median of 32384 timepoints, and ABIDE
+fourteen sites at a median of 4930, with every environment clearing the
+hard-intervention floor comfortably.
+
+Fig.~\ref{fig:breadth}(a) places every dataset on a plane whose axes are the
+two preconditions: number of environments on one axis, median samples per
+environment on the other. The region satisfying both simultaneously is shaded.
+It is empty. The perturbation screens occupy the lower right, the neuroimaging
+corpora the upper left, and no dataset in the corpus lies in the quadrant that
+identification requires. The vertical boundary is drawn at 225 environments,
+the requirement implied by the smallest observed dimension in the corpus,
+which is the most permissive placement the data allow.
+
+Latent causal identification requires both. It requires at least $d+1$
+environments to resolve $d$ latent directions \cite{rajendran2024}, and it
+requires each environment to individually supply enough samples to detect the
+mechanism change. Perturb-seq satisfies the first and fails the second; task
+and site fMRI satisfy the second and fail the first by an enormous margin.
+Fourteen ABIDE sites cap the resolvable latent dimension at thirteen, against
+an observed dimension of several hundred in the comparable transcriptomic
+case. Neither modality, as currently collected, supplies both preconditions
+simultaneously.
+
+%=============================================================================
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{What the audit establishes}
+The audit establishes that the datasets most commonly used to evaluate
+multi-environment CRL fail the preconditions of the identifiability theorems
+on two grounds that require no modelling assumptions. The observed dimension
+of the control covariance is one to two orders of magnitude above the range in
+which our detection instrument is verified exact, and per-environment sample
+sizes are far below the floors at which a soft mechanism shift becomes
+detectable. Because no model is fitted anywhere in the audit, these
+conclusions cannot be attributed to a failure of estimation. They are counts
+and eigenvalues computed on public data.
+
+The immediate consequence is interpretive. When a CRL method scores poorly on
+K562, the result is consistent with the method being inadequate and equally
+consistent with the data being unable to support any method. The benchmark
+does not distinguish these. That ambiguity is not resolved by improving the
+metric, because the metric is not what is failing.
+
+We suggest that this offers a parsimonious reading of the empirical record
+described in Section~\ref{sec:intro}. The methods evaluated by Gamella
+\emph{et al.} \cite{gamella2025} failed on a system built to satisfy the
+assumptions, which is genuine evidence about methods; the failures reported on
+transcriptomic benchmarks \cite{ahlmann2025,vollenweider2026,vinas2026} are at
+least partly attributable to the data. We state this as a hypothesis the audit
+makes available, not as a measured result, since no method is fitted here.
+
+A competing explanation exists and should be stated. Unweighted error metrics
+and control-referenced deltas can reward prediction of the perturbation mean
+when biological signal is sparse, so reported failures may partly reflect
+metric insensitivity rather than data insufficiency \cite{vollenweider2026}.
+The two are not exclusive, and the audit does not adjudicate between them. We
+note only that on K562 ridge regression reaches 0.226 against a ceiling of
+0.528 under the same unweighted metric, which shows that the metric is not
+blind to signal that is present.
+
+Figs.~\ref{fig:breadth} to~\ref{fig:preproc} and
+Tables~\ref{tab:attrition} to~\ref{tab:preproc} present the same three
+measurements from complementary directions, and no reading of them requires a
+fitted model.
+
+\subsection{What the audit does not establish}
+Three claims that the results might appear to license are not made, and we set
+them out explicitly.
+
+First, we measure the observed dimension of the control covariance, not the
+latent dimension. The observed dimension bounds the latent dimension from
+below under the assumption that the mixing map does not destroy dimension,
+which is standard but is an assumption. We use the word ``observed''
+throughout for this reason.
+
+Second, we do not claim that these datasets lie outside the regime in which
+CRL is identifiable. The published theorems state no upper bound on the latent
+dimension. The range of 20 to 40 referenced here is the verified operating
+envelope of our own instrument, established by simulation, and the defensible
+statement is that the observed dimension exceeds the envelope in which that
+instrument is exact.
+
+Third, the floor of 8000 cells is derived from our simulator under a specific
+statistic, and its transfer to real CRISPR interference experiments is an
+extrapolation. The floor of 125 cells is far more conservative and is cleared
+by 899 of 1159 K562 environments. We report both and note that the qualitative
+conclusion for Frangieh, where no environment in any arm reaches 500 cells,
+does not depend on which floor is adopted.
+
+\subsection{Partial identifiability}
+The strongest available counter-argument is that full identification is not
+the only useful goal. Recent theory permits partial identification of a
+limited subset of latent concepts from a sublinear or logarithmic number of
+environments, which would substantially relax the environment-count
+precondition. We regard this as the most promising direction for making CRL
+work on data of this kind, and we do not compete with it.
+
+It does not, however, rescue the datasets audited here. The per-environment
+sample-size finding is untouched by it: two environments in the corpus contain
+enough cells to detect a soft mechanism shift regardless of how many
+environments the theory requires. The dimension finding continues to constrain
+how finely any recovered subspace can be resolved. Partial identifiability
+changes what one should aim for; it does not change what the data contain.
+
+\subsection{Recommendation}
+We suggest that evaluations of multi-environment causal methods report a short
+precondition summary alongside their results: the number of environments, the
+distribution of samples per environment against a stated detection floor, and
+an estimate of observed dimension with the sample size at which it was
+computed. This costs a table. It would allow a reader to distinguish a method
+that failed from a dataset that could not have supported success, which at
+present no published benchmark permits.
+
+Procedure~\ref{proc:audit} sets that recommendation out in full. It is a
+reporting protocol rather than an estimation method: every step is a count, an
+eigenvalue, or a statement of provenance, and none of it requires a fitted
+model or ground-truth latents. Applied to the eight datasets audited here it
+produces Tables~\ref{tab:attrition} to~\ref{tab:preproc} and
+Figs.~\ref{fig:breadth} to~\ref{fig:preproc} in their entirety.
+
+\begin{algorithm}[!t]
+\caption{Precondition audit for a multi-environment dataset.}
+\label{proc:audit}
+\footnotesize
+\textbf{Input:} feature matrix $\mathbf{X}$ ($n$ samples $\times$ $p$
+features), environment labels, and a designated control or observational
+environment where one exists.\\
+\textbf{Output:} a precondition report giving the environment count, the
+attrition curve, the observed dimension with its uncertainty, and a verdict
+for each precondition.
+\begin{enumerate}
+\item \textbf{Enumerate environments.} Record $K$ and the sample size $n_e$ of
+each. Do not pool, filter, or reweight. Where environments are nested, audit
+each level separately and state which level is treated as the environment.
+\item \textbf{Classify the environments.} State for each whether it
+corresponds to an intervention or to a measurement shift. Measurement shifts
+supply no mechanism variation and must be reported as descriptive only.
+\item \textbf{Fix the detection floors before inspecting the data.} Adopt
+published power figures for the assay, or measure floors by simulation
+calibrated to the statistic that would be used. Report floors for both hard
+and soft interventions and state which applies.
+\item \textbf{Compute the attrition curve.} For a set of thresholds, count the
+environments at or above each. Report the median and quartiles of $n_e$, and
+absolute counts as well as fractions.
+\item \textbf{Isolate the control condition.} Estimate dimension on
+unperturbed samples only. Where no control exists, say so; a spectrum over
+pooled samples is not comparable to a control spectrum.
+\item \textbf{Estimate observed dimension at two matched sample sizes.} At
+each, report the participation ratio, the effective rank, the number of
+components reaching 95 per cent of variance, and the leading eigenvalue's
+share. Compare across datasets only at identical $n$, and report every
+estimator.
+\item \textbf{Flag rank deficiency.} Where $n < p$, mark the row. Effective
+rank and the variance count are then bounded by $n$ rather than by the data;
+only the participation ratio remains comparable.
+\item \textbf{Corroborate against a noise null.} Where the covariance is of
+full rank, report the Marchenko--Pastur edge crossing for a matched-shape
+noise matrix. Where it is not, state that the comparison is unavailable rather
+than reporting the value it returns.
+\item \textbf{Test preprocessing sensitivity.} Probe the input first, since
+the integrality of non-zero entries reveals whether an upstream transform has
+been applied, and refuse any arm that would transform twice. Repeat step 6
+under at least three admissible transformations and report the spread as
+uncertainty.
+\item \textbf{Report a verdict for each precondition.} State whether the bound
+used is a published theorem, a measured floor, or the verified envelope of the
+instrument employed. A measured envelope must never be described as a property
+of the theory.
+\end{enumerate}
+\textit{No model is fitted at any step, and no ground-truth latent variables
+are required.}
+\end{algorithm}
+
+\subsection{Limitations}
+Our dimension estimators are linear. Nonlinear intrinsic-dimension estimators
+such as TwoNN would provide useful corroboration and typically return
+substantially lower values on single-cell data; we did not run them, and we
+flag in advance that a disagreement should not be resolved by preferring the
+more convenient answer.
+
+We report uncorrected estimates at two matched sample sizes rather than
+applying finite-sample bias corrections. Corrections of this kind require
+assuming a noise model and act to reduce the estimates, so an uncorrected
+lower bound with the sample size stated is the more conservative posture.
+
+The preprocessing provenance of all six transcriptomic matrices is
+undocumented in the loaders we examined and was inferred from numerical
+fingerprints. We did not attempt to reconstruct the upstream pipelines.
+
+The detection floors are simulator outputs under a linear structural model,
+and their transfer to real CRISPR interference biology is the weakest link in
+the sample-size argument.
+
+Finally, we did not apply the rank test to real data, for the reason set out
+in Section~\ref{sec:floors}. Under nonlinear mixing the test over-rejects, so
+a rejection on real data would be confounded with mixing curvature. Every
+real-data number reported here is a count or an eigenvalue, which is why the
+conclusions of the audit survive that limitation.
+
+%=============================================================================
+\section{Conclusion}
+We have audited eight benchmark datasets used to evaluate multi-environment
+causal representation learning against the preconditions their identifiability
+theorems impose, using only measurements computed from the data before any
+model is fitted. The observed dimension of the control covariance is several
+hundred by every estimator we applied, and is not explained by feature count,
+by noise, or by preprocessing choice. Per-environment sample sizes fall far
+below measured detection floors, with only two environments in the corpus
+clearing the soft-intervention floor and none of the 744 Frangieh environments
+reaching even 500 cells. Transcriptomic and neuroimaging benchmarks fail these
+preconditions in opposite and complementary directions, one supplying breadth
+without depth and the other depth without breadth.
+
+The practical implication is that current benchmark scores for CRL on these
+datasets are not evidence about the methods being scored. Progress requires
+either data collected with identification in mind, meaning deeper environments
+or designs that trade target breadth for cells per target, or theory that
+identifies less from what is available. Distinguishing those two paths
+requires knowing which precondition binds, which is what an audit of this kind
+supplies.
+
+%=============================================================================
+\section*{Data and Code Availability}
+\label{sec:avail}
+All datasets audited are publicly available from their original publications
+\cite{replogle2022,norman2019,frangieh2021,vanessen2013,dimartino2014}.
+Analysis code, figure-generation scripts, and all result artefacts, including
+per-dataset eigenvalue spectra, are available at the project repository. Every
+artefact records library versions, platform, BLAS backend, and an input-data
+fingerprint.
+
+%=============================================================================
+\begin{thebibliography}{00}
+
+\bibitem{scholkopf2021}
+B. Sch\"{o}lkopf, F. Locatello, S. Bauer, N. R. Ke, N. Kalchbrenner, A. Goyal,
+and Y. Bengio, ``Toward causal representation learning,'' \emph{Proc. IEEE},
+vol. 109, no. 5, pp. 612--634, 2021.
+
+\bibitem{squires2023}
+C. Squires, A. Seigal, S. S. Bhate, and C. Uhler, ``Linear causal
+disentanglement via interventions,'' in \emph{Proc. 40th Int. Conf. Mach.
+Learn.}, PMLR vol. 202, Honolulu, HI, USA, 2023, pp. 32540--32560.
+
+\bibitem{kugelgen2023}
+J. von K\"{u}gelgen, M. Besserve, W. Liang, L. Gresele, A. Keki\'{c},
+E. Bareinboim, D. M. Blei, and B. Sch\"{o}lkopf, ``Nonparametric
+identifiability of causal representations from unknown interventions,'' in
+\emph{Adv. Neural Inf. Process. Syst.}, New Orleans, LA, USA, 2023.
+
+\bibitem{buchholz2023}
+S. Buchholz, G. Rajendran, E. Rosenfeld, B. Aragam, B. Sch\"{o}lkopf, and
+P. Ravikumar, ``Learning linear causal representations from interventions
+under general nonlinear mixing,'' in \emph{Adv. Neural Inf. Process. Syst.},
+New Orleans, LA, USA, 2023.
+
+\bibitem{zhang2023}
+J. Zhang, C. Squires, K. Greenewald, A. Srivastava, K. Shanmugam, and
+C. Uhler, ``Identifiability guarantees for causal disentanglement from soft
+interventions,'' in \emph{Adv. Neural Inf. Process. Syst.}, vol. 36, 2023.
+
+\bibitem{rajendran2024}
+G. Rajendran, S. Buchholz, B. Aragam, B. Sch\"{o}lkopf, and P. Ravikumar,
+``From causal to concept-based representation learning,'' in \emph{Adv. Neural
+Inf. Process. Syst.}, vol. 37, 2024, pp. 101250--101296.
+
+\bibitem{gamella2025}
+J. L. Gamella, S. Bing, and J. Runge, ``Sanity checking causal representation
+learning on a simple real-world system,'' in \emph{Proc. 42nd Int. Conf. Mach.
+Learn.}, 2025.
+
+\bibitem{ahlmann2025}
+C. Ahlmann-Eltze, W. Huber, and S. Anders, ``Deep-learning-based gene
+perturbation effect prediction does not yet outperform simple linear
+baselines,'' \emph{Nature Methods}, vol. 22, no. 8, pp. 1657--1661, 2025,
+doi: 10.1038/s41592-025-02772-6.
+
+\bibitem{replogle2022}
+J. M. Replogle, R. A. Saunders, A. N. Pogson, J. A. Hussmann, A. Lenail,
+A. Guna, \emph{et al.}, ``Mapping information-rich genotype-phenotype
+landscapes with genome-scale Perturb-seq,'' \emph{Cell}, vol. 185, no. 14,
+pp. 2559--2575.e28, 2022, doi: 10.1016/j.cell.2022.05.013.
+
+\bibitem{norman2019}
+T. M. Norman, M. A. Horlbeck, J. M. Replogle, A. Y. Ge, A. Xu, M. Jost,
+L. A. Gilbert, and J. S. Weissman, ``Exploring genetic interaction manifolds
+constructed from rich single-cell phenotypes,'' \emph{Science}, vol. 365,
+no. 6455, pp. 786--793, 2019, doi: 10.1126/science.aax4438.
+
+\bibitem{frangieh2021}
+C. J. Frangieh, J. C. Melms, P. I. Thakore, K. R. Geiger-Schuller, P. Ho,
+A. M. Luoma, \emph{et al.}, ``Multimodal pooled Perturb-CITE-seq screens in
+patient models define mechanisms of cancer immune evasion,'' \emph{Nature
+Genetics}, vol. 53, pp. 332--341, 2021, doi: 10.1038/s41588-021-00779-1.
+
+\bibitem{vanessen2013}
+D. C. Van Essen, S. M. Smith, D. M. Barch, T. E. J. Behrens, E. Yacoub, and
+K. Ugurbil, ``The WU-Minn Human Connectome Project: An overview,''
+\emph{NeuroImage}, vol. 80, pp. 62--79, 2013,
+doi: 10.1016/j.neuroimage.2013.05.041.
+
+\bibitem{dimartino2014}
+A. Di Martino, C.-G. Yan, Q. Li, E. Denio, F. X. Castellanos, K. Alaerts,
+\emph{et al.}, ``The autism brain imaging data exchange: Towards a large-scale
+evaluation of the intrinsic brain architecture in autism,'' \emph{Molecular
+Psychiatry}, vol. 19, no. 6, pp. 659--667, 2014, doi: 10.1038/mp.2013.78.
+
+\bibitem{chen2019}
+Q. Chen and Z. Fang, ``Improved inference on the rank of a matrix,''
+\emph{Quantitative Economics}, vol. 10, no. 4, pp. 1787--1824, 2019,
+doi: 10.3982/QE1139.
+
+\bibitem{staiger1997}
+D. Staiger and J. H. Stock, ``Instrumental variables regression with weak
+instruments,'' \emph{Econometrica}, vol. 65, no. 3, pp. 557--586, 1997.
+
+\bibitem{stock2005}
+J. H. Stock and M. Yogo, ``Testing for weak instruments in linear IV
+regression,'' in \emph{Identification and Inference for Econometric Models:
+Essays in Honor of Thomas Rothenberg}, D. W. K. Andrews and J. H. Stock, Eds.
+Cambridge, U.K.: Cambridge Univ. Press, 2005, pp. 80--108.
+
+\bibitem{kleibergen2006}
+F. Kleibergen and R. Paap, ``Generalized reduced rank tests using the singular
+value decomposition,'' \emph{J. Econometrics}, vol. 133, no. 1, pp. 97--126,
+2006.
+
+\bibitem{robin2000}
+J.-M. Robin and R. J. Smith, ``Tests of rank,'' \emph{Econometric Theory},
+vol. 16, pp. 151--175, 2000.
+
+\bibitem{stringer2019}
+C. Stringer, M. Pachitariu, N. Steinmetz, M. Carandini, and K. D. Harris,
+``High-dimensional geometry of population responses in visual cortex,''
+\emph{Nature}, vol. 571, no. 7765, pp. 361--365, 2019,
+doi: 10.1038/s41586-019-1346-5.
+
+\bibitem{niu2026}
+Z. Niu, Y. He, J. Galante, A. R. Gschwind, J. Ray, L. M. Steinmetz,
+J. M. Engreitz, and E. Katsevich, ``PerturbPlan: An analytical framework for
+designing Perturb-seq experiments,'' bioRxiv 2026.05.22.727199, 2026,
+doi: 10.64898/2026.05.22.727199.
+
+\bibitem{vollenweider2026}
+M. Vollenweider and P. B\"{u}hlmann, ``Signal, bounds, and baselines:
+Principles for evaluating virtual cell perturbation models,'' bioRxiv
+2026.04.20.719650, 2026, doi: 10.64898/2026.04.20.719650.
+
+\bibitem{vinas2026}
+R. Vi\~{n}as Torn\'{e}, M. Wiatrak, Z. Piran, \emph{et al.}, ``Systema: A
+framework for evaluating genetic perturbation response prediction beyond
+systematic variation,'' \emph{Nature Biotechnology}, 2026,
+doi: 10.1038/s41587-025-02777-8.
+
+\bibitem{marchenko1967}
+V. A. Marchenko and L. A. Pastur, ``Distribution of eigenvalues for some sets
+of random matrices,'' \emph{Mathematics of the USSR-Sbornik}, vol. 1, no. 4,
+pp. 457--483, 1967.
+
+\end{thebibliography}
+
+\end{document}

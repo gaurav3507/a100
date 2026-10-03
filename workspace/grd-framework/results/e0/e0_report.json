@@ -1,0 +1,409 @@
+{
+  "milestone": "M1",
+  "code_commit": "ca2e66b1181d57a14e5b6ac69a6d5f0f1b9c1030-dirty",
+  "config": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "d_latent": 5,
+    "D": 200,
+    "n_per_env": 4000,
+    "d_proj": 5,
+    "edge_prob": 0.4,
+    "iv_scale": 3.0,
+    "alpha": 0.05,
+    "B": 500,
+    "rank_rtol": 0.05,
+    "recovery_mcc_threshold": 0.9,
+    "mixing": "linear",
+    "intervention": "hard on all source nodes"
+  },
+  "data_fingerprint": {
+    "0": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "b0884b414509c449"
+    },
+    "1": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "86585af54d1b9927"
+    },
+    "2": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "b843bf10f8b59a31"
+    },
+    "3": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "01e3aff3e2322ff6"
+    },
+    "4": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "51aeef465c8396a6"
+    },
+    "5": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "16951dca3ee9137c"
+    },
+    "6": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "031e7e6f02fabee3"
+    },
+    "7": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "c2afcf8327399c6e"
+    },
+    "8": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "eeca4a659f9e34ba"
+    },
+    "9": {
+      "shape": [
+        4000,
+        200
+      ],
+      "slice_sha256_16": "827d37eb3cd2e7ee"
+    }
+  },
+  "E0A": {
+    "per_seed": [
+      {
+        "seed": 0,
+        "nodes": [
+          0
+        ],
+        "constructed_rank": 1,
+        "empirical_rank": 1,
+        "gap_ratio": 1859.948,
+        "multi_node": false,
+        "passed": true
+      },
+      {
+        "seed": 1,
+        "nodes": [
+          2
+        ],
+        "constructed_rank": 1,
+        "empirical_rank": 1,
+        "gap_ratio": 315.43,
+        "multi_node": false,
+        "passed": true
+      },
+      {
+        "seed": 2,
+        "nodes": [
+          2,
+          3
+        ],
+        "constructed_rank": 2,
+        "empirical_rank": 2,
+        "gap_ratio": 97.773,
+        "multi_node": true,
+        "passed": true
+      },
+      {
+        "seed": 3,
+        "nodes": [
+          2,
+          3
+        ],
+        "constructed_rank": 2,
+        "empirical_rank": 2,
+        "gap_ratio": 117.775,
+        "multi_node": true,
+        "passed": true
+      },
+      {
+        "seed": 4,
+        "nodes": [
+          0,
+          2,
+          3
+        ],
+        "constructed_rank": 3,
+        "empirical_rank": 3,
+        "gap_ratio": 67.71,
+        "multi_node": true,
+        "passed": true
+      },
+      {
+        "seed": 5,
+        "nodes": [
+          0,
+          2
+        ],
+        "constructed_rank": 2,
+        "empirical_rank": 2,
+        "gap_ratio": 20.375,
+        "multi_node": true,
+        "passed": true
+      },
+      {
+        "seed": 6,
+        "nodes": [
+          0,
+          2,
+          4
+        ],
+        "constructed_rank": 3,
+        "empirical_rank": 3,
+        "gap_ratio": 30.571,
+        "multi_node": true,
+        "passed": true
+      },
+      {
+        "seed": 7,
+        "nodes": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "constructed_rank": 4,
+        "empirical_rank": 4,
+        "gap_ratio": 706.256,
+        "multi_node": true,
+        "passed": true
+      },
+      {
+        "seed": 8,
+        "nodes": [
+          3
+        ],
+        "constructed_rank": 1,
+        "empirical_rank": 1,
+        "gap_ratio": 118.269,
+        "multi_node": false,
+        "passed": true
+      },
+      {
+        "seed": 9,
+        "nodes": [
+          0,
+          3
+        ],
+        "constructed_rank": 2,
+        "empirical_rank": 2,
+        "gap_ratio": 364.266,
+        "multi_node": true,
+        "passed": true
+      }
+    ],
+    "verdict": "PASS"
+  },
+  "E0B": {
+    "per_seed": [
+      {
+        "seed": 0,
+        "constructed_rank": 1,
+        "spectral_rank": 1,
+        "lfc_rejects_below_rank": true,
+        "lfc_sequential_k_hat": 1,
+        "lfc_k_hat_matches": true,
+        "passed": true
+      },
+      {
+        "seed": 1,
+        "constructed_rank": 1,
+        "spectral_rank": 1,
+        "lfc_rejects_below_rank": true,
+        "lfc_sequential_k_hat": 1,
+        "lfc_k_hat_matches": true,
+        "passed": true
+      },
+      {
+        "seed": 2,
+        "constructed_rank": 2,
+        "spectral_rank": 2,
+        "lfc_rejects_below_rank": true,
+        "lfc_sequential_k_hat": 2,
+        "lfc_k_hat_matches": true,
+        "passed": true
+      },
+      {
+        "seed": 3,
+        "constructed_rank": 2,
+        "spectral_rank": 2,
+        "lfc_rejects_below_rank": true,
+        "lfc_sequential_k_hat": 2,
+        "lfc_k_hat_matches": true,
+        "passed": true
+      },
+      {
+        "seed": 4,
+        "constructed_rank": 3,
+        "spectral_rank": 3,
+        "lfc_rejects_below_rank": true,
+        "lfc_sequential_k_hat": 3,
+        "lfc_k_hat_matches": true,
+        "passed": true
+      },
+      {
+        "seed": 5,
+        "constructed_rank": 2,
+        "spectral_rank": 2,
+        "lfc_rejects_below_rank": true,
+        "lfc_sequential_k_hat": 2,
+        "lfc_k_hat_matches": true,
+        "passed": true
+      },
+      {
+        "seed": 6,
+        "constructed_rank": 3,
+        "spectral_rank": 3,
+        "lfc_rejects_below_rank": true,
+        "lfc_sequential_k_hat": 3,
+        "lfc_k_hat_matches": true,
+        "passed": true
+      },
+      {
+        "seed": 7,
+        "constructed_rank": 4,
+        "spectral_rank": 4,
+        "lfc_rejects_below_rank": true,
+        "lfc_sequential_k_hat": 4,
+        "lfc_k_hat_matches": true,
+        "passed": true
+      },
+      {
+        "seed": 8,
+        "constructed_rank": 1,
+        "spectral_rank": 1,
+        "lfc_rejects_below_rank": true,
+        "lfc_sequential_k_hat": 1,
+        "lfc_k_hat_matches": true,
+        "passed": true
+      },
+      {
+        "seed": 9,
+        "constructed_rank": 2,
+        "spectral_rank": 2,
+        "lfc_rejects_below_rank": true,
+        "lfc_sequential_k_hat": 2,
+        "lfc_k_hat_matches": true,
+        "passed": true
+      }
+    ],
+    "verdict": "PASS"
+  },
+  "E0C": {
+    "per_seed": [
+      {
+        "seed": 0,
+        "blind_mcc": 0.4205,
+        "subspace_r2": 0.9998,
+        "chance_mcc": 0.8878,
+        "fails_recovery": true,
+        "metric_selftest_mcc": 1.0
+      },
+      {
+        "seed": 1,
+        "blind_mcc": 0.5501,
+        "subspace_r2": 0.9998,
+        "chance_mcc": 0.8232,
+        "fails_recovery": true,
+        "metric_selftest_mcc": 1.0
+      },
+      {
+        "seed": 2,
+        "blind_mcc": 0.5405,
+        "subspace_r2": 0.9998,
+        "chance_mcc": 0.8626,
+        "fails_recovery": true,
+        "metric_selftest_mcc": 1.0
+      },
+      {
+        "seed": 3,
+        "blind_mcc": 0.5319,
+        "subspace_r2": 0.9998,
+        "chance_mcc": 0.8156,
+        "fails_recovery": true,
+        "metric_selftest_mcc": 1.0
+      },
+      {
+        "seed": 4,
+        "blind_mcc": 0.7038,
+        "subspace_r2": 0.9998,
+        "chance_mcc": 0.7571,
+        "fails_recovery": true,
+        "metric_selftest_mcc": 1.0
+      },
+      {
+        "seed": 5,
+        "blind_mcc": 0.6171,
+        "subspace_r2": 0.9998,
+        "chance_mcc": 0.792,
+        "fails_recovery": true,
+        "metric_selftest_mcc": 1.0
+      },
+      {
+        "seed": 6,
+        "blind_mcc": 0.7009,
+        "subspace_r2": 0.9998,
+        "chance_mcc": 0.7493,
+        "fails_recovery": true,
+        "metric_selftest_mcc": 1.0
+      },
+      {
+        "seed": 7,
+        "blind_mcc": 0.7547,
+        "subspace_r2": 0.9998,
+        "chance_mcc": 0.7609,
+        "fails_recovery": true,
+        "metric_selftest_mcc": 1.0
+      },
+      {
+        "seed": 8,
+        "blind_mcc": 0.524,
+        "subspace_r2": 0.9998,
+        "chance_mcc": 0.7937,
+        "fails_recovery": true,
+        "metric_selftest_mcc": 1.0
+      },
+      {
+        "seed": 9,
+        "blind_mcc": 0.5687,
+        "subspace_r2": 0.9998,
+        "chance_mcc": 0.8206,
+        "fails_recovery": true,
+        "metric_selftest_mcc": 1.0
+      }
+    ],
+    "verdict": "PASS"
+  },
+  "status": "PASS"
+}

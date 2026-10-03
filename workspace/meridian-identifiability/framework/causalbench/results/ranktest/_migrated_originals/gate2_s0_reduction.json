@@ -1,0 +1,105 @@
+{
+  "runs": [
+    {
+      "seed": 0,
+      "d_latent": 10,
+      "D": 200,
+      "n": 2000,
+      "reject_mlp_s0": false,
+      "reject_linear": false,
+      "max_abs_lam_diff": 2.2737367544323206e-13,
+      "identical": true
+    },
+    {
+      "seed": 1,
+      "d_latent": 10,
+      "D": 200,
+      "n": 2000,
+      "reject_mlp_s0": false,
+      "reject_linear": false,
+      "max_abs_lam_diff": 3.410605131648481e-13,
+      "identical": true
+    },
+    {
+      "seed": 2,
+      "d_latent": 10,
+      "D": 200,
+      "n": 2000,
+      "reject_mlp_s0": false,
+      "reject_linear": false,
+      "max_abs_lam_diff": 2.5579538487363607e-13,
+      "identical": true
+    },
+    {
+      "seed": 3,
+      "d_latent": 10,
+      "D": 200,
+      "n": 2000,
+      "reject_mlp_s0": false,
+      "reject_linear": false,
+      "max_abs_lam_diff": 8.526512829121202e-14,
+      "identical": true
+    },
+    {
+      "seed": 4,
+      "d_latent": 10,
+      "D": 200,
+      "n": 2000,
+      "reject_mlp_s0": false,
+      "reject_linear": false,
+      "max_abs_lam_diff": 2.291500322826323e-13,
+      "identical": true
+    },
+    {
+      "seed": 5,
+      "d_latent": 10,
+      "D": 200,
+      "n": 2000,
+      "reject_mlp_s0": false,
+      "reject_linear": false,
+      "max_abs_lam_diff": 1.9326762412674725e-12,
+      "identical": true
+    },
+    {
+      "seed": 6,
+      "d_latent": 10,
+      "D": 200,
+      "n": 2000,
+      "reject_mlp_s0": false,
+      "reject_linear": false,
+      "max_abs_lam_diff": 9.094947017729282e-13,
+      "identical": true
+    },
+    {
+      "seed": 7,
+      "d_latent": 10,
+      "D": 200,
+      "n": 2000,
+      "reject_mlp_s0": false,
+      "reject_linear": false,
+      "max_abs_lam_diff": 1.1368683772161603e-12,
+      "identical": true
+    },
+    {
+      "seed": 8,
+      "d_latent": 10,
+      "D": 200,
+      "n": 2000,
+      "reject_mlp_s0": false,
+      "reject_linear": false,
+      "max_abs_lam_diff": 1.1368683772161603e-13,
+      "identical": true
+    },
+    {
+      "seed": 9,
+      "d_latent": 10,
+      "D": 200,
+      "n": 2000,
+      "reject_mlp_s0": false,
+      "reject_linear": false,
+      "max_abs_lam_diff": 1.8189894035458565e-12,
+      "identical": true
+    }
+  ],
+  "all_identical": true
+}

@@ -1,0 +1,3 @@
+Python 3.10.12
+name, driver_version
+NVIDIA A100-SXM4-80GB, 535.183.06

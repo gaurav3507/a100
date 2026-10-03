@@ -1,0 +1,210 @@
+{
+  "sweep": [
+    {
+      "n_e": 2000,
+      "scaling": "raw",
+      "reject": 0.155,
+      "per_seed": {
+        "0": 0.075,
+        "1": 0.025,
+        "2": 0.0,
+        "3": 0.7,
+        "4": 0.05,
+        "5": 0.5,
+        "6": 0.0,
+        "7": 0.15,
+        "8": 0.05,
+        "9": 0.0
+      },
+      "seed3": 0.7,
+      "seed5": 0.5,
+      "other8": 0.043750000000000004
+    },
+    {
+      "n_e": 2000,
+      "scaling": "standardised",
+      "reject": 0.08,
+      "per_seed": {
+        "0": 0.125,
+        "1": 0.025,
+        "2": 0.05,
+        "3": 0.175,
+        "4": 0.025,
+        "5": 0.3,
+        "6": 0.025,
+        "7": 0.05,
+        "8": 0.025,
+        "9": 0.0
+      },
+      "seed3": 0.175,
+      "seed5": 0.3,
+      "other8": 0.040625
+    },
+    {
+      "n_e": 8000,
+      "scaling": "raw",
+      "reject": 0.1,
+      "per_seed": {
+        "0": 0.025,
+        "1": 0.075,
+        "2": 0.0,
+        "3": 0.25,
+        "4": 0.175,
+        "5": 0.325,
+        "6": 0.075,
+        "7": 0.05,
+        "8": 0.0,
+        "9": 0.025
+      },
+      "seed3": 0.25,
+      "seed5": 0.325,
+      "other8": 0.053125000000000006
+    },
+    {
+      "n_e": 8000,
+      "scaling": "standardised",
+      "reject": 0.075,
+      "per_seed": {
+        "0": 0.025,
+        "1": 0.05,
+        "2": 0.0,
+        "3": 0.15,
+        "4": 0.175,
+        "5": 0.175,
+        "6": 0.05,
+        "7": 0.0,
+        "8": 0.125,
+        "9": 0.0
+      },
+      "seed3": 0.15,
+      "seed5": 0.175,
+      "other8": 0.053125
+    },
+    {
+      "n_e": 20000,
+      "scaling": "raw",
+      "reject": 0.07749999999999999,
+      "per_seed": {
+        "0": 0.025,
+        "1": 0.025,
+        "2": 0.0,
+        "3": 0.25,
+        "4": 0.075,
+        "5": 0.275,
+        "6": 0.025,
+        "7": 0.025,
+        "8": 0.075,
+        "9": 0.0
+      },
+      "seed3": 0.25,
+      "seed5": 0.275,
+      "other8": 0.03125
+    },
+    {
+      "n_e": 20000,
+      "scaling": "standardised",
+      "reject": 0.0675,
+      "per_seed": {
+        "0": 0.0,
+        "1": 0.025,
+        "2": 0.025,
+        "3": 0.225,
+        "4": 0.075,
+        "5": 0.2,
+        "6": 0.05,
+        "7": 0.05,
+        "8": 0.025,
+        "9": 0.0
+      },
+      "seed3": 0.225,
+      "seed5": 0.2,
+      "other8": 0.03125
+    },
+    {
+      "n_e": 50000,
+      "scaling": "raw",
+      "reject": 0.08499999999999999,
+      "per_seed": {
+        "0": 0.0,
+        "1": 0.05,
+        "2": 0.0,
+        "3": 0.2,
+        "4": 0.075,
+        "5": 0.15,
+        "6": 0.05,
+        "7": 0.175,
+        "8": 0.1,
+        "9": 0.05
+      },
+      "seed3": 0.2,
+      "seed5": 0.15,
+      "other8": 0.0625
+    },
+    {
+      "n_e": 50000,
+      "scaling": "standardised",
+      "reject": 0.052500000000000005,
+      "per_seed": {
+        "0": 0.0,
+        "1": 0.075,
+        "2": 0.0,
+        "3": 0.075,
+        "4": 0.05,
+        "5": 0.075,
+        "6": 0.075,
+        "7": 0.05,
+        "8": 0.05,
+        "9": 0.075
+      },
+      "seed3": 0.075,
+      "seed5": 0.075,
+      "other8": 0.046875
+    }
+  ],
+  "finding": "Driven by d/n_e, NOT by dimension per se. Overall rejection falls 0.155 -> 0.100 -> 0.077 -> 0.085 (raw) and 0.080 -> 0.075 -> 0.068 -> 0.053 (standardised) as n_e goes 2000 -> 50000. The two pathological seeds fall from 0.70/0.50 to 0.20/0.15 (raw) and to 0.07/0.07 (standardised).",
+  "reading": "More cells fix it. Under standardisation at n_e=50000 the overall rate is 0.053 and even seeds 3 and 5 reach 0.07, i.e. nominal. Raw plateaus around 0.08, so standardisation is the better scaling in this regime.",
+  "meta": {
+    "statistic": "lfc",
+    "gate": "envelope",
+    "git_commit": "4ddd503",
+    "timestamp": "2026-08-10T13:20:01",
+    "config": {
+      "alpha": 0.05,
+      "B": 500,
+      "n_e": [
+        2000,
+        8000,
+        20000,
+        50000
+      ],
+      "d": 10,
+      "d_latent": 80,
+      "D": 200,
+      "n_env": null,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "draws_per_point": 400
+    },
+    "versions": {
+      "python": "3.11.15",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.0.3",
+      "sklearn": "1.9.0"
+    },
+    "superseded_by": null,
+    "migrated_from": "(new run, not migrated)",
+    "status": "CURRENT",
+    "note": "n_e sweep at d_latent=80, the only failing configuration; d/n_e not d"
+  }
+}

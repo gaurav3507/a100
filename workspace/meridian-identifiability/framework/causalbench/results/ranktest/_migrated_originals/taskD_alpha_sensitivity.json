@@ -1,0 +1,44 @@
+[
+  {
+    "nominal_alpha": 0.01,
+    "scaling": "raw",
+    "realised": 0.015,
+    "multiple": 1.5,
+    "n_draws": 200
+  },
+  {
+    "nominal_alpha": 0.01,
+    "scaling": "standardised",
+    "realised": 0.005,
+    "multiple": 0.5,
+    "n_draws": 200
+  },
+  {
+    "nominal_alpha": 0.025,
+    "scaling": "raw",
+    "realised": 0.03,
+    "multiple": 1.2,
+    "n_draws": 200
+  },
+  {
+    "nominal_alpha": 0.025,
+    "scaling": "standardised",
+    "realised": 0.025,
+    "multiple": 1.0,
+    "n_draws": 200
+  },
+  {
+    "nominal_alpha": 0.05,
+    "scaling": "raw",
+    "realised": 0.06,
+    "multiple": 1.2,
+    "n_draws": 200
+  },
+  {
+    "nominal_alpha": 0.05,
+    "scaling": "standardised",
+    "realised": 0.065,
+    "multiple": 1.3,
+    "n_draws": 200
+  }
+]

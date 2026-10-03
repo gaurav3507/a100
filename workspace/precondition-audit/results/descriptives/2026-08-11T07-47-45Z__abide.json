@@ -1,0 +1,203 @@
+{
+  "dataset": "abide",
+  "blocks": [
+    {
+      "label": "abide",
+      "modality": "fMRI",
+      "source": "/workspace/ranktest-diagnostics/data/abide_harmonized.npz",
+      "n_subjects": 742,
+      "n_conditions": 14,
+      "conditions": [
+        "CALTECH",
+        "KKI",
+        "LEUVEN_2",
+        "MAX_MUN",
+        "NYU",
+        "PITT",
+        "SDSU",
+        "STANFORD",
+        "TRINITY",
+        "UCLA_1",
+        "UM_1",
+        "UM_2",
+        "USM",
+        "YALE"
+      ],
+      "timepoints_per_subject": 116,
+      "n_regions": 200,
+      "total_timepoints": 86072,
+      "timepoints_per_condition": {
+        "CALTECH": 4060,
+        "KKI": 4524,
+        "LEUVEN_2": 3480,
+        "MAX_MUN": 4756,
+        "NYU": 19604,
+        "PITT": 5104,
+        "SDSU": 3828,
+        "STANFORD": 4176,
+        "TRINITY": 5104,
+        "UCLA_1": 6264,
+        "UM_1": 9396,
+        "UM_2": 3480,
+        "USM": 6960,
+        "YALE": 5336
+      },
+      "environment_attrition": {
+        "50": 14,
+        "125": 14,
+        "500": 14,
+        "2000": 14,
+        "8000": 2
+      },
+      "cells_per_environment": {
+        "n_environments": 14,
+        "min": 3480,
+        "q25": 4089.0,
+        "median": 4930.0,
+        "q75": 6032.0,
+        "max": 19604,
+        "total_cells": 86072,
+        "n_above_hard_floor_125": 14,
+        "n_above_soft_floor_8000": 2,
+        "frac_above_hard_floor_125": 1.0,
+        "frac_above_soft_floor_8000": 0.14285714285714285
+      },
+      "latent_dimension_from_pooled_frames": {
+        "2000": {
+          "n_control_used": 2000,
+          "n_control_available": 86072,
+          "n_genes": 200,
+          "rank_bound": 200,
+          "participation_ratio": 32.95320714374538,
+          "effective_rank_exp_spectral_entropy": 75.15332715845304,
+          "n_components_for_variance": {
+            "80pct": 64,
+            "90pct": 108,
+            "95pct": 143
+          },
+          "top_eigenvalue_share": 0.09719140632371916,
+          "n_nonzero_eigenvalues": 200,
+          "matches_fit_pca_basis": true,
+          "fit_pca_mu_identical": true,
+          "spectra_key": "abide__2000",
+          "lam_len": 200,
+          "lam_sum": 106756.92542061656,
+          "lam_sumsq": 345855293.4027934,
+          "spectra_sidecar": "2026-08-11T07-47-45Z__abide__spectra.npz"
+        },
+        "8000": {
+          "n_control_used": 8000,
+          "n_control_available": 86072,
+          "n_genes": 200,
+          "rank_bound": 200,
+          "participation_ratio": 33.25404171278373,
+          "effective_rank_exp_spectral_entropy": 77.3294130785667,
+          "n_components_for_variance": {
+            "80pct": 68,
+            "90pct": 114,
+            "95pct": 149
+          },
+          "top_eigenvalue_share": 0.10064287538560081,
+          "n_nonzero_eigenvalues": 200,
+          "matches_fit_pca_basis": true,
+          "fit_pca_mu_identical": true,
+          "spectra_key": "abide__8000",
+          "lam_len": 200,
+          "lam_sum": 106768.66847733156,
+          "lam_sumsq": 342801896.5899128,
+          "spectra_sidecar": "2026-08-11T07-47-45Z__abide__spectra.npz"
+        }
+      },
+      "data_fingerprint": {
+        "shape": [
+          86072,
+          200
+        ],
+        "dtype": "float64",
+        "sum": -35714.17074374485,
+        "sumsq": 9164438648.755205,
+        "nan_count": 0
+      },
+      "spectrum_caveat": "no control condition; spectrum is over ALL pooled frames and is not comparable to the Perturb-seq control spectra",
+      "environment_caveat": "environment == acquisition SITE, not an intervention; this is a descriptive analogue only"
+    }
+  ],
+  "platform_tag": "Linux-x86_64-py3.10.12",
+  "nmin_set": [
+    50,
+    125,
+    500,
+    2000,
+    8000
+  ],
+  "power_floors": {
+    "hard": 125,
+    "soft": 8000,
+    "source": "measured under LFC on the simulator; lfc/power_hard and lfc/power_soft"
+  },
+  "contains_no_test": true,
+  "disclaimer": "DESCRIPTIVE ONLY. No rank test was run and no assumption verdict is expressed or implied. Phase B is not authorised.",
+  "spectra_sidecar": "2026-08-11T07-47-45Z__abide__spectra.npz",
+  "peak_rss_mb": 724.0,
+  "meta": {
+    "statistic": "descriptive",
+    "gate": "descriptives",
+    "git_commit": "8181090",
+    "timestamp": "2026-08-11T07:47:45Z",
+    "config": {
+      "alpha": null,
+      "B": null,
+      "n_e": null,
+      "d": null,
+      "d_latent": null,
+      "D": null,
+      "n_env": null,
+      "seeds": [
+        0
+      ],
+      "draws_per_point": null,
+      "extra": {
+        "dataset": "abide",
+        "arm": null,
+        "hvg": null,
+        "nmin_set": [
+          50,
+          125,
+          500,
+          2000,
+          8000
+        ],
+        "spec_caps": [
+          2000,
+          8000
+        ],
+        "platform_tag": "Linux-x86_64-py3.10.12",
+        "timezone": "UTC",
+        "timestamp_suffix": "Z",
+        "peak_rss_mb": 370.1,
+        "overlap_check": false
+      }
+    },
+    "versions": {
+      "python": "3.10.12",
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "pandas": "2.3.3",
+      "sklearn": "1.7.2",
+      "scanpy": "1.11.5",
+      "anndata": "0.11.4",
+      "platform": {
+        "system": "Linux",
+        "release": "5.15.0-1065-nvidia",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "python_implementation": "CPython",
+        "numpy_blas": "scipy-openblas"
+      }
+    },
+    "superseded_by": null,
+    "migrated_from": null,
+    "status": "CURRENT",
+    "note": "descriptive profile of abide; no test, no verdict"
+  }
+}
